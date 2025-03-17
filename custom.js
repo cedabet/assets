@@ -7,7 +7,7 @@
 
     (function () {
         let lastUrl = location.href;
-        let isFirstLoad = true; 
+        let isFirstLoad = true;
         if (isFirstLoad) {
             loadVipFeatures();
             isFirstLoad = false;
@@ -57,14 +57,14 @@
     })();
 
     function loadVipFeatures() {
-      
+
         let mainContent = document.getElementById("main-slider");
 
         if (!mainContent) {
 
         } else {
            if (document.getElementById("custom-section-9")) {
-            return; 
+            return;
         }
 
             let customSection = document.createElement("div");
@@ -177,14 +177,14 @@
         customSection10.id = "custom-section-10";
         customSection10.classList.add("section", "custom-section");
 
-    
+
         customSection10.innerHTML = `
   <div style="text-align: center; padding: 1.5rem 1rem; max-width: 1200px; margin: 0 auto;">
     <h1 style="font-size: 1.875rem; font-weight: bold; margin: 0; color: white;">CedaBet Premium Features</h1>
   </div>
   <div style="width: 100%; padding: 1rem 1rem 2rem; max-width: 1200px; margin: 0 auto; padding-left: 24px; padding-right: 24px;">
     <div style="opacity: 0.95; display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; width: 100%;">
-      
+
       <!-- Playlist Section -->
       <div class="content">
         <div class="slider-playlist">
@@ -276,7 +276,7 @@
     </div>
   </div>
   <style>
-  @import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Permanent+Marker&display=swap");
+  @@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Permanent+Marker&display=swap");
 
 :root {
   --light-clr: #e5e5e5;
@@ -501,7 +501,7 @@ main:hover::before {
 }
 
 
-@media (max-width: 1300px) {
+@@media (max-width: 1300px) {
   main {
     width: 90%;
   }
@@ -511,7 +511,7 @@ main:hover::before {
   }
 }
 
-@media (max-width: 1100px) {
+@@media (max-width: 1100px) {
   .content {
     padding: 40px 20px 20px;
   }
@@ -525,7 +525,7 @@ main:hover::before {
   }
 }
 
-@media (max-width: 900px) {
+@@media (max-width: 900px) {
   .content {
     padding: 30px 40px 20px;
     overflow-x: hidden;
@@ -548,7 +548,7 @@ main:hover::before {
   }
 }
 
-@media (max-width: 580px) {
+@@media (max-width: 580px) {
   .content {
     overflow-x: hidden;
   }
@@ -763,4 +763,3 @@ likeBtns.forEach((likeBtn) => {
         }
 
     }
-
