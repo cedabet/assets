@@ -598,7 +598,9 @@ main:hover::before {
  </style>
 
 `;
-const playlistItems = document.querySelectorAll(".playlist-item");
+ mainContent.appendChild(customSection10);
+
+   const playlistItems = document.querySelectorAll(".playlist-item");
 const swiper = new Swiper("#custom-swiper", {
   effect: "cards",
   cardsEffect: {
@@ -634,7 +636,7 @@ function updatePlaylistHighlight(index) {
 }
 
 
-        mainContent.appendChild(customSection10);
+     
         }
 
     }
