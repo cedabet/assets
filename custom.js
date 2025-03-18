@@ -148,7 +148,7 @@
 </style>
     `;
 
-            mainContent.appendChild(customSection);
+        
         }
 
     }
