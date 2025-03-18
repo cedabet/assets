@@ -72,76 +72,52 @@
             customSection.classList.add("section", "custom-section");
 
             customSection.innerHTML = `
-        <div style="text-align: center; padding: 1.5rem 1rem; max-width: 1200px; margin: 0 auto;">
-  <h1 style="font-size: 1.875rem; font-weight: bold; margin: 0; color: white;">CedaBet Features</h1>
-</div>
-
-<div style="width: 100%; padding: 1rem 1rem 2rem; max-width: 1200px; margin: 0 auto; padding-left: 24px; padding-right: 24px;">
-  <div style="opacity: 0.95;display: grid; grid-template-columns: repeat(4, 1fr); gap: 1rem; width: 100%;">
-
-    <!-- VIP Feature -->
-    <div style="display: flex; flex-direction: column;">
-      <a href="/vip" style="display: block; text-decoration: none; height: 100%; transition: transform 0.2s;" onmouseover="this.style.transform='scale(1.02)'" onmouseout="this.style.transform='scale(1)'">
-        <div style="display: flex; align-items: flex-start; gap: 1rem; padding: 1.25rem; border-radius: 0.75rem; height: 100%; box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px; background: linear-gradient(to right, rgb(245, 158, 11), rgb(234, 179, 8)); transition: box-shadow 0.2s;" onmouseover="this.style.boxShadow='0 10px 15px rgba(0, 0, 0, 0.1)'" onmouseout="this.style.boxShadow='0 4px 6px rgba(0, 0, 0, 0.1)'">
-          <div style="display: flex; align-items: center; justify-content: center; width: 3rem; height: 3rem; border-radius: 0.5rem; flex-shrink: 0; background-color: #192430;">
-            <i class="fa-solid fa-crown" style="font-size: 1.5rem; color: rgb(234, 179, 8);"></i>
-          </div>
-          <div style="flex: 1;">
-            <h3 style="margin: 0 0 0.25rem 0; font-weight: bold; color: white; font-size: 1.125rem;">VIP Club</h3>
-            <p style="margin: 0; color: rgba(255, 255, 255, 0.9); font-size: 0.875rem;">Unlock elite rewards and distinctive perks as a valued member!</p>
-          </div>
-        </div>
-      </a>
-    </div>
-
-    <!-- Tournament Feature -->
-    <div style="display: flex; flex-direction: column;">
-      <a href="/tournaments" style="display: block; text-decoration: none; height: 100%; transition: transform 0.2s;" onmouseover="this.style.transform='scale(1.02)'" onmouseout="this.style.transform='scale(1)'">
-        <div style="display: flex; align-items: flex-start; gap: 1rem; padding: 1.25rem; border-radius: 0.75rem; height: 100%; box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px; background: linear-gradient(to right, rgb(245, 158, 11), rgb(234, 179, 8)); transition: box-shadow 0.2s;" onmouseover="this.style.boxShadow='0 10px 15px rgba(0, 0, 0, 0.1)'" onmouseout="this.style.boxShadow='0 4px 6px rgba(0, 0, 0, 0.1)'">
-          <div style="display: flex; align-items: center; justify-content: center; width: 3rem; height: 3rem; border-radius: 0.5rem; flex-shrink: 0; background-color: #192430;">
-            <i class="fa-solid fa-trophy" style="font-size: 1.5rem; color: rgb(234, 179, 8);"></i>
-          </div>
-          <div style="flex: 1;">
-            <h3 style="margin: 0 0 0.25rem 0; font-weight: bold; color: white; font-size: 1.125rem;">Tournaments </h3>
-            <p style="margin: 0; color: rgba(255, 255, 255, 0.9); font-size: 0.875rem;">Join CedaBet contests, beat rivals, win rewards!</p>
-          </div>
-        </div>
-      </a>
-    </div>
-
-    <!-- Promotions Feature -->
-    <div style="display: flex; flex-direction: column;">
-      <a href="/promotions" style="display: block; text-decoration: none; height: 100%; transition: transform 0.2s;" onmouseover="this.style.transform='scale(1.02)'" onmouseout="this.style.transform='scale(1)'">
-        <div style="display: flex; align-items: flex-start; gap: 1rem; padding: 1.25rem; border-radius: 0.75rem; height: 100%; box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px; background: linear-gradient(to right, rgb(245, 158, 11), rgb(234, 179, 8)); transition: box-shadow 0.2s;" onmouseover="this.style.boxShadow='0 10px 15px rgba(0, 0, 0, 0.1)'" onmouseout="this.style.boxShadow='0 4px 6px rgba(0, 0, 0, 0.1)'">
-          <div style="display: flex; align-items: center; justify-content: center; width: 3rem; height: 3rem; border-radius: 0.5rem; flex-shrink: 0; background-color: #192430;">
-            <i class="fa-solid fa-gift" style="font-size: 1.5rem; color: rgb(234, 179, 8);"></i>
-          </div>
-          <div style="flex: 1;">
-            <h3 style="margin: 0 0 0.25rem 0; font-weight: bold; color: white; font-size: 1.125rem;">Promotions</h3>
-            <p style="margin: 0; color: rgba(255, 255, 255, 0.9); font-size: 0.875rem;">Amplify your winnings with daily, weekly, and monthly bonus deals!</p>
-          </div>
-        </div>
-      </a>
-    </div>
-
-    <!-- Enhanced RTP Feature -->
-    <div style="display: flex; flex-direction: column;">
-      <a href="/casino/group/enhanced-rtp" style="display: block; text-decoration: none; height: 100%; transition: transform 0.2s;" onmouseover="this.style.transform='scale(1.02)'" onmouseout="this.style.transform='scale(1)'">
-        <div style="display: flex; align-items: flex-start; gap: 1rem; padding: 1.25rem; border-radius: 0.75rem; height: 100%; box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px; background: linear-gradient(to right, rgb(245, 158, 11), rgb(234, 179, 8)); transition: box-shadow 0.2s;" onmouseover="this.style.boxShadow='0 10px 15px rgba(0, 0, 0, 0.1)'" onmouseout="this.style.boxShadow='0 4px 6px rgba(0, 0, 0, 0.1)'">
-          <div style="display: flex; align-items: center; justify-content: center; width: 3rem; height: 3rem; border-radius: 0.5rem; flex-shrink: 0; background-color: #192430;">
-            <i class="fa-solid fa-star" style="font-size: 1.5rem; color: rgb(234, 179, 8);"></i>
-          </div>
-          <div style="flex: 1;">
-            <h3 style="margin: 0 0 0.25rem 0; font-weight: bold; color: white; font-size: 1.125rem;">Elevated RTP</h3>
-            <p style="margin: 0; color: rgba(255, 255, 255, 0.9); font-size: 0.875rem;">Experience better odds with our exclusive high RTP games.</p>
-          </div>
-        </div>
-      </a>
-    </div>
-
-  </div>
-</div>
-
+       <div id="custom-section-9" class="section custom-section">
+					<div class="container">
+						<div class="row">
+							<div class="col-12 col-lg-6 col-xl-3 mt-2 mt-md-0 d-flex">
+								<a href="tournaments" class="d-flex">
+									<div class="box d-flex justify-content-evenly align-items-center gap-3 rounded-4 px-4 py-3">
+										<div class="box-icon icon-tournament rounded-3 p-3">
+											<i class="icon fa-solid fa-trophy fs-3 align-middle text-center text-black"></i>
+										</div>
+										<p class="mb-0 text-white opacity-75">Join Cedabet tournaments, defeat rivals, and win rewards!</p>
+									</div>
+								</a>
+							</div>
+							<div class="col-12 col-lg-6 col-xl-3 mt-2 mt-md-0 d-flex">
+								<a href="vip" class="d-flex">
+									<div class="box d-flex justify-content-evenly align-items-center gap-3 rounded-4 px-4 py-3">
+										<div class="box-icon icon-vip rounded-3 p-3">
+											<i class="icon fa-solid fa-crown fs-3 align-middle text-center text-black"></i>
+										</div>
+										<p class="mb-0 text-white opacity-75">Become a VIP and enjoy exclusive bonuses and opportunities!</p>
+									</div>
+								</a>
+							</div>
+							<div class="col-12 col-lg-6 col-xl-3 mt-2 mt-lg-0 d-flex">
+								<a href="promotions" class="d-flex">
+									<div class="box d-flex justify-content-evenly align-items-center gap-3 rounded-4 px-4 py-3">
+										<div class="box-icon icon-promotion rounded-3 p-3">
+											<i class="icon fa-solid fa-gift fs-3 align-middle text-center text-black"></i>
+										</div>
+										<p class="mb-0 text-white opacity-75">Boost your earnings with instant, weekly, and monthly bonuses!</p>
+									</div>
+								</a>
+							</div>
+							<div class="col-12 col-lg-6 col-xl-3 mt-2 mt-lg-0 d-flex">
+							  <a href="casino/group/enhanced-rtp" class="d-flex">
+									<div class="box d-flex justify-content-evenly align-items-center gap-3 rounded-4 px-4 py-3">
+										<div class="box-icon icon-rtp rounded-3 p-3">
+											<i class="icon fa-solid fa-chart-pie fs-3 align-middle text-center text-black"></i>
+										</div>
+										<p class="mb-0 text-white opacity-75">Achieve big wins with special offers!</p>
+									</div>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
 <!-- Mobile-only style -->
 <style>
 @@media (max-width: 768px) {
