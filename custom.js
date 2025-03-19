@@ -131,8 +131,9 @@
                   </div>
                   <div class="d-block">
                     <div class="landing-image-mobile mx-auto d-block d-lg-none">
-                      <img class="w-100 h-100" src="https://mobkcaj.github.io/assets/images/4w85hndbspgjxrqc.webp" alt="Casino Character">
+                      <img class="w-100 h-100" src="https://cedabet.github.io/assets/images/sticker.webp" alt="Casino Character">
                     </div>
+		   
                     <div class="details px-4 py-3 rounded-3 d-flex justify-content-start justify-content-md-evenly gap-3 gap-md-4 overflow-x-scroll mb-4 mb-sm-5 flex-wrap flex-sm-nowrap">
                       <div class="item d-flex align-items-center gap-3">
                         <i class="fa-solid fa-fire fs-2"></i>
