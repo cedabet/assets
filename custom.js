@@ -556,8 +556,8 @@
         <div class="steps-container">
             <!-- Step 1 -->
             <div class="step">
-                <span class="step-number">01</span>
-                <span class="step-text">Register an account</span>
+                <span class="step-number">04</span>
+                <span class="step-text">Enjoy exclusive rewards</span>
             </div>
             
             <!-- Divider -->
@@ -565,8 +565,9 @@
             
             <!-- Step 2 -->
             <div class="step">
-                <span class="step-number">02</span>
-                <span class="step-text">Make a Deposit &amp; Play</span>
+                <span class="step-number">05</span>
+                <span class="step-text">
+		Unlock special promotions</span>
             </div>
             
             <!-- Divider -->
@@ -574,8 +575,8 @@
             
             <!-- Step 3 -->
             <div class="step">
-                <span class="step-number">03</span>
-                <span class="step-text">Get 10% Weekly Cashback</span>
+                <span class="step-number">06</span>
+                <span class="step-text">Win big, every time!</span>
             </div>
         </div>
         
