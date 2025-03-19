@@ -236,7 +236,7 @@
         }
 
         .step-text {
-            font-size: 18px;
+            font-size: 14px;
         }
 
         .steps-section {
