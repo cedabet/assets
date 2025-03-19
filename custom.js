@@ -240,7 +240,7 @@
         }
 
         .steps-section {
-            padding: 20px 40px 40px 40px;
+            padding: 28px 40px 40px 40px;
         }
     }
 </style>
