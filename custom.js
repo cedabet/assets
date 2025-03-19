@@ -79,6 +79,9 @@
    	    let customSection4 = document.createElement("div");
             customSection4.id = "custom-section-6";
             customSection4.classList.add("section", "custom-section");
+            let customSection5 = document.createElement("div");
+            customSection5.id = "custom-section-7";
+            customSection5.classList.add("section", "custom-section");
 
             customSection.innerHTML = `
 	   <div class="container">
@@ -546,6 +549,43 @@
         </div>
     </div>
 </div>`;
+
+		customSection5.innerHTML=`<div class="container">
+    <div class="steps-section">
+        <!-- Steps container -->
+        <div class="steps-container">
+            <!-- Step 1 -->
+            <div class="step">
+                <span class="step-number">01</span>
+                <span class="step-text">Register an account</span>
+            </div>
+            
+            <!-- Divider -->
+            <div class="divider"></div>
+            
+            <!-- Step 2 -->
+            <div class="step">
+                <span class="step-number">02</span>
+                <span class="step-text">Make a Deposit &amp; Play</span>
+            </div>
+            
+            <!-- Divider -->
+            <div class="divider"></div>
+            
+            <!-- Step 3 -->
+            <div class="step">
+                <span class="step-number">03</span>
+                <span class="step-text">Get 10% Weekly Cashback</span>
+            </div>
+        </div>
+        
+        <!-- Join Now Button -->
+        <div class="button-container">
+            <button class="join-button">Join Now</button>
+        </div>
+    </div>
+</div>`;
+		
 /*customSection2.innerHTML = `
     <div class="container">
         <div class="position-relative m-auto mt-lg-4">
@@ -965,6 +1005,7 @@
   `
                   mainContent.appendChild(customSection3);
 		mainContent.appendChild(customSection);
+		mainContent.appendChild(customSection5);
 		//   mainContent.appendChild(customSection2);
 		 mainContent.appendChild(customSection4);
 
