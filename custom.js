@@ -78,9 +78,10 @@
             customSection3.classList.add("section", "custom-section");
 
             customSection.innerHTML = `
-	    <div id="sports-section" style="position: relative; width: 100%; margin: 0 auto; background-color: #0a2472; background-image: linear-gradient(to right, #0a2472, #1e3799); border-radius: 16px; padding: 40px; color: white; font-family: Arial, sans-serif; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); box-sizing: border-box; margin-top: 44px;">
-   <div class="container">
-  
+	   <div class="container">
+   
+     <div id="sports-section" style="position: relative; width: 100%; margin: 0 auto; background-color: #0a2472; background-image: linear-gradient(to right, #0a2472, #1e3799); border-radius: 16px; padding: 40px; color: white; font-family: Arial, sans-serif; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); box-sizing: border-box; margin-top: 44px;">
+
     <div id="content-wrapper" style="
       display: flex;
       flex-direction: column;
