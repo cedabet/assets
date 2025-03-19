@@ -379,7 +379,7 @@
         </div>
     </div>
 </div>`;
-customSection.innerHTML = `
+customSection2.innerHTML = `
     <div class="container">
         <div class="position-relative m-auto mt-lg-4">
             <div class="landing casino overflow-hidden position-relative rounded-4 p-3 px-md-5 py-md-4">
