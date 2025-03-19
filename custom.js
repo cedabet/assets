@@ -196,7 +196,7 @@
 
     .button-container {
         position: absolute;
-        bottom: -25px;
+        bottom: -20px; /* Adjusted to account for smaller button */
         left: 0;
         right: 0;
         display: flex;
@@ -204,22 +204,22 @@
     }
 
     .join-button {
-        background: linear-gradient(to right, #8A2387, #D4AF37); /* Purple to gold gradient */
+        background: linear-gradient(to right, #7A0000, #C70039); /* Deep burgundy/maroon gradient */
         color: white;
         border: none;
-        padding: 14px 40px;
-        font-size: 18px;
+        padding: 10px 30px; /* Reduced padding to make button smaller */
+        font-size: 16px; /* Reduced font size */
         font-weight: 600;
         border-radius: 50px;
         cursor: pointer;
-        box-shadow: 0 4px 15px rgba(212, 175, 55, 0.5);
+        box-shadow: 0 4px 15px rgba(199, 0, 57, 0.5);
         text-transform: uppercase;
         letter-spacing: 1px;
         transition: all 0.3s ease;
     }
 
     .join-button:hover {
-        box-shadow: 0 6px 20px rgba(212, 175, 55, 0.7);
+        box-shadow: 0 6px 20px rgba(199, 0, 57, 0.7);
     }
 
     /* Media queries for responsive design */
