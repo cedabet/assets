@@ -22,7 +22,7 @@ var sidebarBtn = document.querySelector(".sidebar__btn");
 
 sidebarBtn.addEventListener("click", function() {
     var sportspath2 = window.location.pathname;
-
+alert(sportspath2);
     // Eğer sayfa "/en/sportsbook" değilse, işlem yapma
     if (sportspath2 !== "/en/sportsbook") {
         return; // Sayfa "/en/sportsbook" değilse, işlem yapılmaz
