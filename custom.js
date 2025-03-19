@@ -73,180 +73,339 @@
   	    let customSection2 = document.createElement("div");
             customSection2.id = "custom-section-4";
             customSection2.classList.add("section", "custom-section");
+            let customSection3 = document.createElement("div");
+            customSection3.id = "custom-section-5";
+            customSection3.classList.add("section", "custom-section");
 
-            /*customSection.innerHTML = `
-       <div id="custom-section-9" class="section custom-section">
-					<div class="container">
-						<div class="row">
-							<div class="col-12 col-lg-6 col-xl-3 mt-2 mt-md-0 d-flex">
-								<a href="tournaments" class="d-flex">
-									<div class="box d-flex justify-content-evenly align-items-center gap-3 rounded-4 px-4 py-3">
-										<div class="box-icon icon-tournament rounded-3 p-3">
-											<i class="icon fa-solid fa-trophy fs-3 align-middle text-center text-black"></i>
-										</div>
-										<p class="mb-0 text-white opacity-75">Join Cedabet tournaments, defeat rivals, and win rewards!</p>
-									</div>
-								</a>
-							</div>
-							<div class="col-12 col-lg-6 col-xl-3 mt-2 mt-md-0 d-flex">
-								<a href="vip" class="d-flex">
-									<div class="box d-flex justify-content-evenly align-items-center gap-3 rounded-4 px-4 py-3">
-										<div class="box-icon icon-vip rounded-3 p-3">
-											<i class="icon fa-solid fa-crown fs-3 align-middle text-center text-black"></i>
-										</div>
-										<p class="mb-0 text-white opacity-75">Become a VIP and enjoy exclusive bonuses and opportunities!</p>
-									</div>
-								</a>
-							</div>
-							<div class="col-12 col-lg-6 col-xl-3 mt-2 mt-lg-0 d-flex">
-								<a href="promotions" class="d-flex">
-									<div class="box d-flex justify-content-evenly align-items-center gap-3 rounded-4 px-4 py-3">
-										<div class="box-icon icon-promotion rounded-3 p-3">
-											<i class="icon fa-solid fa-gift fs-3 align-middle text-center text-black"></i>
-										</div>
-										<p class="mb-0 text-white opacity-75">Boost your earnings with instant, weekly, and monthly bonuses!</p>
-									</div>
-								</a>
-							</div>
-							<div class="col-12 col-lg-6 col-xl-3 mt-2 mt-lg-0 d-flex">
-							  <a href="casino/group/enhanced-rtp" class="d-flex">
-									<div class="box d-flex justify-content-evenly align-items-center gap-3 rounded-4 px-4 py-3">
-										<div class="box-icon icon-rtp rounded-3 p-3">
-											<i class="icon fa-solid fa-chart-pie fs-3 align-middle text-center text-black"></i>
-										</div>
-										<p class="mb-0 text-white opacity-75">Achieve big wins with special offers!</p>
-									</div>
-								</a>
-							</div>
-						</div>
-					</div>
-				</div>
-    <div id="custom-section-4" class="section custom-section">
-          <div class="container">
-            <div class="position-relative m-auto mt-lg-4">
-              <div class="landing casino overflow-hidden position-relative rounded-4 p-3 px-md-5 py-md-4">
-                <div class="landing-inner position-relative text-white p-2 p-sm-4">
-                  <div class="d-block mb-2 mb-sm-3 mb-lg-5">
-                    <h1 class="fw-bold lh-sm mb-0">Countless ways to achieve big wins with thousands of exciting games.</h1>
-                  </div>
-                  <div class="d-block">
-                    <div class="landing-image-mobile mx-auto d-block d-lg-none">
-                      <img class="w-100 h-100" src="https://cedabet.github.io/assets/images/sticker.webp" alt="Casino Character">
-                    </div>
-		   
-                    <div class="details px-4 py-3 rounded-3 d-flex justify-content-start justify-content-md-evenly gap-3 gap-md-4 overflow-x-scroll mb-4 mb-sm-5 flex-wrap flex-sm-nowrap">
-                      <div class="item d-flex align-items-center gap-3">
-                        <i class="fa-solid fa-fire fs-2"></i>
-                        <a href="casino/group/new-releases" class="d-block">
-                          <span class="icon-text fw-bold text-nowrap">New Releases</span>
-                        </a>
-                      </div>
-                      <div class="item d-flex align-items-center gap-3">
-                        <i class="fa-solid fa-rocket fs-2"></i>
-                        <a href="casino/group/enhanced-rtp" class="d-block">
-                          <span class="icon-text fw-bold text-nowrap">High RTP</span>
-                        </a>
-                      </div>
-                      <div class="item d-flex align-items-center gap-3">
-                        <i class="fa-solid fa-dice fs-2"></i>
-                        <a href="live-casino" class="d-block">
-                          <span class="icon-text fw-bold text-nowrap">Live Casino</span>
-                        </a>
-                      </div>
-                      <div class="item d-flex align-items-center gap-3">
-                        <i class="fa-solid fa-trophy fs-2"></i>
-                        <a href="tournaments" class="d-block">
-                          <span class="icon-text fw-bold text-nowrap">Tournaments</span>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="d-block text-end text-lg-start pt-2 pt-sm-0">
-                    <a href="javascript:void(0);" class="landing-button d-inline-block align-middle rounded-3 text-center" data-href="casino">Explore the Casino Section</a>
-                  </div>
-                </div>
-              </div>
-              <div class="landing-image position-absolute bottom-0 ps-4 pt-4 d-none d-lg-block">
-                <img class="w-100 h-100 pe-none" src="https://cedabet.github.io/assets/images/sticker.webp" alt="Casino Character">
-              </div>
+            customSection.innerHTML = `<div id="sports-section" style="position: relative; width: 100%; max-width: 1200px; margin: 0 auto; background-color: #0a2472; background-image: linear-gradient(to right, #0a2472, #1e3799); border-radius: 16px; padding: 40px; color: white; font-family: Arial, sans-serif; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); box-sizing: border-box; margin-top: 44px;">
+    <div id="content-wrapper" style="
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 100%;
+      max-width: 60%;
+      position: relative;
+      z-index: 2;
+    ">
+      <div>
+        <h1 id="main-heading" style="font-size: 2.5rem; font-weight: 800; line-height: 1.1; margin-bottom: 40px; margin-top: 0; max-width: 800px;">
+          Be part of the game by betting on the biggest moments in sports.
+        </h1>
+      </div>
+      
+      <!-- Compact Card Design for Icons Section -->
+      <div id="icons-section" style="margin-top: 30px;">
+        <div style="display: flex; gap: 10px; flex-wrap: wrap;">
+          <!-- Sports -->
+          <a href="#" class="category-card" style="
+            flex: 1;
+            min-width: 110px;
+            background-color: #0c2b85;
+            border-radius: 8px;
+            padding: 10px 12px;
+            text-decoration: none;
+            color: white;
+            position: relative;
+            overflow: hidden;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            border-left: 3px solid #ffffff;
+            display: flex;
+            align-items: center;
+          ">
+            <div class="category-icon" style="
+              font-size: 24px;
+              margin-right: 10px;
+              transition: all 0.3s ease;
+            ">⚽</div>
+            <div>
+              <div style="
+                font-weight: 600;
+                font-size: 13px;
+                color: #ffffff;
+                line-height: 1.2;
+              ">Sports</div>
+              <div style="
+                font-size: 11px;
+                color: rgba(255, 255, 255, 0.6);
+              ">All leagues</div>
             </div>
-            <div class="position-relative m-auto mt-lg-5">
-              <div class="landing sports overflow-hidden position-relative rounded-4 p-3 px-md-5 py-md-4 mt-4">
-                <div class="landing-inner position-relative text-white p-2 p-sm-4">
-                  <div class="d-block mb-2 mb-sm-3 mb-lg-5">
-                    <h1 class="fw-bold lh-sm mb-0">Be part of the game by betting on the biggest moments in sports.</h1>
-                  </div>
-                  <div class="d-block">
-                    <div class="landing-image-mobile mx-auto d-block d-lg-none">
-                      <img class="w-100 h-100" src="https://mobkcaj.github.io/assets/images/7xmhb6qu3prt4sza.webp" alt="Sports Character">
-                    </div>
-                    <div class="details px-4 py-3 rounded-3 d-flex justify-content-start justify-content-md-evenly gap-3 gap-md-4 overflow-x-scroll mb-4 mb-sm-5 flex-wrap flex-sm-nowrap">
-                      <div class="item d-flex align-items-center gap-3">
-                        <i class="fa-solid fa-futbol fs-2"></i>
-                        <a href="sportsbook/sports" class="d-block">
-                          <span class="icon-text fw-bold text-nowrap">Sports</span>
-                        </a>
-                      </div>
-                      <div class="item d-flex align-items-center gap-3">
-                        <i class="fa-solid fa-gamepad fs-2"></i>
-                        <a href="sportsbook" class="d-block">
-                          <span class="icon-text fw-bold text-nowrap">Esports</span>
-                        </a>
-                      </div>
-                      <div class="item d-flex align-items-center gap-3">
-                        <i class="fa-solid fa-play-circle fs-2"></i>
-                        <a href="sportsbook/live-betting" class="d-block">
-                          <span class="icon-text fw-bold text-nowrap">Live Streams</span>
-                        </a>
-                      </div>
-                      <div class="item d-flex align-items-center gap-3">
-                        <i class="fa-solid fa-bolt fs-2"></i>
-                        <a href="sportsbook" class="d-block">
-                          <span class="icon-text fw-bold text-nowrap">Boosted Odds</span>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="d-block text-end text-lg-start pt-2 pt-sm-0">
-                    <a href="javascript:void(0);" class="landing-button d-inline-block align-middle rounded-3 text-center" data-href="sportsbook">Explore the Sports Section</a>
-                  </div>
-                </div>
-              </div>
-              <div class="landing-image position-absolute bottom-0 ps-4 pt-4 d-none d-lg-block">
-                <img class="w-100 h-100 pe-none" src="https://mobkcaj.github.io/assets/images/7xmhb6qu3prt4sza.webp" alt="Sports Character">
-              </div>
+          </a>
+          
+          <!-- Esports -->
+          <a href="#" class="category-card" style="
+            flex: 1;
+            min-width: 110px;
+            background-color: #0c2b85;
+            border-radius: 8px;
+            padding: 10px 12px;
+            text-decoration: none;
+            color: white;
+            position: relative;
+            overflow: hidden;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            border-left: 3px solid #3a9fff;
+            display: flex;
+            align-items: center;
+          ">
+            <div class="category-icon" style="
+              font-size: 24px;
+              margin-right: 10px;
+              transition: all 0.3s ease;
+            ">🎮</div>
+            <div>
+              <div style="
+                font-weight: 600;
+                font-size: 13px;
+                color: #ffffff;
+                line-height: 1.2;
+              ">Esports</div>
+              <div style="
+                font-size: 11px;
+                color: rgba(255, 255, 255, 0.6);
+              ">Top tournaments</div>
             </div>
-          </div>
+          </a>
+          
+          <!-- Live Streams -->
+          <a href="#" class="category-card" style="
+            flex: 1;
+            min-width: 110px;
+            background-color: #0c2b85;
+            border-radius: 8px;
+            padding: 10px 12px;
+            text-decoration: none;
+            color: white;
+            position: relative;
+            overflow: hidden;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            border-left: 3px solid #ff3a6f;
+            display: flex;
+            align-items: center;
+          ">
+            <div class="category-icon" style="
+              font-size: 24px;
+              margin-right: 10px;
+              transition: all 0.3s ease;
+            ">▶️</div>
+            <div>
+              <div style="
+                font-weight: 600;
+                font-size: 13px;
+                color: #ffffff;
+                line-height: 1.2;
+              ">Live Streams</div>
+              <div style="
+                font-size: 11px;
+                color: rgba(255, 255, 255, 0.6);
+              ">Watch live</div>
+            </div>
+          </a>
+          
+          <!-- Boosted Odds -->
+          <a href="#" class="category-card" style="
+            flex: 1;
+            min-width: 110px;
+            background-color: #0c2b85;
+            border-radius: 8px;
+            padding: 10px 12px;
+            text-decoration: none;
+            color: white;
+            position: relative;
+            overflow: hidden;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            border-left: 3px solid #ffcc00;
+            display: flex;
+            align-items: center;
+          ">
+            <div class="category-icon" style="
+              font-size: 24px;
+              margin-right: 10px;
+              transition: all 0.3s ease;
+            ">⚡</div>
+            <div>
+              <div style="
+                font-weight: 600;
+                font-size: 13px;
+                color: #ffffff;
+                line-height: 1.2;
+              ">Boosted Odds</div>
+              <div style="
+                font-size: 11px;
+                color: rgba(255, 255, 255, 0.6);
+              ">Better payouts</div>
+            </div>
+          </a>
         </div>
-<!-- Mobile-only style -->
-<style>
-@@media (max-width: 768px) {
-  div[style*="grid-template-columns: repeat(4, 1fr)"] {
-    display: flex !important;
-    overflow-x: auto !important;
-    scroll-snap-type: x mandatory !important;
-    gap: 1rem !important;
-    padding-bottom: 1rem !important;
-  }
+      </div>
+      
+      <!-- Explore button with original gold gradient -->
+      <div style="margin-top: 40px; width: 100%;">
+        <a id="explore-button" href="#" style="
+          display: inline-flex;
+          align-items: center;
+          justify-content: center;
+          background: linear-gradient(135deg, #ffcc00, #ff9500);
+          background-size: 200% 200%;
+          color: #0f1923;
+          padding: 14px 28px;
+          border-radius: 8px;
+          text-decoration: none;
+          font-weight: 800;
+          font-size: 15px;
+          text-transform: uppercase;
+          letter-spacing: 0.5px;
+          transition: all 0.3s ease;
+          box-shadow: 0 4px 10px rgba(255, 204, 0, 0.3);
+          position: relative;
+          border: none;
+          box-sizing: border-box;
+        ">
+          <span style="position: relative; z-index: 2;">EXPLORE THE SPORTS SECTION</span>
+          <span class="button-arrow" style="
+            margin-left: 12px;
+            font-size: 18px;
+            transition: transform 0.3s ease;
+            position: relative;
+            z-index: 2;
+          ">→</span>
+          <span style="
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            background: rgba(0, 0, 0, 0.1);
+            border-bottom-left-radius: 8px;
+            border-bottom-right-radius: 8px;
+          "></span>
+        </a>
+      </div>
+    </div>
+    
+    <!-- Astronaut Image with Soccer Ball -->
+    <div id="image-wrapper" style="
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      top: 0;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      width: 50%;
+      z-index: 1;
+    ">
+      <img id="astronaut-image" src="https://cedabet.github.io/assets/images/sticker2.webp " alt="Astronaut holding soccer ball" style="max-height: 500px; max-width: 100%; object-fit: contain; bottom: 0px; position: absolute;">
+    </div>
+  </div>
 
-  div[style*="grid-template-columns: repeat(4, 1fr)"] > div {
-    flex: 0 0 85% !important;
-    scroll-snap-align: start !important;
-  }
+  <script>
+    // Responsive handling
+    function adjustForScreenSize() {
+      const section = document.getElementById('sports-section');
+      const contentWrapper = document.getElementById('content-wrapper');
+      const heading = document.getElementById('main-heading');
+      const iconsSection = document.getElementById('icons-section');
+      const imageWrapper = document.getElementById('image-wrapper');
+      const astronautImage = document.getElementById('astronaut-image');
+      const categoryCards = document.querySelectorAll('.category-card');
+      const exploreButton = document.getElementById('explore-button');
+      
+      if (window.innerWidth <= 768) {
+        // Mobile styles
+        section.style.padding = '30px 20px';
+        contentWrapper.style.maxWidth = '100%';
+        heading.style.fontSize = '1.8rem';
+        
+        // Move image to the top on mobile
+        section.style.display = 'flex';
+        section.style.flexDirection = 'column';
+        
+        imageWrapper.style.position = 'relative';
+        imageWrapper.style.width = '100%';
+        imageWrapper.style.height = '250px';
+        imageWrapper.style.marginBottom = '20px';
+        imageWrapper.style.order = '1';
+        imageWrapper.style.alignItems = 'center';
+        imageWrapper.style.justifyContent = 'center';
+        
+        contentWrapper.style.order = '2';
+        
+        astronautImage.style.position = 'relative';
+        astronautImage.style.maxHeight = '250px';
+        astronautImage.style.margin = '0 auto';
+        astronautImage.style.display = 'block';
+        astronautImage.style.bottom = 'auto';
+        
+        // Fix button width for mobile
+        exploreButton.style.width = '100%';
+        exploreButton.style.boxSizing = 'border-box';
+        
+        // Adjust cards for mobile
+        if (window.innerWidth <= 480) {
+          categoryCards.forEach(card => {
+            card.style.minWidth = 'calc(50% - 5px)';
+            card.style.flex = '0 0 calc(50% - 5px)';
+          });
+          
+          // Smaller text and padding for very small screens
+          exploreButton.style.fontSize = '13px';
+          exploreButton.style.padding = '12px 16px';
+          
+          // Hide arrow on very small screens if text is too long
+          if (window.innerWidth < 360) {
+            document.querySelector('.button-arrow').style.display = 'none';
+          } else {
+            document.querySelector('.button-arrow').style.display = 'inline';
+          }
+        }
+      } else {
+        // Desktop styles - reset to original
+        section.style.padding = '40px';
+        section.style.display = 'block';
+        contentWrapper.style.maxWidth = '60%';
+        contentWrapper.style.order = 'initial';
+        heading.style.fontSize = '2.5rem';
+        
+        imageWrapper.style.position = 'absolute';
+        imageWrapper.style.width = '50%';
+        imageWrapper.style.marginBottom = '0';
+        imageWrapper.style.order = 'initial';
+        imageWrapper.style.height = 'auto';
+        imageWrapper.style.alignItems = 'center';
+        imageWrapper.style.justifyContent = 'flex-end';
+        
+        astronautImage.style.position = 'absolute';
+        astronautImage.style.maxHeight = '500px';
+        astronautImage.style.margin = '0';
+        astronautImage.style.bottom = '0px';
+        
+        // Reset button for desktop
+        exploreButton.style.width = 'auto';
+        exploreButton.style.fontSize = '15px';
+        exploreButton.style.padding = '14px 28px';
+        document.querySelector('.button-arrow').style.display = 'inline';
+        
+        // Reset cards for desktop
+        categoryCards.forEach(card => {
+          card.style.minWidth = '110px';
+          card.style.flex = '1';
+        });
+      }
+    }
 
-  div[style*="grid-template-columns: repeat(4, 1fr)"]::-webkit-scrollbar {
-    display: none !important;
-  }
+    // Run on load and resize
+    window.addEventListener('load', adjustForScreenSize);
+    window.addEventListener('resize', adjustForScreenSize);
+    
+    // Initial call
+    adjustForScreenSize();
+  </script> `;
 
-  div[style*="grid-template-columns: repeat(4, 1fr)"] {
-    -ms-overflow-style: none !important; 
-    scrollbar-width: none !important; 
-  }
-}
-</style>
-    `;*/
-
-		customSection.innerHTML = `
+		customSection3.innerHTML = `
   <style>
     .steps-section {
         position: relative;
@@ -431,7 +590,8 @@ customSection2.innerHTML = `
     
     </div>
 `
-                   mainContent.appendChild(customSection);
+                  mainContent.appendChild(customSection3);
+		mainContent.appendChild(customSection);
 		   mainContent.appendChild(customSection2);
 
         }
