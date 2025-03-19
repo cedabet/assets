@@ -10,8 +10,14 @@
         let isFirstLoad = true; 
         if (isFirstLoad) {
             loadVipFeatures();
+			  var sportspath = window.location.pathname;
+ if (sportspath === "/en/sportsbook") {
+                 var sidebar = document.getElementById("sidebar");
+		sidebar.classList.add("active");
+                }
             isFirstLoad = false;
         }
+
         function checkUrlChange() {
             if (location.href !== lastUrl) {
                 lastUrl = location.href;
@@ -29,9 +35,8 @@
                 }
 	        
 		  else if (path === "/en/sportsbook") {
-	        alert("VIP sayfasına hoş geldiniz!");
-		var sidebar = document.getElementById("sidebar");
-		sidebar.classList.add("active");
+	          /* alert("VIP sayfasına hoş geldiniz!");*/
+		
                 }
 
 
