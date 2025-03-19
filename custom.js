@@ -425,7 +425,7 @@ customSection2.innerHTML = `
                 </div>
             </div>
             <div class="landing-image position-absolute bottom-0 ps-4 pt-4 d-none d-lg-block">
-                <img class="w-100 h-100 pe-none" src="https://mobkcaj.github.io/assets/images/4w85hndbspgjxrqc.webp" alt="Casino Character">
+                <img class="w-100 h-100 pe-none" src="https://cedabet.github.io/assets/images/sticker.webp" alt="Casino Character">
             </div>
         </div>
     
