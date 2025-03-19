@@ -76,6 +76,9 @@
             let customSection3 = document.createElement("div");
             customSection3.id = "custom-section-5";
             customSection3.classList.add("section", "custom-section");
+   	    let customSection4 = document.createElement("div");
+            customSection4.id = "custom-section-6";
+            customSection4.classList.add("section", "custom-section");
 
             customSection.innerHTML = `
 	   <div class="container">
@@ -594,9 +597,376 @@ customSection2.innerHTML = `
     
     </div>
 `
+		customSection3.innerHTML = `
+  
+    <style>
+    /* New button hover animation */
+    @@keyframes buttonShine {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    #explore-button:hover {
+      transform: translateY(-2px);
+    }
+
+    #explore-button:hover .button-arrow {
+      transform: translateX(4px);
+    }
+
+    /* Floating animation for icons */
+    @@keyframes float {
+      0% { transform: translateY(0px); }
+      50% { transform: translateY(-3px); }
+      100% { transform: translateY(0px); }
+    }
+
+    .category-card:hover .category-icon {
+      animation: float 2s ease-in-out infinite;
+    }
+
+    .category-card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    }
+    </style>
+
+
+    <div class="container">
+        <div id="casino-section" style="position: relative; width: 100%; margin: 0 auto; background-color: #a01c1c; background-image: linear-gradient(to right, #8a1818, #b92020); border-radius: 16px; padding: 40px; color: white; font-family: Arial, sans-serif; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); box-sizing: border-box; margin-top: 44px;">
+            <div id="content-wrapper" style="
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 100%;
+      max-width: 60%;
+      position: relative;
+      z-index: 2;
+    ">
+                <div>
+                    <h1 id="main-heading" style="font-size: 2rem; font-weight: 800; line-height: 1.1; margin-bottom: 20px; margin-top: 0;">
+                        Countless ways to achieve big wins with thousands of exciting games.
+                    </h1>
+                </div>
+
+                <!-- Compact Card Design for Icons Section -->
+                <div id="icons-section" style="margin-top: 30px;">
+                    <div style="display: flex; gap: 10px; flex-wrap: wrap;">
+                        <!-- New Releases -->
+                        <a href="#" class="category-card" style="
+            flex: 1;
+            min-width: 110px;
+            background-color: #1e1e2d;
+            border-radius: 8px;
+            padding: 10px 12px;
+            text-decoration: none;
+            color: white;
+            position: relative;
+            overflow: hidden;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            border-left: 3px solid #ff5e3a;
+            display: flex;
+            align-items: center;
+          ">
+                            <div class="category-icon" style="
+              font-size: 24px;
+              margin-right: 10px;
+              transition: all 0.3s ease;
+            ">🔥</div>
+                            <div>
+                                <div style="
+                font-weight: 600;
+                font-size: 13px;
+                color: #ffffff;
+                line-height: 1.2;
+              ">New Releases</div>
+                                <div style="
+                font-size: 11px;
+                color: rgba(255, 255, 255, 0.6);
+              ">Latest games</div>
+                            </div>
+                        </a>
+
+                        <!-- High RTP -->
+                        <a href="#" class="category-card" style="
+            flex: 1;
+            min-width: 110px;
+            background-color: #1e1e2d;
+            border-radius: 8px;
+            padding: 10px 12px;
+            text-decoration: none;
+            color: white;
+            position: relative;
+            overflow: hidden;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            border-left: 3px solid #3a9fff;
+            display: flex;
+            align-items: center;
+          ">
+                            <div class="category-icon" style="
+              font-size: 24px;
+              margin-right: 10px;
+              transition: all 0.3s ease;
+            ">🚀</div>
+                            <div>
+                                <div style="
+                font-weight: 600;
+                font-size: 13px;
+                color: #ffffff;
+                line-height: 1.2;
+              ">High RTP</div>
+                                <div style="
+                font-size: 11px;
+                color: rgba(255, 255, 255, 0.6);
+              ">Best payouts</div>
+                            </div>
+                        </a>
+
+                        <!-- Live Casino -->
+                        <a href="#" class="category-card" style="
+            flex: 1;
+            min-width: 110px;
+            background-color: #1e1e2d;
+            border-radius: 8px;
+            padding: 10px 12px;
+            text-decoration: none;
+            color: white;
+            position: relative;
+            overflow: hidden;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            border-left: 3px solid #a03aff;
+            display: flex;
+            align-items: center;
+          ">
+                            <div class="category-icon" style="
+              font-size: 24px;
+              margin-right: 10px;
+              transition: all 0.3s ease;
+            ">🎲</div>
+                            <div>
+                                <div style="
+                font-weight: 600;
+                font-size: 13px;
+                color: #ffffff;
+                line-height: 1.2;
+              ">Live Casino</div>
+                                <div style="
+                font-size: 11px;
+                color: rgba(255, 255, 255, 0.6);
+              ">Real dealers</div>
+                            </div>
+                        </a>
+
+                        <!-- Tournament -->
+                        <a href="#" class="category-card" style="
+            flex: 1;
+            min-width: 110px;
+            background-color: #1e1e2d;
+            border-radius: 8px;
+            padding: 10px 12px;
+            text-decoration: none;
+            color: white;
+            position: relative;
+            overflow: hidden;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            border-left: 3px solid #ffcc00;
+            display: flex;
+            align-items: center;
+          ">
+                            <div class="category-icon" style="
+              font-size: 24px;
+              margin-right: 10px;
+              transition: all 0.3s ease;
+            ">🏆</div>
+                            <div>
+                                <div style="
+                font-weight: 600;
+                font-size: 13px;
+                color: #ffffff;
+                line-height: 1.2;
+              ">Tournament</div>
+                                <div style="
+                font-size: 11px;
+                color: rgba(255, 255, 255, 0.6);
+              ">Compete & win</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Redesigned button with fixed responsive width -->
+                <div style="margin-top: 40px; width: 100%;">
+                    <a id="explore-button" href="#" style="
+          display: inline-flex;
+          align-items: center;
+          justify-content: center;
+          background: linear-gradient(135deg, #ffcc00, #ff9500);
+          background-size: 200% 200%;
+          color: #0f1923;
+          padding: 14px 28px;
+          border-radius: 8px;
+          text-decoration: none;
+          font-weight: 800;
+          font-size: 15px;
+          text-transform: uppercase;
+          letter-spacing: 0.5px;
+          transition: all 0.3s ease;
+          box-shadow: 0 4px 10px rgba(255, 204, 0, 0.3);
+          position: relative;
+          border: none;
+          box-sizing: border-box;
+        ">
+                        <span style="position: relative; z-index: 2;">EXPLORE THE CASINO SECTION</span>
+                        <span class="button-arrow" style="
+            margin-left: 12px;
+            font-size: 18px;
+            transition: transform 0.3s ease;
+            position: relative;
+            z-index: 2;
+          ">→</span>
+                        <span style="
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            background: rgba(0, 0, 0, 0.1);
+            border-bottom-left-radius: 8px;
+            border-bottom-right-radius: 8px;
+          "></span>
+                    </a>
+                </div>
+            </div>
+
+            <div id="image-wrapper" style="
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      top: 0;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      width: 50%;
+      z-index: 1;
+    ">
+                <img id="astronaut-image" src="https://cedabet.github.io/assets/images/sticker.webp" alt="Astronaut with flames" style="max-height: 500px; max-width: 100%; object-fit: contain; bottom: 0px; position: absolute;">
+            </div>
+        </div>
+
+        <script>
+            // Responsive handling
+            function adjustForScreenSize() {
+                const section = document.getElementById('casino-section');
+                const contentWrapper = document.getElementById('content-wrapper');
+                const heading = document.getElementById('main-heading');
+                const iconsSection = document.getElementById('icons-section');
+                const imageWrapper = document.getElementById('image-wrapper');
+                const astronautImage = document.getElementById('astronaut-image');
+                const categoryCards = document.querySelectorAll('.category-card');
+                const exploreButton = document.getElementById('explore-button');
+
+                if (window.innerWidth <= 768) {
+                    // Mobile styles
+                    section.style.padding = '30px 20px';
+                    contentWrapper.style.maxWidth = '100%';
+                    heading.style.fontSize = '1.5rem';
+
+                    // Move image to the top on mobile
+                    section.style.display = 'flex';
+                    section.style.flexDirection = 'column';
+
+                    imageWrapper.style.position = 'relative';
+                    imageWrapper.style.width = '100%';
+                    imageWrapper.style.height = '250px';
+                    imageWrapper.style.marginBottom = '20px';
+                    imageWrapper.style.order = '1';
+                    imageWrapper.style.alignItems = 'center';
+                    imageWrapper.style.justifyContent = 'center';
+
+                    contentWrapper.style.order = '2';
+
+                    astronautImage.style.position = 'relative';
+                    astronautImage.style.maxHeight = '250px';
+                    astronautImage.style.margin = '0 auto';
+                    astronautImage.style.display = 'block';
+                    astronautImage.style.bottom = 'auto';
+
+                    // Fix button width for mobile
+                    exploreButton.style.width = '100%';
+                    exploreButton.style.boxSizing = 'border-box';
+
+                    // Adjust cards for mobile
+                    if (window.innerWidth <= 480) {
+                        categoryCards.forEach(card => {
+                            card.style.minWidth = 'calc(50% - 5px)';
+                            card.style.flex = '0 0 calc(50% - 5px)';
+                        });
+
+                        // Smaller text and padding for very small screens
+                        exploreButton.style.fontSize = '13px';
+                        exploreButton.style.padding = '12px 16px';
+
+                        // Hide arrow on very small screens if text is too long
+                        if (window.innerWidth < 360) {
+                            document.querySelector('.button-arrow').style.display = 'none';
+                        } else {
+                            document.querySelector('.button-arrow').style.display = 'inline';
+                        }
+                    }
+                } else {
+                    // Desktop styles - reset to original
+                    section.style.padding = '40px';
+                    section.style.display = 'block';
+                    contentWrapper.style.maxWidth = '60%';
+                    contentWrapper.style.order = 'initial';
+                    heading.style.fontSize = '2rem';
+
+                    imageWrapper.style.position = 'absolute';
+                    imageWrapper.style.width = '50%';
+                    imageWrapper.style.marginBottom = '0';
+                    imageWrapper.style.order = 'initial';
+                    imageWrapper.style.height = 'auto';
+                    imageWrapper.style.alignItems = 'center';
+                    imageWrapper.style.justifyContent = 'flex-end';
+
+                    astronautImage.style.position = 'absolute';
+                    astronautImage.style.maxHeight = '500px';
+                    astronautImage.style.margin = '0';
+                    astronautImage.style.bottom = '0px';
+
+                    // Reset button for desktop
+                    exploreButton.style.width = 'auto';
+                    exploreButton.style.fontSize = '15px';
+                    exploreButton.style.padding = '14px 28px';
+                    document.querySelector('.button-arrow').style.display = 'inline';
+
+                    // Reset cards for desktop
+                    categoryCards.forEach(card => {
+                        card.style.minWidth = '110px';
+                        card.style.flex = '1';
+                    });
+                }
+            }
+
+            // Run on load and resize
+            window.addEventListener('load', adjustForScreenSize);
+            window.addEventListener('resize', adjustForScreenSize);
+
+            // Initial call
+            adjustForScreenSize();
+        </script>
+    </div>
+
+  `
                   mainContent.appendChild(customSection3);
 		mainContent.appendChild(customSection);
 		   mainContent.appendChild(customSection2);
+		 mainContent.appendChild(customSection4);
 
         }
 
