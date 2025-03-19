@@ -27,20 +27,18 @@ sidebarBtn.addEventListener("click", function() {
         return; // Sayfa "/en/sportsbook" değilse, işlem yapılmaz
     }
 
-    var sidebar = document.getElementById("sidebar");
+  var sidebar = document.getElementById("sidebar");
 
+if (sidebar.className.indexOf("active") === -1) { // 'active' sınıfı yoksa
+    alert("active yok");
+    sidebar.className = ""; // Tüm sınıfları temizle
+    sidebar.classList.add("sidebar", "active"); // 'sidebar' ve 'active' sınıflarını ekle
+} else {
+    alert("active var");
+    sidebar.className = ""; // Tüm sınıfları temizle
+    sidebar.classList.add("sidebar"); // Sadece 'sidebar' sınıfını ekle
+}
 
-
- 
-    if (!sidebar.classList.contains("active")) {
-	    alert("active yok");
-	 sidebar.className = ""; 
-        sidebar.className = "sidebar active"; // 
-    } else {
-	      alert("active var");
-	 sidebar.className = ""; 
-        sidebar.className = "sidebar";
-    }
 });
 
 
