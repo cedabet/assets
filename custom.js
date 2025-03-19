@@ -70,6 +70,9 @@
             let customSection = document.createElement("div");
             customSection.id = "custom-section-9";
             customSection.classList.add("section", "custom-section");
+  	    let customSection2 = document.createElement("div");
+            customSection2.id = "custom-section-4";
+            customSection2.classList.add("section", "custom-section");
 
             /*customSection.innerHTML = `
        <div id="custom-section-9" class="section custom-section">
@@ -376,8 +379,59 @@
         </div>
     </div>
 </div>`;
-
+customSection.innerHTML = `
+    <div class="container">
+        <div class="position-relative m-auto mt-lg-4">
+            <div class="landing casino overflow-hidden position-relative rounded-4 p-3 px-md-5 py-md-4">
+                <div class="landing-inner position-relative text-white p-2 p-sm-4">
+                    <div class="d-block mb-2 mb-sm-3 mb-lg-5">
+                        <h1 class="fw-bold lh-sm mb-0">Countless ways to achieve big wins with thousands of exciting games.</h1>
+                    </div>
+                    <div class="d-block">
+                        <div class="landing-image-mobile mx-auto d-block d-lg-none">
+                            <img class="w-100 h-100" src="https://mobkcaj.github.io/assets/images/4w85hndbspgjxrqc.webp" alt="Casino Character">
+                        </div>
+                        <div class="details px-4 py-3 rounded-3 d-flex justify-content-start justify-content-md-evenly gap-3 gap-md-4 overflow-x-scroll mb-4 mb-sm-5 flex-wrap flex-sm-nowrap">
+                            <div class="item d-flex align-items-center gap-3">
+                                <i class="fa-solid fa-fire fs-2"></i>
+                                <a href="casino/group/new-releases" class="d-block">
+                                    <span class="icon-text fw-bold text-nowrap">New Releases</span>
+                                </a>
+                            </div>
+                            <div class="item d-flex align-items-center gap-3">
+                                <i class="fa-solid fa-rocket fs-2"></i>
+                                <a href="casino/group/enhanced-rtp" class="d-block">
+                                    <span class="icon-text fw-bold text-nowrap">High RTP</span>
+                                </a>
+                            </div>
+                            <div class="item d-flex align-items-center gap-3">
+                                <i class="fa-solid fa-dice fs-2"></i>
+                                <a href="live-casino" class="d-block">
+                                    <span class="icon-text fw-bold text-nowrap">Live Casino</span>
+                                </a>
+                            </div>
+                            <div class="item d-flex align-items-center gap-3">
+                                <i class="fa-solid fa-trophy fs-2"></i>
+                                <a href="tournaments" class="d-block">
+                                    <span class="icon-text fw-bold text-nowrap">Tournaments</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-block text-end text-lg-start pt-2 pt-sm-0">
+                        <a href="javascript:void(0);" class="landing-button d-inline-block align-middle rounded-3 text-center" data-href="casino">Explore the Casino Section</a>
+                    </div>
+                </div>
+            </div>
+            <div class="landing-image position-absolute bottom-0 ps-4 pt-4 d-none d-lg-block">
+                <img class="w-100 h-100 pe-none" src="https://mobkcaj.github.io/assets/images/4w85hndbspgjxrqc.webp" alt="Casino Character">
+            </div>
+        </div>
+    
+    </div>
+`
                    mainContent.appendChild(customSection);
+		   mainContent.appendChild(customSection2);
 
         }
 
