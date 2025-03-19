@@ -148,139 +148,138 @@
 
 		customSection.innerHTML = `
   <style>
-        .steps-section {
-            position: relative;
-            width: 100%;
-            background: linear-gradient(to bottom, #0a0e17, #101725);
-            border-radius: 13px;
-            padding: 20px 20px 40px 20px;
-            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
-            margin: 20px 0 26px 0;
-        }
+    .steps-section {
+        position: relative;
+        width: 100%;
+        background: linear-gradient(to bottom, #0a0e17, #101725);
+        border-radius: 13px;
+        padding: 20px 20px 40px 20px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
+        margin: 20px 0 26px 0;
+    }
 
+    .steps-container {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .step {
+        display: flex;
+        align-items: center;
+    }
+
+    .step-number {
+        color: #D4AF37; /* Gold color */
+        font-size: 32px;
+        font-weight: 700;
+        margin-right: 15px;
+        text-shadow: 0 0 10px rgba(212, 175, 55, 0.5);
+    }
+
+    .step-text {
+        color: white;
+        font-size: 16px;
+        font-weight: 500;
+        letter-spacing: 0.5px;
+    }
+
+    .divider {
+        display: none;
+        width: 80px;
+        height: 1px;
+        background: linear-gradient(to right, rgba(212, 175, 55, 0.1), rgba(212, 175, 55, 0.5), rgba(212, 175, 55, 0.1));
+        margin: 0 10px;
+    }
+
+    .button-container {
+        position: absolute;
+        bottom: -25px;
+        left: 0;
+        right: 0;
+        display: flex;
+        justify-content: center;
+    }
+
+    .join-button {
+        background: linear-gradient(to right, #8A2387, #D4AF37); /* Purple to gold gradient */
+        color: white;
+        border: none;
+        padding: 14px 40px;
+        font-size: 18px;
+        font-weight: 600;
+        border-radius: 50px;
+        cursor: pointer;
+        box-shadow: 0 4px 15px rgba(212, 175, 55, 0.5);
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        transition: all 0.3s ease;
+    }
+
+    .join-button:hover {
+        box-shadow: 0 6px 20px rgba(212, 175, 55, 0.7);
+    }
+
+    /* Media queries for responsive design */
+    @media (min-width: 768px) {
         .steps-container {
-            display: flex;
-            flex-direction: column;
-            gap: 16px;
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-
-        .step {
-            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
             align-items: center;
-        }
-
-        .step-number {
-            color: #00d2ff;
-            font-size: 32px;
-            font-weight: 700;
-            margin-right: 15px;
-            text-shadow: 0 0 10px rgba(0, 210, 255, 0.5);
-        }
-
-        .step-text {
-            color: white;
-            font-size: 16px;
-            font-weight: 500;
-            letter-spacing: 0.5px;
+            gap: 0;
         }
 
         .divider {
-            display: none;
-            width: 80px;
-            height: 1px;
-            background: linear-gradient(to right, rgba(0, 210, 255, 0.1), rgba(0, 210, 255, 0.5), rgba(0, 210, 255, 0.1));
-            margin: 0 10px;
+            display: block;
         }
 
-        .button-container {
-            position: absolute;
-            bottom: -25px;
-            left: 0;
-            right: 0;
-            display: flex;
-            justify-content: center;
-        }
-
-        .join-button {
-            background: linear-gradient(to right, #0095ff, #00d2ff);
-            color: white;
-            border: none;
-            padding: 14px 40px;
+        .step-text {
             font-size: 18px;
-            font-weight: 600;
-            border-radius: 50px;
-            cursor: pointer;
-            box-shadow: 0 4px 15px rgba(0, 210, 255, 0.5);
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            transition: all 0.3s ease;
         }
 
-        .join-button:hover {
-            box-shadow: 0 6px 20px rgba(0, 210, 255, 0.7);
+        .steps-section {
+            padding: 20px 40px 40px 40px;
         }
+    }
+</style>
 
-        /* Media queries for responsive design */
-        @media (min-width: 768px) {
-            .steps-container {
-                flex-direction: row;
-                justify-content: space-between;
-                align-items: center;
-                gap: 0;
-            }
-
-            .divider {
-                display: block;
-            }
-
-            .step-text {
-                font-size: 18px;
-            }
-
-            .steps-section {
-                padding: 20px 40px 40px 40px;
-            }
-        }
-    </style>
-    
-    
-    <div class="container">
-        <div class="steps-section">
-            <!-- Steps container -->
-            <div class="steps-container">
-                <!-- Step 1 -->
-                <div class="step">
-                    <span class="step-number">01</span>
-                    <span class="step-text">Register an account</span>
-                </div>
-                
-                <!-- Divider -->
-                <div class="divider"></div>
-                
-                <!-- Step 2 -->
-                <div class="step">
-                    <span class="step-number">02</span>
-                    <span class="step-text">Make a Deposit &amp; Play</span>
-                </div>
-                
-                <!-- Divider -->
-                <div class="divider"></div>
-                
-                <!-- Step 3 -->
-                <div class="step">
-                    <span class="step-number">03</span>
-                    <span class="step-text">Get 10% Weekly Cashback</span>
-                </div>
+<div class="container">
+    <div class="steps-section">
+        <!-- Steps container -->
+        <div class="steps-container">
+            <!-- Step 1 -->
+            <div class="step">
+                <span class="step-number">01</span>
+                <span class="step-text">Register an account</span>
             </div>
             
-            <!-- Join Now Button -->
-            <div class="button-container">
-                <button class="join-button">Join Now</button>
+            <!-- Divider -->
+            <div class="divider"></div>
+            
+            <!-- Step 2 -->
+            <div class="step">
+                <span class="step-number">02</span>
+                <span class="step-text">Make a Deposit &amp; Play</span>
+            </div>
+            
+            <!-- Divider -->
+            <div class="divider"></div>
+            
+            <!-- Step 3 -->
+            <div class="step">
+                <span class="step-number">03</span>
+                <span class="step-text">Get 10% Weekly Cashback</span>
             </div>
         </div>
-    </div>`;
+        
+        <!-- Join Now Button -->
+        <div class="button-container">
+            <button class="join-button">Join Now</button>
+        </div>
+    </div>
+</div>`;
 
                    mainContent.appendChild(customSection);
 
