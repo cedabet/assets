@@ -546,7 +546,7 @@
         </div>
     </div>
 </div>`;
-customSection2.innerHTML = `
+/*customSection2.innerHTML = `
     <div class="container">
         <div class="position-relative m-auto mt-lg-4">
             <div class="landing casino overflow-hidden position-relative rounded-4 p-3 px-md-5 py-md-4">
@@ -596,7 +596,7 @@ customSection2.innerHTML = `
         </div>
     
     </div>
-`
+`*/
 		customSection3.innerHTML = `
   
     <style>
@@ -965,7 +965,7 @@ customSection2.innerHTML = `
   `
                   mainContent.appendChild(customSection3);
 		mainContent.appendChild(customSection);
-		   mainContent.appendChild(customSection2);
+		//   mainContent.appendChild(customSection2);
 		 mainContent.appendChild(customSection4);
 
         }
