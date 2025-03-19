@@ -71,7 +71,7 @@
             customSection.id = "custom-section-9";
             customSection.classList.add("section", "custom-section");
 
-            customSection.innerHTML = `
+            /*customSection.innerHTML = `
        <div id="custom-section-9" class="section custom-section">
 					<div class="container">
 						<div class="row">
@@ -134,21 +134,68 @@
     scroll-snap-align: start !important;
   }
 
-  /* Hide scrollbar for Chrome, Safari and Opera */
   div[style*="grid-template-columns: repeat(4, 1fr)"]::-webkit-scrollbar {
     display: none !important;
   }
 
-  /* Hide scrollbar for IE, Edge and Firefox */
   div[style*="grid-template-columns: repeat(4, 1fr)"] {
-    -ms-overflow-style: none !important;  /* IE and Edge */
-    scrollbar-width: none !important;  /* Firefox */
+    -ms-overflow-style: none !important; 
+    scrollbar-width: none !important; 
   }
 }
 </style>
-    `;
+    `;*/
 
-                   // mainContent.appendChild(customSection);
+		customSection.innerHTML = `<div class="container" style="width: 100%; background: linear-gradient(to bottom, #0a0e17, #101725); padding: 20px 0 40px 0; position: relative; box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3); width: 96%; border-radius: 13px; margin-bottom: 26px; margin-top: 20px;">
+        
+        <!-- Steps container -->
+        <div style="max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; padding: 0 40px; flex-wrap: wrap;">
+            
+            <!-- Step 1 -->
+            <div style="display: flex; align-items: center; margin: 15px 0;">
+                <span style="color: #00d2ff; font-size: 32px; font-weight: 700; margin-right: 15px; text-shadow: 0 0 10px rgba(0, 210, 255, 0.5);">01</span>
+                <span style="color: white; font-size: 18px; font-weight: 500; letter-spacing: 0.5px;">Register an account</span>
+            </div>
+            
+            <!-- Divider -->
+            <div style="width: 80px; height: 1px; background: linear-gradient(to right, rgba(0, 210, 255, 0.1), rgba(0, 210, 255, 0.5), rgba(0, 210, 255, 0.1)); margin: 0 10px;"></div>
+            
+            <!-- Step 2 -->
+            <div style="display: flex; align-items: center; margin: 15px 0;">
+                <span style="color: #00d2ff; font-size: 32px; font-weight: 700; margin-right: 15px; text-shadow: 0 0 10px rgba(0, 210, 255, 0.5);">02</span>
+                <span style="color: white; font-size: 18px; font-weight: 500; letter-spacing: 0.5px;">Make a Deposit &amp; Play</span>
+            </div>
+            
+            <!-- Divider -->
+            <div style="width: 80px; height: 1px; background: linear-gradient(to right, rgba(0, 210, 255, 0.1), rgba(0, 210, 255, 0.5), rgba(0, 210, 255, 0.1)); margin: 0 10px;"></div>
+            
+            <!-- Step 3 -->
+            <div style="display: flex; align-items: center; margin: 15px 0;">
+                <span style="color: #00d2ff; font-size: 32px; font-weight: 700; margin-right: 15px; text-shadow: 0 0 10px rgba(0, 210, 255, 0.5);">03</span>
+                <span style="color: white; font-size: 18px; font-weight: 500; letter-spacing: 0.5px;">Get 10% Weekly Cashback</span>
+            </div>
+        </div>
+        
+        <!-- Join Now Button -->
+        <div style="position: absolute; bottom: -25px; left: 0; right: 0; display: flex; justify-content: center;">
+            <button style="
+                background: linear-gradient(to right, #0095ff, #00d2ff); 
+                color: white; 
+                border: none; 
+                padding: 14px 40px; 
+                font-size: 18px; 
+                font-weight: 600; 
+                border-radius: 50px; 
+                cursor: pointer; 
+                box-shadow: 0 4px 15px rgba(0, 210, 255, 0.5); 
+                text-transform: uppercase; 
+                letter-spacing: 1px;
+                transition: all 0.3s ease;
+            ">Join Now</button>
+        </div>
+    </div>`;
+
+                   mainContent.appendChild(customSection);
 
         }
 
