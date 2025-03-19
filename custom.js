@@ -27,6 +27,16 @@
                 } else if (path === "/en/vip") {
                    /* alert("VIP sayfasına hoş geldiniz!");*/
                 }
+	        } else if (path === "/en/sportsbook") {
+                   /* alert("VIP sayfasına hoş geldiniz!");*/
+		    
+		var sidebar = document.getElementById("sidebar");
+		sidebar.classList.add("active");
+                }
+
+
+
+
             }, 100);
         }
 
