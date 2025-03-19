@@ -30,12 +30,15 @@ sidebarBtn.addEventListener("click", function() {
     var sidebar = document.getElementById("sidebar");
 
 
-    sidebar.className = ""; 
 
  
     if (!sidebar.classList.contains("active")) {
+	    alert("active yok");
+	 sidebar.className = ""; 
         sidebar.className = "sidebar active"; // 
     } else {
+	      alert("active var");
+	 sidebar.className = ""; 
         sidebar.className = "sidebar";
     }
 });
