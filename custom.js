@@ -18,6 +18,28 @@
             isFirstLoad = false;
         }
 
+var sidebarBtn = document.querySelector(".sidebar__btn");
+
+sidebarBtn.addEventListener("click", function() {
+    var sportspath2 = window.location.pathname;
+
+    // Eğer sayfa "/en/sportsbook" değilse, işlem yapma
+    if (sportspath2 !== "/en/sportsbook") {
+        return; // Sayfa "/en/sportsbook" değilse, işlem yapılmaz
+    }
+
+    var sidebar = document.getElementById("sidebar");
+
+    // Eğer sidebar'da 'active' sınıfı varsa, tüm sınıfları sil ve sadece 'sidebar' sınıfını bırak
+    if (sidebar.classList.contains("active")) {
+        sidebar.className = "sidebar"; // Sadece 'sidebar' sınıfı kalır
+    } else {
+        // Eğer 'active' sınıfı yoksa, 'active' sınıfını ekle
+        sidebar.classList.add("active");
+    }
+});
+
+
         function checkUrlChange() {
             if (location.href !== lastUrl) {
                 lastUrl = location.href;
