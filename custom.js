@@ -109,32 +109,33 @@
 	    const sectionTitleElements = document.querySelectorAll('.section__title');
 
         sectionTitleElements.forEach(title => {
-        
-            if (title.textContent.trim().includes('Top Games')) {
-                title.addEventListener('click', () => {
-                    window.location.href = '/en/casino/group/lobby';
-                });
-            }
-            if (title.textContent.trim().includes('Popular Games')) {
-                title.addEventListener('click', () => {
-                    window.location.href = '/en/casino/group/new-releases';
-                });
-            }
-            if (title.textContent.trim().includes('New Releases')) {
-                title.addEventListener('click', () => {
-                    window.location.href = '/en/casino/group/new-releases';
-                });
-            }
-            if (title.textContent.trim().includes('High RTP')) {
-                title.addEventListener('click', () => {
-                    window.location.href = '/en/casino/group/enhanced-rtp';
-                });
-            }
-            if (title.textContent.trim().includes('Buy Bonus')) {
-                title.addEventListener('click', () => {
-                    window.location.href = '/en/casino/group/bonus-buy';
-                });
-            }
+         const titleText = title.innerText.trim();
+
+        if (titleText.includes('Top Games')) {
+            title.addEventListener('click', () => {
+                window.location.href = '/en/casino/group/lobby';
+            });
+        }
+        if (titleText.includes('Popular Games')) {
+            title.addEventListener('click', () => {
+                window.location.href = '/en/casino/group/new-releases';
+            });
+        }
+        if (titleText.includes('New Releases')) {
+            title.addEventListener('click', () => {
+                window.location.href = '/en/casino/group/new-releases';
+            });
+        }
+        if (titleText.includes('High RTP')) {
+            title.addEventListener('click', () => {
+                window.location.href = '/en/casino/group/enhanced-rtp';
+            });
+        }
+        if (titleText.includes('Buy Bonus')) {
+            title.addEventListener('click', () => {
+                window.location.href = '/en/casino/group/bonus-buy';
+            });
+        }
 
 });
 
