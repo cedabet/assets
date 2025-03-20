@@ -42,18 +42,29 @@ if (sidebar.className.indexOf("active") !== -1) { // 'active' sınıfı yoksa
 const sectionTitleElements = document.querySelectorAll('.section__title');
 
 sectionTitleElements.forEach(title => {
-  
     alert("Title içeriği:", title.textContent);
-
-  
     if (title.textContent.trim().includes('Top Games')) {
-        alert("Top Games bulundu");
-        
-    
         title.addEventListener('click', () => {
-          
-            window.location.href = '/en/games';
+            window.location.href = '/en/casino/group/lobby';
         });
+    }
+	 if (title.textContent.trim().includes('Popular Games')) {
+        title.addEventListener('click', () => {
+            window.location.href = '/en/casino/group/new-releases';
+        });
+		  if (title.textContent.trim().includes('New Releases')) {
+        title.addEventListener('click', () => {
+            window.location.href = '/en/casino/group/new-releases';
+        });
+			  	  if (title.textContent.trim().includes('High RTP')) {
+        title.addEventListener('click', () => {
+            window.location.href = '/en/casino/group/enhanced-rtp';
+        });
+					  	  if (title.textContent.trim().includes('Buy Bonus')) {
+        title.addEventListener('click', () => {
+            window.location.href = '/en/casino/group/bonus-buy';
+        });
+			 
     }
 });
 
