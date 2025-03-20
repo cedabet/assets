@@ -22,7 +22,7 @@
         const sectionTitleElements = document.querySelectorAll('.section__title');
 
         sectionTitleElements.forEach(title => {
-            alert("Title içeriği:", title.textContent);
+        
             if (title.textContent.trim().includes('Top Games')) {
                 title.addEventListener('click', () => {
                     window.location.href = '/en/casino/group/lobby';
