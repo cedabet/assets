@@ -559,7 +559,7 @@ if (sidebar.className.indexOf("active") !== -1) { // 'active' sınıfı yoksa
     }
 </style>
 
-class="container">
+<div class="container">
     <div class="steps-section" style="padding: 0;">
         <!-- Steps container -->
         <img src="https://cdn.midjourney.com/be3f54ee-2d18-42ad-96af-be045f1e3142/0_2.png" style="width: 100%;">
