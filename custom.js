@@ -56,7 +56,9 @@
             if (path === "/en/") {
                 /*  alert("Anasayfaya hoş geldiniz!");*/
                 loadVipFeatures();
-		    loadh2Title();
+		  setTimeout(loadh2Title, 300); // Sayfa yüklendikten sonra 200 ms bekleyin
+
+		    
             } else if (path === "/en/vip") {
                 /* alert("VIP sayfasına hoş geldiniz!");*/
             }
