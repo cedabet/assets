@@ -31,11 +31,11 @@ sidebarBtn.addEventListener("click", function() {
   var sidebar = document.getElementById("sidebar");
 
 if (sidebar.className.indexOf("active") !== -1) { // 'active' sınıfı yoksa
-    alert("active yok");
+   
     sidebar.className = ""; // Tüm sınıfları temizle
     sidebar.classList.add("sidebar", "active"); // 'sidebar' ve 'active' sınıflarını ekle
 } else {
-    alert("active var");
+  
 var logoLink = document.querySelector(".sidebar__logo");
 
 if (logoLink) {
