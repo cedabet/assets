@@ -109,6 +109,7 @@
     const sectionTitleElements = document.querySelectorAll('.section__title');
 
         sectionTitleElements.forEach(title => {
+         alert("Başlık içeriği: " + title.textContent.trim());  // Burada tüm başlıkları gösteriyoruz
         
             if (title.textContent.trim().includes('Top Games')) {
                 title.addEventListener('click', () => {
