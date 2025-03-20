@@ -109,8 +109,7 @@
     const sectionTitleElements = document.querySelectorAll('.section__title');
 
         sectionTitleElements.forEach(title => {
-         alert("Başlık içeriği: " + title.innerText.trim());  // Burada tüm başlıkları gösteriyoruz
-        
+    
             if (title.textContent.trim().includes('Top Games')) {
                 title.addEventListener('click', () => {
                     window.location.href = '/en/casino/group/lobby';
@@ -139,7 +138,7 @@
 
 });
 
-     }, 200);
+     }, 400);
  }
 
     function loadVipFeatures() {
