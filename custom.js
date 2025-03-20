@@ -105,7 +105,7 @@
     }) ();
 
  function loadh2Title() {
-
+    setTimeout(() => {
     const sectionTitleElements = document.querySelectorAll('.section__title');
 
         sectionTitleElements.forEach(title => {
@@ -139,8 +139,8 @@
 
 });
 
-  }
-
+     }, 200);
+ }
 
     function loadVipFeatures() {
 
