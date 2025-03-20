@@ -13,7 +13,8 @@
 			  var sportspath = window.location.pathname;
  if (sportspath === "/en/sportsbook") {
                  var sidebar = document.getElementById("sidebar");
-		sidebar.classList.add("active");
+	  sidebar.className = ""; 
+		    sidebar.classList.add("sidebar", "active"); 
                 }
             isFirstLoad = false;
         }
