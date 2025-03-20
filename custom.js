@@ -31,12 +31,7 @@ if (sidebar.className.indexOf("active") !== -1) { // 'active' sınıfı yoksa
     sidebar.className = ""; // Tüm sınıfları temizle
     sidebar.classList.add("sidebar", "active"); // 'sidebar' ve 'active' sınıflarını ekle
 } else {
-  
-var logoLink = document.querySelector(".sidebar__logo");
 
-if (logoLink) {
-    logoLink.style.display = "none"; // 'sidebar__logo' sınıfına sahip 'a' etiketine display: none uygula
-}
     sidebar.className = ""; // Tüm sınıfları temizle
     sidebar.classList.add("sidebar"); // Sadece 'sidebar' sınıfını ekle
 }
