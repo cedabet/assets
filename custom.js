@@ -10,6 +10,7 @@
         let isFirstLoad = true;
         if (isFirstLoad) {
             loadVipFeatures();
+		loadh2Title();
             var sportspath = window.location.pathname;
             if (sportspath === "/en/sportsbook") {
                 var sidebar = document.getElementById("sidebar");
@@ -19,38 +20,7 @@
             isFirstLoad = false;
         }
 
-        const sectionTitleElements = document.querySelectorAll('.section__title');
-
-        sectionTitleElements.forEach(title => {
-        
-            if (title.textContent.trim().includes('Top Games')) {
-                title.addEventListener('click', () => {
-                    window.location.href = '/en/casino/group/lobby';
-                });
-            }
-            if (title.textContent.trim().includes('Popular Games')) {
-                title.addEventListener('click', () => {
-                    window.location.href = '/en/casino/group/new-releases';
-                });
-            }
-            if (title.textContent.trim().includes('New Releases')) {
-                title.addEventListener('click', () => {
-                    window.location.href = '/en/casino/group/new-releases';
-                });
-            }
-            if (title.textContent.trim().includes('High RTP')) {
-                title.addEventListener('click', () => {
-                    window.location.href = '/en/casino/group/enhanced-rtp';
-                });
-            }
-            if (title.textContent.trim().includes('Buy Bonus')) {
-                title.addEventListener('click', () => {
-                    window.location.href = '/en/casino/group/bonus-buy';
-                });
-            }
-
-});
-
+      
 
         var sidebarBtn = document.querySelector(".sidebar__btn");
 
@@ -86,6 +56,7 @@
             if (path === "/en/") {
                 /*  alert("Anasayfaya hoş geldiniz!");*/
                 loadVipFeatures();
+		    loadh2Title();
             } else if (path === "/en/vip") {
                 /* alert("VIP sayfasına hoş geldiniz!");*/
             }
@@ -132,6 +103,43 @@
 
     window.addEventListener('load', checkUrlChange);
     }) ();
+
+  function loadh2Title() {
+
+	    const sectionTitleElements = document.querySelectorAll('.section__title');
+
+        sectionTitleElements.forEach(title => {
+        
+            if (title.textContent.trim().includes('Top Games')) {
+                title.addEventListener('click', () => {
+                    window.location.href = '/en/casino/group/lobby';
+                });
+            }
+            if (title.textContent.trim().includes('Popular Games')) {
+                title.addEventListener('click', () => {
+                    window.location.href = '/en/casino/group/new-releases';
+                });
+            }
+            if (title.textContent.trim().includes('New Releases')) {
+                title.addEventListener('click', () => {
+                    window.location.href = '/en/casino/group/new-releases';
+                });
+            }
+            if (title.textContent.trim().includes('High RTP')) {
+                title.addEventListener('click', () => {
+                    window.location.href = '/en/casino/group/enhanced-rtp';
+                });
+            }
+            if (title.textContent.trim().includes('Buy Bonus')) {
+                title.addEventListener('click', () => {
+                    window.location.href = '/en/casino/group/bonus-buy';
+                });
+            }
+
+});
+
+  }
+
 
     function loadVipFeatures() {
 
