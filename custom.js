@@ -559,39 +559,10 @@ if (sidebar.className.indexOf("active") !== -1) { // 'active' sınıfı yoksa
     }
 </style>
 
-<div class="container">
-    <div class="steps-section">
+class="container">
+    <div class="steps-section" style="padding: 0;">
         <!-- Steps container -->
-        <div class="steps-container">
-            <!-- Step 1 -->
-            <div class="step">
-                <span class="step-number">01</span>
-                <span class="step-text">Register an account</span>
-            </div>
-            
-            <!-- Divider -->
-            <div class="divider"></div>
-            
-            <!-- Step 2 -->
-            <div class="step">
-                <span class="step-number">02</span>
-                <span class="step-text">Make a Deposit &amp; Play</span>
-            </div>
-            
-            <!-- Divider -->
-            <div class="divider"></div>
-            
-            <!-- Step 3 -->
-            <div class="step">
-                <span class="step-number">03</span>
-                <span class="step-text">Get 10% Weekly Cashback</span>
-            </div>
-        </div>
-        
-        <!-- Join Now Button -->
-        <div class="button-container">
-            <button class="join-button">Join Now</button>
-        </div>
+        <img src="https://cdn.midjourney.com/be3f54ee-2d18-42ad-96af-be045f1e3142/0_2.png" style="width: 100%;">
     </div>
 </div>`;
 
