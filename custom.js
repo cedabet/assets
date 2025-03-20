@@ -15,30 +15,9 @@
            var sidebar = document.getElementById("sidebar");
 	   sidebar.className = ""; 
            sidebar.classList.add("sidebar", "active"); 
-// 'section__title' sınıfına sahip tüm elemanları seçiyoruz
-const sectionTitleElements = document.querySelectorAll('.section__title');
-
-sectionTitleElements.forEach(title => {
-    // 'section__title' elemanının içeriğini konsola yazdırıyoruz
-    alert("Title içeriği:", title.textContent);
-
-    // Eğer elemanın içeriğinde 'Top Games' varsa
-    if (title.textContent.trim().includes('Top Games')) {
-        alert("Top Games bulundu");
-        
-        // Bu elemanı tıklanabilir hale getiriyoruz
-        title.addEventListener('click', () => {
-            // Kullanıcıyı '/en/games' adresine yönlendiriyoruz
-            window.location.href = '/en/games';
-        });
     }
-});
-
-
-
-                }
             isFirstLoad = false;
-        }
+  }
 
 var sidebarBtn = document.querySelector(".sidebar__btn");
 
@@ -58,8 +37,24 @@ if (sidebar.className.indexOf("active") !== -1) { // 'active' sınıfı yoksa
 }
 
     }
+});
+	  
+const sectionTitleElements = document.querySelectorAll('.section__title');
 
+sectionTitleElements.forEach(title => {
+  
+    alert("Title içeriği:", title.textContent);
 
+  
+    if (title.textContent.trim().includes('Top Games')) {
+        alert("Top Games bulundu");
+        
+    
+        title.addEventListener('click', () => {
+          
+            window.location.href = '/en/games';
+        });
+    }
 });
 
 
