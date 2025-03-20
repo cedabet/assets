@@ -21,9 +21,9 @@
 const h2Elements = document.querySelectorAll('h2');
 
 h2Elements.forEach(h2 => {
-  
+  alert(h2.textContent);
     if (h2.textContent.includes('Top Games')) {
-      
+      alert("bulundu");
         h2.addEventListener('click', () => {
         
             window.location.href = '/en/games';
