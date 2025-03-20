@@ -15,6 +15,22 @@
                  var sidebar = document.getElementById("sidebar");
 	  sidebar.className = ""; 
 		    sidebar.classList.add("sidebar", "active"); 
+	 const h2Elements = document.querySelectorAll('h2');
+
+
+const h2Elements = document.querySelectorAll('h2');
+
+h2Elements.forEach(h2 => {
+  
+    if (h2.textContent.includes('Top Games')) {
+      
+        h2.addEventListener('click', () => {
+        
+            window.location.href = '/en/games';
+        });
+    }
+});
+
                 }
             isFirstLoad = false;
         }
