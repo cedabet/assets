@@ -16,17 +16,16 @@
 	   sidebar.className = ""; 
            sidebar.classList.add("sidebar", "active"); 
 const h2Elements = document.querySelectorAll('h2');
-
 h2Elements.forEach(h2 => {
-  alert(h2.textContent);
-    if (h2.textContent.includes('Top Games')) {
-      alert("bulundu");
+    alert("H2 içeriği:", h2.textContent);
+    if (h2.textContent.trim().includes('Top Games')) {
+        alert("Top Games bulundu");
         h2.addEventListener('click', () => {
-        
             window.location.href = '/en/games';
         });
     }
 });
+
 
                 }
             isFirstLoad = false;
