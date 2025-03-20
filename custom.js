@@ -10,14 +10,11 @@
         let isFirstLoad = true; 
         if (isFirstLoad) {
             loadVipFeatures();
-			  var sportspath = window.location.pathname;
- if (sportspath === "/en/sportsbook") {
-                 var sidebar = document.getElementById("sidebar");
-	  sidebar.className = ""; 
-		    sidebar.classList.add("sidebar", "active"); 
-	 const h2Elements = document.querySelectorAll('h2');
-
-
+	   var sportspath = window.location.pathname;
+ 	   if (sportspath === "/en/sportsbook") {
+           var sidebar = document.getElementById("sidebar");
+	   sidebar.className = ""; 
+           sidebar.classList.add("sidebar", "active"); 
 const h2Elements = document.querySelectorAll('h2');
 
 h2Elements.forEach(h2 => {
