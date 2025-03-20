@@ -559,21 +559,14 @@ if (sidebar.className.indexOf("active") !== -1) { // 'active' sınıfı yoksa
     }
 </style>
 
-<div class="container">
-    <div class="steps-section" style="padding: 0;">
-        <!-- Steps container -->
-        <img src="https://cdn.midjourney.com/be3f54ee-2d18-42ad-96af-be045f1e3142/0_2.png" style="width: 100%;">
-    </div>
-</div>`;
-
-		customSection5.innerHTML=`<div class="container">
+  <div class="container">
     <div class="steps-section">
         <!-- Steps container -->
         <div class="steps-container">
             <!-- Step 1 -->
             <div class="step">
-                <span class="step-number">04</span>
-                <span class="step-text">Enjoy exclusive rewards</span>
+                <span class="step-number">01</span>
+                <span class="step-text">Register an Account.</span>
             </div>
             
             <!-- Divider -->
@@ -581,9 +574,9 @@ if (sidebar.className.indexOf("active") !== -1) { // 'active' sınıfı yoksa
             
             <!-- Step 2 -->
             <div class="step">
-                <span class="step-number">05</span>
+                <span class="step-number">02</span>
                 <span class="step-text">
-		Unlock special promotions</span>
+		Make a Deposit & Play</span>
             </div>
             
             <!-- Divider -->
@@ -591,8 +584,8 @@ if (sidebar.className.indexOf("active") !== -1) { // 'active' sınıfı yoksa
             
             <!-- Step 3 -->
             <div class="step">
-                <span class="step-number">06</span>
-                <span class="step-text">Win big, every time!</span>
+                <span class="step-number">03</span>
+                <span class="step-text">Get 10% Weekly Cashback</span>
             </div>
         </div>
         
@@ -600,6 +593,15 @@ if (sidebar.className.indexOf("active") !== -1) { // 'active' sınıfı yoksa
         <div class="button-container">
             <button class="join-button">Join Now</button>
         </div>
+    </div>
+</div>`;
+
+		customSection5.innerHTML=`
+
+<div class="container">
+    <div class="steps-section" style="padding: 0;">
+        <!-- Steps container -->
+        <img src="https://cdn.midjourney.com/be3f54ee-2d18-42ad-96af-be045f1e3142/0_2.png" style="width: 100%;">
     </div>
 </div>`;
 		
