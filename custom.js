@@ -15,16 +15,25 @@
            var sidebar = document.getElementById("sidebar");
 	   sidebar.className = ""; 
            sidebar.classList.add("sidebar", "active"); 
-const h2Elements = document.querySelectorAll('h2');
-h2Elements.forEach(h2 => {
-    alert("H2 içeriği:", h2.textContent);
-    if (h2.textContent.trim().includes('Top Games')) {
+// 'section__title' sınıfına sahip tüm elemanları seçiyoruz
+const sectionTitleElements = document.querySelectorAll('.section__title');
+
+sectionTitleElements.forEach(title => {
+    // 'section__title' elemanının içeriğini konsola yazdırıyoruz
+    alert("Title içeriği:", title.textContent);
+
+    // Eğer elemanın içeriğinde 'Top Games' varsa
+    if (title.textContent.trim().includes('Top Games')) {
         alert("Top Games bulundu");
-        h2.addEventListener('click', () => {
+        
+        // Bu elemanı tıklanabilir hale getiriyoruz
+        title.addEventListener('click', () => {
+            // Kullanıcıyı '/en/games' adresine yönlendiriyoruz
             window.location.href = '/en/games';
         });
     }
 });
+
 
 
                 }
