@@ -36,6 +36,11 @@ if (sidebar.className.indexOf("active") !== -1) { // 'active' sınıfı yoksa
     sidebar.classList.add("sidebar", "active"); // 'sidebar' ve 'active' sınıflarını ekle
 } else {
     alert("active var");
+var logoLink = document.querySelector(".sidebar__logo");
+
+if (logoLink) {
+    logoLink.style.display = "none"; // 'sidebar__logo' sınıfına sahip 'a' etiketine display: none uygula
+}
     sidebar.className = ""; // Tüm sınıfları temizle
     sidebar.classList.add("sidebar"); // Sadece 'sidebar' sınıfını ekle
 }
@@ -60,6 +65,12 @@ if (sidebar.className.indexOf("active") !== -1) { // 'active' sınıfı yoksa
                 }
 	        
 		  else if (path === "/en/sportsbook") {
+			  	  var sportspath = window.location.pathname;
+ if (sportspath === "/en/sportsbook") {
+                 var sidebar = document.getElementById("sidebar");
+	  sidebar.className = ""; 
+		    sidebar.classList.add("sidebar", "active"); 
+                }
 	          /* alert("VIP sayfasına hoş geldiniz!");*/
 		
                 }
