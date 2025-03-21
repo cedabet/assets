@@ -130,8 +130,10 @@ function loadh2Title() {
         if (url) {
             const newLink = document.createElement('a');
             newLink.href = url;
-            newLink.textContent = `See all`;
-            
+            newLink.textContent = `See All`;
+            newLink.style.background = '#229de1'; 
+            newLink.style.padding = '7px';
+            newLink.style.borderRadius = '10px';
             title.insertAdjacentElement('afterend', newLink);
         }
     });
