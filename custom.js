@@ -109,10 +109,6 @@ function loadh2Title() {
     const sectionTitleElements = document.querySelectorAll('.section__title');
 
     sectionTitleElements.forEach(title => {
-        // Başlık metnini uyarı olarak göster
-        alert(title.textContent.trim());
-
-        // URL'yi belirle
         let url = '';
 
         if (title.textContent.trim().includes('Top Games')) {
@@ -131,20 +127,13 @@ function loadh2Title() {
             url = '/en/casino/group/bonus-buy';
         }
 
-        // Yeni bir <a> tagı oluştur
         if (url) {
             const newLink = document.createElement('a');
             newLink.href = url;
             newLink.textContent = `See all ${title.textContent.trim()}`;
             
-            // Yeni <a> etiketini başlığın hemen sonrasına ekle
             title.insertAdjacentElement('afterend', newLink);
         }
-
-        // Başlık metnine tıklanma olayı ekle
-        title.addEventListener('click', () => {
-            window.location.href = url;
-        });
     });
 }
 
