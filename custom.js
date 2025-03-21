@@ -104,37 +104,47 @@
     window.addEventListener('load', checkUrlChange);
     }) ();
 
+
 function loadh2Title() {
     const sectionTitleElements = document.querySelectorAll('.section__title');
 
     sectionTitleElements.forEach(title => {
-	          alert(title.textContent.trim());
+        // Başlık metnini uyarı olarak göster
+        alert(title.textContent.trim());
+
+        // URL'yi belirle
+        let url = '';
 
         if (title.textContent.trim().includes('Top Games')) {
-            title.addEventListener('click', () => {
-                window.location.href = '/en/casino/group/lobby';
-            });
+            url = '/en/casino/group/lobby';
         }
         if (title.textContent.trim().includes('Popular Games')) {
-            title.addEventListener('click', () => {
-                window.location.href = '/en/casino/group/new-releases';
-            });
+            url = '/en/casino/group/new-releases';
         }
         if (title.textContent.trim().includes('New Releases')) {
-            title.addEventListener('click', () => {
-                window.location.href = '/en/casino/group/new-releases';
-            });
+            url = '/en/casino/group/new-releases';
         }
         if (title.textContent.trim().includes('High RTP')) {
-            title.addEventListener('click', () => {
-                window.location.href = '/en/casino/group/enhanced-rtp';
-            });
+            url = '/en/casino/group/enhanced-rtp';
         }
         if (title.textContent.trim().includes('Buy Bonus')) {
-            title.addEventListener('click', () => {
-                window.location.href = '/en/casino/group/bonus-buy';
-            });
+            url = '/en/casino/group/bonus-buy';
         }
+
+        // Yeni bir <a> tagı oluştur
+        if (url) {
+            const newLink = document.createElement('a');
+            newLink.href = url;
+            newLink.textContent = `Go to ${title.textContent.trim()}`;
+            
+            // Yeni <a> etiketini başlığın hemen sonrasına ekle
+            title.insertAdjacentElement('afterend', newLink);
+        }
+
+        // Başlık metnine tıklanma olayı ekle
+        title.addEventListener('click', () => {
+            window.location.href = url;
+        });
     });
 }
 
