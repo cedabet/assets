@@ -186,7 +186,7 @@ function loadh2Title() {
     ">
       <div>
         <h1 id="main-heading" style="font-size: 2.5rem; font-weight: 800; line-height: 1.1; margin-bottom: 40px; margin-top: 0; max-width: 800px;">
-          Be part of the game by betting on the biggest moments in sports.
+          Join the excitement by betting on the biggest highlights in sports.
         </h1>
       </div>
 
@@ -363,6 +363,7 @@ box-shadow: rgba(255, 176, 25, 0.4) 0px 0px 10px, rgba(255, 255, 255, 0.2) 0px 1
         ">
           <span style="position: relative; z-index: 2;">EXPLORE SPORTS SECTION</span>
           <span class="button-arrow" style="
+		    display:none;
             margin-left: 12px;
             font-size: 18px;
             transition: transform 0.3s ease;
@@ -506,6 +507,7 @@ box-shadow: rgba(255, 176, 25, 0.4) 0px 0px 10px, rgba(255, 255, 255, 0.2) 0px 1
 		customSection3.innerHTML = `
 <style>
     .steps-section {
+    display:none;
         position: relative;
         width: 100%;
         background: linear-gradient(to bottom, #0a0e17, #101725);
@@ -764,7 +766,7 @@ box-shadow: rgba(255, 176, 25, 0.4) 0px 0px 10px, rgba(255, 255, 255, 0.2) 0px 1
     ">
             <div>
                 <h1 id="main-heading" style="font-size: 2rem; font-weight: 800; line-height: 1.1; margin-bottom: 20px; margin-top: 0;">
-                    Countless ways to achieve big wins with thousands of exciting games.
+                    Endless opportunities to win big with thousands of thrilling games.
                 </h1>
             </div>
 
@@ -940,6 +942,7 @@ box-shadow: rgba(255, 176, 25, 0.4) 0px 0px 10px, rgba(255, 255, 255, 0.2) 0px 1
         ">
                     <span style="position: relative; z-index: 2;">EXPLORE CASINO SECTION</span>
                     <span class="button-arrow" style="
+		    display:none;
             margin-left: 12px;
             font-size: 18px;
             transition: transform 0.3s ease;
