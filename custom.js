@@ -135,7 +135,7 @@ function loadh2Title() {
         if (url) {
             const newLink = document.createElement('a');
             newLink.href = url;
-            newLink.textContent = `Go to ${title.textContent.trim()}`;
+            newLink.textContent = `See all ${title.textContent.trim()}`;
             
             // Yeni <a> etiketini başlığın hemen sonrasına ekle
             title.insertAdjacentElement('afterend', newLink);
