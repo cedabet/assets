@@ -132,7 +132,7 @@ function loadh2Title() {
             newLink.href = url;
             newLink.textContent = `See All`;
             newLink.style.background = '#229de157'; 
-            newLink.style.padding = '7px';
+            newLink.style.padding = '4px';
             newLink.style.borderRadius = '10px';
             newLink.style.color = 'white'; 
             newLink.style.border = '2px solid #229de1'; 
