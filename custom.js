@@ -10,7 +10,7 @@
         let isFirstLoad = true;
         if (isFirstLoad) {
             loadVipFeatures();
-		loadh2Title();
+            setTimeout(loadh2Title, 300);   
             var sportspath = window.location.pathname;
             if (sportspath === "/en/sportsbook") {
                 var sidebar = document.getElementById("sidebar");
