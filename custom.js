@@ -361,7 +361,7 @@ function loadh2Title() {
           border: none;
           box-sizing: border-box;
         ">
-          <span style="position: relative; z-index: 2;">EXPLORE THE SPORTS SECTION</span>
+          <span style="position: relative; z-index: 2;">EXPLORE SPORTS SECTION</span>
           <span class="button-arrow" style="
             margin-left: 12px;
             font-size: 18px;
@@ -939,7 +939,7 @@ function loadh2Title() {
           border: none;
           box-sizing: border-box;
         ">
-                    <span style="position: relative; z-index: 2;">EXPLORE THE CASINO SECTION</span>
+                    <span style="position: relative; z-index: 2;">EXPLORE CASINO SECTION</span>
                     <span class="button-arrow" style="
             margin-left: 12px;
             font-size: 18px;
