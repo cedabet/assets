@@ -131,11 +131,11 @@ function loadh2Title() {
             const newLink = document.createElement('a');
             newLink.href = url;
             newLink.textContent = `See All`;
-            newLink.style.background = '#229de157'; 
-            newLink.style.padding = '4px';
-            newLink.style.borderRadius = '10px';
+            newLink.style.background = 'rgba(55, 162, 221, 0.13)'; 
+            newLink.style.padding = '5px 12px 5px 12px';
+            newLink.style.borderRadius = '4px';
             newLink.style.color = 'white'; 
-            newLink.style.border = '2px solid #229de1'; 
+            newLink.style.border = '1px solid rgba(41, 154, 217, 0.33)'; 
 
             title.insertAdjacentElement('afterend', newLink);
         }
