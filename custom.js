@@ -10,7 +10,7 @@
         let isFirstLoad = true;
         if (isFirstLoad) {
             loadVipFeatures();
-            setTimeout(loadh2Title, 300);   
+            setTimeout(loadh2Title, 1000);   
             var sportspath = window.location.pathname;
             if (sportspath === "/en/sportsbook") {
                 var sidebar = document.getElementById("sidebar");
@@ -56,7 +56,7 @@
             if (path === "/en/") {
                 /*  alert("Anasayfaya hoş geldiniz!");*/
                 loadVipFeatures();
-	        setTimeout(loadh2Title, 300);   
+	        setTimeout(loadh2Title, 1000);   
             } else if (path === "/en/vip") {
                 /* alert("VIP sayfasına hoş geldiniz!");*/
             }
