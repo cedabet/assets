@@ -130,7 +130,7 @@ function loadh2Title() {
         if (url) {
             const newLink = document.createElement('a');
             newLink.href = url;
-            newLink.textContent = `See all ${title.textContent.trim()}`;
+            newLink.textContent = `See all`;
             
             title.insertAdjacentElement('afterend', newLink);
         }
