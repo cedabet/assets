@@ -134,6 +134,7 @@ function loadh2Title() {
             newLink.style.background = 'rgba(55, 162, 221, 0.13)'; 
             newLink.style.padding = '5px 12px 5px 12px';
             newLink.style.borderRadius = '4px';
+            newLink.style.fontSize = '12px';
             newLink.style.color = 'white'; 
             newLink.style.border = '1px solid rgba(41, 154, 217, 0.33)'; 
 
