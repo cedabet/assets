@@ -345,7 +345,6 @@ function loadh2Title() {
           display: inline-flex;
           align-items: center;
           justify-content: center;
-          background: linear-gradient(135deg, #ffcc00, #ff9500);
           background-size: 200% 200%;
           color: #0f1923;
           padding: 14px 28px;
@@ -356,10 +355,11 @@ function loadh2Title() {
           text-transform: uppercase;
           letter-spacing: 0.5px;
           transition: all 0.3s ease;
-          box-shadow: 0 4px 10px rgba(255, 204, 0, 0.3);
           position: relative;
           border: none;
           box-sizing: border-box;
+	  background-color: rgb(255, 229, 0);
+box-shadow: rgba(255, 176, 25, 0.4) 0px 0px 10px, rgba(255, 255, 255, 0.2) 0px 1px 0px inset, rgb(255, 135, 25) 0px 0px 15px inset;
         ">
           <span style="position: relative; z-index: 2;">EXPLORE SPORTS SECTION</span>
           <span class="button-arrow" style="
@@ -923,7 +923,6 @@ function loadh2Title() {
           display: inline-flex;
           align-items: center;
           justify-content: center;
-          background: linear-gradient(135deg, #ffcc00, #ff9500);
           background-size: 200% 200%;
           color: #0f1923;
           padding: 14px 28px;
@@ -934,10 +933,10 @@ function loadh2Title() {
           text-transform: uppercase;
           letter-spacing: 0.5px;
           transition: all 0.3s ease;
-          box-shadow: 0 4px 10px rgba(255, 204, 0, 0.3);
           position: relative;
           border: none;
-          box-sizing: border-box;
+          box-sizing: border-box;background-color: rgb(255, 229, 0);
+box-shadow: rgba(255, 176, 25, 0.4) 0px 0px 10px, rgba(255, 255, 255, 0.2) 0px 1px 0px inset, rgb(255, 135, 25) 0px 0px 15px inset;
         ">
                     <span style="position: relative; z-index: 2;">EXPLORE CASINO SECTION</span>
                     <span class="button-arrow" style="
