@@ -1083,7 +1083,7 @@ function addButtonsToSlider() {
       border-radius: 4px !important;
       background: rgb(218, 165, 32) !important;
       background-color: rgb(218, 165, 32);
-      box-shadow: 0 0 10px rgba(255, 215, 0, 0.4), rgba(255, 255, 255, 0.2) 0px 1px 0px inset, 0 0 15px rgb(255, 215, 0) inset !important;
+      box-shadow: none !important;
       color: rgba(255, 255, 255, 0.95);
     `
     
