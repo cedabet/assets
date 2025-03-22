@@ -186,7 +186,7 @@ function loadh2Title() {
       z-index: 2;
     ">
       <div>
-        <h1 id="main-heading" style="font-size: 2.5rem; font-weight: 800; line-height: 1.1; margin-bottom: 40px; margin-top: 0; max-width: 800px;">
+        <h1 id="main-heading" style="font-size: 2rem; font-weight: 800; line-height: 1.1; margin-bottom: 40px; margin-top: 0; max-width: 800px;">
           Join the excitement by betting on the biggest highlights in sports.
         </h1>
       </div>
@@ -747,7 +747,7 @@ box-shadow: rgba(255, 176, 25, 0.4) 0px 0px 10px, rgba(255, 255, 255, 0.2) 0px 1
 
 
 <div class="container">
-    <div id="casino-section" style="position: relative; width: 100%; margin: 0 auto; background-color: #a01c1c; background-image: linear-gradient(to right, #8a1818, #b92020); border-radius: 16px; padding: 40px; color: white; font-family: Arial, sans-serif; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); box-sizing: border-box; margin-top: 44px;">
+    <div id="casino-section" style="position: relative; width: 100%; margin: 0 auto; background-color: #080808; background-image: linear-gradient(118deg, #091820, rgb(9, 24, 32) 21.85%, #6db3f5); border-radius: 16px; padding: 40px; color: white; font-family: Arial, sans-serif; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); box-sizing: border-box; margin-top: 44px; margin-bottom: 40px;">
         <div id="content-wrapper" style="
       display: flex;
       flex-direction: column;
@@ -767,22 +767,7 @@ box-shadow: rgba(255, 176, 25, 0.4) 0px 0px 10px, rgba(255, 255, 255, 0.2) 0px 1
             <div id="icons-section" style="margin-top: 30px;">
                 <div style="display: flex; gap: 10px; flex-wrap: wrap;">
                     <!-- New Releases -->
-                    <a href="#" class="category-card" style="
-            flex: 1;
-            min-width: 110px;
-            background-color: #1e1e2d;
-            border-radius: 8px;
-            padding: 10px 12px;
-            text-decoration: none;
-            color: white;
-            position: relative;
-            overflow: hidden;
-            transition: all 0.3s ease;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-            border-left: 3px solid #ff5e3a;
-            display: flex;
-            align-items: center;
-          ">
+                    <a href="#" class="category-card" style="flex: 1; min-width: 110px; background-color: #102532; border-radius: 8px; padding: 10px 12px; text-decoration: none; color: white; position: relative; overflow: hidden; transition: all 0.3s ease; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); border-left: 3px solid #ff5e3a; display: flex; align-items: center;">
                         <div class="category-icon" style="
               font-size: 24px;
               margin-right: 10px;
@@ -803,22 +788,7 @@ box-shadow: rgba(255, 176, 25, 0.4) 0px 0px 10px, rgba(255, 255, 255, 0.2) 0px 1
                     </a>
 
                     <!-- High RTP -->
-                    <a href="#" class="category-card" style="
-            flex: 1;
-            min-width: 110px;
-            background-color: #1e1e2d;
-            border-radius: 8px;
-            padding: 10px 12px;
-            text-decoration: none;
-            color: white;
-            position: relative;
-            overflow: hidden;
-            transition: all 0.3s ease;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-            border-left: 3px solid #3a9fff;
-            display: flex;
-            align-items: center;
-          ">
+                    <a href="#" class="category-card" style="flex: 1; min-width: 110px; background-color: #102532; border-radius: 8px; padding: 10px 12px; text-decoration: none; color: white; position: relative; overflow: hidden; transition: all 0.3s ease; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); border-left: 3px solid #3a9fff; display: flex; align-items: center;">
                         <div class="category-icon" style="
               font-size: 24px;
               margin-right: 10px;
@@ -839,22 +809,7 @@ box-shadow: rgba(255, 176, 25, 0.4) 0px 0px 10px, rgba(255, 255, 255, 0.2) 0px 1
                     </a>
 
                     <!-- Live Casino -->
-                    <a href="#" class="category-card" style="
-            flex: 1;
-            min-width: 110px;
-            background-color: #1e1e2d;
-            border-radius: 8px;
-            padding: 10px 12px;
-            text-decoration: none;
-            color: white;
-            position: relative;
-            overflow: hidden;
-            transition: all 0.3s ease;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-            border-left: 3px solid #a03aff;
-            display: flex;
-            align-items: center;
-          ">
+                    <a href="#" class="category-card" style="flex: 1; min-width: 110px; background-color: #102532; border-radius: 8px; padding: 10px 12px; text-decoration: none; color: white; position: relative; overflow: hidden; transition: all 0.3s ease; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); border-left: 3px solid #fb2d2d; display: flex; align-items: center;">
                         <div class="category-icon" style="
               font-size: 24px;
               margin-right: 10px;
@@ -875,22 +830,7 @@ box-shadow: rgba(255, 176, 25, 0.4) 0px 0px 10px, rgba(255, 255, 255, 0.2) 0px 1
                     </a>
 
                     <!-- Tournament -->
-                    <a href="#" class="category-card" style="
-            flex: 1;
-            min-width: 110px;
-            background-color: #1e1e2d;
-            border-radius: 8px;
-            padding: 10px 12px;
-            text-decoration: none;
-            color: white;
-            position: relative;
-            overflow: hidden;
-            transition: all 0.3s ease;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-            border-left: 3px solid #ffcc00;
-            display: flex;
-            align-items: center;
-          ">
+                    <a href="#" class="category-card" style="flex: 1; min-width: 110px; background-color: #102532; border-radius: 8px; padding: 10px 12px; text-decoration: none; color: white; position: relative; overflow: hidden; transition: all 0.3s ease; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); border-left: 3px solid #ffcc00; display: flex; align-items: center;">
                         <div class="category-icon" style="
               font-size: 24px;
               margin-right: 10px;
@@ -906,7 +846,7 @@ box-shadow: rgba(255, 176, 25, 0.4) 0px 0px 10px, rgba(255, 255, 255, 0.2) 0px 1
                             <div style="
                 font-size: 11px;
                 color: rgba(255, 255, 255, 0.6);
-              ">Compete & win</div>
+              ">Compete &amp; win</div>
                         </div>
                     </a>
                 </div>
@@ -956,20 +896,116 @@ box-shadow: rgba(255, 176, 25, 0.4) 0px 0px 10px, rgba(255, 255, 255, 0.2) 0px 1
             </div>
         </div>
 
-        <div id="image-wrapper" style="
-      position: absolute;
-      right: 0;
-      bottom: 0;
-      top: 0;
-      display: flex;
-      align-items: center;
-      justify-content: flex-end;
-      width: 50%;
-      z-index: 1;
-    ">
-            <img id="astronaut-image" src="https://cedabet.github.io/assets/images/sticker.webp" alt="Astronaut with flames" style="max-height: 500px; max-width: 100%; object-fit: contain; bottom: 0px; position: absolute;">
+        <div id="image-wrapper" style="position: absolute; right: 0; bottom: 0; position: absolute;
+right: -59px;
+bottom: -42px; top: 0; display: flex; align-items: center; justify-content: flex-end; width: 50%; z-index: 1;">
+            <img id="astronaut-image" src="https://cedabet.github.io/assets/images/spin.png " alt="Astronaut with flames" style="max-height: 500px; max-width: 100%; object-fit: contain; bottom: 0px; position: absolute;">
         </div>
     </div>
+
+    <script>
+                    // Responsive handling
+                    function adjustForScreenSize() {
+                        const section = document.getElementById('casino-section');
+                        const contentWrapper = document.getElementById('content-wrapper');
+                        const heading = document.getElementById('main-heading');
+                        const iconsSection = document.getElementById('icons-section');
+                        const imageWrapper = document.getElementById('image-wrapper');
+                        const astronautImage = document.getElementById('astronaut-image');
+                        const categoryCards = document.querySelectorAll('.category-card');
+                        const exploreButton = document.getElementById('explore-button');
+
+                        if (window.innerWidth <= 768) {
+                            // Mobile styles
+                            section.style.padding = '30px 20px';
+                            contentWrapper.style.maxWidth = '100%';
+                            heading.style.fontSize = '1.5rem';
+
+                            // Move image to the top on mobile
+                            section.style.display = 'flex';
+                            section.style.flexDirection = 'column';
+
+                            imageWrapper.style.position = 'relative';
+                            imageWrapper.style.width = '100%';
+                            imageWrapper.style.height = '250px';
+                            imageWrapper.style.marginBottom = '20px';
+                            imageWrapper.style.order = '1';
+                            imageWrapper.style.alignItems = 'center';
+                            imageWrapper.style.justifyContent = 'center';
+
+                            contentWrapper.style.order = '2';
+
+                            astronautImage.style.position = 'relative';
+                            astronautImage.style.maxHeight = '250px';
+                            astronautImage.style.margin = '0 auto';
+                            astronautImage.style.display = 'block';
+                            astronautImage.style.bottom = 'auto';
+
+                            // Fix button width for mobile
+                            exploreButton.style.width = '100%';
+                            exploreButton.style.boxSizing = 'border-box';
+
+                            // Adjust cards for mobile
+                            if (window.innerWidth <= 480) {
+                                categoryCards.forEach(card => {
+                                    card.style.minWidth = 'calc(50% - 5px)';
+                                    card.style.flex = '0 0 calc(50% - 5px)';
+                                });
+
+                                // Smaller text and padding for very small screens
+                                exploreButton.style.fontSize = '13px';
+                                exploreButton.style.padding = '12px 16px';
+
+                                // Hide arrow on very small screens if text is too long
+                                if (window.innerWidth < 360) {
+                                    document.querySelector('.button-arrow').style.display = 'none';
+                                } else {
+                                    document.querySelector('.button-arrow').style.display = 'inline';
+                                }
+                            }
+                        } else {
+                            // Desktop styles - reset to original
+                            section.style.padding = '40px';
+                            section.style.display = 'block';
+                            contentWrapper.style.maxWidth = '60%';
+                            contentWrapper.style.order = 'initial';
+                            heading.style.fontSize = '2rem';
+
+                            imageWrapper.style.position = 'absolute';
+                            imageWrapper.style.width = '50%';
+                            imageWrapper.style.marginBottom = '0';
+                            imageWrapper.style.order = 'initial';
+                            imageWrapper.style.height = 'auto';
+                            imageWrapper.style.alignItems = 'center';
+                            imageWrapper.style.justifyContent = 'flex-end';
+
+                            astronautImage.style.position = 'absolute';
+                            astronautImage.style.maxHeight = '500px';
+                            astronautImage.style.margin = '0';
+                            astronautImage.style.bottom = '0px';
+
+                            // Reset button for desktop
+                            exploreButton.style.width = 'auto';
+                            exploreButton.style.fontSize = '15px';
+                            exploreButton.style.padding = '14px 28px';
+                            document.querySelector('.button-arrow').style.display = 'inline';
+
+                            // Reset cards for desktop
+                            categoryCards.forEach(card => {
+                                card.style.minWidth = '110px';
+                                card.style.flex = '1';
+                            });
+                        }
+                    }
+
+                    // Run on load and resize
+                    window.addEventListener('load', adjustForScreenSize);
+                    window.addEventListener('resize', adjustForScreenSize);
+
+                    // Initial call
+                    adjustForScreenSize();
+    </script>
+</div>
 
     <script>
                     // Responsive handling
