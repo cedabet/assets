@@ -1051,7 +1051,7 @@ box-shadow: rgba(255, 176, 25, 0.4) 0px 0px 10px, rgba(255, 255, 255, 0.2) 0px 1
 		mainContent.appendChild(customSection5);
 		//   mainContent.appendChild(customSection2);
 		 mainContent.appendChild(customSection);
-
+addButtonBeforeImage();
         }
 
     }
@@ -1072,5 +1072,3 @@ function addButtonBeforeImage() {
   })
 }
 
-// Call the function when the DOM is fully loaded
-document.addEventListener('DOMContentLoaded', addButtonBeforeImage)
