@@ -11,6 +11,7 @@
         if (isFirstLoad) {
             loadVipFeatures();
             setTimeout(loadh2Title, 1000);   
+		addMenuElement();
             var sportspath = window.location.pathname;
             if (sportspath === "/en/sportsbook") {
                 var sidebar = document.getElementById("sidebar");
@@ -57,6 +58,7 @@
                 /*  alert("Anasayfaya hoş geldiniz!");*/
                 loadVipFeatures();
 	        setTimeout(loadh2Title, 1000);   
+		    addMenuElement();
             } else if (path === "/en/vip") {
                 /* alert("VIP sayfasına hoş geldiniz!");*/
             }
@@ -103,6 +105,40 @@
 
     window.addEventListener('load', checkUrlChange);
     }) ();
+
+function addMenuElement() {
+  const sidebarNav = document.querySelector('.sidebar__nav.sidebar__nav--border');
+
+  if (!sidebarNav) {
+    return;
+  }
+
+  const newLi = document.createElement('li');
+  newLi.classList.add('');  // Yeni <li> öğesinin class'ını ekleyin (boş bırakılmış)
+
+
+  const newAnchor = document.createElement('a');
+  newAnchor.href = '/en/trade';
+
+  const svgIcon = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
+  svgIcon.classList.add('svg-icon');
+  const use = document.createElementNS('http://www.w3.org/2000/svg', 'use');
+  use.setAttribute('href', '/static/media/sprite.6b179d63884598e512b15f3dd0296663.svg#chart');
+  svgIcon.appendChild(use);
+
+  const span = document.createElement('span');
+  span.textContent = 'New';
+
+
+  newAnchor.appendChild(svgIcon);
+  newAnchor.appendChild(span);
+
+
+  newLi.appendChild(newAnchor);
+
+
+  sidebarNav.appendChild(newLi);
+}
 
 
 function loadh2Title() {
