@@ -114,9 +114,6 @@ function addMenuElement() {
   }
 
   const newLi = document.createElement('li');
-  newLi.classList.add('');  // Yeni <li> öğesinin class'ını ekleyin (boş bırakılmış)
-
-
   const newAnchor = document.createElement('a');
   newAnchor.href = '/en/trade';
 
