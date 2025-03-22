@@ -578,42 +578,42 @@ box-shadow: rgba(255, 176, 25, 0.4) 0px 0px 10px, rgba(255, 255, 255, 0.2) 0px 1
     }
 </style>
 
-<div class="container">
-    <div class="steps-section">
-        <!-- Steps container -->
-        <div class="steps-container">
-            <!-- Step 1 -->
-            <div class="step">
-                <span class="step-number">01</span>
-                <span class="step-text">Register an Account.</span>
-            </div>
-
-            <!-- Divider -->
-            <div class="divider"></div>
-
-            <!-- Step 2 -->
-            <div class="step">
-                <span class="step-number">02</span>
-                <span class="step-text">
-                    Make a Deposit & Play
-                </span>
-            </div>
-
-            <!-- Divider -->
-            <div class="divider"></div>
-
-            <!-- Step 3 -->
-            <div class="step">
-                <span class="step-number">03</span>
-                <span class="step-text">Get 10% Weekly Cashback</span>
-            </div>
-        </div>
-
-        <!-- Join Now Button -->
-        <div class="button-container">
-            <button class="join-button">Join Now</button>
-        </div>
+<div class="container" style="border: none;">
+    <div style="/* background-color: #0c1016; */ color: white; padding: 30px 20px; position: relative; font-family: Arial, sans-serif; width: 100%; border: none;">
+  <!-- Gold vertical line on the left -->
+  
+  
+  <!-- Steps container -->
+  <div style="display: flex; justify-content: space-around; align-items: center; margin-bottom: 40px; flex-wrap: wrap;">
+    <!-- Step 1 -->
+    <div style="display: flex; align-items: center; margin: 10px 0;">
+      <span style="color: #00c8ff; font-size: 28px; font-weight: bold; margin-right: 10px;">01</span>
+      <span style="font-size: 18px; color: #ffffff;">Register an account</span>
     </div>
+    
+    <!-- Divider line -->
+    <div style="width: 100px; height: 1px; background-color: #1e3a5a; margin: 0 10px;"></div>
+    
+    <!-- Step 2 -->
+    <div style="display: flex; align-items: center; margin: 10px 0;">
+      <span style="color: #00c8ff; font-size: 28px; font-weight: bold; margin-right: 10px;">02</span>
+      <span style="font-size: 18px; color: #ffffff;">Make a Deposit &amp; Play</span>
+    </div>
+    
+    <!-- Divider line -->
+    <div style="width: 100px; height: 1px; background-color: #1e3a5a; margin: 0 10px;"></div>
+    
+    <!-- Step 3 -->
+    <div style="display: flex; align-items: center; margin: 10px 0;">
+      <span style="color: #00c8ff; font-size: 28px; font-weight: bold; margin-right: 10px;">03</span>
+      <span style="font-size: 18px; color: #ffffff;">Get 10% Weekly Cashback</span>
+    </div>
+  </div>
+  
+  <!-- Join Now button -->
+  <div style="text-align: center;">
+    <button style="background-color: #00a8ff; color: white; border: none; border-radius: 30px; padding: 12px 40px; font-size: 16px; font-weight: bold; cursor: pointer; box-shadow: 0 0 15px rgba(0, 168, 255, 0.5);">JOIN NOW</button>
+  </div>
 </div>`;
 
 		customSection5.innerHTML=`
