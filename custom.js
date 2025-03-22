@@ -1075,10 +1075,10 @@ function addButtonsToSlider() {
       bottom: 2em;
       height: 33px !important;
       width: 100% !important;
-      max-width: 180px;
+      max-width: 165px;
       margin-right: 5px;
-      padding-left: 7px !important;
-      padding-right: 7px !important;
+      padding-left: 5px !important;
+      padding-right: 5px !important;
       letter-spacing: 0.5px;
       border-radius: 4px !important;
       background: rgb(218, 165, 32) !important;
