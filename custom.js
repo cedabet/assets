@@ -1051,24 +1051,36 @@ box-shadow: rgba(255, 176, 25, 0.4) 0px 0px 10px, rgba(255, 255, 255, 0.2) 0px 1
 		mainContent.appendChild(customSection5);
 		//   mainContent.appendChild(customSection2);
 		 mainContent.appendChild(customSection);
-addButtonBeforeImage();
+addButtonsToSlider();
         }
 
     }
 
 
-function addButtonBeforeImage() {
-  // Find all slide images
+function addButtonsToSlider() {
   const slideImages = document.querySelectorAll('.slide-image')
   
   slideImages.forEach(image => {
-    // Create a button element
     const button = document.createElement('button')
-    button.textContent = 'Click Me'
-    button.className = 'btn' // Add your button styling class
+    button.className = 'header__signup slider_btn'
+    button.type = 'button'
+    button.textContent = 'Details'
+    button.style.position = 'absolute'
+    button.style.right = '1em'
+    button.style.bottom = '2em'
+    button.style.width = '100%'
+    button.style.maxWidth = '220px'
+    button.style.paddingTop = '8px'
+    button.style.paddingBottom = '8px'
+    button.style.height = 'auto'
     
-    // Insert the button before the image
-    image.parentNode.insertBefore(button, image)
+    const slideDiv = image.closest('.slide')
+    if (slideDiv) {
+      if (getComputedStyle(slideDiv).position === 'static') {
+        slideDiv.style.position = 'relative'
+      }
+      slideDiv.appendChild(button)
+    }
   })
 }
 
