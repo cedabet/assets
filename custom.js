@@ -128,6 +128,8 @@ function addMenuElement() {
 
 
   newAnchor.appendChild(svgIcon);
+  newAnchor.appendChild(document.createTextNode(' Table Games'));
+
   newAnchor.appendChild(span);
 
 
