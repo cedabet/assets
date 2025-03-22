@@ -186,7 +186,7 @@ function loadh2Title() {
       z-index: 2;
     ">
       <div>
-        <h1 id="main-heading" style="font-size: 2rem; font-weight: 800; line-height: 1.1; margin-bottom: 40px; margin-top: 0; max-width: 800px;">
+        <h1 id="main-heading" style="font-size: 2rem; font-weight: 800; line-height: 1.1; margin-bottom: 20px; margin-top: 0; max-width: 800px;">
           Join the excitement by betting on the biggest highlights in sports.
         </h1>
       </div>
