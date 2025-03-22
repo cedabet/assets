@@ -1061,21 +1061,35 @@ function addButtonsToSlider() {
   const slideImages = document.querySelectorAll('.slide-image')
   
   slideImages.forEach(image => {
+    // Create a button element
     const button = document.createElement('button')
     button.className = 'header__signup slider_btn'
     button.type = 'button'
     button.textContent = 'Details'
-    button.style.position = 'absolute'
-    button.style.right = '1em'
-    button.style.bottom = '2em'
-    button.style.width = '100%'
-    button.style.maxWidth = '220px'
-    button.style.paddingTop = '8px'
-    button.style.paddingBottom = '8px'
-    button.style.height = 'auto'
     
+    // Apply all the styles with gold colors
+    button.style.cssText = `
+      position: absolute;
+      right: 1em;
+      bottom: 2em;
+      height: 33px !important;
+      width: 100% !important;
+      max-width: 180px;
+      margin-right: 5px;
+      padding-left: 7px !important;
+      padding-right: 7px !important;
+      letter-spacing: 0.5px;
+      border-radius: 4px !important;
+      background: rgb(218, 165, 32) !important;
+      background-color: rgb(218, 165, 32);
+      box-shadow: 0 0 10px rgba(255, 215, 0, 0.4), rgba(255, 255, 255, 0.2) 0px 1px 0px inset, 0 0 15px rgb(255, 215, 0) inset !important;
+      color: rgba(255, 255, 255, 0.95);
+    `
+    
+    // Get the parent slide div to properly position the button
     const slideDiv = image.closest('.slide')
     if (slideDiv) {
+      // Make sure the slide div has position relative for absolute positioning to work
       if (getComputedStyle(slideDiv).position === 'static') {
         slideDiv.style.position = 'relative'
       }
@@ -1083,4 +1097,3 @@ function addButtonsToSlider() {
     }
   })
 }
-
