@@ -113,7 +113,18 @@ function addMenuElement() {
     return;
   }
 
+  const uid = 'custom-item-menu'; 
+
+
+  const existingElement = document.getElementById(uid);
+
+  if (existingElement) {
+    return;
+  }
+
   const newLi = document.createElement('li');
+  newLi.id = uid; 
+
   const newAnchor = document.createElement('a');
   newAnchor.href = '/en/casino/group/table-games';
 
@@ -123,18 +134,16 @@ function addMenuElement() {
   use.setAttribute('href', '/static/media/sprite.6b179d63884598e512b15f3dd0296663.svg#chart');
   svgIcon.appendChild(use);
 
+
   const span = document.createElement('span');
   span.textContent = 'New';
 
 
   newAnchor.appendChild(svgIcon);
   newAnchor.appendChild(document.createTextNode(' Table Games'));
-
   newAnchor.appendChild(span);
 
-
   newLi.appendChild(newAnchor);
-
 
   sidebarNav.appendChild(newLi);
 }
