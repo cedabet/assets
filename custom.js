@@ -131,7 +131,7 @@ function addMenuElement() {
   const svgIcon = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
   svgIcon.classList.add('svg-icon');
   const use = document.createElementNS('http://www.w3.org/2000/svg', 'use');
-  use.setAttribute('href', 'https://github.com/cedabet/assets/blob/main/images/qw3859328e512b15f3te2a3dab3.svg');
+  use.setAttribute('href', '/static/media/sprite.6b179d63884598e512b15f3dd0296663.svg#table-games');
   svgIcon.appendChild(use);
 
 
