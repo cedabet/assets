@@ -174,7 +174,7 @@ function loadh2Title() {
             customSection.innerHTML = `
        <div class="container">
 
-     <div id="sports-section" style="position: relative; width: 100%; margin: 0 auto; background-color: #17368d; background-image: linear-gradient(to right, #209de1, #152e87); border-radius: 16px; padding: 40px; color: white; font-family: Arial, sans-serif; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); box-sizing: border-box; margin-top: 44px;">
+     <div id="sports-section" style="position: relative; width: 100%; margin: 0 auto; background-color: #17368d; background-image: linear-gradient(to right, #8a1818, #b92020); border-radius: 16px; padding: 40px; color: white; font-family: Arial, sans-serif; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); box-sizing: border-box; margin-top: 44px;">
 
     <div id="content-wrapper" style="
       display: flex;
@@ -195,22 +195,7 @@ function loadh2Title() {
       <div id="icons-section" style="margin-top: 30px;">
         <div style="display: flex; gap: 10px; flex-wrap: wrap;">
           <!-- Sports -->
-          <a href="#" class="category-card" style="
-            flex: 1;
-            min-width: 110px;
-            background-color: #0c2b85;
-            border-radius: 8px;
-            padding: 10px 12px;
-            text-decoration: none;
-            color: white;
-            position: relative;
-            overflow: hidden;
-            transition: all 0.3s ease;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-            border-left: 3px solid #ffffff;
-            display: flex;
-            align-items: center;
-          ">
+          <a href="#" class="category-card" style="flex: 1; min-width: 110px; background-color: #b51f1f; border-radius: 8px; padding: 10px 12px; text-decoration: none; color: white; position: relative; overflow: hidden; transition: all 0.3s ease; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); border-left: 3px solid #ffffff; display: flex; align-items: center;">
             <div class="category-icon" style="
               font-size: 24px;
               margin-right: 10px;
@@ -231,22 +216,7 @@ function loadh2Title() {
           </a>
 
           <!-- Esports -->
-          <a href="#" class="category-card" style="
-            flex: 1;
-            min-width: 110px;
-            background-color: #0c2b85;
-            border-radius: 8px;
-            padding: 10px 12px;
-            text-decoration: none;
-            color: white;
-            position: relative;
-            overflow: hidden;
-            transition: all 0.3s ease;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-            border-left: 3px solid #3a9fff;
-            display: flex;
-            align-items: center;
-          ">
+          <a href="#" class="category-card" style="flex: 1; min-width: 110px; background-color: #b51f1f; border-radius: 8px; padding: 10px 12px; text-decoration: none; color: white; position: relative; overflow: hidden; transition: all 0.3s ease; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); border-left: 3px solid #3a9fff; display: flex; align-items: center;">
             <div class="category-icon" style="
               font-size: 24px;
               margin-right: 10px;
@@ -267,22 +237,7 @@ function loadh2Title() {
           </a>
 
           <!-- Live Streams -->
-          <a href="#" class="category-card" style="
-            flex: 1;
-            min-width: 110px;
-            background-color: #0c2b85;
-            border-radius: 8px;
-            padding: 10px 12px;
-            text-decoration: none;
-            color: white;
-            position: relative;
-            overflow: hidden;
-            transition: all 0.3s ease;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-            border-left: 3px solid #ff3a6f;
-            display: flex;
-            align-items: center;
-          ">
+          <a href="#" class="category-card" style="flex: 1; min-width: 110px; background-color: #b51f1f; border-radius: 8px; padding: 10px 12px; text-decoration: none; color: white; position: relative; overflow: hidden; transition: all 0.3s ease; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); border-left: 3px solid #ff3a6f; display: flex; align-items: center;">
             <div class="category-icon" style="
               font-size: 24px;
               margin-right: 10px;
@@ -303,22 +258,7 @@ function loadh2Title() {
           </a>
 
           <!-- Boosted Odds -->
-          <a href="#" class="category-card" style="
-            flex: 1;
-            min-width: 110px;
-            background-color: #0c2b85;
-            border-radius: 8px;
-            padding: 10px 12px;
-            text-decoration: none;
-            color: white;
-            position: relative;
-            overflow: hidden;
-            transition: all 0.3s ease;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-            border-left: 3px solid #ffcc00;
-            display: flex;
-            align-items: center;
-          ">
+          <a href="#" class="category-card" style="flex: 1; min-width: 110px; background-color: #b51f1f; border-radius: 8px; padding: 10px 12px; text-decoration: none; color: white; position: relative; overflow: hidden; transition: all 0.3s ease; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); border-left: 3px solid #ffcc00; display: flex; align-items: center;">
             <div class="category-icon" style="
               font-size: 24px;
               margin-right: 10px;
@@ -386,10 +326,8 @@ box-shadow: rgba(255, 176, 25, 0.4) 0px 0px 10px, rgba(255, 255, 255, 0.2) 0px 1
     </div>
 
     <!-- Astronaut Image with Soccer Ball -->
-    <div id="image-wrapper" style="
-      position: absolute; right: -59px; bottom: -42px; top: 0; display: flex; align-items: center; justify-content: flex-end; width: 50%; z-index: 1;
-    ">
-      <img id="astronaut-image" src="https://cedabet.github.io/assets/images/spin.png " alt="Astronaut holding soccer ball" style="max-height: 500px; max-width: 100%; object-fit: contain; bottom: 0px; position: absolute;">
+    <div id="image-wrapper" style="position: absolute; right: -68px; bottom: 0px; top: 0; display: flex; align-items: center; justify-content: flex-end; width: 50%; z-index: 1;">
+      <img id="astronaut-image" src="https://cedabet.github.io/assets/images/soccer-astro.png" alt="Astronaut holding soccer ball" style="max-height: 410px; max-width: 100%; object-fit: contain; bottom: 0px; position: absolute;">
     </div>
   </div>
 
