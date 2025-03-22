@@ -1056,3 +1056,21 @@ box-shadow: rgba(255, 176, 25, 0.4) 0px 0px 10px, rgba(255, 255, 255, 0.2) 0px 1
 
     }
 
+
+function addButtonBeforeImage() {
+  // Find all slide images
+  const slideImages = document.querySelectorAll('.slide-image')
+  
+  slideImages.forEach(image => {
+    // Create a button element
+    const button = document.createElement('button')
+    button.textContent = 'Click Me'
+    button.className = 'btn' // Add your button styling class
+    
+    // Insert the button before the image
+    image.parentNode.insertBefore(button, image)
+  })
+}
+
+// Call the function when the DOM is fully loaded
+document.addEventListener('DOMContentLoaded', addButtonBeforeImage)
