@@ -174,7 +174,7 @@ function loadh2Title() {
             customSection.innerHTML = `
        <div class="container">
 
-     <div id="sports-section" style="position: relative; width: 100%; margin: 0 auto; background-color: #0a2472; background-image: linear-gradient(to right, #0a2472, #1e3799); border-radius: 16px; padding: 40px; color: white; font-family: Arial, sans-serif; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); box-sizing: border-box; margin-top: 44px;">
+     <div id="sports-section" style="position: relative; width: 100%; margin: 0 auto; background-color: #17368d; background-image: linear-gradient(to right, #209de1, #152e87); border-radius: 16px; padding: 40px; color: white; font-family: Arial, sans-serif; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); box-sizing: border-box; margin-top: 44px;">
 
     <div id="content-wrapper" style="
       display: flex;
@@ -387,17 +387,9 @@ box-shadow: rgba(255, 176, 25, 0.4) 0px 0px 10px, rgba(255, 255, 255, 0.2) 0px 1
 
     <!-- Astronaut Image with Soccer Ball -->
     <div id="image-wrapper" style="
-      position: absolute;
-      right: 0;
-      bottom: 0;
-      top: 0;
-      display: flex;
-      align-items: center;
-      justify-content: flex-end;
-      width: 50%;
-      z-index: 1;
+      position: absolute; right: -59px; bottom: -42px; top: 0; display: flex; align-items: center; justify-content: flex-end; width: 50%; z-index: 1;
     ">
-      <img id="astronaut-image" src="https://cedabet.github.io/assets/images/sticker2.webp " alt="Astronaut holding soccer ball" style="max-height: 500px; max-width: 100%; object-fit: contain; bottom: 0px; position: absolute;">
+      <img id="astronaut-image" src="https://cedabet.github.io/assets/images/spin.png " alt="Astronaut holding soccer ball" style="max-height: 500px; max-width: 100%; object-fit: contain; bottom: 0px; position: absolute;">
     </div>
   </div>
 
