@@ -115,7 +115,7 @@ function addMenuElement() {
 
   const newLi = document.createElement('li');
   const newAnchor = document.createElement('a');
-  newAnchor.href = '/en/trade';
+  newAnchor.href = '/en/casino/group/table-games';
 
   const svgIcon = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
   svgIcon.classList.add('svg-icon');
