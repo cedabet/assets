@@ -1065,11 +1065,12 @@ function addButtonsToSlider() {
     const button = document.createElement('button')
     button.className = 'header__signup slider_btn'
     button.type = 'button'
-    button.textContent = 'Details'
+    button.textContent = 'Show Details'
     
     // Apply all the styles with gold colors
     button.style.cssText = `
       position: absolute;
+      text-transform:unset;
       right: 1em;
       bottom: 2em;
       height: 33px !important;
