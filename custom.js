@@ -1049,10 +1049,10 @@ bottom: -42px; top: 0; display: flex; align-items: center; justify-content: flex
     </script>
 </div>`
                   mainContent.appendChild(customSection3);
-		mainContent.appendChild(customSection);
+		mainContent.appendChild(customSection4);
 		mainContent.appendChild(customSection5);
 		//   mainContent.appendChild(customSection2);
-		 mainContent.appendChild(customSection4);
+		 mainContent.appendChild(customSection);
 
         }
 
