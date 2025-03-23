@@ -733,46 +733,58 @@ box-shadow: rgba(255, 176, 25, 0.4) 0px 0px 10px, rgba(255, 255, 255, 0.2) 0px 1
         const logoSlider = document.getElementById('logoSlider');
 
 
-        logos.forEach(logo => {
-            const logoItem = document.createElement('div');
-            logoItem.className = 'logo-item';
+      function initSlider() {
+    const logoSlide = document.getElementById('logoSlide');
+    const logoSlider = document.getElementById('logoSlider');
 
-            const link = document.createElement('a');
-            link.href = logo.url;
+    // Kontrol etmek için alert ekleyelim
+    alert('logoSlide found: ' + (logoSlide !== null) + ', logoSlider found: ' + (logoSlider !== null));
 
-            if (logo.src) {
-                const img = document.createElement('img');
-                img.src = logo.src;
-                img.alt = logo.alt;
-                img.loading = 'lazy';
-                link.appendChild(img);
-            } else {
-
-                const textSpan = document.createElement('span');
-                textSpan.textContent = logo.alt;
-                link.appendChild(textSpan);
-            }
-
-            logoItem.appendChild(link);
-            logoSlide.appendChild(logoItem);
-        });
-
-
-        const clone = logoSlide.cloneNode(true);
-        logoSlider.appendChild(clone);
-
-        const animationDuration = logos.length * 1.5;
-        logoSlider.style.animationDuration = animationDuration + 's';
-
-        logoSlider.addEventListener('mouseenter', () => {
-            logoSlider.style.animationPlayState = 'paused';
-        });
-
-        logoSlider.addEventListener('mouseleave', () => {
-            logoSlider.style.animationPlayState = 'running';
-        });
+    if (!logoSlide || !logoSlider) {
+        alert('One or both of the elements (logoSlide, logoSlider) were not found!');
+        return; // Hatalı durumda işleme devam etmiyoruz
     }
-    window.addEventListener('load', initSlider);
+
+    logos.forEach(logo => {
+        const logoItem = document.createElement('div');
+        logoItem.className = 'logo-item';
+
+        const link = document.createElement('a');
+        link.href = logo.url;
+
+        if (logo.src) {
+            const img = document.createElement('img');
+            img.src = logo.src;
+            img.alt = logo.alt;
+            img.loading = 'lazy';
+            link.appendChild(img);
+        } else {
+            const textSpan = document.createElement('span');
+            textSpan.textContent = logo.alt;
+            link.appendChild(textSpan);
+        }
+
+        logoItem.appendChild(link);
+        logoSlide.appendChild(logoItem);
+    });
+
+    const clone = logoSlide.cloneNode(true);
+    logoSlider.appendChild(clone);
+
+    const animationDuration = logos.length * 1.5;
+    logoSlider.style.animationDuration = animationDuration + 's';
+
+    logoSlider.addEventListener('mouseenter', () => {
+        logoSlider.style.animationPlayState = 'paused';
+    });
+
+    logoSlider.addEventListener('mouseleave', () => {
+        logoSlider.style.animationPlayState = 'running';
+    });
+}
+
+window.addEventListener('load', initSlider);
+
 </script>
 `;
 
