@@ -728,12 +728,15 @@ function initSlider() {
             { src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/Leander.svg", alt: "Raw Games", url: "/en/providers/rawgames" },
             { src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/Leander.svg", alt: "YGR Games", url: "/en/providers/ygrgames" }
         ];
+
     const logoSlide = document.getElementById('logoSlide');
     const logoSlider = document.getElementById('logoSlider');
 
+    // Kontrol etmek için alert ekleyelim
+    alert('logoSlide found: ' + (logoSlide !== null) + ', logoSlider found: ' + (logoSlider !== null));
 
     if (!logoSlide || !logoSlider) {
-
+        alert('One or both of the elements (logoSlide, logoSlider) were not found!');
         return; // Hatalı durumda işleme devam etmiyoruz
     }
     
@@ -775,8 +778,10 @@ function initSlider() {
     });
 }
 
+setTimeout(initSlider, 3000);
 
-initSlider();
+
+
 
 /*customSection2.innerHTML = `
 <div class="container">
