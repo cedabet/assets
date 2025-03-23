@@ -767,7 +767,7 @@ box-shadow: rgba(255, 176, 25, 0.4) 0px 0px 10px, rgba(255, 255, 255, 0.2) 0px 1
     logoSlider.appendChild(clone);
 
     const animationDuration = logos.length * 1.5;
-    logoSlider.style.animationDuration = animationDuration + 's';
+    logoSlider.style.animationDuration = `${animationDuration}s`;
 
     logoSlider.addEventListener('mouseenter', () => {
         logoSlider.style.animationPlayState = 'paused';
