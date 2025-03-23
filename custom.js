@@ -153,14 +153,16 @@ function addMenuElementTwo() {
     const sidebarLinks = document.querySelector(".sidebar__links");
 
     if (sidebarLinks) {
-    
-        const existingMenu = sidebarLinks.querySelector('.sidebar__link--casino');
+   
+        const elementId = 'promotions-link'; 
 
-    
+      
+        const existingMenu = document.getElementById(elementId);
+
         if (!existingMenu) {
             const newHTML = `
                 <div style="width: 100%;">
-                    <a class="sidebar__link sidebar__link--casino" href="/promotions" style="
+                    <a id="${elementId}" class="sidebar__link sidebar__link--casino" href="/promotions" style="
                         background: url('https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/vnnjkadsfjADGSGKSDKFWQE/styles/H7q64v8GfGWPVmMoDjcgyfHQKc1a0l6x5PvV1NiV.jpg') left center / cover no-repeat;
                         width: 100%;
                         margin-bottom: 17px;
@@ -175,6 +177,7 @@ function addMenuElementTwo() {
         }
     }
 }
+
 
 
 function loadh2Title() {
