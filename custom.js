@@ -657,60 +657,9 @@ box-shadow: rgba(255, 176, 25, 0.4) 0px 0px 10px, rgba(255, 255, 255, 0.2) 0px 1
     </div>
 </div>
 <script>
-alert('abc');
-    const logos = [
-        { src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/pragmaticplay.svg", alt: "Pragmatic Play", url: "/en/providers/pragmaticplay" },
-        { src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/Evolution%20Gaming.svg", alt: "Evolution", url: "/en/providers/evolution" },
-        { src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/pragmatic-live-light.svg", alt: "Pragmatic Live", url: "/en/providers/pragmaticlive" },
-    ];
-    const logoSlide = document.getElementById('logoSlide');
-    const logoSlider = document.getElementById('logoSlider');
-    alert("test")
-
-    if (!logoSlide || !logoSlider) {
-        alert('One or both of the elements (logoSlide, logoSlider) were not found!');
-        return; // Hatalı durumda işleme devam etmiyoruz
-    }
-    else{
-    alert('bulundu');
-    }
-    
-    logos.forEach(logo => {
-        const logoItem = document.createElement('div');
-        logoItem.className = 'logo-item';
-
-        const link = document.createElement('a');
-        link.href = logo.url;
-
-        if (logo.src) {
-            const img = document.createElement('img');
-            img.src = logo.src;
-            img.alt = logo.alt;
-            img.loading = 'lazy';
-            link.appendChild(img);
-        } else {
-            const textSpan = document.createElement('span');
-            textSpan.textContent = logo.alt;
-            link.appendChild(textSpan);
-        }
-
-        logoItem.appendChild(link);
-        logoSlide.appendChild(logoItem);
-    });
-
-    const clone = logoSlide.cloneNode(true);
-    logoSlider.appendChild(clone);
-
-    const animationDuration = logos.length * 1.5;
-    logoSlider.style.animationDuration = animationDuration + 's';
-
-    logoSlider.addEventListener('mouseenter', () => {
-        logoSlider.style.animationPlayState = 'paused';
-    });
-
-    logoSlider.addEventListener('mouseleave', () => {
-        logoSlider.style.animationPlayState = 'running';
-    });
+setTimeout(function() {
+    alert("Bu bir alert mesajıdır!");
+}, 3000); // 3 saniye (3000 milisaniye) sonra alert gösterir.
 
 </script>
 `;
