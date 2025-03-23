@@ -13,6 +13,7 @@
             setTimeout(loadh2Title, 1000);   
 		addMenuElement();
 		  addMenuElementTwo();
+		updateCopyrightYear();
             var sportspath = window.location.pathname;
             if (sportspath === "/en/sportsbook") {
                 var sidebar = document.getElementById("sidebar");
