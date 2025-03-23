@@ -612,7 +612,7 @@ box-shadow: rgba(255, 176, 25, 0.4) 0px 0px 10px, rgba(255, 255, 255, 0.2) 0px 1
   
   <!-- Join Now button -->
   <div style="text-align: center;">
-    <a href="?modal=register"><button style="background-color: #00a8ff; color: white; border: none; border-radius: 30px; padding: 12px 40px; font-size: 16px; font-weight: bold; cursor: pointer; box-shadow: 0 0 15px rgba(0, 168, 255, 0.5);">JOIN NOW</button></a>
+    <a href="/en?modal=register"><button style="background-color: #00a8ff; color: white; border: none; border-radius: 30px; padding: 12px 40px; font-size: 16px; font-weight: bold; cursor: pointer; box-shadow: 0 0 15px rgba(0, 168, 255, 0.5);">JOIN NOW</button></a>
   </div>
 </div>`;
 
