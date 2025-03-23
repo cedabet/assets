@@ -744,8 +744,13 @@ box-shadow: rgba(255, 176, 25, 0.4) 0px 0px 10px, rgba(255, 255, 255, 0.2) 0px 1
         alert('One or both of the elements (logoSlide, logoSlider) were not found!');
         return; // Hatalı durumda işleme devam etmiyoruz
     }
+    else{
+    alert("div bulundu");
+    }
+    
 
     logos.forEach(logo => {
+        alert("foraech calısıyor");
         const logoItem = document.createElement('div');
         logoItem.className = 'logo-item';
 
