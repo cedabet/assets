@@ -728,12 +728,7 @@ box-shadow: rgba(255, 176, 25, 0.4) 0px 0px 10px, rgba(255, 255, 255, 0.2) 0px 1
         { src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/Leander.svg", alt: "Raw Games", url: "/en/providers/rawgames" },
         { src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/Leander.svg", alt: "YGR Games", url: "/en/providers/ygrgames" }
     ];
-    function initSlider() {
-        const logoSlide = document.getElementById('logoSlide');
-        const logoSlider = document.getElementById('logoSlider');
-
-
-      function initSlider() {
+  function initSlider() {
     const logoSlide = document.getElementById('logoSlide');
     const logoSlider = document.getElementById('logoSlider');
 
@@ -744,13 +739,8 @@ box-shadow: rgba(255, 176, 25, 0.4) 0px 0px 10px, rgba(255, 255, 255, 0.2) 0px 1
         alert('One or both of the elements (logoSlide, logoSlider) were not found!');
         return; // Hatalı durumda işleme devam etmiyoruz
     }
-    else{
-    alert("div bulundu");
-    }
     
-
     logos.forEach(logo => {
-        alert("foraech calısıyor");
         const logoItem = document.createElement('div');
         logoItem.className = 'logo-item';
 
@@ -788,7 +778,9 @@ box-shadow: rgba(255, 176, 25, 0.4) 0px 0px 10px, rgba(255, 255, 255, 0.2) 0px 1
     });
 }
 
-window.addEventListener('load', initSlider);
+
+initSlider();
+
 
 </script>
 `;
