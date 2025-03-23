@@ -180,7 +180,7 @@ function addMenuElementTwo() {
             const newHTMLSmall = `
                 <a id="${elementId}" class="sidebar__link-small sidebar__link-small--purple" href="/en/casino" style="background: url('https://cedabet.github.io/assets/images/promotionBtn.jpg') left center / cover no-repeat;"></a>
             `;
-            sidebarLinksSmall.insertAdjacentHTML("beforeend", newHTMLSmall); // İçeriği sonuna ekliyoruz
+            sidebarLinksSmall.insertAdjacentHTML("beforeend", newHTMLSmall); 
         }
     }
 
@@ -200,11 +200,11 @@ function addMenuElementTwo() {
                         margin-top: -10px;
                         box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -2px 0px inset;
                     ">
-                        <span>Promosyon</span>
+                        <span>Promotion</span>
                     </a>
                 </div>
             `;
-            sidebarLinks.insertAdjacentHTML("afterend", newHTML); // İçeriği sonuna ekliyoruz
+            sidebarLinks.insertAdjacentHTML("afterend", newHTML);
         }
     }
 }
