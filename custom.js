@@ -617,27 +617,26 @@ box-shadow: rgba(255, 176, 25, 0.4) 0px 0px 10px, rgba(255, 255, 255, 0.2) 0px 1
 </div>`;
 
 		customSection5.innerHTML=`
+<div class="container">
+    <div class="slider-container">
+     
+        <div class="blue-accent-left"></div>
+        <div class="blue-accent-right"></div>
 
-    <div class="container">
-        <div class="slider-container">
-            <!-- Blue accent elements -->
-            <div class="blue-accent-left"></div>
-            <div class="blue-accent-right"></div>
-            
-            <!-- Edge fade gradients -->
-            <div class="edge-fade-left"></div>
-            <div class="edge-fade-right"></div>
-            
-            <div class="logo-slider" id="logoSlider">
-                <div class="logo-slide" id="logoSlide">
-                    <!-- Logos will be inserted here by JavaScript -->
-                </div>
+     
+        <div class="edge-fade-left"></div>
+        <div class="edge-fade-right"></div>
+
+        <div class="logo-slider" id="logoSlider">
+            <div class="logo-slide" id="logoSlide">
+   
             </div>
         </div>
     </div>
+</div>
 
-    <script>
-        const logos = [
+<script>
+    const logos = [
             { src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/pragmaticplay.svg", alt: "Pragmatic Play", url: "/en/providers/pragmaticplay" },
             { src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/Evolution%20Gaming.svg", alt: "Evolution", url: "/en/providers/evolution" },
             { src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/pragmatic-live-light.svg", alt: "Pragmatic Live", url: "/en/providers/pragmaticlive" },
@@ -707,58 +706,52 @@ box-shadow: rgba(255, 176, 25, 0.4) 0px 0px 10px, rgba(255, 255, 255, 0.2) 0px 1
             { src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/Leander.svg", alt: "Raw Games", url: "/en/providers/rawgames" },
             { src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/Leander.svg", alt: "YGR Games", url: "/en/providers/ygrgames" }
         ];
-
-        // Function to initialize the slider
         function initSlider() {
             const logoSlide = document.getElementById('logoSlide');
             const logoSlider = document.getElementById('logoSlider');
-            
-            // Add logos to the slide
+
+
             logos.forEach(logo => {
                 const logoItem = document.createElement('div');
                 logoItem.className = 'logo-item';
-                
+
                 const link = document.createElement('a');
                 link.href = logo.url;
-                
+
                 if (logo.src) {
                     const img = document.createElement('img');
                     img.src = logo.src;
                     img.alt = logo.alt;
-                    img.loading = 'lazy'; // Lazy load images
+                    img.loading = 'lazy';
                     link.appendChild(img);
                 } else {
-                    // For logos without src (like Popok in the original HTML)
+              
                     const textSpan = document.createElement('span');
                     textSpan.textContent = logo.alt;
                     link.appendChild(textSpan);
                 }
-                
+
                 logoItem.appendChild(link);
                 logoSlide.appendChild(logoItem);
             });
-            
-            // Clone the slide for seamless infinite scrolling
+
+   
             const clone = logoSlide.cloneNode(true);
             logoSlider.appendChild(clone);
-            
-            // Adjust animation duration based on number of logos
-            const animationDuration = logos.length * 1.5; // 1.5 seconds per logo
+
+            const animationDuration = logos.length * 1.5;
             logoSlider.style.animationDuration = `${animationDuration}s`;
-            
-            // Pause animation on hover
+
             logoSlider.addEventListener('mouseenter', () => {
                 logoSlider.style.animationPlayState = 'paused';
             });
-            
+
             logoSlider.addEventListener('mouseleave', () => {
                 logoSlider.style.animationPlayState = 'running';
             });
         }
-        
-        // Initialize the slider when the page loads
         window.addEventListener('load', initSlider);
-    </script>
+	</script>
 `;
 
 /*customSection2.innerHTML = `
