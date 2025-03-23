@@ -664,7 +664,7 @@ box-shadow: rgba(255, 176, 25, 0.4) 0px 0px 10px, rgba(255, 255, 255, 0.2) 0px 1
 </div>`;
 
 		customSection5.innerHTML=`
-<div class="container">
+<div class="container-fluid">
     <div class="slider-container">
 
         <div class="blue-accent-left"></div>
