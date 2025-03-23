@@ -773,7 +773,8 @@ box-shadow: rgba(255, 176, 25, 0.4) 0px 0px 10px, rgba(255, 255, 255, 0.2) 0px 1
                 logoSlider.style.animationPlayState = 'running';
             });
         }
-        window.addEventListener('load', initSlider);
+        //window.addEventListener('load', initSlider);
+	setTimeout(initSlider, 1000);
 	</script>
 `;
 
