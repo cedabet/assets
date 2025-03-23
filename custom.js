@@ -657,10 +657,7 @@ box-shadow: rgba(255, 176, 25, 0.4) 0px 0px 10px, rgba(255, 255, 255, 0.2) 0px 1
     </div>
 </div>
 <script>
-setTimeout(function() {
-    alert("Bu bir alert mesajıdır!");
-}, 3000); // 3 saniye (3000 milisaniye) sonra alert gösterir.
-
+alert("test");
 </script>
 `;
 
@@ -1027,6 +1024,7 @@ box-shadow: rgba(255, 176, 25, 0.4) 0px 0px 10px, rgba(255, 255, 255, 0.2) 0px 1
 </div>
 
     <script>
+    alert("test2");
                     // Responsive handling
                     function adjustForScreenSize() {
                         const section = document.getElementById('casino-section');
