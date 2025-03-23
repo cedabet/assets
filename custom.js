@@ -13,7 +13,8 @@
             setTimeout(loadh2Title, 1000);   
 		addMenuElement();
 		  addMenuElementTwo();
-		updateCopyrightYear();
+		    setTimeout(updateCopyrightYear, 1000);   
+	
             var sportspath = window.location.pathname;
             if (sportspath === "/en/sportsbook") {
                 var sidebar = document.getElementById("sidebar");
@@ -62,6 +63,7 @@
 	        setTimeout(loadh2Title, 1000);   
 		    addMenuElement();
 		    addMenuElementTwo();
+		      setTimeout(updateCopyrightYear, 1000);   
             } else if (path === "/en/vip") {
                 /* alert("VIP sayfasına hoş geldiniz!");*/
             }
@@ -109,6 +111,8 @@
     window.addEventListener('load', checkUrlChange);
     })();
 
+
+
 function updateCopyrightYear() {
     const copyrightElement = document.querySelector(".footer__copyright");
 
@@ -118,8 +122,6 @@ function updateCopyrightYear() {
         copyrightElement.textContent ="@ CEDABET.COM ," copyrightElement.textContent.replace(/\d{4}/, currentYear);
     }
 }
-
-
 
 function addMenuElement() {
   const sidebarNav = document.querySelector('.sidebar__nav.sidebar__nav--border');
