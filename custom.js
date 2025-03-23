@@ -106,7 +106,7 @@
 
 
     window.addEventListener('load', checkUrlChange);
-    }) ();
+    })();
 
 function addMenuElement() {
   const sidebarNav = document.querySelector('.sidebar__nav.sidebar__nav--border');
