@@ -1090,9 +1090,9 @@ box-shadow: rgba(255, 176, 25, 0.4) 0px 0px 10px, rgba(255, 255, 255, 0.2) 0px 1
                     adjustForScreenSize();
     </script>
 </div>`
-                  
+                  mainContent.appendChild(customSection3);
 		mainContent.appendChild(customSection4);
-		mainContent.appendChild(customSection3);
+		
 		mainContent.appendChild(customSection5);
 		//   mainContent.appendChild(customSection2);
 		 mainContent.appendChild(customSection);
