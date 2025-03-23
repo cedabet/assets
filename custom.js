@@ -165,16 +165,31 @@ function addMenuElement() {
 
   sidebarNav.appendChild(newLi);
 }
+
 function addMenuElementTwo() {
+  
     const sidebarLinks = document.querySelector(".sidebar__links");
+    const sidebarLinksSmall = document.querySelector(".sidebar__links-small");
+
+
+    if (sidebarLinksSmall) {
+        const elementId = 'promotions-link-small'; 
+
+        const existingMenu = document.getElementById(elementId);
+        if (!existingMenu) {
+            const newHTMLSmall = `
+                <a id="${elementId}" class="sidebar__link-small sidebar__link-small--purple" href="/en/casino" style="background: url('https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/vnnjkadsfjADGSGKSDKFWQE/styles/H7q64v8GfGWPVmMoDjcgyfHQKc1a0l6x5PvV1NiV.jpg') left center / cover no-repeat;"></a>
+            `;
+            sidebarLinksSmall.insertAdjacentHTML("beforeend", newHTMLSmall); // İçeriği sonuna ekliyoruz
+        }
+    }
+
 
     if (sidebarLinks) {
-   
-        const elementId = 'promotions-link'; 
+        const elementId = 'promotions-link'; // Büyük link için id
 
-      
+        // Aynı id'ye sahip bir öğe zaten var mı diye kontrol ediyoruz
         const existingMenu = document.getElementById(elementId);
-
         if (!existingMenu) {
             const newHTML = `
                 <div style="width: 100%;">
@@ -189,10 +204,11 @@ function addMenuElementTwo() {
                     </a>
                 </div>
             `;
-            sidebarLinks.insertAdjacentHTML("afterend", newHTML);
+            sidebarLinks.insertAdjacentHTML("afterend", newHTML); // İçeriği sonuna ekliyoruz
         }
     }
 }
+
 
 
 
