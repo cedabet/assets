@@ -9,6 +9,51 @@
         let lastUrl = location.href;
         let isFirstLoad = true;
         if (isFirstLoad) {
+		function createModal() {
+  
+    const modalHTML = `
+    <div class="modal modal--img fade" id="global-modal" tabindex="-1" aria-labelledby="global-modal" aria-hidden="true" style="display: none; background-color: rgba(0, 0, 0, 0.9);">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal__head">
+                    <span></span>
+                    <button class="modal__close" type="button">
+                        <svg class="svg-icon"><use href="/static/media/sprite.6b179d63884598e512b15f3dd0296663.svg#x"></use></svg>
+                    </button>
+                </div>
+                <img class="modal__img" src="https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/nTRaQbwA4VntuzQ2gp3Qxuda7u5W8exG/modals/P7jvQE38GjNMqjc8aATPRmQSCaJaKcBtrR1d6sSe.png" alt="">
+            </div>
+        </div>
+    </div>
+    `;
+
+    // Modal'ı body'nin sonuna ekliyoruz
+    document.body.insertAdjacentHTML("beforeend", modalHTML);
+    
+    // Modal'ı gösterme işlevi
+    const modal = document.getElementById("global-modal");
+    const closeButton = modal.querySelector(".modal__close");
+
+    // Modal'ı açma
+    function openModal() {
+        modal.style.display = "block";
+    }
+
+    // Modal'ı kapatma
+    function closeModal() {
+        modal.style.display = "none";
+    }
+
+    // Kapama butonuna tıklanınca modal'ı kapat
+    closeButton.addEventListener("click", closeModal);
+
+    // Örneğin modal'ı 2 saniye sonra aç
+    setTimeout(openModal, 2000);
+}
+
+// Fonksiyonu çağır
+createModal();
+
             loadVipFeatures();
             setTimeout(loadh2Title, 1000);   
 		addMenuElement();
