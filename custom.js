@@ -12,6 +12,7 @@
             loadVipFeatures();
             setTimeout(loadh2Title, 1000);   
 		addMenuElement();
+		  addMenuElementTwo();
             var sportspath = window.location.pathname;
             if (sportspath === "/en/sportsbook") {
                 var sidebar = document.getElementById("sidebar");
@@ -59,6 +60,7 @@
                 loadVipFeatures();
 	        setTimeout(loadh2Title, 1000);   
 		    addMenuElement();
+		    addMenuElementTwo();
             } else if (path === "/en/vip") {
                 /* alert("VIP sayfasına hoş geldiniz!");*/
             }
@@ -147,7 +149,27 @@ function addMenuElement() {
 
   sidebarNav.appendChild(newLi);
 }
+function addMenuElementTwo() {
+ const sidebarLinks = document.querySelector(".sidebar__links")
 
+  if (sidebarLinks) {
+
+    const newHTML = `
+      <div style="width: 100%;">
+        <a class="sidebar__link sidebar__link--casino" href="/promotions" style="
+                  background: url('https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/vnnjkadsfjADGSGKSDKFWQE/styles/H7q64v8GfGWPVmMoDjcgyfHQKc1a0l6x5PvV1NiV.jpg') left center / cover no-repeat;
+                  width: 100%;
+                  margin-bottom: 17px;
+                  margin-top: -10px;
+                  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -2px 0px inset;
+                  ">
+          <span>Promosyon</span>
+        </a>
+      </div>
+    `
+    sidebarLinks.insertAdjacentHTML("afterend", newHTML)
+  }
+}
 
 function loadh2Title() {
     const sectionTitleElements = document.querySelectorAll('.section__title');
