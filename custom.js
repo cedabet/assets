@@ -108,6 +108,18 @@
     window.addEventListener('load', checkUrlChange);
     })();
 
+function updateCopyrightYear() {
+    const copyrightElement = document.querySelector(".footer__copyright");
+
+  
+    if (copyrightElement) {
+        const currentYear = new Date().getFullYear(); 
+        copyrightElement.textContent ="@ CEDABET.COM ," copyrightElement.textContent.replace(/\d{4}/, currentYear);
+    }
+}
+
+
+
 function addMenuElement() {
   const sidebarNav = document.querySelector('.sidebar__nav.sidebar__nav--border');
 
