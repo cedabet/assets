@@ -657,13 +657,12 @@ box-shadow: rgba(255, 176, 25, 0.4) 0px 0px 10px, rgba(255, 255, 255, 0.2) 0px 1
     </div>
 </div>
 <script>
-
+alert('abc');
     const logos = [
         { src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/pragmaticplay.svg", alt: "Pragmatic Play", url: "/en/providers/pragmaticplay" },
         { src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/Evolution%20Gaming.svg", alt: "Evolution", url: "/en/providers/evolution" },
         { src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/pragmatic-live-light.svg", alt: "Pragmatic Live", url: "/en/providers/pragmaticlive" },
     ];
-  function initSlider() {
     const logoSlide = document.getElementById('logoSlide');
     const logoSlider = document.getElementById('logoSlider');
     alert("test")
@@ -712,12 +711,6 @@ box-shadow: rgba(255, 176, 25, 0.4) 0px 0px 10px, rgba(255, 255, 255, 0.2) 0px 1
     logoSlider.addEventListener('mouseleave', () => {
         logoSlider.style.animationPlayState = 'running';
     });
-}
-
-
-setTimeout(initSlider, 3000);
-
-
 
 </script>
 `;
