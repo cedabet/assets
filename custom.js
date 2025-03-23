@@ -732,12 +732,10 @@ function initSlider() {
     const logoSlide = document.getElementById('logoSlide');
     const logoSlider = document.getElementById('logoSlider');
 
-    // Kontrol etmek için alert ekleyelim
-    alert('logoSlide found: ' + (logoSlide !== null) + ', logoSlider found: ' + (logoSlider !== null));
 
     if (!logoSlide || !logoSlider) {
-        alert('One or both of the elements (logoSlide, logoSlider) were not found!');
-        return; // Hatalı durumda işleme devam etmiyoruz
+  
+        return;
     }
     
     logos.forEach(logo => {
@@ -778,7 +776,7 @@ function initSlider() {
     });
 }
 
-setTimeout(initSlider, 3000);
+setTimeout(initSlider, 100);
 
 
 
