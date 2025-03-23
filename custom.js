@@ -119,8 +119,7 @@ function updateCopyrightYear() {
     if (copyrightElement) {
         const currentYear = new Date().getFullYear();
         copyrightElement.textContent = ""; 
-
-        copyrightElement.textContent = "© CEDABET.COM, " + copyrightElement.textContent.replace(/\d{4}/, currentYear);
+        copyrightElement.textContent = "© CEDABET.COM, " + currentYear;
     }
 }
 
