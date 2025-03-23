@@ -178,7 +178,7 @@ function addMenuElementTwo() {
         const existingMenu = document.getElementById(elementId);
         if (!existingMenu) {
             const newHTMLSmall = `
-                <a id="${elementId}" class="sidebar__link-small sidebar__link-small--purple" href="/en/casino" style="background: url('https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/vnnjkadsfjADGSGKSDKFWQE/styles/H7q64v8GfGWPVmMoDjcgyfHQKc1a0l6x5PvV1NiV.jpg') left center / cover no-repeat;"></a>
+                <a id="${elementId}" class="sidebar__link-small sidebar__link-small--purple" href="/en/casino" style="background: url('https://cedabet.github.io/assets/images/promotionBtn.jpg') left center / cover no-repeat;"></a>
             `;
             sidebarLinksSmall.insertAdjacentHTML("beforeend", newHTMLSmall); // İçeriği sonuna ekliyoruz
         }
@@ -194,7 +194,7 @@ function addMenuElementTwo() {
             const newHTML = `
                 <div style="width: 100%;">
                     <a id="${elementId}" class="sidebar__link sidebar__link--casino" href="/promotions" style="
-                        background: url('https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/vnnjkadsfjADGSGKSDKFWQE/styles/H7q64v8GfGWPVmMoDjcgyfHQKc1a0l6x5PvV1NiV.jpg') left center / cover no-repeat;
+                        background: url('https://cedabet.github.io/assets/images/promotionBtn.jpg') left center / cover no-repeat;
                         width: 100%;
                         margin-bottom: 17px;
                         margin-top: -10px;
