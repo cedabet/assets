@@ -10,18 +10,18 @@
         let isFirstLoad = true;
         if (isFirstLoad) {
 		function createModal() {
-  
+    // Modal yapısının HTML içeriği
     const modalHTML = `
-    <div class="modal modal--img fade" id="global-modal" tabindex="-1" aria-labelledby="global-modal" aria-hidden="true" style="display: none; background-color: rgba(0, 0, 0, 0.9);">
-        <div class="modal-dialog modal-dialog-centered">
+    <div class="modal modal--img fade" id="global-modal" tabindex="-1" aria-labelledby="global-modal" aria-hidden="true" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.9); z-index: 9999; align-items: center; justify-content: center;">
+        <div class="modal-dialog modal-dialog-centered" style="max-width: 600px; width: 100%; background: white; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);">
             <div class="modal-content">
-                <div class="modal__head">
-                    <span></span>
-                    <button class="modal__close" type="button">
-                        <svg class="svg-icon"><use href="/static/media/sprite.6b179d63884598e512b15f3dd0296663.svg#x"></use></svg>
+                <div class="modal__head" style="position: relative; padding: 15px; background: rgba(0, 0, 0, 0.7); color: white; font-size: 18px;">
+                    <span>Modal Başlığı</span>
+                    <button class="modal__close" type="button" style="background: transparent; border: none; color: white; font-size: 24px; cursor: pointer; position: absolute; top: 10px; right: 10px;">
+                        <svg class="svg-icon" style="width: 20px; height: 20px;"><use href="/static/media/sprite.6b179d63884598e512b15f3dd0296663.svg#x"></use></svg>
                     </button>
                 </div>
-                <img class="modal__img" src="https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/nTRaQbwA4VntuzQ2gp3Qxuda7u5W8exG/modals/P7jvQE38GjNMqjc8aATPRmQSCaJaKcBtrR1d6sSe.png" alt="">
+                <img class="modal__img" src="https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/nTRaQbwA4VntuzQ2gp3Qxuda7u5W8exG/modals/P7jvQE38GjNMqjc8aATPRmQSCaJaKcBtrR1d6sSe.png" alt="" style="width: 100%; height: auto; display: block;">
             </div>
         </div>
     </div>
@@ -36,7 +36,7 @@
 
     // Modal'ı açma
     function openModal() {
-        modal.style.display = "block";
+        modal.style.display = "flex";
     }
 
     // Modal'ı kapatma
@@ -47,12 +47,11 @@
     // Kapama butonuna tıklanınca modal'ı kapat
     closeButton.addEventListener("click", closeModal);
 
-    // Örneğin modal'ı 2 saniye sonra aç
     setTimeout(openModal, 2000);
 }
 
-// Fonksiyonu çağır
 createModal();
+
 
             loadVipFeatures();
             setTimeout(loadh2Title, 1000);   
