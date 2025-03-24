@@ -17,7 +17,7 @@ function createSigninModal() {
             <div class="modal-content">
                 <div class="modal__content" style="text-align: center;max-width:unset!important;padding-left:unset!important;">
                     <!-- Kapatma butonu -->
-                    <button class="modal__close" type="button" style="position: absolute; top: 10px; right: 10px; background: transparent; border: none; color: white; font-size: 24px;">&times;</button>
+                    <button class="modal__close" type="button" style="position: absolute; top: 10px; right: 10px; background: transparent; border: none; color: white; font-size: 48px;">&times;</button>
                     <!-- Burada içerik olacak -->
                     <img src="https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/vnnjkadsfjADGSGKSDKFWQE/auth-images/Iz4MHYkqpsDsrfBU0CfmfTYWUe0dvmWZwhuihmRn.jpg" alt="Dikey Resim"
                          style="height: 90vh; width: auto; margin: 0 auto; display: block;">
