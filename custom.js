@@ -9,19 +9,30 @@
         let lastUrl = location.href;
         let isFirstLoad = true;
         if (isFirstLoad) {
-		function createModal() {
+	function createSigninModal() {
     // Modal yapısının HTML içeriği
     const modalHTML = `
-    <div class="modal modal--img fade" id="global-modal" tabindex="-1" aria-labelledby="global-modal" aria-hidden="true" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.9); z-index: 9999; align-items: center; justify-content: center;">
-        <div class="modal-dialog modal-dialog-centered" style="max-width: 600px; width: 100%; background: white; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);">
+    <div class="modal fade show modal-fade modal--sign" id="signin-modal" tabindex="-1" aria-labelledby="signin-modal" style="display: block; background-color: rgba(0, 0, 0, 0.7);">
+        <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
-                <div class="modal__head" style="position: relative; padding: 15px; background: rgba(0, 0, 0, 0.7); color: white; font-size: 18px;">
-                    <span>Modal Başlığı</span>
-                    <button class="modal__close" type="button" style="background: transparent; border: none; color: white; font-size: 24px; cursor: pointer; position: absolute; top: 10px; right: 10px;">
-                        <svg class="svg-icon" style="width: 20px; height: 20px;"><use href="/static/media/sprite.6b179d63884598e512b15f3dd0296663.svg#x"></use></svg>
-                    </button>
+                <div class="modal__content" style="height: 500px;">
+                    <div class="modal__sign-img">
+                        <span class="lazy-load-image-background blur lazy-load-image-loaded" style="color: transparent; display: inline-block; height: 500px; width: 100%;">
+                            <img height="100%" width="100%" src="https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/vnnjkadsfjADGSGKSDKFWQE/auth-images/Iz4MHYkqpsDsrfBU0CfmfTYWUe0dvmWZwhuihmRn.jpg" alt="">
+                        </span>
+                    </div>
+                    <!-- Buraya div'inizi ekliyoruz -->
+                    <div class="your-custom-div" style="padding: 20px; background-color: white; border-radius: 8px;">
+                        <h2>Özel Başlık</h2>
+                        <p>Burada kendi içeriğiniz yer alacak. Modal içinde istediğiniz verileri gösterebilirsiniz.</p>
+                        <!-- Örnek bir form -->
+                        <form>
+                            <input type="text" placeholder="Adınız" style="width: 100%; padding: 10px; margin-bottom: 10px; border-radius: 5px;">
+                            <button type="submit" style="width: 100%; padding: 10px; border-radius: 5px; background-color: #4CAF50; color: white;">Gönder</button>
+                        </form>
+                    </div>
+                    <!-- Bitiş -->
                 </div>
-                <img class="modal__img" src="https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/nTRaQbwA4VntuzQ2gp3Qxuda7u5W8exG/modals/P7jvQE38GjNMqjc8aATPRmQSCaJaKcBtrR1d6sSe.png" alt="" style="width: 100%; height: auto; display: block;">
             </div>
         </div>
     </div>
@@ -31,26 +42,28 @@
     document.body.insertAdjacentHTML("beforeend", modalHTML);
     
     // Modal'ı gösterme işlevi
-    const modal = document.getElementById("global-modal");
+    const modal = document.getElementById("signin-modal");
+
+    // Modal'ı kapama işlevi
     const closeButton = modal.querySelector(".modal__close");
 
-    // Modal'ı açma
-    function openModal() {
-        modal.style.display = "flex";
-    }
-
-    // Modal'ı kapatma
     function closeModal() {
         modal.style.display = "none";
     }
 
-    // Kapama butonuna tıklanınca modal'ı kapat
-    closeButton.addEventListener("click", closeModal);
+    // Modal'ı otomatik olarak aç
+    setTimeout(() => {
+        modal.style.display = "block";
+    }, 1000); // 1 saniye sonra açılır
 
-    setTimeout(openModal, 2000);
+    // Kapama butonuna tıklanınca modal'ı kapat
+    if (closeButton) {
+        closeButton.addEventListener("click", closeModal);
+    }
 }
 
-createModal();
+// Fonksiyonu çağır
+createSigninModal();
 
 
             loadVipFeatures();
