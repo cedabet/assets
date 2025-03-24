@@ -131,8 +131,8 @@ function createSigninModal() {
                     <!-- Kapatma butonu -->
                     <button class="modal__close" type="button" style="position: absolute; top: 10px; right: 10px; background: transparent; border: none; color: white; font-size: 48px;">&times;</button>
                     <!-- Burada içerik olacak -->
-                    <img src="https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/vnnjkadsfjADGSGKSDKFWQE/auth-images/Iz4MHYkqpsDsrfBU0CfmfTYWUe0dvmWZwhuihmRn.jpg" alt="Dikey Resim"
-                         style="height: 60vh;
+                    <img src="https://cedabet.github.io/assets/images/sl10Banner.jpg" alt="Dikey Resim"
+                         style="height: 600px;
     width: 100%;
     margin: 0 auto;
     display: block;
