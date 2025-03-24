@@ -130,9 +130,9 @@ function createSigninModal() {
                 <div class="modal__content" style="text-align: center; max-width: unset!important; padding-left: unset!important; padding: 0 0 17px 0; padding: 0;">
                     <!-- Kapatma butonu -->
                     <button class="modal__close" type="button" style="position: absolute; top: 10px; right: 10px; background: transparent; border: none; color: white; font-size: 48px;">×</button>
-                    <!-- Burada içerik olacak -->
-                    <img src="https://cedabet.github.io/assets/images/sl10Banner.jpg" alt="Dikey Resim" style="/* height: 600px; */ width: 100%; margin: 0 auto; display: block;">
-                    <!-- Tekrar gösterme butonu -->
+                    <a href="/promotion/hit-1000x-wins-on-pragmatic-play-games">
+                    	<img src="https://cedabet.github.io/assets/images/sl10Banner.jpg" alt="Dikey Resim" style="/* height: 600px; */ width: 100%; margin: 0 auto; display: block;">
+                    </a>
                     <button id="dontShowAgainBtn" style="    padding: 10px 20px;
     background-color: rgb(34 157 225) !important;
     color: white;
