@@ -15,23 +15,14 @@
     <div class="modal fade show modal-fade modal--sign" id="signin-modal" tabindex="-1" aria-labelledby="signin-modal" style="display: block; background-color: rgba(0, 0, 0, 0.7);">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
-                <div class="modal__content" style="height: 500px;">
+                <div class="modal__content" style="height: auto; text-align: center;">
                     <div class="modal__sign-img">
-                        <span class="lazy-load-image-background blur lazy-load-image-loaded" style="color: transparent; display: inline-block; height: 500px; width: 100%;">
-                            <img height="100%" width="100%" src="https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/vnnjkadsfjADGSGKSDKFWQE/auth-images/Iz4MHYkqpsDsrfBU0CfmfTYWUe0dvmWZwhuihmRn.jpg" alt="">
+                        <span class="lazy-load-image-background blur lazy-load-image-loaded" style="color: transparent; display: inline-block; width: 100%; text-align: center;">
+                            <!-- Dikey Resim Ekleniyor -->
+                            <img src="https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/vnnjkadsfjADGSGKSDKFWQE/auth-images/Iz4MHYkqpsDsrfBU0CfmfTYWUe0dvmWZwhuihmRn.jpg" alt="Dikey Resim" 
+                            style="height: 90vh; width: auto; margin: 0 auto; display: block;">
                         </span>
                     </div>
-                    <!-- Buraya div'inizi ekliyoruz -->
-                    <div class="your-custom-div" style="padding: 20px; background-color: white; border-radius: 8px;">
-                        <h2>Özel Başlık</h2>
-                        <p>Burada kendi içeriğiniz yer alacak. Modal içinde istediğiniz verileri gösterebilirsiniz.</p>
-                        <!-- Örnek bir form -->
-                        <form>
-                            <input type="text" placeholder="Adınız" style="width: 100%; padding: 10px; margin-bottom: 10px; border-radius: 5px;">
-                            <button type="submit" style="width: 100%; padding: 10px; border-radius: 5px; background-color: #4CAF50; color: white;">Gönder</button>
-                        </form>
-                    </div>
-                    <!-- Bitiş -->
                 </div>
             </div>
         </div>
@@ -40,7 +31,7 @@
 
     // Modal'ı body'nin sonuna ekliyoruz
     document.body.insertAdjacentHTML("beforeend", modalHTML);
-    
+
     // Modal'ı gösterme işlevi
     const modal = document.getElementById("signin-modal");
 
@@ -64,6 +55,7 @@
 
 // Fonksiyonu çağır
 createSigninModal();
+
 
 
             loadVipFeatures();
