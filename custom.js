@@ -127,18 +127,13 @@ function createSigninModal() {
     <div class="modal fade show modal-fade modal--sign" id="signin-modal" tabindex="-1" aria-labelledby="signin-modal" style="display: block; background-color: rgba(0, 0, 0, 0.7); max-width: unset !important; padding-left: unset !important;">
         <div class="modal-dialog modal-dialog-centered">
             <div style="max-width: 636px!important;" class="modal-content">
-                <div class="modal__content" style="text-align: center; max-width:unset!important;padding-left:unset!important;">
+                <div class="modal__content" style="text-align: center; max-width: unset!important; padding-left: unset!important; padding: 0 0 17px 0; padding: 0;">
                     <!-- Kapatma butonu -->
-                    <button class="modal__close" type="button" style="position: absolute; top: 10px; right: 10px; background: transparent; border: none; color: white; font-size: 48px;">&times;</button>
+                    <button class="modal__close" type="button" style="position: absolute; top: 10px; right: 10px; background: transparent; border: none; color: white; font-size: 48px;">×</button>
                     <!-- Burada içerik olacak -->
-                    <img src="https://cedabet.github.io/assets/images/sl10Banner.jpg" alt="Dikey Resim"
-                         style="height: 600px;
-    width: 100%;
-    margin: 0 auto;
-    display: block;
-    padding: 20px;">
+                    <img src="https://cedabet.github.io/assets/images/sl10Banner.jpg" alt="Dikey Resim" style="/* height: 600px; */ width: 100%; margin: 0 auto; display: block;">
                     <!-- Tekrar gösterme butonu -->
-                    <button id="dontShowAgainBtn" style="margin-top: 20px; padding: 10px 20px; background-color: #f44336; color: white; border: none; cursor: pointer; font-size: 16px;">Tekrar Gösterme</button>
+                    <button id="dontShowAgainBtn" style="margin-top: 2px; padding: 10px 20px; background-color: rgb(34 157 225) !important; color: white; border: none; cursor: pointer; font-size: 16px; width: 100%;">Tekrar Gösterme</button>
                 </div>
             </div>
         </div>
