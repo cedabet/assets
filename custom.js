@@ -57,7 +57,7 @@
 
     function handlePageScripts(path) {
         setTimeout(function () {
-            if (path === "/en/" || path === "/tr/") {
+            if (path === "/en/") {
                 /*  alert("Anasayfaya hoş geldiniz!");*/
                 loadVipFeatures();
 	        setTimeout(loadh2Title, 1000);   
@@ -114,176 +114,18 @@
     })();
 
 function createSigninModal() {
-    const lastModalTime = localStorage.getItem('modalShownTime');
-    const dontShowAgain = localStorage.getItem('dontShowModalAgain'); // Kullanıcı "Tekrar Gösterme" butonuna tıklayıp tıklamadığını kontrol ediyoruz
-    const currentTime = new Date().getTime();
-
-    // Eğer kullanıcı modalı 1 saatten daha önce gördüyse veya "Tekrar Gösterme" butonuna tıkladıysa, tekrar göstermiyoruz
-    if ((lastModalTime && currentTime - lastModalTime < 3600000) || dontShowAgain) {
-        return;
-    }
-
-    const modalHTML = `
-    <div class="modal fade show modal-fade modal--sign" id="signin-modal" tabindex="-1" aria-labelledby="signin-modal" style="display: block; background-color: rgba(0, 0, 0, 0.8); max-width: unset !important; padding-left: unset !important;">
-        <div class="modal-dialog modal-dialog-centered">
-            <div style="max-width: 636px!important;" class="modal-content">
-                <div class="modal__content" style="text-align: center; max-width: unset!important; padding-left: unset!important; padding: 0 0 17px 0; padding: 0;">
-                    <!-- Kapatma butonu -->
-                    <button class="modal__close" type="button" style="position: absolute; top: 10px; right: 10px; background: transparent; border: none; color: white; font-size: 48px;">×</button>
-                    <a href="/promotion/hit-1000x-wins-on-pragmatic-play-games">
-                    	<img src="https://cedabet.github.io/assets/images/sl10Banner.jpg" alt="Dikey Resim" style="/* height: 600px; */ width: 100%; margin: 0 auto; display: block;">
-                    </a>
-                    <button id="dontShowAgainBtn" style="    padding: 10px 20px;
-    background-color: rgb(34 157 225) !important;
-    color: white;
-    border: none;
-    cursor: pointer;
-    font-size: 16px;
-    width: 50%;
-    border-radius: 10px;
-    margin-top: 10px;
-    margin-bottom: 10px;">Tekrar Gösterme</button>
-                </div>
-            </div>
-        </div>
-    </div>
-    `;
-
-    // Modal'ı body'nin sonuna ekliyoruz
-    document.body.insertAdjacentHTML("beforeend", modalHTML);
-
-    // Modal'ı gösterme işlevi
-    const modal = document.getElementById("signin-modal");
-    const closeButton = modal.querySelector(".modal__close");
-    const dontShowAgainButton = modal.querySelector("#dontShowAgainBtn");
-
-    // Modal dışına tıklanarak kapatılacak işlev
-    function closeModal() {
-        modal.style.display = "none";
-        // Modal kapandığında, modal gösterildiği zamanı kaydediyoruz
-        localStorage.setItem('modalShownTime', currentTime);
-    }
-
-    // Modal'ı otomatik olarak aç
-    setTimeout(() => {
-        modal.style.display = "block";
-    }, 1000); // 1 saniye sonra açılır
-
-    // Modal dışına tıklanırsa kapanma işlevi
-    modal.addEventListener("click", function(event) {
-        // Modal içerisine tıklanmazsa
-        if (event.target === modal) {
-            closeModal();
-        }
-    });
-
-    // Kapatma butonuna tıklandığında modalı kapat
-    closeButton.addEventListener("click", closeModal);
-
-    // "Tekrar Gösterme" butonuna tıklandığında yapılacaklar
-    dontShowAgainButton.addEventListener("click", function() {
-        // Modalı bir daha 1 saat boyunca göstermemek için localStorage'a kaydediyoruz
-        localStorage.setItem('dontShowModalAgain', true);
-        closeModal(); // Modalı kapat
-    });
 }
 
 
 
 function updateCopyrightYear() {
-    const copyrightElement = document.querySelector(".footer__copyright");
-
-    if (copyrightElement) {
-        const currentYear = new Date().getFullYear();
-        copyrightElement.textContent = ""; 
-        copyrightElement.textContent = "© CEDABET.COM, " + currentYear;
-    }
 }
 
 
 function addMenuElement() {
-  const sidebarNav = document.querySelector('.sidebar__nav.sidebar__nav--border');
-
-  if (!sidebarNav) {
-    return;
-  }
-
-  const uid = 'custom-item-menu'; 
-
-
-  const existingElement = document.getElementById(uid);
-
-  if (existingElement) {
-    return;
-  }
-
-  const newLi = document.createElement('li');
-  newLi.id = uid; 
-
-  const newAnchor = document.createElement('a');
-  newAnchor.href = '/en/casino/group/table-games';
-
-  const svgIcon = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
-  svgIcon.classList.add('svg-icon');
-  const use = document.createElementNS('http://www.w3.org/2000/svg', 'use');
-  use.setAttribute('href', '/static/media/sprite.6b179d63884598e512b15f3dd0296663.svg#table-games');
-  svgIcon.appendChild(use);
-
-
-  const span = document.createElement('span');
-  span.textContent = 'New';
-
-
-  newAnchor.appendChild(svgIcon);
-  newAnchor.appendChild(document.createTextNode(' Table Games'));
-  newAnchor.appendChild(span);
-
-  newLi.appendChild(newAnchor);
-
-  sidebarNav.appendChild(newLi);
 }
 
 function addMenuElementTwo() {
-  
-    const sidebarLinks = document.querySelector(".sidebar__links");
-    const sidebarLinksSmall = document.querySelector(".sidebar__links-small");
-
-
-    if (sidebarLinksSmall) {
-        const elementId = 'promotions-link-small'; 
-
-        const existingMenu = document.getElementById(elementId);
-        if (!existingMenu) {
-            const newHTMLSmall = `
-                <a id="${elementId}" class="sidebar__link-small sidebar__link-small--purple" href="/en/casino" style="background: url('https://cedabet.github.io/assets/images/promotionBtn.jpg') left center / cover no-repeat;"></a>
-            `;
-            sidebarLinksSmall.insertAdjacentHTML("beforeend", newHTMLSmall); 
-        }
-    }
-
-
-    if (sidebarLinks) {
-        const elementId = 'promotions-link'; // Büyük link için id
-
-        // Aynı id'ye sahip bir öğe zaten var mı diye kontrol ediyoruz
-        const existingMenu = document.getElementById(elementId);
-        if (!existingMenu) {
-            const newHTML = `
-                <div style="width: 100%;">
-                    <a id="${elementId}" class="sidebar__link sidebar__link--casino" href="/promotions" style="
-                        background: url('https://cedabet.github.io/assets/images/promotionBtn.jpg') left center / cover no-repeat;
-                        width: 100%;
-                        margin-bottom: 17px;
-                        margin-top: -10px;
-                        box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -2px 0px inset;
-                    ">
-                        <span>Promotion</span>
-                    </a>
-                </div>
-            `;
-            sidebarLinks.insertAdjacentHTML("afterend", newHTML);
-        }
-    }
 }
 
 
@@ -355,59 +197,165 @@ function loadh2Title() {
             customSection5.id = "custom-section-7";
             customSection5.classList.add("section", "custom-section");
 
-
             customSection.innerHTML = `
- <div class="container">
-  <div id="sports-section" style="position: relative; width: 100%; margin: 0 auto; background-color: #17368d; background-image: linear-gradient(to right, #8a1818, #b92020); border-radius: 16px; padding: 40px; color: white; font-family: Arial, sans-serif; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); box-sizing: border-box; margin-bottom: 44px;">
-    <div id="content-wrapper" style="display: flex; flex-direction: column; justify-content: space-between; height: 100%; max-width: 60%; position: relative; z-index: 2;">
+       <div class="container">
+
+     <div id="sports-section" style="position: relative; width: 100%; margin: 0 auto; background-color: #17368d; background-image: linear-gradient(to right, #8a1818, #b92020); border-radius: 16px; padding: 40px; color: white; font-family: Arial, sans-serif; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); box-sizing: border-box; margin-bottom: 44px;">
+
+    <div id="content-wrapper" style="
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 100%;
+      max-width: 60%;
+      position: relative;
+      z-index: 2;
+    ">
       <div>
         <h1 id="main-heading" style="font-size: 2rem; font-weight: 800; line-height: 1.1; margin-bottom: 20px; margin-top: 0; max-width: 800px;">
           Join the excitement by betting on the biggest highlights in sports.
         </h1>
       </div>
+
+      <!-- Compact Card Design for Icons Section -->
       <div id="icons-section" style="margin-top: 30px;">
         <div style="display: flex; gap: 10px; flex-wrap: wrap;">
+          <!-- Sports -->
           <a href="#" class="category-card" style="flex: 1; min-width: 110px; background-color: #b51f1f; border-radius: 8px; padding: 10px 12px; text-decoration: none; color: white; position: relative; overflow: hidden; transition: all 0.3s ease; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); border-left: 3px solid #ffffff; display: flex; align-items: center;">
-            <div class="category-icon" style="font-size: 24px; margin-right: 10px;">⚽</div>
+            <div class="category-icon" style="
+              font-size: 24px;
+              margin-right: 10px;
+              transition: all 0.3s ease;
+            ">⚽</div>
             <div>
-              <div style="font-weight: 600; font-size: 13px; color: #ffffff;">Sports</div>
-              <div style="font-size: 11px; color: rgba(255, 255, 255, 0.6);">All leagues</div>
+              <div style="
+                font-weight: 600;
+                font-size: 13px;
+                color: #ffffff;
+                line-height: 1.2;
+              ">Sports</div>
+              <div style="
+                font-size: 11px;
+                color: rgba(255, 255, 255, 0.6);
+              ">All leagues</div>
             </div>
           </a>
+
+          <!-- Esports -->
           <a href="#" class="category-card" style="flex: 1; min-width: 110px; background-color: #b51f1f; border-radius: 8px; padding: 10px 12px; text-decoration: none; color: white; position: relative; overflow: hidden; transition: all 0.3s ease; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); border-left: 3px solid #3a9fff; display: flex; align-items: center;">
-            <div class="category-icon" style="font-size: 24px; margin-right: 10px;">🎮</div>
+            <div class="category-icon" style="
+              font-size: 24px;
+              margin-right: 10px;
+              transition: all 0.3s ease;
+            ">🎮</div>
             <div>
-              <div style="font-weight: 600; font-size: 13px; color: #ffffff;">Esports</div>
-              <div style="font-size: 11px; color: rgba(255, 255, 255, 0.6);">Top tournaments</div>
+              <div style="
+                font-weight: 600;
+                font-size: 13px;
+                color: #ffffff;
+                line-height: 1.2;
+              ">Esports</div>
+              <div style="
+                font-size: 11px;
+                color: rgba(255, 255, 255, 0.6);
+              ">Top tournaments</div>
             </div>
           </a>
+
+          <!-- Live Streams -->
           <a href="#" class="category-card" style="flex: 1; min-width: 110px; background-color: #b51f1f; border-radius: 8px; padding: 10px 12px; text-decoration: none; color: white; position: relative; overflow: hidden; transition: all 0.3s ease; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); border-left: 3px solid #ff3a6f; display: flex; align-items: center;">
-            <div class="category-icon" style="font-size: 24px; margin-right: 10px;">▶️</div>
+            <div class="category-icon" style="
+              font-size: 24px;
+              margin-right: 10px;
+              transition: all 0.3s ease;
+            ">▶️</div>
             <div>
-              <div style="font-weight: 600; font-size: 13px; color: #ffffff;">Live Streams</div>
-              <div style="font-size: 11px; color: rgba(255, 255, 255, 0.6);">Watch live</div>
+              <div style="
+                font-weight: 600;
+                font-size: 13px;
+                color: #ffffff;
+                line-height: 1.2;
+              ">Live Streams</div>
+              <div style="
+                font-size: 11px;
+                color: rgba(255, 255, 255, 0.6);
+              ">Watch live</div>
             </div>
           </a>
+
+          <!-- Boosted Odds -->
           <a href="#" class="category-card" style="flex: 1; min-width: 110px; background-color: #b51f1f; border-radius: 8px; padding: 10px 12px; text-decoration: none; color: white; position: relative; overflow: hidden; transition: all 0.3s ease; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); border-left: 3px solid #ffcc00; display: flex; align-items: center;">
-            <div class="category-icon" style="font-size: 24px; margin-right: 10px;">⚡</div>
+            <div class="category-icon" style="
+              font-size: 24px;
+              margin-right: 10px;
+              transition: all 0.3s ease;
+            ">⚡</div>
             <div>
-              <div style="font-weight: 600; font-size: 13px; color: #ffffff;">Boosted Odds</div>
-              <div style="font-size: 11px; color: rgba(255, 255, 255, 0.6);">Better payouts</div>
+              <div style="
+                font-weight: 600;
+                font-size: 13px;
+                color: #ffffff;
+                line-height: 1.2;
+              ">Boosted Odds</div>
+              <div style="
+                font-size: 11px;
+                color: rgba(255, 255, 255, 0.6);
+              ">Better payouts</div>
             </div>
           </a>
         </div>
       </div>
+
+      <!-- Explore button with original gold gradient -->
       <div style="margin-top: 40px; width: 100%;">
-        <a id="explore-button" href="#" style="display: inline-flex; align-items: center; justify-content: center; background-size: 200% 200%; color: #0f1923; padding: 14px 28px; border-radius: 8px; text-decoration: none; font-weight: 800; font-size: 15px; text-transform: uppercase; letter-spacing: 0.5px; transition: all 0.3s ease;">
+        <a id="explore-button" href="#" style="
+          display: inline-flex;
+          align-items: center;
+          justify-content: center;
+          background-size: 200% 200%;
+          color: #0f1923;
+          padding: 14px 28px;
+          border-radius: 8px;
+          text-decoration: none;
+          font-weight: 800;
+          font-size: 15px;
+          text-transform: uppercase;
+          letter-spacing: 0.5px;
+          transition: all 0.3s ease;
+          position: relative;
+          border: none;
+          box-sizing: border-box;
+	  background-color: rgb(255, 229, 0);
+box-shadow: rgba(255, 176, 25, 0.4) 0px 0px 10px, rgba(255, 255, 255, 0.2) 0px 1px 0px inset, rgb(255, 135, 25) 0px 0px 15px inset;
+        ">
           <span style="position: relative; z-index: 2;">EXPLORE SPORTS SECTION</span>
+          <span class="button-arrow" style="
+		    display:none;
+            margin-left: 12px;
+            font-size: 18px;
+            transition: transform 0.3s ease;
+            position: relative;
+            z-index: 2;
+          ">→</span>
+          <span style="
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            background: rgba(0, 0, 0, 0.1);
+            border-bottom-left-radius: 8px;
+            border-bottom-right-radius: 8px;
+          "></span>
         </a>
       </div>
     </div>
+
+    <!-- Astronaut Image with Soccer Ball -->
     <div id="image-wrapper" style="position: absolute; right: -68px; bottom: 0px; top: 0; display: flex; align-items: center; justify-content: flex-end; width: 50%; z-index: 1;">
       <img id="astronaut-image" src="https://cedabet.github.io/assets/images/soccer-astro.png" alt="Astronaut holding soccer ball" style="max-height: 410px; max-width: 100%; object-fit: contain; bottom: 0px; position: absolute;">
     </div>
   </div>
-</div>
 
   <script>
     // Responsive handling
@@ -513,88 +461,6 @@ function loadh2Title() {
 </script>
    </div>`;
 
-
-const translations = {
-  en: {
-    mainHeading: "Join the excitement by betting on the biggest highlights in sports.",
-    sportsCategory: "Sports",
-    esportsCategory: "Esports",
-    liveStreamsCategory: "Live Streams",
-    boostedOddsCategory: "Boosted Odds",
-    exploreButton: "EXPLORE SPORTS SECTION",
-    allLeagues: "All leagues",
-    topTournaments: "Top tournaments",
-    watchLive: "Watch live",
-    betterPayouts: "Better payouts"
-  },
-  tr: {
-    mainHeading: "En büyük spor heyecanlarına bahis yaparak katılın.",
-    sportsCategory: "Spor",
-    esportsCategory: "Esport",
-    liveStreamsCategory: "Canlı Yayınlar",
-    boostedOddsCategory: "Yükseltilmiş Oranlar",
-    exploreButton: "SPOR BÖLÜMÜNÜ KEŞFET",
-    allLeagues: "Tüm ligler",
-    topTournaments: "En iyi turnuvalar",
-    watchLive: "Canlı izle",
-    betterPayouts: "Daha iyi ödemeler"
-  },
-  es: {
-    mainHeading: "Únete a la emoción apostando en los mejores momentos deportivos.",
-    sportsCategory: "Deportes",
-    esportsCategory: "Esports",
-    liveStreamsCategory: "Transmisiones en vivo",
-    boostedOddsCategory: "Cuotas mejoradas",
-    exploreButton: "EXPLORAR SECCIÓN DE DEPORTES",
-    allLeagues: "Todas las ligas",
-    topTournaments: "Mejores torneos",
-    watchLive: "Ver en vivo",
-    betterPayouts: "Mejores pagos"
-  }
-};
-
-
-function getLanguageFromURL() {
-  const path = window.location.pathname;  // Örneğin: "/en" veya "/tr"
-  const lang = path.split('/').pop();     // Yalnızca dil kodunu al: "en", "tr", "es" vb.
-  return translations[lang] ? lang : 'en'; // Eğer dil geçerli değilse, varsayılan olarak 'en' döndür
-}
-function changeLanguage(lang) {
-  const translation = translations[lang];
-
-
-  document.getElementById("main-heading").innerText = translation.mainHeading;
-  document.querySelectorAll(".category-card").forEach((card, index) => {
-    switch (index) {
-      case 0:
-        card.querySelector("div > div").innerText = translation.sportsCategory;
-        card.querySelector("div > div:nth-child(2)").innerText = translation.allLeagues;
-        break;
-      case 1:
-        card.querySelector("div > div").innerText = translation.esportsCategory;
-        card.querySelector("div > div:nth-child(2)").innerText = translation.topTournaments;
-        break;
-      case 2:
-        card.querySelector("div > div").innerText = translation.liveStreamsCategory;
-        card.querySelector("div > div:nth-child(2)").innerText = translation.watchLive;
-        break;
-      case 3:
-        card.querySelector("div > div").innerText = translation.boostedOddsCategory;
-        card.querySelector("div > div:nth-child(2)").innerText = translation.betterPayouts;
-        break;
-    }
-  });
-
-  // Explore butonu metnini değiştirme
-  document.getElementById("explore-button").innerText = translation.exploreButton;
-}
-
-// Sayfa yüklendiğinde dil değiştir
-window.onload = () => {
-  const lang = getLanguageFromURL();
-  changeLanguage(lang);  // URL'den alınan dile göre içeriği değiştir
-};
-		
 		customSection3.innerHTML = `
 <style>
     .steps-section {
