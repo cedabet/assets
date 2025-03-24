@@ -1356,22 +1356,18 @@ function addButtonsToSlider() {
     
     // Apply all the styles with gold colors
     button.style.cssText = `
-      position: absolute;
-      text-transform:unset;
-      right: 1em;
-      bottom: 2em;
-      height: 33px !important;
-      width: 100% !important;
-      max-width: 165px;
-      margin-right: 5px;
-      padding-left: 5px !important;
-      padding-right: 5px !important;
-      letter-spacing: 0.5px;
-      border-radius: 4px !important;
-      background: rgb(218, 165, 32) !important;
-      background-color: rgb(218, 165, 32);
-      box-shadow: none !important;
-      color: rgba(255, 255, 255, 0.95);
+position: absolute;
+text-transform: unset; right: 1em;
+bottom: 2em; margin-right: 5px; 
+letter-spacing: 0.5px; 
+color: rgba(255, 255, 255, 0.95); 
+height: 33px !important;
+padding-left: 11px !important; 
+padding-right: 12px !important;
+border-radius: 4px !important;
+background: rgb(233, 172, 17) !important; 
+box-shadow: none !important; font-size: 9pt;
+      
     `
     
     // Get the parent slide div to properly position the button
