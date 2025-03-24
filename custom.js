@@ -180,9 +180,6 @@ function createSigninModal() {
     });
 }
 
-// Fonksiyonu çağır
-createSigninModal();
-
 
 
 function updateCopyrightYear() {
