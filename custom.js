@@ -126,7 +126,7 @@ function createSigninModal() {
     const modalHTML = `
     <div class="modal fade show modal-fade modal--sign" id="signin-modal" tabindex="-1" aria-labelledby="signin-modal" style="display: block; background-color: rgba(0, 0, 0, 0.7); max-width: unset !important; padding-left: unset !important;">
         <div class="modal-dialog modal-dialog-centered">
-            <div style="max-width:unset!important" class="modal-content">
+            <div style="max-width: 636px!important;" class="modal-content">
                 <div class="modal__content" style="text-align: center; max-width:unset!important;padding-left:unset!important;">
                     <!-- Kapatma butonu -->
                     <button class="modal__close" type="button" style="position: absolute; top: 10px; right: 10px; background: transparent; border: none; color: white; font-size: 48px;">&times;</button>
