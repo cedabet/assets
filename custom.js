@@ -57,7 +57,7 @@
 
     function handlePageScripts(path) {
         setTimeout(function () {
-            if (path === "/en/") {
+            if (path === "/en/" || path === "/tr/") {
                 /*  alert("Anasayfaya hoş geldiniz!");*/
                 loadVipFeatures();
 	        setTimeout(loadh2Title, 1000);   
