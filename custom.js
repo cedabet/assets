@@ -126,13 +126,17 @@ function createSigninModal() {
     const modalHTML = `
     <div class="modal fade show modal-fade modal--sign" id="signin-modal" tabindex="-1" aria-labelledby="signin-modal" style="display: block; background-color: rgba(0, 0, 0, 0.7); max-width: unset !important; padding-left: unset !important;">
         <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
+            <div style="max-width:unset!important" class="modal-content">
                 <div class="modal__content" style="text-align: center; max-width:unset!important;padding-left:unset!important;">
                     <!-- Kapatma butonu -->
                     <button class="modal__close" type="button" style="position: absolute; top: 10px; right: 10px; background: transparent; border: none; color: white; font-size: 48px;">&times;</button>
                     <!-- Burada içerik olacak -->
                     <img src="https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/vnnjkadsfjADGSGKSDKFWQE/auth-images/Iz4MHYkqpsDsrfBU0CfmfTYWUe0dvmWZwhuihmRn.jpg" alt="Dikey Resim"
-                         style="height: 90vh; width: auto; margin: 0 auto; display: block;">
+                         style="height: 60vh;
+    width: 100%;
+    margin: 0 auto;
+    display: block;
+    padding: 20px;">
                     <!-- Tekrar gösterme butonu -->
                     <button id="dontShowAgainBtn" style="margin-top: 20px; padding: 10px 20px; background-color: #f44336; color: white; border: none; cursor: pointer; font-size: 16px;">Tekrar Gösterme</button>
                 </div>
