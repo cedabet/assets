@@ -9,20 +9,20 @@
         let lastUrl = location.href;
         let isFirstLoad = true;
         if (isFirstLoad) {
+
 function createSigninModal() {
-    // Modal yapısının HTML içeriği
     const modalHTML = `
-    <div class="modal fade show modal-fade modal--sign" id="signin-modal" tabindex="-1" aria-labelledby="signin-modal" style="display: block; background-color: rgba(0, 0, 0, 0.7);">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-                <div class="modal__content" style="text-align: center;">
-                    <!-- Burada içerik olacak -->
-                    <img src="https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/vnnjkadsfjADGSGKSDKFWQE/auth-images/Iz4MHYkqpsDsrfBU0CfmfTYWUe0dvmWZwhuihmRn.jpg" alt="Dikey Resim" 
-                    style="height: 90vh; width: auto; margin: 0 auto; display: block;">
-                </div>
+<div class="modal fade show modal-fade modal--sign" id="signin-modal" tabindex="-1" aria-labelledby="signin-modal" style="display: block; background-color: rgba(0, 0, 0, 0.7); max-width: unset !important; padding-left: unset !important;">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal__content" style="text-align: center;max-width:unset!important;padding-left:unset!important;">
+                <!-- Burada içerik olacak -->
+                <img src="https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/vnnjkadsfjADGSGKSDKFWQE/auth-images/Iz4MHYkqpsDsrfBU0CfmfTYWUe0dvmWZwhuihmRn.jpg" alt="Dikey Resim"
+                     style="height: 90vh; width: auto; margin: 0 auto; display: block;">
             </div>
         </div>
     </div>
+</div>
     `;
 
     // Modal'ı body'nin sonuna ekliyoruz
@@ -52,6 +52,7 @@ function createSigninModal() {
 
 // Fonksiyonu çağır
 createSigninModal();
+
 
 
 
