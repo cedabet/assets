@@ -355,165 +355,59 @@ function loadh2Title() {
             customSection5.id = "custom-section-7";
             customSection5.classList.add("section", "custom-section");
 
+
             customSection.innerHTML = `
-       <div class="container">
-
-     <div id="sports-section" style="position: relative; width: 100%; margin: 0 auto; background-color: #17368d; background-image: linear-gradient(to right, #8a1818, #b92020); border-radius: 16px; padding: 40px; color: white; font-family: Arial, sans-serif; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); box-sizing: border-box; margin-bottom: 44px;">
-
-    <div id="content-wrapper" style="
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      height: 100%;
-      max-width: 60%;
-      position: relative;
-      z-index: 2;
-    ">
+ <div class="container">
+  <div id="sports-section" style="position: relative; width: 100%; margin: 0 auto; background-color: #17368d; background-image: linear-gradient(to right, #8a1818, #b92020); border-radius: 16px; padding: 40px; color: white; font-family: Arial, sans-serif; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); box-sizing: border-box; margin-bottom: 44px;">
+    <div id="content-wrapper" style="display: flex; flex-direction: column; justify-content: space-between; height: 100%; max-width: 60%; position: relative; z-index: 2;">
       <div>
         <h1 id="main-heading" style="font-size: 2rem; font-weight: 800; line-height: 1.1; margin-bottom: 20px; margin-top: 0; max-width: 800px;">
           Join the excitement by betting on the biggest highlights in sports.
         </h1>
       </div>
-
-      <!-- Compact Card Design for Icons Section -->
       <div id="icons-section" style="margin-top: 30px;">
         <div style="display: flex; gap: 10px; flex-wrap: wrap;">
-          <!-- Sports -->
           <a href="#" class="category-card" style="flex: 1; min-width: 110px; background-color: #b51f1f; border-radius: 8px; padding: 10px 12px; text-decoration: none; color: white; position: relative; overflow: hidden; transition: all 0.3s ease; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); border-left: 3px solid #ffffff; display: flex; align-items: center;">
-            <div class="category-icon" style="
-              font-size: 24px;
-              margin-right: 10px;
-              transition: all 0.3s ease;
-            ">⚽</div>
+            <div class="category-icon" style="font-size: 24px; margin-right: 10px;">⚽</div>
             <div>
-              <div style="
-                font-weight: 600;
-                font-size: 13px;
-                color: #ffffff;
-                line-height: 1.2;
-              ">Sports</div>
-              <div style="
-                font-size: 11px;
-                color: rgba(255, 255, 255, 0.6);
-              ">All leagues</div>
+              <div style="font-weight: 600; font-size: 13px; color: #ffffff;">Sports</div>
+              <div style="font-size: 11px; color: rgba(255, 255, 255, 0.6);">All leagues</div>
             </div>
           </a>
-
-          <!-- Esports -->
           <a href="#" class="category-card" style="flex: 1; min-width: 110px; background-color: #b51f1f; border-radius: 8px; padding: 10px 12px; text-decoration: none; color: white; position: relative; overflow: hidden; transition: all 0.3s ease; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); border-left: 3px solid #3a9fff; display: flex; align-items: center;">
-            <div class="category-icon" style="
-              font-size: 24px;
-              margin-right: 10px;
-              transition: all 0.3s ease;
-            ">🎮</div>
+            <div class="category-icon" style="font-size: 24px; margin-right: 10px;">🎮</div>
             <div>
-              <div style="
-                font-weight: 600;
-                font-size: 13px;
-                color: #ffffff;
-                line-height: 1.2;
-              ">Esports</div>
-              <div style="
-                font-size: 11px;
-                color: rgba(255, 255, 255, 0.6);
-              ">Top tournaments</div>
+              <div style="font-weight: 600; font-size: 13px; color: #ffffff;">Esports</div>
+              <div style="font-size: 11px; color: rgba(255, 255, 255, 0.6);">Top tournaments</div>
             </div>
           </a>
-
-          <!-- Live Streams -->
           <a href="#" class="category-card" style="flex: 1; min-width: 110px; background-color: #b51f1f; border-radius: 8px; padding: 10px 12px; text-decoration: none; color: white; position: relative; overflow: hidden; transition: all 0.3s ease; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); border-left: 3px solid #ff3a6f; display: flex; align-items: center;">
-            <div class="category-icon" style="
-              font-size: 24px;
-              margin-right: 10px;
-              transition: all 0.3s ease;
-            ">▶️</div>
+            <div class="category-icon" style="font-size: 24px; margin-right: 10px;">▶️</div>
             <div>
-              <div style="
-                font-weight: 600;
-                font-size: 13px;
-                color: #ffffff;
-                line-height: 1.2;
-              ">Live Streams</div>
-              <div style="
-                font-size: 11px;
-                color: rgba(255, 255, 255, 0.6);
-              ">Watch live</div>
+              <div style="font-weight: 600; font-size: 13px; color: #ffffff;">Live Streams</div>
+              <div style="font-size: 11px; color: rgba(255, 255, 255, 0.6);">Watch live</div>
             </div>
           </a>
-
-          <!-- Boosted Odds -->
           <a href="#" class="category-card" style="flex: 1; min-width: 110px; background-color: #b51f1f; border-radius: 8px; padding: 10px 12px; text-decoration: none; color: white; position: relative; overflow: hidden; transition: all 0.3s ease; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); border-left: 3px solid #ffcc00; display: flex; align-items: center;">
-            <div class="category-icon" style="
-              font-size: 24px;
-              margin-right: 10px;
-              transition: all 0.3s ease;
-            ">⚡</div>
+            <div class="category-icon" style="font-size: 24px; margin-right: 10px;">⚡</div>
             <div>
-              <div style="
-                font-weight: 600;
-                font-size: 13px;
-                color: #ffffff;
-                line-height: 1.2;
-              ">Boosted Odds</div>
-              <div style="
-                font-size: 11px;
-                color: rgba(255, 255, 255, 0.6);
-              ">Better payouts</div>
+              <div style="font-weight: 600; font-size: 13px; color: #ffffff;">Boosted Odds</div>
+              <div style="font-size: 11px; color: rgba(255, 255, 255, 0.6);">Better payouts</div>
             </div>
           </a>
         </div>
       </div>
-
-      <!-- Explore button with original gold gradient -->
       <div style="margin-top: 40px; width: 100%;">
-        <a id="explore-button" href="#" style="
-          display: inline-flex;
-          align-items: center;
-          justify-content: center;
-          background-size: 200% 200%;
-          color: #0f1923;
-          padding: 14px 28px;
-          border-radius: 8px;
-          text-decoration: none;
-          font-weight: 800;
-          font-size: 15px;
-          text-transform: uppercase;
-          letter-spacing: 0.5px;
-          transition: all 0.3s ease;
-          position: relative;
-          border: none;
-          box-sizing: border-box;
-	  background-color: rgb(255, 229, 0);
-box-shadow: rgba(255, 176, 25, 0.4) 0px 0px 10px, rgba(255, 255, 255, 0.2) 0px 1px 0px inset, rgb(255, 135, 25) 0px 0px 15px inset;
-        ">
+        <a id="explore-button" href="#" style="display: inline-flex; align-items: center; justify-content: center; background-size: 200% 200%; color: #0f1923; padding: 14px 28px; border-radius: 8px; text-decoration: none; font-weight: 800; font-size: 15px; text-transform: uppercase; letter-spacing: 0.5px; transition: all 0.3s ease;">
           <span style="position: relative; z-index: 2;">EXPLORE SPORTS SECTION</span>
-          <span class="button-arrow" style="
-		    display:none;
-            margin-left: 12px;
-            font-size: 18px;
-            transition: transform 0.3s ease;
-            position: relative;
-            z-index: 2;
-          ">→</span>
-          <span style="
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            width: 100%;
-            height: 4px;
-            background: rgba(0, 0, 0, 0.1);
-            border-bottom-left-radius: 8px;
-            border-bottom-right-radius: 8px;
-          "></span>
         </a>
       </div>
     </div>
-
-    <!-- Astronaut Image with Soccer Ball -->
     <div id="image-wrapper" style="position: absolute; right: -68px; bottom: 0px; top: 0; display: flex; align-items: center; justify-content: flex-end; width: 50%; z-index: 1;">
       <img id="astronaut-image" src="https://cedabet.github.io/assets/images/soccer-astro.png" alt="Astronaut holding soccer ball" style="max-height: 410px; max-width: 100%; object-fit: contain; bottom: 0px; position: absolute;">
     </div>
   </div>
+</div>
 
   <script>
     // Responsive handling
@@ -619,6 +513,88 @@ box-shadow: rgba(255, 176, 25, 0.4) 0px 0px 10px, rgba(255, 255, 255, 0.2) 0px 1
 </script>
    </div>`;
 
+
+const translations = {
+  en: {
+    mainHeading: "Join the excitement by betting on the biggest highlights in sports.",
+    sportsCategory: "Sports",
+    esportsCategory: "Esports",
+    liveStreamsCategory: "Live Streams",
+    boostedOddsCategory: "Boosted Odds",
+    exploreButton: "EXPLORE SPORTS SECTION",
+    allLeagues: "All leagues",
+    topTournaments: "Top tournaments",
+    watchLive: "Watch live",
+    betterPayouts: "Better payouts"
+  },
+  tr: {
+    mainHeading: "En büyük spor heyecanlarına bahis yaparak katılın.",
+    sportsCategory: "Spor",
+    esportsCategory: "Esport",
+    liveStreamsCategory: "Canlı Yayınlar",
+    boostedOddsCategory: "Yükseltilmiş Oranlar",
+    exploreButton: "SPOR BÖLÜMÜNÜ KEŞFET",
+    allLeagues: "Tüm ligler",
+    topTournaments: "En iyi turnuvalar",
+    watchLive: "Canlı izle",
+    betterPayouts: "Daha iyi ödemeler"
+  },
+  es: {
+    mainHeading: "Únete a la emoción apostando en los mejores momentos deportivos.",
+    sportsCategory: "Deportes",
+    esportsCategory: "Esports",
+    liveStreamsCategory: "Transmisiones en vivo",
+    boostedOddsCategory: "Cuotas mejoradas",
+    exploreButton: "EXPLORAR SECCIÓN DE DEPORTES",
+    allLeagues: "Todas las ligas",
+    topTournaments: "Mejores torneos",
+    watchLive: "Ver en vivo",
+    betterPayouts: "Mejores pagos"
+  }
+};
+
+
+function getLanguageFromURL() {
+  const path = window.location.pathname;  // Örneğin: "/en" veya "/tr"
+  const lang = path.split('/').pop();     // Yalnızca dil kodunu al: "en", "tr", "es" vb.
+  return translations[lang] ? lang : 'en'; // Eğer dil geçerli değilse, varsayılan olarak 'en' döndür
+}
+function changeLanguage(lang) {
+  const translation = translations[lang];
+
+
+  document.getElementById("main-heading").innerText = translation.mainHeading;
+  document.querySelectorAll(".category-card").forEach((card, index) => {
+    switch (index) {
+      case 0:
+        card.querySelector("div > div").innerText = translation.sportsCategory;
+        card.querySelector("div > div:nth-child(2)").innerText = translation.allLeagues;
+        break;
+      case 1:
+        card.querySelector("div > div").innerText = translation.esportsCategory;
+        card.querySelector("div > div:nth-child(2)").innerText = translation.topTournaments;
+        break;
+      case 2:
+        card.querySelector("div > div").innerText = translation.liveStreamsCategory;
+        card.querySelector("div > div:nth-child(2)").innerText = translation.watchLive;
+        break;
+      case 3:
+        card.querySelector("div > div").innerText = translation.boostedOddsCategory;
+        card.querySelector("div > div:nth-child(2)").innerText = translation.betterPayouts;
+        break;
+    }
+  });
+
+  // Explore butonu metnini değiştirme
+  document.getElementById("explore-button").innerText = translation.exploreButton;
+}
+
+// Sayfa yüklendiğinde dil değiştir
+window.onload = () => {
+  const lang = getLanguageFromURL();
+  changeLanguage(lang);  // URL'den alınan dile göre içeriği değiştir
+};
+		
 		customSection3.innerHTML = `
 <style>
     .steps-section {
