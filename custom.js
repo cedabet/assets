@@ -114,19 +114,177 @@
     })();
 
 function createSigninModal() {
-}
+     const lastModalTime = localStorage.getItem('modalShownTime');
+     const dontShowAgain = localStorage.getItem('dontShowModalAgain'); // Kullanıcı "Tekrar Gösterme" butonuna tıklayıp tıklamadığını kontrol ediyoruz
+     const currentTime = new Date().getTime();
+ 
+     // Eğer kullanıcı modalı 1 saatten daha önce gördüyse veya "Tekrar Gösterme" butonuna tıkladıysa, tekrar göstermiyoruz
+     if ((lastModalTime && currentTime - lastModalTime < 3600000) || dontShowAgain) {
+         return;
+     }
+ 
+     const modalHTML = `
+     <div class="modal fade show modal-fade modal--sign" id="signin-modal" tabindex="-1" aria-labelledby="signin-modal" style="display: block; background-color: rgba(0, 0, 0, 0.8); max-width: unset !important; padding-left: unset !important;">
+         <div class="modal-dialog modal-dialog-centered">
+             <div style="max-width: 636px!important;" class="modal-content">
+                 <div class="modal__content" style="text-align: center; max-width: unset!important; padding-left: unset!important; padding: 0 0 17px 0; padding: 0;">
+                     <!-- Kapatma butonu -->
+                     <button class="modal__close" type="button" style="position: absolute; top: 10px; right: 10px; background: transparent; border: none; color: white; font-size: 48px;">×</button>
+                     <a href="/promotion/hit-1000x-wins-on-pragmatic-play-games">
+                     	<img src="https://cedabet.github.io/assets/images/sl10Banner.jpg" alt="Dikey Resim" style="/* height: 600px; */ width: 100%; margin: 0 auto; display: block;">
+                     </a>
+                     <button id="dontShowAgainBtn" style="    padding: 10px 20px;
+     background-color: rgb(34 157 225) !important;
+     color: white;
+     border: none;
+     cursor: pointer;
+     font-size: 16px;
+     width: 50%;
+     border-radius: 10px;
+     margin-top: 10px;
+     margin-bottom: 10px;">Tekrar Gösterme</button>
+                 </div>
+             </div>
+         </div>
+     </div>
+     `;
+ 
+     // Modal'ı body'nin sonuna ekliyoruz
+     document.body.insertAdjacentHTML("beforeend", modalHTML);
+ 
+     // Modal'ı gösterme işlevi
+     const modal = document.getElementById("signin-modal");
+     const closeButton = modal.querySelector(".modal__close");
+     const dontShowAgainButton = modal.querySelector("#dontShowAgainBtn");
+ 
+     // Modal dışına tıklanarak kapatılacak işlev
+     function closeModal() {
+         modal.style.display = "none";
+         // Modal kapandığında, modal gösterildiği zamanı kaydediyoruz
+         localStorage.setItem('modalShownTime', currentTime);
+     }
+ 
+     // Modal'ı otomatik olarak aç
+     setTimeout(() => {
+         modal.style.display = "block";
+     }, 1000); // 1 saniye sonra açılır
+ 
+     // Modal dışına tıklanırsa kapanma işlevi
+     modal.addEventListener("click", function(event) {
+         // Modal içerisine tıklanmazsa
+         if (event.target === modal) {
+             closeModal();
+         }
+     });
+ 
+     // Kapatma butonuna tıklandığında modalı kapat
+     closeButton.addEventListener("click", closeModal);
+ 
+     // "Tekrar Gösterme" butonuna tıklandığında yapılacaklar
+     dontShowAgainButton.addEventListener("click", function() {
+         // Modalı bir daha 1 saat boyunca göstermemek için localStorage'a kaydediyoruz
+         localStorage.setItem('dontShowModalAgain', true);
+         closeModal(); // Modalı kapat
+     });
+ }
 
 
 
 function updateCopyrightYear() {
-}
+     const copyrightElement = document.querySelector(".footer__copyright");
+ 
+     if (copyrightElement) {
+         const currentYear = new Date().getFullYear();
+         copyrightElement.textContent = ""; 
+         copyrightElement.textContent = "© CEDABET.COM, " + currentYear;
+     }
+ }
 
 
 function addMenuElement() {
-}
+   const sidebarNav = document.querySelector('.sidebar__nav.sidebar__nav--border');
+ 
+   if (!sidebarNav) {
+     return;
+   }
+ 
+   const uid = 'custom-item-menu'; 
+ 
+ 
+   const existingElement = document.getElementById(uid);
+ 
+   if (existingElement) {
+     return;
+   }
+ 
+   const newLi = document.createElement('li');
+   newLi.id = uid; 
+ 
+   const newAnchor = document.createElement('a');
+   newAnchor.href = '/en/casino/group/table-games';
+ 
+   const svgIcon = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
+   svgIcon.classList.add('svg-icon');
+   const use = document.createElementNS('http://www.w3.org/2000/svg', 'use');
+   use.setAttribute('href', '/static/media/sprite.6b179d63884598e512b15f3dd0296663.svg#table-games');
+   svgIcon.appendChild(use);
+ 
+ 
+   const span = document.createElement('span');
+   span.textContent = 'New';
+ 
+ 
+   newAnchor.appendChild(svgIcon);
+   newAnchor.appendChild(document.createTextNode(' Table Games'));
+   newAnchor.appendChild(span);
+ 
+   newLi.appendChild(newAnchor);
+ 
+   sidebarNav.appendChild(newLi);
+ }
 
 function addMenuElementTwo() {
-}
+   
+     const sidebarLinks = document.querySelector(".sidebar__links");
+     const sidebarLinksSmall = document.querySelector(".sidebar__links-small");
+ 
+ 
+     if (sidebarLinksSmall) {
+         const elementId = 'promotions-link-small'; 
+ 
+         const existingMenu = document.getElementById(elementId);
+         if (!existingMenu) {
+             const newHTMLSmall = `
+                 <a id="${elementId}" class="sidebar__link-small sidebar__link-small--purple" href="/en/casino" style="background: url('https://cedabet.github.io/assets/images/promotionBtn.jpg') left center / cover no-repeat;"></a>
+             `;
+             sidebarLinksSmall.insertAdjacentHTML("beforeend", newHTMLSmall); 
+         }
+     }
+
+ 
+     if (sidebarLinks) {
+         const elementId = 'promotions-link'; // Büyük link için id
+ 
+         // Aynı id'ye sahip bir öğe zaten var mı diye kontrol ediyoruz
+         const existingMenu = document.getElementById(elementId);
+         if (!existingMenu) {
+             const newHTML = `
+                 <div style="width: 100%;">
+                     <a id="${elementId}" class="sidebar__link sidebar__link--casino" href="/promotions" style="
+                         background: url('https://cedabet.github.io/assets/images/promotionBtn.jpg') left center / cover no-repeat;
+                         width: 100%;
+                         margin-bottom: 17px;
+                         margin-top: -10px;
+                         box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -2px 0px inset;
+                     ">
+                         <span>Promotion</span>
+                     </a>
+                 </div>
+             `;
+             sidebarLinks.insertAdjacentHTML("afterend", newHTML);
+         }
+     }
+ }
 
 
 
