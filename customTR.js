@@ -221,7 +221,7 @@ function createSigninModal() {
    newLi.id = uid; 
  
    const newAnchor = document.createElement('a');
-   newAnchor.href = '/en/casino/group/table-games';
+   newAnchor.href = '/tr/casino/group/table-games';
  
    const svgIcon = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
    svgIcon.classList.add('svg-icon');
@@ -277,7 +277,7 @@ function createSigninModal() {
                          margin-top: -10px;
                          box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -2px 0px inset;
                      ">
-                         <span>Promotion</span>
+                         <span>Promosyon</span>
                      </a>
                  </div>
              `;
@@ -296,19 +296,19 @@ function loadh2Title() {
         let url = '';
 
         if (title.textContent.trim().includes('Top Games')) {
-            url = '/en/casino/group/lobby';
+            url = '/tr/casino/group/lobby';
         }
         if (title.textContent.trim().includes('Popular Games')) {
-            url = '/en/casino/group/new-releases';
+            url = '/tr/casino/group/new-releases';
         }
         if (title.textContent.trim().includes('New Releases')) {
-            url = '/en/casino/group/new-releases';
+            url = '/tr/casino/group/new-releases';
         }
         if (title.textContent.trim().includes('High RTP')) {
-            url = '/en/casino/group/enhanced-rtp';
+            url = '/tr/casino/group/enhanced-rtp';
         }
         if (title.textContent.trim().includes('Buy Bonus')) {
-            url = '/en/casino/group/bonus-buy';
+            url = '/tr/casino/group/bonus-buy';
         }
 
         if (url) {
