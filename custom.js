@@ -12,17 +12,19 @@
 
 function createSigninModal() {
     const modalHTML = `
-<div class="modal fade show modal-fade modal--sign" id="signin-modal" tabindex="-1" aria-labelledby="signin-modal" style="display: block; background-color: rgba(0, 0, 0, 0.7); max-width: unset !important; padding-left: unset !important;">
-    <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content">
-            <div class="modal__content" style="text-align: center;max-width:unset!important;padding-left:unset!important;">
-                <!-- Burada içerik olacak -->
-                <img src="https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/vnnjkadsfjADGSGKSDKFWQE/auth-images/Iz4MHYkqpsDsrfBU0CfmfTYWUe0dvmWZwhuihmRn.jpg" alt="Dikey Resim"
-                     style="height: 90vh; width: auto; margin: 0 auto; display: block;">
+    <div class="modal fade show modal-fade modal--sign" id="signin-modal" tabindex="-1" aria-labelledby="signin-modal" style="display: block; background-color: rgba(0, 0, 0, 0.7); max-width: unset !important; padding-left: unset !important;">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal__content" style="text-align: center;max-width:unset!important;padding-left:unset!important;">
+                    <!-- Kapatma butonu -->
+                    <button class="modal__close" type="button" style="position: absolute; top: 10px; right: 10px; background: transparent; border: none; color: white; font-size: 24px;">&times;</button>
+                    <!-- Burada içerik olacak -->
+                    <img src="https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/vnnjkadsfjADGSGKSDKFWQE/auth-images/Iz4MHYkqpsDsrfBU0CfmfTYWUe0dvmWZwhuihmRn.jpg" alt="Dikey Resim"
+                         style="height: 90vh; width: auto; margin: 0 auto; display: block;">
+                </div>
             </div>
         </div>
     </div>
-</div>
     `;
 
     // Modal'ı body'nin sonuna ekliyoruz
@@ -30,6 +32,7 @@ function createSigninModal() {
 
     // Modal'ı gösterme işlevi
     const modal = document.getElementById("signin-modal");
+    const closeButton = modal.querySelector(".modal__close");
 
     // Modal dışına tıklanarak kapatılacak işlev
     function closeModal() {
@@ -48,10 +51,14 @@ function createSigninModal() {
             closeModal();
         }
     });
+
+    // Kapatma butonuna tıklandığında modalı kapat
+    closeButton.addEventListener("click", closeModal);
 }
 
 // Fonksiyonu çağır
 createSigninModal();
+
 
 
 
