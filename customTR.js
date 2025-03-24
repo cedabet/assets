@@ -156,7 +156,7 @@ function loadh2Title() {
         if (url) {
             const newLink = document.createElement('a');
             newLink.href = url;
-            newLink.textContent = `See All`;
+            newLink.textContent = `Tümünü Gör`;
             newLink.style.background = 'rgba(55, 162, 221, 0.13)'; 
             newLink.style.padding = '5px 12px 5px 12px';
             newLink.style.borderRadius = '4px';
@@ -198,9 +198,9 @@ function loadh2Title() {
             customSection5.classList.add("section", "custom-section");
 
             customSection.innerHTML = `
-       <div class="container">
+      <div class="container">
 
-     <div id="sports-section" style="position: relative; width: 100%; margin: 0 auto; background-color: #17368d; background-image: linear-gradient(to right, #8a1818, #b92020); border-radius: 16px; padding: 40px; color: white; font-family: Arial, sans-serif; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); box-sizing: border-box; margin-bottom: 44px;">
+  <div id="sports-section" style="position: relative; width: 100%; margin: 0 auto; background-color: #17368d; background-image: linear-gradient(to right, #8a1818, #b92020); border-radius: 16px; padding: 40px; color: white; font-family: Arial, sans-serif; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); box-sizing: border-box; margin-bottom: 44px;">
 
     <div id="content-wrapper" style="
       display: flex;
@@ -213,14 +213,14 @@ function loadh2Title() {
     ">
       <div>
         <h1 id="main-heading" style="font-size: 2rem; font-weight: 800; line-height: 1.1; margin-bottom: 20px; margin-top: 0; max-width: 800px;">
-          Join the excitement by betting on the biggest highlights in sports.
+          En büyük spor anlarını bahisle takip ederek heyecana katılın.
         </h1>
       </div>
 
       <!-- Compact Card Design for Icons Section -->
       <div id="icons-section" style="margin-top: 30px;">
         <div style="display: flex; gap: 10px; flex-wrap: wrap;">
-          <!-- Sports -->
+          <!-- Sporlar -->
           <a href="#" class="category-card" style="flex: 1; min-width: 110px; background-color: #b51f1f; border-radius: 8px; padding: 10px 12px; text-decoration: none; color: white; position: relative; overflow: hidden; transition: all 0.3s ease; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); border-left: 3px solid #ffffff; display: flex; align-items: center;">
             <div class="category-icon" style="
               font-size: 24px;
@@ -233,15 +233,15 @@ function loadh2Title() {
                 font-size: 13px;
                 color: #ffffff;
                 line-height: 1.2;
-              ">Sports</div>
+              ">Sporlar</div>
               <div style="
                 font-size: 11px;
                 color: rgba(255, 255, 255, 0.6);
-              ">All leagues</div>
+              ">Tüm ligler</div>
             </div>
           </a>
 
-          <!-- Esports -->
+          <!-- Esporlar -->
           <a href="#" class="category-card" style="flex: 1; min-width: 110px; background-color: #b51f1f; border-radius: 8px; padding: 10px 12px; text-decoration: none; color: white; position: relative; overflow: hidden; transition: all 0.3s ease; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); border-left: 3px solid #3a9fff; display: flex; align-items: center;">
             <div class="category-icon" style="
               font-size: 24px;
@@ -254,15 +254,15 @@ function loadh2Title() {
                 font-size: 13px;
                 color: #ffffff;
                 line-height: 1.2;
-              ">Esports</div>
+              ">Esporlar</div>
               <div style="
                 font-size: 11px;
                 color: rgba(255, 255, 255, 0.6);
-              ">Top tournaments</div>
+              ">Önemli turnuvalar</div>
             </div>
           </a>
 
-          <!-- Live Streams -->
+          <!-- Canlı Yayınlar -->
           <a href="#" class="category-card" style="flex: 1; min-width: 110px; background-color: #b51f1f; border-radius: 8px; padding: 10px 12px; text-decoration: none; color: white; position: relative; overflow: hidden; transition: all 0.3s ease; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); border-left: 3px solid #ff3a6f; display: flex; align-items: center;">
             <div class="category-icon" style="
               font-size: 24px;
@@ -275,15 +275,15 @@ function loadh2Title() {
                 font-size: 13px;
                 color: #ffffff;
                 line-height: 1.2;
-              ">Live Streams</div>
+              ">Canlı Yayınlar</div>
               <div style="
                 font-size: 11px;
                 color: rgba(255, 255, 255, 0.6);
-              ">Watch live</div>
+              ">Canlı izle</div>
             </div>
           </a>
 
-          <!-- Boosted Odds -->
+          <!-- Yükseltilmiş Oranlar -->
           <a href="#" class="category-card" style="flex: 1; min-width: 110px; background-color: #b51f1f; border-radius: 8px; padding: 10px 12px; text-decoration: none; color: white; position: relative; overflow: hidden; transition: all 0.3s ease; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); border-left: 3px solid #ffcc00; display: flex; align-items: center;">
             <div class="category-icon" style="
               font-size: 24px;
@@ -296,17 +296,17 @@ function loadh2Title() {
                 font-size: 13px;
                 color: #ffffff;
                 line-height: 1.2;
-              ">Boosted Odds</div>
+              ">Yükseltilmiş Oranlar</div>
               <div style="
                 font-size: 11px;
                 color: rgba(255, 255, 255, 0.6);
-              ">Better payouts</div>
+              ">Daha iyi ödemeler</div>
             </div>
           </a>
         </div>
       </div>
 
-      <!-- Explore button with original gold gradient -->
+      <!-- Keşfet butonu ile orijinal altın gradyanı -->
       <div style="margin-top: 40px; width: 100%;">
         <a id="explore-button" href="#" style="
           display: inline-flex;
@@ -328,7 +328,7 @@ function loadh2Title() {
 	  background-color: rgb(255, 229, 0);
 box-shadow: rgba(255, 176, 25, 0.4) 0px 0px 10px, rgba(255, 255, 255, 0.2) 0px 1px 0px inset, rgb(255, 135, 25) 0px 0px 15px inset;
         ">
-          <span style="position: relative; z-index: 2;">EXPLORE SPORTS SECTION</span>
+          <span style="position: relative; z-index: 2;">SPOR BÖLÜMÜNÜ KEŞFET</span>
           <span class="button-arrow" style="
 		    display:none;
             margin-left: 12px;
@@ -351,11 +351,12 @@ box-shadow: rgba(255, 176, 25, 0.4) 0px 0px 10px, rgba(255, 255, 255, 0.2) 0px 1
       </div>
     </div>
 
-    <!-- Astronaut Image with Soccer Ball -->
+    <!-- Astronot Resmi ve Futbol Topu -->
     <div id="image-wrapper" style="position: absolute; right: -68px; bottom: 0px; top: 0; display: flex; align-items: center; justify-content: flex-end; width: 50%; z-index: 1;">
-      <img id="astronaut-image" src="https://cedabet.github.io/assets/images/soccer-astro.png" alt="Astronaut holding soccer ball" style="max-height: 410px; max-width: 100%; object-fit: contain; bottom: 0px; position: absolute;">
+      <img id="astronaut-image" src="https://cedabet.github.io/assets/images/soccer-astro.png" alt="Futbol topu tutan astronot" style="max-height: 410px; max-width: 100%; object-fit: contain; bottom: 0px; position: absolute;">
     </div>
   </div>
+</div>
 
   <script>
     // Responsive handling
