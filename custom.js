@@ -9,67 +9,12 @@
         let lastUrl = location.href;
         let isFirstLoad = true;
         if (isFirstLoad) {
-
-function createSigninModal() {
-    const modalHTML = `
-    <div class="modal fade show modal-fade modal--sign" id="signin-modal" tabindex="-1" aria-labelledby="signin-modal" style="display: block; background-color: rgba(0, 0, 0, 0.7); max-width: unset !important; padding-left: unset !important;">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-                <div class="modal__content" style="text-align: center;max-width:unset!important;padding-left:unset!important;">
-                    <!-- Kapatma butonu -->
-                    <button class="modal__close" type="button" style="position: absolute; top: 10px; right: 10px; background: transparent; border: none; color: white; font-size: 48px;">&times;</button>
-                    <!-- Burada içerik olacak -->
-                    <img src="https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/vnnjkadsfjADGSGKSDKFWQE/auth-images/Iz4MHYkqpsDsrfBU0CfmfTYWUe0dvmWZwhuihmRn.jpg" alt="Dikey Resim"
-                         style="height: 90vh; width: auto; margin: 0 auto; display: block;">
-                </div>
-            </div>
-        </div>
-    </div>
-    `;
-
-    // Modal'ı body'nin sonuna ekliyoruz
-    document.body.insertAdjacentHTML("beforeend", modalHTML);
-
-    // Modal'ı gösterme işlevi
-    const modal = document.getElementById("signin-modal");
-    const closeButton = modal.querySelector(".modal__close");
-
-    // Modal dışına tıklanarak kapatılacak işlev
-    function closeModal() {
-        modal.style.display = "none";
-    }
-
-    // Modal'ı otomatik olarak aç
-    setTimeout(() => {
-        modal.style.display = "block";
-    }, 1000); // 1 saniye sonra açılır
-
-    // Modal dışına tıklanırsa kapanma işlevi
-    modal.addEventListener("click", function(event) {
-        // Modal içerisine tıklanmazsa
-        if (event.target === modal) {
-            closeModal();
-        }
-    });
-
-    // Kapatma butonuna tıklandığında modalı kapat
-    closeButton.addEventListener("click", closeModal);
-}
-
-// Fonksiyonu çağır
-createSigninModal();
-
-
-
-
-
-
             loadVipFeatures();
             setTimeout(loadh2Title, 1000);   
 		addMenuElement();
 		  addMenuElementTwo();
 		    setTimeout(updateCopyrightYear, 1000);   
-	
+	 setTimeout(createSigninModal, 2000);  
             var sportspath = window.location.pathname;
             if (sportspath === "/en/sportsbook") {
                 var sidebar = document.getElementById("sidebar");
@@ -118,7 +63,9 @@ createSigninModal();
 	        setTimeout(loadh2Title, 1000);   
 		    addMenuElement();
 		    addMenuElementTwo();
-		      setTimeout(updateCopyrightYear, 1000);   
+		      setTimeout(updateCopyrightYear, 1000);  
+
+		  
             } else if (path === "/en/vip") {
                 /* alert("VIP sayfasına hoş geldiniz!");*/
             }
@@ -165,6 +112,76 @@ createSigninModal();
 
     window.addEventListener('load', checkUrlChange);
     })();
+
+function createSigninModal() {
+    const lastModalTime = localStorage.getItem('modalShownTime');
+    const dontShowAgain = localStorage.getItem('dontShowModalAgain'); // Kullanıcı "Tekrar Gösterme" butonuna tıklayıp tıklamadığını kontrol ediyoruz
+    const currentTime = new Date().getTime();
+
+    // Eğer kullanıcı modalı 1 saatten daha önce gördüyse veya "Tekrar Gösterme" butonuna tıkladıysa, tekrar göstermiyoruz
+    if ((lastModalTime && currentTime - lastModalTime < 3600000) || dontShowAgain) {
+        return;
+    }
+
+    const modalHTML = `
+    <div class="modal fade show modal-fade modal--sign" id="signin-modal" tabindex="-1" aria-labelledby="signin-modal" style="display: block; background-color: rgba(0, 0, 0, 0.7); max-width: unset !important; padding-left: unset !important;">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal__content" style="text-align: center; max-width:unset!important;padding-left:unset!important;">
+                    <!-- Kapatma butonu -->
+                    <button class="modal__close" type="button" style="position: absolute; top: 10px; right: 10px; background: transparent; border: none; color: white; font-size: 48px;">&times;</button>
+                    <!-- Burada içerik olacak -->
+                    <img src="https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/vnnjkadsfjADGSGKSDKFWQE/auth-images/Iz4MHYkqpsDsrfBU0CfmfTYWUe0dvmWZwhuihmRn.jpg" alt="Dikey Resim"
+                         style="height: 90vh; width: auto; margin: 0 auto; display: block;">
+                    <!-- Tekrar gösterme butonu -->
+                    <button id="dontShowAgainBtn" style="margin-top: 20px; padding: 10px 20px; background-color: #f44336; color: white; border: none; cursor: pointer; font-size: 16px;">Tekrar Gösterme</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    `;
+
+    // Modal'ı body'nin sonuna ekliyoruz
+    document.body.insertAdjacentHTML("beforeend", modalHTML);
+
+    // Modal'ı gösterme işlevi
+    const modal = document.getElementById("signin-modal");
+    const closeButton = modal.querySelector(".modal__close");
+    const dontShowAgainButton = modal.querySelector("#dontShowAgainBtn");
+
+    // Modal dışına tıklanarak kapatılacak işlev
+    function closeModal() {
+        modal.style.display = "none";
+        // Modal kapandığında, modal gösterildiği zamanı kaydediyoruz
+        localStorage.setItem('modalShownTime', currentTime);
+    }
+
+    // Modal'ı otomatik olarak aç
+    setTimeout(() => {
+        modal.style.display = "block";
+    }, 1000); // 1 saniye sonra açılır
+
+    // Modal dışına tıklanırsa kapanma işlevi
+    modal.addEventListener("click", function(event) {
+        // Modal içerisine tıklanmazsa
+        if (event.target === modal) {
+            closeModal();
+        }
+    });
+
+    // Kapatma butonuna tıklandığında modalı kapat
+    closeButton.addEventListener("click", closeModal);
+
+    // "Tekrar Gösterme" butonuna tıklandığında yapılacaklar
+    dontShowAgainButton.addEventListener("click", function() {
+        // Modalı bir daha 1 saat boyunca göstermemek için localStorage'a kaydediyoruz
+        localStorage.setItem('dontShowModalAgain', true);
+        closeModal(); // Modalı kapat
+    });
+}
+
+// Fonksiyonu çağır
+createSigninModal();
 
 
 
