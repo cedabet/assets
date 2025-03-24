@@ -9,20 +9,16 @@
         let lastUrl = location.href;
         let isFirstLoad = true;
         if (isFirstLoad) {
-	function createSigninModal() {
+function createSigninModal() {
     // Modal yapısının HTML içeriği
     const modalHTML = `
     <div class="modal fade show modal-fade modal--sign" id="signin-modal" tabindex="-1" aria-labelledby="signin-modal" style="display: block; background-color: rgba(0, 0, 0, 0.7);">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
-                <div class="modal__content" style="height: auto; text-align: center;">
-                    <div class="modal__sign-img">
-                        <span class="lazy-load-image-background blur lazy-load-image-loaded" style="color: transparent; display: inline-block; width: 100%; text-align: center;">
-                            <!-- Dikey Resim Ekleniyor -->
-                            <img src="https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/vnnjkadsfjADGSGKSDKFWQE/auth-images/Iz4MHYkqpsDsrfBU0CfmfTYWUe0dvmWZwhuihmRn.jpg" alt="Dikey Resim" 
-                            style="height: 90vh; width: auto; margin: 0 auto; display: block;">
-                        </span>
-                    </div>
+                <div class="modal__content" style="text-align: center;">
+                    <!-- Burada içerik olacak -->
+                    <img src="https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/vnnjkadsfjADGSGKSDKFWQE/auth-images/Iz4MHYkqpsDsrfBU0CfmfTYWUe0dvmWZwhuihmRn.jpg" alt="Dikey Resim" 
+                    style="height: 90vh; width: auto; margin: 0 auto; display: block;">
                 </div>
             </div>
         </div>
@@ -35,9 +31,7 @@
     // Modal'ı gösterme işlevi
     const modal = document.getElementById("signin-modal");
 
-    // Modal'ı kapama işlevi
-    const closeButton = modal.querySelector(".modal__close");
-
+    // Modal dışına tıklanarak kapatılacak işlev
     function closeModal() {
         modal.style.display = "none";
     }
@@ -47,14 +41,18 @@
         modal.style.display = "block";
     }, 1000); // 1 saniye sonra açılır
 
-    // Kapama butonuna tıklanınca modal'ı kapat
-    if (closeButton) {
-        closeButton.addEventListener("click", closeModal);
-    }
+    // Modal dışına tıklanırsa kapanma işlevi
+    modal.addEventListener("click", function(event) {
+        // Modal içerisine tıklanmazsa
+        if (event.target === modal) {
+            closeModal();
+        }
+    });
 }
 
 // Fonksiyonu çağır
 createSigninModal();
+
 
 
 
