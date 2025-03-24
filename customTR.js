@@ -563,41 +563,41 @@ box-shadow: rgba(255, 176, 25, 0.4) 0px 0px 10px, rgba(255, 255, 255, 0.2) 0px 1
 
 <div class="container" style="border: none;">
     <div style="/* background-color: #0c1016; */ color: white; padding: 30px 20px; position: relative; font-family: Arial, sans-serif; width: 100%; border: none;">
-  <!-- Gold vertical line on the left -->
+  <!-- Sol tarafta altın dikey çizgi -->
   
-  
-  <!-- Steps container -->
+  <!-- Adımların konteyneri -->
   <div style="display: flex; justify-content: space-around; align-items: center; margin-bottom: 40px; flex-wrap: wrap;">
-    <!-- Step 1 -->
+    <!-- Adım 1 -->
     <div style="display: flex; align-items: center; margin: 10px 0;">
       <span style="color: #00c8ff; font-size: 28px; font-weight: bold; margin-right: 10px;">01</span>
-      <span style="font-size: 18px; color: #ffffff;">Register an account</span>
+      <span style="font-size: 18px; color: #ffffff;">Hesabını Oluştur</span>
     </div>
     
-    <!-- Divider line -->
+    <!-- Ayırıcı çizgi -->
     <div style="width: 100px; height: 1px; background-color: #1e3a5a; margin: 0 10px;"></div>
     
-    <!-- Step 2 -->
+    <!-- Adım 2 -->
     <div style="display: flex; align-items: center; margin: 10px 0;">
       <span style="color: #00c8ff; font-size: 28px; font-weight: bold; margin-right: 10px;">02</span>
-      <span style="font-size: 18px; color: #ffffff;">Make a Deposit &amp; Play</span>
+      <span style="font-size: 18px; color: #ffffff;">Para Yatır ve Oynamaya Başla</span>
     </div>
     
-    <!-- Divider line -->
+    <!-- Ayırıcı çizgi -->
     <div style="width: 100px; height: 1px; background-color: #1e3a5a; margin: 0 10px;"></div>
     
-    <!-- Step 3 -->
+    <!-- Adım 3 -->
     <div style="display: flex; align-items: center; margin: 10px 0;">
       <span style="color: #00c8ff; font-size: 28px; font-weight: bold; margin-right: 10px;">03</span>
-      <span style="font-size: 18px; color: #ffffff;">Get 10% Weekly Cashback</span>
+      <span style="font-size: 18px; color: #ffffff;">Haftalık %10 Nakit İade Al</span>
     </div>
   </div>
   
-  <!-- Join Now button -->
+  <!-- Şimdi Katıl butonu -->
   <div style="text-align: center;">
-    <a href="/en?modal=register"><button style="background-color: #00a8ff; color: white; border: none; border-radius: 30px; padding: 12px 40px; font-size: 16px; font-weight: bold; cursor: pointer; box-shadow: 0 0 15px rgba(0, 168, 255, 0.5);">JOIN NOW</button></a>
+    <a href="/tr?modal=register"><button style="background-color: #00a8ff; color: white; border: none; border-radius: 30px; padding: 12px 40px; font-size: 16px; font-weight: bold; cursor: pointer; box-shadow: 0 0 15px rgba(0, 168, 255, 0.5);">ŞİMDİ KATIL</button></a>
   </div>
 </div>`;
+
 
 		customSection5.innerHTML=`
 <div class="container-fluid">
@@ -844,161 +844,69 @@ setTimeout(initSlider, 100);
     }
 </style>
 
-
 <div class="container">
-    <div id="casino-section" style="position: relative; width: 100%; margin: 0 auto; background-color: #080808; background-image: linear-gradient(118deg, #091820, rgb(9, 24, 32) 21.85%, #6db3f5); border-radius: 16px; padding: 40px; color: white; font-family: Arial, sans-serif; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); box-sizing: border-box; margin-top: 0px; margin-bottom: 44px;overflow: hidden;">
-        <div id="content-wrapper" style="
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      height: 100%;
-      max-width: 60%;
-      position: relative;
-      z-index: 2;
-    ">
+    <div id="casino-section" style="position: relative; width: 100%; margin: 0 auto; background-color: #080808; background-image: linear-gradient(118deg, #091820, rgb(9, 24, 32) 21.85%, #6db3f5); border-radius: 16px; padding: 40px; color: white; font-family: Arial, sans-serif; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); box-sizing: border-box; margin-top: 0px; margin-bottom: 44px; overflow: hidden;">
+        <div id="content-wrapper" style="display: flex; flex-direction: column; justify-content: space-between; height: 100%; max-width: 60%; position: relative; z-index: 2;">
             <div>
                 <h1 id="main-heading" style="font-size: 2rem; font-weight: 800; line-height: 1.1; margin-bottom: 20px; margin-top: 0;">
-                    Endless opportunities to win big with thousands of thrilling games.
+                    Binlerce heyecan verici oyunla büyük kazanma fırsatları.
                 </h1>
             </div>
 
-            <!-- Compact Card Design for Icons Section -->
             <div id="icons-section" style="margin-top: 30px;">
                 <div style="display: flex; gap: 10px; flex-wrap: wrap;">
-                    <!-- New Releases -->
+                    <!-- Yeni Çıkışlar -->
                     <a href="#" class="category-card" style="flex: 1; min-width: 110px; background-color: #102532; border-radius: 8px; padding: 10px 12px; text-decoration: none; color: white; position: relative; overflow: hidden; transition: all 0.3s ease; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); border-left: 3px solid #ff5e3a; display: flex; align-items: center;">
-                        <div class="category-icon" style="
-              font-size: 24px;
-              margin-right: 10px;
-              transition: all 0.3s ease;
-            ">🔥</div>
+                        <div class="category-icon" style="font-size: 24px; margin-right: 10px; transition: all 0.3s ease;">🔥</div>
                         <div>
-                            <div style="
-                font-weight: 600;
-                font-size: 13px;
-                color: #ffffff;
-                line-height: 1.2;
-              ">New Releases</div>
-                            <div style="
-                font-size: 11px;
-                color: rgba(255, 255, 255, 0.6);
-              ">Latest games</div>
+                            <div style="font-weight: 600; font-size: 13px; color: #ffffff; line-height: 1.2;">Yeni Çıkışlar</div>
+                            <div style="font-size: 11px; color: rgba(255, 255, 255, 0.6);">En son oyunlar</div>
                         </div>
                     </a>
 
-                    <!-- High RTP -->
+                    <!-- Yüksek RTP -->
                     <a href="#" class="category-card" style="flex: 1; min-width: 110px; background-color: #102532; border-radius: 8px; padding: 10px 12px; text-decoration: none; color: white; position: relative; overflow: hidden; transition: all 0.3s ease; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); border-left: 3px solid #3a9fff; display: flex; align-items: center;">
-                        <div class="category-icon" style="
-              font-size: 24px;
-              margin-right: 10px;
-              transition: all 0.3s ease;
-            ">🚀</div>
+                        <div class="category-icon" style="font-size: 24px; margin-right: 10px; transition: all 0.3s ease;">🚀</div>
                         <div>
-                            <div style="
-                font-weight: 600;
-                font-size: 13px;
-                color: #ffffff;
-                line-height: 1.2;
-              ">High RTP</div>
-                            <div style="
-                font-size: 11px;
-                color: rgba(255, 255, 255, 0.6);
-              ">Best payouts</div>
+                            <div style="font-weight: 600; font-size: 13px; color: #ffffff; line-height: 1.2;">Yüksek RTP</div>
+                            <div style="font-size: 11px; color: rgba(255, 255, 255, 0.6);">En iyi kazançlar</div>
                         </div>
                     </a>
 
-                    <!-- Live Casino -->
+                    <!-- Canlı Casino -->
                     <a href="#" class="category-card" style="flex: 1; min-width: 110px; background-color: #102532; border-radius: 8px; padding: 10px 12px; text-decoration: none; color: white; position: relative; overflow: hidden; transition: all 0.3s ease; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); border-left: 3px solid #fb2d2d; display: flex; align-items: center;">
-                        <div class="category-icon" style="
-              font-size: 24px;
-              margin-right: 10px;
-              transition: all 0.3s ease;
-            ">🎲</div>
+                        <div class="category-icon" style="font-size: 24px; margin-right: 10px; transition: all 0.3s ease;">🎲</div>
                         <div>
-                            <div style="
-                font-weight: 600;
-                font-size: 13px;
-                color: #ffffff;
-                line-height: 1.2;
-              ">Live Casino</div>
-                            <div style="
-                font-size: 11px;
-                color: rgba(255, 255, 255, 0.6);
-              ">Real dealers</div>
+                            <div style="font-weight: 600; font-size: 13px; color: #ffffff; line-height: 1.2;">Canlı Casino</div>
+                            <div style="font-size: 11px; color: rgba(255, 255, 255, 0.6);">Gerçek krupiyeler</div>
                         </div>
                     </a>
 
-                    <!-- Tournament -->
+                    <!-- Turnuva -->
                     <a href="#" class="category-card" style="flex: 1; min-width: 110px; background-color: #102532; border-radius: 8px; padding: 10px 12px; text-decoration: none; color: white; position: relative; overflow: hidden; transition: all 0.3s ease; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); border-left: 3px solid #ffcc00; display: flex; align-items: center;">
-                        <div class="category-icon" style="
-              font-size: 24px;
-              margin-right: 10px;
-              transition: all 0.3s ease;
-            ">🏆</div>
+                        <div class="category-icon" style="font-size: 24px; margin-right: 10px; transition: all 0.3s ease;">🏆</div>
                         <div>
-                            <div style="
-                font-weight: 600;
-                font-size: 13px;
-                color: #ffffff;
-                line-height: 1.2;
-              ">Tournament</div>
-                            <div style="
-                font-size: 11px;
-                color: rgba(255, 255, 255, 0.6);
-              ">Compete &amp; win</div>
+                            <div style="font-weight: 600; font-size: 13px; color: #ffffff; line-height: 1.2;">Turnuva</div>
+                            <div style="font-size: 11px; color: rgba(255, 255, 255, 0.6);">Rekabet et ve kazan</div>
                         </div>
                     </a>
                 </div>
             </div>
 
-            <!-- Redesigned button with fixed responsive width -->
             <div style="margin-top: 40px; width: 100%;">
-                <a id="explore-button" href="#" style="
-          display: inline-flex;
-          align-items: center;
-          justify-content: center;
-          background-size: 200% 200%;
-          color: #0f1923;
-          padding: 14px 28px;
-          border-radius: 8px;
-          text-decoration: none;
-          font-weight: 800;
-          font-size: 15px;
-          text-transform: uppercase;
-          letter-spacing: 0.5px;
-          transition: all 0.3s ease;
-          position: relative;
-          border: none;
-          box-sizing: border-box;background-color: rgb(255, 229, 0);
-box-shadow: rgba(255, 176, 25, 0.4) 0px 0px 10px, rgba(255, 255, 255, 0.2) 0px 1px 0px inset, rgb(255, 135, 25) 0px 0px 15px inset;
-        ">
-                    <span style="position: relative; z-index: 2;">EXPLORE CASINO SECTION</span>
-                    <span class="button-arrow" style="
-		    display:none;
-            margin-left: 12px;
-            font-size: 18px;
-            transition: transform 0.3s ease;
-            position: relative;
-            z-index: 2;
-          ">→</span>
-                    <span style="
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            width: 100%;
-            height: 4px;
-            background: rgba(0, 0, 0, 0.1);
-            border-bottom-left-radius: 8px;
-            border-bottom-right-radius: 8px;
-          "></span>
+                <a id="explore-button" href="#" style="display: inline-flex; align-items: center; justify-content: center; background-size: 200% 200%; color: #0f1923; padding: 14px 28px; border-radius: 8px; text-decoration: none; font-weight: 800; font-size: 15px; text-transform: uppercase; letter-spacing: 0.5px; transition: all 0.3s ease; position: relative; border: none; box-sizing: border-box; background-color: rgb(255, 229, 0); box-shadow: rgba(255, 176, 25, 0.4) 0px 0px 10px, rgba(255, 255, 255, 0.2) 0px 1px 0px inset, rgb(255, 135, 25) 0px 0px 15px inset;">
+                    <span style="position: relative; z-index: 2;">CASİNO BÖLÜMÜNÜ KEŞFET</span>
+                    <span class="button-arrow" style="display:none; margin-left: 12px; font-size: 18px; transition: transform 0.3s ease; position: relative; z-index: 2;">→</span>
+                    <span style="position: absolute; bottom: 0; left: 0; width: 100%; height: 4px; background: rgba(0, 0, 0, 0.1); border-bottom-left-radius: 8px; border-bottom-right-radius: 8px;"></span>
                 </a>
             </div>
         </div>
 
         <div id="image-wrapper" style="position: absolute; right: -185px; bottom: -34px; top: 0; display: flex; align-items: center; justify-content: flex-end; width: 55%; z-index: 1;">
-            <img id="astronaut-image" src="https://cedabet.github.io/assets/images/spin.png " alt="Astronaut with flames" style="max-height: 500px; max-width: 100%; object-fit: contain; bottom: 0px; position: absolute;">
+            <img id="astronaut-image" src="https://cedabet.github.io/assets/images/spin.png" alt="Astronot alevlerle" style="max-height: 500px; max-width: 100%; object-fit: contain; bottom: 0px; position: absolute;">
         </div>
     </div>
+</div>
 
     <script>
                     // Responsive handling
