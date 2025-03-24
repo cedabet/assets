@@ -133,7 +133,16 @@ function createSigninModal() {
                     <!-- Burada içerik olacak -->
                     <img src="https://cedabet.github.io/assets/images/sl10Banner.jpg" alt="Dikey Resim" style="/* height: 600px; */ width: 100%; margin: 0 auto; display: block;">
                     <!-- Tekrar gösterme butonu -->
-                    <button id="dontShowAgainBtn" style="margin-top: 2px; padding: 10px 20px; background-color: rgb(34 157 225) !important; color: white; border: none; cursor: pointer; font-size: 16px; width: 100%;">Tekrar Gösterme</button>
+                    <button id="dontShowAgainBtn" style="    padding: 10px 20px;
+    background-color: rgb(34 157 225) !important;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    width: 50%;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;">Tekrar Gösterme</button>
                 </div>
             </div>
         </div>
