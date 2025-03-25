@@ -16,7 +16,7 @@
 		    setTimeout(updateCopyrightYear, 1000);   
 	 setTimeout(createSigninModal, 2000);  
             var sportspath = window.location.pathname;
-            if (sportspath === "/en/sportsbook") {
+            if (sportspath === "/az/sportsbook") {
                 var sidebar = document.getElementById("sidebar");
                 sidebar.className = "";
                 sidebar.classList.add("sidebar", "active");
@@ -30,7 +30,7 @@
 
         sidebarBtn.addEventListener("click", function () {
             var sportspath2 = window.location.pathname;
-            if (sportspath2 === "/en/sportsbook") {
+            if (sportspath2 === "/az/sportsbook") {
                 var sidebar = document.getElementById("sidebar");
 
                 if (sidebar.className.indexOf("active") !== -1) { // 'active' sınıfı yoksa
@@ -57,7 +57,7 @@
 
     function handlePageScripts(path) {
         setTimeout(function () {
-            if (path === "/en/") {
+            if (path === "/az/") {
                 /*  alert("Anasayfaya hoş geldiniz!");*/
                 loadVipFeatures();
 	        setTimeout(loadh2Title, 1000);   
@@ -66,13 +66,13 @@
 		      setTimeout(updateCopyrightYear, 1000);  
 
 		  
-            } else if (path === "/en/vip") {
+            } else if (path === "/az/vip") {
                 /* alert("VIP sayfasına hoş geldiniz!");*/
             }
 
-            else if (path === "/en/sportsbook") {
+            else if (path === "/az/sportsbook") {
                 var sportspath = window.location.pathname;
-                if (sportspath === "/en/sportsbook") {
+                if (sportspath === "/az/sportsbook") {
                     var sidebar = document.getElementById("sidebar");
                     sidebar.className = "";
                     sidebar.classList.add("sidebar", "active");
@@ -212,7 +212,7 @@ function createSigninModal() {
    newLi.id = uid; 
  
    const newAnchor = document.createElement('a');
-   newAnchor.href = '/en/casino/group/table-games';
+   newAnchor.href = '/az/casino/group/table-games';
  
    const svgIcon = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
    svgIcon.classList.add('svg-icon');
@@ -246,7 +246,7 @@ function createSigninModal() {
          const existingMenu = document.getElementById(elementId);
          if (!existingMenu) {
              const newHTMLSmall = `
-                 <a id="${elementId}" class="sidebar__link-small sidebar__link-small--purple" href="/en/casino" style="background: url('https://cedabet.github.io/assets/images/promotionBtn.jpg') left center / cover no-repeat;"></a>
+                 <a id="${elementId}" class="sidebar__link-small sidebar__link-small--purple" href="/az/casino" style="background: url('https://cedabet.github.io/assets/images/promotionBtn.jpg') left center / cover no-repeat;"></a>
              `;
              sidebarLinksSmall.insertAdjacentHTML("beforeend", newHTMLSmall); 
          }
@@ -287,25 +287,25 @@ function loadh2Title() {
         let url = '';
 
         if (title.textContent.trim().includes('Top Games')) {
-            url = '/en/casino/group/lobby';
+            url = '/az/casino/group/lobby';
         }
         if (title.textContent.trim().includes('Popular Games')) {
-            url = '/en/casino/group/new-releases';
+            url = '/az/casino/group/new-releases';
         }
         if (title.textContent.trim().includes('New Releases')) {
-            url = '/en/casino/group/new-releases';
+            url = '/az/casino/group/new-releases';
         }
         if (title.textContent.trim().includes('High RTP')) {
-            url = '/en/casino/group/enhanced-rtp';
+            url = '/az/casino/group/enhanced-rtp';
         }
         if (title.textContent.trim().includes('Buy Bonus')) {
-            url = '/en/casino/group/bonus-buy';
+            url = '/az/casino/group/bonus-buy';
         }
 
         if (url) {
             const newLink = document.createElement('a');
             newLink.href = url;
-            newLink.textContent = `See All`;
+            newLink.textContent = `Hamısını Gör`;
             newLink.style.background = 'rgba(55, 162, 221, 0.13)'; 
             newLink.style.padding = '5px 12px 5px 12px';
             newLink.style.borderRadius = '4px';
@@ -347,164 +347,73 @@ function loadh2Title() {
             customSection5.classList.add("section", "custom-section");
 
             customSection.innerHTML = `
-       <div class="container">
-
-     <div id="sports-section" style="position: relative; width: 100%; margin: 0 auto; background-color: #17368d; background-image: linear-gradient(to right, #8a1818, #b92020); border-radius: 16px; padding: 40px; color: white; font-family: Arial, sans-serif; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); box-sizing: border-box; margin-bottom: 44px;">
-
-    <div id="content-wrapper" style="
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      height: 100%;
-      max-width: 60%;
-      position: relative;
-      z-index: 2;
-    ">
+    <div class="container">
+  <div id="sports-section" style="position: relative; width: 100%; margin: 0 auto; background-color: #17368d; background-image: linear-gradient(to right, #8a1818, #b92020); border-radius: 16px; padding: 40px; color: white; font-family: Arial, sans-serif; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); box-sizing: border-box; margin-bottom: 44px;">
+    <div id="content-wrapper" style="display: flex; flex-direction: column; justify-content: space-between; height: 100%; max-width: 60%; position: relative; z-index: 2;">
       <div>
         <h1 id="main-heading" style="font-size: 2rem; font-weight: 800; line-height: 1.1; margin-bottom: 20px; margin-top: 0; max-width: 800px;">
-          Join the excitement by betting on the biggest highlights in sports.
+          Ən böyük idman anlarına mərc edərək həyəcanı yaşayın.
         </h1>
       </div>
 
       <!-- Compact Card Design for Icons Section -->
       <div id="icons-section" style="margin-top: 30px;">
         <div style="display: flex; gap: 10px; flex-wrap: wrap;">
-          <!-- Sports -->
+          <!-- İdman -->
           <a href="#" class="category-card" style="flex: 1; min-width: 110px; background-color: #b51f1f; border-radius: 8px; padding: 10px 12px; text-decoration: none; color: white; position: relative; overflow: hidden; transition: all 0.3s ease; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); border-left: 3px solid #ffffff; display: flex; align-items: center;">
-            <div class="category-icon" style="
-              font-size: 24px;
-              margin-right: 10px;
-              transition: all 0.3s ease;
-            ">⚽</div>
+            <div class="category-icon" style="font-size: 24px; margin-right: 10px; transition: all 0.3s ease;">⚽</div>
             <div>
-              <div style="
-                font-weight: 600;
-                font-size: 13px;
-                color: #ffffff;
-                line-height: 1.2;
-              ">Sports</div>
-              <div style="
-                font-size: 11px;
-                color: rgba(255, 255, 255, 0.6);
-              ">All leagues</div>
+              <div style="font-weight: 600; font-size: 13px; color: #ffffff; line-height: 1.2;">İdman</div>
+              <div style="font-size: 11px; color: rgba(255, 255, 255, 0.6);">Bütün liqalar</div>
             </div>
           </a>
 
           <!-- Esports -->
           <a href="#" class="category-card" style="flex: 1; min-width: 110px; background-color: #b51f1f; border-radius: 8px; padding: 10px 12px; text-decoration: none; color: white; position: relative; overflow: hidden; transition: all 0.3s ease; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); border-left: 3px solid #3a9fff; display: flex; align-items: center;">
-            <div class="category-icon" style="
-              font-size: 24px;
-              margin-right: 10px;
-              transition: all 0.3s ease;
-            ">🎮</div>
+            <div class="category-icon" style="font-size: 24px; margin-right: 10px; transition: all 0.3s ease;">🎮</div>
             <div>
-              <div style="
-                font-weight: 600;
-                font-size: 13px;
-                color: #ffffff;
-                line-height: 1.2;
-              ">Esports</div>
-              <div style="
-                font-size: 11px;
-                color: rgba(255, 255, 255, 0.6);
-              ">Top tournaments</div>
+              <div style="font-weight: 600; font-size: 13px; color: #ffffff; line-height: 1.2;">Esports</div>
+              <div style="font-size: 11px; color: rgba(255, 255, 255, 0.6);">Ən böyük turnirlər</div>
             </div>
           </a>
 
-          <!-- Live Streams -->
+          <!-- Canlı Yayınlar -->
           <a href="#" class="category-card" style="flex: 1; min-width: 110px; background-color: #b51f1f; border-radius: 8px; padding: 10px 12px; text-decoration: none; color: white; position: relative; overflow: hidden; transition: all 0.3s ease; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); border-left: 3px solid #ff3a6f; display: flex; align-items: center;">
-            <div class="category-icon" style="
-              font-size: 24px;
-              margin-right: 10px;
-              transition: all 0.3s ease;
-            ">▶️</div>
+            <div class="category-icon" style="font-size: 24px; margin-right: 10px; transition: all 0.3s ease;">▶️</div>
             <div>
-              <div style="
-                font-weight: 600;
-                font-size: 13px;
-                color: #ffffff;
-                line-height: 1.2;
-              ">Live Streams</div>
-              <div style="
-                font-size: 11px;
-                color: rgba(255, 255, 255, 0.6);
-              ">Watch live</div>
+              <div style="font-weight: 600; font-size: 13px; color: #ffffff; line-height: 1.2;">Canlı Yayınlar</div>
+              <div style="font-size: 11px; color: rgba(255, 255, 255, 0.6);">Canlı izləyin</div>
             </div>
           </a>
 
-          <!-- Boosted Odds -->
+          <!-- Artırılmış Əmsallar -->
           <a href="#" class="category-card" style="flex: 1; min-width: 110px; background-color: #b51f1f; border-radius: 8px; padding: 10px 12px; text-decoration: none; color: white; position: relative; overflow: hidden; transition: all 0.3s ease; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); border-left: 3px solid #ffcc00; display: flex; align-items: center;">
-            <div class="category-icon" style="
-              font-size: 24px;
-              margin-right: 10px;
-              transition: all 0.3s ease;
-            ">⚡</div>
+            <div class="category-icon" style="font-size: 24px; margin-right: 10px; transition: all 0.3s ease;">⚡</div>
             <div>
-              <div style="
-                font-weight: 600;
-                font-size: 13px;
-                color: #ffffff;
-                line-height: 1.2;
-              ">Boosted Odds</div>
-              <div style="
-                font-size: 11px;
-                color: rgba(255, 255, 255, 0.6);
-              ">Better payouts</div>
+              <div style="font-weight: 600; font-size: 13px; color: #ffffff; line-height: 1.2;">Artırılmış Əmsallar</div>
+              <div style="font-size: 11px; color: rgba(255, 255, 255, 0.6);">Daha yaxşı qazanc</div>
             </div>
           </a>
         </div>
       </div>
 
-      <!-- Explore button with original gold gradient -->
+      <!-- Kəşf et düyməsi -->
       <div style="margin-top: 40px; width: 100%;">
-        <a id="explore-button" href="#" style="
-          display: inline-flex;
-          align-items: center;
-          justify-content: center;
-          background-size: 200% 200%;
-          color: #0f1923;
-          padding: 14px 28px;
-          border-radius: 8px;
-          text-decoration: none;
-          font-weight: 800;
-          font-size: 15px;
-          text-transform: uppercase;
-          letter-spacing: 0.5px;
-          transition: all 0.3s ease;
-          position: relative;
-          border: none;
-          box-sizing: border-box;
-	  background-color: rgb(255, 229, 0);
-box-shadow: rgba(255, 176, 25, 0.4) 0px 0px 10px, rgba(255, 255, 255, 0.2) 0px 1px 0px inset, rgb(255, 135, 25) 0px 0px 15px inset;
-        ">
-          <span style="position: relative; z-index: 2;">EXPLORE SPORTS SECTION</span>
-          <span class="button-arrow" style="
-		    display:none;
-            margin-left: 12px;
-            font-size: 18px;
-            transition: transform 0.3s ease;
-            position: relative;
-            z-index: 2;
-          ">→</span>
-          <span style="
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            width: 100%;
-            height: 4px;
-            background: rgba(0, 0, 0, 0.1);
-            border-bottom-left-radius: 8px;
-            border-bottom-right-radius: 8px;
-          "></span>
+        <a id="explore-button" href="#" style="display: inline-flex; align-items: center; justify-content: center; background-size: 200% 200%; color: #0f1923; padding: 14px 28px; border-radius: 8px; text-decoration: none; font-weight: 800; font-size: 15px; text-transform: uppercase; letter-spacing: 0.5px; transition: all 0.3s ease; position: relative; border: none; box-sizing: border-box; background-color: rgb(255, 229, 0); box-shadow: rgba(255, 176, 25, 0.4) 0px 0px 10px, rgba(255, 255, 255, 0.2) 0px 1px 0px inset, rgb(255, 135, 25) 0px 0px 15px inset;">
+          <span style="position: relative; z-index: 2;">İDMAN SEKSİYASINI KƏŞF ET</span>
+          <span class="button-arrow" style="display:none; margin-left: 12px; font-size: 18px; transition: transform 0.3s ease; position: relative; z-index: 2;">→</span>
+          <span style="position: absolute; bottom: 0; left: 0; width: 100%; height: 4px; background: rgba(0, 0, 0, 0.1); border-bottom-left-radius: 8px; border-bottom-right-radius: 8px;"></span>
         </a>
       </div>
     </div>
 
-    <!-- Astronaut Image with Soccer Ball -->
+    <!-- Astronavt şəkli ilə futbol topu -->
     <div id="image-wrapper" style="position: absolute; right: -68px; bottom: 0px; top: 0; display: flex; align-items: center; justify-content: flex-end; width: 50%; z-index: 1;">
-      <img id="astronaut-image" src="https://cedabet.github.io/assets/images/soccer-astro.png" alt="Astronaut holding soccer ball" style="max-height: 410px; max-width: 100%; object-fit: contain; bottom: 0px; position: absolute;">
+      <img id="astronaut-image" src="https://cedabet.github.io/assets/images/soccer-astro.png" alt="Astronavt futbol topu tutan" style="max-height: 410px; max-width: 100%; object-fit: contain; bottom: 0px; position: absolute;">
     </div>
   </div>
+</div>
+
 
   <script>
     // Responsive handling
@@ -710,42 +619,41 @@ box-shadow: rgba(255, 176, 25, 0.4) 0px 0px 10px, rgba(255, 255, 255, 0.2) 0px 1
 </style>
 
 <div class="container" style="border: none;">
-    <div style="/* background-color: #0c1016; */ color: white; padding: 30px 20px; position: relative; font-family: Arial, sans-serif; width: 100%; border: none;">
-  <!-- Gold vertical line on the left -->
-  
-  
-  <!-- Steps container -->
-  <div style="display: flex; justify-content: space-around; align-items: center; margin-bottom: 40px; flex-wrap: wrap;">
-    <!-- Step 1 -->
-    <div style="display: flex; align-items: center; margin: 10px 0;">
-      <span style="color: #00c8ff; font-size: 28px; font-weight: bold; margin-right: 10px;">01</span>
-      <span style="font-size: 18px; color: #ffffff;">Register an account</span>
+  <div style="color: white; padding: 30px 20px; position: relative; font-family: Arial, sans-serif; width: 100%; border: none;">
+    <!-- Add Steps container -->
+    <div style="display: flex; justify-content: space-around; align-items: center; margin-bottom: 40px; flex-wrap: wrap;">
+      <!-- Step 1 -->
+      <div style="display: flex; align-items: center; margin: 10px 0;">
+        <span style="color: #00c8ff; font-size: 28px; font-weight: bold; margin-right: 10px;">01</span>
+        <span style="font-size: 18px; color: #ffffff;">Hesab qeydiyyatdan keçirin</span>
+      </div>
+      
+      <!-- Divider line -->
+      <div style="width: 100px; height: 1px; background-color: #1e3a5a; margin: 0 10px;"></div>
+      
+      <!-- Step 2 -->
+      <div style="display: flex; align-items: center; margin: 10px 0;">
+        <span style="color: #00c8ff; font-size: 28px; font-weight: bold; margin-right: 10px;">02</span>
+        <span style="font-size: 18px; color: #ffffff;">Depozit edin və oynayın</span>
+      </div>
+      
+      <!-- Divider line -->
+      <div style="width: 100px; height: 1px; background-color: #1e3a5a; margin: 0 10px;"></div>
+      
+      <!-- Step 3 -->
+      <div style="display: flex; align-items: center; margin: 10px 0;">
+        <span style="color: #00c8ff; font-size: 28px; font-weight: bold; margin-right: 10px;">03</span>
+        <span style="font-size: 18px; color: #ffffff;">Həftəlik 10% geri ödəmə əldə edin</span>
+      </div>
     </div>
     
-    <!-- Divider line -->
-    <div style="width: 100px; height: 1px; background-color: #1e3a5a; margin: 0 10px;"></div>
-    
-    <!-- Step 2 -->
-    <div style="display: flex; align-items: center; margin: 10px 0;">
-      <span style="color: #00c8ff; font-size: 28px; font-weight: bold; margin-right: 10px;">02</span>
-      <span style="font-size: 18px; color: #ffffff;">Make a Deposit &amp; Play</span>
-    </div>
-    
-    <!-- Divider line -->
-    <div style="width: 100px; height: 1px; background-color: #1e3a5a; margin: 0 10px;"></div>
-    
-    <!-- Step 3 -->
-    <div style="display: flex; align-items: center; margin: 10px 0;">
-      <span style="color: #00c8ff; font-size: 28px; font-weight: bold; margin-right: 10px;">03</span>
-      <span style="font-size: 18px; color: #ffffff;">Get 10% Weekly Cashback</span>
+    <!-- Join Now button -->
+    <div style="text-align: center;">
+      <a href="/az?modal=register"><button style="background-color: #00a8ff; color: white; border: none; border-radius: 30px; padding: 12px 40px; font-size: 16px; font-weight: bold; cursor: pointer; box-shadow: 0 0 15px rgba(0, 168, 255, 0.5);">İNDİ QOŞULUN</button></a>
     </div>
   </div>
-  
-  <!-- Join Now button -->
-  <div style="text-align: center;">
-    <a href="/en?modal=register"><button style="background-color: #00a8ff; color: white; border: none; border-radius: 30px; padding: 12px 40px; font-size: 16px; font-weight: bold; cursor: pointer; box-shadow: 0 0 15px rgba(0, 168, 255, 0.5);">JOIN NOW</button></a>
-  </div>
-</div>`;
+</div>
+`;
 
 		customSection5.innerHTML=`
 <div class="container-fluid">
@@ -768,74 +676,74 @@ box-shadow: rgba(255, 176, 25, 0.4) 0px 0px 10px, rgba(255, 255, 255, 0.2) 0px 1
 `;
 function initSlider() {
    const logos = [
-            { src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/pragmaticplay.svg", alt: "Pragmatic Play", url: "/en/providers/pragmaticplay" },
-            { src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/Evolution%20Gaming.svg", alt: "Evolution", url: "/en/providers/evolution" },
-            { src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/pragmatic-live-light.svg", alt: "Pragmatic Live", url: "/en/providers/pragmaticlive" },
-            { src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/hacksaw.svg", alt: "HackSaw Gaming", url: "/en/providers/hacksaw" },
-            { src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/egt.svg", alt: "EGT", url: "/en/providers/egt" },
-            { src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/NoLimitCity.svg", alt: "No Limit City", url: "/en/providers/nolimitcity" },
-            { src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/netent.svg", alt: "Netent", url: "/en/providers/netent" },
-            { src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/ezugi.svg", alt: "Ezugi", url: "/en/providers/ezugi" },
-            { src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/amusnet.svg", alt: "Amusnet", url: "/en/providers/egt-interactive" },
-            { src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/1x2gaming.svg", alt: "1x2 Gaming", url: "/en/providers/1x2gaming" },
-            { src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/5men.svg", alt: "5men", url: "/en/providers/5men" },
-            { src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/endorphina.svg", alt: "Endorphina", url: "/en/providers/endorphina" },
-            { src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/mrslotty.svg", alt: "MrSlotty", url: "/en/providers/mrslotty" },
-            { src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/amatic.svg", alt: "Amatic", url: "/en/providers/amatic" },
-            { src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/Red%20Tiger%20Gaming.svg", alt: "Red Tiger", url: "/en/providers/redtiger" },
-            { src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/softswiss.svg", alt: "BGAMING", url: "/en/providers/bgaming" },
-            { src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/booming.svg", alt: "Booming Games", url: "/en/providers/booming" },
-            { src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/1spin4win.svg", alt: "1spin4win", url: "/en/providers/1spin4win" },
-            { src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/avatarux.svg", alt: "AvatarUX", url: "/en/providers/avatarux" },
-            { src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/belatra.svg", alt: "Belatra", url: "/en/providers/belatra" },
-            { src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/beterlive.svg", alt: "Beter.Live", url: "/en/providers/beterlive" },
-            { src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/evoplay.svg", alt: "Evoplay Entertainment", url: "/en/providers/evoplay" },
-            { src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/gamezix.svg", alt: "Gamzix", url: "/en/providers/gamzix" },
-            { src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/igtech.svg", alt: "iGTech", url: "/en/providers/igtech" },
-            { src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/playson.svg", alt: "Playson", url: "/en/providers/playson" },
-            { src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/mascot.svg", alt: "Mascot Gaming", url: "/en/providers/mascotgaming" },
-            { src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/mancala.svg", alt: "Mancala Gaming", url: "/en/providers/mancala" },
-            { src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/onlyplay.svg", alt: "OnlyPlay", url: "/en/providers/onlyplay" },
-            { src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/oryx.svg", alt: "ORYX", url: "/en/providers/oryx" },
-            { src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/platipus.svg", alt: "Platipus", url: "/en/providers/platipus" },
-            { src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/popiplay.svg", alt: "Popiplay", url: "/en/providers/popiplay" },
-            { src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/quickspin.svg", alt: "Quickspin", url: "/en/providers/quickspin" },
-            { src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/reevo.svg", alt: "Reevo", url: "/en/providers/reevo" },
-            { src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/slotmill.svg", alt: "Slotmill", url: "/en/providers/slotmill" },
-            { src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/smartsoft.svg", alt: "SmartSoft", url: "/en/providers/smartsoft" },
-            { src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/spadegaming.svg", alt: "Spadegaming", url: "/en/providers/spadegaming" },
-            { src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/spribe.svg", alt: "Spribe", url: "/en/providers/spribe" },
-            { src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/thunderkick.svg", alt: "Thunderkick", url: "/en/providers/thunderkick" },
-            { src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/tomhorn.svg", alt: "Tom Horn", url: "/en/providers/tomhornnative" },
-            { src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/truelab.svg", alt: "Truelab", url: "/en/providers/truelab" },
-            { src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/turbogames.svg", alt: "Turbo Games", url: "/en/providers/turbogames" },
-            { src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/Betradar%20Virtual%20sports.svg", alt: "BetRadar VS", url: "/en/providers/betradarvs" },
-            { src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/betsoft.svg", alt: "BetSoft", url: "/en/providers/betsoft" },
-            { src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/CQ9.svg", alt: "CQ9", url: "/en/providers/cq9" },
-            { src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/habanero.svg", alt: "Habanero", url: "/en/providers/habanero" },
-            { src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/Leander.svg", alt: "Leander", url: "/en/providers/leander" },
-            { src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/Leap.svg", alt: "Leap", url: "/en/providers/leap" },
-            { src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/Live%20Games.svg", alt: "Live Games", url: "/en/providers/livegames" },
-            { src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/luckystreak.svg", alt: "Lucky Streak", url: "/en/providers/luckystreak" },
-            { src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/Playtech%20slots.svg", alt: "PlayTech", url: "/en/providers/playtech" },
-            { src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/SA%20Gaming.svg", alt: "SA Gaming", url: "/en/providers/sagaming" },
-            { src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/Vivo%20Gaming.svg", alt: "Vivo Gaming", url: "/en/providers/vivogaming" },
-            { src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/yggdrasil.svg", alt: "YGG Drasil", url: "/en/providers/yggdrasil" },
-            { src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/Pocket%20Games%20Soft.svg", alt: "PGSoft", url: "/en/providers/pgsoft" },
-            { src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/golden%20hero.svg", alt: "Golden Hero", url: "/en/providers/goldenhero" },
-            { src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/fugaso.svg", alt: "Fugaso", url: "/en/providers/fugaso" },
-            { src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/originals.svg", alt: "Ebetlab", url: "/en/providers/ebetlab" },
-            { src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/imageinelive.svg", alt: "Imagine Live", url: "/en/providers/imagine-live" },
-            { src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/imoon.svg", alt: "Imoon", url: "/en/providers/imoon" },
-            { src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/InOut.svg", alt: "InOut", url: "/en/providers/inout" },
-            { src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/Jiliasia.svg", alt: "Jiliasia", url: "/en/providers/jiliasia" },
-            { src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/Zeus%20Play.svg", alt: "Zeus Play", url: "/en/providers/zeus-play" },
-            { src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/Peter%20And%20Sons.svg", alt: "Peter And Sons", url: "/en/providers/peter-and-sons" },
-            { src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/topspin.svg", alt: "TopSpin", url: "/en/providers/topspin" },
-            { alt: "Popok", url: "/en/providers/popok" },
-            { src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/booming.svg", alt: "Bet Games", url: "/en/providers/betgames" },
-            { src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/Leander.svg", alt: "Raw Games", url: "/en/providers/rawgames" },
-            { src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/Leander.svg", alt: "YGR Games", url: "/en/providers/ygrgames" }
+            { src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/pragmaticplay.svg", alt: "Pragmatic Play", url: "/az/providers/pragmaticplay" },
+            { src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/Evolution%20Gaming.svg", alt: "Evolution", url: "/az/providers/evolution" },
+            { src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/pragmatic-live-light.svg", alt: "Pragmatic Live", url: "/az/providers/pragmaticlive" },
+            { src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/hacksaw.svg", alt: "HackSaw Gaming", url: "/az/providers/hacksaw" },
+            { src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/egt.svg", alt: "EGT", url: "/az/providers/egt" },
+            { src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/NoLimitCity.svg", alt: "No Limit City", url: "/az/providers/nolimitcity" },
+            { src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/netent.svg", alt: "Netent", url: "/az/providers/netent" },
+            { src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/ezugi.svg", alt: "Ezugi", url: "/az/providers/ezugi" },
+            { src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/amusnet.svg", alt: "Amusnet", url: "/az/providers/egt-interactive" },
+            { src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/1x2gaming.svg", alt: "1x2 Gaming", url: "/az/providers/1x2gaming" },
+            { src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/5men.svg", alt: "5men", url: "/az/providers/5men" },
+            { src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/endorphina.svg", alt: "Endorphina", url: "/az/providers/endorphina" },
+            { src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/mrslotty.svg", alt: "MrSlotty", url: "/az/providers/mrslotty" },
+            { src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/amatic.svg", alt: "Amatic", url: "/az/providers/amatic" },
+            { src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/Red%20Tiger%20Gaming.svg", alt: "Red Tiger", url: "/az/providers/redtiger" },
+            { src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/softswiss.svg", alt: "BGAMING", url: "/az/providers/bgaming" },
+            { src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/booming.svg", alt: "Booming Games", url: "/az/providers/booming" },
+            { src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/1spin4win.svg", alt: "1spin4win", url: "/az/providers/1spin4win" },
+            { src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/avatarux.svg", alt: "AvatarUX", url: "/az/providers/avatarux" },
+            { src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/belatra.svg", alt: "Belatra", url: "/az/providers/belatra" },
+            { src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/beterlive.svg", alt: "Beter.Live", url: "/az/providers/beterlive" },
+            { src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/evoplay.svg", alt: "Evoplay Entertainment", url: "/az/providers/evoplay" },
+            { src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/gamezix.svg", alt: "Gamzix", url: "/az/providers/gamzix" },
+            { src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/igtech.svg", alt: "iGTech", url: "/az/providers/igtech" },
+            { src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/playson.svg", alt: "Playson", url: "/az/providers/playson" },
+            { src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/mascot.svg", alt: "Mascot Gaming", url: "/az/providers/mascotgaming" },
+            { src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/mancala.svg", alt: "Mancala Gaming", url: "/az/providers/mancala" },
+            { src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/onlyplay.svg", alt: "OnlyPlay", url: "/az/providers/onlyplay" },
+            { src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/oryx.svg", alt: "ORYX", url: "/az/providers/oryx" },
+            { src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/platipus.svg", alt: "Platipus", url: "/az/providers/platipus" },
+            { src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/popiplay.svg", alt: "Popiplay", url: "/az/providers/popiplay" },
+            { src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/quickspin.svg", alt: "Quickspin", url: "/az/providers/quickspin" },
+            { src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/reevo.svg", alt: "Reevo", url: "/az/providers/reevo" },
+            { src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/slotmill.svg", alt: "Slotmill", url: "/az/providers/slotmill" },
+            { src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/smartsoft.svg", alt: "SmartSoft", url: "/az/providers/smartsoft" },
+            { src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/spadegaming.svg", alt: "Spadegaming", url: "/az/providers/spadegaming" },
+            { src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/spribe.svg", alt: "Spribe", url: "/az/providers/spribe" },
+            { src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/thunderkick.svg", alt: "Thunderkick", url: "/az/providers/thunderkick" },
+            { src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/tomhorn.svg", alt: "Tom Horn", url: "/az/providers/tomhornnative" },
+            { src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/truelab.svg", alt: "Truelab", url: "/az/providers/truelab" },
+            { src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/turbogames.svg", alt: "Turbo Games", url: "/az/providers/turbogames" },
+            { src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/Betradar%20Virtual%20sports.svg", alt: "BetRadar VS", url: "/az/providers/betradarvs" },
+            { src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/betsoft.svg", alt: "BetSoft", url: "/az/providers/betsoft" },
+            { src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/CQ9.svg", alt: "CQ9", url: "/az/providers/cq9" },
+            { src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/habanero.svg", alt: "Habanero", url: "/az/providers/habanero" },
+            { src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/Leander.svg", alt: "Leander", url: "/az/providers/leander" },
+            { src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/Leap.svg", alt: "Leap", url: "/az/providers/leap" },
+            { src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/Live%20Games.svg", alt: "Live Games", url: "/az/providers/livegames" },
+            { src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/luckystreak.svg", alt: "Lucky Streak", url: "/az/providers/luckystreak" },
+            { src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/Playtech%20slots.svg", alt: "PlayTech", url: "/az/providers/playtech" },
+            { src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/SA%20Gaming.svg", alt: "SA Gaming", url: "/az/providers/sagaming" },
+            { src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/Vivo%20Gaming.svg", alt: "Vivo Gaming", url: "/az/providers/vivogaming" },
+            { src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/yggdrasil.svg", alt: "YGG Drasil", url: "/az/providers/yggdrasil" },
+            { src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/Pocket%20Games%20Soft.svg", alt: "PGSoft", url: "/az/providers/pgsoft" },
+            { src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/golden%20hero.svg", alt: "Golden Hero", url: "/az/providers/goldenhero" },
+            { src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/fugaso.svg", alt: "Fugaso", url: "/az/providers/fugaso" },
+            { src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/originals.svg", alt: "Ebetlab", url: "/az/providers/ebetlab" },
+            { src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/imageinelive.svg", alt: "Imagine Live", url: "/az/providers/imagine-live" },
+            { src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/imoon.svg", alt: "Imoon", url: "/az/providers/imoon" },
+            { src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/InOut.svg", alt: "InOut", url: "/az/providers/inout" },
+            { src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/Jiliasia.svg", alt: "Jiliasia", url: "/az/providers/jiliasia" },
+            { src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/Zeus%20Play.svg", alt: "Zeus Play", url: "/az/providers/zeus-play" },
+            { src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/Peter%20And%20Sons.svg", alt: "Peter And Sons", url: "/az/providers/peter-and-sons" },
+            { src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/topspin.svg", alt: "TopSpin", url: "/az/providers/topspin" },
+            { alt: "Popok", url: "/az/providers/popok" },
+            { src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/booming.svg", alt: "Bet Games", url: "/az/providers/betgames" },
+            { src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/Leander.svg", alt: "Raw Games", url: "/az/providers/rawgames" },
+            { src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/Leander.svg", alt: "YGR Games", url: "/az/providers/ygrgames" }
         ];
 
     const logoSlide = document.getElementById('logoSlide');
@@ -992,108 +900,51 @@ setTimeout(initSlider, 100);
     }
 </style>
 
-
 <div class="container">
-    <div id="casino-section" style="position: relative; width: 100%; margin: 0 auto; background-color: #080808; background-image: linear-gradient(118deg, #091820, rgb(9, 24, 32) 21.85%, #6db3f5); border-radius: 16px; padding: 40px; color: white; font-family: Arial, sans-serif; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); box-sizing: border-box; margin-top: 0px; margin-bottom: 44px;overflow: hidden;">
-        <div id="content-wrapper" style="
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      height: 100%;
-      max-width: 60%;
-      position: relative;
-      z-index: 2;
-    ">
+    <div id="casino-section" style="position: relative; width: 100%; margin: 0 auto; background-color: #080808; background-image: linear-gradient(118deg, #091820, rgb(9, 24, 32) 21.85%, #6db3f5); border-radius: 16px; padding: 40px; color: white; font-family: Arial, sans-serif; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); box-sizing: border-box; margin-top: 0px; margin-bottom: 44px; overflow: hidden;">
+        <div id="content-wrapper" style="display: flex; flex-direction: column; justify-content: space-between; height: 100%; max-width: 60%; position: relative; z-index: 2;">
             <div>
                 <h1 id="main-heading" style="font-size: 2rem; font-weight: 800; line-height: 1.1; margin-bottom: 20px; margin-top: 0;">
-                    Endless opportunities to win big with thousands of thrilling games.
+                    Böyük qalibiyyətlər qazanmaq üçün sonsuz fürsətlər.
                 </h1>
             </div>
 
             <!-- Compact Card Design for Icons Section -->
             <div id="icons-section" style="margin-top: 30px;">
                 <div style="display: flex; gap: 10px; flex-wrap: wrap;">
-                    <!-- New Releases -->
+                    <!-- Yeni Çıxanlar -->
                     <a href="#" class="category-card" style="flex: 1; min-width: 110px; background-color: #102532; border-radius: 8px; padding: 10px 12px; text-decoration: none; color: white; position: relative; overflow: hidden; transition: all 0.3s ease; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); border-left: 3px solid #ff5e3a; display: flex; align-items: center;">
-                        <div class="category-icon" style="
-              font-size: 24px;
-              margin-right: 10px;
-              transition: all 0.3s ease;
-            ">🔥</div>
+                        <div class="category-icon" style="font-size: 24px; margin-right: 10px; transition: all 0.3s ease;">🔥</div>
                         <div>
-                            <div style="
-                font-weight: 600;
-                font-size: 13px;
-                color: #ffffff;
-                line-height: 1.2;
-              ">New Releases</div>
-                            <div style="
-                font-size: 11px;
-                color: rgba(255, 255, 255, 0.6);
-              ">Latest games</div>
+                            <div style="font-weight: 600; font-size: 13px; color: #ffffff; line-height: 1.2;">Yeni Çıxanlar</div>
+                            <div style="font-size: 11px; color: rgba(255, 255, 255, 0.6);">Ən son oyunlar</div>
                         </div>
                     </a>
 
-                    <!-- High RTP -->
+                    <!-- Yüksək RTP -->
                     <a href="#" class="category-card" style="flex: 1; min-width: 110px; background-color: #102532; border-radius: 8px; padding: 10px 12px; text-decoration: none; color: white; position: relative; overflow: hidden; transition: all 0.3s ease; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); border-left: 3px solid #3a9fff; display: flex; align-items: center;">
-                        <div class="category-icon" style="
-              font-size: 24px;
-              margin-right: 10px;
-              transition: all 0.3s ease;
-            ">🚀</div>
+                        <div class="category-icon" style="font-size: 24px; margin-right: 10px; transition: all 0.3s ease;">🚀</div>
                         <div>
-                            <div style="
-                font-weight: 600;
-                font-size: 13px;
-                color: #ffffff;
-                line-height: 1.2;
-              ">High RTP</div>
-                            <div style="
-                font-size: 11px;
-                color: rgba(255, 255, 255, 0.6);
-              ">Best payouts</div>
+                            <div style="font-weight: 600; font-size: 13px; color: #ffffff; line-height: 1.2;">Yüksək RTP</div>
+                            <div style="font-size: 11px; color: rgba(255, 255, 255, 0.6);">Ən yaxşı ödəmələr</div>
                         </div>
                     </a>
 
-                    <!-- Live Casino -->
+                    <!-- Canlı Casino -->
                     <a href="#" class="category-card" style="flex: 1; min-width: 110px; background-color: #102532; border-radius: 8px; padding: 10px 12px; text-decoration: none; color: white; position: relative; overflow: hidden; transition: all 0.3s ease; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); border-left: 3px solid #fb2d2d; display: flex; align-items: center;">
-                        <div class="category-icon" style="
-              font-size: 24px;
-              margin-right: 10px;
-              transition: all 0.3s ease;
-            ">🎲</div>
+                        <div class="category-icon" style="font-size: 24px; margin-right: 10px; transition: all 0.3s ease;">🎲</div>
                         <div>
-                            <div style="
-                font-weight: 600;
-                font-size: 13px;
-                color: #ffffff;
-                line-height: 1.2;
-              ">Live Casino</div>
-                            <div style="
-                font-size: 11px;
-                color: rgba(255, 255, 255, 0.6);
-              ">Real dealers</div>
+                            <div style="font-weight: 600; font-size: 13px; color: #ffffff; line-height: 1.2;">Canlı Casino</div>
+                            <div style="font-size: 11px; color: rgba(255, 255, 255, 0.6);">Real dilerlər</div>
                         </div>
                     </a>
 
-                    <!-- Tournament -->
+                    <!-- Turnir -->
                     <a href="#" class="category-card" style="flex: 1; min-width: 110px; background-color: #102532; border-radius: 8px; padding: 10px 12px; text-decoration: none; color: white; position: relative; overflow: hidden; transition: all 0.3s ease; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); border-left: 3px solid #ffcc00; display: flex; align-items: center;">
-                        <div class="category-icon" style="
-              font-size: 24px;
-              margin-right: 10px;
-              transition: all 0.3s ease;
-            ">🏆</div>
+                        <div class="category-icon" style="font-size: 24px; margin-right: 10px; transition: all 0.3s ease;">🏆</div>
                         <div>
-                            <div style="
-                font-weight: 600;
-                font-size: 13px;
-                color: #ffffff;
-                line-height: 1.2;
-              ">Tournament</div>
-                            <div style="
-                font-size: 11px;
-                color: rgba(255, 255, 255, 0.6);
-              ">Compete &amp; win</div>
+                            <div style="font-weight: 600; font-size: 13px; color: #ffffff; line-height: 1.2;">Turnir</div>
+                            <div style="font-size: 11px; color: rgba(255, 255, 255, 0.6);">Rəqabət et və qazan</div>
                         </div>
                     </a>
                 </div>
@@ -1101,52 +952,20 @@ setTimeout(initSlider, 100);
 
             <!-- Redesigned button with fixed responsive width -->
             <div style="margin-top: 40px; width: 100%;">
-                <a id="explore-button" href="#" style="
-          display: inline-flex;
-          align-items: center;
-          justify-content: center;
-          background-size: 200% 200%;
-          color: #0f1923;
-          padding: 14px 28px;
-          border-radius: 8px;
-          text-decoration: none;
-          font-weight: 800;
-          font-size: 15px;
-          text-transform: uppercase;
-          letter-spacing: 0.5px;
-          transition: all 0.3s ease;
-          position: relative;
-          border: none;
-          box-sizing: border-box;background-color: rgb(255, 229, 0);
-box-shadow: rgba(255, 176, 25, 0.4) 0px 0px 10px, rgba(255, 255, 255, 0.2) 0px 1px 0px inset, rgb(255, 135, 25) 0px 0px 15px inset;
-        ">
-                    <span style="position: relative; z-index: 2;">EXPLORE CASINO SECTION</span>
-                    <span class="button-arrow" style="
-		    display:none;
-            margin-left: 12px;
-            font-size: 18px;
-            transition: transform 0.3s ease;
-            position: relative;
-            z-index: 2;
-          ">→</span>
-                    <span style="
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            width: 100%;
-            height: 4px;
-            background: rgba(0, 0, 0, 0.1);
-            border-bottom-left-radius: 8px;
-            border-bottom-right-radius: 8px;
-          "></span>
+                <a id="explore-button" href="#" style="display: inline-flex; align-items: center; justify-content: center; background-size: 200% 200%; color: #0f1923; padding: 14px 28px; border-radius: 8px; text-decoration: none; font-weight: 800; font-size: 15px; text-transform: uppercase; letter-spacing: 0.5px; transition: all 0.3s ease; position: relative; border: none; box-sizing: border-box; background-color: rgb(255, 229, 0); box-shadow: rgba(255, 176, 25, 0.4) 0px 0px 10px, rgba(255, 255, 255, 0.2) 0px 1px 0px inset, rgb(255, 135, 25) 0px 0px 15px inset;">
+                    <span style="position: relative; z-index: 2;">CASINO BÖLMƏSİNİ KƏŞF ET</span>
+                    <span class="button-arrow" style="display:none; margin-left: 12px; font-size: 18px; transition: transform 0.3s ease; position: relative; z-index: 2;">→</span>
+                    <span style="position: absolute; bottom: 0; left: 0; width: 100%; height: 4px; background: rgba(0, 0, 0, 0.1); border-bottom-left-radius: 8px; border-bottom-right-radius: 8px;"></span>
                 </a>
             </div>
         </div>
 
         <div id="image-wrapper" style="position: absolute; right: -185px; bottom: -34px; top: 0; display: flex; align-items: center; justify-content: flex-end; width: 55%; z-index: 1;">
-            <img id="astronaut-image" src="https://cedabet.github.io/assets/images/spin.png " alt="Astronaut with flames" style="max-height: 500px; max-width: 100%; object-fit: contain; bottom: 0px; position: absolute;">
+            <img id="astronaut-image" src="https://cedabet.github.io/assets/images/spin.png" alt="Astronaut with flames" style="max-height: 500px; max-width: 100%; object-fit: contain; bottom: 0px; position: absolute;">
         </div>
     </div>
+</div>
+
 
     <script>
                     // Responsive handling
