@@ -16,7 +16,7 @@
 		    setTimeout(updateCopyrightYear, 1000);   
 	 setTimeout(createSigninModal, 2000);  
             var sportspath = window.location.pathname;
-            if (sportspath === "/en/sportsbook") {
+            if (sportspath === "/ru/sportsbook") {
                 var sidebar = document.getElementById("sidebar");
                 sidebar.className = "";
                 sidebar.classList.add("sidebar", "active");
@@ -30,7 +30,7 @@
 
         sidebarBtn.addEventListener("click", function () {
             var sportspath2 = window.location.pathname;
-            if (sportspath2 === "/en/sportsbook") {
+            if (sportspath2 === "/ru/sportsbook") {
                 var sidebar = document.getElementById("sidebar");
 
                 if (sidebar.className.indexOf("active") !== -1) { // 'active' sınıfı yoksa
@@ -57,7 +57,7 @@
 
     function handlePageScripts(path) {
         setTimeout(function () {
-            if (path === "/en/") {
+            if (path === "/ru/") {
                 /*  alert("Anasayfaya hoş geldiniz!");*/
                 loadVipFeatures();
 	        setTimeout(loadh2Title, 1000);   
@@ -66,13 +66,13 @@
 		      setTimeout(updateCopyrightYear, 1000);  
 
 		  
-            } else if (path === "/en/vip") {
+            } else if (path === "/ru/vip") {
                 /* alert("VIP sayfasına hoş geldiniz!");*/
             }
 
-            else if (path === "/en/sportsbook") {
+            else if (path === "/ru/sportsbook") {
                 var sportspath = window.location.pathname;
-                if (sportspath === "/en/sportsbook") {
+                if (sportspath === "/ru/sportsbook") {
                     var sidebar = document.getElementById("sidebar");
                     sidebar.className = "";
                     sidebar.classList.add("sidebar", "active");
@@ -212,7 +212,7 @@ function createSigninModal() {
    newLi.id = uid; 
  
    const newAnchor = document.createElement('a');
-   newAnchor.href = '/en/casino/group/table-games';
+   newAnchor.href = '/ru/casino/group/table-games';
  
    const svgIcon = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
    svgIcon.classList.add('svg-icon');
@@ -246,7 +246,7 @@ function createSigninModal() {
          const existingMenu = document.getElementById(elementId);
          if (!existingMenu) {
              const newHTMLSmall = `
-                 <a id="${elementId}" class="sidebar__link-small sidebar__link-small--purple" href="/en/casino" style="background: url('https://cedabet.github.io/assets/images/promotionBtn.jpg') left center / cover no-repeat;"></a>
+                 <a id="${elementId}" class="sidebar__link-small sidebar__link-small--purple" href="/ru/casino" style="background: url('https://cedabet.github.io/assets/images/promotionBtn.jpg') left center / cover no-repeat;"></a>
              `;
              sidebarLinksSmall.insertAdjacentHTML("beforeend", newHTMLSmall); 
          }
@@ -268,7 +268,7 @@ function createSigninModal() {
                          margin-top: -10px;
                          box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -2px 0px inset;
                      ">
-                         <span>Promotion</span>
+                        <span>Акция</span>
                      </a>
                  </div>
              `;
@@ -287,25 +287,25 @@ function loadh2Title() {
         let url = '';
 
         if (title.textContent.trim().includes('Top Games')) {
-            url = '/en/casino/group/lobby';
+            url = '/ru/casino/group/lobby';
         }
         if (title.textContent.trim().includes('Popular Games')) {
-            url = '/en/casino/group/new-releases';
+            url = '/ru/casino/group/new-releases';
         }
         if (title.textContent.trim().includes('New Releases')) {
-            url = '/en/casino/group/new-releases';
+            url = '/ru/casino/group/new-releases';
         }
         if (title.textContent.trim().includes('High RTP')) {
-            url = '/en/casino/group/enhanced-rtp';
+            url = '/ru/casino/group/enhanced-rtp';
         }
         if (title.textContent.trim().includes('Buy Bonus')) {
-            url = '/en/casino/group/bonus-buy';
+            url = '/ru/casino/group/bonus-buy';
         }
 
         if (url) {
             const newLink = document.createElement('a');
             newLink.href = url;
-            newLink.textContent = `See All`;
+            newLink.textContent = `Посмотреть все`;
             newLink.style.background = 'rgba(55, 162, 221, 0.13)'; 
             newLink.style.padding = '5px 12px 5px 12px';
             newLink.style.borderRadius = '4px';
@@ -349,162 +349,87 @@ function loadh2Title() {
             customSection.innerHTML = `
        <div class="container">
 
-     <div id="sports-section" style="position: relative; width: 100%; margin: 0 auto; background-color: #17368d; background-image: linear-gradient(to right, #8a1818, #b92020); border-radius: 16px; padding: 40px; color: white; font-family: Arial, sans-serif; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); box-sizing: border-box; margin-bottom: 44px;">
+  <div id="sports-section" style="position: relative; width: 100%; margin: 0 auto; background-color: #17368d; background-image: linear-gradient(to right, #8a1818, #b92020); border-radius: 16px; padding: 40px; color: white; font-family: Arial, sans-serif; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); box-sizing: border-box; margin-bottom: 44px;">
 
-    <div id="content-wrapper" style="
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      height: 100%;
-      max-width: 60%;
-      position: relative;
-      z-index: 2;
-    ">
-      <div>
-        <h1 id="main-heading" style="font-size: 2rem; font-weight: 800; line-height: 1.1; margin-bottom: 20px; margin-top: 0; max-width: 800px;">
-          Join the excitement by betting on the biggest highlights in sports.
-        </h1>
-      </div>
-
-      <!-- Compact Card Design for Icons Section -->
-      <div id="icons-section" style="margin-top: 30px;">
-        <div style="display: flex; gap: 10px; flex-wrap: wrap;">
-          <!-- Sports -->
-          <a href="#" class="category-card" style="flex: 1; min-width: 110px; background-color: #b51f1f; border-radius: 8px; padding: 10px 12px; text-decoration: none; color: white; position: relative; overflow: hidden; transition: all 0.3s ease; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); border-left: 3px solid #ffffff; display: flex; align-items: center;">
-            <div class="category-icon" style="
-              font-size: 24px;
-              margin-right: 10px;
-              transition: all 0.3s ease;
-            ">⚽</div>
-            <div>
-              <div style="
-                font-weight: 600;
-                font-size: 13px;
-                color: #ffffff;
-                line-height: 1.2;
-              ">Sports</div>
-              <div style="
-                font-size: 11px;
-                color: rgba(255, 255, 255, 0.6);
-              ">All leagues</div>
-            </div>
-          </a>
-
-          <!-- Esports -->
-          <a href="#" class="category-card" style="flex: 1; min-width: 110px; background-color: #b51f1f; border-radius: 8px; padding: 10px 12px; text-decoration: none; color: white; position: relative; overflow: hidden; transition: all 0.3s ease; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); border-left: 3px solid #3a9fff; display: flex; align-items: center;">
-            <div class="category-icon" style="
-              font-size: 24px;
-              margin-right: 10px;
-              transition: all 0.3s ease;
-            ">🎮</div>
-            <div>
-              <div style="
-                font-weight: 600;
-                font-size: 13px;
-                color: #ffffff;
-                line-height: 1.2;
-              ">Esports</div>
-              <div style="
-                font-size: 11px;
-                color: rgba(255, 255, 255, 0.6);
-              ">Top tournaments</div>
-            </div>
-          </a>
-
-          <!-- Live Streams -->
-          <a href="#" class="category-card" style="flex: 1; min-width: 110px; background-color: #b51f1f; border-radius: 8px; padding: 10px 12px; text-decoration: none; color: white; position: relative; overflow: hidden; transition: all 0.3s ease; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); border-left: 3px solid #ff3a6f; display: flex; align-items: center;">
-            <div class="category-icon" style="
-              font-size: 24px;
-              margin-right: 10px;
-              transition: all 0.3s ease;
-            ">▶️</div>
-            <div>
-              <div style="
-                font-weight: 600;
-                font-size: 13px;
-                color: #ffffff;
-                line-height: 1.2;
-              ">Live Streams</div>
-              <div style="
-                font-size: 11px;
-                color: rgba(255, 255, 255, 0.6);
-              ">Watch live</div>
-            </div>
-          </a>
-
-          <!-- Boosted Odds -->
-          <a href="#" class="category-card" style="flex: 1; min-width: 110px; background-color: #b51f1f; border-radius: 8px; padding: 10px 12px; text-decoration: none; color: white; position: relative; overflow: hidden; transition: all 0.3s ease; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); border-left: 3px solid #ffcc00; display: flex; align-items: center;">
-            <div class="category-icon" style="
-              font-size: 24px;
-              margin-right: 10px;
-              transition: all 0.3s ease;
-            ">⚡</div>
-            <div>
-              <div style="
-                font-weight: 600;
-                font-size: 13px;
-                color: #ffffff;
-                line-height: 1.2;
-              ">Boosted Odds</div>
-              <div style="
-                font-size: 11px;
-                color: rgba(255, 255, 255, 0.6);
-              ">Better payouts</div>
-            </div>
-          </a>
+    <div id="content-wrapper" style="display: flex; flex-direction: column; justify-content: space-between; height: 100%; max-width: 60%; position: relative; z-index: 2;">
+        <div>
+            <h1 id="main-heading" style="font-size: 2rem; font-weight: 800; line-height: 1.1; margin-bottom: 20px; margin-top: 0; max-width: 800px;">
+                Присоединяйтесь к азарту, делая ставки на самые яркие моменты в спорте.
+            </h1>
         </div>
-      </div>
 
-      <!-- Explore button with original gold gradient -->
-      <div style="margin-top: 40px; width: 100%;">
-        <a id="explore-button" href="#" style="
-          display: inline-flex;
-          align-items: center;
-          justify-content: center;
-          background-size: 200% 200%;
-          color: #0f1923;
-          padding: 14px 28px;
-          border-radius: 8px;
-          text-decoration: none;
-          font-weight: 800;
-          font-size: 15px;
-          text-transform: uppercase;
-          letter-spacing: 0.5px;
-          transition: all 0.3s ease;
-          position: relative;
-          border: none;
-          box-sizing: border-box;
-	  background-color: rgb(255, 229, 0);
-box-shadow: rgba(255, 176, 25, 0.4) 0px 0px 10px, rgba(255, 255, 255, 0.2) 0px 1px 0px inset, rgb(255, 135, 25) 0px 0px 15px inset;
-        ">
-          <span style="position: relative; z-index: 2;">EXPLORE SPORTS SECTION</span>
-          <span class="button-arrow" style="
-		    display:none;
-            margin-left: 12px;
-            font-size: 18px;
-            transition: transform 0.3s ease;
-            position: relative;
-            z-index: 2;
-          ">→</span>
-          <span style="
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            width: 100%;
-            height: 4px;
-            background: rgba(0, 0, 0, 0.1);
-            border-bottom-left-radius: 8px;
-            border-bottom-right-radius: 8px;
-          "></span>
-        </a>
-      </div>
+        <!-- Compact Card Design for Icons Section -->
+        <div id="icons-section" style="margin-top: 30px;">
+            <div style="display: flex; gap: 10px; flex-wrap: wrap;">
+                <!-- Sports -->
+                <a href="#" class="category-card" style="flex: 1; min-width: 110px; background-color: #b51f1f; border-radius: 8px; padding: 10px 12px; text-decoration: none; color: white; position: relative; overflow: hidden; transition: all 0.3s ease; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); border-left: 3px solid #ffffff; display: flex; align-items: center;">
+                    <div class="category-icon" style="font-size: 24px; margin-right: 10px; transition: all 0.3s ease;">⚽</div>
+                    <div>
+                        <div style="font-weight: 600; font-size: 13px; color: #ffffff; line-height: 1.2;">
+                            Спорт
+                        </div>
+                        <div style="font-size: 11px; color: rgba(255, 255, 255, 0.6);">
+                            Все лиги
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Esports -->
+                <a href="#" class="category-card" style="flex: 1; min-width: 110px; background-color: #b51f1f; border-radius: 8px; padding: 10px 12px; text-decoration: none; color: white; position: relative; overflow: hidden; transition: all 0.3s ease; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); border-left: 3px solid #3a9fff; display: flex; align-items: center;">
+                    <div class="category-icon" style="font-size: 24px; margin-right: 10px; transition: all 0.3s ease;">🎮</div>
+                    <div>
+                        <div style="font-weight: 600; font-size: 13px; color: #ffffff; line-height: 1.2;">
+                            Киберспорт
+                        </div>
+                        <div style="font-size: 11px; color: rgba(255, 255, 255, 0.6);">
+                            Главные турниры
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Live Streams -->
+                <a href="#" class="category-card" style="flex: 1; min-width: 110px; background-color: #b51f1f; border-radius: 8px; padding: 10px 12px; text-decoration: none; color: white; position: relative; overflow: hidden; transition: all 0.3s ease; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); border-left: 3px solid #ff3a6f; display: flex; align-items: center;">
+                    <div class="category-icon" style="font-size: 24px; margin-right: 10px; transition: all 0.3s ease;">▶️</div>
+                    <div>
+                        <div style="font-weight: 600; font-size: 13px; color: #ffffff; line-height: 1.2;">
+                            Прямые трансляции
+                        </div>
+                        <div style="font-size: 11px; color: rgba(255, 255, 255, 0.6);">
+                            Смотрите в прямом эфире
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Boosted Odds -->
+                <a href="#" class="category-card" style="flex: 1; min-width: 110px; background-color: #b51f1f; border-radius: 8px; padding: 10px 12px; text-decoration: none; color: white; position: relative; overflow: hidden; transition: all 0.3s ease; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); border-left: 3px solid #ffcc00; display: flex; align-items: center;">
+                    <div class="category-icon" style="font-size: 24px; margin-right: 10px; transition: all 0.3s ease;">⚡</div>
+                    <div>
+                        <div style="font-weight: 600; font-size: 13px; color: #ffffff; line-height: 1.2;">
+                            Увеличенные коэффициенты
+                        </div>
+                        <div style="font-size: 11px; color: rgba(255, 255, 255, 0.6);">
+                            Лучшие выплаты
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <!-- Explore button with original gold gradient -->
+        <div style="margin-top: 40px; width: 100%;">
+            <a id="explore-button" href="#" style="display: inline-flex; align-items: center; justify-content: center; background-size: 200% 200%; color: #0f1923; padding: 14px 28px; border-radius: 8px; text-decoration: none; font-weight: 800; font-size: 15px; text-transform: uppercase; letter-spacing: 0.5px; transition: all 0.3s ease; position: relative; border: none; box-sizing: border-box; background-color: rgb(255, 229, 0); box-shadow: rgba(255, 176, 25, 0.4) 0px 0px 10px, rgba(255, 255, 255, 0.2) 0px 1px 0px inset, rgb(255, 135, 25) 0px 0px 15px inset;">
+                <span style="position: relative; z-index: 2;">ИЗУЧИТЕ РАЗДЕЛ СПОРТА</span>
+                <span class="button-arrow" style="display:none; margin-left: 12px; font-size: 18px; transition: transform 0.3s ease; position: relative; z-index: 2;">→</span>
+                <span style="position: absolute; bottom: 0; left: 0; width: 100%; height: 4px; background: rgba(0, 0, 0, 0.1); border-bottom-left-radius: 8px; border-bottom-right-radius: 8px;"></span>
+            </a>
+        </div>
     </div>
 
     <!-- Astronaut Image with Soccer Ball -->
     <div id="image-wrapper" style="position: absolute; right: -68px; bottom: 0px; top: 0; display: flex; align-items: center; justify-content: flex-end; width: 50%; z-index: 1;">
-      <img id="astronaut-image" src="https://cedabet.github.io/assets/images/soccer-astro.png" alt="Astronaut holding soccer ball" style="max-height: 410px; max-width: 100%; object-fit: contain; bottom: 0px; position: absolute;">
+        <img id="astronaut-image" src="https://cedabet.github.io/assets/images/soccer-astro.png" alt="Astronaut holding soccer ball" style="max-height: 410px; max-width: 100%; object-fit: contain; bottom: 0px; position: absolute;">
     </div>
-  </div>
+</div>
 
   <script>
     // Responsive handling
@@ -710,42 +635,46 @@ box-shadow: rgba(255, 176, 25, 0.4) 0px 0px 10px, rgba(255, 255, 255, 0.2) 0px 1
 </style>
 
 <div class="container" style="border: none;">
-    <div style="/* background-color: #0c1016; */ color: white; padding: 30px 20px; position: relative; font-family: Arial, sans-serif; width: 100%; border: none;">
-  <!-- Gold vertical line on the left -->
-  
-  
-  <!-- Steps container -->
-  <div style="display: flex; justify-content: space-around; align-items: center; margin-bottom: 40px; flex-wrap: wrap;">
-    <!-- Step 1 -->
-    <div style="display: flex; align-items: center; margin: 10px 0;">
-      <span style="color: #00c8ff; font-size: 28px; font-weight: bold; margin-right: 10px;">01</span>
-      <span style="font-size: 18px; color: #ffffff;">Register an account</span>
+    <div style="color: white; padding: 30px 20px; position: relative; font-family: Arial, sans-serif; width: 100%; border: none;">
+        <!-- Steps container -->
+        <div style="display: flex; justify-content: space-around; align-items: center; margin-bottom: 40px; flex-wrap: wrap;">
+            <!-- Step 1 -->
+            <div style="display: flex; align-items: center; margin: 10px 0;">
+                <span style="color: #00c8ff; font-size: 28px; font-weight: bold; margin-right: 10px;">01</span>
+                <span style="font-size: 18px; color: #ffffff;">Зарегистрируйтесь на сайте</span>
+            </div>
+            
+            <!-- Divider line -->
+            <div style="width: 100px; height: 1px; background-color: #1e3a5a; margin: 0 10px;"></div>
+            
+            <!-- Step 2 -->
+            <div style="display: flex; align-items: center; margin: 10px 0;">
+                <span style="color: #00c8ff; font-size: 28px; font-weight: bold; margin-right: 10px;">02</span>
+                <span style="font-size: 18px; color: #ffffff;">Пополните счет и начните играть</span>
+            </div>
+            
+            <!-- Divider line -->
+            <div style="width: 100px; height: 1px; background-color: #1e3a5a; margin: 0 10px;"></div>
+            
+            <!-- Step 3 -->
+            <div style="display: flex; align-items: center; margin: 10px 0;">
+                <span style="color: #00c8ff; font-size: 28px; font-weight: bold; margin-right: 10px;">03</span>
+                <span style="font-size: 18px; color: #ffffff;">Получите 10% еженедельный кэшбэк</span>
+            </div>
+        </div>
+        
+        <!-- Join Now button -->
+        <div style="text-align: center;">
+            <a href="/ru?modal=register">
+                <button style="background-color: #00a8ff; color: white; border: none; border-radius: 30px; padding: 12px 40px; font-size: 16px; font-weight: bold; cursor: pointer; box-shadow: 0 0 15px rgba(0, 168, 255, 0.5);">
+                    ПРИСОЕДИНИТЬСЯ СЕЙЧАС
+                </button>
+            </a>
+        </div>
     </div>
-    
-    <!-- Divider line -->
-    <div style="width: 100px; height: 1px; background-color: #1e3a5a; margin: 0 10px;"></div>
-    
-    <!-- Step 2 -->
-    <div style="display: flex; align-items: center; margin: 10px 0;">
-      <span style="color: #00c8ff; font-size: 28px; font-weight: bold; margin-right: 10px;">02</span>
-      <span style="font-size: 18px; color: #ffffff;">Make a Deposit &amp; Play</span>
-    </div>
-    
-    <!-- Divider line -->
-    <div style="width: 100px; height: 1px; background-color: #1e3a5a; margin: 0 10px;"></div>
-    
-    <!-- Step 3 -->
-    <div style="display: flex; align-items: center; margin: 10px 0;">
-      <span style="color: #00c8ff; font-size: 28px; font-weight: bold; margin-right: 10px;">03</span>
-      <span style="font-size: 18px; color: #ffffff;">Get 10% Weekly Cashback</span>
-    </div>
-  </div>
-  
-  <!-- Join Now button -->
-  <div style="text-align: center;">
-    <a href="/en?modal=register"><button style="background-color: #00a8ff; color: white; border: none; border-radius: 30px; padding: 12px 40px; font-size: 16px; font-weight: bold; cursor: pointer; box-shadow: 0 0 15px rgba(0, 168, 255, 0.5);">JOIN NOW</button></a>
-  </div>
-</div>`;
+</div>
+
+`;
 
 		customSection5.innerHTML=`
 <div class="container-fluid">
@@ -768,74 +697,74 @@ box-shadow: rgba(255, 176, 25, 0.4) 0px 0px 10px, rgba(255, 255, 255, 0.2) 0px 1
 `;
 function initSlider() {
    const logos = [
-            { src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/pragmaticplay.svg", alt: "Pragmatic Play", url: "/en/providers/pragmaticplay" },
-            { src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/Evolution%20Gaming.svg", alt: "Evolution", url: "/en/providers/evolution" },
-            { src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/pragmatic-live-light.svg", alt: "Pragmatic Live", url: "/en/providers/pragmaticlive" },
-            { src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/hacksaw.svg", alt: "HackSaw Gaming", url: "/en/providers/hacksaw" },
-            { src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/egt.svg", alt: "EGT", url: "/en/providers/egt" },
-            { src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/NoLimitCity.svg", alt: "No Limit City", url: "/en/providers/nolimitcity" },
-            { src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/netent.svg", alt: "Netent", url: "/en/providers/netent" },
-            { src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/ezugi.svg", alt: "Ezugi", url: "/en/providers/ezugi" },
-            { src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/amusnet.svg", alt: "Amusnet", url: "/en/providers/egt-interactive" },
-            { src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/1x2gaming.svg", alt: "1x2 Gaming", url: "/en/providers/1x2gaming" },
-            { src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/5men.svg", alt: "5men", url: "/en/providers/5men" },
-            { src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/endorphina.svg", alt: "Endorphina", url: "/en/providers/endorphina" },
-            { src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/mrslotty.svg", alt: "MrSlotty", url: "/en/providers/mrslotty" },
-            { src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/amatic.svg", alt: "Amatic", url: "/en/providers/amatic" },
-            { src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/Red%20Tiger%20Gaming.svg", alt: "Red Tiger", url: "/en/providers/redtiger" },
-            { src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/softswiss.svg", alt: "BGAMING", url: "/en/providers/bgaming" },
-            { src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/booming.svg", alt: "Booming Games", url: "/en/providers/booming" },
-            { src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/1spin4win.svg", alt: "1spin4win", url: "/en/providers/1spin4win" },
-            { src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/avatarux.svg", alt: "AvatarUX", url: "/en/providers/avatarux" },
-            { src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/belatra.svg", alt: "Belatra", url: "/en/providers/belatra" },
-            { src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/beterlive.svg", alt: "Beter.Live", url: "/en/providers/beterlive" },
-            { src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/evoplay.svg", alt: "Evoplay Entertainment", url: "/en/providers/evoplay" },
-            { src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/gamezix.svg", alt: "Gamzix", url: "/en/providers/gamzix" },
-            { src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/igtech.svg", alt: "iGTech", url: "/en/providers/igtech" },
-            { src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/playson.svg", alt: "Playson", url: "/en/providers/playson" },
-            { src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/mascot.svg", alt: "Mascot Gaming", url: "/en/providers/mascotgaming" },
-            { src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/mancala.svg", alt: "Mancala Gaming", url: "/en/providers/mancala" },
-            { src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/onlyplay.svg", alt: "OnlyPlay", url: "/en/providers/onlyplay" },
-            { src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/oryx.svg", alt: "ORYX", url: "/en/providers/oryx" },
-            { src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/platipus.svg", alt: "Platipus", url: "/en/providers/platipus" },
-            { src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/popiplay.svg", alt: "Popiplay", url: "/en/providers/popiplay" },
-            { src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/quickspin.svg", alt: "Quickspin", url: "/en/providers/quickspin" },
-            { src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/reevo.svg", alt: "Reevo", url: "/en/providers/reevo" },
-            { src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/slotmill.svg", alt: "Slotmill", url: "/en/providers/slotmill" },
-            { src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/smartsoft.svg", alt: "SmartSoft", url: "/en/providers/smartsoft" },
-            { src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/spadegaming.svg", alt: "Spadegaming", url: "/en/providers/spadegaming" },
-            { src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/spribe.svg", alt: "Spribe", url: "/en/providers/spribe" },
-            { src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/thunderkick.svg", alt: "Thunderkick", url: "/en/providers/thunderkick" },
-            { src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/tomhorn.svg", alt: "Tom Horn", url: "/en/providers/tomhornnative" },
-            { src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/truelab.svg", alt: "Truelab", url: "/en/providers/truelab" },
-            { src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/turbogames.svg", alt: "Turbo Games", url: "/en/providers/turbogames" },
-            { src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/Betradar%20Virtual%20sports.svg", alt: "BetRadar VS", url: "/en/providers/betradarvs" },
-            { src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/betsoft.svg", alt: "BetSoft", url: "/en/providers/betsoft" },
-            { src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/CQ9.svg", alt: "CQ9", url: "/en/providers/cq9" },
-            { src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/habanero.svg", alt: "Habanero", url: "/en/providers/habanero" },
-            { src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/Leander.svg", alt: "Leander", url: "/en/providers/leander" },
-            { src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/Leap.svg", alt: "Leap", url: "/en/providers/leap" },
-            { src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/Live%20Games.svg", alt: "Live Games", url: "/en/providers/livegames" },
-            { src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/luckystreak.svg", alt: "Lucky Streak", url: "/en/providers/luckystreak" },
-            { src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/Playtech%20slots.svg", alt: "PlayTech", url: "/en/providers/playtech" },
-            { src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/SA%20Gaming.svg", alt: "SA Gaming", url: "/en/providers/sagaming" },
-            { src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/Vivo%20Gaming.svg", alt: "Vivo Gaming", url: "/en/providers/vivogaming" },
-            { src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/yggdrasil.svg", alt: "YGG Drasil", url: "/en/providers/yggdrasil" },
-            { src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/Pocket%20Games%20Soft.svg", alt: "PGSoft", url: "/en/providers/pgsoft" },
-            { src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/golden%20hero.svg", alt: "Golden Hero", url: "/en/providers/goldenhero" },
-            { src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/fugaso.svg", alt: "Fugaso", url: "/en/providers/fugaso" },
-            { src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/originals.svg", alt: "Ebetlab", url: "/en/providers/ebetlab" },
-            { src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/imageinelive.svg", alt: "Imagine Live", url: "/en/providers/imagine-live" },
-            { src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/imoon.svg", alt: "Imoon", url: "/en/providers/imoon" },
-            { src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/InOut.svg", alt: "InOut", url: "/en/providers/inout" },
-            { src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/Jiliasia.svg", alt: "Jiliasia", url: "/en/providers/jiliasia" },
-            { src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/Zeus%20Play.svg", alt: "Zeus Play", url: "/en/providers/zeus-play" },
-            { src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/Peter%20And%20Sons.svg", alt: "Peter And Sons", url: "/en/providers/peter-and-sons" },
-            { src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/topspin.svg", alt: "TopSpin", url: "/en/providers/topspin" },
-            { alt: "Popok", url: "/en/providers/popok" },
-            { src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/booming.svg", alt: "Bet Games", url: "/en/providers/betgames" },
-            { src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/Leander.svg", alt: "Raw Games", url: "/en/providers/rawgames" },
-            { src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/Leander.svg", alt: "YGR Games", url: "/en/providers/ygrgames" }
+            { src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/pragmaticplay.svg", alt: "Pragmatic Play", url: "/ru/providers/pragmaticplay" },
+            { src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/Evolution%20Gaming.svg", alt: "Evolution", url: "/ru/providers/evolution" },
+            { src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/pragmatic-live-light.svg", alt: "Pragmatic Live", url: "/ru/providers/pragmaticlive" },
+            { src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/hacksaw.svg", alt: "HackSaw Gaming", url: "/ru/providers/hacksaw" },
+            { src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/egt.svg", alt: "EGT", url: "/ru/providers/egt" },
+            { src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/NoLimitCity.svg", alt: "No Limit City", url: "/ru/providers/nolimitcity" },
+            { src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/netent.svg", alt: "Netent", url: "/ru/providers/netent" },
+            { src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/ezugi.svg", alt: "Ezugi", url: "/ru/providers/ezugi" },
+            { src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/amusnet.svg", alt: "Amusnet", url: "/ru/providers/egt-interactive" },
+            { src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/1x2gaming.svg", alt: "1x2 Gaming", url: "/ru/providers/1x2gaming" },
+            { src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/5men.svg", alt: "5men", url: "/ru/providers/5men" },
+            { src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/endorphina.svg", alt: "Endorphina", url: "/ru/providers/endorphina" },
+            { src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/mrslotty.svg", alt: "MrSlotty", url: "/ru/providers/mrslotty" },
+            { src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/amatic.svg", alt: "Amatic", url: "/ru/providers/amatic" },
+            { src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/Red%20Tiger%20Gaming.svg", alt: "Red Tiger", url: "/ru/providers/redtiger" },
+            { src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/softswiss.svg", alt: "BGAMING", url: "/ru/providers/bgaming" },
+            { src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/booming.svg", alt: "Booming Games", url: "/ru/providers/booming" },
+            { src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/1spin4win.svg", alt: "1spin4win", url: "/ru/providers/1spin4win" },
+            { src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/avatarux.svg", alt: "AvatarUX", url: "/ru/providers/avatarux" },
+            { src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/belatra.svg", alt: "Belatra", url: "/ru/providers/belatra" },
+            { src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/beterlive.svg", alt: "Beter.Live", url: "/ru/providers/beterlive" },
+            { src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/evoplay.svg", alt: "Evoplay Entertainment", url: "/ru/providers/evoplay" },
+            { src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/gamezix.svg", alt: "Gamzix", url: "/ru/providers/gamzix" },
+            { src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/igtech.svg", alt: "iGTech", url: "/ru/providers/igtech" },
+            { src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/playson.svg", alt: "Playson", url: "/ru/providers/playson" },
+            { src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/mascot.svg", alt: "Mascot Gaming", url: "/ru/providers/mascotgaming" },
+            { src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/mancala.svg", alt: "Mancala Gaming", url: "/ru/providers/mancala" },
+            { src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/onlyplay.svg", alt: "OnlyPlay", url: "/ru/providers/onlyplay" },
+            { src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/oryx.svg", alt: "ORYX", url: "/ru/providers/oryx" },
+            { src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/platipus.svg", alt: "Platipus", url: "/ru/providers/platipus" },
+            { src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/popiplay.svg", alt: "Popiplay", url: "/ru/providers/popiplay" },
+            { src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/quickspin.svg", alt: "Quickspin", url: "/ru/providers/quickspin" },
+            { src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/reevo.svg", alt: "Reevo", url: "/ru/providers/reevo" },
+            { src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/slotmill.svg", alt: "Slotmill", url: "/ru/providers/slotmill" },
+            { src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/smartsoft.svg", alt: "SmartSoft", url: "/ru/providers/smartsoft" },
+            { src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/spadegaming.svg", alt: "Spadegaming", url: "/ru/providers/spadegaming" },
+            { src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/spribe.svg", alt: "Spribe", url: "/ru/providers/spribe" },
+            { src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/thunderkick.svg", alt: "Thunderkick", url: "/ru/providers/thunderkick" },
+            { src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/tomhorn.svg", alt: "Tom Horn", url: "/ru/providers/tomhornnative" },
+            { src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/truelab.svg", alt: "Truelab", url: "/ru/providers/truelab" },
+            { src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/turbogames.svg", alt: "Turbo Games", url: "/ru/providers/turbogames" },
+            { src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/Betradar%20Virtual%20sports.svg", alt: "BetRadar VS", url: "/ru/providers/betradarvs" },
+            { src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/betsoft.svg", alt: "BetSoft", url: "/ru/providers/betsoft" },
+            { src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/CQ9.svg", alt: "CQ9", url: "/ru/providers/cq9" },
+            { src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/habanero.svg", alt: "Habanero", url: "/ru/providers/habanero" },
+            { src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/Leander.svg", alt: "Leander", url: "/ru/providers/leander" },
+            { src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/Leap.svg", alt: "Leap", url: "/ru/providers/leap" },
+            { src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/Live%20Games.svg", alt: "Live Games", url: "/ru/providers/livegames" },
+            { src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/luckystreak.svg", alt: "Lucky Streak", url: "/ru/providers/luckystreak" },
+            { src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/Playtech%20slots.svg", alt: "PlayTech", url: "/ru/providers/playtech" },
+            { src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/SA%20Gaming.svg", alt: "SA Gaming", url: "/ru/providers/sagaming" },
+            { src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/Vivo%20Gaming.svg", alt: "Vivo Gaming", url: "/ru/providers/vivogaming" },
+            { src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/yggdrasil.svg", alt: "YGG Drasil", url: "/ru/providers/yggdrasil" },
+            { src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/Pocket%20Games%20Soft.svg", alt: "PGSoft", url: "/ru/providers/pgsoft" },
+            { src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/golden%20hero.svg", alt: "Golden Hero", url: "/ru/providers/goldenhero" },
+            { src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/fugaso.svg", alt: "Fugaso", url: "/ru/providers/fugaso" },
+            { src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/originals.svg", alt: "Ebetlab", url: "/ru/providers/ebetlab" },
+            { src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/imageinelive.svg", alt: "Imagine Live", url: "/ru/providers/imagine-live" },
+            { src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/imoon.svg", alt: "Imoon", url: "/ru/providers/imoon" },
+            { src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/InOut.svg", alt: "InOut", url: "/ru/providers/inout" },
+            { src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/Jiliasia.svg", alt: "Jiliasia", url: "/ru/providers/jiliasia" },
+            { src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/Zeus%20Play.svg", alt: "Zeus Play", url: "/ru/providers/zeus-play" },
+            { src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/Peter%20And%20Sons.svg", alt: "Peter And Sons", url: "/ru/providers/peter-and-sons" },
+            { src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/topspin.svg", alt: "TopSpin", url: "/ru/providers/topspin" },
+            { alt: "Popok", url: "/ru/providers/popok" },
+            { src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/booming.svg", alt: "Bet Games", url: "/ru/providers/betgames" },
+            { src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/Leander.svg", alt: "Raw Games", url: "/ru/providers/rawgames" },
+            { src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/Leander.svg", alt: "YGR Games", url: "/ru/providers/ygrgames" }
         ];
 
     const logoSlide = document.getElementById('logoSlide');
@@ -994,19 +923,11 @@ setTimeout(initSlider, 100);
 
 
 <div class="container">
-    <div id="casino-section" style="position: relative; width: 100%; margin: 0 auto; background-color: #080808; background-image: linear-gradient(118deg, #091820, rgb(9, 24, 32) 21.85%, #6db3f5); border-radius: 16px; padding: 40px; color: white; font-family: Arial, sans-serif; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); box-sizing: border-box; margin-top: 0px; margin-bottom: 44px;overflow: hidden;">
-        <div id="content-wrapper" style="
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      height: 100%;
-      max-width: 60%;
-      position: relative;
-      z-index: 2;
-    ">
+    <div id="casino-section" style="position: relative; width: 100%; margin: 0 auto; background-color: #080808; background-image: linear-gradient(118deg, #091820, rgb(9, 24, 32) 21.85%, #6db3f5); border-radius: 16px; padding: 40px; color: white; font-family: Arial, sans-serif; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); box-sizing: border-box; margin-top: 0px; margin-bottom: 44px; overflow: hidden;">
+        <div id="content-wrapper" style="display: flex; flex-direction: column; justify-content: space-between; height: 100%; max-width: 60%; position: relative; z-index: 2;">
             <div>
                 <h1 id="main-heading" style="font-size: 2rem; font-weight: 800; line-height: 1.1; margin-bottom: 20px; margin-top: 0;">
-                    Endless opportunities to win big with thousands of thrilling games.
+                    Бесконечные возможности для крупных выигрышей с тысячами захватывающих игр.
                 </h1>
             </div>
 
@@ -1015,85 +936,37 @@ setTimeout(initSlider, 100);
                 <div style="display: flex; gap: 10px; flex-wrap: wrap;">
                     <!-- New Releases -->
                     <a href="#" class="category-card" style="flex: 1; min-width: 110px; background-color: #102532; border-radius: 8px; padding: 10px 12px; text-decoration: none; color: white; position: relative; overflow: hidden; transition: all 0.3s ease; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); border-left: 3px solid #ff5e3a; display: flex; align-items: center;">
-                        <div class="category-icon" style="
-              font-size: 24px;
-              margin-right: 10px;
-              transition: all 0.3s ease;
-            ">🔥</div>
+                        <div class="category-icon" style="font-size: 24px; margin-right: 10px; transition: all 0.3s ease;">🔥</div>
                         <div>
-                            <div style="
-                font-weight: 600;
-                font-size: 13px;
-                color: #ffffff;
-                line-height: 1.2;
-              ">New Releases</div>
-                            <div style="
-                font-size: 11px;
-                color: rgba(255, 255, 255, 0.6);
-              ">Latest games</div>
+                            <div style="font-weight: 600; font-size: 13px; color: #ffffff; line-height: 1.2;">Новые релизы</div>
+                            <div style="font-size: 11px; color: rgba(255, 255, 255, 0.6);">Последние игры</div>
                         </div>
                     </a>
 
                     <!-- High RTP -->
                     <a href="#" class="category-card" style="flex: 1; min-width: 110px; background-color: #102532; border-radius: 8px; padding: 10px 12px; text-decoration: none; color: white; position: relative; overflow: hidden; transition: all 0.3s ease; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); border-left: 3px solid #3a9fff; display: flex; align-items: center;">
-                        <div class="category-icon" style="
-              font-size: 24px;
-              margin-right: 10px;
-              transition: all 0.3s ease;
-            ">🚀</div>
+                        <div class="category-icon" style="font-size: 24px; margin-right: 10px; transition: all 0.3s ease;">🚀</div>
                         <div>
-                            <div style="
-                font-weight: 600;
-                font-size: 13px;
-                color: #ffffff;
-                line-height: 1.2;
-              ">High RTP</div>
-                            <div style="
-                font-size: 11px;
-                color: rgba(255, 255, 255, 0.6);
-              ">Best payouts</div>
+                            <div style="font-weight: 600; font-size: 13px; color: #ffffff; line-height: 1.2;">Высокий RTP</div>
+                            <div style="font-size: 11px; color: rgba(255, 255, 255, 0.6);">Лучшие выплаты</div>
                         </div>
                     </a>
 
                     <!-- Live Casino -->
                     <a href="#" class="category-card" style="flex: 1; min-width: 110px; background-color: #102532; border-radius: 8px; padding: 10px 12px; text-decoration: none; color: white; position: relative; overflow: hidden; transition: all 0.3s ease; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); border-left: 3px solid #fb2d2d; display: flex; align-items: center;">
-                        <div class="category-icon" style="
-              font-size: 24px;
-              margin-right: 10px;
-              transition: all 0.3s ease;
-            ">🎲</div>
+                        <div class="category-icon" style="font-size: 24px; margin-right: 10px; transition: all 0.3s ease;">🎲</div>
                         <div>
-                            <div style="
-                font-weight: 600;
-                font-size: 13px;
-                color: #ffffff;
-                line-height: 1.2;
-              ">Live Casino</div>
-                            <div style="
-                font-size: 11px;
-                color: rgba(255, 255, 255, 0.6);
-              ">Real dealers</div>
+                            <div style="font-weight: 600; font-size: 13px; color: #ffffff; line-height: 1.2;">Живое Казино</div>
+                            <div style="font-size: 11px; color: rgba(255, 255, 255, 0.6);">Реальные дилеры</div>
                         </div>
                     </a>
 
                     <!-- Tournament -->
                     <a href="#" class="category-card" style="flex: 1; min-width: 110px; background-color: #102532; border-radius: 8px; padding: 10px 12px; text-decoration: none; color: white; position: relative; overflow: hidden; transition: all 0.3s ease; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); border-left: 3px solid #ffcc00; display: flex; align-items: center;">
-                        <div class="category-icon" style="
-              font-size: 24px;
-              margin-right: 10px;
-              transition: all 0.3s ease;
-            ">🏆</div>
+                        <div class="category-icon" style="font-size: 24px; margin-right: 10px; transition: all 0.3s ease;">🏆</div>
                         <div>
-                            <div style="
-                font-weight: 600;
-                font-size: 13px;
-                color: #ffffff;
-                line-height: 1.2;
-              ">Tournament</div>
-                            <div style="
-                font-size: 11px;
-                color: rgba(255, 255, 255, 0.6);
-              ">Compete &amp; win</div>
+                            <div style="font-weight: 600; font-size: 13px; color: #ffffff; line-height: 1.2;">Турнир</div>
+                            <div style="font-size: 11px; color: rgba(255, 255, 255, 0.6);">Соревнуйтесь и выигрывайте</div>
                         </div>
                     </a>
                 </div>
@@ -1101,52 +974,19 @@ setTimeout(initSlider, 100);
 
             <!-- Redesigned button with fixed responsive width -->
             <div style="margin-top: 40px; width: 100%;">
-                <a id="explore-button" href="#" style="
-          display: inline-flex;
-          align-items: center;
-          justify-content: center;
-          background-size: 200% 200%;
-          color: #0f1923;
-          padding: 14px 28px;
-          border-radius: 8px;
-          text-decoration: none;
-          font-weight: 800;
-          font-size: 15px;
-          text-transform: uppercase;
-          letter-spacing: 0.5px;
-          transition: all 0.3s ease;
-          position: relative;
-          border: none;
-          box-sizing: border-box;background-color: rgb(255, 229, 0);
-box-shadow: rgba(255, 176, 25, 0.4) 0px 0px 10px, rgba(255, 255, 255, 0.2) 0px 1px 0px inset, rgb(255, 135, 25) 0px 0px 15px inset;
-        ">
-                    <span style="position: relative; z-index: 2;">EXPLORE CASINO SECTION</span>
-                    <span class="button-arrow" style="
-		    display:none;
-            margin-left: 12px;
-            font-size: 18px;
-            transition: transform 0.3s ease;
-            position: relative;
-            z-index: 2;
-          ">→</span>
-                    <span style="
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            width: 100%;
-            height: 4px;
-            background: rgba(0, 0, 0, 0.1);
-            border-bottom-left-radius: 8px;
-            border-bottom-right-radius: 8px;
-          "></span>
+                <a id="explore-button" href="#" style="display: inline-flex; align-items: center; justify-content: center; background-size: 200% 200%; color: #0f1923; padding: 14px 28px; border-radius: 8px; text-decoration: none; font-weight: 800; font-size: 15px; text-transform: uppercase; letter-spacing: 0.5px; transition: all 0.3s ease; position: relative; border: none; box-sizing: border-box; background-color: rgb(255, 229, 0); box-shadow: rgba(255, 176, 25, 0.4) 0px 0px 10px, rgba(255, 255, 255, 0.2) 0px 1px 0px inset, rgb(255, 135, 25) 0px 0px 15px inset;">
+                    <span style="position: relative; z-index: 2;">ИССЛЕДОВАТЬ РАЗДЕЛ КАЗИНО</span>
+                    <span class="button-arrow" style="display:none; margin-left: 12px; font-size: 18px; transition: transform 0.3s ease; position: relative; z-index: 2;">→</span>
+                    <span style="position: absolute; bottom: 0; left: 0; width: 100%; height: 4px; background: rgba(0, 0, 0, 0.1); border-bottom-left-radius: 8px; border-bottom-right-radius: 8px;"></span>
                 </a>
             </div>
         </div>
 
         <div id="image-wrapper" style="position: absolute; right: -185px; bottom: -34px; top: 0; display: flex; align-items: center; justify-content: flex-end; width: 55%; z-index: 1;">
-            <img id="astronaut-image" src="https://cedabet.github.io/assets/images/spin.png " alt="Astronaut with flames" style="max-height: 500px; max-width: 100%; object-fit: contain; bottom: 0px; position: absolute;">
+            <img id="astronaut-image" src="https://cedabet.github.io/assets/images/spin.png" alt="Astronaut with flames" style="max-height: 500px; max-width: 100%; object-fit: contain; bottom: 0px; position: absolute;">
         </div>
     </div>
+</div>
 
     <script>
                     // Responsive handling
