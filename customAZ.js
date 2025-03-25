@@ -222,11 +222,11 @@ function createSigninModal() {
  
  
    const span = document.createElement('span');
-   span.textContent = 'New';
+   span.textContent = 'Yeni';
  
  
    newAnchor.appendChild(svgIcon);
-   newAnchor.appendChild(document.createTextNode(' Table Games'));
+   newAnchor.appendChild(document.createTextNode(' Cədvəl Oyunları'));
    newAnchor.appendChild(span);
  
    newLi.appendChild(newAnchor);
