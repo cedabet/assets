@@ -302,6 +302,7 @@ function loadh2Title() {
         }
 
         if (url) {
+		 if (!title.nextElementSibling || title.nextElementSibling.tagName !== 'A') {
             const newLink = document.createElement('a');
             newLink.href = url;
             newLink.textContent = `Tümünü Gör`;
@@ -314,6 +315,7 @@ function loadh2Title() {
 
             title.insertAdjacentElement('afterend', newLink);
         }
+		  }
     });
 }
 
