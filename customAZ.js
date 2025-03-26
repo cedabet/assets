@@ -302,7 +302,8 @@ function loadh2Title() {
             url = '/az/casino/group/bonus-buy';
         }
 
-        if (url) {
+	 if (url) {
+	    if (!title.nextElementSibling || title.nextElementSibling.tagName !== 'A') {
             const newLink = document.createElement('a');
             newLink.href = url;
             newLink.textContent = `Hamısını Gör`;
@@ -314,7 +315,10 @@ function loadh2Title() {
             newLink.style.border = '1px solid rgba(41, 154, 217, 0.33)'; 
 
             title.insertAdjacentElement('afterend', newLink);
-        }
+	    }
+	}
+
+  
     });
 }
 
