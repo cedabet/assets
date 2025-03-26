@@ -303,6 +303,7 @@ function loadh2Title() {
         }
 
         if (url) {
+			 if (!title.nextElementSibling || title.nextElementSibling.tagName !== 'A') {
             const newLink = document.createElement('a');
             newLink.href = url;
             newLink.textContent = `Посмотреть все`;
@@ -315,6 +316,7 @@ function loadh2Title() {
 
             title.insertAdjacentElement('afterend', newLink);
         }
+		}
     });
 }
 
