@@ -285,6 +285,7 @@ function loadh2Title() {
     sectionTitleElements.forEach(title => {
         let url = '';
 
+        // Başlık metnine göre URL belirle
         if (title.textContent.trim().includes('Top Games')) {
             url = '/en/casino/group/lobby';
         }
@@ -301,18 +302,23 @@ function loadh2Title() {
             url = '/en/casino/group/bonus-buy';
         }
 
+        // Eğer URL varsa ve başlığın hemen sonrasında zaten bir <a> etiketi yoksa
         if (url) {
-            const newLink = document.createElement('a');
-            newLink.href = url;
-            newLink.textContent = `See All`;
-            newLink.style.background = 'rgba(55, 162, 221, 0.13)'; 
-            newLink.style.padding = '5px 12px 5px 12px';
-            newLink.style.borderRadius = '4px';
-            newLink.style.fontSize = '12px';
-            newLink.style.color = 'white'; 
-            newLink.style.border = '1px solid rgba(41, 154, 217, 0.33)'; 
+   
+            if (!title.nextElementSibling || title.nextElementSibling.tagName !== 'A') {
+                const newLink = document.createElement('a');
+                newLink.href = url;
+                newLink.textContent = `See All`;
+                newLink.style.background = 'rgba(55, 162, 221, 0.13)';
+                newLink.style.padding = '5px 12px 5px 12px';
+                newLink.style.borderRadius = '4px';
+                newLink.style.fontSize = '12px';
+                newLink.style.color = 'white';
+                newLink.style.border = '1px solid rgba(41, 154, 217, 0.33)';
 
-            title.insertAdjacentElement('afterend', newLink);
+                // Yeni <a> etiketi oluşturulacak, sonrasına ekliyoruz
+                title.insertAdjacentElement('afterend', newLink);
+            }
         }
     });
 }
