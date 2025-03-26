@@ -1403,3 +1403,9 @@ box-shadow: none !important; font-size: 9pt;
     }
   })
 }
+
+var targetElement = document.querySelector('#sidebar-content > div.sidebar__big > div.sidebar__menu > ul:nth-child(3) > li:nth-child(8) > a');
+
+if (targetElement) {
+    targetElement.textContent = 'CEDABET Exclusive ';
+}
