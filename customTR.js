@@ -216,7 +216,7 @@ function createSigninModal() {
    const svgIcon = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
    svgIcon.classList.add('svg-icon');
    const use = document.createElementNS('http://www.w3.org/2000/svg', 'use');
-   use.setAttribute('href', '/static/media/sprite.6b179d63884598e512b15f3dd0296663.svg#table-games');
+   use.setAttribute('href', '/static/media/sprite.1cea5f3c17045e69440504bcd887b333.svg#table-games');
    svgIcon.appendChild(use);
  
  
