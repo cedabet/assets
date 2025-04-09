@@ -286,19 +286,19 @@ function loadh2Title() {
     sectionTitleElements.forEach(title => {
         let url = '';
 
-        if (title.textContent.trim().includes('Top Games')) {
+        if (title.textContent.trim().includes('Лучшие игры')) {
             url = '/ru/casino/group/lobby';
         }
-        if (title.textContent.trim().includes('Popular Games')) {
+        if (title.textContent.trim().includes('Популярные игры')) {
             url = '/ru/casino/group/new-releases';
         }
-        if (title.textContent.trim().includes('New Releases')) {
+        if (title.textContent.trim().includes('Новые выпуски')) {
             url = '/ru/casino/group/new-releases';
         }
-        if (title.textContent.trim().includes('High RTP')) {
+        if (title.textContent.trim().includes('Высокий RTP')) {
             url = '/ru/casino/group/enhanced-rtp';
         }
-        if (title.textContent.trim().includes('Buy Bonus')) {
+        if (title.textContent.trim().includes('Купить бонус')) {
             url = '/ru/casino/group/bonus-buy';
         }
 
