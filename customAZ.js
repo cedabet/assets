@@ -286,19 +286,19 @@ function loadh2Title() {
     sectionTitleElements.forEach(title => {
         let url = '';
 
-        if (title.textContent.trim().includes('Top Games')) {
+        if (title.textContent.trim().includes('Yuxarı oyunlar')) {
             url = '/az/casino/group/lobby';
         }
-        if (title.textContent.trim().includes('Popular Games')) {
+        if (title.textContent.trim().includes('Populyar oyunlar')) {
             url = '/az/casino/group/new-releases';
         }
-        if (title.textContent.trim().includes('New Releases')) {
+        if (title.textContent.trim().includes('Yeni buraxılışlar')) {
             url = '/az/casino/group/new-releases';
         }
-        if (title.textContent.trim().includes('High RTP')) {
+        if (title.textContent.trim().includes('Yüksək rtp')) {
             url = '/az/casino/group/enhanced-rtp';
         }
-        if (title.textContent.trim().includes('Buy Bonus')) {
+        if (title.textContent.trim().includes('Bonus almaq')) {
             url = '/az/casino/group/bonus-buy';
         }
 
