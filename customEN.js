@@ -335,7 +335,11 @@ function loadh2Title() {
                 return;
             }
 
+        let customSection5 = document.createElement("div");
+            customSection5.id = "custom-section-7";
+            customSection5.classList.add("section", "custom-section");
 
+      
 
         
 		customSection5.innerHTML=`
