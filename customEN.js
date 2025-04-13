@@ -467,7 +467,7 @@ function initSlider() {
     const clone = logoSlide.cloneNode(true);
     logoSlider.appendChild(clone);
 
-    const animationDuration = logos.length * 1.5;
+    const animationDuration = logos.length * 4.5;
     logoSlider.style.animationDuration = animationDuration + 's';
 
     logoSlider.addEventListener('mouseenter', () => {
