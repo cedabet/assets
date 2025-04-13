@@ -331,7 +331,7 @@ function loadh2Title() {
         if (!mainContent) {
 
         } else {
-            if (document.getElementById("custom-section-71123")) {
+            if (document.getElementById("custom-section-7")) {
                 return;
             }
 
