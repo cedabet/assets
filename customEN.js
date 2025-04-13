@@ -335,10 +335,7 @@ function loadh2Title() {
                 return;
             }
 
- 
-            let customSection5 = document.createElement("div");
-            customSection5.id = "custom-section-7";
-            customSection5.classList.add("section", "custom-section");
+
 
         
 		customSection5.innerHTML=`
@@ -481,9 +478,16 @@ function initSlider() {
 
 setTimeout(initSlider, 100);
 
+  let ContentCheck = document.getElementById("custom-section-7");
+		if(ContentCheck != null){
+			    console.log("Element already exists!");
 
+		}
+		else{
+			mainContent.appendChild(customSection5);
+		}
 
-		mainContent.appendChild(customSection5);
+		
 addButtonsToSlider();
         }
 
