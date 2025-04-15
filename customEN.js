@@ -15,6 +15,7 @@
 		  addMenuElementTwo();
 		    setTimeout(updateCopyrightYear, 1000);   
 	 setTimeout(createSigninModal, 2000);  
+		    setTimeout(moveMiniGamesWrapper, 300);   
             var sportspath = window.location.pathname;
             if (sportspath === "/en/sportsbook") {
                 var sidebar = document.getElementById("sidebar");
@@ -64,7 +65,7 @@
 		    addMenuElement();
 		    addMenuElementTwo();
 		      setTimeout(updateCopyrightYear, 1000);  
-
+ setTimeout(moveMiniGamesWrapper, 300);   
 		  
             } else if (path === "/en/vip") {
                 /* alert("VIP sayfasına hoş geldiniz!");*/
@@ -202,10 +203,20 @@ function updateCopyrightYear() {
         }
     });
 	
-var miniGamesWrapper = document.getElementById('mini-games-wrapper');
-var highRtpGamesWrapper = document.getElementById('high-rtp-games-wrapper');
-highRtpGamesWrapper.insertAdjacentElement('afterend', miniGamesWrapper);
-
+}
+function moveMiniGamesWrapper() {
+    // mini-games-wrapper id'sine sahip elementi seç
+    var miniGamesWrapper = document.getElementById('mini-games-wrapper');
+    
+    // high-rtp-games-wrapper id'sine sahip elementi seç
+    var highRtpGamesWrapper = document.getElementById('high-rtp-games-wrapper');
+    
+    // mini-games-wrapper'ı high-rtp-games-wrapper'dan hemen sonra taşı
+    if (miniGamesWrapper && highRtpGamesWrapper) {
+        highRtpGamesWrapper.insertAdjacentElement('afterend', miniGamesWrapper);
+    } else {
+        console.log('Elementler bulunamadı!');
+    }
 }
 
  
