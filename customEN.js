@@ -188,6 +188,16 @@ function createSigninModal() {
          copyrightElement.textContent = ""; 
          copyrightElement.textContent = "© CEDABET.COM, " + currentYear;
      }
+	
+const titles = document.querySelectorAll('h2.section__title');
+
+// Her birini kontrol ediyoruz ve içeriklerini değiştiriyoruz
+titles.forEach(function(title) {
+    if (title.textContent.trim() === 'Mini Games') {
+        title.textContent = 'Ceda Originals';  
+    }
+});
+
  }
  
  
