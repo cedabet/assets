@@ -201,6 +201,11 @@ function updateCopyrightYear() {
 
         }
     });
+	
+var miniGamesWrapper = document.getElementById('mini-games-wrapper');
+var highRtpGamesWrapper = document.getElementById('high-rtp-games-wrapper');
+highRtpGamesWrapper.insertAdjacentElement('afterend', miniGamesWrapper);
+
 }
 
  
