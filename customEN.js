@@ -194,8 +194,11 @@ const titles = document.querySelectorAll('h2.section__title');
 // Her birini kontrol ediyoruz ve içeriklerini değiştiriyoruz
 titles.forEach(function(title) {
     if (title.textContent.trim() === 'Mini Games') {
-        title.textContent = 'Ceda Originals';  
+        title.innerHTML = '<svg class="svg-icon"><use href="/static/media/sprite.1cea5f3c17045e69440504bcd887b333.svg#mini-games" 
+		xlink:href="/static/media/sprite.1cea5f3c17045e69440504bcd887b333.svg#mini-games"></use></svg>Ceda Originals';
     }
+});
+
 });
 
  }
