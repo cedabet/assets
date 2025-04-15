@@ -131,7 +131,7 @@ function createSigninModal() {
                      <!-- Kapatma butonu -->
                      <button id="dontShowAgainBtn" class="modal__close" type="button" style="position: absolute; top: 10px; right: 10px; background: transparent; border: none; color: white; font-size: 48px;">×</button>
                      <a href="/promotion/earn-extra-cash-as-you-play-with-cedabet">
-                     	<img src="https://cedabet.github.io/assets/images/sl12_banner.jpg" alt="Dikey Resim" style="/* height: 600px; */ width: 100%; margin: 0 auto; display: block;">
+                     	<img src="https://cedabet.github.io/assets/images/azerbaycanda.jpg" alt="Dikey Resim" style="/* height: 600px; */ width: 100%; margin: 0 auto; display: block;">
                      </a>
                  </div>
              </div>
