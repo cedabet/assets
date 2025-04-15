@@ -205,13 +205,11 @@ function updateCopyrightYear() {
 	
 }
 function moveMiniGamesWrapper() {
-    // mini-games-wrapper id'sine sahip elementi seç
+
     var miniGamesWrapper = document.getElementById('mini-games-wrapper');
     
-    // high-rtp-games-wrapper id'sine sahip elementi seç
-    var highRtpGamesWrapper = document.getElementById('high-rtp-games-wrapper');
+    var highRtpGamesWrapper = document.getElementById('buy-bonus-games-wrapper');
     
-    // mini-games-wrapper'ı high-rtp-games-wrapper'dan hemen sonra taşı
     if (miniGamesWrapper && highRtpGamesWrapper) {
         highRtpGamesWrapper.insertAdjacentElement('afterend', miniGamesWrapper);
     } else {
