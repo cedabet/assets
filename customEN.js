@@ -180,26 +180,29 @@ function createSigninModal() {
  
  
  
- function updateCopyrightYear() {
-     const copyrightElement = document.querySelector(".footer__copyright");
- 
-     if (copyrightElement) {
-         const currentYear = new Date().getFullYear();
-         copyrightElement.textContent = ""; 
-         copyrightElement.textContent = "© CEDABET.COM, " + currentYear;
-     }
-	
-const titles = document.querySelectorAll('h2.section__title');
-titles.forEach(function(title) {
-    if (title.textContent.trim() === 'Mini Games' || title.textContent.trim() === 'Mini Oyunlar' || title.textContent.trim() === 'Мини -игры') {
-        title.innerHTML = '<svg class="svg-icon"><use href="/static/media/sprite.1cea5f3c17045e69440504bcd887b333.svg#mini-games" xlink:href="/static/media/sprite.1cea5f3c17045e69440504bcd887b333.svg#mini-games"></use></svg>Ceda Originals';
+function updateCopyrightYear() {
+    const copyrightElement = document.querySelector(".footer__copyright");
+
+    if (copyrightElement) {
+        const currentYear = new Date().getFullYear();
+        copyrightElement.textContent = ""; 
+        copyrightElement.textContent = "© CEDABET.COM, " + currentYear;
     }
-});
 
-});
+    const titles = document.querySelectorAll('h2.section__title');
 
- }
- 
+    titles.forEach(function(title) {
+        // Başlık içeriğini kontrol ediyoruz
+        if (title.textContent.trim() === 'Mini Games' || 
+            title.textContent.trim() === 'Mini Oyunlar' || 
+            title.textContent.trim() === 'Мини -игры') {
+            
+            // Metni sadece değiştiriyoruz, SVG'yi değiştirmiyoruz
+            title.firstChild.textContent = 'Ceda Originals';  // Burada 'Ceda Originals' ile değiştirdim
+        }
+    });
+}
+
  
  function addMenuElement() {
    const sidebarNav = document.querySelector('.sidebar__nav.sidebar__nav--border');
