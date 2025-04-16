@@ -21,6 +21,10 @@
                 var sidebar = document.getElementById("sidebar");
                 sidebar.className = "";
                 sidebar.classList.add("sidebar", "active");
+		      var sidebarLogo = document.querySelector(".header__logo");
+    if (sidebarLogo) {
+        sidebarLogo.style.setProperty('display', 'none', 'important');
+    }
             }
             isFirstLoad = false;
         }
@@ -85,7 +89,10 @@ var sidebarBtn = document.querySelector(".sidebar__btn");
                     var sidebar = document.getElementById("sidebar");
                     sidebar.className = "";
                     sidebar.classList.add("sidebar", "active");			  
-			
+			      var sidebarLogo = document.querySelector(".header__logo");
+    if (sidebarLogo) {
+        sidebarLogo.style.setProperty('display', 'none', 'important');
+    }
                 }
 
             }
