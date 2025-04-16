@@ -56,7 +56,7 @@
 		  
             } else if (path === "/en/vip") {
                 /* alert("VIP sayfasına hoş geldiniz!");*/
-		    setTimeout(moveMiniGamesWrapper, 300); 
+		    moveMiniGamesWrapper()
             }
 
             else if (path === "/en/sportsbook") {
@@ -70,7 +70,7 @@
     if (sidebarLogo) {
         sidebarLogo.style.setProperty('display', 'none', 'important');
     }
-			setTimeout(moveMiniGamesWrapper, 300); 
+			 moveMiniGamesWrapper()
                 }
 
             }
@@ -79,7 +79,7 @@
     if (sidebarLogo) {
         sidebarLogo.style.setProperty('display', 'none', 'important');
     } 
-			   setTimeout(moveMiniGamesWrapper, 300);   
+			 moveMiniGamesWrapper() 
 	
 		  }
         }, 1000);
