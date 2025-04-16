@@ -77,6 +77,8 @@
     if (sidebarLogo) {
         sidebarLogo.style.setProperty('display', 'none', 'important');
     } 
+			   setTimeout(moveMiniGamesWrapper, 300);   
+	
 		  }
         }, 1000);
     }
