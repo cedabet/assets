@@ -31,7 +31,7 @@
 
       
 
-        var sidebarBtn = document.querySelector(".sidebar__btn");
+     /*   var sidebarBtn = document.querySelector(".sidebar__btn");
 
         sidebarBtn.addEventListener("click", function () {
             var sportspath2 = window.location.pathname;
@@ -51,7 +51,7 @@
             }
         });
 
-     
+     */
 
     function checkUrlChange() {
         if (location.href !== lastUrl) {
