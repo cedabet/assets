@@ -361,7 +361,7 @@ function loadh2Title() {
       style.id = "mini-games-style";
       style.textContent = `
        
-        .col-12 { width: 100%; }
+    
         .section__title {
           font-size: 24px;
           font-weight: bold;
@@ -457,7 +457,8 @@ function loadh2Title() {
 
     const colGames = document.createElement("div");
     colGames.className = "col-12";
-
+  colGames.style.width = "100%";
+	 
     const sectionWrapper = document.createElement("div");
     sectionWrapper.className = "section-wrapper";
 
