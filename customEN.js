@@ -51,6 +51,7 @@
 		    addMenuElement();
 		    addMenuElementTwo();
 		      setTimeout(updateCopyrightYear, 1000);  
+		    
  setTimeout(moveMiniGamesWrapper, 300);   
 		  
             } else if (path === "/en/vip") {
@@ -204,6 +205,7 @@ function moveMiniGamesWrapper() {
     
     if (miniGamesWrapper && highRtpGamesWrapper) {
         highRtpGamesWrapper.insertAdjacentElement('afterend', miniGamesWrapper);
+	    CreateCedaOriginal();
     } else {
         console.log('Elementler bulunamadı!');
     }
@@ -341,6 +343,149 @@ function loadh2Title() {
         }
     });
 }
+  function CreateCedaOriginal() {
+    const games = [
+      { name: "Plinko", url: "/our_game/plinko", img: "https://winna.imgix.net/game-image/1733842499446/Plinko.avif" },
+      { name: "Mines", url: "/our_game/mines", img: "https://winna.imgix.net/game-image/1733842482583/Mines.avif" },
+      { name: "Keno", url: "/our_game/keno", img: "https://winna.imgix.net/game-image/1733842447998/keno.avif" },
+      { name: "Limbo", url: "/our_game/limbo", img: "https://winna.imgix.net/game-image/1733842458721/Limbo.avif" },
+      { name: "Dice", url: "/our_game/dice", img: "https://winna.imgix.net/game-image/1733842388608/Dice.avif" },
+      { name: "Blackjack", url: "/our_game/blackjack", img: "https://winna.imgix.net/game-image/1736933751460/Blackjack.avif" }
+    ];
+
+    // Stil sadece bir kez eklensin
+    if (!document.getElementById("mini-games-style")) {
+      const style = document.createElement("style");
+      style.id = "mini-games-style";
+      style.textContent = `
+        .row { display: flex; flex-direction: column; gap: 20px; }
+        .col-12 { width: 100%; }
+        .section__title {
+          font-size: 24px;
+          font-weight: bold;
+          display: flex;
+          align-items: center;
+          gap: 8px;
+        }
+        .section__title svg { width: 24px; height: 24px; }
+        .section-wrapper { display: flex; flex-direction: column; gap: 20px; }
+        .game-list-wrapper { position: relative; }
+        .game-list {
+          display: flex;
+          overflow-x: auto;
+          gap: 16px;
+          padding-top: 8px;
+        }
+        .game-list a {
+          flex: 0 0 calc(10% - 0);
+          max-width: calc(10% - 0);
+          text-decoration: none;
+          display: flex;
+          justify-content: center;
+        }
+        .game-card {
+          aspect-ratio: 105 / 142;
+          width: 100%;
+          cursor: pointer;
+          overflow: hidden;
+          transition: transform 0.3s ease;
+        }
+        .game-card:hover { transform: translateY(-8px); }
+        .game-card img {
+          width: 100%;
+          height: 100%;
+          object-fit: contain;
+        }
+        @media (max-width: 1024px) {
+          .game-list a {
+            flex: 0 0 calc(33.33% - 16px);
+            max-width: calc(33.33% - 16px);
+          }
+        }
+        @media (max-width: 480px) {
+          .game-list a {
+            flex: 0 0 calc(50% - 16px);
+            max-width: calc(50% - 16px);
+          }
+        }
+      `;
+      document.head.appendChild(style);
+    }
+
+    const miniGamesWrapper = document.querySelector("#mini-games-wrapper");
+    if (!miniGamesWrapper) {
+      console.error("mini-games-wrapper bulunamadı!");
+      return;
+    }
+
+    const container = miniGamesWrapper.querySelector(".container");
+    if (!container) {
+      console.error("container bulunamadı!");
+      return;
+    }
+
+    const oldRow = container.querySelector(".row");
+    if (oldRow) oldRow.remove();
+
+    const row = document.createElement("div");
+    row.className = "row";
+
+    const colTitle = document.createElement("div");
+    colTitle.className = "col-12";
+    const h2 = document.createElement("h2");
+    h2.className = "section__title";
+
+    const svg = document.createElementNS("http://www.w3.org/2000/svg", "svg");
+    svg.setAttribute("class", "svg-icon");
+
+    const use = document.createElementNS("http://www.w3.org/2000/svg", "use");
+    use.setAttribute("href", "/static/media/sprite.1cea5f3c17045e69440504bcd887b333.svg#mini-games");
+    use.setAttribute("xlink:href", "/static/media/sprite.1cea5f3c17045e69440504bcd887b333.svg#mini-games");
+
+    svg.appendChild(use);
+    h2.appendChild(svg);
+    h2.append("Ceda Originals");
+
+    colTitle.appendChild(h2);
+    row.appendChild(colTitle);
+
+    const colGames = document.createElement("div");
+    colGames.className = "col-12";
+
+    const sectionWrapper = document.createElement("div");
+    sectionWrapper.className = "section-wrapper";
+
+    const gameListWrapper = document.createElement("div");
+    gameListWrapper.className = "game-list-wrapper";
+
+    const gameList = document.createElement("div");
+    gameList.className = "game-list";
+
+    games.forEach(game => {
+      const a = document.createElement("a");
+      a.href = game.url;
+
+      const card = document.createElement("div");
+      card.className = "game-card";
+
+      const img = document.createElement("img");
+      img.src = game.img;
+      img.alt = game.name;
+      img.loading = "lazy";
+
+      card.appendChild(img);
+      a.appendChild(card);
+      gameList.appendChild(a);
+    });
+
+    gameListWrapper.appendChild(gameList);
+    sectionWrapper.appendChild(gameListWrapper);
+    colGames.appendChild(sectionWrapper);
+    row.appendChild(colGames);
+
+    container.appendChild(row);
+  }
+
 
 
     function loadVipFeatures() {
