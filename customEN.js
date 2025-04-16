@@ -352,7 +352,7 @@ function loadh2Title() {
       { name: "Keno", url: "https://cedabet.com/en/casino/games/ebetlab-keno-originals", img: "https://cedabet.github.io/assets/images/keno.jpg" },
       { name: "Limbo", url: "https://cedabet.com/en/casino/games/hacksaw-limbo", img: "https://cedabet.github.io/assets/images/limbo.jpg" },
       { name: "Dice", url: "https://cedabet.com/en/casino/games/ebetlab-dice-originals", img: "https://cedabet.github.io/assets/images/dice.jpg" },
-      { name: "Blackjack", url: "https://cedabet.com/en/casino/games/evolution-blackjack", img: "https://cedabet.github.io/assets/images/dice.jpg" }
+      { name: "Blackjack", url: "https://cedabet.com/en/casino/games/evolution-blackjack", img: "https://cedabet.github.io/assets/images/blackjack.jpg" }
     ];
 
     // Stil sadece bir kez eklensin
@@ -384,6 +384,7 @@ function loadh2Title() {
           text-decoration: none;
           display: flex;
           justify-content: center;
+	  border-radius:12px;
         }
         .game-card {
           aspect-ratio: 105 / 142;
