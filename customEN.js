@@ -22,11 +22,6 @@
                 sidebar.className = "";
                 sidebar.classList.add("sidebar", "active");
             }
-		else{
-			var sidebarLogo = document.querySelector(".sidebar__logo");
-                    sidebarLogo.style.setProperty('display', 'block', 'important');
-
-		}
             isFirstLoad = false;
         }
 
@@ -36,7 +31,7 @@
 
         sidebarBtn.addEventListener("click", function () {
             var sportspath2 = window.location.pathname;
-		   var sidebarLogo = document.querySelector(".sidebar__logo");
+		   var sidebarLogo = document.querySelector(".header__logo");
 
             if (sportspath2 === "/en/sportsbook") {
                 var sidebar = document.getElementById("sidebar");
@@ -46,19 +41,16 @@
                     sidebar.className = ""; // Tüm sınıfları temizle
                     sidebar.classList.add("sidebar", "active"); 
 	
-                    sidebarLogo.style.setProperty('display', 'block', 'important');
+                    sidebarLogo.style.setProperty('display', 'none', 'important');
                 } else {
 
                     sidebar.className = ""; // Tüm sınıfları temizle
                     sidebar.classList.add("sidebar"); // Sadece 'sidebar' sınıfını ekle
-		    sidebarLogo.style.setProperty('display', 'none', 'important'); 
+		    sidebarLogo.style.setProperty('display', 'block', 'important'); 
 
                 }
 
             }
-		else{
-			     sidebarLogo.style.setProperty('display', 'block', 'important');
-		}
         });
 
      
