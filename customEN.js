@@ -56,6 +56,7 @@
 		  
             } else if (path === "/en/vip") {
                 /* alert("VIP sayfasına hoş geldiniz!");*/
+		    setTimeout(moveMiniGamesWrapper, 300); 
             }
 
             else if (path === "/en/sportsbook") {
@@ -69,6 +70,7 @@
     if (sidebarLogo) {
         sidebarLogo.style.setProperty('display', 'none', 'important');
     }
+			setTimeout(moveMiniGamesWrapper, 300); 
                 }
 
             }
@@ -211,10 +213,10 @@ function moveMiniGamesWrapper() {
 	 miniGamesWrapper.insertAdjacentElement('afterend', changeLine);
 	    CreateCedaOriginal();
     } else {
-	    alert("else calıstı");
+	
     var fallbackSection = document.getElementById('custom-section-7');
         if (fallbackSection) {
-		    alert("kaldırıldı ");
+		 
             fallbackSection.remove();
         }
     }
