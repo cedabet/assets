@@ -22,6 +22,11 @@
                 sidebar.className = "";
                 sidebar.classList.add("sidebar", "active");
             }
+		else{
+			var sidebarLogo = document.querySelector(".sidebar__logo");
+                    sidebarLogo.style.setProperty('display', 'block', 'important');
+
+		}
             isFirstLoad = false;
         }
 
