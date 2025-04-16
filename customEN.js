@@ -200,7 +200,7 @@ function moveMiniGamesWrapper() {
 
     var miniGamesWrapper = document.getElementById('mini-games-wrapper');
     
-    var highRtpGamesWrapper = document.getElementById('buy-bonus-games-wrapper');
+    var highRtpGamesWrapper = document.getElementById('main-slider');
     
     if (miniGamesWrapper && highRtpGamesWrapper) {
         highRtpGamesWrapper.insertAdjacentElement('afterend', miniGamesWrapper);
