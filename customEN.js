@@ -204,7 +204,7 @@ function moveMiniGamesWrapper() {
     var highRtpGamesWrapper = document.getElementById('main-slider');
     var changeLine = document.getElementById('custom-section-7');
 	
-    if (miniGamesWrapper && highRtpGamesWrapper) {
+    if (miniGamesWrapper && highRtpGamesWrapper && changeLine ) {
         highRtpGamesWrapper.insertAdjacentElement('afterend', miniGamesWrapper);
 	 miniGamesWrapper.insertAdjacentElement('afterend', changeLine);
 	    CreateCedaOriginal();
