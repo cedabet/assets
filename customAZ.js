@@ -21,13 +21,17 @@
                 var sidebar = document.getElementById("sidebar");
                 sidebar.className = "";
                 sidebar.classList.add("sidebar", "active");
+		    	      var sidebarLogo = document.querySelector(".header__logo");
+    if (sidebarLogo) {
+        sidebarLogo.style.setProperty('display', 'none', 'important');
+    }
             }
             isFirstLoad = false;
         }
 
       
 
-        var sidebarBtn = document.querySelector(".sidebar__btn");
+      /*  var sidebarBtn = document.querySelector(".sidebar__btn");
 
         sidebarBtn.addEventListener("click", function () {
             var sportspath2 = window.location.pathname;
@@ -46,7 +50,7 @@
 
             }
         });
-
+*/
      
 
     function checkUrlChange() {
@@ -77,11 +81,19 @@
                     var sidebar = document.getElementById("sidebar");
                     sidebar.className = "";
                     sidebar.classList.add("sidebar", "active");
+					      var sidebarLogo = document.querySelector(".header__logo");
+    if (sidebarLogo) {
+        sidebarLogo.style.setProperty('display', 'none', 'important');
+    }
                 }
              
 
             }
-
+	  else if (path !== "/en/sportsbook") {
+			 	      var sidebarLogo = document.querySelector(".header__logo");
+    if (sidebarLogo) {
+        sidebarLogo.style.setProperty('display', 'none', 'important');
+    } 
 
 
 
