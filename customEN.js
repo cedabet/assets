@@ -473,7 +473,7 @@ function initSlider() {
         return;
     }
     
-    s.forEach( => {
+    logos.forEach( => {
         const Item = document.createElement('div');
         Item.className = '-item';
 
