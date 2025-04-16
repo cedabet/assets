@@ -209,8 +209,10 @@ function moveMiniGamesWrapper() {
 	 miniGamesWrapper.insertAdjacentElement('afterend', changeLine);
 	    CreateCedaOriginal();
     } else {
+	    alert("else calıstı");
     var fallbackSection = document.getElementById('custom-section-7');
         if (fallbackSection) {
+		    alert("kaldırıldı ");
             fallbackSection.remove();
         }
     }
