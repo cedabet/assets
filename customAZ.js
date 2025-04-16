@@ -89,7 +89,7 @@
              
 
             }
-	  else if (path !== "/en/sportsbook") {
+	  else if (path !== "/az/sportsbook") {
 			 	      var sidebarLogo = document.querySelector(".header__logo");
     if (sidebarLogo) {
         sidebarLogo.style.setProperty('display', 'none', 'important');
