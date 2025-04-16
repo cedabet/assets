@@ -96,6 +96,12 @@ var sidebarBtn = document.querySelector(".sidebar__btn");
                 }
 
             }
+		  else if (path !== "/en/sportsbook") {
+			 	      var sidebarLogo = document.querySelector(".header__logo");
+    if (sidebarLogo) {
+        sidebarLogo.style.setProperty('display', 'none', 'important');
+    } 
+		  }
         }, 1000);
     }
 
