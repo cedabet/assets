@@ -30,32 +30,7 @@
         }
 
       
-   var sidebarLogo = document.querySelector(".header__logo");
-
-var sidebarBtn = document.querySelector(".sidebar__btn");
-
-        sidebarBtn.addEventListener("click", function () {
-            var sportspath2 = window.location.pathname;
-		   var sidebarLogo = document.querySelector(".header__logo");
-
-            if (sportspath2 === "/en/sportsbook") {
-            /*  var sidebar = document.getElementById("sidebar");*/
-                if (sidebar.className.indexOf("active") !== -1) { // 'active' sınıfı yoksa
-
-                    sidebar.className = ""; // Tüm sınıfları temizle
-                    sidebar.classList.add("sidebar", "active"); 
-	
-                    sidebarLogo.style.setProperty('display', 'block', 'important');
-                } else {
-
-                    sidebar.className = ""; // Tüm sınıfları temizle
-                    sidebar.classList.add("sidebar"); // Sadece 'sidebar' sınıfını ekle
-		    sidebarLogo.style.setProperty('display', 'none', 'important'); 
-
-                }
-
-            }
-        });
+  
         
 
      
