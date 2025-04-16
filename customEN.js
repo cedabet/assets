@@ -360,7 +360,7 @@ function loadh2Title() {
       const style = document.createElement("style");
       style.id = "mini-games-style";
       style.textContent = `
-        .row { display: flex; flex-direction: column; gap: 20px; }
+       
         .col-12 { width: 100%; }
         .section__title {
           font-size: 24px;
@@ -430,9 +430,12 @@ function loadh2Title() {
     const oldRow = container.querySelector(".row");
     if (oldRow) oldRow.remove();
 
-    const row = document.createElement("div");
+     const row = document.createElement("div");
     row.className = "row";
-
+    row.style.display = "flex";
+    row.style.flexDirection = "column";
+    row.style.gap = "20px";
+	  
     const colTitle = document.createElement("div");
     colTitle.className = "col-12";
     const h2 = document.createElement("h2");
