@@ -41,12 +41,12 @@
                     sidebar.className = ""; // Tüm sınıfları temizle
                     sidebar.classList.add("sidebar", "active"); 
 	
-                    sidebarLogo.style.setProperty('display', 'none', 'important');
+                    sidebarLogo.style.setProperty('display', 'block', 'important');
                 } else {
 
                     sidebar.className = ""; // Tüm sınıfları temizle
                     sidebar.classList.add("sidebar"); // Sadece 'sidebar' sınıfını ekle
-		    sidebarLogo.style.setProperty('display', 'block', 'important'); 
+		    sidebarLogo.style.setProperty('display', 'none', 'important'); 
 
                 }
 
