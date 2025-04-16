@@ -95,7 +95,7 @@
         sidebarLogo.style.setProperty('display', 'none', 'important');
     } 
 
-
+	  }
 
         }, 1000);
     }
