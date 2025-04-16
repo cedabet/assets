@@ -31,10 +31,11 @@
 
         sidebarBtn.addEventListener("click", function () {
             var sportspath2 = window.location.pathname;
+		   var sidebarLogo = document.querySelector(".sidebar__logo");
+
             if (sportspath2 === "/en/sportsbook") {
                 var sidebar = document.getElementById("sidebar");
-                var sidebarLogo = document.querySelector(".sidebar__logo");
-
+             
                 if (sidebar.className.indexOf("active") !== -1) { // 'active' sınıfı yoksa
 
                     sidebar.className = ""; // Tüm sınıfları temizle
@@ -50,6 +51,9 @@
                 }
 
             }
+		else{
+			     sidebarLogo.style.setProperty('display', 'block', 'important');
+		}
         });
 
      
