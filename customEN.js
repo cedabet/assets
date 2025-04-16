@@ -202,9 +202,11 @@ function moveMiniGamesWrapper() {
     var miniGamesWrapper = document.getElementById('mini-games-wrapper');
     
     var highRtpGamesWrapper = document.getElementById('main-slider');
-    
+    var changeLine = document.getElementById('custom-section-7');
+	
     if (miniGamesWrapper && highRtpGamesWrapper) {
         highRtpGamesWrapper.insertAdjacentElement('afterend', miniGamesWrapper);
+	 miniGamesWrapper.insertAdjacentElement('afterend', changeLine);
 	    CreateCedaOriginal();
     } else {
         console.log('Elementler bulunamadı!');
@@ -345,12 +347,12 @@ function loadh2Title() {
 }
   function CreateCedaOriginal() {
     const games = [
-      { name: "Plinko", url: "/our_game/plinko", img: "https://winna.imgix.net/game-image/1733842499446/Plinko.avif" },
-      { name: "Mines", url: "/our_game/mines", img: "https://winna.imgix.net/game-image/1733842482583/Mines.avif" },
-      { name: "Keno", url: "/our_game/keno", img: "https://winna.imgix.net/game-image/1733842447998/keno.avif" },
-      { name: "Limbo", url: "/our_game/limbo", img: "https://winna.imgix.net/game-image/1733842458721/Limbo.avif" },
-      { name: "Dice", url: "/our_game/dice", img: "https://winna.imgix.net/game-image/1733842388608/Dice.avif" },
-      { name: "Blackjack", url: "/our_game/blackjack", img: "https://winna.imgix.net/game-image/1736933751460/Blackjack.avif" }
+      { name: "Plinko", url: "https://cedabet.com/en/casino/games/ebetlab-plinko-originals", img: "https://cedabet.github.io/assets/images/plinko.jpg" },
+      { name: "Mines", url: "https://cedabet.com/en/casino/games/ebetlab-mines-originals", img: "https://cedabet.github.io/assets/images/mines.jpg" },
+      { name: "Keno", url: "https://cedabet.com/en/casino/games/ebetlab-keno-originals", img: "https://cedabet.github.io/assets/images/keno.jpg" },
+      { name: "Limbo", url: "https://cedabet.com/en/casino/games/hacksaw-limbo", img: "https://cedabet.github.io/assets/images/limbo.jpg" },
+      { name: "Dice", url: "https://cedabet.com/en/casino/games/ebetlab-dice-originals", img: "https://cedabet.github.io/assets/images/dice.jpg" },
+      { name: "Blackjack", url: "https://cedabet.com/en/casino/games/evolution-blackjack", img: "https://cedabet.github.io/assets/images/dice.jpg" }
     ];
 
     // Stil sadece bir kez eklensin
