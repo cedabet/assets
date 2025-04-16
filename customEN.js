@@ -87,12 +87,14 @@ var sidebarBtn = document.querySelector(".sidebar__btn");
         });
 			
                 }
-		    else{
-		       sidebarLogo.style.setProperty('display', 'none', 'important'); 
-		    }
+
              
 
             }
+		else{
+			   var sidebarLogo = document.querySelector(".header__logo");
+  sidebarLogo.style.setProperty('display', 'none', 'important'); 
+		}
 
 
 
