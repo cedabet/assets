@@ -39,9 +39,9 @@
 
                     sidebar.className = ""; // Tüm sınıfları temizle
                     sidebar.classList.add("sidebar", "active"); // 'sidebar' ve 'active' sınıflarını ekle
-			 if (sidebarLogo) {
+	
                 sidebarLogo.style.display = "none";
-            }
+            
                 } else {
 
                     sidebar.className = ""; // Tüm sınıfları temizle
