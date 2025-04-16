@@ -33,11 +33,15 @@
             var sportspath2 = window.location.pathname;
             if (sportspath2 === "/en/sportsbook") {
                 var sidebar = document.getElementById("sidebar");
+                var sidebarLogo = document.querySelector(".sidebar__logo");
 
                 if (sidebar.className.indexOf("active") !== -1) { // 'active' sınıfı yoksa
 
                     sidebar.className = ""; // Tüm sınıfları temizle
                     sidebar.classList.add("sidebar", "active"); // 'sidebar' ve 'active' sınıflarını ekle
+			 if (sidebarLogo) {
+                sidebarLogo.style.display = "none";
+            }
                 } else {
 
                     sidebar.className = ""; // Tüm sınıfları temizle
@@ -460,42 +464,42 @@ function initSlider() {
             { src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/Leander.svg", alt: "YGR Games", url: "/en/providers/ygrgames" }
         ];
 
-    const logoSlide = document.getElementById('logoSlide');
-    const logoSlider = document.getElementById('logoSlider');
+    const Slide = document.getElementById('Slide');
+    const Slider = document.getElementById('Slider');
 
 
-    if (!logoSlide || !logoSlider) {
+    if (!Slide || !Slider) {
   
         return;
     }
     
-    logos.forEach(logo => {
-        const logoItem = document.createElement('div');
-        logoItem.className = 'logo-item';
+    s.forEach( => {
+        const Item = document.createElement('div');
+        Item.className = '-item';
 
         const link = document.createElement('a');
-        link.href = logo.url;
+        link.href = .url;
 
-        if (logo.src) {
+        if (.src) {
             const img = document.createElement('img');
-            img.src = logo.src;
-            img.alt = logo.alt;
+            img.src = .src;
+            img.alt = .alt;
             img.loading = 'lazy';
             link.appendChild(img);
         } else {
             const textSpan = document.createElement('span');
-            textSpan.textContent = logo.alt;
+            textSpan.textContent = .alt;
             link.appendChild(textSpan);
         }
 
-        logoItem.appendChild(link);
-        logoSlide.appendChild(logoItem);
+        Item.appendChild(link);
+        Slide.appendChild(Item);
     });
 
-    const clone = logoSlide.cloneNode(true);
-    logoSlider.appendChild(clone);
+    const clone = Slide.cloneNode(true);
+    Slider.appendChild(clone);
 
-    const animationDuration = logos.length * 4.5;
+    const animationDuration = s.length * 4.5;
     logoSlider.style.animationDuration = animationDuration + 's';
 
     logoSlider.addEventListener('mouseenter', () => {
