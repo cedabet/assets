@@ -38,14 +38,15 @@
                 if (sidebar.className.indexOf("active") !== -1) { // 'active' sınıfı yoksa
 
                     sidebar.className = ""; // Tüm sınıfları temizle
-                    sidebar.classList.add("sidebar", "active"); // 'sidebar' ve 'active' sınıflarını ekle
+                    sidebar.classList.add("sidebar", "active"); 
 	
-                sidebarLogo.style.display = "none";
-            
+                    sidebarLogo.style.setProperty('display', 'none', 'important');
                 } else {
 
                     sidebar.className = ""; // Tüm sınıfları temizle
                     sidebar.classList.add("sidebar"); // Sadece 'sidebar' sınıfını ekle
+		    sidebarLogo.style.setProperty('display', 'block', 'important'); 
+
                 }
 
             }
