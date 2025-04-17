@@ -572,7 +572,7 @@ function CreateCedaOriginalTwo() {
   const gameListWrapper = document.createElement("div");
  // gameListWrapper.className = "game-list-wrapper";
   gameListWrapper.style.position = "relative";
-  gameListWrapper.style.height = "150px";
+  //gameListWrapper.style.height = "150px";
 
   const gameList = document.createElement("div");
 //gameList.className = "game-list";
@@ -611,8 +611,9 @@ function CreateCedaOriginalTwo() {
     img.alt = game.name;
     img.loading = "lazy";
     img.style.width = "100%";
-    img.style.height = "142px";
-    img.style.objectFit = "fill";
+    img.style.height = "100%";
+    img.style.objectFit = "cover";
+    img.style.objectPosition = "left bottom";
 
     card.appendChild(img);
     a.appendChild(card);
