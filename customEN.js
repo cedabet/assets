@@ -71,7 +71,7 @@ document.head.appendChild(link);
     function handlePageScripts(path) {
         setTimeout(function() {
             if (path === "/en/") {
-                alert("en");
+               
                 clearDynamicContent()
                 loadVipFeatures();
                 setTimeout(loadh2Title, 1000);
