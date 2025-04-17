@@ -367,8 +367,7 @@ function loadh2Title() {
             url = '/en/casino/group/bonus-buy';
         }
 
-        // Eğer URL varsa ve başlığın hemen sonrasında zaten bir <a>
-    etiketi yoksa
+        // Eğer URL varsa ve başlığın hemen sonrasında zaten bir <a>etiketi yoksa
     if (url) {
 
     if (!title.nextElementSibling || title.nextElementSibling.tagName !== 'A') {
@@ -382,8 +381,7 @@ function loadh2Title() {
     newLink.style.color = 'white';
     newLink.style.border = '1px solid rgba(41, 154, 217, 0.33)';
 
-    // Yeni <a>
-        etiketi oluşturulacak, sonrasına ekliyoruz
+    // Yeni <a> etiketi oluşturulacak, sonrasına ekliyoruz
         title.insertAdjacentElement('afterend', newLink);
         }
         }
