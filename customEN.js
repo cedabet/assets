@@ -52,13 +52,14 @@
 		    addMenuElementTwo();
 		      setTimeout(updateCopyrightYear, 1000);  
 		    
- setTimeout(moveMiniGamesWrapper, 300);   
+ setTimeout(moveMiniGamesWrapper, 200);   
 		  
             } else if (path === "/en/vip") {
                 /* alert("VIP sayfasına hoş geldiniz!");*/
-		    moveMiniGamesWrapper()
+		    moveMiniGamesWrapper();
             }
              else if (path === "/en/casino") {
+		         moveMiniGamesWrapper();
                 CreateCedaOriginal();
             }
             else if (path === "/en/sportsbook") {
@@ -72,7 +73,7 @@
     if (sidebarLogo) {
         sidebarLogo.style.setProperty('display', 'none', 'important');
     }
-			 moveMiniGamesWrapper()
+			 moveMiniGamesWrapper();
                 }
 
             }
