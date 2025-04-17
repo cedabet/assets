@@ -14,9 +14,9 @@
 		addMenuElement();
 		  addMenuElementTwo();
 		    setTimeout(updateCopyrightYear, 1000);   
-	 setTimeout(createSigninModal, 2000);  
-		  //  setTimeout(moveMiniGamesWrapper, 300);   
-		CreateCedaOriginalTwo();
+			 setTimeout(createSigninModal, 2000); 	
+				CreateCedaOriginal();
+					CreateCedaOriginalTwo();
 		 
 		
             var sportspath = window.location.pathname;
@@ -55,7 +55,7 @@
 		    addMenuElementTwo();
 		      setTimeout(updateCopyrightYear, 1000);  
 		    
-// setTimeout(moveMiniGamesWrapper, 200);   
+		     CreateCedaOriginal();  
 		     CreateCedaOriginalTwo();
             } else if (path === "/en/vip") {
                 /* alert("VIP sayfasına hoş geldiniz!");*/
@@ -63,7 +63,7 @@
             }
              else if (path === "/en/casino") {
 		      //   moveMiniGamesWrapper();
-            
+            		CreateCedaOriginal();
 		     CreateCedaOriginalTwo();
             }
             else if (path === "/en/sportsbook") {
