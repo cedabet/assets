@@ -87,7 +87,22 @@ document.head.appendChild(link);
 
                 
 
-            }else if (path !== "/en/sportsbook") {
+            }
+	      else if (path === "/en/e-sport") {
+              alert("trade");
+                    var sidebar = document.getElementById("sidebar");
+                    sidebar.className = "";
+                    sidebar.classList.add("sidebar", "sidebar--sport-active");
+                    var sidebarLogo = document.querySelector(".header__logo");
+                    if (sidebarLogo) {
+                        sidebarLogo.style.setProperty('display', 'none', 'important');
+                    }
+                    clearDynamicContent()
+
+                
+
+            }
+	      else if (path !== "/en/sportsbook") {
                 var sidebarLogo = document.querySelector(".header__logo");
                 if (sidebarLogo) {
                     sidebarLogo.style.setProperty('display', 'none', 'important');
