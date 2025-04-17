@@ -525,12 +525,30 @@ function loadh2Title() {
   }
 
 
+
 function CreateCedaOriginalTwo() {
   const games = [
-    { name: "Baccarat", url: "https://cedabet.com/en/casino/games/evolution-baccarat", img: "https://cedabet.github.io/assets/images/baccarat.webp" },
-    { name: "BlackJack", url: "https://cedabet.com/en/casino/games/evolution-blackjack", img: "https://cedabet.github.io/assets/images/blackjack.webp" },
-    { name: "roulette", url: "https://cedabet.com/en/casino/games/evolution-roulette", img: "https://cedabet.github.io/assets/images/roulette.webp" },
+    {
+      name: "Baccarat",
+      url: "https://cedabet.com/en/casino/games/evolution-baccarat",
+      img: "https://cedabet.github.io/assets/images/baccarat.webp",
+      imgMobile: "https://winna.imgix.net/game-image/1734000254921/Baccarat.avif?format=auto&auto=format&dpr=1.6&w=180"
+    },
+    {
+      name: "BlackJack",
+      url: "https://cedabet.com/en/casino/games/evolution-blackjack",
+      img: "https://cedabet.github.io/assets/images/blackjack.webp",
+      imgMobile: "https://winna.imgix.net/game-image/1734082831018/Black%E2%80%A8Jack.avif?format=auto&auto=format&dpr=1.6&w=180"
+    },
+    {
+      name: "roulette",
+      url: "https://cedabet.com/en/casino/games/evolution-roulette",
+      img: "https://cedabet.github.io/assets/images/roulette.webp",
+      imgMobile: "https://winna.imgix.net/game-image/1734002459483/Roulette.avif?format=auto&auto=format&dpr=1.6&w=180"
+    }
   ];
+
+  const isMobile = window.innerWidth <= 768; // Mobil kontrolü
 
   const popularGamesWrapper = document.querySelector("#popular-games-wrapper");
   if (!popularGamesWrapper) {
@@ -541,11 +559,11 @@ function CreateCedaOriginalTwo() {
   const miniGamesWrapper = document.createElement("div");
   miniGamesWrapper.id = "mini-games-wrapper-2";
   miniGamesWrapper.classList.add("section");
+
   const container = document.createElement("div");
   container.className = "container";
 
   const row = document.createElement("div");
- //row.className = "row";
   row.style.display = "flex";
   row.style.flexDirection = "column";
   row.style.gap = "20px";
@@ -554,7 +572,7 @@ function CreateCedaOriginalTwo() {
   colTitle.className = "col-12";
 
   const h2 = document.createElement("h2");
- h2.className = "section__title";
+  h2.className = "section__title";
   h2.style.fontSize = "18px";
   h2.style.fontWeight = "bold";
   h2.style.display = "flex";
@@ -580,15 +598,12 @@ function CreateCedaOriginalTwo() {
   colGames.style.width = "100%";
 
   const sectionWrapper = document.createElement("div");
- // sectionWrapper.className = "section-wrapper";
   sectionWrapper.style.display = "flex";
   sectionWrapper.style.flexDirection = "column";
   sectionWrapper.style.gap = "20px";
 
   const gameListWrapper = document.createElement("div");
- // gameListWrapper.className = "game-list-wrapper";
   gameListWrapper.style.position = "relative";
-  //gameListWrapper.style.height = "150px";
 
   const gameList = document.createElement("div");
   gameList.className = "mini-game-list";
@@ -608,7 +623,6 @@ function CreateCedaOriginalTwo() {
     a.style.borderRadius = "12px";
 
     const card = document.createElement("div");
-   // card.className = "game-card";
     card.style.width = "100%";
     card.style.cursor = "pointer";
     card.style.overflow = "hidden";
@@ -623,7 +637,7 @@ function CreateCedaOriginalTwo() {
     });
 
     const img = document.createElement("img");
-    img.src = game.img;
+    img.src = isMobile ? game.imgMobile : game.img;
     img.alt = game.name;
     img.loading = "lazy";
     img.style.width = "100%";
@@ -645,8 +659,6 @@ function CreateCedaOriginalTwo() {
 
   popularGamesWrapper.insertAdjacentElement("afterend", miniGamesWrapper);
 }
-
-
 
 
 
