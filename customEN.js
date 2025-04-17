@@ -85,7 +85,7 @@
 			clearDynamicContent()
 	
 		  }
-        }, 300);
+        }, 200);
     }
 
 
