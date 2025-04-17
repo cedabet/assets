@@ -539,7 +539,7 @@ function CreateCedaOriginalTwo() {
       name: "BlackJack",
       url: "https://cedabet.com/en/casino/games/evolution-blackjack",
       img: "https://cedabet.github.io/assets/images/blackjack.webp",
-      imgMobile: "https://cedabet.github.io/assets/images/BlackJack.avif"
+      imgMobile: "https://cedabet.github.io/assets/images/Bj.avif"
     },
     {
       name: "roulette",
