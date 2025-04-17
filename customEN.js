@@ -571,7 +571,7 @@ function CreateCedaOriginalTwo() {
 
   svg.appendChild(use);
   h2.appendChild(svg);
-  h2.append("Table Games");
+  h2.append("TABLE GAMES");
   colTitle.appendChild(h2);
   row.appendChild(colTitle);
 
