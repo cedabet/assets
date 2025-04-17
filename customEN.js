@@ -530,22 +530,22 @@ function loadh2Title() {
 function CreateCedaOriginalTwo() {
   const games = [
     {
-      name: "Baccarat",
+      name: "Poker",
       url: "https://cedabet.com/en/casino/games/evolution-baccarat",
       img: "https://cedabet.github.io/assets/images/baccarat.webp",
-      imgMobile: "https://winna.imgix.net/game-image/1734000254921/Baccarat.avif?format=auto&auto=format&dpr=1.6&w=180"
+     imgMobile: "https://cedabet.github.io/assets/images/Poker.avif"
     },
     {
       name: "BlackJack",
       url: "https://cedabet.com/en/casino/games/evolution-blackjack",
       img: "https://cedabet.github.io/assets/images/blackjack.webp",
-      imgMobile: "https://winna.imgix.net/game-image/1734082831018/Black%E2%80%A8Jack.avif?format=auto&auto=format&dpr=1.6&w=180"
+      imgMobile: "https://cedabet.github.io/assets/images/BlackJack.avif"
     },
     {
       name: "roulette",
       url: "https://cedabet.com/en/casino/games/evolution-roulette",
       img: "https://cedabet.github.io/assets/images/roulette.webp",
-      imgMobile: "https://winna.imgix.net/game-image/1734002459483/Roulette.avif?format=auto&auto=format&dpr=1.6&w=180"
+      imgMobile: "https://cedabet.github.io/assets/images/Roulette.avif"
     }
   ];
 
