@@ -95,7 +95,7 @@ document.head.appendChild(link);
                 clearDynamicContent()
 
             }
-        }, 200);
+        }, 400);
     }
 
 
