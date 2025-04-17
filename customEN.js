@@ -15,7 +15,7 @@
 		  addMenuElementTwo();
 		    setTimeout(updateCopyrightYear, 1000);   
 	 setTimeout(createSigninModal, 2000);  
-		    setTimeout(moveMiniGamesWrapper, 300);   
+		  //  setTimeout(moveMiniGamesWrapper, 300);   
 		CreateCedaOriginalTwo();
 		 
 		
@@ -55,14 +55,14 @@
 		    addMenuElementTwo();
 		      setTimeout(updateCopyrightYear, 1000);  
 		    
- setTimeout(moveMiniGamesWrapper, 200);   
+// setTimeout(moveMiniGamesWrapper, 200);   
 		     CreateCedaOriginalTwo();
             } else if (path === "/en/vip") {
                 /* alert("VIP sayfasına hoş geldiniz!");*/
-		    moveMiniGamesWrapper();
+		   // moveMiniGamesWrapper();
             }
              else if (path === "/en/casino") {
-		         moveMiniGamesWrapper();
+		      //   moveMiniGamesWrapper();
             
 		     CreateCedaOriginalTwo();
             }
@@ -77,7 +77,7 @@
     if (sidebarLogo) {
         sidebarLogo.style.setProperty('display', 'none', 'important');
     }
-			 moveMiniGamesWrapper();
+			// moveMiniGamesWrapper();
                 }
 
             }
@@ -86,7 +86,7 @@
     if (sidebarLogo) {
         sidebarLogo.style.setProperty('display', 'none', 'important');
     } 
-			 moveMiniGamesWrapper() 
+			// moveMiniGamesWrapper() 
 	
 		  }
         }, 300);
@@ -208,7 +208,7 @@ function updateCopyrightYear() {
     });
 	
 }
-function moveMiniGamesWrapper() {
+/*function moveMiniGamesWrapper() {
 
     var miniGamesWrapper = document.getElementById('mini-games-wrapper');
     
@@ -230,7 +230,7 @@ if (alreadyExists) {
             fallbackSection.remove();
         }
     }
-}
+}*/
 
  
  function addMenuElement() {
