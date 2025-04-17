@@ -16,6 +16,7 @@
 		    setTimeout(updateCopyrightYear, 1000);   
 	 setTimeout(createSigninModal, 2000);  
 		    setTimeout(moveMiniGamesWrapper, 300);   
+		   CreateCedaOriginalTwo();
             var sportspath = window.location.pathname;
             if (sportspath === "/en/sportsbook") {
                 var sidebar = document.getElementById("sidebar");
@@ -53,7 +54,7 @@
 		      setTimeout(updateCopyrightYear, 1000);  
 		    
  setTimeout(moveMiniGamesWrapper, 200);   
-		  
+		     CreateCedaOriginalTwo();
             } else if (path === "/en/vip") {
                 /* alert("VIP sayfasına hoş geldiniz!");*/
 		    moveMiniGamesWrapper();
@@ -61,6 +62,7 @@
              else if (path === "/en/casino") {
 		         moveMiniGamesWrapper();
                 CreateCedaOriginal();
+		     CreateCedaOriginalTwo();
             }
             else if (path === "/en/sportsbook") {
                 var sportspath = window.location.pathname;
@@ -505,6 +507,161 @@ function loadh2Title() {
 
     container.appendChild(row);
   }
+
+
+function CreateCedaOriginalTwo() {
+    const games = [
+      { name: "Plinko", url: "https://cedabet.com/en/casino/games/ebetlab-plinko-originals", img: "https://cedabet.github.io/assets/images/plinko.jpg" },
+      { name: "Mines", url: "https://cedabet.com/en/casino/games/ebetlab-mines-originals", img: "https://cedabet.github.io/assets/images/mines.jpg" },
+      { name: "Keno", url: "https://cedabet.com/en/casino/games/ebetlab-keno-originals", img: "https://cedabet.github.io/assets/images/keno.jpg" },
+      { name: "Limbo", url: "https://cedabet.com/en/casino/games/hacksaw-limbo", img: "https://cedabet.github.io/assets/images/limbo.jpg" },
+      { name: "Dice", url: "https://cedabet.com/en/casino/games/ebetlab-dice-originals", img: "https://cedabet.github.io/assets/images/dice.jpg" },
+      { name: "Blackjack", url: "https://cedabet.com/en/casino/games/evolution-blackjack", img: "https://cedabet.github.io/assets/images/blackjack.jpg" },
+      { name: "Aviator", url: "https://cedabet.com/en/casino/games/spribe-aviator", img: "https://cedabet.github.io/assets/images/aviator.jpg" }
+    ];
+
+    // Stil sadece bir kez eklensin
+    if (!document.getElementById("mini-games-style")) {
+      const style = document.createElement("style");
+      style.id = "mini-games-style";
+      style.textContent = `
+        .section__title {
+          font-size: 24px;
+          font-weight: bold;
+          display: flex;
+          align-items: center;
+          gap: 8px;
+        }
+        .section__title svg { width: 24px; height: 24px; }
+        .section-wrapper { display: flex; flex-direction: column; gap: 20px; }
+        .game-list-wrapper { position: relative; }
+        .game-list {
+          display: flex;
+          overflow-x: auto;
+          gap: 16px;
+          padding-top: 8px;
+        }
+        .game-list a {
+          flex: 0 0 calc(10% - 0);
+          max-width: calc(10% - 0);
+          text-decoration: none;
+          display: flex;
+          justify-content: center;
+          border-radius: 12px;
+        }
+        .game-card {
+          aspect-ratio: 105 / 142;
+          width: 100%;
+          cursor: pointer;
+          overflow: hidden;
+          transition: transform 0.3s ease;
+        }
+        .game-card:hover { transform: translateY(-8px); }
+        .game-card img {
+          width: 100%;
+          height: 100%;
+          object-fit: contain;
+        }
+        @media (max-width: 1024px) {
+          .game-list a {
+            flex: 0 0 calc(33.33% - 16px);
+            max-width: calc(33.33% - 16px);
+          }
+        }
+        @media (max-width: 480px) {
+          .game-list a {
+            flex: 0 0 calc(50% - 16px);
+            max-width: calc(50% - 16px);
+          }
+        }
+      `;
+      document.head.appendChild(style);
+    }
+
+    // "popular-games-wrapper" id'sine sahip div'i bulalım
+    const popularGamesWrapper = document.querySelector("#popular-games-wrapper");
+    if (!popularGamesWrapper) {
+      console.error("popular-games-wrapper bulunamadı!");
+      return;
+    }
+
+    // Yeni içerik için bir container oluşturuyoruz
+    const miniGamesWrapper = document.createElement("div");
+    miniGamesWrapper.id = "mini-games-wrapper"; // ID ekliyoruz
+
+    const container = document.createElement("div");
+    container.className = "container"; // container sınıfını ekliyoruz
+
+    const oldRow = container.querySelector(".row");
+    if (oldRow) oldRow.remove();
+
+    const row = document.createElement("div");
+    row.className = "row";
+    row.style.display = "flex";
+    row.style.flexDirection = "column";
+    row.style.gap = "20px";
+    
+    const colTitle = document.createElement("div");
+    colTitle.className = "col-12";
+    const h2 = document.createElement("h2");
+    h2.className = "section__title";
+
+    const svg = document.createElementNS("http://www.w3.org/2000/svg", "svg");
+    svg.setAttribute("class", "svg-icon");
+
+    const use = document.createElementNS("http://www.w3.org/2000/svg", "use");
+    use.setAttribute("href", "/static/media/sprite.1cea5f3c17045e69440504bcd887b333.svg#mini-games");
+    use.setAttribute("xlink:href", "/static/media/sprite.1cea5f3c17045e69440504bcd887b333.svg#mini-games");
+
+    svg.appendChild(use);
+    h2.appendChild(svg);
+    h2.append("Ceda Originals");
+
+    colTitle.appendChild(h2);
+    row.appendChild(colTitle);
+
+    const colGames = document.createElement("div");
+    colGames.className = "col-12";
+    colGames.style.width = "100%";
+    
+    const sectionWrapper = document.createElement("div");
+    sectionWrapper.className = "section-wrapper";
+
+    const gameListWrapper = document.createElement("div");
+    gameListWrapper.className = "game-list-wrapper";
+
+    const gameList = document.createElement("div");
+    gameList.className = "game-list";
+
+    games.forEach(game => {
+      const a = document.createElement("a");
+      a.href = game.url;
+
+      const card = document.createElement("div");
+      card.className = "game-card";
+
+      const img = document.createElement("img");
+      img.src = game.img;
+      img.alt = game.name;
+      img.loading = "lazy";
+
+      card.appendChild(img);
+      a.appendChild(card);
+      gameList.appendChild(a);
+    });
+
+    gameListWrapper.appendChild(gameList);
+    sectionWrapper.appendChild(gameListWrapper);
+    colGames.appendChild(sectionWrapper);
+    row.appendChild(colGames);
+
+    container.appendChild(row);
+    miniGamesWrapper.appendChild(container);
+
+    // popüler oyunlar bölümünden sonra ekleme
+    popularGamesWrapper.insertAdjacentElement('afterend', miniGamesWrapper);
+}
+
 
 
 
