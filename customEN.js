@@ -426,6 +426,22 @@ function loadh2Title() {
             max-width: calc(50% - 16px);
           }
         }
+
+@media (max-width: 1024px) {
+  #mini-games-wrapper-2 .mini-game-list a {
+    flex: 0 0 calc(50% - 16px);  /* 2 öğe yan yana gelecek şekilde */
+    max-width: calc(50% - 16px);
+  }
+}
+
+
+@media (max-width: 768px) {
+  #mini-games-wrapper-2 .mini-game-list a {
+    flex: 0 0 calc(100% - 16px);  /* Her öğe tek tek olacak */
+    max-width: calc(100% - 16px);
+  }
+}
+
       `;
       document.head.appendChild(style);
     }
@@ -523,7 +539,7 @@ function CreateCedaOriginalTwo() {
   }
 
   const miniGamesWrapper = document.createElement("div");
-  miniGamesWrapper.id = "mini-games-wrapper";
+  miniGamesWrapper.id = "mini-games-wrapper-2";
   miniGamesWrapper.classList.add("section");
   const container = document.createElement("div");
   container.className = "container";
