@@ -58,7 +58,7 @@
                 /* alert("VIP sayfasına hoş geldiniz!");*/
 		    moveMiniGamesWrapper()
             }
-            } else if (path === "/en/casino") {
+             else if (path === "/en/casino") {
                 CreateCedaOriginal();
             }
             else if (path === "/en/sportsbook") {
