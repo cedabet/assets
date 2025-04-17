@@ -365,10 +365,7 @@ function loadh2Title() {
     });
 }
   function CreateCedaOriginal() {
-	  const alreadyExists = document.getElementById("mini-games-wrapper-2");
-if (alreadyExists) {
-  return; 
-}
+
     const games = [
       { name: "Plinko", url: "https://cedabet.com/en/casino/games/ebetlab-plinko-originals", img: "https://cedabet.github.io/assets/images/plinko.jpg" },
       { name: "Mines", url: "https://cedabet.com/en/casino/games/ebetlab-mines-originals", img: "https://cedabet.github.io/assets/images/mines.jpg" },
@@ -537,10 +534,7 @@ if (alreadyExists) {
 
 
 function CreateCedaOriginalTwo() {
-	const alreadyExists = document.getElementById("mini-games-wrapper-2");
-if (alreadyExists) {
-  return; 
-}
+
   const games = [
     {
       name: "Poker",
