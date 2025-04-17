@@ -75,18 +75,17 @@ document.head.appendChild(link);
 
             }
 	    else if (path === "/en/trade") {
-                var sportspath = window.location.pathname;
-                if (sportspath === "/en/trade") {
+              alert("trade");
                     var sidebar = document.getElementById("sidebar");
                     sidebar.className = "";
-                    sidebar.classList.add("sidebar", "active");
+                    sidebar.classList.add("sidebar", "sidebar--sport-active");
                     var sidebarLogo = document.querySelector(".header__logo");
                     if (sidebarLogo) {
                         sidebarLogo.style.setProperty('display', 'none', 'important');
                     }
                     clearDynamicContent()
 
-                }
+                
 
             }else if (path !== "/en/sportsbook") {
                 var sidebarLogo = document.querySelector(".header__logo");
