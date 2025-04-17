@@ -504,7 +504,7 @@ function loadh2Title() {
     sectionWrapper.appendChild(gameListWrapper);
     colGames.appendChild(sectionWrapper);
     row.appendChild(colGames);
-
+//divi yerlestir
     container.appendChild(row);
   }
 
