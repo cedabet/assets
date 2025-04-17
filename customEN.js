@@ -530,12 +530,12 @@ function loadh2Title() {
 //divi yerlestir
     container.appendChild(row);
 
-    var miniGamesWrapper = document.getElementById('mini-games-wrapper');  
+    var miniGamesWrapper2 = document.getElementById('mini-games-wrapper');  
     var highRtpGamesWrapper = document.getElementById('main-slider');
     var changeLine = document.getElementById('custom-section-7');
 	
-    if (miniGamesWrapper && highRtpGamesWrapper && changeLine ) {
-        highRtpGamesWrapper.insertAdjacentElement('afterend', miniGamesWrapper);
+    if (miniGamesWrapper2 && highRtpGamesWrapper && changeLine ) {
+        highRtpGamesWrapper.insertAdjacentElement('afterend', miniGamesWrapper2);
 	 miniGamesWrapper.insertAdjacentElement('afterend', changeLine);	 
     }
 	  
