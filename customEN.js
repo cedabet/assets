@@ -429,16 +429,16 @@ function loadh2Title() {
 
 @media (max-width: 1024px) {
   #mini-games-wrapper-2 .mini-game-list a {
-    flex: 0 0 calc(50% - 16px);  /* 2 öğe yan yana gelecek şekilde */
-    max-width: calc(50% - 16px);
+    flex: 0 0 calc(50% - 16px)!important;  /* 2 öğe yan yana gelecek şekilde */
+    max-width: calc(50% - 16px)!important;
   }
 }
 
 
-@media (max-width: 768px) {
+@media (max-width: 480px) {
   #mini-games-wrapper-2 .mini-game-list a {
-    flex: 0 0 calc(100% - 16px);  /* Her öğe tek tek olacak */
-    max-width: calc(100% - 16px);
+    flex: 0 0 calc(100% - 16px) !important;  /* Her öğe tek tek olacak */
+    max-width: calc(100% - 16px)!important;
   }
 }
 
