@@ -32,11 +32,6 @@
             isFirstLoad = false;
         }
 
-      
-  
-        
-
-     
 
     function checkUrlChange() {
         if (location.href !== lastUrl) {
@@ -48,8 +43,9 @@
     function handlePageScripts(path) {
         setTimeout(function () {
             if (path === "/en/") {
-                /*  alert("Anasayfaya hoş geldiniz!");*/
-                loadVipFeatures();
+             clearDynamicContent()
+              
+		    loadVipFeatures();
 	        setTimeout(loadh2Title, 1000);   
 		    addMenuElement();
 		    addMenuElementTwo();
@@ -58,11 +54,10 @@
 		     CreateCedaOriginal();  
 		     CreateCedaOriginalTwo();
             } else if (path === "/en/vip") {
-                /* alert("VIP sayfasına hoş geldiniz!");*/
-		   // moveMiniGamesWrapper();
+               clearDynamicContent()
             }
              else if (path === "/en/casino") {
-		      //   moveMiniGamesWrapper();
+		  clearDynamicContent()
             		CreateCedaOriginal();
 		     CreateCedaOriginalTwo();
             }
@@ -77,7 +72,8 @@
     if (sidebarLogo) {
         sidebarLogo.style.setProperty('display', 'none', 'important');
     }
-			// moveMiniGamesWrapper();
+			clearDynamicContent()
+			
                 }
 
             }
@@ -86,7 +82,7 @@
     if (sidebarLogo) {
         sidebarLogo.style.setProperty('display', 'none', 'important');
     } 
-			// moveMiniGamesWrapper() 
+			clearDynamicContent()
 	
 		  }
         }, 300);
@@ -232,7 +228,20 @@ if (alreadyExists) {
     }
 }*/
 
- 
+ function clearDynamicContent() {
+  const idsToRemove = [
+    "mini-games-wrapper-2",
+    "custom-section-7"
+  ];
+
+  idsToRemove.forEach(id => {
+    const el = document.getElementById(id);
+    if (el) {
+      el.remove();
+      console.log(`${id} temizlendi.`);
+    }
+  });
+}
  function addMenuElement() {
    const sidebarNav = document.querySelector('.sidebar__nav.sidebar__nav--border');
  
