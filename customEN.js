@@ -529,6 +529,16 @@ function loadh2Title() {
     row.appendChild(colGames);
 //divi yerlestir
     container.appendChild(row);
+
+    var miniGamesWrapper = document.getElementById('mini-games-wrapper');  
+    var highRtpGamesWrapper = document.getElementById('main-slider');
+    var changeLine = document.getElementById('custom-section-7');
+	
+    if (miniGamesWrapper && highRtpGamesWrapper && changeLine ) {
+        highRtpGamesWrapper.insertAdjacentElement('afterend', miniGamesWrapper);
+	 miniGamesWrapper.insertAdjacentElement('afterend', changeLine);	 
+    }
+	  
   }
 
 
