@@ -612,7 +612,7 @@ function CreateCedaOriginalTwo() {
     img.alt = game.name;
     img.loading = "lazy";
     img.style.width = "100%";
-    img.style.height = "120px";
+    img.style.height = "122px";
     img.style.objectFit = "cover";
 
     card.appendChild(img);
