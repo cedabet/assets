@@ -573,7 +573,7 @@ function CreateCedaOriginalTwo() {
   const gameListWrapper = document.createElement("div");
   gameListWrapper.className = "game-list-wrapper";
   gameListWrapper.style.position = "relative";
-  gameListWrapper.style.height = "200px";
+  gameListWrapper.style.height = "150px";
 
   const gameList = document.createElement("div");
   gameList.className = "game-list";
@@ -594,7 +594,6 @@ function CreateCedaOriginalTwo() {
 
     const card = document.createElement("div");
     card.className = "game-card";
-    card.style.aspectRatio = "105 / 142";
     card.style.width = "100%";
     card.style.cursor = "pointer";
     card.style.overflow = "hidden";
@@ -613,7 +612,7 @@ function CreateCedaOriginalTwo() {
     img.alt = game.name;
     img.loading = "lazy";
     img.style.width = "100%";
-    img.style.height = "167px";
+    img.style.height = "120px";
     img.style.objectFit = "cover";
 
     card.appendChild(img);
