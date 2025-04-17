@@ -554,8 +554,8 @@ function CreateCedaOriginalTwo() {
   colTitle.className = "col-12";
 
   const h2 = document.createElement("h2");
- // h2.className = "section__title";
-  h2.style.fontSize = "24px";
+ h2.className = "section__title";
+  h2.style.fontSize = "18px";
   h2.style.fontWeight = "bold";
   h2.style.display = "flex";
   h2.style.alignItems = "center";
