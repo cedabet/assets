@@ -573,6 +573,7 @@ function CreateCedaOriginalTwo() {
   const gameListWrapper = document.createElement("div");
   gameListWrapper.className = "game-list-wrapper";
   gameListWrapper.style.position = "relative";
+  gameListWrapper.style.height = "200px";
 
   const gameList = document.createElement("div");
   gameList.className = "game-list";
