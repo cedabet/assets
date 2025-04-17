@@ -529,7 +529,7 @@ function CreateCedaOriginalTwo() {
   container.className = "container";
 
   const row = document.createElement("div");
- /* row.className = "row";*/
+ //row.className = "row";
   row.style.display = "flex";
   row.style.flexDirection = "column";
   row.style.gap = "20px";
@@ -538,7 +538,7 @@ function CreateCedaOriginalTwo() {
   colTitle.className = "col-12";
 
   const h2 = document.createElement("h2");
- */ h2.className = "section__title";*/
+ // h2.className = "section__title";
   h2.style.fontSize = "24px";
   h2.style.fontWeight = "bold";
   h2.style.display = "flex";
@@ -564,18 +564,18 @@ function CreateCedaOriginalTwo() {
   colGames.style.width = "100%";
 
   const sectionWrapper = document.createElement("div");
- */ sectionWrapper.className = "section-wrapper";/*
+ // sectionWrapper.className = "section-wrapper";
   sectionWrapper.style.display = "flex";
   sectionWrapper.style.flexDirection = "column";
   sectionWrapper.style.gap = "20px";
 
   const gameListWrapper = document.createElement("div");
- */ gameListWrapper.className = "game-list-wrapper";*/
+ // gameListWrapper.className = "game-list-wrapper";
   gameListWrapper.style.position = "relative";
   gameListWrapper.style.height = "150px";
 
   const gameList = document.createElement("div");
-*/  gameList.className = "game-list";*/
+//gameList.className = "game-list";
   gameList.style.display = "flex";
   gameList.style.overflowX = "auto";
   gameList.style.gap = "16px";
@@ -592,7 +592,7 @@ function CreateCedaOriginalTwo() {
     a.style.borderRadius = "12px";
 
     const card = document.createElement("div");
-   */ card.className = "game-card";*/
+   // card.className = "game-card";
     card.style.width = "100%";
     card.style.cursor = "pointer";
     card.style.overflow = "hidden";
