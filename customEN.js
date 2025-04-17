@@ -525,7 +525,6 @@ function CreateCedaOriginalTwo() {
   const miniGamesWrapper = document.createElement("div");
   miniGamesWrapper.id = "mini-games-wrapper";
   miniGamesWrapper.classList.add("section");
-  miniGamesWrapper.style.height = "180px";
   const container = document.createElement("div");
   container.className = "container";
 
