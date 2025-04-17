@@ -29,7 +29,7 @@ document.head.appendChild(link);
                 sidebarLogo.style.setProperty('display', 'none', 'important');
             }
         }
-	     else if (path === "/en/trade") {
+	     else if (sportspath === "/en/trade") {
             
                     var sidebar = document.getElementById("sidebar");
                     sidebar.className = "";
@@ -38,12 +38,12 @@ document.head.appendChild(link);
                     if (sidebarLogo) {
                         sidebarLogo.style.setProperty('display', 'none', 'important');
                     }
-                    clearDynamicContent()
+                  
 
                 
 
             }
-	      else if (path === "/en/e-sport") {
+	      else if (sportspath === "/en/e-sport") {
              
                     var sidebar = document.getElementById("sidebar");
                     sidebar.className = "";
@@ -52,7 +52,7 @@ document.head.appendChild(link);
                     if (sidebarLogo) {
                         sidebarLogo.style.setProperty('display', 'none', 'important');
                     }
-                    clearDynamicContent()
+                  
 
                 
 
