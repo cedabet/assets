@@ -511,9 +511,9 @@ function loadh2Title() {
 
 function CreateCedaOriginalTwo() {
   const games = [
-    { name: "Baccarat", url: "https://cedabet.com/en/casino/games/ebetlab-plinko-originals", img: "https://cedabet.github.io/assets/images/baccarat.webp" },
-    { name: "BlackJack", url: "https://cedabet.com/en/casino/games/ebetlab-mines-originals", img: "https://cedabet.github.io/assets/images/blackjack.webp" },
-    { name: "roulette", url: "https://cedabet.com/en/casino/games/ebetlab-keno-originals", img: "https://cedabet.github.io/assets/images/roulette.webp" },
+    { name: "Baccarat", url: "https://cedabet.com/en/casino/games/evolution-baccarat", img: "https://cedabet.github.io/assets/images/baccarat.webp" },
+    { name: "BlackJack", url: "https://cedabet.com/en/casino/games/evolution-blackjack", img: "https://cedabet.github.io/assets/images/blackjack.webp" },
+    { name: "roulette", url: "https://cedabet.com/en/casino/games/evolution-roulette", img: "https://cedabet.github.io/assets/images/roulette.webp" },
   ];
 
   const popularGamesWrapper = document.querySelector("#popular-games-wrapper");
@@ -612,8 +612,8 @@ function CreateCedaOriginalTwo() {
     img.alt = game.name;
     img.loading = "lazy";
     img.style.width = "100%";
-    img.style.height = "122px";
-    img.style.objectFit = "cover";
+    img.style.height = "142px";
+    img.style.objectFit = "fill";
 
     card.appendChild(img);
     a.appendChild(card);
