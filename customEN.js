@@ -551,12 +551,11 @@ function CreateCedaOriginalTwo() {
   svg.style.height = "24px";
 
   const use = document.createElementNS("http://www.w3.org/2000/svg", "use");
-  use.setAttribute("href", "/static/media/sprite.1cea5f3c17045e69440504bcd887b333.svg#mini-games");
-  use.setAttribute("xlink:href", "/static/media/sprite.1cea5f3c17045e69440504bcd887b333.svg#mini-games");
+  use.setAttribute("href", "/static/media/sprite.1cea5f3c17045e69440504bcd887b333.svg#table-games");
 
   svg.appendChild(use);
   h2.appendChild(svg);
-  h2.append("Ceda Originals");
+  h2.append("Table Games");
   colTitle.appendChild(h2);
   row.appendChild(colTitle);
 
