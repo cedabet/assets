@@ -548,8 +548,6 @@ function CreateCedaOriginalTwo() {
     }
   ];
 
-  const isMobile = window.innerWidth <= 768; // Mobil kontrolü
-
   const popularGamesWrapper = document.querySelector("#popular-games-wrapper");
   if (!popularGamesWrapper) {
     console.error("popular-games-wrapper bulunamadı!");
@@ -612,7 +610,10 @@ function CreateCedaOriginalTwo() {
   gameList.style.gap = "16px";
   gameList.style.paddingTop = "8px";
 
-  games.forEach(game => {
+  // Resimleri oluşturup saklamak için bir referans listesi tutuyoruz
+  const imageElements = [];
+
+  games.forEach((game, index) => {
     const a = document.createElement("a");
     a.href = game.url;
     a.style.flex = "0 0 calc(33% - 10px)";
@@ -637,13 +638,18 @@ function CreateCedaOriginalTwo() {
     });
 
     const img = document.createElement("img");
-    img.src = isMobile ? game.imgMobile : game.img;
     img.alt = game.name;
     img.loading = "lazy";
     img.style.width = "100%";
     img.style.height = "100%";
     img.style.objectFit = "cover";
     img.style.objectPosition = "left bottom";
+
+    // Başlangıçta uygun resmi ata
+    img.src = window.innerWidth <= 768 ? game.imgMobile : game.img;
+
+    // Sakla, sonra erişelim
+    imageElements.push({ img, game });
 
     card.appendChild(img);
     a.appendChild(card);
@@ -658,8 +664,18 @@ function CreateCedaOriginalTwo() {
   miniGamesWrapper.appendChild(container);
 
   popularGamesWrapper.insertAdjacentElement("afterend", miniGamesWrapper);
-}
 
+  // Dinamik olarak resimleri değiştirme
+  window.addEventListener("resize", () => {
+    const isMobile = window.innerWidth <= 768;
+    imageElements.forEach(({ img, game }) => {
+      const newSrc = isMobile ? game.imgMobile : game.img;
+      if (img.src !== newSrc) {
+        img.src = newSrc;
+      }
+    });
+  });
+}
 
 
 
