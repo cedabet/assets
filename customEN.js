@@ -514,10 +514,6 @@ function CreateCedaOriginalTwo() {
       { name: "Plinko", url: "https://cedabet.com/en/casino/games/ebetlab-plinko-originals", img: "https://cedabet.github.io/assets/images/plinko.jpg" },
       { name: "Mines", url: "https://cedabet.com/en/casino/games/ebetlab-mines-originals", img: "https://cedabet.github.io/assets/images/mines.jpg" },
       { name: "Keno", url: "https://cedabet.com/en/casino/games/ebetlab-keno-originals", img: "https://cedabet.github.io/assets/images/keno.jpg" },
-      { name: "Limbo", url: "https://cedabet.com/en/casino/games/hacksaw-limbo", img: "https://cedabet.github.io/assets/images/limbo.jpg" },
-      { name: "Dice", url: "https://cedabet.com/en/casino/games/ebetlab-dice-originals", img: "https://cedabet.github.io/assets/images/dice.jpg" },
-      { name: "Blackjack", url: "https://cedabet.com/en/casino/games/evolution-blackjack", img: "https://cedabet.github.io/assets/images/blackjack.jpg" },
-      { name: "Aviator", url: "https://cedabet.com/en/casino/games/spribe-aviator", img: "https://cedabet.github.io/assets/images/aviator.jpg" }
     ];
 
     // Stil sadece bir kez eklensin
@@ -533,15 +529,15 @@ function CreateCedaOriginalTwo() {
           gap: 8px;
         }
         .section__title svg { width: 24px; height: 24px; }
-        .section-wrapper-2 { display: flex; flex-direction: column; gap: 20px; }
-        .game-list-wrapper-2 { position: relative; }
-        .game-list-2 {
+        .section-wrapper { display: flex; flex-direction: column; gap: 20px; }
+        .game-list-wrapper { position: relative; }
+        .game-list {
           display: flex;
           overflow-x: auto;
           gap: 16px;
           padding-top: 8px;
         }
-        .game-list-2 a {
+        .game-list a {
           flex: 0 0 calc(10% - 0);
           max-width: calc(10% - 0);
           text-decoration: none;
@@ -549,27 +545,27 @@ function CreateCedaOriginalTwo() {
           justify-content: center;
           border-radius: 12px;
         }
-        .game-card-2 {
+        .game-card {
           aspect-ratio: 105 / 142;
           width: 100%;
           cursor: pointer;
           overflow: hidden;
           transition: transform 0.3s ease;
         }
-        .game-card-2:hover { transform: translateY(-8px); }
-        .game-card-2 img {
+        .game-card:hover { transform: translateY(-8px); }
+        .game-card img {
           width: 100%;
           height: 100%;
           object-fit: contain;
         }
         @media (max-width: 1024px) {
-          .game-list-2 a {
+          .game-list a {
             flex: 0 0 calc(33.33% - 16px);
             max-width: calc(33.33% - 16px);
           }
         }
         @media (max-width: 480px) {
-          .game-list-2 a {
+          .game-list a {
             flex: 0 0 calc(50% - 16px);
             max-width: calc(50% - 16px);
           }
@@ -588,7 +584,6 @@ function CreateCedaOriginalTwo() {
     // Yeni içerik için bir container oluşturuyoruz
     const miniGamesWrapper = document.createElement("div");
     miniGamesWrapper.id = "mini-games-wrapper"; // ID ekliyoruz
-    miniGamesWrapper.classList.add("section");
 
     const container = document.createElement("div");
     container.className = "container"; // container sınıfını ekliyoruz
@@ -605,7 +600,7 @@ function CreateCedaOriginalTwo() {
     const colTitle = document.createElement("div");
     colTitle.className = "col-12";
     const h2 = document.createElement("h2");
-    h2.className = "section__title-2";
+    h2.className = "section__title";
 
     const svg = document.createElementNS("http://www.w3.org/2000/svg", "svg");
     svg.setAttribute("class", "svg-icon");
@@ -616,7 +611,7 @@ function CreateCedaOriginalTwo() {
 
     svg.appendChild(use);
     h2.appendChild(svg);
-    h2.append("Table Games");
+    h2.append("Ceda Originals");
 
     colTitle.appendChild(h2);
     row.appendChild(colTitle);
@@ -626,20 +621,20 @@ function CreateCedaOriginalTwo() {
     colGames.style.width = "100%";
     
     const sectionWrapper = document.createElement("div");
-    sectionWrapper.className = "section-wrapper-2";
+    sectionWrapper.className = "section-wrapper";
 
     const gameListWrapper = document.createElement("div");
-    gameListWrapper.className = "game-list-wrapper-2";
+    gameListWrapper.className = "game-list-wrapper";
 
     const gameList = document.createElement("div");
-    gameList.className = "game-list-2";
+    gameList.className = "game-list";
 
     games.forEach(game => {
       const a = document.createElement("a");
       a.href = game.url;
 
       const card = document.createElement("div");
-      card.className = "game-card-2";
+      card.className = "game-card";
 
       const img = document.createElement("img");
       img.src = game.img;
@@ -658,10 +653,9 @@ function CreateCedaOriginalTwo() {
 
     container.appendChild(row);
     miniGamesWrapper.appendChild(container);
-
-
     popularGamesWrapper.insertAdjacentElement('afterend', miniGamesWrapper);
 }
+
 
 
 
