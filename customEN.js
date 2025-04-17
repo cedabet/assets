@@ -63,7 +63,7 @@
             }
              else if (path === "/en/casino") {
 		         moveMiniGamesWrapper();
-                CreateCedaOriginal();
+            
 		     CreateCedaOriginalTwo();
             }
             else if (path === "/en/sportsbook") {
