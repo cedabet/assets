@@ -531,13 +531,13 @@ function CreateCedaOriginalTwo() {
         .section__title svg { width: 24px; height: 24px; }
         .section-wrapper { display: flex; flex-direction: column; gap: 20px; }
         .game-list-wrapper { position: relative; }
-        .game-list {
+        .game-list-2 {
           display: flex;
           overflow-x: auto;
           gap: 16px;
           padding-top: 8px;
         }
-        .game-list a {
+        .game-list-2 a {
           flex: 0 0 calc(10% - 0);
           max-width: calc(10% - 0);
           text-decoration: none;
@@ -627,7 +627,7 @@ function CreateCedaOriginalTwo() {
     gameListWrapper.className = "game-list-wrapper";
 
     const gameList = document.createElement("div");
-    gameList.className = "game-list";
+    gameList.className = "game-list-2";
 
     games.forEach(game => {
       const a = document.createElement("a");
