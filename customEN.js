@@ -26,7 +26,7 @@ document.head.appendChild(link);
             sidebar.classList.add("sidebar", "active");
             var sidebarLogo = document.querySelector(".header__logo");
             if (sidebarLogo) {
-                sidebarLogo.style.setProperty('display', 'none', 'important');
+              //  sidebarLogo.style.setProperty('display', 'none', 'important');
             }
         }
 	     else if (sportspath === "/en/trade") {
@@ -36,7 +36,7 @@ document.head.appendChild(link);
                     sidebar.classList.add("sidebar", "sidebar--sport-active");
                     var sidebarLogo = document.querySelector(".header__logo");
                     if (sidebarLogo) {
-                        sidebarLogo.style.setProperty('display', 'none', 'important');
+                     //   sidebarLogo.style.setProperty('display', 'none', 'important');
                     }
                   
 
@@ -50,7 +50,7 @@ document.head.appendChild(link);
                     sidebar.classList.add("sidebar", "sidebar--sport-active");
                     var sidebarLogo = document.querySelector(".header__logo");
                     if (sidebarLogo) {
-                        sidebarLogo.style.setProperty('display', 'none', 'important');
+                     //   sidebarLogo.style.setProperty('display', 'none', 'important');
                     }
                   
 
@@ -95,7 +95,7 @@ document.head.appendChild(link);
                     sidebar.classList.add("sidebar", "active");
                     var sidebarLogo = document.querySelector(".header__logo");
                     if (sidebarLogo) {
-                        sidebarLogo.style.setProperty('display', 'none', 'important');
+                     //   sidebarLogo.style.setProperty('display', 'none', 'important');
                     }
                     clearDynamicContent()
 
@@ -109,7 +109,7 @@ document.head.appendChild(link);
                     sidebar.classList.add("sidebar", "sidebar--sport-active");
                     var sidebarLogo = document.querySelector(".header__logo");
                     if (sidebarLogo) {
-                        sidebarLogo.style.setProperty('display', 'none', 'important');
+                    //    sidebarLogo.style.setProperty('display', 'none', 'important');
                     }
                     clearDynamicContent()
 
@@ -123,7 +123,7 @@ document.head.appendChild(link);
                     sidebar.classList.add("sidebar", "sidebar--sport-active");
                     var sidebarLogo = document.querySelector(".header__logo");
                     if (sidebarLogo) {
-                        sidebarLogo.style.setProperty('display', 'none', 'important');
+                     //   sidebarLogo.style.setProperty('display', 'none', 'important');
                     }
                     clearDynamicContent()
 
@@ -133,7 +133,7 @@ document.head.appendChild(link);
 	      else if (path !== "/en/sportsbook") {
                 var sidebarLogo = document.querySelector(".header__logo");
                 if (sidebarLogo) {
-                    sidebarLogo.style.setProperty('display', 'none', 'important');
+                 //   sidebarLogo.style.setProperty('display', 'none', 'important');
                 }
                 clearDynamicContent()
 
