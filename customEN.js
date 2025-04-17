@@ -29,6 +29,34 @@ document.head.appendChild(link);
                 sidebarLogo.style.setProperty('display', 'none', 'important');
             }
         }
+	     else if (path === "/en/trade") {
+            
+                    var sidebar = document.getElementById("sidebar");
+                    sidebar.className = "";
+                    sidebar.classList.add("sidebar", "sidebar--sport-active");
+                    var sidebarLogo = document.querySelector(".header__logo");
+                    if (sidebarLogo) {
+                        sidebarLogo.style.setProperty('display', 'none', 'important');
+                    }
+                    clearDynamicContent()
+
+                
+
+            }
+	      else if (path === "/en/e-sport") {
+             
+                    var sidebar = document.getElementById("sidebar");
+                    sidebar.className = "";
+                    sidebar.classList.add("sidebar", "sidebar--sport-active");
+                    var sidebarLogo = document.querySelector(".header__logo");
+                    if (sidebarLogo) {
+                        sidebarLogo.style.setProperty('display', 'none', 'important');
+                    }
+                    clearDynamicContent()
+
+                
+
+            }
         isFirstLoad = false;
     }
 
@@ -75,7 +103,7 @@ document.head.appendChild(link);
 
             }
 	    else if (path === "/en/trade") {
-              alert("trade");
+            
                     var sidebar = document.getElementById("sidebar");
                     sidebar.className = "";
                     sidebar.classList.add("sidebar", "sidebar--sport-active");
@@ -89,7 +117,7 @@ document.head.appendChild(link);
 
             }
 	      else if (path === "/en/e-sport") {
-              alert("trade");
+             
                     var sidebar = document.getElementById("sidebar");
                     sidebar.className = "";
                     sidebar.classList.add("sidebar", "sidebar--sport-active");
