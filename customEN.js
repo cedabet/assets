@@ -84,7 +84,7 @@
 			 moveMiniGamesWrapper() 
 	
 		  }
-        }, 1000);
+        }, 300);
     }
 
 
