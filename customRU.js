@@ -252,7 +252,7 @@ function updateCopyrightYear() {
             title.textContent.trim() === 'Mini Oyunlar' ||
             title.textContent.trim() === 'Мини -игры') {
 
-            title.innerHTML = '<svg class="svg-icon"><use href="/static/media/sprite.1cea5f3c17045e69440504bcd887b333.svg#mini-games" xlink:href="/static/media/sprite.1cea5f3c17045e69440504bcd887b333.svg#mini-games"></use></svg>Ceda Originals';
+            title.innerHTML = '<svg class="svg-icon"><use href="/static/media/sprite.1cea5f3c17045e69440504bcd887b333.svg#mini-games" xlink:href="/static/media/sprite.1cea5f3c17045e69440504bcd887b333.svg#mini-games"></use></svg>Ceda Оригинал';
 
         }
     });
@@ -550,7 +550,7 @@ function loadh2Title() {
 
         svg.appendChild(use);
         h2.appendChild(svg);
-        h2.append("Ceda Originals");
+        h2.append("Ceda Оригинал");
 
         colTitle.appendChild(h2);
         row.appendChild(colTitle);
