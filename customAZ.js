@@ -32,7 +32,7 @@
             
                     var sidebar = document.getElementById("sidebar");
                     sidebar.className = "";
-                    sidebar.classList.add("sidebar", "sidebar--sport-active");
+                    sidebar.classList.add("sidebar", "sidebar--sport-active" , "active");
                     var sidebarLogo = document.querySelector(".header__logo");
                     if (sidebarLogo) {
                      //   sidebarLogo.style.setProperty('display', 'none', 'important');
@@ -46,7 +46,7 @@
              
                     var sidebar = document.getElementById("sidebar");
                     sidebar.className = "";
-                    sidebar.classList.add("sidebar", "sidebar--sport-active");
+                    sidebar.classList.add("sidebar", "sidebar--sport-active" , "active");
                     var sidebarLogo = document.querySelector(".header__logo");
                     if (sidebarLogo) {
                      //   sidebarLogo.style.setProperty('display', 'none', 'important');
@@ -107,7 +107,7 @@
             
                     var sidebar = document.getElementById("sidebar");
                     sidebar.className = "";
-                    sidebar.classList.add("sidebar", "sidebar--sport-active");
+                    sidebar.classList.add("sidebar", "sidebar--sport-active" , "active");
                     var sidebarLogo = document.querySelector(".header__logo");
                     if (sidebarLogo) {
                     //    sidebarLogo.style.setProperty('display', 'none', 'important');
@@ -121,7 +121,7 @@
              
                     var sidebar = document.getElementById("sidebar");
                     sidebar.className = "";
-                    sidebar.classList.add("sidebar", "sidebar--sport-active");
+                    sidebar.classList.add("sidebar", "sidebar--sport-active" , "active");
                     var sidebarLogo = document.querySelector(".header__logo");
                     if (sidebarLogo) {
                      //   sidebarLogo.style.setProperty('display', 'none', 'important');
@@ -419,6 +419,11 @@ function clearDynamicContent() {
         img: "https://cedabet.github.io/assets/images/mines.jpg"
         },
         {
+        name: "Aviator",
+        url: "https://cedabet.com/az/casino/games/spribe-aviator",
+        img: "https://cedabet.github.io/assets/images/aviator.jpg"
+        },
+        {
         name: "Keno",
         url: "https://cedabet.com/az/casino/games/ebetlab-keno-originals",
         img: "https://cedabet.github.io/assets/images/keno.jpg"
@@ -437,12 +442,8 @@ function clearDynamicContent() {
         name: "Blackjack",
         url: "https://cedabet.com/az/casino/games/evolution-blackjack",
         img: "https://cedabet.github.io/assets/images/blackjack.jpg"
-        },
-        {
-        name: "Aviator",
-        url: "https://cedabet.com/az/casino/games/spribe-aviator",
-        img: "https://cedabet.github.io/assets/images/aviator.jpg"
         }
+      
         ];
 
         // Stil sadece bir kez eklensin
@@ -524,13 +525,13 @@ function clearDynamicContent() {
 
         const miniGamesWrapper = document.querySelector("#mini-games-wrapper");
         if (!miniGamesWrapper) {
-        console.error("mini-games-wrapper bulunamadı!");
+     //   console.error("mini-games-wrapper bulunamadı!");
         return;
         }
 
         const container = miniGamesWrapper.querySelector(".container");
         if (!container) {
-        console.error("container bulunamadı!");
+       // console.error("container bulunamadı!");
         return;
         }
 
