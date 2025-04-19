@@ -519,13 +519,13 @@ function loadh2Title() {
 
         const miniGamesWrapper = document.querySelector("#mini-games-wrapper");
         if (!miniGamesWrapper) {
-        console.error("mini-games-wrapper bulunamadı!");
+      //  console.error("mini-games-wrapper bulunamadı!");
         return;
         }
 
         const container = miniGamesWrapper.querySelector(".container");
         if (!container) {
-        console.error("container bulunamadı!");
+       // console.error("container bulunamadı!");
         return;
         }
 
@@ -631,7 +631,7 @@ function loadh2Title() {
 
         const popularGamesWrapper = document.querySelector("#popular-games-wrapper");
         if (!popularGamesWrapper) {
-        console.error("popular-games-wrapper bulunamadı!");
+      //  console.error("popular-games-wrapper bulunamadı!");
         return;
         }
 
