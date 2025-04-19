@@ -614,7 +614,7 @@ function clearDynamicContent() {
 
         const games = [{
         name: "Poker",
-        url: "https://cedabet.com/az/casino/games/evolution-baccarat",
+        url: "https://cedabet.com/az/casino/games/evolution-poker-lobby",
         img: "https://cedabet.github.io/assets/images/baccarat.webp",
         imgMobile: "https://cedabet.github.io/assets/images/Poker.avif"
         },
