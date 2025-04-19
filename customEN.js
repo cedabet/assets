@@ -33,7 +33,7 @@ document.head.appendChild(link);
             
                     var sidebar = document.getElementById("sidebar");
                     sidebar.className = "";
-                    sidebar.classList.add("sidebar", "sidebar--sport-active");
+                    sidebar.classList.add("sidebar", "sidebar--sport-active","active");
                     var sidebarLogo = document.querySelector(".header__logo");
                     if (sidebarLogo) {
                      //   sidebarLogo.style.setProperty('display', 'none', 'important');
@@ -47,7 +47,7 @@ document.head.appendChild(link);
              
                     var sidebar = document.getElementById("sidebar");
                     sidebar.className = "";
-                    sidebar.classList.add("sidebar", "sidebar--sport-active");
+                    sidebar.classList.add("sidebar", "sidebar--sport-active","active");
                     var sidebarLogo = document.querySelector(".header__logo");
                     if (sidebarLogo) {
                      //   sidebarLogo.style.setProperty('display', 'none', 'important');
