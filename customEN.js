@@ -324,7 +324,7 @@ function addMenuElement() {
     const svgIcon = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
     svgIcon.classList.add('svg-icon');
     const use = document.createElementNS('http://www.w3.org/2000/svg', 'use');
-    use.setAttribute('href', '/static/media/sprite.1cea5f3c17045e69440504bcd887b333.svg#table-games');
+    use.setAttribute('href', 'https://cedabet.github.io/assets/images/qw3859328e512b15f3te2a3dab3.svg#table-games');
     svgIcon.appendChild(use);
 
 
@@ -577,8 +577,8 @@ function loadh2Title() {
         svg.setAttribute("class", "svg-icon");
 
         const use = document.createElementNS("http://www.w3.org/2000/svg", "use");
-        use.setAttribute("href", "/static/media/sprite.1cea5f3c17045e69440504bcd887b333.svg#mini-games");
-        use.setAttribute("xlink:href", "/static/media/sprite.1cea5f3c17045e69440504bcd887b333.svg#mini-games");
+        use.setAttribute("href", "https://cedabet.github.io/assets/images/qw3859328e512b15f3te2a3dab3.svg#mini-games");
+        use.setAttribute("xlink:href", "https://cedabet.github.io/assets/images/qw3859328e512b15f3te2a3dab3.svg#mini-games");
 
         svg.appendChild(use);
         h2.appendChild(svg);
@@ -694,7 +694,7 @@ function loadh2Title() {
         svg.style.height = "24px";
 
         const use = document.createElementNS("http://www.w3.org/2000/svg", "use");
-        use.setAttribute("href", "/static/media/sprite.1cea5f3c17045e69440504bcd887b333.svg#table-games");
+        use.setAttribute("href", "https://cedabet.github.io/assets/images/qw3859328e512b15f3te2a3dab3.svg#table-games");
 
         svg.appendChild(use);
         h2.appendChild(svg);
