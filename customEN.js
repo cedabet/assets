@@ -573,7 +573,7 @@ function loadh2Title() {
         const h2 = document.createElement("h2");
         h2.className = "section__title";
 
-        const svg = document.createElementNS("http://www.w3.org/2000/svg", "svg");
+      /*  const svg = document.createElementNS("http://www.w3.org/2000/svg", "svg");
         svg.setAttribute("class", "svg-icon");
 
         const use = document.createElementNS("http://www.w3.org/2000/svg", "use");
@@ -581,7 +581,15 @@ function loadh2Title() {
         use.setAttribute("xlink:href", "https://cedabet.github.io/assets/images/sprite.94622980f40d877c6d27eb5b2474fa5a.svg#mini-games");
 
         svg.appendChild(use);
-        h2.appendChild(svg);
+        h2.appendChild(svg);*/
+		const icon = document.createElement("i");
+icon.className = "fa-solid fa-certificate";
+icon.style.color = "#219fe3";
+icon.style.height = "28px";
+icon.style.width = "28px";
+icon.style.fontSize = "28px";
+h2.appendChild(icon);
+
         h2.append("Ceda Originals");
 
         colTitle.appendChild(h2);
