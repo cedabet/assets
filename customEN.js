@@ -254,7 +254,7 @@ function updateCopyrightYear() {
             title.textContent.trim() === 'Mini Oyunlar' ||
             title.textContent.trim() === 'Мини -игры') {
 
-            title.innerHTML = '<svg class="svg-icon"><use href="https://cedabet.github.io/assets/images/original.svg" xlink:href="/static/media/sprite.1cea5f3c17045e69440504bcd887b333.svg#mini-games"></use></svg>Ceda Originals';
+            //title.innerHTML = '<svg class="svg-icon"><use href="https://cedabet.github.io/assets/images/original.svg" xlink:href="/static/media/sprite.1cea5f3c17045e69440504bcd887b333.svg#mini-games"></use></svg>Ceda Originals';
 
         }
     });
