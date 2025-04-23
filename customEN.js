@@ -576,13 +576,13 @@ function loadh2Title() {
         const svg = document.createElementNS("http://www.w3.org/2000/svg", "svg");
         svg.setAttribute("class", "svg-icon");
 
-        const use = document.createElementNS("http://www.w3.org/2000/svg", "use");
+      /*  const use = document.createElementNS("http://www.w3.org/2000/svg", "use");
         use.setAttribute("href", "https://cedabet.github.io/assets/images/original.svg");
         use.setAttribute("xlink:href", "https://cedabet.github.io/assets/images/sprite.94622980f40d877c6d27eb5b2474fa5a.svg#mini-games");
 
         svg.appendChild(use);
         h2.appendChild(svg);
-        h2.append("Ceda Originals");
+        h2.append("Ceda Originals");*/
 
         colTitle.appendChild(h2);
         row.appendChild(colTitle);
