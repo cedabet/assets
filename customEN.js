@@ -491,17 +491,13 @@ function addMenuElement() {
     const newAnchor = document.createElement('a');
     newAnchor.href = '/en/casino/group/table-games';
 
-  /*  const svgIcon = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
-    svgIcon.classList.add('svg-icon');
-    const use = document.createElementNS('http://www.w3.org/2000/svg', 'use');
-    use.setAttribute('href', 'https://cedabet.github.io/assets/images/sprite.94622980f40d877c6d27eb5b2474fa5a.svg#table-games');
-    svgIcon.appendChild(use);*/
+ 
 	const icon = document.createElement("i");
 icon.className = "fa-solid fa-certificate";
-icon.style.color = "#219fe3";
-icon.style.height = "28px";
-icon.style.width = "28px";
-icon.style.fontSize = "28px";
+icon.style.color = "#5c7382";
+icon.style.height = "22px";
+icon.style.width = "22px";
+icon.style.fontSize = "22px";
 
     const span = document.createElement('span');
     span.textContent = 'New';
@@ -748,15 +744,7 @@ function loadh2Title() {
         const h2 = document.createElement("h2");
         h2.className = "section__title";
 
-      /*  const svg = document.createElementNS("http://www.w3.org/2000/svg", "svg");
-        svg.setAttribute("class", "svg-icon");
-
-        const use = document.createElementNS("http://www.w3.org/2000/svg", "use");
-        use.setAttribute("href", "https://cedabet.github.io/assets/images/original.svg");
-        use.setAttribute("xlink:href", "https://cedabet.github.io/assets/images/sprite.94622980f40d877c6d27eb5b2474fa5a.svg#mini-games");
-
-        svg.appendChild(use);
-        h2.appendChild(svg);*/
+   
 		const icon = document.createElement("i");
 icon.className = "fa-solid fa-certificate";
 icon.style.color = "#219fe3";
@@ -871,16 +859,7 @@ h2.appendChild(icon);
         h2.style.alignItems = "center";
         h2.style.gap = "8px";
 
-   /*     const svg = document.createElementNS("http://www.w3.org/2000/svg", "svg");
-        svg.setAttribute("class", "svg-icon");
-        svg.style.width = "24px";
-        svg.style.height = "24px";
-
-        const use = document.createElementNS("http://www.w3.org/2000/svg", "use");
-        use.setAttribute("href", "https://cedabet.github.io/assets/images/qw3859328e512b15f3te2a3dab3.svg#table-games");
-
-        svg.appendChild(use);
-        h2.appendChild(svg);*/
+ 
 	const icon = document.createElement("i");
 icon.className = "fa-solid fa-certificate";
 icon.style.color = "#219fe3";
