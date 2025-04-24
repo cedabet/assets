@@ -345,8 +345,8 @@ function createVipExperience() {
      { src: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/ceda.jpg-xUU80CihSslZ88xS1pPUaCGPlEEoi4.jpeg', class: 'vip-ceda-icon', position: 'bottom' }
    ];
  
-   // Calculate positions for top and bottom rows
-   const containerWidth = 1181;
+   // Get the container width dynamically
+   const containerWidth = newDiv.offsetWidth; // Get the container width dynamically
    const astronautWidth = 75;
  
    // Filter astronauts by position
@@ -467,8 +467,8 @@ function createVipExperience() {
        this.querySelector('img').style.opacity = '0.7';
      });
    });
- }
- 
+}
+
 
 
 function clearDynamicContent() {
