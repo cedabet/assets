@@ -286,6 +286,11 @@ function createVipExperience() {
    newDiv.style.overflow = 'hidden';
  
    vipContainer.appendChild(newDiv);
+
+   // Ekran boyutunu dinamik olarak alacak fonksiyon
+   function getContainerWidth() {
+     return newDiv.offsetWidth;
+   }
  
    // Add text content in the middle
    const textContent = document.createElement('div');
@@ -346,7 +351,6 @@ function createVipExperience() {
    ];
  
    // Get the container width dynamically
-   const containerWidth = newDiv.offsetWidth; // Get the container width dynamically
    const astronautWidth = 75;
  
    // Filter astronauts by position
@@ -354,82 +358,51 @@ function createVipExperience() {
    const bottomAstronauts = vipAstronauts.filter(a => a.position === 'bottom');
  
    // Calculate spacing for top row (3 astronauts)
-   const topTotalWidth = topAstronauts.length * astronautWidth;
-   const topSpacing = (containerWidth - topTotalWidth) / (topAstronauts.length + 1);
+   function calculateSpacing(astronauts, isTopRow) {
+     const containerWidth = getContainerWidth(); // Get updated width
+     const totalWidth = astronauts.length * astronautWidth;
+     const spacing = (containerWidth - totalWidth) / (astronauts.length + 1);
  
-   // Calculate spacing for bottom row (4 astronauts)
-   const bottomTotalWidth = bottomAstronauts.length * astronautWidth;
-   const bottomSpacing = (containerWidth - bottomTotalWidth) / (bottomAstronauts.length + 1);
+     astronauts.forEach((astronaut, index) => {
+       const astronautElement = document.createElement('div');
+ 
+       const leftPosition = spacing + (index * (astronautWidth + spacing));
+       const leftPercentage = (leftPosition / containerWidth) * 100;
+ 
+       astronautElement.style.position = 'absolute';
+       astronautElement.style.width = '75px';
+       astronautElement.style.height = '75px';
+       astronautElement.style.borderRadius = '100%';
+       astronautElement.style.border = '1px solid rgba(34, 55, 64, 1)';
+       astronautElement.style.overflow = 'hidden';
+       astronautElement.style.zIndex = '1';
+       astronautElement.style.transition = 'transform 0.3s ease';
+       astronautElement.style.left = `${leftPercentage}%`;
+       astronautElement.style[isTopRow ? 'top' : 'bottom'] = '25px';
+ 
+       astronautElement.className = astronaut.class;
+ 
+       const img = document.createElement('img');
+       img.src = astronaut.src;
+       img.alt = `VIP ${astronaut.class}`;
+       img.style.width = '100%';
+       img.style.height = '100%';
+       img.style.objectFit = 'cover';
+       img.style.borderRadius = '100%';
+       img.style.opacity = '0.7';
+ 
+       astronautElement.appendChild(img);
+       newDiv.appendChild(astronautElement);
+ 
+       animateVipIcon(astronautElement, index, isTopRow ? 'top' : 'bottom');
+     });
+   }
  
    // Create top row astronauts
-   topAstronauts.forEach((astronaut, index) => {
-     const astronautElement = document.createElement('div');
- 
-     const leftPosition = topSpacing + (index * (astronautWidth + topSpacing));
-     const leftPercentage = (leftPosition / containerWidth) * 100;
- 
-     astronautElement.style.position = 'absolute';
-     astronautElement.style.width = '75px';
-     astronautElement.style.height = '75px';
-     astronautElement.style.borderRadius = '100%';
-     astronautElement.style.border = '1px solid rgba(34, 55, 64, 1)';
-     astronautElement.style.overflow = 'hidden';
-     astronautElement.style.zIndex = '1';
-     astronautElement.style.transition = 'transform 0.3s ease';
-     astronautElement.style.left = `${leftPercentage}%`;
-     astronautElement.style.top = '25px';
- 
-     astronautElement.className = astronaut.class;
- 
-     const img = document.createElement('img');
-     img.src = astronaut.src;
-     img.alt = `VIP ${astronaut.class}`;
-     img.style.width = '100%';
-     img.style.height = '100%';
-     img.style.objectFit = 'cover';
-     img.style.borderRadius = '100%';
-     img.style.opacity = '0.7';
- 
-     astronautElement.appendChild(img);
-     newDiv.appendChild(astronautElement);
- 
-     animateVipIcon(astronautElement, index, 'top');
-   });
+   calculateSpacing(topAstronauts, true);
  
    // Create bottom row astronauts
-   bottomAstronauts.forEach((astronaut, index) => {
-     const astronautElement = document.createElement('div');
- 
-     const leftPosition = bottomSpacing + (index * (astronautWidth + bottomSpacing));
-     const leftPercentage = (leftPosition / containerWidth) * 100;
- 
-     astronautElement.style.position = 'absolute';
-     astronautElement.style.width = '75px';
-     astronautElement.style.height = '75px';
-     astronautElement.style.borderRadius = '100%';
-     astronautElement.style.border = '1px solid rgba(34, 55, 64, 1)';
-     astronautElement.style.overflow = 'hidden';
-     astronautElement.style.zIndex = '1';
-     astronautElement.style.transition = 'transform 0.3s ease';
-     astronautElement.style.left = `${leftPercentage}%`;
-     astronautElement.style.bottom = '25px';
- 
-     astronautElement.className = astronaut.class;
- 
-     const img = document.createElement('img');
-     img.src = astronaut.src;
-     img.alt = `VIP ${astronaut.class}`;
-     img.style.width = '100%';
-     img.style.height = '100%';
-     img.style.objectFit = 'cover';
-     img.style.borderRadius = '100%';
-     img.style.opacity = '0.7';
- 
-     astronautElement.appendChild(img);
-     newDiv.appendChild(astronautElement);
- 
-     animateVipIcon(astronautElement, index, 'bottom');
-   });
+   calculateSpacing(bottomAstronauts, false);
  
    function animateVipIcon(element, index, position) {
      // Daha yavaş bir zıplama animasyonu
@@ -464,10 +437,20 @@ function createVipExperience() {
        this.querySelector('img').style.opacity = '0.7';
      });
    });
+
+   // Resize event listener to update spacing and positions when window size changes
+   window.addEventListener('resize', function() {
+    clearAstronauts();
+  
+     calculateSpacing(topAstronauts, true);
+     calculateSpacing(bottomAstronauts, false);
+   });
 }
-
-
-
+function clearAstronauts() {
+  // 'vip' container içindeki mevcut tüm astronotları temizle
+  const existingAstronauts = newDiv.querySelectorAll('[class^="vip-"]');
+  existingAstronauts.forEach(astronaut => astronaut.remove());
+}
 
 function clearDynamicContent() {
     const idsToRemove = [
