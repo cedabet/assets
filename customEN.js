@@ -38,9 +38,6 @@ document.head.appendChild(link);
                     if (sidebarLogo) {
                      //   sidebarLogo.style.setProperty('display', 'none', 'important');
                     }
-                  
-
-                
 
             }
 	      else if (sportspath === "/en/e-sport") {
@@ -55,6 +52,11 @@ document.head.appendChild(link);
                   
 
                 
+
+            }
+	          else if (sportspath === "/en/vip") {
+             
+                createVipExperience();
 
             }
         isFirstLoad = false;
@@ -82,7 +84,8 @@ document.head.appendChild(link);
                 CreateCedaOriginal();
                 CreateCedaOriginalTwo();
             } else if (path === "/en/vip") {
-                clearDynamicContent()
+                clearDynamicContent();
+		    createVipExperience();
             } else if (path === "/en/casino") {
                 clearDynamicContent()
                 CreateCedaOriginal();
@@ -260,29 +263,215 @@ function updateCopyrightYear() {
     });
 
 }
-/*function moveMiniGamesWrapper() {
+function createVipExperience() {
+  // vip class'ına sahip div'i bul
+  const vipContainer = document.querySelector('.vip');
+  
+  if (document.querySelector('#vip-container')) {
+    console.log("VIP container already exists. Skipping creation.");
+    return; 
+  }
 
-    var miniGamesWrapper = document.getElementById('mini-games-wrapper');
+  // İçeriği temizle
+  vipContainer.innerHTML = '';
+	
+  // Create and style the new div (vip-container)
+  const newDiv = document.createElement('div');
+  newDiv.id = 'vip-container';
+  newDiv.style.backgroundColor = '#03121a';
+  newDiv.style.width = '1181px';
+  newDiv.style.height = '329px';
+  newDiv.style.position = 'relative';
+  newDiv.style.borderRadius = '8px';
+  newDiv.style.overflow = 'hidden';
 
-    var highRtpGamesWrapper = document.getElementById('main-slider');
-    var changeLine = document.getElementById('custom-section-7');
+  vipContainer.appendChild(newDiv);
+  
+  // Add text content in the middle
+  const textContent = document.createElement('div');
+  textContent.style.position = 'absolute';
+  textContent.style.left = '0';
+  textContent.style.right = '0';
+  textContent.style.top = '50%';
+  textContent.style.transform = 'translateY(-50%)';
+  textContent.style.zIndex = '10';
+  textContent.style.textAlign = 'center';
 
-    if (miniGamesWrapper && highRtpGamesWrapper && changeLine ) {
-        highRtpGamesWrapper.insertAdjacentElement('afterend', miniGamesWrapper);
-	 miniGamesWrapper.insertAdjacentElement('afterend', changeLine);
-	    CreateCedaOriginal();
-    } else {
-	var alreadyExists = document.getElementById("mini-games-wrapper-2");
-if (alreadyExists) {
- alreadyExists.remove();
+  const heading = document.createElement('h1');
+  heading.style.color = '#ffffff';
+  heading.style.fontSize = '42px';
+  heading.style.fontFamily = "'Montserrat', 'Arial', sans-serif";
+  heading.style.fontWeight = '800';
+  heading.style.margin = '0 0 12px 0';
+  heading.style.letterSpacing = '1.5px';
+  heading.style.textTransform = 'uppercase';
+  heading.style.background = 'linear-gradient(to right, #ffffff 20%, #229de1 80%)';
+  heading.style.webkitBackgroundClip = 'text';
+  heading.style.webkitTextFillColor = 'transparent';
+  heading.style.display = 'inline-block';
+  heading.style.textShadow = '0 2px 10px rgba(0, 0, 0, 0.3)';
+  heading.textContent = 'The Unrivaled VIP Experience';
+
+  const paragraph = document.createElement('p');
+  paragraph.style.color = '#e6e6e6';
+  paragraph.style.fontSize = '17px';
+  paragraph.style.fontFamily = "'Open Sans', 'Helvetica', sans-serif";
+  paragraph.style.fontWeight = '400';
+  paragraph.style.maxWidth = '650px';
+  paragraph.style.margin = '0 auto';
+  paragraph.style.lineHeight = '1.6';
+  paragraph.style.letterSpacing = '0.4px';
+  paragraph.style.textShadow = '0 1px 3px rgba(0, 0, 0, 0.5)';
+  paragraph.textContent = 'Unlock exclusive benefits and receive instantly withdrawable bonuses without any strings attached.';
+  
+  textContent.appendChild(heading);
+  textContent.appendChild(paragraph);
+  newDiv.appendChild(textContent);
+
+  // Add Google Fonts link for the custom fonts
+  const fontLink = document.createElement('link');
+  fontLink.rel = 'stylesheet';
+  fontLink.href = 'https://fonts.googleapis.com/css2?family=Montserrat:wght@800&family=Open+Sans:wght@400&display=swap';
+  document.head.appendChild(fontLink);
+
+  // Astronaut image sources with custom classes
+  const vipAstronauts = [
+    { src: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/bronze.jpg-kJ1LdK8seS1op7PHwubpz8ZimigSan.jpeg', class: 'vip-bronze-icon', position: 'top' },
+    { src: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/silver.jpg-b0ee8wIwVWLtvDUXRMprSD7yapZLVL.jpeg', class: 'vip-silver-icon', position: 'top' },
+    { src: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/gold.jpg-OHt1qVSHhN3ZNAk2OyyP3DXpLomar9.jpeg', class: 'vip-gold-icon', position: 'top' },
+    { src: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/nonvip.jpg-OkEYbdiUYPy8WPuZHfhDJ64dgloVMX.jpeg', class: 'vip-nonvip-icon', position: 'bottom' },
+    { src: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/platinum.jpg-epz0rV2QG1ZG1nNSsYPyILFSMSWaqr.jpeg', class: 'vip-platinum-icon', position: 'bottom' },
+    { src: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/diamond.jpg-tA22xTawtLy1kEzYS2ZV62u0t0Ifcc.jpeg', class: 'vip-diamond-icon', position: 'bottom' },
+    { src: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/ceda.jpg-xUU80CihSslZ88xS1pPUaCGPlEEoi4.jpeg', class: 'vip-ceda-icon', position: 'bottom' }
+  ];
+  
+  // Calculate positions for top and bottom rows
+  const containerWidth = 1181;
+  const astronautWidth = 75;
+  
+  // Filter astronauts by position
+  const topAstronauts = vipAstronauts.filter(a => a.position === 'top');
+  const bottomAstronauts = vipAstronauts.filter(a => a.position === 'bottom');
+  
+  // Calculate spacing for top row (3 astronauts)
+  const topTotalWidth = topAstronauts.length * astronautWidth;
+  const topSpacing = (containerWidth - topTotalWidth) / (topAstronauts.length + 1);
+  
+  // Calculate spacing for bottom row (4 astronauts)
+  const bottomTotalWidth = bottomAstronauts.length * astronautWidth;
+  const bottomSpacing = (containerWidth - bottomTotalWidth) / (bottomAstronauts.length + 1);
+  
+  // Create top row astronauts
+  topAstronauts.forEach((astronaut, index) => {
+    const astronautElement = document.createElement('div');
+    
+    const leftPosition = topSpacing + (index * (astronautWidth + topSpacing));
+    const leftPercentage = (leftPosition / containerWidth) * 100;
+    
+    astronautElement.style.position = 'absolute';
+    astronautElement.style.width = '75px';
+    astronautElement.style.height = '75px';
+    astronautElement.style.borderRadius = '100%';
+    astronautElement.style.border = '1px solid rgba(34, 55, 64, 1)';
+    astronautElement.style.overflow = 'hidden';
+    astronautElement.style.zIndex = '1';
+    astronautElement.style.transition = 'transform 0.3s ease';
+    astronautElement.style.left = `${leftPercentage}%`;
+    astronautElement.style.top = '25px';
+    
+    astronautElement.className = astronaut.class;
+    
+    const img = document.createElement('img');
+    img.src = astronaut.src;
+    img.alt = `VIP ${astronaut.class}`;
+    img.style.width = '100%';
+    img.style.height = '100%';
+    img.style.objectFit = 'cover';
+    img.style.borderRadius = '100%';
+    img.style.opacity = '0.7';
+    
+    astronautElement.appendChild(img);
+    newDiv.appendChild(astronautElement);
+    
+    animateVipIcon(astronautElement, index, 'top');
+  });
+  
+  // Create bottom row astronauts
+  bottomAstronauts.forEach((astronaut, index) => {
+    const astronautElement = document.createElement('div');
+    
+    const leftPosition = bottomSpacing + (index * (astronautWidth + bottomSpacing));
+    const leftPercentage = (leftPosition / containerWidth) * 100;
+    
+    astronautElement.style.position = 'absolute';
+    astronautElement.style.width = '75px';
+    astronautElement.style.height = '75px';
+    astronautElement.style.borderRadius = '100%';
+    astronautElement.style.border = '1px solid rgba(34, 55, 64, 1)';
+    astronautElement.style.overflow = 'hidden';
+    astronautElement.style.zIndex = '1';
+    astronautElement.style.transition = 'transform 0.3s ease';
+    astronautElement.style.left = `${leftPercentage}%`;
+    astronautElement.style.bottom = '25px';
+    
+    astronautElement.className = astronaut.class;
+    
+    const img = document.createElement('img');
+    img.src = astronaut.src;
+    img.alt = `VIP ${astronaut.class}`;
+    img.style.width = '100%';
+    img.style.height = '100%';
+    img.style.objectFit = 'cover';
+    img.style.borderRadius = '100%';
+    img.style.opacity = '0.7';
+    
+    astronautElement.appendChild(img);
+    newDiv.appendChild(astronautElement);
+    
+    animateVipIcon(astronautElement, index, 'bottom');
+  });
+  
+  function animateVipIcon(element, index, position) {
+    const xAmplitude = 15 + (Math.random() * 10);
+    const rotationRange = 5 + (Math.random() * 3);
+    
+    const startX = parseFloat(element.style.left) / 100 * 1181;
+    
+    let time = Math.random() * Math.PI * 2;
+    const timeIncrement = 0.0008 + (Math.random() * 0.0003);
+    
+    const animate = () => {
+      time += timeIncrement;
+      const xOffset = Math.sin(time) * xAmplitude;
+      const rotation = Math.sin(time * 0.5) * rotationRange;
+      element.style.transform = `translateX(${xOffset}px) rotate(${rotation}deg)`;
+      requestAnimationFrame(animate);
+    };
+    
+    setTimeout(() => {
+      animate();
+    }, index * 100);
+  }
+  
+  // Hover effects for astronaut icons
+  document.querySelectorAll('[class^="vip-"]').forEach(element => {
+    element.addEventListener('mouseover', function() {
+      this.style.transform = 'scale(1.2)';
+      this.style.zIndex = '5';
+      this.querySelector('img').style.opacity = '0.9';
+    });
+    
+    element.addEventListener('mouseout', function() {
+      this.style.transform = '';
+      this.style.zIndex = '1';
+      this.querySelector('img').style.opacity = '0.7';
+    });
+  });
 }
-    var fallbackSection = document.getElementById('custom-section-7');
-        if (fallbackSection) {
 
-            fallbackSection.remove();
-        }
-    }
-}*/
+
+
+
 
 function clearDynamicContent() {
     const idsToRemove = [
