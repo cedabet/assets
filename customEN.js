@@ -432,25 +432,22 @@ function createVipExperience() {
    });
  
    function animateVipIcon(element, index, position) {
-     const xAmplitude = 15 + (Math.random() * 10);
-     const rotationRange = 5 + (Math.random() * 3);
- 
-     const startX = parseFloat(element.style.left) / 100 * 1181;
- 
-     let time = Math.random() * Math.PI * 2;
-     const timeIncrement = 0.0008 + (Math.random() * 0.0003);
- 
-     const animate = () => {
-       time += timeIncrement;
-       const xOffset = Math.sin(time) * xAmplitude;
-       const rotation = Math.sin(time * 0.5) * rotationRange;
-       element.style.transform = `translateX(${xOffset}px) rotate(${rotation}deg)`;
-       requestAnimationFrame(animate);
-     };
- 
-     setTimeout(() => {
-       animate();
-     }, index * 100);
+     // Daha yavaş bir zıplama animasyonu
+     element.style.animation = `bounce 4s ease ${index * 1}s infinite`;
+
+     // Create style element and append keyframes animation
+     const style = document.createElement('style');
+     style.textContent = `
+       @keyframes bounce {
+         0%, 100% {
+           transform: translateY(0);
+         }
+         50% {
+           transform: translateY(-15px);
+         }
+       }
+     `;
+     document.head.appendChild(style);
    }
  
    // Hover effects for astronaut icons
@@ -468,6 +465,7 @@ function createVipExperience() {
      });
    });
 }
+
 
 
 
