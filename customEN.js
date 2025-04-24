@@ -279,8 +279,8 @@ function createVipExperience() {
   const newDiv = document.createElement('div');
   newDiv.id = 'vip-container';
   newDiv.style.backgroundColor = '#03121a';
-  newDiv.style.width = '1181px';
-  newDiv.style.height = '329px';
+  newDiv.style.width = '100%';
+  newDiv.style.height = '569px';
   newDiv.style.position = 'relative';
   newDiv.style.borderRadius = '8px';
   newDiv.style.overflow = 'hidden';
