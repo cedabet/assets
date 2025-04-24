@@ -274,7 +274,7 @@ function createVipExperience() {
 
   // İçeriği temizle
   vipContainer.innerHTML = '';
-	
+  
   // Create and style the new div (vip-container)
   const newDiv = document.createElement('div');
   newDiv.id = 'vip-container';
@@ -345,7 +345,7 @@ function createVipExperience() {
     { src: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/ceda.jpg-xUU80CihSslZ88xS1pPUaCGPlEEoi4.jpeg', class: 'vip-ceda-icon', position: 'bottom' }
   ];
   
-  // Calculate positions for top and bottom rows
+  // Calculate positions for top row (4 astronauts)
   const containerWidth = 1181;
   const astronautWidth = 75;
   
@@ -353,20 +353,14 @@ function createVipExperience() {
   const topAstronauts = vipAstronauts.filter(a => a.position === 'top');
   const bottomAstronauts = vipAstronauts.filter(a => a.position === 'bottom');
   
-  // Calculate spacing for top row (3 astronauts)
-  const topTotalWidth = topAstronauts.length * astronautWidth;
-  const topSpacing = (containerWidth - topTotalWidth) / (topAstronauts.length + 1);
+  // Fixed position for top row astronauts
+  const topPositions = [0, 25, 50, 75]; // 4 positions
   
-  // Calculate spacing for bottom row (4 astronauts)
-  const bottomTotalWidth = bottomAstronauts.length * astronautWidth;
-  const bottomSpacing = (containerWidth - bottomTotalWidth) / (bottomAstronauts.length + 1);
-  
-  // Create top row astronauts
+  // Create top row astronauts with fixed positions
   topAstronauts.forEach((astronaut, index) => {
     const astronautElement = document.createElement('div');
     
-    const leftPosition = topSpacing + (index * (astronautWidth + topSpacing));
-    const leftPercentage = (leftPosition / containerWidth) * 100;
+    const leftPercentage = topPositions[index]; // Use predefined positions
     
     astronautElement.style.position = 'absolute';
     astronautElement.style.width = '75px';
@@ -396,7 +390,7 @@ function createVipExperience() {
     animateVipIcon(astronautElement, index, 'top');
   });
   
-  // Create bottom row astronauts
+  // Create bottom row astronauts (same as previous)
   bottomAstronauts.forEach((astronaut, index) => {
     const astronautElement = document.createElement('div');
     
@@ -468,8 +462,6 @@ function createVipExperience() {
     });
   });
 }
-
-
 
 
 
