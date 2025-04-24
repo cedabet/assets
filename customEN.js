@@ -446,11 +446,13 @@ function createVipExperience() {
      calculateSpacing(bottomAstronauts, false);
    });
 }
+
 function clearAstronauts() {
-  // 'vip' container içindeki mevcut tüm astronotları temizle
-  const existingAstronauts = newDiv.querySelectorAll('[class^="vip-"]');
+
+  const existingAstronauts = document.querySelectorAll('#vip-container .vip-nonvip-icon, #vip-container .vip-bronze-icon, #vip-container .vip-silver-icon, #vip-container .vip-gold-icon, #vip-container .vip-platinum-icon, #vip-container .vip-diamond-icon, #vip-container .vip-ceda-icon');
   existingAstronauts.forEach(astronaut => astronaut.remove());
 }
+
 
 function clearDynamicContent() {
     const idsToRemove = [
