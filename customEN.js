@@ -274,7 +274,7 @@ function createVipExperience() {
 
   // İçeriği temizle
   vipContainer.innerHTML = '';
-  
+	
   // Create and style the new div (vip-container)
   const newDiv = document.createElement('div');
   newDiv.id = 'vip-container';
@@ -345,7 +345,7 @@ function createVipExperience() {
     { src: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/ceda.jpg-xUU80CihSslZ88xS1pPUaCGPlEEoi4.jpeg', class: 'vip-ceda-icon', position: 'bottom' }
   ];
   
-  // Calculate positions for top row (4 astronauts)
+  // Calculate positions for top and bottom rows
   const containerWidth = 1181;
   const astronautWidth = 75;
   
@@ -353,14 +353,20 @@ function createVipExperience() {
   const topAstronauts = vipAstronauts.filter(a => a.position === 'top');
   const bottomAstronauts = vipAstronauts.filter(a => a.position === 'bottom');
   
-  // Fixed position for top row astronauts
-  const topPositions = [0, 25, 50, 75]; // 4 positions
+  // Calculate spacing for top row (3 astronauts)
+  const topTotalWidth = topAstronauts.length * astronautWidth;
+  const topSpacing = (containerWidth - topTotalWidth) / (topAstronauts.length + 1);
   
-  // Create top row astronauts with fixed positions
+  // Calculate spacing for bottom row (4 astronauts)
+  const bottomTotalWidth = bottomAstronauts.length * astronautWidth;
+  const bottomSpacing = (containerWidth - bottomTotalWidth) / (bottomAstronauts.length + 1);
+  
+  // Create top row astronauts
   topAstronauts.forEach((astronaut, index) => {
     const astronautElement = document.createElement('div');
     
-    const leftPercentage = topPositions[index]; // Use predefined positions
+    const leftPosition = topSpacing + (index * (astronautWidth + topSpacing));
+    const leftPercentage = (leftPosition / containerWidth) * 100;
     
     astronautElement.style.position = 'absolute';
     astronautElement.style.width = '75px';
@@ -370,14 +376,14 @@ function createVipExperience() {
     astronautElement.style.overflow = 'hidden';
     astronautElement.style.zIndex = '1';
     astronautElement.style.transition = 'transform 0.3s ease';
-    astronautElement.style.left = `${leftPercentage}%`;
+    astronautElement.style.left = ${leftPercentage}%;
     astronautElement.style.top = '25px';
     
     astronautElement.className = astronaut.class;
     
     const img = document.createElement('img');
     img.src = astronaut.src;
-    img.alt = `VIP ${astronaut.class}`;
+    img.alt = VIP ${astronaut.class};
     img.style.width = '100%';
     img.style.height = '100%';
     img.style.objectFit = 'cover';
@@ -390,7 +396,7 @@ function createVipExperience() {
     animateVipIcon(astronautElement, index, 'top');
   });
   
-  // Create bottom row astronauts (same as previous)
+  // Create bottom row astronauts
   bottomAstronauts.forEach((astronaut, index) => {
     const astronautElement = document.createElement('div');
     
@@ -405,14 +411,14 @@ function createVipExperience() {
     astronautElement.style.overflow = 'hidden';
     astronautElement.style.zIndex = '1';
     astronautElement.style.transition = 'transform 0.3s ease';
-    astronautElement.style.left = `${leftPercentage}%`;
+    astronautElement.style.left = ${leftPercentage}%;
     astronautElement.style.bottom = '25px';
     
     astronautElement.className = astronaut.class;
     
     const img = document.createElement('img');
     img.src = astronaut.src;
-    img.alt = `VIP ${astronaut.class}`;
+    img.alt = VIP ${astronaut.class};
     img.style.width = '100%';
     img.style.height = '100%';
     img.style.objectFit = 'cover';
@@ -438,7 +444,7 @@ function createVipExperience() {
       time += timeIncrement;
       const xOffset = Math.sin(time) * xAmplitude;
       const rotation = Math.sin(time * 0.5) * rotationRange;
-      element.style.transform = `translateX(${xOffset}px) rotate(${rotation}deg)`;
+      element.style.transform = translateX(${xOffset}px) rotate(${rotation}deg);
       requestAnimationFrame(animate);
     };
     
@@ -462,7 +468,6 @@ function createVipExperience() {
     });
   });
 }
-
 
 
 function clearDynamicContent() {
