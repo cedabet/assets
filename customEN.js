@@ -336,10 +336,10 @@ function createVipExperience() {
 
   // Astronaut image sources with custom classes
   const vipAstronauts = [
+    { src: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/nonvip.jpg-OkEYbdiUYPy8WPuZHfhDJ64dgloVMX.jpeg', class: 'vip-nonvip-icon', position: 'top' },
     { src: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/bronze.jpg-kJ1LdK8seS1op7PHwubpz8ZimigSan.jpeg', class: 'vip-bronze-icon', position: 'top' },
     { src: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/silver.jpg-b0ee8wIwVWLtvDUXRMprSD7yapZLVL.jpeg', class: 'vip-silver-icon', position: 'top' },
     { src: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/gold.jpg-OHt1qVSHhN3ZNAk2OyyP3DXpLomar9.jpeg', class: 'vip-gold-icon', position: 'top' },
-    { src: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/nonvip.jpg-OkEYbdiUYPy8WPuZHfhDJ64dgloVMX.jpeg', class: 'vip-nonvip-icon', position: 'bottom' },
     { src: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/platinum.jpg-epz0rV2QG1ZG1nNSsYPyILFSMSWaqr.jpeg', class: 'vip-platinum-icon', position: 'bottom' },
     { src: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/diamond.jpg-tA22xTawtLy1kEzYS2ZV62u0t0Ifcc.jpeg', class: 'vip-diamond-icon', position: 'bottom' },
     { src: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/ceda.jpg-xUU80CihSslZ88xS1pPUaCGPlEEoi4.jpeg', class: 'vip-ceda-icon', position: 'bottom' }
