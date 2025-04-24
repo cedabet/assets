@@ -351,7 +351,7 @@ function createVipExperience() {
    ];
  
    // Get the container width dynamically
-   const astronautWidth = 75;
+   const astronautWidth = 100;
  
    // Filter astronauts by position
    const topAstronauts = vipAstronauts.filter(a => a.position === 'top');
@@ -370,8 +370,8 @@ function createVipExperience() {
        const leftPercentage = (leftPosition / containerWidth) * 100;
  
        astronautElement.style.position = 'absolute';
-       astronautElement.style.width = '75px';
-       astronautElement.style.height = '75px';
+       astronautElement.style.width = '100px';
+       astronautElement.style.height = '100px';
        astronautElement.style.borderRadius = '100%';
        astronautElement.style.border = '1px solid rgba(34, 55, 64, 1)';
        astronautElement.style.overflow = 'hidden';
