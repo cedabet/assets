@@ -311,7 +311,7 @@ function clearDynamicContent() {
 
 
         newAnchor.appendChild(svgIcon);
-        newAnchor.appendChild(document.createTextNode(' Cədvəl Oyunları'));
+        newAnchor.appendChild(document.createTextNode(' Stolüstü Oyunları'));
         newAnchor.appendChild(span);
 
         newLi.appendChild(newAnchor);
@@ -671,7 +671,7 @@ function clearDynamicContent() {
 
         svg.appendChild(use);
         h2.appendChild(svg);
-        h2.append("CƏDVƏL OYUNLARI");
+        h2.append("STOLÜSTÜ OYUNLARI");
         colTitle.appendChild(h2);
         row.appendChild(colTitle);
 
