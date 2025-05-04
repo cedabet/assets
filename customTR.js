@@ -859,8 +859,8 @@ icon.style.color = "#5c7382";
 icon.style.height = "22px";
 icon.style.width = "22px";
 icon.style.fontSize = "22px";
-		
-        h2.append("TABLE GAMES");
+		h2.appendChild(icon);
+        h2.append("MASA OYUNLARI");
         colTitle.appendChild(h2);
         row.appendChild(colTitle);
 
