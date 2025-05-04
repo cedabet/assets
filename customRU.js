@@ -540,7 +540,7 @@ function addMenuElementTwo() {
         if (!existingMenu) {
             const newHTML = `
                  <div style="width: 100%;">
-                     <a id="${elementId}" class="sidebar__link sidebar__link--casino" href="/promotions" style="
+                     <a id="${elementId}" class="sidebar__link sidebar__link--casino" href="/ru/promotions" style="
                          background: url('https://cedabet.github.io/assets/images/promotionBtn.jpg') left center / cover no-repeat;
                          width: 100%;
                          margin-bottom: 17px;
