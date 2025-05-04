@@ -504,7 +504,7 @@ icon.style.fontSize = "22px";
     span.textContent = 'Yeni';
 
 
-    newAnchor.appendChild(svgIcon);
+    newAnchor.appendChild(icon);
     newAnchor.appendChild(document.createTextNode(' Masa Oyunları'));
     newAnchor.appendChild(span);
 
