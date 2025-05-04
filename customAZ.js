@@ -83,7 +83,7 @@
                 CreateCedaOriginalTwo();
             } else if (path === "/az/vip") {
                 clearDynamicContent();
-		       createVipExperience();
+		       createVip();
             } else if (path === "/az/casino") {
                 clearDynamicContent()
                 CreateCedaOriginal();
@@ -260,7 +260,7 @@
             }
         });
     }
-function createVipExperience() {
+function createVip() {
    // vip class'ına sahip div'i bul
    const vipContainer = document.querySelector('.vip');
  
@@ -312,7 +312,7 @@ function createVipExperience() {
    heading.style.webkitTextFillColor = 'transparent';
    heading.style.display = 'inline-block';
    heading.style.textShadow = '0 2px 10px rgba(0, 0, 0, 0.3)';
-   heading.textContent = 'The Unrivaled VIP Experience';
+   heading.textContent = 'Rəqibsiz VIP Təcrübəsi';
  
    const paragraph = document.createElement('p');
    paragraph.style.color = '#e6e6e6';
@@ -324,7 +324,7 @@ function createVipExperience() {
    paragraph.style.lineHeight = '1.6';
    paragraph.style.letterSpacing = '0.4px';
    paragraph.style.textShadow = '0 1px 3px rgba(0, 0, 0, 0.5)';
-   paragraph.textContent = 'Unlock exclusive benefits and receive instantly withdrawable bonuses without any strings attached.';
+   paragraph.textContent = 'Eksklüziv üstünlüklərin kilidini aç və heç bir şərt olmadan dərhal çıxarıla bilən bonuslar əldə et.';
  
    textContent.appendChild(heading);
    textContent.appendChild(paragraph);
