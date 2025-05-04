@@ -315,7 +315,7 @@ function createVipExperience() {
    heading.style.webkitTextFillColor = 'transparent';
    heading.style.display = 'inline-block';
    heading.style.textShadow = '0 2px 10px rgba(0, 0, 0, 0.3)';
-   heading.textContent = 'The Unrivaled VIP Experience';
+   heading.textContent = 'БЕСПОДОБНЫЙ VIP ОПЫТ';
  
    const paragraph = document.createElement('p');
    paragraph.style.color = '#e6e6e6';
@@ -327,7 +327,7 @@ function createVipExperience() {
    paragraph.style.lineHeight = '1.6';
    paragraph.style.letterSpacing = '0.4px';
    paragraph.style.textShadow = '0 1px 3px rgba(0, 0, 0, 0.5)';
-   paragraph.textContent = 'Unlock exclusive benefits and receive instantly withdrawable bonuses without any strings attached.';
+   paragraph.textContent = 'Откройте эксклюзивные преимущества и получайте бонусы, которые можно немедленно вывести, без каких-либо условий.';
  
    textContent.appendChild(heading);
    textContent.appendChild(paragraph);
