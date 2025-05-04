@@ -56,6 +56,11 @@ document.head.appendChild(link);
                 
 
             }
+	          else if (sportspath === "/ru/vip") {
+             
+                createVipExperience();
+
+            }
         isFirstLoad = false;
     }
 
@@ -80,9 +85,10 @@ document.head.appendChild(link);
                 CreateCedaOriginal();
                 CreateCedaOriginalTwo();
             } else if (path === "/ru/vip") {
-                clearDynamicContent()
+                clearDynamicContent();
+		    	    createVipExperience();
             } else if (path === "/ru/casino") {
-                clearDynamicContent()
+                clearDynamicContent();
                 CreateCedaOriginal();
                 CreateCedaOriginalTwo();
             } else if (path === "/ru/sportsbook") {
@@ -252,11 +258,202 @@ function updateCopyrightYear() {
             title.textContent.trim() === 'Mini Oyunlar' ||
             title.textContent.trim() === 'Мини -игры') {
 
-            title.innerHTML = '<svg class="svg-icon"><use href="/static/media/sprite.1cea5f3c17045e69440504bcd887b333.svg#mini-games" xlink:href="/static/media/sprite.1cea5f3c17045e69440504bcd887b333.svg#mini-games"></use></svg>Ceda Оригинал';
+          //  title.innerHTML = '<svg class="svg-icon"><use href="/static/media/sprite.1cea5f3c17045e69440504bcd887b333.svg#mini-games" xlink:href="/static/media/sprite.1cea5f3c17045e69440504bcd887b333.svg#mini-games"></use></svg>Ceda Оригинал';
 
         }
     });
 }
+function createVipExperience() {
+   // vip class'ına sahip div'i bul
+   const vipContainer = document.querySelector('.vip');
+ 
+   if (document.querySelector('#vip-container')) {
+     console.log("VIP container already exists. Skipping creation.");
+     return; 
+   }
+ 
+   // İçeriği temizle
+   vipContainer.innerHTML = '';
+ 
+   // Create and style the new div (vip-container)
+   const newDiv = document.createElement('div');
+   newDiv.id = 'vip-container';
+   newDiv.style.backgroundColor = '#03121a';
+   newDiv.style.width = '100%';
+   newDiv.style.height = '500px';
+   newDiv.style.position = 'relative';
+   newDiv.style.borderRadius = '8px';
+   newDiv.style.overflow = 'hidden';
+ 
+   vipContainer.appendChild(newDiv);
+
+   // Ekran boyutunu dinamik olarak alacak fonksiyon
+   function getContainerWidth() {
+     return newDiv.offsetWidth;
+   }
+ 
+   // Add text content in the middle
+   const textContent = document.createElement('div');
+   textContent.style.position = 'absolute';
+   textContent.style.left = '0';
+   textContent.style.right = '0';
+   textContent.style.top = '50%';
+   textContent.style.transform = 'translateY(-50%)';
+   textContent.style.zIndex = '10';
+   textContent.style.textAlign = 'center';
+ 
+   const heading = document.createElement('h1');
+   heading.style.color = '#ffffff';
+   heading.style.fontSize = '42px';
+   heading.style.fontFamily = "'Montserrat', 'Arial', sans-serif";
+   heading.style.fontWeight = '800';
+   heading.style.margin = '0 0 12px 0';
+   heading.style.letterSpacing = '1.5px';
+   heading.style.textTransform = 'uppercase';
+   heading.style.background = 'linear-gradient(to right, #ffffff 20%, #229de1 80%)';
+   heading.style.webkitBackgroundClip = 'text';
+   heading.style.webkitTextFillColor = 'transparent';
+   heading.style.display = 'inline-block';
+   heading.style.textShadow = '0 2px 10px rgba(0, 0, 0, 0.3)';
+   heading.textContent = 'The Unrivaled VIP Experience';
+ 
+   const paragraph = document.createElement('p');
+   paragraph.style.color = '#e6e6e6';
+   paragraph.style.fontSize = '17px';
+   paragraph.style.fontFamily = "'Open Sans', 'Helvetica', sans-serif";
+   paragraph.style.fontWeight = '400';
+   paragraph.style.maxWidth = '650px';
+   paragraph.style.margin = '0 auto';
+   paragraph.style.lineHeight = '1.6';
+   paragraph.style.letterSpacing = '0.4px';
+   paragraph.style.textShadow = '0 1px 3px rgba(0, 0, 0, 0.5)';
+   paragraph.textContent = 'Unlock exclusive benefits and receive instantly withdrawable bonuses without any strings attached.';
+ 
+   textContent.appendChild(heading);
+   textContent.appendChild(paragraph);
+   newDiv.appendChild(textContent);
+ 
+   // Add Google Fonts link for the custom fonts
+   const fontLink = document.createElement('link');
+   fontLink.rel = 'stylesheet';
+   fontLink.href = 'https://fonts.googleapis.com/css2?family=Montserrat:wght@800&family=Open+Sans:wght@400&display=swap';
+   document.head.appendChild(fontLink);
+ 
+   // Astronaut image sources with custom classes
+   const vipAstronauts = [
+     { src: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/nonvip.jpg-OkEYbdiUYPy8WPuZHfhDJ64dgloVMX.jpeg', class: 'vip-nonvip-icon', position: 'top' },
+     { src: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/bronze.jpg-kJ1LdK8seS1op7PHwubpz8ZimigSan.jpeg', class: 'vip-bronze-icon', position: 'top' },
+     { src: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/silver.jpg-b0ee8wIwVWLtvDUXRMprSD7yapZLVL.jpeg', class: 'vip-silver-icon', position: 'top' },
+     { src: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/gold.jpg-OHt1qVSHhN3ZNAk2OyyP3DXpLomar9.jpeg', class: 'vip-gold-icon', position: 'top' },
+     { src: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/platinum.jpg-epz0rV2QG1ZG1nNSsYPyILFSMSWaqr.jpeg', class: 'vip-platinum-icon', position: 'bottom' },
+     { src: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/diamond.jpg-tA22xTawtLy1kEzYS2ZV62u0t0Ifcc.jpeg', class: 'vip-diamond-icon', position: 'bottom' },
+     { src: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/ceda.jpg-xUU80CihSslZ88xS1pPUaCGPlEEoi4.jpeg', class: 'vip-ceda-icon', position: 'bottom' }
+   ];
+ 
+   // Get the container width dynamically
+   const astronautWidth = 100;
+ 
+   // Filter astronauts by position
+   const topAstronauts = vipAstronauts.filter(a => a.position === 'top');
+   const bottomAstronauts = vipAstronauts.filter(a => a.position === 'bottom');
+ 
+   // Calculate spacing for top row (3 astronauts)
+   function calculateSpacing(astronauts, isTopRow) {
+     const containerWidth = getContainerWidth(); // Get updated width
+     const totalWidth = astronauts.length * astronautWidth;
+     const spacing = (containerWidth - totalWidth) / (astronauts.length + 1);
+ 
+     astronauts.forEach((astronaut, index) => {
+       const astronautElement = document.createElement('div');
+ 
+       const leftPosition = spacing + (index * (astronautWidth + spacing));
+       const leftPercentage = (leftPosition / containerWidth) * 100;
+ 
+       astronautElement.style.position = 'absolute';
+       astronautElement.style.width = '100px';
+       astronautElement.style.height = '100px';
+       astronautElement.style.borderRadius = '100%';
+       astronautElement.style.border = '1px solid rgba(34, 55, 64, 1)';
+       astronautElement.style.overflow = 'hidden';
+       astronautElement.style.zIndex = '1';
+       astronautElement.style.transition = 'transform 0.3s ease';
+       astronautElement.style.left = `${leftPercentage}%`;
+       astronautElement.style[isTopRow ? 'top' : 'bottom'] = '25px';
+ 
+       astronautElement.className = astronaut.class;
+ 
+       const img = document.createElement('img');
+       img.src = astronaut.src;
+       img.alt = `VIP ${astronaut.class}`;
+       img.style.width = '100%';
+       img.style.height = '100%';
+       img.style.objectFit = 'cover';
+       img.style.borderRadius = '100%';
+       img.style.opacity = '0.7';
+ 
+       astronautElement.appendChild(img);
+       newDiv.appendChild(astronautElement);
+ 
+       animateVipIcon(astronautElement, index, isTopRow ? 'top' : 'bottom');
+     });
+   }
+ 
+   // Create top row astronauts
+   calculateSpacing(topAstronauts, true);
+ 
+   // Create bottom row astronauts
+   calculateSpacing(bottomAstronauts, false);
+ 
+   function animateVipIcon(element, index, position) {
+     // Daha yavaş bir zıplama animasyonu
+     element.style.animation = `bounce 4s ease ${index * 1}s infinite`;
+
+     // Create style element and append keyframes animation
+     const style = document.createElement('style');
+     style.textContent = `
+       @keyframes bounce {
+         0%, 100% {
+           transform: translateY(0);
+         }
+         50% {
+           transform: translateY(-15px);
+         }
+       }
+     `;
+     document.head.appendChild(style);
+   }
+ 
+   // Hover effects for astronaut icons
+   document.querySelectorAll('[class^="vip-"]').forEach(element => {
+     element.addEventListener('mouseover', function() {
+       this.style.transform = 'scale(1.2)';
+       this.style.zIndex = '5';
+       this.querySelector('img').style.opacity = '0.9';
+     });
+ 
+     element.addEventListener('mouseout', function() {
+       this.style.transform = '';
+       this.style.zIndex = '1';
+       this.querySelector('img').style.opacity = '0.7';
+     });
+   });
+
+   // Resize event listener to update spacing and positions when window size changes
+   window.addEventListener('resize', function() {
+    clearAstronauts();
+  
+     calculateSpacing(topAstronauts, true);
+     calculateSpacing(bottomAstronauts, false);
+   });
+}
+
+function clearAstronauts() {
+
+  const existingAstronauts = document.querySelectorAll('#vip-container .vip-nonvip-icon, #vip-container .vip-bronze-icon, #vip-container .vip-silver-icon, #vip-container .vip-gold-icon, #vip-container .vip-platinum-icon, #vip-container .vip-diamond-icon, #vip-container .vip-ceda-icon');
+  existingAstronauts.forEach(astronaut => astronaut.remove());
+}
+
+
 function clearDynamicContent() {
     const idsToRemove = [
         "mini-games-wrapper-2",
@@ -294,18 +491,20 @@ function addMenuElement() {
     const newAnchor = document.createElement('a');
     newAnchor.href = '/ru/casino/group/table-games';
 
-    const svgIcon = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
-    svgIcon.classList.add('svg-icon');
-    const use = document.createElementNS('http://www.w3.org/2000/svg', 'use');
-    use.setAttribute('href', '/static/media/sprite.1cea5f3c17045e69440504bcd887b333.svg#table-games');
-    svgIcon.appendChild(use);
+ 
+	const icon = document.createElement("i");
+icon.className = "fa-solid fa-certificate";
+icon.style.color = "#5c7382";
+icon.style.height = "22px";
+icon.style.width = "22px";
+icon.style.fontSize = "22px";
 
 
     const span = document.createElement('span');
     span.textContent = 'Новый';
 
 
-    newAnchor.appendChild(svgIcon);
+    newAnchor.appendChild(icon);
     newAnchor.appendChild(document.createTextNode(' Настольные игры'));
     newAnchor.appendChild(span);
 
@@ -541,15 +740,14 @@ function loadh2Title() {
         const h2 = document.createElement("h2");
         h2.className = "section__title";
 
-        const svg = document.createElementNS("http://www.w3.org/2000/svg", "svg");
-        svg.setAttribute("class", "svg-icon");
-
-        const use = document.createElementNS("http://www.w3.org/2000/svg", "use");
-        use.setAttribute("href", "/static/media/sprite.1cea5f3c17045e69440504bcd887b333.svg#mini-games");
-        use.setAttribute("xlink:href", "/static/media/sprite.1cea5f3c17045e69440504bcd887b333.svg#mini-games");
-
-        svg.appendChild(use);
-        h2.appendChild(svg);
+   
+		const icon = document.createElement("i");
+icon.className = "fa-solid fa-certificate";
+icon.style.color = "#219fe3";
+icon.style.height = "28px";
+icon.style.width = "28px";
+icon.style.fontSize = "28px";
+h2.appendChild(icon);
         h2.append("Ceda Оригинал");
 
         colTitle.appendChild(h2);
@@ -655,18 +853,14 @@ function loadh2Title() {
         h2.style.display = "flex";
         h2.style.alignItems = "center";
         h2.style.gap = "8px";
-
-        const svg = document.createElementNS("http://www.w3.org/2000/svg", "svg");
-        svg.setAttribute("class", "svg-icon");
-        svg.style.width = "24px";
-        svg.style.height = "24px";
-
-        const use = document.createElementNS("http://www.w3.org/2000/svg", "use");
-        use.setAttribute("href", "/static/media/sprite.1cea5f3c17045e69440504bcd887b333.svg#table-games");
-
-        svg.appendChild(use);
-        h2.appendChild(svg);
-        h2.append("TABLE GAMES");
+const icon = document.createElement("i");
+icon.className = "fa-solid fa-certificate";
+icon.style.color = "#219fe3";
+icon.style.height = "28px";
+icon.style.width = "28px";
+icon.style.fontSize = "28px";
+h2.appendChild(icon);
+        h2.append("Настольные игры");
         colTitle.appendChild(h2);
         row.appendChild(colTitle);
 
