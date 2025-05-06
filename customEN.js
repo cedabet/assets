@@ -279,14 +279,14 @@ function insertCedaTVButton() {
 
   const cedaTVLink = document.createElement('a');
   cedaTVLink.id = 'ceda-tv-button'; // Benzersiz kimlik
-  cedaTVLink.href = 'https://jackbomtv6.com';
+  cedaTVLink.href = 'https://cedabettv.com';
   cedaTVLink.target = '_blank';
   cedaTVLink.className = 'header-custom-button custom d-flex px-3 align-items-center text-white';
 
   const icon = document.createElement('i');
   icon.className = 'fa-solid fa-tv';
 
-  const text = document.createTextNode('CedaTV');
+  const text = document.createTextNode('Ceda TV');
 
   cedaTVLink.appendChild(icon);
   cedaTVLink.appendChild(text);
