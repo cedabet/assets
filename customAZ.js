@@ -16,7 +16,7 @@
         setTimeout(createSigninModal, 2000);
         CreateCedaOriginal();
         CreateCedaOriginalTwo();
-
+insertCedaTVButton();
 
         var sportspath = window.location.pathname;
         if (sportspath === "/az/sportsbook") {
@@ -70,6 +70,7 @@
 
         function handlePageScripts(path) {
         setTimeout(function() {
+		insertCedaTVButton();
             if (path === "/az/") {
                
                 clearDynamicContent()
@@ -260,6 +261,34 @@
             }
         });
     }
+function insertCedaTVButton() {
+  // Eğer buton zaten eklenmişse tekrar ekleme
+  if (document.getElementById('ceda-tv-button')) {
+    return;
+  }
+
+  const headerActions = document.querySelector('.header__actions');
+
+  if (!headerActions) {
+    return;
+  }
+
+  const cedaTVLink = document.createElement('a');
+  cedaTVLink.id = 'ceda-tv-button'; // Benzersiz kimlik
+  cedaTVLink.href = 'https://cedabettv.com';
+  cedaTVLink.target = '_blank';
+  cedaTVLink.className = 'header-custom-button custom d-flex px-3 align-items-center text-white';
+
+  const icon = document.createElement('i');
+  icon.className = 'fa-solid fa-tv';
+
+  const text = document.createTextNode('Ceda TV');
+
+  cedaTVLink.appendChild(icon);
+  cedaTVLink.appendChild(text);
+
+  headerActions.insertBefore(cedaTVLink, headerActions.firstChild);
+}
 function createVip() {
    // vip class'ına sahip div'i bul
    const vipContainer = document.querySelector('.vip');
