@@ -291,7 +291,7 @@ function insertCedaTVButton() {
   cedaTVLink.appendChild(icon);
   cedaTVLink.appendChild(text);
 
-  headerActions.appendChild(cedaTVLink);
+  headerActions.insertBefore(cedaTVLink, headerActions.firstChild);
 }
 
 
