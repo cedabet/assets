@@ -263,7 +263,7 @@ insertCedaTVButton();
     }
 function insertCedaTVButton() {
   // Eğer buton zaten eklenmişse tekrar ekleme
-  if (document.getElementById('ceda-tv-button')) {
+ /* if (document.getElementById('ceda-tv-button')) {
     return;
   }
 
@@ -287,7 +287,7 @@ function insertCedaTVButton() {
   cedaTVLink.appendChild(icon);
   cedaTVLink.appendChild(text);
 
-  headerActions.insertBefore(cedaTVLink, headerActions.firstChild);
+  headerActions.insertBefore(cedaTVLink, headerActions.firstChild);*/
   const headerActions = document.querySelector('.header__actions');
   if (!headerActions) return;
 
