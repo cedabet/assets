@@ -340,8 +340,7 @@ function insertCedaTVButton() {
     }
   }
 }
-	
-}
+
 function createVipExperience() {
    // vip class'ına sahip div'i bul
    const vipContainer = document.querySelector('.vip');
