@@ -288,7 +288,54 @@ function insertCedaTVButton() {
   cedaTVLink.appendChild(text);
 
   headerActions.insertBefore(cedaTVLink, headerActions.firstChild);
+  const headerActions = document.querySelector('.header__actions');
+  if (!headerActions) return;
+
+  // Partnership butonu ekle
+  if (!document.getElementById('partnership-button')) {
+    const partnershipLink = document.createElement('a');
+    partnershipLink.id = 'partnership-button';
+    partnershipLink.href = '/az/affiliate'; // Gerekirse değiştirin
+  //  partnershipLink.target = '_blank';
+    partnershipLink.className = 'header-custom-button custom d-flex px-3 align-items-center text-white';
+
+    const partnershipIcon = document.createElement('i');
+    partnershipIcon.className = 'fa-solid fa-handshake';
+
+    const partnershipText = document.createTextNode('Tərəfdaşlıq');
+
+    partnershipLink.appendChild(partnershipIcon);
+    partnershipLink.appendChild(partnershipText);
+
+    headerActions.insertBefore(partnershipLink, headerActions.firstChild);
+  }
+
+  // Ceda TV butonu ekle
+  if (!document.getElementById('ceda-tv-button')) {
+    const cedaTVLink = document.createElement('a');
+    cedaTVLink.id = 'ceda-tv-button';
+    cedaTVLink.href = 'https://cedabettv.com';
+    cedaTVLink.target = '_blank';
+    cedaTVLink.className = 'header-custom-button custom d-flex px-3 align-items-center text-white';
+
+    const cedaIcon = document.createElement('i');
+    cedaIcon.className = 'fa-solid fa-tv';
+
+    const cedaText = document.createTextNode('Ceda TV');
+
+    cedaTVLink.appendChild(cedaIcon);
+    cedaTVLink.appendChild(cedaText);
+
+    // Partnership butonundan sonra eklemek için
+    const partnershipButton = document.getElementById('partnership-button');
+    if (partnershipButton && partnershipButton.nextSibling) {
+      headerActions.insertBefore(cedaTVLink, partnershipButton.nextSibling);
+    } else {
+      headerActions.appendChild(cedaTVLink);
+    }
+  }
 }
+
 function createVip() {
    // vip class'ına sahip div'i bul
    const vipContainer = document.querySelector('.vip');
