@@ -299,7 +299,7 @@ function insertCedaTVButton() {
   if (!document.getElementById('partnership-button')) {
     const partnershipLink = document.createElement('a');
     partnershipLink.id = 'partnership-button';
-    partnershipLink.href = '/affiliate'; // Gerekirse değiştirin
+    partnershipLink.href = '/en/affiliate'; // Gerekirse değiştirin
   //  partnershipLink.target = '_blank';
     partnershipLink.className = 'header-custom-button custom d-flex px-3 align-items-center text-white';
 
