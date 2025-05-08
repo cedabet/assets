@@ -874,12 +874,15 @@ h2.appendChild(icon);
         container.appendChild(row);
 
         var miniGamesWrapper2 = document.getElementById('mini-games-wrapper');
-        var highRtpGamesWrapper = document.getElementById('main-slider');
+        var highRtpGamesWrapper = document.getElementById('main-slider');//originalssler en üstte cıkar
+        var highRtpGamesWrapper = document.getElementById('popular-games-wrapper');//originalssler popular gamesin altında cıkar
+		
         var changeLine = document.getElementById('custom-section-7');
 
         if (miniGamesWrapper2 && highRtpGamesWrapper && changeLine) {
         highRtpGamesWrapper.insertAdjacentElement('afterend', miniGamesWrapper2);
-        miniGamesWrapper.insertAdjacentElement('afterend', changeLine);
+       // miniGamesWrapper.insertAdjacentElement('afterend', changeLine); providers orignalsin altında cıkar
+	highRtpGamesWrapper.insertAdjacentElement('afterend', changeLine); //en üstte cıkar providers
         }
 
         }
