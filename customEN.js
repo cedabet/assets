@@ -1067,7 +1067,7 @@ function createLeagueSection() {
       <div class="row" style="display: flex; flex-direction: column; gap: 20px;">
         <div class="col-12">
           <h2 class="section__title">
-            <i class="fa-solid fa-certificate" style="color: rgb(33, 159, 227); height: 28px; width: 28px; font-size: 28px;"></i>
+            <i class="fa-solid fa-volleyball" style="color: rgb(33, 159, 227); height: 28px; width: 28px; font-size: 28px;"></i>
             Ceda Leagues
           </h2>
         </div>
