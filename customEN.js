@@ -20,15 +20,18 @@ document.head.appendChild(link);
 	    insertCedaTVButton();
 createLeagueSection();
         var sportspath = window.location.pathname;
-        if (sportspath === "/en/sportsbook") {
-            var sidebar = document.getElementById("sidebar");
-            sidebar.className = "";
-            sidebar.classList.add("sidebar", "active");
-            var sidebarLogo = document.querySelector(".header__logo");
-            if (sidebarLogo) {
-              //  sidebarLogo.style.setProperty('display', 'none', 'important');
-            }
-        }
+      if (sportspath === "/en/sportsbook") {
+    var sidebar = document.getElementById("sidebar");
+    sidebar.className = "";  // Mevcut sınıfları temizle
+
+    if (window.innerWidth <= 768) {
+        // Mobil cihazlarda sadece 'sidebar' sınıfını ekle
+        sidebar.classList.add("sidebar");
+    } else {
+        // Diğer cihazlarda hem 'sidebar' hem de 'active' sınıfını ekle
+        sidebar.classList.add("sidebar", "active");
+    }
+}
 	     else if (sportspath === "/en/trade") {
             
                     var sidebar = document.getElementById("sidebar");
