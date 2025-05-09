@@ -1046,6 +1046,11 @@ h2.appendChild(icon);
         }
 
 function createLeagueSection() {
+	 if (document.getElementById('league-wrapper')) {
+    console.warn('League section zaten mevcut.');
+    return;
+  }
+
   const leagues = [
     { name: "Trendyol Süperlig", country: "Turkey", flagCode: "tr", logo: "https://cedabet.github.io/assets/images/league-tr.png" },
     { name: "Premier League", country: "England", flagCode: "gb", logo: "https://cedabet.github.io/assets/images/league-gb.png" },
