@@ -18,7 +18,7 @@ document.head.appendChild(link);
         CreateCedaOriginal();
         CreateCedaOriginalTwo();
 	    insertCedaTVButton();
-
+createLeagueSection();
         var sportspath = window.location.pathname;
         if (sportspath === "/en/sportsbook") {
             var sidebar = document.getElementById("sidebar");
@@ -84,6 +84,7 @@ document.head.appendChild(link);
 
                 CreateCedaOriginal();
                 CreateCedaOriginalTwo();
+		    createLeagueSection();
             } else if (path === "/en/vip") {
                 clearDynamicContent();
 		    createVipExperience();
