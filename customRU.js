@@ -17,7 +17,7 @@ document.head.appendChild(link);
         CreateCedaOriginal();
         CreateCedaOriginalTwo();
 insertCedaTVButton();
-
+createLeagueSection();
         var sportspath = window.location.pathname;
         if (sportspath === "/ru/sportsbook") {
             var sidebar = document.getElementById("sidebar");
@@ -85,6 +85,7 @@ insertCedaTVButton();
 
                 CreateCedaOriginal();
                 CreateCedaOriginalTwo();
+		    createLeagueSection();
             } else if (path === "/ru/vip") {
                 clearDynamicContent();
 		    	    createVipExperience();
@@ -1035,6 +1036,104 @@ h2.appendChild(icon);
         });
         }
 
+function createLeagueSection() {
+  const leagues = [
+    { name: "Trendyol Süperlig", country: "Turkey", flagCode: "tr", logo: "https://cedabet.github.io/assets/images/league-tr.png" },
+    { name: "Premier League", country: "England", flagCode: "gb", logo: "https://cedabet.github.io/assets/images/league-gb.png" },
+    { name: "La Liga", country: "Spain", flagCode: "es", logo: "https://cedabet.github.io/assets/images/league-es.png" },
+    { name: "Ligue 1", country: "France", flagCode: "fr", logo: "https://cedabet.github.io/assets/images/league-fr.png" },
+    { name: "Eredivisie", country: "Netherlands", flagCode: "nl", logo: "https://cedabet.github.io/assets/images/league-nl.png" },
+    { name: "Serie A", country: "Italy", flagCode: "it", logo: "https://cedabet.github.io/assets/images/league-it.png" },
+    { name: "Bundesliga", country: "Germany", flagCode: "de", logo: "https://cedabet.github.io/assets/images/league-de.png" }
+  ];
+
+  const duplicatedLeagues = [...leagues, ...leagues, ...leagues];
+
+  const wrapper = document.createElement('div');
+  wrapper.className = 'section';
+  wrapper.id = 'league-wrapper';
+
+  wrapper.innerHTML = `
+    <div class="container">
+      <div class="row" style="display: flex; flex-direction: column; gap: 20px;">
+        <div class="col-12">
+          <h2 class="section__title">
+            <i class="fa-solid fa-volleyball" style="color: rgb(33, 159, 227); height: 28px; width: 28px; font-size: 28px;"></i>
+            Лиги Ceda
+          </h2>
+        </div>
+        <div class="league-container">
+          <div class="league-slider-wrapper">
+            <div class="league-slider league-scrollbar-hide" id="league-slider"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  `;
+
+
+  const targetSection = document.getElementById('mini-games-wrapper-2');
+  if (targetSection && targetSection.parentNode) {
+    targetSection.parentNode.insertBefore(wrapper, targetSection.nextSibling);
+  } else {
+    console.warn('mini-games-wrapper-2 bulunamadı, body sonuna ekleniyor.');
+  }
+
+  const slider = wrapper.querySelector('#league-slider');
+
+  duplicatedLeagues.forEach((league, index) => {
+    const link = document.createElement('a');
+    link.href = "/ru/sportsbook";
+    link.className = 'league-card';
+    link.dataset.index = index;
+
+    link.innerHTML = `
+      <div class="league-logo-container">
+        <img src="${league.logo}" alt="${league.name} logo" class="league-logo">
+      </div>
+      <div class="league-card-content">
+        <div class="league-country-container">
+          <img src="https://hatscripts.github.io/circle-flags/flags/${league.flagCode}.svg"
+               alt="${league.country} flag"
+               class="league-flag">
+          <div class="league-country-badge">${league.country.toUpperCase()}</div>
+        </div>
+        <h3 class="league-name">${league.name}</h3>
+      </div>
+    `;
+
+    slider.appendChild(link);
+  });
+
+  let animationId;
+  let startTime;
+  let position = 0;
+  let isPaused = false;
+
+  const totalWidth = leagues.length * 200;
+  const speed = 0.05;
+
+  function animate(timestamp) {
+    if (!startTime) startTime = timestamp;
+
+    if (!isPaused) {
+      const elapsed = timestamp - startTime;
+      position = (position + speed * elapsed) % totalWidth;
+      slider.style.transform = `translateX(-${position}px)`;
+    }
+
+    startTime = timestamp;
+    animationId = requestAnimationFrame(animate);
+  }
+
+  animationId = requestAnimationFrame(animate);
+
+  const cards = slider.querySelectorAll('.league-card');
+  cards.forEach(card => {
+    card.addEventListener('mouseenter', () => isPaused = true);
+    card.addEventListener('mouseleave', () => isPaused = false);
+  });
+}
 
 
 function loadVipFeatures() {
