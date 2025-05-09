@@ -1083,7 +1083,7 @@ function createLeagueSection() {
   `;
 
 
-  const targetSection = document.getElementById('mini-games-wrapper-2');
+ const targetSection = document.getElementById('custom-section-7');
   if (targetSection && targetSection.parentNode) {
     targetSection.parentNode.insertBefore(wrapper, targetSection.nextSibling);
   } else {
