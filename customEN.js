@@ -19,6 +19,8 @@ document.head.appendChild(link);
         CreateCedaOriginalTwo();
 	    insertCedaTVButton();
 
+	    renderLeagueCards();
+
 
         var sportspath = window.location.pathname;
         if (sportspath === "/en/sportsbook") {
@@ -1534,3 +1536,72 @@ h2.appendChild(icon);
         }
         });
         }
+
+
+
+
+
+function renderLeagueCards() {
+  const leagues = [
+    {
+      name: "Bundesliga",
+      country: "Germany",
+      flagCode: "de",
+      logo: "https://upload.wikimedia.org/wikipedia/en/d/df/Bundesliga_logo_%282017%29.png"
+    },
+    {
+      name: "Premier League",
+      country: "United Kingdom",
+      flagCode: "gb",
+      logo: "https://upload.wikimedia.org/wikipedia/en/f/f2/Premier_League_Logo.svg"
+    },
+    {
+      name: "La Liga",
+      country: "Spain",
+      flagCode: "es",
+      logo: "https://upload.wikimedia.org/wikipedia/en/7/79/LaLiga_Santander.svg"
+    }
+  ];
+
+  // Prüfen ob Container schon existiert
+  let container = document.getElementById('league-container');
+
+  if (!container) {
+    const newContainer = document.createElement('div');
+    newContainer.id = 'league-container';
+    newContainer.classList.add('league-container'); // falls Styling vorgesehen
+    const miniGamesWrapper = document.getElementById('mini-games-wrapper');
+
+    if (miniGamesWrapper && miniGamesWrapper.parentNode) {
+      miniGamesWrapper.parentNode.insertBefore(newContainer, miniGamesWrapper.nextSibling);
+    }
+
+    container = newContainer;
+  }
+
+  container.innerHTML = '';
+
+  leagues.forEach(league => {
+    const card = document.createElement('div');
+    card.classList.add('league-card');
+
+    card.innerHTML = `
+      <div class="league-logo-container">
+        <img src="${league.logo}" alt="${league.name} logo" class="league-logo">
+      </div>
+      <div class="league-card-content">
+        <div class="league-country-container">
+          <div class="league-country-badge">
+            <img src="https://hatscripts.github.io/circle-flags/flags/${league.flagCode}.svg" 
+                 alt="${league.country} flag" 
+                 class="league-flag"> ${league.country.toUpperCase()}
+          </div>
+        </div>
+        <h3 class="league-name">${league.name}</h3>
+      </div>
+    `;
+
+    container.appendChild(card);
+  });
+}
+
