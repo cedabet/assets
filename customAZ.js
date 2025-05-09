@@ -20,37 +20,43 @@ insertCedaTVButton();
 createLeagueSection();
         var sportspath = window.location.pathname;
         if (sportspath === "/az/sportsbook") {
-            var sidebar = document.getElementById("sidebar");
-            sidebar.className = "";
-            sidebar.classList.add("sidebar", "active");
-            var sidebarLogo = document.querySelector(".header__logo");
-            if (sidebarLogo) {
-              //  sidebarLogo.style.setProperty('display', 'none', 'important');
-            }
+               var sidebar = document.getElementById("sidebar");
+    sidebar.className = "";  // Mevcut sınıfları temizle
+
+    if (window.innerWidth <= 768) {
+        // Mobil cihazlarda sadece 'sidebar' sınıfını ekle
+        sidebar.classList.add("sidebar");
+    } else {
+        // Diğer cihazlarda hem 'sidebar' hem de 'active' sınıfını ekle
+        sidebar.classList.add("sidebar", "active");
+    }
         }
 	     else if (sportspath === "/az/trade") {
             
-                    var sidebar = document.getElementById("sidebar");
-                    sidebar.className = "";
-                    sidebar.classList.add("sidebar", "sidebar--sport-active" , "active");
-                    var sidebarLogo = document.querySelector(".header__logo");
-                    if (sidebarLogo) {
-                     //   sidebarLogo.style.setProperty('display', 'none', 'important');
-                    }
+                     var sidebar = document.getElementById("sidebar");
+    sidebar.className = "";  // Mevcut sınıfları temizle
+
+    if (window.innerWidth <= 768) {
+        // Mobil cihazlarda sadece 'sidebar' sınıfını ekle
+        sidebar.classList.add("sidebar", "sidebar--sport-active");
+    } else {
+        // Diğer cihazlarda hem 'sidebar' hem de 'sidebar--sport-active' hem de 'active' sınıfını ekle
+        sidebar.classList.add("sidebar", "sidebar--sport-active", "active");
+    }
                   
-
-                
-
             }
 	      else if (sportspath === "/az/e-sport") {
              
-                    var sidebar = document.getElementById("sidebar");
-                    sidebar.className = "";
-                    sidebar.classList.add("sidebar", "sidebar--sport-active" , "active");
-                    var sidebarLogo = document.querySelector(".header__logo");
-                    if (sidebarLogo) {
-                     //   sidebarLogo.style.setProperty('display', 'none', 'important');
-                    }
+                     var sidebar = document.getElementById("sidebar");
+    sidebar.className = "";  // Mevcut sınıfları temizle
+
+    if (window.innerWidth <= 768) {
+        // Mobil cihazlarda sadece 'sidebar' sınıfını ekle
+        sidebar.classList.add("sidebar", "sidebar--sport-active");
+    } else {
+        // Diğer cihazlarda hem 'sidebar' hem de 'sidebar--sport-active' hem de 'active' sınıfını ekle
+        sidebar.classList.add("sidebar", "sidebar--sport-active", "active");
+    }
             }
 	           else if (sportspath === "/az/vip") {
                 createVipExperience();
@@ -93,13 +99,16 @@ createLeagueSection();
             } else if (path === "/az/sportsbook") {
                 var sportspath = window.location.pathname;
                 if (sportspath === "/az/sportsbook") {
-                    var sidebar = document.getElementById("sidebar");
-                    sidebar.className = "";
-                    sidebar.classList.add("sidebar", "active");
-                    var sidebarLogo = document.querySelector(".header__logo");
-                    if (sidebarLogo) {
-                     //   sidebarLogo.style.setProperty('display', 'none', 'important');
-                    }
+                                 var sidebar = document.getElementById("sidebar");
+    sidebar.className = "";  // Mevcut sınıfları temizle
+
+    if (window.innerWidth <= 768) {
+        // Mobil cihazlarda sadece 'sidebar' sınıfını ekle
+        sidebar.classList.add("sidebar");
+    } else {
+        // Diğer cihazlarda hem 'sidebar' hem de 'active' sınıfını ekle
+        sidebar.classList.add("sidebar", "active");
+    }
                     clearDynamicContent()
 
                 }
@@ -107,13 +116,16 @@ createLeagueSection();
             }
 	    else if (path === "/az/trade") {
             
-                    var sidebar = document.getElementById("sidebar");
-                    sidebar.className = "";
-                    sidebar.classList.add("sidebar", "sidebar--sport-active" , "active");
-                    var sidebarLogo = document.querySelector(".header__logo");
-                    if (sidebarLogo) {
-                    //    sidebarLogo.style.setProperty('display', 'none', 'important');
-                    }
+                         var sidebar = document.getElementById("sidebar");
+    sidebar.className = "";  // Mevcut sınıfları temizle
+
+    if (window.innerWidth <= 768) {
+        // Mobil cihazlarda sadece 'sidebar' sınıfını ekle
+        sidebar.classList.add("sidebar", "sidebar--sport-active");
+    } else {
+        // Diğer cihazlarda hem 'sidebar' hem de 'sidebar--sport-active' hem de 'active' sınıfını ekle
+        sidebar.classList.add("sidebar", "sidebar--sport-active", "active");
+    }
                     clearDynamicContent()
 
                 
@@ -121,23 +133,32 @@ createLeagueSection();
             }
 	      else if (path === "/az/e-sport") {
              
-                    var sidebar = document.getElementById("sidebar");
-                    sidebar.className = "";
-                    sidebar.classList.add("sidebar", "sidebar--sport-active" , "active");
-                    var sidebarLogo = document.querySelector(".header__logo");
-                    if (sidebarLogo) {
-                     //   sidebarLogo.style.setProperty('display', 'none', 'important');
-                    }
+                            var sidebar = document.getElementById("sidebar");
+    sidebar.className = "";  // Mevcut sınıfları temizle
+
+    if (window.innerWidth <= 768) {
+        // Mobil cihazlarda sadece 'sidebar' sınıfını ekle
+        sidebar.classList.add("sidebar", "sidebar--sport-active");
+    } else {
+        // Diğer cihazlarda hem 'sidebar' hem de 'sidebar--sport-active' hem de 'active' sınıfını ekle
+        sidebar.classList.add("sidebar", "sidebar--sport-active", "active");
+    }
                     clearDynamicContent()
 
                 
 
             }
 	      else if (path !== "/az/sportsbook") {
-                var sidebarLogo = document.querySelector(".header__logo");
-                if (sidebarLogo) {
-                 //   sidebarLogo.style.setProperty('display', 'none', 'important');
-                }
+                                     var sidebar = document.getElementById("sidebar");
+    sidebar.className = "";  // Mevcut sınıfları temizle
+
+    if (window.innerWidth <= 768) {
+        // Mobil cihazlarda sadece 'sidebar' sınıfını ekle
+        sidebar.classList.add("sidebar");
+    } else {
+        // Diğer cihazlarda hem 'sidebar' hem de 'active' sınıfını ekle
+        sidebar.classList.add("sidebar", "active");
+    }
                 clearDynamicContent()
 
             }
