@@ -658,7 +658,7 @@ function addMenuElementTwo() {
         const existingMenu = document.getElementById(elementId);
         if (!existingMenu) {
             const newHTML = `
-<div style="width: 100%;">
+<div style="width: 100%;display:flex;gap:10px;">
     <a id="${elementId}" class="sidebar__link sidebar__link--casino" href="/promotions" style="
                          background: url('https://cedabet.github.io/assets/images/promotionBtn.jpg') left center / cover no-repeat;
                          width: 50%;
@@ -672,7 +672,6 @@ function addMenuElementTwo() {
                          background: url('https://cedabet.github.io/assets/images/promotionBtn.jpg') left center / cover no-repeat;
                          width: 50%;
                          margin-bottom: 17px;
-                         margin-top: -10px;
                          box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -2px 0px inset;
                      ">
         <span>Ceda TV</span>
