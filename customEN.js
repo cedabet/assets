@@ -652,6 +652,7 @@ function addMenuElementTwo() {
 
     if (sidebarLinks) {
         const elementId = 'promotions-link'; // Büyük link için id
+        const elementId2 = 'promotions-link-2'; // Büyük link için id
 
         // Aynı id'ye sahip bir öğe zaten var mı diye kontrol ediyoruz
         const existingMenu = document.getElementById(elementId);
@@ -660,12 +661,21 @@ function addMenuElementTwo() {
 <div style="width: 100%;">
     <a id="${elementId}" class="sidebar__link sidebar__link--casino" href="/promotions" style="
                          background: url('https://cedabet.github.io/assets/images/promotionBtn.jpg') left center / cover no-repeat;
-                         width: 100%;
+                         width: 50%;
                          margin-bottom: 17px;
                          margin-top: -10px;
                          box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -2px 0px inset;
                      ">
         <span>Promotion</span>
+    </a>
+     <a id="${elementId2}" class="sidebar__link sidebar__link--casino" target="_blank" href="https://cedabettv.com/" style="
+                         background: url('https://cedabet.github.io/assets/images/promotionBtn.jpg') left center / cover no-repeat;
+                         width: 50%;
+                         margin-bottom: 17px;
+                         margin-top: -10px;
+                         box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -2px 0px inset;
+                     ">
+        <span>Ceda TV</span>
     </a>
 </div>
              `;
