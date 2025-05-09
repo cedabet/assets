@@ -530,7 +530,8 @@ function clearAstronauts() {
 function clearDynamicContent() {
     const idsToRemove = [
         "mini-games-wrapper-2",
-        "custom-section-7"
+        "custom-section-7",
+	 "league-wrapper"
     ];
 
     idsToRemove.forEach(id => {
