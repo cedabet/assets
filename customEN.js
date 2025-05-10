@@ -14,7 +14,7 @@ document.head.appendChild(link);
         addMenuElement();
         addMenuElementTwo();
         setTimeout(updateCopyrightYear, 1000);
-        setTimeout(createSigninModal, 2000);
+       // setTimeout(createSigninModal, 2000);
         CreateCedaOriginal();
         CreateCedaOriginalTwo();
 	    insertCedaTVButton();
@@ -215,7 +215,7 @@ else if (sportspath === "/en/e-sport") {
     window.addEventListener('load', checkUrlChange);
 })();
 
-function createSigninModal() {
+/*function createSigninModal() {
     const lastModalTime = localStorage.getItem('modalShownTime');
     const dontShowAgain = localStorage.getItem('dontShowModalAgain'); // Kullanıcı "Tekrar Gösterme" butonuna tıklayıp tıklamadığını kontrol ediyoruz
     const currentTime = new Date().getTime();
@@ -279,7 +279,7 @@ function createSigninModal() {
         closeModal(); // Modalı kapat
     });
 }
-
+*/
 
 
 function updateCopyrightYear() {
