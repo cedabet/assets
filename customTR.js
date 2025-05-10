@@ -548,12 +548,13 @@ function addMenuElementTwo() {
 
     if (sidebarLinks) {
         const elementId = 'promotions-link'; // Büyük link için id
+    const elementId2 = 'promotions-link-2'; // Büyük link için id
 
         // Aynı id'ye sahip bir öğe zaten var mı diye kontrol ediyoruz
         const existingMenu = document.getElementById(elementId);
         if (!existingMenu) {
             const newHTML = `
-                 <div style="width: 100%;">
+               <div style="width: 100%;display:flex;gap:10px;">
                      <a id="${elementId}" class="sidebar__link sidebar__link--casino" href="/tr/promotions" style="
                          background: url('https://cedabet.github.io/assets/images/promotionBtn.jpg') left center / cover no-repeat;
                          width: 100%;
@@ -563,6 +564,14 @@ function addMenuElementTwo() {
                      ">
                          <span>Promosyon</span>
                      </a>
+		        <a id="${elementId2}" class="sidebar__link sidebar__link--casino" target="_blank" href="https://cedabettv.com/" style="
+                         background: url('https://cedabet.github.io/assets/images/promotionBtn.jpg') left center / cover no-repeat;
+                         width: 100%;
+                         margin-bottom: 17px;
+                         box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -2px 0px inset;
+                     ">
+        <span>Ceda TV</span>
+    </a>
                  </div>
              `;
             sidebarLinks.insertAdjacentHTML("afterend", newHTML);
