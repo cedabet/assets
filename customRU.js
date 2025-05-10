@@ -548,6 +548,7 @@ function addMenuElementTwo() {
 
     if (sidebarLinks) {
         const elementId = 'promotions-link'; // Büyük link için id
+  const elementId2 = 'promotions-link-2'; // Büyük link için id
 
         // Aynı id'ye sahip bir öğe zaten var mı diye kontrol ediyoruz
         const existingMenu = document.getElementById(elementId);
