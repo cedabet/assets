@@ -21,70 +21,13 @@ document.head.appendChild(link);
         createLeagueSection();
         var sportspath = window.location.pathname;
         if (sportspath === "/en/sportsbook") {
-            var sidebar = document.getElementById("sidebar");
-            sidebar.className = ""; // Mevcut sınıfları temizle
-console.warn(1);
-            if (window.innerWidth <= 768) {
-                // Mobil cihazlarda sadece 'sidebar' sınıfını ekle
-                sidebar.classList.add("sidebar");
-		    console.warn(2);
-            } else {
-                // Diğer cihazlarda hem 'sidebar' hem de 'active' sınıfını ekle
-                sidebar.classList.add("sidebar", "active");
-		    console.warn(3);
-            }
-        }
-        if (sportspath === "/en/sportsbook") {
-            var sidebar = document.getElementById("sidebar");
-            sidebar.className = ""; // Mevcut sınıfları temizle
-console.warn(4);
-            if (window.innerWidth <= 768) {
-                // Mobil cihazlarda sadece 'sidebar' sınıfını ekle
-                sidebar.classList.add("sidebar");
-		    console.warn(5);
-            } else {
-                // Diğer cihazlarda hem 'sidebar' hem de 'active' sınıfını ekle
-                sidebar.classList.add("sidebar", "active");
-		    console.warn(6);
-            }
+        
         } else if (sportspath === "/en/trade") {
-            var sidebar = document.getElementById("sidebar");
-            sidebar.className = ""; // Mevcut sınıfları temizle
-console.warn(7);
-            if (window.innerWidth <= 768) {
-                // Mobil cihazlarda sadece 'sidebar' sınıfını ekle
-                sidebar.classList.add("sidebar", "sidebar--sport-active");
-		    console.warn(8);
-            } else {
-                // Diğer cihazlarda hem 'sidebar' hem de 'sidebar--sport-active' hem de 'active' sınıfını ekle
-                sidebar.classList.add("sidebar", "sidebar--sport-active", "active");
-		    console.warn(9);
-            }
-
-            var sidebarLogo = document.querySelector(".header__logo");
-            if (sidebarLogo) {
-                // sidebarLogo.style.setProperty('display', 'none', 'important');
-            }
+         
         } else if (sportspath === "/en/e-sport") {
             var sidebar = document.getElementById("sidebar");
-            sidebar.className = ""; // Mevcut sınıfları temizle
-console.warn(10);
-            if (window.innerWidth <= 768) {
-                // Mobil cihazlarda sadece 'sidebar' sınıfını ekle
-                sidebar.classList.add("sidebar", "sidebar--sport-active");
-		    console.warn(11);
-            } else {
-                // Diğer cihazlarda hem 'sidebar' hem de 'sidebar--sport-active' hem de 'active' sınıfını ekle
-                sidebar.classList.add("sidebar", "sidebar--sport-active", "active");
-		    console.warn(12);
-            }
 
-            var sidebarLogo = document.querySelector(".header__logo");
-            if (sidebarLogo) {
-                // sidebarLogo.style.setProperty('display', 'none', 'important');
-            }
         } else if (sportspath === "/en/vip") {
-console.warn(13);
             createVipExperience();
 
         }
@@ -103,7 +46,6 @@ console.warn(13);
       setTimeout(function() {
           insertCedaTVButton();
           if (path === "/en/") {
-console.warn(14);
               clearDynamicContent()
               loadVipFeatures();
               setTimeout(loadh2Title, 1000);
@@ -122,67 +64,20 @@ console.warn(14);
               CreateCedaOriginal();
               CreateCedaOriginalTwo();
           } else if (path === "/en/sportsbook") {
-              var sportspath = window.location.pathname;
-              if (sportspath === "/en/sportsbook") {
-                  var sidebar = document.getElementById("sidebar");
-                  sidebar.className = ""; // Mevcut sınıfları temizle
-console.warn(15);
-                  if (window.innerWidth <= 768) {
-                      // Mobil cihazlarda sadece 'sidebar' sınıfını ekle
-                      sidebar.classList.add("sidebar");
-                  } else {
-                      // Diğer cihazlarda hem 'sidebar' hem de 'active' sınıfını ekle
-                    
-                      sidebar.classList.add("sidebar", "active");
-                  }
+           
                   clearDynamicContent()
 
               }
 
           } else if (path === "/en/trade") {
-console.warn(16);
-              var sidebar = document.getElementById("sidebar");
-              sidebar.className = ""; // Mevcut sınıfları temizle
 
-              if (window.innerWidth <= 768) {
-                  // Mobil cihazlarda sadece 'sidebar' sınıfını ekle
-                  sidebar.classList.add("sidebar", "sidebar--sport-active");
-              } else {
-                  // Diğer cihazlarda hem 'sidebar' hem de 'sidebar--sport-active' hem de 'active' sınıfını ekle
-                  sidebar.classList.add("sidebar", "sidebar--sport-active", "active");
-              }
               clearDynamicContent()
-
-
 
           } else if (path === "/en/e-sport") {
-console.warn(17);
-              var sidebar = document.getElementById("sidebar");
-              sidebar.className = ""; // Mevcut sınıfları temizle
-
-              if (window.innerWidth <= 768) {
-                  // Mobil cihazlarda sadece 'sidebar' sınıfını ekle
-                  sidebar.classList.add("sidebar", "sidebar--sport-active");
-              } else {
-                  // Diğer cihazlarda hem 'sidebar' hem de 'sidebar--sport-active' hem de 'active' sınıfını ekle
-                  sidebar.classList.add("sidebar", "sidebar--sport-active", "active");
-              }
               clearDynamicContent()
 
-
-
           } else if (path !== "/en/sportsbook") {
-              var sidebar = document.getElementById("sidebar");
-              sidebar.className = ""; // Mevcut sınıfları temizle
-console.warn(18);
-              if (window.innerWidth <= 768) {
-                  // Mobil cihazlarda sadece 'sidebar' sınıfını ekle
-                  sidebar.classList.add("sidebar");
-              } else {
-                  // Diğer cihazlarda hem 'sidebar' hem de 'active' sınıfını ekle
-                  sidebar.classList.add("sidebar", "active");
-                  console.warn("2");
-              }
+
               clearDynamicContent()
 
           }
