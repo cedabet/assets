@@ -13,55 +13,23 @@ document.head.appendChild(link);
         addMenuElement();
         addMenuElementTwo();
         setTimeout(updateCopyrightYear, 1000);
-      //  setTimeout(createSigninModal, 2000);
+        //  setTimeout(createSigninModal, 2000);
         CreateCedaOriginal();
         CreateCedaOriginalTwo();
-insertCedaTVButton();
-createLeagueSection();
+        insertCedaTVButton();
+        createLeagueSection();
         var sportspath = window.location.pathname;
         if (sportspath === "/tr/sportsbook") {
-            var sidebar = document.getElementById("sidebar");
-            sidebar.className = "";
-            sidebar.classList.add("sidebar", "active");
-            var sidebarLogo = document.querySelector(".header__logo");
-            if (sidebarLogo) {
-              //  sidebarLogo.style.setProperty('display', 'none', 'important');
-            }
+
+        } else if (sportspath === "/tr/trade") {
+
+        } else if (sportspath === "/tr/e-sport") {
+
+        } else if (sportspath === "/tr/vip") {
+
+            createVipExperience();
+
         }
-	     else if (sportspath === "/tr/trade") {
-            
-                    var sidebar = document.getElementById("sidebar");
-                    sidebar.className = "";
-                    sidebar.classList.add("sidebar", "sidebar--sport-active", "active");
-
-                    var sidebarLogo = document.querySelector(".header__logo");
-                    if (sidebarLogo) {
-                     //   sidebarLogo.style.setProperty('display', 'none', 'important');
-                    }
-                  
-
-                
-
-            }
-	      else if (sportspath === "/tr/e-sport") {
-             
-                    var sidebar = document.getElementById("sidebar");
-                    sidebar.className = "";
-                    sidebar.classList.add("sidebar", "sidebar--sport-active", "active");
-                    var sidebarLogo = document.querySelector(".header__logo");
-                    if (sidebarLogo) {
-                     //   sidebarLogo.style.setProperty('display', 'none', 'important');
-                    }
-                  
-
-                
-
-            }
-	        else if (sportspath === "/tr/vip") {
-             
-                createVipExperience();
-
-            }
         isFirstLoad = false;
     }
 
@@ -73,11 +41,11 @@ createLeagueSection();
         }
     }
 
-     function handlePageScripts(path) {
+    function handlePageScripts(path) {
         setTimeout(function() {
-		insertCedaTVButton();
+            insertCedaTVButton();
             if (path === "/tr/") {
-               
+
                 clearDynamicContent()
                 loadVipFeatures();
                 setTimeout(loadh2Title, 1000);
@@ -87,62 +55,33 @@ createLeagueSection();
 
                 CreateCedaOriginal();
                 CreateCedaOriginalTwo();
-		    createLeagueSection();
+                createLeagueSection();
             } else if (path === "/tr/vip") {
                 clearDynamicContent();
-		        createVipExperience();
+                createVipExperience();
             } else if (path === "/tr/casino") {
                 clearDynamicContent()
                 CreateCedaOriginal();
                 CreateCedaOriginalTwo();
             } else if (path === "/tr/sportsbook") {
-                var sportspath = window.location.pathname;
-                if (sportspath === "/tr/sportsbook") {
-                    var sidebar = document.getElementById("sidebar");
-                    sidebar.className = "";
-                    sidebar.classList.add("sidebar", "active");
-                    var sidebarLogo = document.querySelector(".header__logo");
-                    if (sidebarLogo) {
-                     //   sidebarLogo.style.setProperty('display', 'none', 'important');
-                    }
-                    clearDynamicContent()
 
-                }
-
-            }
-	    else if (path === "/tr/trade") {
-            
-                    var sidebar = document.getElementById("sidebar");
-                    sidebar.className = "";
-                    sidebar.classList.add("sidebar", "sidebar--sport-active", "active");
-                    var sidebarLogo = document.querySelector(".header__logo");
-                    if (sidebarLogo) {
-                    //    sidebarLogo.style.setProperty('display', 'none', 'important');
-                    }
                     clearDynamicContent()
 
                 
 
-            }
-	      else if (path === "/tr/e-sport") {
-             
-                    var sidebar = document.getElementById("sidebar");
-                    sidebar.className = "";
-                    sidebar.classList.add("sidebar", "sidebar--sport-active", "active");
-                    var sidebarLogo = document.querySelector(".header__logo");
-                    if (sidebarLogo) {
-                     //   sidebarLogo.style.setProperty('display', 'none', 'important');
-                    }
-                    clearDynamicContent()
+            } else if (path === "/tr/trade") {
 
-                
+                clearDynamicContent()
 
-            }
-	      else if (path !== "/tr/sportsbook") {
-                var sidebarLogo = document.querySelector(".header__logo");
-                if (sidebarLogo) {
-                 //   sidebarLogo.style.setProperty('display', 'none', 'important');
-                }
+
+
+            } else if (path === "/tr/e-sport") {
+
+                clearDynamicContent()
+
+
+
+            } else if (path !== "/tr/sportsbook") {
                 clearDynamicContent()
 
             }
@@ -177,8 +116,6 @@ createLeagueSection();
 
     window.addEventListener('load', checkUrlChange);
 })();
-
-
 
 function updateCopyrightYear() {
     const copyrightElement = document.querySelector(".footer__copyright");
