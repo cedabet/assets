@@ -5,195 +5,134 @@
     document.head.appendChild(link);
 
    (function() {
-    let lastUrl = location.href;
-    let isFirstLoad = true;
-    if (isFirstLoad) {
-        loadVipFeatures();
-        setTimeout(loadh2Title, 1000);
-        addMenuElement();
-        addMenuElementTwo();
-        setTimeout(updateCopyrightYear, 1000);
-     //   setTimeout(createSigninModal, 2000);
-        CreateCedaOriginal();
-        CreateCedaOriginalTwo();
-insertCedaTVButton();
-createLeagueSection();
-        var sportspath = window.location.pathname;
-        if (sportspath === "/az/sportsbook") {
-               var sidebar = document.getElementById("sidebar");
-    sidebar.className = "";  // Mevcut sınıfları temizle
+     let lastUrl = location.href;
+     let isFirstLoad = true;
+     if (isFirstLoad) {
+         loadVipFeatures();
+         setTimeout(loadh2Title, 1000);
+         addMenuElement();
+         addMenuElementTwo();
+         setTimeout(updateCopyrightYear, 1000);
+         //   setTimeout(createSigninModal, 2000);
+         CreateCedaOriginal();
+         CreateCedaOriginalTwo();
+         insertCedaTVButton();
+         createLeagueSection();
+         var sportspath = window.location.pathname;
+         if (sportspath === "/az/sportsbook") {
+             var sidebar = document.getElementById("sidebar");
+             sidebar.className = ""; // Mevcut sınıfları temizle
 
-    if (window.innerWidth <= 768) {
-        // Mobil cihazlarda sadece 'sidebar' sınıfını ekle
-        sidebar.classList.add("sidebar");
-    } else {
-        // Diğer cihazlarda hem 'sidebar' hem de 'active' sınıfını ekle
-        sidebar.classList.add("sidebar", "active");
-    }
-        }
-	     else if (sportspath === "/az/trade") {
-            
-                     var sidebar = document.getElementById("sidebar");
-    sidebar.className = "";  // Mevcut sınıfları temizle
+             if (window.innerWidth <= 768) {
+                 // Mobil cihazlarda sadece 'sidebar' sınıfını ekle
+                 sidebar.classList.add("sidebar");
+             } else {
+                 // Diğer cihazlarda hem 'sidebar' hem de 'active' sınıfını ekle
+                 sidebar.classList.add("sidebar", "active");
+             }
+         } else if (sportspath === "/az/trade") {
 
-    if (window.innerWidth <= 768) {
-        // Mobil cihazlarda sadece 'sidebar' sınıfını ekle
-        sidebar.classList.add("sidebar", "sidebar--sport-active");
-    } else {
-        // Diğer cihazlarda hem 'sidebar' hem de 'sidebar--sport-active' hem de 'active' sınıfını ekle
-        sidebar.classList.add("sidebar", "sidebar--sport-active", "active");
-    }
-                  
-            }
-	      else if (sportspath === "/az/e-sport") {
-             
-                     var sidebar = document.getElementById("sidebar");
-    sidebar.className = "";  // Mevcut sınıfları temizle
+             var sidebar = document.getElementById("sidebar");
+             sidebar.className = ""; // Mevcut sınıfları temizle
 
-    if (window.innerWidth <= 768) {
-        // Mobil cihazlarda sadece 'sidebar' sınıfını ekle
-        sidebar.classList.add("sidebar", "sidebar--sport-active");
-    } else {
-        // Diğer cihazlarda hem 'sidebar' hem de 'sidebar--sport-active' hem de 'active' sınıfını ekle
-        sidebar.classList.add("sidebar", "sidebar--sport-active", "active");
-    }
-            }
-	           else if (sportspath === "/az/vip") {
-                createVipExperience();
-            }
-        isFirstLoad = false;
-    }
+             if (window.innerWidth <= 768) {
+                 // Mobil cihazlarda sadece 'sidebar' sınıfını ekle
+                 sidebar.classList.add("sidebar", "sidebar--sport-active");
+             } else {
+                 // Diğer cihazlarda hem 'sidebar' hem de 'sidebar--sport-active' hem de 'active' sınıfını ekle
+                 sidebar.classList.add("sidebar", "sidebar--sport-active", "active");
+             }
+
+         } else if (sportspath === "/az/e-sport") {
+		 
+         } else if (sportspath === "/az/vip") {
+             createVipExperience();
+         }
+         isFirstLoad = false;
+     }
 
 
 
 
-        function checkUrlChange() {
-            if (location.href !== lastUrl) {
-                lastUrl = location.href;
-                handlePageScripts(location.pathname);
-            }
-        }
+     function checkUrlChange() {
+         if (location.href !== lastUrl) {
+             lastUrl = location.href;
+             handlePageScripts(location.pathname);
+         }
+     }
 
-        function handlePageScripts(path) {
-        setTimeout(function() {
-		insertCedaTVButton();
-            if (path === "/az/") {
-               
-                clearDynamicContent()
-                loadVipFeatures();
-                setTimeout(loadh2Title, 1000);
-                addMenuElement();
-                addMenuElementTwo();
-                setTimeout(updateCopyrightYear, 1000);
+     function handlePageScripts(path) {
+         setTimeout(function() {
+             insertCedaTVButton();
+             if (path === "/az/") {
 
-                CreateCedaOriginal();
-                CreateCedaOriginalTwo();
-		    createLeagueSection();
-            } else if (path === "/az/vip") {
-                clearDynamicContent();
-		       createVip();
-            } else if (path === "/az/casino") {
-                clearDynamicContent()
-                CreateCedaOriginal();
-                CreateCedaOriginalTwo();
-            } else if (path === "/az/sportsbook") {
-                var sportspath = window.location.pathname;
-                if (sportspath === "/az/sportsbook") {
-                                 var sidebar = document.getElementById("sidebar");
-    sidebar.className = "";  // Mevcut sınıfları temizle
+                 clearDynamicContent()
+                 loadVipFeatures();
+                 setTimeout(loadh2Title, 1000);
+                 addMenuElement();
+                 addMenuElementTwo();
+                 setTimeout(updateCopyrightYear, 1000);
 
-    if (window.innerWidth <= 768) {
-        // Mobil cihazlarda sadece 'sidebar' sınıfını ekle
-        sidebar.classList.add("sidebar");
-    } else {
-        // Diğer cihazlarda hem 'sidebar' hem de 'active' sınıfını ekle
-        sidebar.classList.add("sidebar", "active");
-    }
-                    clearDynamicContent()
+                 CreateCedaOriginal();
+                 CreateCedaOriginalTwo();
+                 createLeagueSection();
+             } else if (path === "/az/vip") {
+                 clearDynamicContent();
+                 createVipExperience();
+             } else if (path === "/az/casino") {
+                 clearDynamicContent()
+                 CreateCedaOriginal();
+                 CreateCedaOriginalTwo();
+             } else if (path === "/az/sportsbook") {
+                     clearDynamicContent()
 
-                }
+                 }
 
-            }
-	    else if (path === "/az/trade") {
-            
-                         var sidebar = document.getElementById("sidebar");
-    sidebar.className = "";  // Mevcut sınıfları temizle
-
-    if (window.innerWidth <= 768) {
-        // Mobil cihazlarda sadece 'sidebar' sınıfını ekle
-        sidebar.classList.add("sidebar", "sidebar--sport-active");
-    } else {
-        // Diğer cihazlarda hem 'sidebar' hem de 'sidebar--sport-active' hem de 'active' sınıfını ekle
-        sidebar.classList.add("sidebar", "sidebar--sport-active", "active");
-    }
-                    clearDynamicContent()
-
-                
-
-            }
-	      else if (path === "/az/e-sport") {
-             
-                            var sidebar = document.getElementById("sidebar");
-    sidebar.className = "";  // Mevcut sınıfları temizle
-
-    if (window.innerWidth <= 768) {
-        // Mobil cihazlarda sadece 'sidebar' sınıfını ekle
-        sidebar.classList.add("sidebar", "sidebar--sport-active");
-    } else {
-        // Diğer cihazlarda hem 'sidebar' hem de 'sidebar--sport-active' hem de 'active' sınıfını ekle
-        sidebar.classList.add("sidebar", "sidebar--sport-active", "active");
-    }
-                    clearDynamicContent()
-
-                
-
-            }
-	      else if (path !== "/az/sportsbook") {
-                                     var sidebar = document.getElementById("sidebar");
-    sidebar.className = "";  // Mevcut sınıfları temizle
-
-    if (window.innerWidth <= 768) {
-        // Mobil cihazlarda sadece 'sidebar' sınıfını ekle
-        sidebar.classList.add("sidebar");
-    } else {
-        // Diğer cihazlarda hem 'sidebar' hem de 'active' sınıfını ekle
-        sidebar.classList.add("sidebar", "active");
-    }
-                clearDynamicContent()
-
-            }
-        }, 400);
-    }
-
-        new MutationObserver(checkUrlChange).observe(document, {
-            subtree: true,
-            childList: true
-        });
-        window.addEventListener('load', function() {
-            checkUrlChange(); // Sayfa yüklendikten hemen sonra kontrol et
-        });
+             } else if (path === "/az/trade") {
+                 clearDynamicContent()
 
 
-        const pushState = history.pushState;
-        const replaceState = history.replaceState;
 
-        history.pushState = function() {
-            pushState.apply(history, arguments);
-            checkUrlChange();
-        };
-
-        history.replaceState = function() {
-            replaceState.apply(history, arguments);
-            checkUrlChange();
-        };
-
-        window.addEventListener('popstate', checkUrlChange);
+             } else if (path === "/az/e-sport") {
+                 clearDynamicContent()
 
 
-        window.addEventListener('load', checkUrlChange);
-    })
-    ();
 
+             } else if (path !== "/az/sportsbook") {
+                 clearDynamicContent()
+
+             }
+         }, 400);
+     }
+
+     new MutationObserver(checkUrlChange).observe(document, {
+         subtree: true,
+         childList: true
+     });
+     window.addEventListener('load', function() {
+         checkUrlChange(); // Sayfa yüklendikten hemen sonra kontrol et
+     });
+
+
+     const pushState = history.pushState;
+     const replaceState = history.replaceState;
+
+     history.pushState = function() {
+         pushState.apply(history, arguments);
+         checkUrlChange();
+     };
+
+     history.replaceState = function() {
+         replaceState.apply(history, arguments);
+         checkUrlChange();
+     };
+
+     window.addEventListener('popstate', checkUrlChange);
+
+
+     window.addEventListener('load', checkUrlChange);
+ })
+ ();
 
 
     function updateCopyrightYear() {
@@ -292,7 +231,7 @@ function insertCedaTVButton() {
   }
 }
 
-function createVip() {
+function createVipExperience() {
    // vip class'ına sahip div'i bul
    const vipContainer = document.querySelector('.vip');
  
