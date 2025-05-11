@@ -116,26 +116,13 @@ document.head.appendChild(link);
 
 
 function checkModal() {
-    const closeButton = document.querySelector('.modal__close');
-    const modal = document.getElementById('global-modal');
-    
-    // Modal'ı gizlemek için kullanılan zaman
-    const modalCloseTime = localStorage.getItem('modalCloseTime');
-    const currentTime = new Date().getTime();
 
-    // Eğer close butonuna tıklanmış ve 3 saat geçmemişse, modal'ı gizle
-    if (modalCloseTime && currentTime < modalCloseTime) {
+    const modal = document.getElementById('global-modal');
+
+    if (modal) {
         modal.style.display = 'none';  // Modal'ı gizle
     } 
 
-    // Close butonuna tıklanmışsa, localStorage'a kaydet ve modal'ı gizle
-    if (closeButton) {
-        closeButton.addEventListener('click', function() {
-            const hideUntil = currentTime + 3 * 60 * 60 * 1000; // Şu anki zaman + 3 saat
-            localStorage.setItem('modalCloseTime', hideUntil);  // Close butonuna tıklanma zamanını kaydet
-            modal.style.display = 'none';  // Modal'ı gizle
-        });
-    }
 }
 
 
