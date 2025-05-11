@@ -128,6 +128,7 @@ else if (sportspath === "/en/e-sport") {
         sidebar.classList.add("sidebar");
     } else {
         // Diğer cihazlarda hem 'sidebar' hem de 'active' sınıfını ekle
+	    console.warn("1");
         sidebar.classList.add("sidebar", "active");
     }
                     clearDynamicContent()
@@ -179,6 +180,7 @@ else if (sportspath === "/en/e-sport") {
     } else {
         // Diğer cihazlarda hem 'sidebar' hem de 'active' sınıfını ekle
         sidebar.classList.add("sidebar", "active");
+	        console.warn("2");
     }
                 clearDynamicContent()
 
