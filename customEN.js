@@ -65,9 +65,8 @@ document.head.appendChild(link);
               CreateCedaOriginalTwo();
           } else if (path === "/en/sportsbook") {
            
-                  clearDynamicContent()
+              clearDynamicContent()
 
-              }
 
           } else if (path === "/en/trade") {
 
