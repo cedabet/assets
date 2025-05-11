@@ -86,8 +86,6 @@
              } else if (path === "/az/sportsbook") {
                      clearDynamicContent()
 
-                 }
-
              } else if (path === "/az/trade") {
                  clearDynamicContent()
 
