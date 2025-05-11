@@ -14,76 +14,80 @@ document.head.appendChild(link);
         addMenuElement();
         addMenuElementTwo();
         setTimeout(updateCopyrightYear, 1000);
-       // setTimeout(createSigninModal, 2000);
+        // setTimeout(createSigninModal, 2000);
         CreateCedaOriginal();
         CreateCedaOriginalTwo();
-	    insertCedaTVButton();
-createLeagueSection();
+        insertCedaTVButton();
+        createLeagueSection();
         var sportspath = window.location.pathname;
-      if (sportspath === "/en/sportsbook") {
-    var sidebar = document.getElementById("sidebar");
-    sidebar.className = "";  // Mevcut sınıfları temizle
-
-    if (window.innerWidth <= 768) {
-        // Mobil cihazlarda sadece 'sidebar' sınıfını ekle
-        sidebar.classList.add("sidebar");
-    } else {
-        // Diğer cihazlarda hem 'sidebar' hem de 'active' sınıfını ekle
-        sidebar.classList.add("sidebar", "active");
-    }
-}
-	   if (sportspath === "/en/sportsbook") {
-    var sidebar = document.getElementById("sidebar");
-    sidebar.className = "";  // Mevcut sınıfları temizle
-
-    if (window.innerWidth <= 768) {
-        // Mobil cihazlarda sadece 'sidebar' sınıfını ekle
-        sidebar.classList.add("sidebar");
-    } else {
-        // Diğer cihazlarda hem 'sidebar' hem de 'active' sınıfını ekle
-        sidebar.classList.add("sidebar", "active");
-    }
-} 
-else if (sportspath === "/en/trade") {
-    var sidebar = document.getElementById("sidebar");
-    sidebar.className = "";  // Mevcut sınıfları temizle
-
-    if (window.innerWidth <= 768) {
-        // Mobil cihazlarda sadece 'sidebar' sınıfını ekle
-        sidebar.classList.add("sidebar", "sidebar--sport-active");
-    } else {
-        // Diğer cihazlarda hem 'sidebar' hem de 'sidebar--sport-active' hem de 'active' sınıfını ekle
-        sidebar.classList.add("sidebar", "sidebar--sport-active", "active");
-    }
-
-    var sidebarLogo = document.querySelector(".header__logo");
-    if (sidebarLogo) {
-        // sidebarLogo.style.setProperty('display', 'none', 'important');
-    }
-} 
-else if (sportspath === "/en/e-sport") {
-    var sidebar = document.getElementById("sidebar");
-    sidebar.className = "";  // Mevcut sınıfları temizle
-
-    if (window.innerWidth <= 768) {
-        // Mobil cihazlarda sadece 'sidebar' sınıfını ekle
-        sidebar.classList.add("sidebar", "sidebar--sport-active");
-    } else {
-        // Diğer cihazlarda hem 'sidebar' hem de 'sidebar--sport-active' hem de 'active' sınıfını ekle
-        sidebar.classList.add("sidebar", "sidebar--sport-active", "active");
-    }
-
-    var sidebarLogo = document.querySelector(".header__logo");
-    if (sidebarLogo) {
-        // sidebarLogo.style.setProperty('display', 'none', 'important');
-    }
-}
-
-	          else if (sportspath === "/en/vip") {
-             
-                createVipExperience();
-
+        if (sportspath === "/en/sportsbook") {
+            var sidebar = document.getElementById("sidebar");
+            sidebar.className = ""; // Mevcut sınıfları temizle
+console.warn(1);
+            if (window.innerWidth <= 768) {
+                // Mobil cihazlarda sadece 'sidebar' sınıfını ekle
+                sidebar.classList.add("sidebar");
+		    console.warn(2);
+            } else {
+                // Diğer cihazlarda hem 'sidebar' hem de 'active' sınıfını ekle
+                sidebar.classList.add("sidebar", "active");
+		    console.warn(3);
             }
+        }
+        if (sportspath === "/en/sportsbook") {
+            var sidebar = document.getElementById("sidebar");
+            sidebar.className = ""; // Mevcut sınıfları temizle
+console.warn(4);
+            if (window.innerWidth <= 768) {
+                // Mobil cihazlarda sadece 'sidebar' sınıfını ekle
+                sidebar.classList.add("sidebar");
+		    console.warn(5);
+            } else {
+                // Diğer cihazlarda hem 'sidebar' hem de 'active' sınıfını ekle
+                sidebar.classList.add("sidebar", "active");
+		    console.warn(6);
+            }
+        } else if (sportspath === "/en/trade") {
+            var sidebar = document.getElementById("sidebar");
+            sidebar.className = ""; // Mevcut sınıfları temizle
+console.warn(7);
+            if (window.innerWidth <= 768) {
+                // Mobil cihazlarda sadece 'sidebar' sınıfını ekle
+                sidebar.classList.add("sidebar", "sidebar--sport-active");
+		    console.warn(8);
+            } else {
+                // Diğer cihazlarda hem 'sidebar' hem de 'sidebar--sport-active' hem de 'active' sınıfını ekle
+                sidebar.classList.add("sidebar", "sidebar--sport-active", "active");
+		    console.warn(9);
+            }
+
+            var sidebarLogo = document.querySelector(".header__logo");
+            if (sidebarLogo) {
+                // sidebarLogo.style.setProperty('display', 'none', 'important');
+            }
+        } else if (sportspath === "/en/e-sport") {
+            var sidebar = document.getElementById("sidebar");
+            sidebar.className = ""; // Mevcut sınıfları temizle
+console.warn(10);
+            if (window.innerWidth <= 768) {
+                // Mobil cihazlarda sadece 'sidebar' sınıfını ekle
+                sidebar.classList.add("sidebar", "sidebar--sport-active");
+		    console.warn(11);
+            } else {
+                // Diğer cihazlarda hem 'sidebar' hem de 'sidebar--sport-active' hem de 'active' sınıfını ekle
+                sidebar.classList.add("sidebar", "sidebar--sport-active", "active");
+		    console.warn(12);
+            }
+
+            var sidebarLogo = document.querySelector(".header__logo");
+            if (sidebarLogo) {
+                // sidebarLogo.style.setProperty('display', 'none', 'important');
+            }
+        } else if (sportspath === "/en/vip") {
+console.warn(13);
+            createVipExperience();
+
+        }
         isFirstLoad = false;
     }
 
@@ -96,126 +100,123 @@ else if (sportspath === "/en/e-sport") {
     }
 
     function handlePageScripts(path) {
-        setTimeout(function() {
-		    insertCedaTVButton();
-            if (path === "/en/") {
-               
-                clearDynamicContent()
-                loadVipFeatures();
-                setTimeout(loadh2Title, 1000);
-                addMenuElement();
-                addMenuElementTwo();
-                setTimeout(updateCopyrightYear, 1000);
+      setTimeout(function() {
+          insertCedaTVButton();
+          if (path === "/en/") {
+console.warn(14);
+              clearDynamicContent()
+              loadVipFeatures();
+              setTimeout(loadh2Title, 1000);
+              addMenuElement();
+              addMenuElementTwo();
+              setTimeout(updateCopyrightYear, 1000);
 
-                CreateCedaOriginal();
-                CreateCedaOriginalTwo();
-		    createLeagueSection();
-            } else if (path === "/en/vip") {
-                clearDynamicContent();
-		    createVipExperience();
-            } else if (path === "/en/casino") {
-                clearDynamicContent()
-                CreateCedaOriginal();
-                CreateCedaOriginalTwo();
-            } else if (path === "/en/sportsbook") {
-                var sportspath = window.location.pathname;
-                if (sportspath === "/en/sportsbook") {
-                     var sidebar = document.getElementById("sidebar");
-    sidebar.className = "";  // Mevcut sınıfları temizle
+              CreateCedaOriginal();
+              CreateCedaOriginalTwo();
+              createLeagueSection();
+          } else if (path === "/en/vip") {
+              clearDynamicContent();
+              createVipExperience();
+          } else if (path === "/en/casino") {
+              clearDynamicContent()
+              CreateCedaOriginal();
+              CreateCedaOriginalTwo();
+          } else if (path === "/en/sportsbook") {
+              var sportspath = window.location.pathname;
+              if (sportspath === "/en/sportsbook") {
+                  var sidebar = document.getElementById("sidebar");
+                  sidebar.className = ""; // Mevcut sınıfları temizle
+console.warn(15);
+                  if (window.innerWidth <= 768) {
+                      // Mobil cihazlarda sadece 'sidebar' sınıfını ekle
+                      sidebar.classList.add("sidebar");
+                  } else {
+                      // Diğer cihazlarda hem 'sidebar' hem de 'active' sınıfını ekle
+                    
+                      sidebar.classList.add("sidebar", "active");
+                  }
+                  clearDynamicContent()
 
-    if (window.innerWidth <= 768) {
-        // Mobil cihazlarda sadece 'sidebar' sınıfını ekle
-        sidebar.classList.add("sidebar");
-    } else {
-        // Diğer cihazlarda hem 'sidebar' hem de 'active' sınıfını ekle
-	    console.warn("1");
-        sidebar.classList.add("sidebar", "active");
-    }
-                    clearDynamicContent()
+              }
 
-                }
+          } else if (path === "/en/trade") {
+console.warn(16);
+              var sidebar = document.getElementById("sidebar");
+              sidebar.className = ""; // Mevcut sınıfları temizle
 
-            }
-	    else if (path === "/en/trade") {
-            
-                   var sidebar = document.getElementById("sidebar");
-    sidebar.className = "";  // Mevcut sınıfları temizle
-
-    if (window.innerWidth <= 768) {
-        // Mobil cihazlarda sadece 'sidebar' sınıfını ekle
-        sidebar.classList.add("sidebar", "sidebar--sport-active");
-    } else {
-        // Diğer cihazlarda hem 'sidebar' hem de 'sidebar--sport-active' hem de 'active' sınıfını ekle
-        sidebar.classList.add("sidebar", "sidebar--sport-active", "active");
-    }
-                    clearDynamicContent()
-
-                
-
-            }
-	      else if (path === "/en/e-sport") {
-             
-                    var sidebar = document.getElementById("sidebar");
-    sidebar.className = "";  // Mevcut sınıfları temizle
-
-    if (window.innerWidth <= 768) {
-        // Mobil cihazlarda sadece 'sidebar' sınıfını ekle
-        sidebar.classList.add("sidebar", "sidebar--sport-active");
-    } else {
-        // Diğer cihazlarda hem 'sidebar' hem de 'sidebar--sport-active' hem de 'active' sınıfını ekle
-        sidebar.classList.add("sidebar", "sidebar--sport-active", "active");
-    }
-                    clearDynamicContent()
-
-                
-
-            }
-	      else if (path !== "/en/sportsbook") {
-                              var sidebar = document.getElementById("sidebar");
-    sidebar.className = "";  // Mevcut sınıfları temizle
-
-    if (window.innerWidth <= 768) {
-        // Mobil cihazlarda sadece 'sidebar' sınıfını ekle
-        sidebar.classList.add("sidebar");
-    } else {
-        // Diğer cihazlarda hem 'sidebar' hem de 'active' sınıfını ekle
-        sidebar.classList.add("sidebar", "active");
-	        console.warn("2");
-    }
-                clearDynamicContent()
-
-            }
-        }, 400);
-    }
+              if (window.innerWidth <= 768) {
+                  // Mobil cihazlarda sadece 'sidebar' sınıfını ekle
+                  sidebar.classList.add("sidebar", "sidebar--sport-active");
+              } else {
+                  // Diğer cihazlarda hem 'sidebar' hem de 'sidebar--sport-active' hem de 'active' sınıfını ekle
+                  sidebar.classList.add("sidebar", "sidebar--sport-active", "active");
+              }
+              clearDynamicContent()
 
 
-    new MutationObserver(checkUrlChange).observe(document, {
-        subtree: true,
-        childList: true
-    });
-    window.addEventListener('load', function() {
-        checkUrlChange(); // Sayfa yüklendikten hemen sonra kontrol et
-    });
+
+          } else if (path === "/en/e-sport") {
+console.warn(17);
+              var sidebar = document.getElementById("sidebar");
+              sidebar.className = ""; // Mevcut sınıfları temizle
+
+              if (window.innerWidth <= 768) {
+                  // Mobil cihazlarda sadece 'sidebar' sınıfını ekle
+                  sidebar.classList.add("sidebar", "sidebar--sport-active");
+              } else {
+                  // Diğer cihazlarda hem 'sidebar' hem de 'sidebar--sport-active' hem de 'active' sınıfını ekle
+                  sidebar.classList.add("sidebar", "sidebar--sport-active", "active");
+              }
+              clearDynamicContent()
 
 
-    const pushState = history.pushState;
-    const replaceState = history.replaceState;
 
-    history.pushState = function() {
-        pushState.apply(history, arguments);
-        checkUrlChange();
-    };
+          } else if (path !== "/en/sportsbook") {
+              var sidebar = document.getElementById("sidebar");
+              sidebar.className = ""; // Mevcut sınıfları temizle
+console.warn(18);
+              if (window.innerWidth <= 768) {
+                  // Mobil cihazlarda sadece 'sidebar' sınıfını ekle
+                  sidebar.classList.add("sidebar");
+              } else {
+                  // Diğer cihazlarda hem 'sidebar' hem de 'active' sınıfını ekle
+                  sidebar.classList.add("sidebar", "active");
+                  console.warn("2");
+              }
+              clearDynamicContent()
 
-    history.replaceState = function() {
-        replaceState.apply(history, arguments);
-        checkUrlChange();
-    };
-
-    window.addEventListener('popstate', checkUrlChange);
+          }
+      }, 400);
+  }
 
 
-    window.addEventListener('load', checkUrlChange);
-})();
+  new MutationObserver(checkUrlChange).observe(document, {
+      subtree: true,
+      childList: true
+  });
+  window.addEventListener('load', function() {
+      checkUrlChange(); // Sayfa yüklendikten hemen sonra kontrol et
+  });
+
+
+  const pushState = history.pushState;
+  const replaceState = history.replaceState;
+
+  history.pushState = function() {
+      pushState.apply(history, arguments);
+      checkUrlChange();
+  };
+
+  history.replaceState = function() {
+      replaceState.apply(history, arguments);
+      checkUrlChange();
+  };
+
+  window.addEventListener('popstate', checkUrlChange);
+
+
+  window.addEventListener('load', checkUrlChange);
+  })();
 
 
 
