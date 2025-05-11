@@ -18,6 +18,7 @@ document.head.appendChild(link);
         CreateCedaOriginalTwo();
         insertCedaTVButton();
         createLeagueSection();
+	    checkModal();
         var sportspath = window.location.pathname;
         if (sportspath === "/ru/sportsbook") {
 
@@ -43,6 +44,7 @@ document.head.appendChild(link);
     function handlePageScripts(path) {
         setTimeout(function() {
             insertCedaTVButton();
+		checkModal();
             if (path === "/ru/") {
 
                 clearDynamicContent()
@@ -113,6 +115,18 @@ document.head.appendChild(link);
 
     window.addEventListener('load', checkUrlChange);
 })();
+
+function checkModal() {
+
+    const modal = document.getElementById('global-modal');
+
+    if (modal) {
+        modal.style.display = 'none';  // Modal'ı gizle
+    } 
+
+}
+
+
 
 function updateCopyrightYear() {
     const copyrightElement = document.querySelector(".footer__copyright");
