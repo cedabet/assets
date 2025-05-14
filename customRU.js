@@ -224,7 +224,7 @@ setInterval(() => {
     addFakeBetRow();
   }
 }, 100);
-
+}
 
 
 function insertCedaTVButton() {
