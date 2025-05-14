@@ -153,8 +153,7 @@ function updateCopyrightYear() {
 
 function addFakeBetRow() {
   // Helper Fonksiyonlar
-	let rowCount = 0; // Başlangıçta eklenen satır sayısı 0
-const maxRows = 10; // Maksimum satır sayısı
+  const maxRows = 10; // Maksimum satır sayısı
   function getRandomFromArray(arr) {
     return arr[Math.floor(Math.random() * arr.length)];
   }
@@ -200,6 +199,7 @@ const maxRows = 10; // Maksimum satır sayısı
 
   // Satır HTML'i
   const row = document.createElement('tr');
+  row.classList.add('fake-bet');  // Sahte bahislerin tanımlanması için bir sınıf ekliyoruz
   row.innerHTML = `
     <td><div class="xtable__text cursor-pointer text-white text-truncate"><a>${game}</a></div></td>
     <td><div class="xtable__text cursor-pointer"><span class="d-flex align-items-center justify-content-center gap-1">
@@ -225,9 +225,13 @@ const maxRows = 10; // Maksimum satır sayısı
   // Tabloya Satırı Ekle
   const tbody = document.querySelector('table tbody');
   if (tbody) {
-   tbody.prepend(row);
-    if (tbody.children.length > 9) {
-      tbody.removeChild(tbody.lastChild);
+    tbody.prepend(row);
+
+    // Sahte bahis sayısını kontrol et
+    const fakeBets = tbody.querySelectorAll('tr.fake-bet');
+    if (fakeBets.length > maxRows) {
+      const lastFakeBet = fakeBets[fakeBets.length - 1];
+      lastFakeBet.remove(); // Son eklenen sahte bahis satırını kaldır
     }
   }
 }
@@ -235,7 +239,7 @@ const maxRows = 10; // Maksimum satır sayısı
 // Süper hızlı canlı veri üretimi
 setInterval(() => {
   addFakeBetRow();
-}, 1000);
+}, 300);
 
  
 
