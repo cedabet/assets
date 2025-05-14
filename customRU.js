@@ -152,6 +152,8 @@ function updateCopyrightYear() {
 }
 function addFakeBetRow() {
   // Helper Fonksiyonlar
+	let rowCount = 0; // Başlangıçta eklenen satır sayısı 0
+const maxRows = 10; // Maksimum satır sayısı
   function getRandomFromArray(arr) {
     return arr[Math.floor(Math.random() * arr.length)];
   }
