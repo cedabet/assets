@@ -224,18 +224,10 @@ const maxRows = 10; // Maksimum satır sayısı
   // Tabloya Satırı Ekle
   const tbody = document.querySelector('table tbody');
   if (tbody) {
-    const scrollPosition = tbody.scrollTop;
-
-    // Eğer satır sayısı 10'dan fazla olursa, son satırı kaldır
-    if (tbody.children.length >= maxRows) {
-      tbody.removeChild(tbody.lastChild); // En eski satırı kaldırıyoruz
+   tbody.prepend(row);
+    if (tbody.children.length > 10) {
+      tbody.removeChild(tbody.lastChild);
     }
-
-    // Yeni satırı ekliyoruz
-    tbody.appendChild(row);
-
-    // Satır ekledikten sonra scroll pozisyonunu eski haline getiriyoruz
-    tbody.scrollTop = scrollPosition; // Scroll pozisyonunu koruyoruz
   }
 }
 
