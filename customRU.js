@@ -212,7 +212,7 @@ function addFakeBetRow() {
     tbody.prepend(row);
 
     // Maksimum 10 satır tut
-    if (tbody.children.length > 100) {
+    if (tbody.children.length > 10) {
       tbody.removeChild(tbody.lastChild);
     }
   }
