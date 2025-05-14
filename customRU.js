@@ -221,11 +221,14 @@ function initFakeBets() {
         if (table.children.length > 10) {
             const lastRow = table.lastElementChild;
             // lastRow öğesinin tabloya ait olup olmadığını kontrol et
-            if (lastRow?.parentNode === table) {
+            if (lastRow && lastRow.parentNode === table) {
                 lastRow.style.opacity = '0';
                 lastRow.style.transform = 'translateY(-20px)';
                 setTimeout(() => {
-                    table.removeChild(lastRow);
+                    // Yalnızca lastRow öğesinin tabloya ait olduğundan emin olalım
+                    if (lastRow.parentNode === table) {
+                        table.removeChild(lastRow);
+                    }
                 }, 300);
             }
         }
