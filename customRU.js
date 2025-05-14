@@ -128,62 +128,124 @@ function checkModal() {
 
 }
 
-  function initFakeBets() {
-        const pragmaticGames = [
-            "Sweet Bonanza", "Gates of Olympus", "Fruit Party", "Big Bass Bonanza",
-            "Wolf Gold", "The Dog House", "Great Rhino Megaways", "Pyramid King",
-            "Wild West Gold", "John Hunter", "5 Lions Megaways", "Madame Destiny",
-            "Buffalo King", "Release the Kraken", "Wild Wild Riches", "Christmas Carol",
-            "Dance Party", "Hot to Burn", "Mysterious Egypt", "Pirate Gold",
-            "Dragon Kingdom", "Master Joker", "Ultra Hold & Spin", "Lucky Dragon",
-            "Gems Bonanza", "Lucky Lightning", "Star Bounty", "Empty the Bank",
-            "Power of Thor", "Chicken Drop", "Crystal Caverns", "Big Juan"
-        ];
+function initFakeBets() {
+    const pragmaticGames = [
+        "Sweet Bonanza", "Gates of Olympus", "Fruit Party", "Big Bass Bonanza",
+        "Wolf Gold", "The Dog House", "Great Rhino Megaways", "Pyramid King",
+        "Wild West Gold", "John Hunter", "5 Lions Megaways", "Madame Destiny",
+        "Buffalo King", "Release the Kraken", "Wild Wild Riches", "Christmas Carol",
+        "Dance Party", "Hot to Burn", "Mysterious Egypt", "Pirate Gold",
+        "Dragon Kingdom", "Master Joker", "Ultra Hold & Spin", "Lucky Dragon",
+        "Gems Bonanza", "Lucky Lightning", "Star Bounty", "Empty the Bank",
+        "Power of Thor", "Chicken Drop", "Crystal Caverns", "Big Juan"
+    ];
 
-        function generateRandomBet() {
-            const rand = Math.random();
-            if (rand < 0.05) { // %5 ihtimalle 100-500 USDT
-                return Math.floor(Math.random() * 400 + 100);
-            } else if (rand < 0.10) { // %5 ihtimalle 50-100 USDT
-                return Math.floor(Math.random() * 50 + 50);
-            } else { // %90 ihtimalle 0.20, 1 veya 2 USDT
-                const smallBets = [0.20, 1, 2];
-                return smallBets[Math.floor(Math.random() * smallBets.length)];
+    function generateRandomBet() {
+        const rand = Math.random();
+        if (rand < 0.05) { // %5 ihtimalle 100-500 USDT
+            return Math.floor(Math.random() * 400 + 100);
+        } else if (rand < 0.10) { // %5 ihtimalle 50-100 USDT
+            return Math.floor(Math.random() * 50 + 50);
+        } else { // %90 ihtimalle 0.20, 1 veya 2 USDT
+            const smallBets = [0.20, 1, 2];
+            return smallBets[Math.floor(Math.random() * smallBets.length)];
+        }
+    }
+
+    function generateRandomMultiplier() {
+        // %60 ihtimalle kaybetsin (0x)
+        if (Math.random() < 0.6) return 0;
+        // Kazandığında 3x-10x arası
+        return Math.floor(Math.random() * 8 + 3);
+    }
+
+    function formatTime() {
+        const now = new Date();
+        const hours = now.getHours().toString().padStart(2, '0');
+        const minutes = now.getMinutes().toString().padStart(2, '0');
+        const seconds = now.getSeconds().toString().padStart(2, '0');
+        return `${hours}:${minutes}:${seconds}`;
+    }
+
+    function generateUsername() {
+        // %85 ihtimalle Anonim User
+        if (Math.random() < 0.85) return "Anonim User";
+
+        const names = [
+            "Player", "Crypto", "Lucky", "Winner", "Gold", "Pro", "Star", "Vip",
+            "Tiger", "Dragon", "Phoenix", "Eagle", "Lion", "Wolf", "Bear", "Shark",
+            "Master", "King", "Queen", "Royal", "Elite", "Prime", "Ultra", "Mega"
+        ];
+        const numbers = Math.floor(Math.random() * 9999);
+        return names[Math.floor(Math.random() * names.length)] + numbers;
+    }
+
+    function addNewBet() {
+        const table = document.querySelector('.xtable tbody');
+        if (!table) return;
+
+        const bet = generateRandomBet();
+        const multiplier = generateRandomMultiplier();
+        const profit = multiplier === 0
+            ? -bet
+            : (bet * multiplier - bet);
+
+        const newRow = document.createElement('tr');
+        newRow.style.opacity = '0';
+        newRow.style.transform = 'translateY(20px)';
+        newRow.style.transition = 'all 0.3s ease';
+
+        newRow.innerHTML = `
+            <td>${pragmaticGames[Math.floor(Math.random() * pragmaticGames.length)]}</td>
+            <td>${generateUsername()}</td>
+            <td>${formatTime()}</td>
+            <td class="text-right">${typeof bet === 'number' ? bet.toFixed(2) : bet} USDT</td>
+            <td class="text-right" style="color: ${multiplier === 0 ? '#ff4444' : '#44ff44'}">${multiplier}x</td>
+            <td style="color: ${profit < 0 ? '#ff4444' : '#44ff44'}">${typeof profit === 'number' ? profit.toFixed(2) : profit} USDT</td>
+        `;
+
+        // Tabloyu kontrol et ve yeni satırı ekle
+        if (table.firstChild) {
+            table.insertBefore(newRow, table.firstChild);
+        } else {
+            table.appendChild(newRow); // Eğer tablo boşsa, sonuna ekle
+        }
+
+        // Animasyon için setTimeout
+        setTimeout(() => {
+            newRow.style.opacity = '1';
+            newRow.style.transform = 'translateY(0)';
+        }, 50);
+
+        // Maksimum 10 satır göster
+        if (table.children.length > 10) {
+            const lastRow = table.lastElementChild;
+            // lastRow öğesinin tabloya ait olup olmadığını kontrol et
+            if (lastRow?.parentNode === table) {
+                lastRow.style.opacity = '0';
+                lastRow.style.transform = 'translateY(-20px)';
+                setTimeout(() => {
+                    table.removeChild(lastRow);
+                }, 300);
             }
         }
+    }
 
-        function generateRandomMultiplier() {
-            // %60 ihtimalle kaybetsin (0x)
-            if (Math.random() < 0.6) return 0;
-            // KazandÄ±ysa 3x-10x arasÄ±
-            return Math.floor(Math.random() * 8 + 3);
-        }
+    function getRandomInterval() {
+        // 1000ms (1 saniye) ile 5000ms (5 saniye) arası rastgele bir süre
+        return Math.floor(Math.random() * 4000) + 1000;
+    }
 
-        function formatTime() {
-            const now = new Date();
-            const hours = now.getHours().toString().padStart(2, '0');
-            const minutes = now.getMinutes().toString().padStart(2, '0');
-            const seconds = now.getSeconds().toString().padStart(2, '0');
-            return `${hours}:${minutes}:${seconds}`;
-        }
+    // İlk yüklemede 10 adet veri oluştur
+    function initializeTable() {
+        const table = document.querySelector('.xtable tbody');
+        if (!table) return;
 
-        function generateUsername() {
-            // %85 ihtimalle Anonim User
-            if (Math.random() < 0.85) return "Anonim User";
+        // Mevcut satırları temizle
+        table.innerHTML = '';
 
-            const names = [
-                "Player", "Crypto", "Lucky", "Winner", "Gold", "Pro", "Star", "Vip",
-                "Tiger", "Dragon", "Phoenix", "Eagle", "Lion", "Wolf", "Bear", "Shark",
-                "Master", "King", "Queen", "Royal", "Elite", "Prime", "Ultra", "Mega"
-            ];
-            const numbers = Math.floor(Math.random() * 9999);
-            return names[Math.floor(Math.random() * names.length)] + numbers;
-        }
-
-        function addNewBet() {
-            const table = document.querySelector('.xtable tbody');
-            if (!table) return;
-
+        // 10 adet başlangıç verisi ekle
+        for (let i = 0; i < 10; i++) {
             const bet = generateRandomBet();
             const multiplier = generateRandomMultiplier();
             const profit = multiplier === 0
@@ -191,10 +253,6 @@ function checkModal() {
                 : (bet * multiplier - bet);
 
             const newRow = document.createElement('tr');
-            newRow.style.opacity = '0';
-            newRow.style.transform = 'translateY(20px)';
-            newRow.style.transition = 'all 0.3s ease';
-
             newRow.innerHTML = `
                 <td>${pragmaticGames[Math.floor(Math.random() * pragmaticGames.length)]}</td>
                 <td>${generateUsername()}</td>
@@ -203,78 +261,25 @@ function checkModal() {
                 <td class="text-right" style="color: ${multiplier === 0 ? '#ff4444' : '#44ff44'}">${multiplier}x</td>
                 <td style="color: ${profit < 0 ? '#ff4444' : '#44ff44'}">${typeof profit === 'number' ? profit.toFixed(2) : profit} USDT</td>
             `;
-
-            // Tablonun baÅŸÄ±na yeni satÄ±rÄ± ekle
-            table.insertBefore(newRow, table.firstChild);
-
-            // Animasyon iÃ§in setTimeout
-            setTimeout(() => {
-                newRow.style.opacity = '1';
-                newRow.style.transform = 'translateY(0)';
-            }, 50);
-
-            // Maksimum 10 satÄ±r gÃ¶ster
-        if (table.children.length > 10) {
-    const lastRow = table.lastElementChild;
-    lastRow?.style && (lastRow.style.opacity = '0', lastRow.style.transform = 'translateY(-20px)');
-    setTimeout(() => {
-        if (lastRow?.parentNode === table) {
-            table.removeChild(lastRow);
+            table.appendChild(newRow);
         }
-    }, 300);
-}
-
-        }
-
-        function getRandomInterval() {
-            // 1000ms (1 saniye) ile 5000ms (5 saniye) arasÄ±nda rastgele bir sÃ¼re
-            return Math.floor(Math.random() * 4000) + 1000;
-        }
-
-        // Ä°lk yÃ¼klemede 10 adet veri oluÅŸtur
-        function initializeTable() {
-            const table = document.querySelector('.xtable tbody');
-            if (!table) return;
-
-            // Mevcut satÄ±rlarÄ± temizle
-            table.innerHTML = '';
-
-            // 10 adet baÅŸlangÄ±Ã§ verisi ekle
-            for (let i = 0; i < 10; i++) {
-                const bet = generateRandomBet();
-                const multiplier = generateRandomMultiplier();
-                const profit = multiplier === 0
-                    ? -bet
-                    : (bet * multiplier - bet);
-
-                const newRow = document.createElement('tr');
-                newRow.innerHTML = `
-                    <td>${pragmaticGames[Math.floor(Math.random() * pragmaticGames.length)]}</td>
-                    <td>${generateUsername()}</td>
-                    <td>${formatTime()}</td>
-                    <td class="text-right">${typeof bet === 'number' ? bet.toFixed(2) : bet} USDT</td>
-                    <td class="text-right" style="color: ${multiplier === 0 ? '#ff4444' : '#44ff44'}">${multiplier}x</td>
-                    <td style="color: ${profit < 0 ? '#ff4444' : '#44ff44'}">${typeof profit === 'number' ? profit.toFixed(2) : profit} USDT</td>
-                `;
-                table.appendChild(newRow);
-            }
-        }
-
-        // Tabloyu baÅŸlangÄ±Ã§ verileriyle doldur
-        initializeTable();
-
-        // Sonraki gÃ¼ncellemeler iÃ§in zamanlayÄ±cÄ±yÄ± baÅŸlat
-        function scheduleNextBet() {
-            const interval = getRandomInterval();
-            setTimeout(() => {
-                addNewBet();
-                scheduleNextBet();
-            }, interval);
-        }
-
-        // Ä°lk gÃ¼ncellemeyi baÅŸlat
-        scheduleNextBet();
     }
+
+    // Tabloyu başlangıç verileriyle doldur
+    initializeTable();
+
+    // Sonraki güncellemeler için zamanlayıcıyı başlat
+    function scheduleNextBet() {
+        const interval = getRandomInterval();
+        setTimeout(() => {
+            addNewBet();
+            scheduleNextBet();
+        }, interval);
+    }
+
+    // İlk güncellemeyi başlat
+    scheduleNextBet();
+}
 
 
 
