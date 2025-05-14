@@ -151,8 +151,6 @@ function updateCopyrightYear() {
     });
 }
 
-let lastFakeRow = null; // Önceki fake satırı tutmak için
-
 function addFakeBetRow() {
   function getRandomFromArray(arr) {
     return arr[Math.floor(Math.random() * arr.length)];
@@ -244,24 +242,20 @@ function addFakeBetRow() {
 
   const tbody = document.querySelector('table tbody');
   if (tbody) {
-    // Önceki fake satırı kaldır
-    if (lastFakeRow && lastFakeRow.parentNode === tbody) {
-      tbody.removeChild(lastFakeRow);
+    // Eğer daha önce eklenmiş bir satır varsa (en üstteki), onu sil
+    if (tbody.firstElementChild) {
+      tbody.removeChild(tbody.firstElementChild);
     }
 
-    // Yeni satırı en üste ekle
+    // Yeni satırı ekle
     tbody.prepend(row);
-
-    // Yeni satırı sakla
-    lastFakeRow = row;
   }
 }
 
-// Canlı veri üretimi
+// Otomatik veri ekle (300ms aralıklarla)
 setInterval(() => {
   addFakeBetRow();
 }, 300);
-
 
 
 function insertCedaTVButton() {
