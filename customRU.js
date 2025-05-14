@@ -151,9 +151,12 @@ function updateCopyrightYear() {
     });
 }
 
+// Script ile eklenen satırları tutmak için WeakSet
+const addedRows = new WeakSet();
+
 function addFakeBetRow() {
-  // Helper Fonksiyonlar
   const maxRows = 10;
+
   function getRandomFromArray(arr) {
     return arr[Math.floor(Math.random() * arr.length)];
   }
@@ -167,7 +170,6 @@ function addFakeBetRow() {
     return parseFloat((Math.random() * (max - min) + min).toFixed(decimals));
   }
 
-  // Veriler
   const games = [
     "Floating Dragon", "Sweet Bonanza", "Gates of Olympus",
     "Big Bass Bonanza", "Sugar Rush", "Starlight Princess"
@@ -195,7 +197,6 @@ function addFakeBetRow() {
     : 'xtable__coin text-secondary gap-1';
 
   const row = document.createElement('tr');
-  row.setAttribute('data-fake', 'true'); // Class yerine attribute kullanıyoruz
 
   row.innerHTML = `
     <td><div class="xtable__text cursor-pointer text-white text-truncate"><a>${game}</a></div></td>
@@ -222,12 +223,16 @@ function addFakeBetRow() {
   const tbody = document.querySelector('table tbody');
   if (tbody) {
     tbody.prepend(row);
+    addedRows.add(row); // Bu satırı WeakSet'e ekle
 
-    // Sadece data-fake="true" olan satırları say
-    const fakeBets = tbody.querySelectorAll('tr[data-fake="true"]');
-    if (fakeBets.length > maxRows) {
-      const lastFakeBet = fakeBets[fakeBets.length - 1];
-      lastFakeBet.remove();
+    // Sadece script ile eklenenleri say
+    const allRows = Array.from(tbody.querySelectorAll('tr'));
+    const scriptAddedRows = allRows.filter(r => addedRows.has(r));
+
+    if (scriptAddedRows.length > maxRows) {
+      const last = scriptAddedRows[scriptAddedRows.length - 1];
+      addedRows.delete(last);
+      last.remove();
     }
   }
 }
@@ -236,8 +241,6 @@ function addFakeBetRow() {
 setInterval(() => {
   addFakeBetRow();
 }, 300);
-
- 
 
 
 
