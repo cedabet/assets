@@ -224,7 +224,7 @@ function addFakeBetRow() {
   if (tbody) {
     tbody.prepend(row);
    if (tbody.children.length > 10) {
-      tbody.removeChild(tbody.firstChild);
+      tbody.removeChild(tbody.lastChild);
     }
   }
 }
