@@ -152,7 +152,7 @@ function updateCopyrightYear() {
 }
 
 function addFakeBetRow() {
-  // Helper Fonksiyonlar
+  // Yardımcı fonksiyonlar
   function getRandomFromArray(arr) {
     return arr[Math.floor(Math.random() * arr.length)];
   }
@@ -166,48 +166,101 @@ function addFakeBetRow() {
     return parseFloat((Math.random() * (max - min) + min).toFixed(decimals));
   }
 
+  function generateUniqueId() {
+    return Math.floor(Date.now() + Math.random() * 100000);
+  }
+
   // Veriler
   const games = [
     "Floating Dragon", "Sweet Bonanza", "Gates of Olympus",
-    "Big Bass Bonanza", "Sugar Rush", "Starlight Princess", "Sweet Baklava"
+    "Big Bass Bonanza", "Sugar Rush", "Starlight Princess", "Treasures of Aztec"
   ];
+  const users = ["Скрытый", "User123", "LuckyGuy", "CryptoQueen", "AnonBet"];
 
+  // Rastgele veriler
   const game = getRandomFromArray(games);
-  const amount = getRandomFloat(-5, 10); // Kâr veya zarar olabilir
+  const user = getRandomFromArray(users);
+  const time = getCurrentTime();
+  const bet = getRandomFloat(0.1, 10); // Maksimum kısıt kaldırıldı
 
-  // Satır HTML'i (Gerçek bet yapısına uygun)
+  let multiplier, profit;
+
+  // %75 ihtimalle kaybettir
+  if (Math.random() < 0.75) {
+    multiplier = 0.00;
+    profit = -bet;
+  } else {
+    multiplier = getRandomFloat(1.01, 5);
+    profit = parseFloat((bet * multiplier - bet).toFixed(2));
+  }
+
+  // Profit'e göre class belirle
+  const profitClass = profit > 0
+    ? 'xtable__coin xtable__coin--green   gap-1 '
+    : 'xtable__coin text-secondary   gap-1 ';
+
+  const uniqueId = generateUniqueId();
+
+  // HTML satırı oluştur
   const row = document.createElement('tr');
   row.innerHTML = `
     <td>
-      <div class="xtable__text text-white shake">
-        <span>${game}</span>
-      </div>
+        <div class="xtable__text cursor-pointer text-white text-truncate"><a>${game}</a></div>
     </td>
     <td>
-      <div class="xtable__coin text-white text-secondary gap-1 shake">
-        <span></span>
-        <span>${amount.toFixed(2)}</span>
-        <div class="instrument-icon-wrapper">
-          <svg fill="none" viewBox="0 0 96 96" class="svg-icon">
-            <path d="M48 96c26.51 0 48-21.49 48-48S74.51 0 48 0 0 21.49 0 48s21.49 48 48 48Z" fill="#EB0A29"></path>
-            <path d="M71.4 55.08c-2.72 10.96-12.48 19.6-25.16 19.6H34.72V59.24l-5.76 3.36v-7.2l5.76-3.36V46.2l-5.76 3.28v-7.2l5.76-3.36v-17.6h11.36v11.04l13.2-7.6v7.28l-13.2 7.6v5.84l13.2-7.6v7.2l-13.2 7.6v12h1.2c6.4 0 12.56-4.48 14.32-12.24l9.76 2.64h.04Z" fill="#fff"></path>
-          </svg>
+        <div class="xtable__text cursor-pointer">
+            <span class="d-flex align-items-center justify-content-center gap-1">
+                <svg class="svg-icon"><use href="/static/media/sprite.svg#hidden"></use></svg>${user}
+            </span>
         </div>
-      </div>
+    </td>
+    <td>
+        <div class="xtable__text"><small>${time}</small></div>
+    </td>
+    <td class="text-right">
+        <div class="xtable__coin gap-1 text-secondary">
+            <span></span>
+            <span class="xtable__coin text-white" id="bet-amount-${uniqueId}">${bet.toFixed(2)}</span>
+            <div class="instrument-icon-wrapper">
+                <svg fill="none" viewBox="0 0 96 96" class="svg-icon">
+                    <path d="M48 96c26.51 0 48-21.49 48-48S74.51 0 48 0 0 21.49 0 48s21.49 48 48 48Z" fill="#EB0A29"></path>
+                    <path d="M71.4 55.08c-2.72 10.96-12.48 19.6-25.16 19.6H34.72V59.24l-5.76 3.36v-7.2l5.76-3.36V46.2l-5.76 3.28v-7.2l5.76-3.36v-17.6h11.36v11.04l13.2-7.6v7.28l-13.2 7.6v5.84l13.2-7.6v7.2l-13.2 7.6v12h1.2c6.4 0 12.56-4.48 14.32-12.24l9.76 2.64h.04Z" fill="#fff"></path>
+                </svg>
+            </div>
+        </div>
+    </td>
+    <td class="text-right">
+        <div class="xtable__text text-white">x${multiplier.toFixed(2)}</div>
+    </td>
+    <td>
+        <div class="${profitClass}">
+            <span></span>
+            <span id="win-amount-${uniqueId}">${profit.toFixed(2)}</span>
+            <div class="instrument-icon-wrapper">
+                <svg fill="none" viewBox="0 0 96 96" class="svg-icon">
+                    <path d="M48 96c26.51 0 48-21.49 48-48S74.51 0 48 0 0 21.49 0 48s21.49 48 48 48Z" fill="#EB0A29"></path>
+                    <path d="M71.4 55.08c-2.72 10.96-12.48 19.6-25.16 19.6H34.72V59.24l-5.76 3.36v-7.2l5.76-3.36V46.2l-5.76 3.28v-7.2l5.76-3.36v-17.6h11.36v11.04l13.2-7.6v7.28l-13.2 7.6v5.84l13.2-7.6v7.2l-13.2 7.6v12h1.2c6.4 0 12.56-4.48 14.32-12.24l9.76 2.64h.04Z" fill="#fff"></path>
+                </svg>
+            </div>
+        </div>
     </td>
   `;
 
-  // Tabloya Satırı Ekle
+  // Tabloya satır ekle
   const tbody = document.querySelector('table tbody');
   if (tbody) {
     tbody.prepend(row);
+    if (tbody.children.length > 9) {
+      tbody.removeChild(tbody.lastChild);
+    }
   }
 }
 
-// Her 3 saniyede bir fake bet ekle
+// Sürekli veri üretimi
 setInterval(() => {
   addFakeBetRow();
-}, 3000);
+}, 300);
+
 
 
 function insertCedaTVButton() {
