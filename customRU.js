@@ -220,9 +220,7 @@ function addFakeBetRow() {
 
 // Süper hızlı canlı veri üretimi
 setInterval(() => {
-  for (let i = 0; i < 3; i++) {
     addFakeBetRow();
-  }
 }, 100);
 }
 
