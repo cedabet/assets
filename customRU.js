@@ -223,11 +223,7 @@ function addFakeBetRow() {
   const tbody = document.querySelector('table tbody');
   if (tbody) {
     tbody.prepend(row);
-    if (tbody.children.length > 6) {
-      tbody.removeChild(tbody.lastChild);
-    }
-    const scrollPosition = tbody.scrollHeight;
-    tbody.scrollTop = scrollPosition;  // Scroll'u sabitle
+
   }
 }
 
