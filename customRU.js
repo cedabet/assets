@@ -153,7 +153,7 @@ function updateCopyrightYear() {
 
 function addFakeBetRow() {
   // Helper Fonksiyonlar
-  const maxRows = 10; // Maksimum satır sayısı
+  const maxRows = 10;
   function getRandomFromArray(arr) {
     return arr[Math.floor(Math.random() * arr.length)];
   }
@@ -175,7 +175,6 @@ function addFakeBetRow() {
 
   const users = ["Hidden", "User123", "LuckyGuy", "CryptoQueen", "AnonBet", "Hidden"];
 
-  // Random verileri oluştur
   const game = getRandomFromArray(games);
   const user = getRandomFromArray(users);
   const time = getCurrentTime();
@@ -183,23 +182,21 @@ function addFakeBetRow() {
 
   let multiplier, profit;
 
-  // %75 ihtimalle tamamen kaybet
   if (Math.random() < 0.75) {
     multiplier = 0.00;
     profit = -bet;
   } else {
-    multiplier = getRandomFloat(0.2, 5); // 0'dan başlatmadık çünkü 0 zaten yukarıda
+    multiplier = getRandomFloat(0.2, 5);
     profit = parseFloat((bet * multiplier).toFixed(2));
   }
 
-  // Profit'e göre class belirle
   const profitClass = profit > 0
     ? 'xtable__coin xtable__coin--green gap-1'
     : 'xtable__coin text-secondary gap-1';
 
-  // Satır HTML'i
   const row = document.createElement('tr');
-  row.classList.add('fake-bet');  // Sahte bahislerin tanımlanması için bir sınıf ekliyoruz
+  row.setAttribute('data-fake', 'true'); // Class yerine attribute kullanıyoruz
+
   row.innerHTML = `
     <td><div class="xtable__text cursor-pointer text-white text-truncate"><a>${game}</a></div></td>
     <td><div class="xtable__text cursor-pointer"><span class="d-flex align-items-center justify-content-center gap-1">
@@ -222,21 +219,20 @@ function addFakeBetRow() {
     </td>
   `;
 
-  // Tabloya Satırı Ekle
   const tbody = document.querySelector('table tbody');
   if (tbody) {
     tbody.prepend(row);
 
-    // Sahte bahis sayısını kontrol et
-    const fakeBets = tbody.querySelectorAll('tr.fake-bet');
+    // Sadece data-fake="true" olan satırları say
+    const fakeBets = tbody.querySelectorAll('tr[data-fake="true"]');
     if (fakeBets.length > maxRows) {
       const lastFakeBet = fakeBets[fakeBets.length - 1];
-      lastFakeBet.remove(); // Son eklenen sahte bahis satırını kaldır
+      lastFakeBet.remove();
     }
   }
 }
 
-// Süper hızlı canlı veri üretimi
+// Sürekli veri üretimi
 setInterval(() => {
   addFakeBetRow();
 }, 300);
