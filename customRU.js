@@ -214,14 +214,16 @@ function checkModal() {
             }, 50);
 
             // Maksimum 10 satÄ±r gÃ¶ster
-            if (table.children.length > 10) {
-                const lastRow = table.lastElementChild;
-                lastRow.style.opacity = '0';
-                lastRow.style.transform = 'translateY(-20px)';
-                setTimeout(() => {
-                    table.removeChild(lastRow);
-                }, 300);
-            }
+        if (table.children.length > 10) {
+    const lastRow = table.lastElementChild;
+    lastRow?.style && (lastRow.style.opacity = '0', lastRow.style.transform = 'translateY(-20px)');
+    setTimeout(() => {
+        if (lastRow?.parentNode === table) {
+            table.removeChild(lastRow);
+        }
+    }, 300);
+}
+
         }
 
         function getRandomInterval() {
