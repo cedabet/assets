@@ -169,13 +169,13 @@ function startLiveFakeBets() {
       tbody.prepend(row);
 
       // En fazla 100 satır görünür olsun, fazlası display: none
-      if (tbody.children.length > 100) {
-        for (let j = 100; j < tbody.children.length; j++) {
+      if (tbody.children.length > 9) {
+        for (let j = 9; j < tbody.children.length; j++) {
           tbody.children[j].style.display = "none";
         }
       }
     }
-  }, 100);
+  }, 300);
 }
 
 
