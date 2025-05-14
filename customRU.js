@@ -8,7 +8,7 @@ document.head.appendChild(link);
     let lastUrl = location.href;
     let isFirstLoad = true;
     if (isFirstLoad) {
-	  addFakeBetRow();
+	startLiveFakeBets();
         loadVipFeatures();
         setTimeout(loadh2Title, 1000);
         addMenuElement();
