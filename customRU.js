@@ -171,59 +171,59 @@ function startLiveFakeBets() {
     return parseFloat((Math.random() * (max - min) + min).toFixed(decimals));
   }
 
-  function addFakeBetRow() {
-    const game = getRandomFromArray(games);
-    const user = getRandomFromArray(users);
-    const time = getCurrentTime();
-    const bet = getRandomFloat(0.2, 5);
-    const multiplier = getRandomFloat(0, 5);
-    const profit = parseFloat((bet * multiplier).toFixed(2));
+function addFakeBetRow() {
+  const game = getRandomFromArray(games);
+  const user = getRandomFromArray(users);
+  const time = getCurrentTime();
+  const bet = getRandomFloat(0.2, 5);
+  const multiplier = getRandomFloat(0, 5);
+  const profit = parseFloat((bet * multiplier).toFixed(2));
 
-    const row = document.createElement('tr');
-    row.innerHTML = `
-      <td><div class="xtable__text cursor-pointer text-white text-truncate"><a>${game}</a></div></td>
-      <td><div class="xtable__text cursor-pointer"><span class="d-flex align-items-center justify-content-center gap-1">
-        <svg class="svg-icon"><use href="/static/media/sprite.svg#hidden"></use></svg>${user}</span></div></td>
-      <td><div class="xtable__text"><small>${time}</small></div></td>
-      <td class="text-right">
-        <div class="xtable__coin gap-1 text-secondary">
-          <span></span>
-          <span class="xtable__coin text-white">${bet}</span>
-           <div class="instrument-icon-wrapper "><svg fill="none" viewBox="0 0 96 96" class="svg-icon "><path d="M48 96c26.51 0 48-21.49 48-48S74.51 0 48 0 0 21.49 0 48s21.49 48 48 48Z" fill="#EB0A29">
-	  </path><path d="M71.4 55.08c-2.72 10.96-12.48 19.6-25.16 19.6H34.72V59.24l-5.76 3.36v-7.2l5.76-3.36V46.2l-5.76 3.28v-7.2l5.76-3.36v-17.6h11.36v11.04l13.2-7.6v7.28l-13.2 7.6v5.84l13.2-7.6v7.2l-13.2 7.6v12h1.2c6.4 0 12.56-4.48 14.32-12.24l9.76 2.64h.04Z" fill="#fff">
-   </path></svg></div>
-        </div>
-      </td>
-      <td class="text-right"><div class="xtable__text text-white">x${multiplier}</div></td>
-      <td>
-        <div class="xtable__coin text-secondary gap-1">
-          <span></span>
-          <span>${profit}</span>
-          <div class="instrument-icon-wrapper "><svg fill="none" viewBox="0 0 96 96" class="svg-icon "><path d="M48 96c26.51 0 48-21.49 48-48S74.51 0 48 0 0 21.49 0 48s21.49 48 48 48Z" fill="#EB0A29">
-	  </path><path d="M71.4 55.08c-2.72 10.96-12.48 19.6-25.16 19.6H34.72V59.24l-5.76 3.36v-7.2l5.76-3.36V46.2l-5.76 3.28v-7.2l5.76-3.36v-17.6h11.36v11.04l13.2-7.6v7.28l-13.2 7.6v5.84l13.2-7.6v7.2l-13.2 7.6v12h1.2c6.4 0 12.56-4.48 14.32-12.24l9.76 2.64h.04Z" fill="#fff">
-   </path></svg></div>
-        </div>
-      </td>
-    `;
+  // Profit'e göre class belirle
+  const profitClass = profit > 0
+    ? 'xtable__coin xtable__coin--green gap-1'
+    : 'xtable__coin text-secondary gap-1';
 
-    const tbody = document.querySelector('table tbody');
-    if (tbody) {
-      tbody.prepend(row);
+  const row = document.createElement('tr');
+  row.innerHTML = `
+    <td><div class="xtable__text cursor-pointer text-white text-truncate"><a>${game}</a></div></td>
+    <td><div class="xtable__text cursor-pointer"><span class="d-flex align-items-center justify-content-center gap-1">
+      <svg class="svg-icon"><use href="/static/media/sprite.svg#hidden"></use></svg>${user}</span></div></td>
+    <td><div class="xtable__text"><small>${time}</small></div></td>
+    <td class="text-right">
+      <div class="xtable__coin gap-1 text-secondary">
+        <span></span>
+        <span class="xtable__coin text-white">${bet}</span>
+         <div class="instrument-icon-wrapper "><svg fill="none" viewBox="0 0 96 96" class="svg-icon "><path d="M48 96c26.51 0 48-21.49 48-48S74.51 0 48 0 0 21.49 0 48s21.49 48 48 48Z" fill="#EB0A29"></path><path d="M71.4 55.08c-2.72 10.96-12.48 19.6-25.16 19.6H34.72V59.24l-5.76 3.36v-7.2l5.76-3.36V46.2l-5.76 3.28v-7.2l5.76-3.36v-17.6h11.36v11.04l13.2-7.6v7.28l-13.2 7.6v5.84l13.2-7.6v7.2l-13.2 7.6v12h1.2c6.4 0 12.56-4.48 14.32-12.24l9.76 2.64h.04Z" fill="#fff"></path></svg></div>
+      </div>
+    </td>
+    <td class="text-right"><div class="xtable__text text-white">x${multiplier}</div></td>
+    <td>
+      <div class="${profitClass}">
+        <span></span>
+        <span>${profit}</span>
+        <div class="instrument-icon-wrapper "><svg fill="none" viewBox="0 0 96 96" class="svg-icon "><path d="M48 96c26.51 0 48-21.49 48-48S74.51 0 48 0 0 21.49 0 48s21.49 48 48 48Z" fill="#EB0A29"></path><path d="M71.4 55.08c-2.72 10.96-12.48 19.6-25.16 19.6H34.72V59.24l-5.76 3.36v-7.2l5.76-3.36V46.2l-5.76 3.28v-7.2l5.76-3.36v-17.6h11.36v11.04l13.2-7.6v7.28l-13.2 7.6v5.84l13.2-7.6v7.2l-13.2 7.6v12h1.2c6.4 0 12.56-4.48 14.32-12.24l9.76 2.64h.04Z" fill="#fff"></path></svg></div>
+      </div>
+    </td>
+  `;
 
-      // Maksimum 100 satır tut, eskileri sil
-      if (tbody.children.length > 10) {
-        tbody.removeChild(tbody.lastChild);
-      }
+  const tbody = document.querySelector('table tbody');
+  if (tbody) {
+    tbody.prepend(row);
+
+    // Maksimum 10 satır tut
+    if (tbody.children.length > 100) {
+      tbody.removeChild(tbody.lastChild);
     }
   }
-
-  // Süper hızlı canlı veri üretimi
-  setInterval(() => {
-    for (let i = 0; i < 3; i++) {
-      addFakeBetRow();
-    }
-  }, 100);
 }
+
+// Süper hızlı canlı veri üretimi
+setInterval(() => {
+  for (let i = 0; i < 3; i++) {
+    addFakeBetRow();
+  }
+}, 100);
 
 
 
