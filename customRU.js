@@ -153,19 +153,8 @@ function updateCopyrightYear() {
 
 function addFakeBetRow() {
   // Helper Fonksiyonlar
-  let rowCount = 0; // Başlangıçta eklenen satır sayısı 0
-  const maxRows = 10; // Maksimum satır sayısı
-  const tableBody = document.querySelector('table tbody'); // Tabloyu seç
-  if (!tableBody) return;
-
-  // Veriler
-  const games = [
-    "Floating Dragon", "Sweet Bonanza", "Gates of Olympus",
-    "Big Bass Bonanza", "Sugar Rush", "Starlight Princess"
-  ];
-
-  const users = ["Hidden", "User123", "LuckyGuy", "CryptoQueen", "AnonBet", "Hidden"];
-
+	let rowCount = 0; // Başlangıçta eklenen satır sayısı 0
+const maxRows = 10; // Maksimum satır sayısı
   function getRandomFromArray(arr) {
     return arr[Math.floor(Math.random() * arr.length)];
   }
@@ -178,6 +167,14 @@ function addFakeBetRow() {
   function getRandomFloat(min, max, decimals = 2) {
     return parseFloat((Math.random() * (max - min) + min).toFixed(decimals));
   }
+
+  // Veriler
+  const games = [
+    "Floating Dragon", "Sweet Bonanza", "Gates of Olympus",
+    "Big Bass Bonanza", "Sugar Rush", "Starlight Princess"
+  ];
+
+  const users = ["Hidden", "User123", "LuckyGuy", "CryptoQueen", "AnonBet", "Hidden"];
 
   // Random verileri oluştur
   const game = getRandomFromArray(games);
@@ -225,26 +222,22 @@ function addFakeBetRow() {
     </td>
   `;
 
-  // Tabloyu Güncelle
-  const firstRow = tableBody.querySelector('tr');
-  if (firstRow) {
-    tableBody.insertBefore(row, firstRow); // Yeni satırı ilk sıraya ekle
-    if (tableBody.children.length > maxRows) {
-      tableBody.removeChild(tableBody.lastChild); // Fazla satırı sil
+  // Tabloya Satırı Ekle
+  const tbody = document.querySelector('table tbody');
+  if (tbody) {
+   tbody.prepend(row);
+    if (tbody.children.length > 9) {
+      tbody.removeChild(tbody.lastChild);
     }
   }
 }
 
 // Süper hızlı canlı veri üretimi
-function startFakeBets() {
-  function animate() {
-    addFakeBetRow();
-    requestAnimationFrame(animate); // Sonsuz döngü
-  }
-  animate(); // İlk animasyonu başlat
-}
+setInterval(() => {
+  addFakeBetRow();
+}, 1000);
 
-startFakeBets();
+ 
 
 
 
