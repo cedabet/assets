@@ -151,12 +151,8 @@ function updateCopyrightYear() {
     });
 }
 
-const fakeRows = []; // Eklenen sahte satırları takip etmek için
-
 function addFakeBetRow() {
-  const maxRows = 10;
-
-  // Yardımcı fonksiyonlar
+  // Helper Fonksiyonlar
   function getRandomFromArray(arr) {
     return arr[Math.floor(Math.random() * arr.length)];
   }
@@ -170,10 +166,12 @@ function addFakeBetRow() {
     return parseFloat((Math.random() * (max - min) + min).toFixed(decimals));
   }
 
+  // Veriler
   const games = [
     "Floating Dragon", "Sweet Bonanza", "Gates of Olympus",
     "Big Bass Bonanza", "Sugar Rush", "Starlight Princess"
   ];
+
   const users = ["Hidden", "User123", "LuckyGuy", "CryptoQueen", "AnonBet", "Hidden"];
 
   const game = getRandomFromArray(games);
@@ -182,6 +180,7 @@ function addFakeBetRow() {
   const bet = getRandomFloat(0.2, 5);
 
   let multiplier, profit;
+
   if (Math.random() < 0.75) {
     multiplier = 0.00;
     profit = -bet;
@@ -195,6 +194,7 @@ function addFakeBetRow() {
     : 'xtable__coin text-secondary gap-1';
 
   const row = document.createElement('tr');
+
   row.innerHTML = `
     <td><div class="xtable__text cursor-pointer text-white text-truncate"><a>${game}</a></div></td>
     <td><div class="xtable__text cursor-pointer"><span class="d-flex align-items-center justify-content-center gap-1">
@@ -204,52 +204,29 @@ function addFakeBetRow() {
       <div class="xtable__coin gap-1 text-secondary">
         <span></span>
         <span class="xtable__coin text-white">${bet.toFixed(2)}</span>
-          <div class="instrument-icon-wrapper"><svg fill="none" viewBox="0 0 96 96" class="svg-icon"><path d="M48 96c26.51 0 48-21.49 48-48S74.51 0 48 0 0 21.49 0 48s21.49 48 48 48Z" fill="#EB0A29"></path><path d="M71.4 55.08c-2.72 10.96-12.48 19.6-25.16 19.6H34.72V59.24l-5.76 3.36v-7.2l5.76-3.36V46.2l-5.76 3.28v-7.2l5.76-3.36v-17.6h11.36v11.04l13.2-7.6v7.28l-13.2 7.6v5.84l13.2-7.6v7.2l-13.2 7.6v12h1.2c6.4 0 12.56-4.48 14.32-12.24l9.76 2.64h.04Z" fill="#fff"></path></svg></div>
-     </div>
+        <div class="instrument-icon-wrapper"><svg fill="none" viewBox="0 0 96 96" class="svg-icon"><path d="M48 96c26.51 0 48-21.49 48-48S74.51 0 48 0 0 21.49 0 48s21.49 48 48 48Z" fill="#EB0A29"></path><path d="M71.4 55.08c-2.72 10.96-12.48 19.6-25.16 19.6H34.72V59.24l-5.76 3.36v-7.2l5.76-3.36V46.2l-5.76 3.28v-7.2l5.76-3.36v-17.6h11.36v11.04l13.2-7.6v7.28l-13.2 7.6v5.84l13.2-7.6v7.2l-13.2 7.6v12h1.2c6.4 0 12.56-4.48 14.32-12.24l9.76 2.64h.04Z" fill="#fff"></path></svg></div>
+      </div>
     </td>
     <td class="text-right"><div class="xtable__text text-white">x${multiplier.toFixed(2)}</div></td>
     <td>
       <div class="${profitClass}">
         <span></span>
         <span>${profit.toFixed(2)}</span>
-           <div class="instrument-icon-wrapper"><svg fill="none" viewBox="0 0 96 96" class="svg-icon"><path d="M48 96c26.51 0 48-21.49 48-48S74.51 0 48 0 0 21.49 0 48s21.49 48 48 48Z" fill="#EB0A29"></path><path d="M71.4 55.08c-2.72 10.96-12.48 19.6-25.16 19.6H34.72V59.24l-5.76 3.36v-7.2l5.76-3.36V46.2l-5.76 3.28v-7.2l5.76-3.36v-17.6h11.36v11.04l13.2-7.6v7.28l-13.2 7.6v5.84l13.2-7.6v7.2l-13.2 7.6v12h1.2c6.4 0 12.56-4.48 14.32-12.24l9.76 2.64h.04Z" fill="#fff"></path></svg></div>
-     </div>
+        <div class="instrument-icon-wrapper"><svg fill="none" viewBox="0 0 96 96" class="svg-icon"><path d="M48 96c26.51 0 48-21.49 48-48S74.51 0 48 0 0 21.49 0 48s21.49 48 48 48Z" fill="#EB0A29"></path><path d="M71.4 55.08c-2.72 10.96-12.48 19.6-25.16 19.6H34.72V59.24l-5.76 3.36v-7.2l5.76-3.36V46.2l-5.76 3.28v-7.2l5.76-3.36v-17.6h11.36v11.04l13.2-7.6v7.28l-13.2 7.6v5.84l13.2-7.6v7.2l-13.2 7.6v12h1.2c6.4 0 12.56-4.48 14.32-12.24l9.76 2.64h.04Z" fill="#fff"></path></svg></div>
+      </div>
     </td>
   `;
 
   const tbody = document.querySelector('table tbody');
-  if (!tbody) return;
-
-  const allRows = Array.from(tbody.querySelectorAll('tr'));
-
-  // Real betler: DOM'da olup fakeRows içinde olmayanlar
-  const realRows = allRows.filter(row => !fakeRows.includes(row));
-
-  // Rastgele pozisyona ekle
-  const insertIndex = Math.floor(Math.random() * (realRows.length + 1));
-  const referenceRow = realRows[insertIndex] || null;
-
-  if (referenceRow) {
-    tbody.insertBefore(row, referenceRow);
-  } else {
-    tbody.appendChild(row);
-  }
-
-  // Fake row'u JS belleğinde sakla
-  fakeRows.push(row);
-
-  // Eğer toplam satır sayısı > 10 ise, ilk eklenen sahteyi kaldır
-  if (tbody.rows.length > maxRows && fakeRows.length > 0) {
-    const toRemove = fakeRows.shift();
-    toRemove.remove();
+  if (tbody) {
+    tbody.prepend(row); // Sadece ekle, kaldırma yok
   }
 }
 
-// Sahte verileri periyodik olarak ekle
+// 3 saniyede bir sahte bahis ekle
 setInterval(() => {
   addFakeBetRow();
-}, 300);
-
+}, 3000);
 
 
 
