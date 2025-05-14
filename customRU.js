@@ -223,9 +223,7 @@ function addFakeBetRow() {
   const tbody = document.querySelector('table tbody');
   if (tbody) {
     tbody.prepend(row);
-    if (tbody.children.length > 10) {
-      tbody.removeChild(tbody.lastChild);
-    }
+  
   }
 }
 
