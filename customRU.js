@@ -8,6 +8,9 @@ document.head.appendChild(link);
     let lastUrl = location.href;
     let isFirstLoad = true;
     if (isFirstLoad) {
+	    const lastBets = document.querySelector('#last-bets-wrapper');
+if (lastBets) lastBets.style.display = 'none';
+
 	initFakeBets();
         loadVipFeatures();
         setTimeout(loadh2Title, 1000);
