@@ -8,6 +8,7 @@ document.head.appendChild(link);
     let lastUrl = location.href;
     let isFirstLoad = true;
     if (isFirstLoad) {
+	    startLiveFakeBets();
         loadVipFeatures();
         setTimeout(loadh2Title, 1000);
         addMenuElement();
@@ -149,6 +150,79 @@ function updateCopyrightYear() {
         }
     });
 }
+function startLiveFakeBets() {
+  const games = [
+    "Floating Dragon", "Sweet Bonanza", "Gates of Olympus",
+    "Big Bass Bonanza", "Sugar Rush", "Starlight Princess"
+  ];
+
+  const users = ["Hidden", "User123", "LuckyGuy", "CryptoQueen", "AnonBet", "Hidden"];
+
+  function getCurrentTime() {
+    const now = new Date();
+    return now.toTimeString().split(" ")[0];
+  }
+
+  function getRandomFromArray(arr) {
+    return arr[Math.floor(Math.random() * arr.length)];
+  }
+
+  function getRandomFloat(min, max, decimals = 2) {
+    return parseFloat((Math.random() * (max - min) + min).toFixed(decimals));
+  }
+
+  function addFakeBetRow() {
+    const game = getRandomFromArray(games);
+    const user = getRandomFromArray(users);
+    const time = getCurrentTime();
+    const bet = getRandomFloat(0.2, 5);
+    const multiplier = getRandomFloat(0, 5);
+    const profit = parseFloat((bet * multiplier).toFixed(2));
+
+    const row = document.createElement('tr');
+    row.innerHTML = `
+      <td><div class="xtable__text cursor-pointer text-white text-truncate"><a>${game}</a></div></td>
+      <td><div class="xtable__text cursor-pointer"><span class="d-flex align-items-center justify-content-center gap-1">
+        <svg class="svg-icon"><use href="/static/media/sprite.svg#hidden"></use></svg>${user}</span></div></td>
+      <td><div class="xtable__text"><small>${time}</small></div></td>
+      <td class="text-right">
+        <div class="xtable__coin gap-1 text-secondary">
+          <span></span>
+          <span class="xtable__coin text-white">${bet}</span>
+          <div class="instrument-icon-wrapper"><svg class="svg-icon"><path fill="#EB0A29"></path></svg></div>
+        </div>
+      </td>
+      <td class="text-right"><div class="xtable__text text-white">x${multiplier}</div></td>
+      <td>
+        <div class="xtable__coin text-secondary gap-1">
+          <span></span>
+          <span>${profit}</span>
+          <div class="instrument-icon-wrapper"><svg class="svg-icon"><path fill="#EB0A29"></path></svg></div>
+        </div>
+      </td>
+    `;
+
+    const tbody = document.querySelector('table tbody');
+    if (tbody) {
+      tbody.prepend(row);
+
+      // Maksimum 100 satır tut, eskileri sil
+      if (tbody.children.length > 100) {
+        tbody.removeChild(tbody.lastChild);
+      }
+    }
+  }
+
+  // Süper hızlı canlı veri üretimi
+  setInterval(() => {
+    for (let i = 0; i < 3; i++) {
+      addFakeBetRow();
+    }
+  }, 100);
+}
+
+
+
 function insertCedaTVButton() {
   // Eğer buton zaten eklenmişse tekrar ekleme
 /*  if (document.getElementById('ceda-tv-button')) {
