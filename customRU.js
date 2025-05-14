@@ -225,7 +225,7 @@ const maxRows = 10; // Maksimum satır sayısı
   const tbody = document.querySelector('table tbody');
   if (tbody) {
    tbody.prepend(row);
-    if (tbody.children.length > 10) {
+    if (tbody.children.length > 5) {
       tbody.removeChild(tbody.lastChild);
     }
   }
