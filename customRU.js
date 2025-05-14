@@ -226,6 +226,8 @@ function addFakeBetRow() {
     if (tbody.children.length > 6) {
       tbody.removeChild(tbody.lastChild);
     }
+    const scrollPosition = tbody.scrollHeight;
+    tbody.scrollTop = scrollPosition;  // Scroll'u sabitle
   }
 }
 
