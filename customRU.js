@@ -135,7 +135,7 @@ function startLiveFakeBets() {
     const tbody = document.querySelector('table tbody');
     if (!tbody) return;
 
-    for (let i = 0; i < 3; i++) {
+    for (let i = 0; i < 2; i++) { // Her seferde 2 adet bet eklenecek
       const game = games[Math.floor(Math.random() * games.length)];
       const user = users[Math.floor(Math.random() * users.length)];
       const time = new Date().toTimeString().split(" ")[0];
@@ -167,15 +167,15 @@ function startLiveFakeBets() {
       `;
       
       tbody.prepend(row);
+    }
 
-      // En fazla 100 satır görünür olsun, fazlası display: none
-      if (tbody.children.length > 9) {
-        for (let j = 9; j < tbody.children.length; j++) {
-          tbody.children[j].style.display = "none";
-        }
+    // En fazla 9 satır görünür olsun, fazlası display: none
+    if (tbody.children.length > 10) {
+      for (let j = 10; j < tbody.children.length; j++) {
+        tbody.children[j].style.display = "none";
       }
     }
-  }, 300);
+  }, 1000); // Her 1 saniyede bir çalışır
 }
 
 
