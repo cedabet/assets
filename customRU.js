@@ -151,6 +151,29 @@ function updateCopyrightYear() {
     });
 }
 function addFakeBetRow() {
+  // Helper Fonksiyonlar
+  function getRandomFromArray(arr) {
+    return arr[Math.floor(Math.random() * arr.length)];
+  }
+
+  function getCurrentTime() {
+    const now = new Date();
+    return now.toTimeString().split(" ")[0];
+  }
+
+  function getRandomFloat(min, max, decimals = 2) {
+    return parseFloat((Math.random() * (max - min) + min).toFixed(decimals));
+  }
+
+  // Veriler
+  const games = [
+    "Floating Dragon", "Sweet Bonanza", "Gates of Olympus",
+    "Big Bass Bonanza", "Sugar Rush", "Starlight Princess"
+  ];
+
+  const users = ["Hidden", "User123", "LuckyGuy", "CryptoQueen", "AnonBet", "Hidden"];
+
+  // Random verileri oluştur
   const game = getRandomFromArray(games);
   const user = getRandomFromArray(users);
   const time = getCurrentTime();
@@ -158,7 +181,7 @@ function addFakeBetRow() {
 
   let multiplier, profit;
 
-  // %25 ihtimalle tamamen kaybet
+  // %75 ihtimalle tamamen kaybet
   if (Math.random() < 0.75) {
     multiplier = 0.00;
     profit = -bet;
@@ -167,10 +190,12 @@ function addFakeBetRow() {
     profit = parseFloat((bet * multiplier).toFixed(2));
   }
 
+  // Profit'e göre class belirle
   const profitClass = profit > 0
     ? 'xtable__coin xtable__coin--green gap-1'
     : 'xtable__coin text-secondary gap-1';
 
+  // Satır HTML'i
   const row = document.createElement('tr');
   row.innerHTML = `
     <td><div class="xtable__text cursor-pointer text-white text-truncate"><a>${game}</a></div></td>
@@ -194,6 +219,7 @@ function addFakeBetRow() {
     </td>
   `;
 
+  // Tabloya Satırı Ekle
   const tbody = document.querySelector('table tbody');
   if (tbody) {
     tbody.prepend(row);
@@ -206,7 +232,8 @@ function addFakeBetRow() {
 // Süper hızlı canlı veri üretimi
 setInterval(() => {
   addFakeBetRow();
-}, 100);
+}, 200);
+
  
 
 
