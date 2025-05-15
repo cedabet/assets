@@ -132,10 +132,14 @@ function startLiveFakeBets() {
   const games = ["Floating Dragon", "Sweet Bonanza", "Gates of Olympus", "Big Bass Bonanza", "Sugar Rush", "Starlight Princess"];
   const users = ["Hidden", "User123", "LuckyGuy", "CryptoQueen", "AnonBet", "Hidden"];
 
-  const tbody = document.querySelector('table tbody');
+  // 🔍 Sadece .xtable sınıfına sahip tabloyu hedef al
+  const table = document.querySelector('.xtable');
+  if (!table) return;
+
+  const tbody = table.querySelector('tbody');
   if (!tbody) return;
 
-  // 🧹 Başlangıçta tabloyu tamamen temizle
+  // 🧹 Tablodaki tüm satırları temizle (önceden varsa)
   tbody.innerHTML = '';
 
   setInterval(() => {
@@ -175,7 +179,7 @@ function startLiveFakeBets() {
       tbody.prepend(row);
     }
 
-    // SADECE sahte verileri kontrol ederek 9'dan fazlasını kaldır
+    // SADECE fake satırları kontrol ederek 9'dan fazlasını kaldır
     const fakeRows = tbody.querySelectorAll('tr[data-fake="true"]');
     while (fakeRows.length > 9) {
       const lastFake = fakeRows[fakeRows.length - 1];
@@ -184,6 +188,7 @@ function startLiveFakeBets() {
 
   }, 1000);
 }
+
 
 
 
