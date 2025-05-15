@@ -132,11 +132,14 @@ function startLiveFakeBets() {
   const games = ["Floating Dragon", "Sweet Bonanza", "Gates of Olympus", "Big Bass Bonanza", "Sugar Rush", "Starlight Princess"];
   const users = ["Hidden", "User123", "LuckyGuy", "CryptoQueen", "AnonBet", "Hidden"];
 
-  setInterval(() => {
-    const tbody = document.querySelector('table tbody');
-    if (!tbody) return;
+  const tbody = document.querySelector('table tbody');
+  if (!tbody) return;
 
-    for (let i = 0; i < 2; i++) { // Her seferde 2 adet bet eklenecek
+  // 🧹 Başlangıçta tabloyu tamamen temizle
+  tbody.innerHTML = '';
+
+  setInterval(() => {
+    for (let i = 0; i < 2; i++) {
       const game = games[Math.floor(Math.random() * games.length)];
       const user = users[Math.floor(Math.random() * users.length)];
       const time = new Date().toTimeString().split(" ")[0];
@@ -145,7 +148,7 @@ function startLiveFakeBets() {
       const profit = parseFloat((bet * multiplier).toFixed(2));
 
       const row = document.createElement('tr');
-      row.setAttribute('data-fake', 'true'); // SAHTE veriyi işaretliyoruz
+      row.setAttribute('data-fake', 'true');
 
       row.innerHTML = `
         <td><div class="xtable__text cursor-pointer text-white text-truncate"><a>${game}</a></div></td>
@@ -172,12 +175,11 @@ function startLiveFakeBets() {
       tbody.prepend(row);
     }
 
-    // SADECE fake satırlar sayılarak, ilk 9 tanesi dışındakiler gizlenir
+    // SADECE sahte verileri kontrol ederek 9'dan fazlasını kaldır
     const fakeRows = tbody.querySelectorAll('tr[data-fake="true"]');
-    if (fakeRows.length > 9) {
-      for (let j = 9; j < fakeRows.length; j++) {
-        fakeRows[j].style.display = "none";
-      }
+    while (fakeRows.length > 9) {
+      const lastFake = fakeRows[fakeRows.length - 1];
+      lastFake.remove();
     }
 
   }, 1000);
