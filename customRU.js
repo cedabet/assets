@@ -8,7 +8,7 @@ document.head.appendChild(link);
     let lastUrl = location.href;
     let isFirstLoad = true;
     if (isFirstLoad) {
-	
+	increaseLiveBets();
         loadVipFeatures();
         setTimeout(loadh2Title, 1000);
         addMenuElement();
@@ -127,6 +127,31 @@ function checkModal() {
 
 }
 
+function increaseLiveBets() {
+    const table = document.querySelector('.xtable tbody');
+    if (!table) return;
+
+    const rows = Array.from(table.querySelectorAll('tr'));  // Mevcut tr'leri alıyoruz
+
+    // Satırları karıştırıyoruz
+    const shuffledRows = [...rows].sort(() => Math.random() - 0.5);
+
+    // Karıştırılan satırları tablonun en başına ekliyoruz
+    shuffledRows.forEach(row => {
+        const newRow = row.cloneNode(true);  // Satırı çoğaltıyoruz
+        table.insertBefore(newRow, table.firstChild);  // Yeni satırı başa ekliyoruz
+    });
+}
+
+// Belirli aralıklarla satırları çoğaltan bir fonksiyon
+function startLiveBets() {
+    setInterval(() => {
+        increaseLiveBets();  // Satırları çoğaltıyoruz
+    }, 500);  // 500ms aralıklarla yeni satırlar ekliyoruz
+}
+
+// Başlatıcı
+startLiveBets();
 
 
 function updateCopyrightYear() {
