@@ -234,7 +234,7 @@ function initFakeBets() {
         }, 50);
 
         // Maksimum 10 satır göster
-      if (table.children.length > 10) {
+      if (table.children.length > 15) {
     // Sahte bahislerin son satırını sil
     const lastRow = table.querySelector('tr[data-fake="true"]'); // Son sahte bahsi seçiyoruz
     if (lastRow) {
