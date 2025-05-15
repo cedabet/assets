@@ -262,56 +262,6 @@ function initFakeBets() {
 }
 
 
-        function getRandomInterval() {
-            // 1000ms (1 saniye) ile 5000ms (5 saniye) arasÄ±nda rastgele bir sÃ¼re
-            return Math.floor(Math.random() * 4000) + 1000;
-        }
-
-        // Ä°lk yÃ¼klemede 10 adet veri oluÅŸtur
-        function initializeTable() {
-            const table = document.querySelector('.xtable tbody');
-            if (!table) return;
-
-            // Mevcut satÄ±rlarÄ± temizle
-            table.innerHTML = '';
-
-            // 10 adet baÅŸlangÄ±Ã§ verisi ekle
-            for (let i = 0; i < 10; i++) {
-                const bet = generateRandomBet();
-                const multiplier = generateRandomMultiplier();
-                const profit = multiplier === 0
-                    ? -bet
-                    : (bet * multiplier - bet);
-
-                const newRow = document.createElement('tr');
-                newRow.innerHTML = `
-                    <td>${pragmaticGames[Math.floor(Math.random() * pragmaticGames.length)]}</td>
-                    <td>${generateUsername()}</td>
-                    <td>${formatTime()}</td>
-                    <td class="text-right">${typeof bet === 'number' ? bet.toFixed(2) : bet} USDT</td>
-                    <td class="text-right" style="color: ${multiplier === 0 ? '#ff4444' : '#44ff44'}">${multiplier}x</td>
-                    <td style="color: ${profit < 0 ? '#ff4444' : '#44ff44'}">${typeof profit === 'number' ? profit.toFixed(2) : profit} USDT</td>
-                `;
-                table.appendChild(newRow);
-            }
-        }
-
-        // Tabloyu baÅŸlangÄ±Ã§ verileriyle doldur
-        initializeTable();
-
-        // Sonraki gÃ¼ncellemeler iÃ§in zamanlayÄ±cÄ±yÄ± baÅŸlat
-        function scheduleNextBet() {
-            const interval = getRandomInterval();
-            setTimeout(() => {
-                addNewBet();
-                scheduleNextBet();
-            }, interval);
-        }
-
-        // Ä°lk gÃ¼ncellemeyi baÅŸlat
-        scheduleNextBet();
-    }
-
 function updateCopyrightYear() {
     const copyrightElement = document.querySelector(".footer__copyright");
 
