@@ -234,14 +234,17 @@ function initFakeBets() {
         }, 50);
 
         // Maksimum 10 satır göster
-        if (table.children.length > 10) {
-            const lastRow = table.lastElementChild;
-            lastRow.style.opacity = '0';
-            lastRow.style.transform = 'translateY(-20px)';
-            setTimeout(() => {
-                table.removeChild(lastRow);
-            }, 300);
-        }
+      if (table.children.length > 10) {
+    // Sahte bahislerin son satırını sil
+    const lastRow = table.querySelector('tr[data-fake="true"]'); // Son sahte bahsi seçiyoruz
+    if (lastRow) {
+        lastRow.style.opacity = '0';
+        lastRow.style.transform = 'translateY(-20px)';
+        setTimeout(() => {
+            table.removeChild(lastRow); // Son sahte bahsi kaldırıyoruz
+        }, 300);
+    }
+}
     }
 
     function getRandomInterval() {
