@@ -8,7 +8,7 @@ document.head.appendChild(link);
     let lastUrl = location.href;
     let isFirstLoad = true;
     if (isFirstLoad) {
-	
+	shuffleTableRows();
         loadVipFeatures();
         setTimeout(loadh2Title, 1000);
         addMenuElement();
@@ -127,6 +127,32 @@ function checkModal() {
 
 }
 
+function shuffleTableRows() {
+    const table = document.querySelector('.xtable tbody');
+    if (!table) return;
+
+    const rows = Array.from(table.querySelectorAll('tr'));  // Mevcut tr'leri alıyoruz
+
+    // Satırları karıştırıyoruz
+    for (let i = rows.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));  // Random index seçiyoruz
+        // Satırları yer değiştiriyoruz
+        [rows[i], rows[j]] = [rows[j], rows[i]];
+    }
+
+    // Karıştırılan satırları tablonun en başına yerleştiriyoruz
+    rows.forEach(row => table.appendChild(row));  // Sıralı olarak ekliyoruz
+}
+
+// Belirli bir aralıkla satırları karıştırmak için fonksiyon
+function startShuffling() {
+    setInterval(() => {
+        shuffleTableRows();  // Satırları karıştırıyoruz
+    }, 500);  // 500ms aralıklarla satırları karıştırıyoruz
+}
+
+// Başlatıcı
+startShuffling();
 
 
 function updateCopyrightYear() {
