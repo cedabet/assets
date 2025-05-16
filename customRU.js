@@ -8,7 +8,7 @@ document.head.appendChild(link);
     let lastUrl = location.href;
     let isFirstLoad = true;
     if (isFirstLoad) {
-	initFakeShuffleBets();
+	
         loadVipFeatures();
         setTimeout(loadh2Title, 1000);
         addMenuElement();
@@ -153,117 +153,6 @@ function startShuffling() {
 
 // Başlatıcı
 startShuffling();*/
-function initFakeShuffleBets() {
-    const pragmaticGames = [
-        "Sweet Bonanza", "Gates of Olympus", "Fruit Party", "Big Bass Bonanza",
-        "Wolf Gold", "The Dog House", "Great Rhino Megaways", "Pyramid King",
-        "Wild West Gold", "John Hunter", "5 Lions Megaways", "Madame Destiny",
-        "Buffalo King", "Release the Kraken", "Wild Wild Riches", "Christmas Carol",
-        "Dance Party", "Hot to Burn", "Mysterious Egypt", "Pirate Gold",
-        "Dragon Kingdom", "Master Joker", "Ultra Hold & Spin", "Lucky Dragon",
-        "Gems Bonanza", "Lucky Lightning", "Star Bounty", "Empty the Bank",
-        "Power of Thor", "Chicken Drop", "Crystal Caverns", "Big Juan"
-    ];
-
-    function generateRandomBet() {
-        const rand = Math.random();
-        if (rand < 0.05) return (Math.random() * 400 + 100).toFixed(2);
-        else if (rand < 0.10) return (Math.random() * 50 + 50).toFixed(2);
-        else {
-            const smallBets = [0.20, 1, 2];
-            return smallBets[Math.floor(Math.random() * smallBets.length)].toFixed(2);
-        }
-    }
-
-    function generateRandomMultiplier() {
-        if (Math.random() < 0.6) return 0;
-        return (Math.random() * 7 + 3).toFixed(2); // 3.00 - 10.00 arası
-    }
-
-    function formatTime() {
-        const now = new Date();
-        const h = now.getHours().toString().padStart(2, '0');
-        const m = now.getMinutes().toString().padStart(2, '0');
-        const s = now.getSeconds().toString().padStart(2, '0');
-        return `${h}:${m}:${s}`;
-    }
-
-    function generateUsername() {
-        if (Math.random() < 0.85) return "Hidden";
-        const names = [
-            "Player", "Crypto", "Lucky", "Winner", "Gold", "Pro", "Star", "Vip",
-            "Tiger", "Dragon", "Phoenix", "Eagle", "Lion", "Wolf", "Bear", "Shark",
-            "Master", "King", "Queen", "Royal", "Elite", "Prime", "Ultra", "Mega"
-        ];
-        const num = Math.floor(Math.random() * 9999);
-        return names[Math.floor(Math.random() * names.length)] + num;
-    }
-
-    function updateRowWithFakeData(row) {
-        const bet = parseFloat(generateRandomBet());
-        const multiplierRaw = generateRandomMultiplier();
-        const multiplier = parseFloat(multiplierRaw);
-
-        const profit = multiplier === 0 ? -bet : (bet * multiplier - bet);
-        const formattedProfit = profit.toFixed(2);
-        const formattedBet = bet.toFixed(2);
-        const formattedMultiplier = `x${multiplier.toFixed(2)}`;
-
-        const game = pragmaticGames[Math.floor(Math.random() * pragmaticGames.length)];
-        const user = generateUsername();
-        const time = formatTime();
-
-        row.innerHTML = `
-            <td><div class="xtable__text cursor-pointer text-white text-truncate"><a>${game}</a></div></td>
-            <td><div class="xtable__text cursor-pointer"><span class="d-flex align-items-center justify-content-center gap-1">
-                  <svg id="hidden" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <!-- Path'ler -->
-      <path d="M22.1887 10.9346C22.1887 12.3408 17.625 13.4808 12 13.4808C6.375 13.4808 1.81125 12.3408 1.81125 10.9346C1.81125 10.2783 2.805 9.68209 4.44 9.22834C4.3575 9.55084 4.28625 9.84709 4.22625 10.1021C4.19179 10.2512 4.18765 10.4057 4.21406 10.5564C4.24047 10.7072 4.2969 10.8511 4.38 10.9796C4.48011 11.1259 4.6082 11.2509 4.75688 11.3475C4.90556 11.444 5.07188 11.5102 5.24625 11.5421C5.6475 11.6208 5.9775 11.6958 6.2775 11.7633C7.56375 12.0521 8.41125 12.2433 12 12.2433C15.6562 12.2433 16.4175 12.1008 17.7975 11.8421C18.0712 11.7896 18.3712 11.7333 18.7275 11.6733C18.911 11.6455 19.0865 11.5789 19.2423 11.478C19.3981 11.3772 19.5307 11.2443 19.6312 11.0883C19.7178 10.9493 19.7733 10.7933 19.794 10.6308C19.8147 10.4684 19.8001 10.3034 19.7512 10.1471C19.65 9.80959 19.5637 9.50209 19.4812 9.20959C21.1612 9.66334 22.1887 10.2708 22.1887 10.9346Z" fill="currentColor"/>
-      <path d="M15.2802 16.6315C14.5272 16.7271 14.1354 16.9626 14.0975 17.0995C14.0911 17.1226 14.0731 17.2541 14.3524 17.5566C14.4736 17.6778 14.6182 17.7732 14.7773 17.837C14.9364 17.9009 15.1067 17.932 15.2781 17.9283C15.7882 17.9331 16.2803 17.7403 16.6513 17.3903C17.0385 17.0043 17.0486 16.8633 17.0466 16.8388C16.9662 16.7037 16.2305 16.5107 15.2802 16.6315Z" fill="currentColor"/>
-      <path d="M8.93225 16.6316C8.73575 16.6064 8.53784 16.5937 8.33972 16.5935C7.68915 16.5935 7.22754 16.736 7.16199 16.8495C7.16345 16.8634 7.17352 17.0048 7.56079 17.39C7.92952 17.7436 8.42309 17.9371 8.9339 17.9283C9.10527 17.932 9.27562 17.901 9.43471 17.8372C9.5938 17.7734 9.73835 17.6781 9.85968 17.557C10.1391 17.2541 10.1212 17.1227 10.1147 17.0996C10.0768 16.9626 9.68518 16.7272 8.93225 16.6316Z" fill="currentColor"/>
-      <path d="M18.878 14.5049C18.3436 14.5984 17.7866 14.6799 17.208 14.7456C15.4779 14.9241 13.7393 15.0077 12 14.996C10.2607 15.0077 8.52209 14.9241 6.79195 14.7456C6.21336 14.6799 5.65635 14.5984 5.122 14.5049C4.39936 14.3785 4.01282 15.2669 4.1545 15.9779C4.2614 16.5997 4.4917 17.1939 4.83181 17.7253C5.17193 18.2567 5.61498 18.7147 6.13486 19.0722C7.25365 19.8068 8.57451 20.1724 9.91182 20.1176C10.1143 20.1025 10.3114 20.0456 10.4907 19.9503C10.67 19.8551 10.8276 19.7237 10.9535 19.5644C11.2949 19.2136 11.4552 18.9514 12 18.9426C12.5448 18.9514 12.7051 19.2136 13.0465 19.5644C13.1724 19.7237 13.33 19.8551 13.5093 19.9503C13.6886 20.0456 13.8857 20.1025 14.0882 20.1176C15.4255 20.1724 16.7464 19.8068 17.8651 19.0722C18.385 18.7147 18.8281 18.2567 19.1682 17.7253C19.5083 17.1939 19.7386 16.5997 19.8455 15.9779C19.9888 15.2587 19.5952 14.3794 18.878 14.5049Z" fill="currentColor"/>
-      <path d="M18.6 10.9346C16.5113 11.2909 16.335 11.4934 12 11.4934C7.64625 11.4934 7.48125 11.2196 5.3925 10.8071C5.115 10.7509 4.8975 10.5446 4.9575 10.2671C5.03625 9.92211 5.14127 9.49836 5.2725 9.02211C5.57625 7.89336 6 6.46086 6.4575 5.05836C6.52848 4.81238 6.65698 4.58681 6.83239 4.40032C7.0078 4.21383 7.22507 4.07176 7.46625 3.98586C8.0325 3.76461 8.5725 4.04586 9.225 4.28211C10.1121 4.74415 11.1013 4.97502 12.1013 4.95336C13.74 4.89711 14.0213 4.32711 15.7613 3.91086C15.9877 3.87656 16.2187 3.88845 16.4404 3.94581C16.6621 4.00317 16.8699 4.10481 17.0512 4.24461C17.8762 4.78836 17.9025 5.79711 18.255 7.38336C18.3862 7.96836 18.5062 8.47086 18.6487 9.00711C18.7612 9.41961 18.885 9.85086 19.035 10.3609C19.05 10.4278 19.0503 10.4971 19.0357 10.5641C19.0212 10.6311 18.9922 10.6942 18.9508 10.7488C18.9094 10.8034 18.8565 10.8484 18.7959 10.8805C18.7353 10.9126 18.6685 10.931 18.6 10.9346Z" fill="currentColor"/>
- 
-  </svg>${user}</span></div></td>
-            <td><div class="xtable__text"><small>${time}</small></div></td>
-            <td class="text-right">
-                <div class="xtable__coin gap-1 text-secondary">
-                    <span></span>
-                    <span class="xtable__coin text-white">${formattedBet}</span>
-                    <div class="instrument-icon-wrapper"><svg fill="none" viewBox="0 0 96 96" class="svg-icon"><path d="M48 96c26.51 0 48-21.49 48-48S74.51 0 48 0 0 21.49 0 48s21.49 48 48 48Z" fill="#EB0A29"></path><path d="M71.4 55.08c-2.72 10.96-12.48 19.6-25.16 19.6H34.72V59.24l-5.76 3.36v-7.2l5.76-3.36V46.2l-5.76 3.28v-7.2l5.76-3.36v-17.6h11.36v11.04l13.2-7.6v7.28l-13.2 7.6v5.84l13.2-7.6v7.2l-13.2 7.6v12h1.2c6.4 0 12.56-4.48 14.32-12.24l9.76 2.64h.04Z" fill="#fff"></path></svg></div>
-                </div>
-            </td>
-            <td class="text-right"><div class="xtable__text text-white">${formattedMultiplier}</div></td>
-            <td>
-                <div class="xtable__coin text-secondary gap-1">
-                    <span></span>
-                    <span>${formattedProfit}</span>
-                    <div class="instrument-icon-wrapper"><svg fill="none" viewBox="0 0 96 96" class="svg-icon"><path d="M48 96c26.51 0 48-21.49 48-48S74.51 0 48 0 0 21.49 0 48s21.49 48 48 48Z" fill="#EB0A29"></path><path d="M71.4 55.08c-2.72 10.96-12.48 19.6-25.16 19.6H34.72V59.24l-5.76 3.36v-7.2l5.76-3.36V46.2l-5.76 3.28v-7.2l5.76-3.36v-17.6h11.36v11.04l13.2-7.6v7.28l-13.2 7.6v5.84l13.2-7.6v7.2l-13.2 7.6v12h1.2c6.4 0 12.56-4.48 14.32-12.24l9.76 2.64h.04Z" fill="#fff"></path></svg></div>
-                </div>
-            </td>
-        `;
-    }
-
-    function shuffleAndUpdateRows() {
-        const table = document.querySelector('.xtable tbody');
-        if (!table) return;
-
-        const rows = Array.from(table.querySelectorAll('tr'));
-        if (rows.length < 2) return;
-
-        rows.forEach(updateRowWithFakeData);
-
-        for (let i = rows.length - 1; i > 0; i--) {
-            const j = Math.floor(Math.random() * (i + 1));
-            [rows[i], rows[j]] = [rows[j], rows[i]];
-        }
-
-        rows.forEach(row => table.appendChild(row));
-    }
-
-    setInterval(shuffleAndUpdateRows, 500);
-}
-
 
 
 
