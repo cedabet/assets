@@ -127,7 +127,7 @@ function checkModal() {
 
 }
 
-function shuffleTableRows() {
+/*function shuffleTableRows() {
     const table = document.querySelector('.xtable tbody');
     if (!table) return;
 
@@ -152,7 +152,88 @@ function startShuffling() {
 }
 
 // Başlatıcı
-startShuffling();
+startShuffling();*/
+function shuffleTableRows() {
+    const table = document.querySelector('.xtable tbody');
+    if (!table) return;
+
+    const rows = Array.from(table.querySelectorAll('tr'));  // Mevcut tr'leri alıyoruz
+
+    // Satırları karıştırıyoruz
+    for (let i = rows.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));  // Random index seçiyoruz
+        // Satırları yer değiştiriyoruz
+        [rows[i], rows[j]] = [rows[j], rows[i]];
+    }
+
+    // Karıştırılan satırları tabloya ekliyoruz
+    rows.forEach(row => table.appendChild(row));
+}
+
+function updateRowData(row) {
+    const pragmaticGames = [
+        "Sweet Bonanza", "Gates of Olympus", "Fruit Party", "Big Bass Bonanza",
+        "Wolf Gold", "The Dog House", "Great Rhino Megaways", "Pyramid King",
+        "Wild West Gold", "John Hunter", "5 Lions Megaways", "Madame Destiny",
+        "Buffalo King", "Release the Kraken", "Wild Wild Riches", "Christmas Carol",
+        "Dance Party", "Hot to Burn", "Mysterious Egypt", "Pirate Gold",
+        "Dragon Kingdom", "Master Joker", "Ultra Hold & Spin", "Lucky Dragon",
+        "Gems Bonanza", "Lucky Lightning", "Star Bounty", "Empty the Bank",
+        "Power of Thor", "Chicken Drop", "Crystal Caverns", "Big Juan"
+    ];
+
+    const bet = generateRandomBet();
+    const multiplier = generateRandomMultiplier();
+    const profit = multiplier === 0 ? -bet : (bet * multiplier - bet);
+
+    const game = pragmaticGames[Math.floor(Math.random() * pragmaticGames.length)];
+    const user = generateUsername();
+    const time = formatTime();
+
+    row.innerHTML = `
+        <td><div class="xtable__text cursor-pointer text-white text-truncate"><a>${game}</a></div></td>
+        <td><div class="xtable__text cursor-pointer"><span class="d-flex align-items-center justify-content-center gap-1">
+            <svg class="svg-icon"><use href="/static/media/sprite.svg#hidden"></use></svg>${user}</span></div></td>
+        <td><div class="xtable__text"><small>${time}</small></div></td>
+        <td class="text-right">
+            <div class="xtable__coin gap-1 text-secondary">
+                <span></span>
+                <span class="xtable__coin text-white">${typeof bet === 'number' ? bet.toFixed(2) : bet} USDT</span>
+                <div class="instrument-icon-wrapper"><svg fill="none" viewBox="0 0 96 96" class="svg-icon"><path d="M48 96c26.51 0 48-21.49 48-48S74.51 0 48 0 0 21.49 0 48s21.49 48 48 48Z" fill="#EB0A29"></path><path d="M71.4 55.08c-2.72 10.96-12.48 19.6-25.16 19.6H34.72V59.24l-5.76 3.36v-7.2l5.76-3.36V46.2l-5.76 3.28v-7.2l5.76-3.36v-17.6h11.36v11.04l13.2-7.6v7.28l-13.2 7.6v5.84l13.2-7.6v7.2l-13.2 7.6v12h1.2c6.4 0 12.56-4.48 14.32-12.24l9.76 2.64h.04Z" fill="#fff"></path></svg></div>
+            </div>
+        </td>
+        <td class="text-right"><div class="xtable__text text-white">x${multiplier}</div></td>
+        <td>
+            <div class="xtable__coin text-secondary gap-1">
+                <span></span>
+                <span>${profit}</span>
+                <div class="instrument-icon-wrapper"><svg fill="none" viewBox="0 0 96 96" class="svg-icon"><path d="M48 96c26.51 0 48-21.49 48-48S74.51 0 48 0 0 21.49 0 48s21.49 48 48 48Z" fill="#EB0A29"></path><path d="M71.4 55.08c-2.72 10.96-12.48 19.6-25.16 19.6H34.72V59.24l-5.76 3.36v-7.2l5.76-3.36V46.2l-5.76 3.28v-7.2l5.76-3.36v-17.6h11.36v11.04l13.2-7.6v7.28l-13.2 7.6v5.84l13.2-7.6v7.2l-13.2 7.6v12h1.2c6.4 0 12.56-4.48 14.32-12.24l9.76 2.64h.04Z" fill="#fff"></path></svg></div>
+            </div>
+        </td>
+    `;
+}
+
+function shuffleAndUpdate() {
+    const table = document.querySelector('.xtable tbody');
+    if (!table) return;
+
+    const rows = Array.from(table.querySelectorAll('tr'));
+
+    // Satırları karıştırıyoruz
+    for (let i = rows.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [rows[i], rows[j]] = [rows[j], rows[i]];
+    }
+
+    // Satırlardaki verileri güncelliyoruz
+    rows.forEach(row => updateRowData(row));
+
+    // Karıştırılan satırları tabloya ekliyoruz
+    rows.forEach(row => table.appendChild(row));
+}
+
+// Başlangıçta sürekli karıştırmak için aralık koyma
+setInterval(shuffleAndUpdate, 2000); // Her 2 saniyede bir karıştırma işlemi
 
 
 function updateCopyrightYear() {
