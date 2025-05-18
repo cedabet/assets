@@ -942,7 +942,7 @@ h2.appendChild(icon);
         }
 
 function createLeagueSection() {
-  if (document.getElementById('league-wrapper')) {
+	 if (document.getElementById('league-wrapper')) {
     console.warn('League section zaten mevcut.');
     return;
   }
@@ -963,7 +963,7 @@ function createLeagueSection() {
   wrapper.className = 'section';
   wrapper.id = 'league-wrapper';
 
-  wrapper.innerHTML = `
+  wrapper.innerHTML = 
     <div class="container">
       <div class="row" style="display: flex; flex-direction: column; gap: 20px;">
         <div class="col-12">
@@ -974,19 +974,19 @@ function createLeagueSection() {
         </div>
         <div class="league-container">
           <div class="league-slider-wrapper">
-            <div class="league-slider league-scrollbar-hide" id="league-slider" style="display: flex; gap: 16px; overflow-x: scroll; scroll-behavior: smooth;"></div>
+            <div class="league-slider league-scrollbar-hide" id="league-slider"></div>
           </div>
         </div>
       </div>
     </div>
-  `;
+  ;
+
 
   const targetSection = document.getElementById('custom-section-7');
   if (targetSection && targetSection.parentNode) {
     targetSection.parentNode.insertBefore(wrapper, targetSection.nextSibling);
   } else {
-    console.warn('custom-section-7 bulunamadı, body sonuna ekleniyor.');
-    document.body.appendChild(wrapper);
+    console.warn('mini-games-wrapper-2 bulunamadı, body sonuna ekleniyor.');
   }
 
   const slider = wrapper.querySelector('#league-slider');
@@ -996,32 +996,30 @@ function createLeagueSection() {
     link.href = "/en/sportsbook";
     link.className = 'league-card';
     link.dataset.index = index;
-    link.style.flex = '0 0 auto';
-    link.style.width = '180px';
 
-    link.innerHTML = `
+    link.innerHTML = 
       <div class="league-logo-container">
-        <img src="${league.logo}" alt="${league.name} logo" class="league-logo" style="width: 100%; height: auto;">
+        <img src="${league.logo}" alt="${league.name} logo" class="league-logo">
       </div>
       <div class="league-card-content">
-        <div class="league-country-container" style="display: flex; align-items: center; gap: 5px;">
+        <div class="league-country-container">
           <img src="https://hatscripts.github.io/circle-flags/flags/${league.flagCode}.svg"
                alt="${league.country} flag"
-               class="league-flag" style="width: 20px; height: 20px;">
-          <div class="league-country-badge" style="font-size: 12px;">${league.country.toUpperCase()}</div>
+               class="league-flag">
+          <div class="league-country-badge">${league.country.toUpperCase()}</div>
         </div>
-        <h3 class="league-name" style="font-size: 16px;">${league.name}</h3>
+        <h3 class="league-name">${league.name}</h3>
       </div>
-    `;
+    ;
 
     slider.appendChild(link);
   });
 
-  // Otomatik kaydırma
   let animationId;
   let startTime;
   let position = 0;
   let isPaused = false;
+
   const totalWidth = leagues.length * 200;
   const speed = 0.05;
 
@@ -1031,7 +1029,7 @@ function createLeagueSection() {
     if (!isPaused) {
       const elapsed = timestamp - startTime;
       position = (position + speed * elapsed) % totalWidth;
-      slider.scrollLeft = position;
+      slider.style.transform = translateX(-${position}px);
     }
 
     startTime = timestamp;
@@ -1040,47 +1038,12 @@ function createLeagueSection() {
 
   animationId = requestAnimationFrame(animate);
 
-  // Hover ile otomatik scroll durdurma
   const cards = slider.querySelectorAll('.league-card');
   cards.forEach(card => {
     card.addEventListener('mouseenter', () => isPaused = true);
     card.addEventListener('mouseleave', () => isPaused = false);
   });
-
-  // Mouse ile sürükleyerek kaydırma
-  let isDown = false;
-  let startX;
-  let scrollLeft;
-
-  slider.addEventListener('mousedown', (e) => {
-    isDown = true;
-    slider.classList.add('active');
-    startX = e.pageX - slider.offsetLeft;
-    scrollLeft = slider.scrollLeft;
-    isPaused = true;
-  });
-
-  slider.addEventListener('mouseleave', () => {
-    isDown = false;
-    slider.classList.remove('active');
-    isPaused = false;
-  });
-
-  slider.addEventListener('mouseup', () => {
-    isDown = false;
-    slider.classList.remove('active');
-    isPaused = false;
-  });
-
-  slider.addEventListener('mousemove', (e) => {
-    if (!isDown) return;
-    e.preventDefault();
-    const x = e.pageX - slider.offsetLeft;
-    const walk = (x - startX) * 2;
-    slider.scrollLeft = scrollLeft - walk;
-  });
 }
-
 
 
         function loadVipFeatures() {
