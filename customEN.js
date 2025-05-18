@@ -942,19 +942,14 @@ h2.appendChild(icon);
         }
 
 function createLeagueSection() {
-	 if (document.getElementById('league-wrapper')) {
-    console.warn('League section zaten mevcut.');
-    return;
-  }
-
   const leagues = [
-    { name: "Süperlig", country: "Turkey", flagCode: "tr", logo: "https://cedabet.github.io/assets/images/league-tr.png" },
+    { name: "Trendyol Süperlig", country: "Turkey", flagCode: "tr", logo: "https://cedabet.github.io/assets/images/league-tr.png" },
     { name: "Premier League", country: "England", flagCode: "gb", logo: "https://cedabet.github.io/assets/images/league-gb.png" },
     { name: "La Liga", country: "Spain", flagCode: "es", logo: "https://cedabet.github.io/assets/images/league-es.png" },
     { name: "Ligue 1", country: "France", flagCode: "fr", logo: "https://cedabet.github.io/assets/images/league-fr.png" },
     { name: "Eredivisie", country: "Netherlands", flagCode: "nl", logo: "https://cedabet.github.io/assets/images/league-nl.png" },
-    { name: "Serie A", country: "Italy", flagCode: "it", logo: "https://cedabet.github.io/assets/images/seria-a.avif" },
-    { name: "Bundesliga", country: "Germany", flagCode: "de", logo: "https://cedabet.github.io/assets/images/bundesliga.jpg" }
+    { name: "Serie A", country: "Italy", flagCode: "it", logo: "https://cedabet.github.io/assets/images/league-it.png" },
+    { name: "Bundesliga", country: "Germany", flagCode: "de", logo: "https://cedabet.github.io/assets/images/league-de.png" }
   ];
 
   const duplicatedLeagues = [...leagues, ...leagues, ...leagues];
@@ -963,13 +958,13 @@ function createLeagueSection() {
   wrapper.className = 'section';
   wrapper.id = 'league-wrapper';
 
-  wrapper.innerHTML = 
+  wrapper.innerHTML = `
     <div class="container">
       <div class="row" style="display: flex; flex-direction: column; gap: 20px;">
         <div class="col-12">
           <h2 class="section__title">
             <i class="fa-solid fa-volleyball" style="color: rgb(33, 159, 227); height: 28px; width: 28px; font-size: 28px;"></i>
-            Top Leagues
+            Лиги Ceda
           </h2>
         </div>
         <div class="league-container">
@@ -979,7 +974,7 @@ function createLeagueSection() {
         </div>
       </div>
     </div>
-  ;
+  `;
 
 
   const targetSection = document.getElementById('custom-section-7');
@@ -993,11 +988,11 @@ function createLeagueSection() {
 
   duplicatedLeagues.forEach((league, index) => {
     const link = document.createElement('a');
-    link.href = "/en/sportsbook";
+    link.href = "/ru/sportsbook";
     link.className = 'league-card';
     link.dataset.index = index;
 
-    link.innerHTML = 
+    link.innerHTML = `
       <div class="league-logo-container">
         <img src="${league.logo}" alt="${league.name} logo" class="league-logo">
       </div>
@@ -1010,7 +1005,7 @@ function createLeagueSection() {
         </div>
         <h3 class="league-name">${league.name}</h3>
       </div>
-    ;
+    `;
 
     slider.appendChild(link);
   });
@@ -1029,7 +1024,7 @@ function createLeagueSection() {
     if (!isPaused) {
       const elapsed = timestamp - startTime;
       position = (position + speed * elapsed) % totalWidth;
-      slider.style.transform = translateX(-${position}px);
+      slider.style.transform = `translateX(-${position}px)`;
     }
 
     startTime = timestamp;
@@ -1044,6 +1039,7 @@ function createLeagueSection() {
     card.addEventListener('mouseleave', () => isPaused = false);
   });
 }
+
 
 
         function loadVipFeatures() {
