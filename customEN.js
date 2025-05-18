@@ -948,8 +948,8 @@ function createLeagueSection() {
     { name: "La Liga", country: "Spain", flagCode: "es", logo: "https://cedabet.github.io/assets/images/league-es.png" },
     { name: "Ligue 1", country: "France", flagCode: "fr", logo: "https://cedabet.github.io/assets/images/league-fr.png" },
     { name: "Eredivisie", country: "Netherlands", flagCode: "nl", logo: "https://cedabet.github.io/assets/images/league-nl.png" },
-    { name: "Serie A", country: "Italy", flagCode: "it", logo: "https://cedabet.github.io/assets/images/league-it.png" },
-    { name: "Bundesliga", country: "Germany", flagCode: "de", logo: "https://cedabet.github.io/assets/images/league-de.png" }
+    { name: "Serie A", country: "Italy", flagCode: "it", logo: "https://cedabet.github.io/assets/images/seria-a.avif" },
+    { name: "Bundesliga", country: "Germany", flagCode: "de", logo: "https://cedabet.github.io/assets/images/bundesliga.jpg" }
   ];
 
   const duplicatedLeagues = [...leagues, ...leagues, ...leagues];
