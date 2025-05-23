@@ -57,7 +57,7 @@ document.head.appendChild(link);
 
               CreateCedaOriginal();
               CreateCedaOriginalTwo();
-              createSection();
+              createLeagueSection();
           } else if (path === "/en/vip") {
               clearDynamicContent();
               createVipExperience();
