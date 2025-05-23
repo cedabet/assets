@@ -19,7 +19,7 @@ document.head.appendChild(link);
         insertCedaTVButton();
         createLeagueSection();
 	    checkModal();
-	   addScrollingText("Welcome to our website!");
+	   addScrollingText("BİR SONRAKİ GÜNCEL ADRESİMİZ CEDABET25.COM'DUR. LÜTFEN SAHTE SİTELERE İTİBAR ETMEYİNİZ.");
 
         var sportspath = window.location.pathname;
         if (sportspath === "/tr/sportsbook") {
