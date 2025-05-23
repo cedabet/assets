@@ -19,6 +19,8 @@ document.head.appendChild(link);
         insertCedaTVButton();
         createLeagueSection();
 	    checkModal();
+	   addScrollingText("Welcome to our website!");
+
         var sportspath = window.location.pathname;
         if (sportspath === "/tr/sportsbook") {
 
@@ -128,6 +130,38 @@ function checkModal() {
     } 
 
 }
+
+
+  function addScrollingText(text) {
+    const existing = document.querySelector(".scrolling-text");
+
+    if (existing) {
+      const currentText = existing.querySelector("span")?.textContent;
+      if (currentText === text) return; // Do nothing if the text is the same
+
+      // Update the text if different
+      existing.querySelector("span").textContent = text;
+      return;
+    }
+
+    // Create the scrolling text div
+    const scrollingDiv = document.createElement("div");
+    scrollingDiv.className = "scrolling-text";
+
+    const span = document.createElement("span");
+    span.textContent = text;
+
+    scrollingDiv.appendChild(span);
+
+    // Insert after header
+    const header = document.querySelector("header");
+    header.insertAdjacentElement("afterend", scrollingDiv);
+  }
+
+  // Call the function
+
+
+
 
 
 function updateCopyrightYear() {
