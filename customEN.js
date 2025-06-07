@@ -229,6 +229,164 @@ function insertCedaTVButton() {
 }
 
 function latestBigWins() {
+	  // Dinamik CSS oluşturma
+    const style = document.createElement('style');
+    style.innerHTML = `
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #030c10;
+            color: #e0e0e0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            min-height: 100vh;
+            margin: 0;
+        }
+
+        h2 {
+            color: #21a0e5;
+            margin-top: 40px;
+        }
+
+        .win-container {
+            width: 90%;
+            max-width: 600px;
+            height: 400px;
+            overflow: hidden;
+            position: relative;
+            border: 1px solid #21a0e5;
+            border-radius: 15px;
+            background: #07151a;
+            box-shadow: 0 8px 20px rgba(33, 160, 229, 0.1);
+            padding: 20px;
+            margin-bottom: 40px;
+        }
+
+        .win-list {
+            display: flex;
+            flex-direction: column;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            padding: 0;
+        }
+
+        .win-item {
+            background: #0d1c22;
+            margin: 10px 0;
+            padding: 20px;
+            border-left: 4px solid transparent;
+            border-radius: 12px;
+            font-size: 16px;
+            opacity: 0;
+            animation: slide-in 1.2s forwards, fade-in 1.5s forwards;
+            transition: border 0.3s ease;
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.4);
+        }
+
+        .win-item:hover {
+            border-left: 4px solid #21a0e5;
+            box-shadow: 0 0 10px rgba(33, 160, 229, 0.2);
+        }
+
+        .win-item:nth-child(even) {
+            background: #101f26;
+        }
+
+        .win-item p {
+            margin: 0;
+            color: #f0f0f0;
+            line-height: 1.4;
+        }
+
+        .win-item p strong {
+            color: #21a0e5;
+            font-size: 1.2em;
+        }
+
+        .win-item p:last-child {
+            margin-top: 10px;
+            font-style: italic;
+            color: #7ee787;
+        }
+
+        @keyframes slide-in {
+            0% {
+                transform: translateX(-100%);
+                opacity: 0;
+            }
+            100% {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+
+        @keyframes fade-out {
+            0% {
+                opacity: 1;
+            }
+            100% {
+                opacity: 0;
+            }
+        }
+
+        .feature-section {
+            width: 90%;
+            max-width: 1200px;
+            padding: 40px;
+            background-color: #061319;
+            text-align: center;
+            margin-top: 60px;
+            border-radius: 15px;
+            border: 1px solid rgba(33, 160, 229, 0.2);
+            box-shadow: 0 8px 20px rgba(33, 160, 229, 0.1);
+        }
+
+        .feature-section h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            color: #21a0e5;
+        }
+
+        .game-container {
+            display: flex;
+            gap: 20px;
+            overflow-x: auto;
+            white-space: nowrap;
+            padding-bottom: 20px;
+        }
+
+        .game-item {
+            width: 150px;
+            background: #0d1d23;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+            text-align: center;
+            flex-shrink: 0;
+            border: 2px solid transparent;
+            transition: border 0.3s ease;
+        }
+
+        .game-item:hover {
+            border: 2px solid #21a0e5;
+            box-shadow: 0 0 10px rgba(33, 160, 229, 0.3);
+        }
+
+        .game-item img {
+            width: 100%;
+            height: 100px;
+            object-fit: cover;
+            border-radius: 10px 10px 0 0;
+        }
+
+        .game-item p {
+            color: #d0eaff;
+            margin: 10px 0;
+            font-weight: bold;
+        }
+    `;
+    document.head.appendChild(style);
     // 1. Adım: p-not-found div'ini kaldır
     const notFoundDiv = document.querySelector('.p-not-found');
     if (notFoundDiv) {
