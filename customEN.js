@@ -232,17 +232,6 @@ function latestBigWins() {
 	  // Dinamik CSS oluşturma
     const style = document.createElement('style');
     style.innerHTML = `
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #030c10;
-            color: #e0e0e0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-            min-height: 100vh;
-            margin: 0;
-        }
 
         h2 {
             color: #21a0e5;
