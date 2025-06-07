@@ -31,7 +31,7 @@ document.head.appendChild(link);
         } else if (sportspath === "/en/vip") {
             createVipExperience();
         }
-       } else if (sportspath === "/en/latest-big-wins") {
+       else if (sportspath === "/en/latest-big-wins") {
             latestBigWins();
         }
         isFirstLoad = false;
