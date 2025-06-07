@@ -235,12 +235,19 @@ function latestBigWins() {
         notFoundDiv.remove();
     }
 
-    // 2. Adım: custom-section-big-wins div'ini oluştur
+    // 2. Adım: container section section--first div'ini bul
+    const firstSectionDiv = document.querySelector('.container.section.section--first');
+    if (!firstSectionDiv) {
+        console.error('.container.section.section--first div bulunamadı!');
+        return;
+    }
+
+    // 3. Adım: custom-section-big-wins div'ini oluştur
     const customSection = document.createElement('div');
     customSection.id = 'custom-section-big-wins';
     customSection.classList.add('section');
-    
-    // 3. Adım: Son Büyük Kazançlar ve Öne Çıkan Oyunlar kısmını oluştur
+
+    // 4. Adım: Son Büyük Kazançlar ve Öne Çıkan Oyunlar kısmını oluştur
     const featureSectionHTML = `
         <section class="feature-section">
             <h2>Öne Çıkan Oyunlar</h2>
@@ -282,13 +289,13 @@ function latestBigWins() {
         </div>
     `;
 
-    // 4. Adım: İçeriği custom-section-big-wins div'ine ekle
+    // 5. Adım: İçeriği custom-section-big-wins div'ine ekle
     customSection.innerHTML = featureSectionHTML + winSectionHTML;
 
-    // 5. Adım: body'ye custom-section-big-wins div'ini ekle
-    document.body.appendChild(customSection);
+    // 6. Adım: custom-section-big-wins div'ini .container.section.section--first içine ekle
+    firstSectionDiv.appendChild(customSection);
 
-    // 6. Adım: Kazananları dinamik olarak ekleyen fonksiyonlar
+    // 7. Adım: Kazananları dinamik olarak ekleyen fonksiyonlar
     const winList = document.getElementById('win-list');
     const alphabet = 'ABCÇDEFGHIİJKLMNOPRSŞTÜVYZ';
     const games = [
@@ -377,6 +384,7 @@ function latestBigWins() {
 
     startWinningCycle();
 }
+
 
 
 function createVipExperience() {
