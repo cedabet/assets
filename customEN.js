@@ -1628,12 +1628,13 @@ function LandingPage() {
      let jackpots = loadJackpots();
 
      // Update jackpot display
-     function updateJackpotDisplay() {
-         document.getElementById('mega-jackpot').textContent = ₺${jackpots.mega.toLocaleString('tr-TR')};
-         document.getElementById('major-jackpot').textContent = ₺${jackpots.major.toLocaleString('tr-TR')};
-         document.getElementById('minor-jackpot').textContent = ₺${jackpots.minor.toLocaleString('tr-TR')};
-         document.getElementById('mini-jackpot').textContent = ₺${jackpots.mini.toLocaleString('tr-TR')};
-     }
+  function updateJackpotDisplay() {
+    document.getElementById('mega-jackpot').textContent = `₺${jackpots.mega.toLocaleString('tr-TR')}`;
+    document.getElementById('major-jackpot').textContent = `₺${jackpots.major.toLocaleString('tr-TR')}`;
+    document.getElementById('minor-jackpot').textContent = `₺${jackpots.minor.toLocaleString('tr-TR')}`;
+    document.getElementById('mini-jackpot').textContent = `₺${jackpots.mini.toLocaleString('tr-TR')}`;
+}
+
 
      // Rastgele Türk ismi üretme - değişken yıldız sayısı ile
      function generateRandomName() {
