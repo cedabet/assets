@@ -1625,12 +1625,7 @@ function LandingPage() {
 
      // Initialize jackpots from localStorage
      let jackpots = loadJackpots();
-const megaJackpotEl = document.getElementById('mega-jackpot');
-const majorJackpotEl = document.getElementById('major-jackpot');
-const minorJackpotEl = document.getElementById('minor-jackpot');
-const miniJackpotEl = document.getElementById('mini-jackpot');
 
-if (winList && megaJackpotEl && majorJackpotEl && minorJackpotEl && miniJackpotEl) {
      // Update jackpot display
      function updateJackpotDisplay() {
          document.getElementById('mega-jackpot').textContent = `₺${jackpots.mega.toLocaleString('tr-TR')}`;
@@ -1804,7 +1799,7 @@ startJackpotUpdates();
          saveJackpots(jackpots);
      }, 30000);
 }
- }
+
 
 function addMenuElement() {
     const sidebarNav = document.querySelector('.sidebar__nav.sidebar__nav--border');
