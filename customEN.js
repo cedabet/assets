@@ -1805,437 +1805,6 @@ startJackpotUpdates();
 }
 
 
-function createSocialSection() {
-  // Create style element
-  const style = document.createElement('style');
-  style.id = 'telegram-style';
-  style.textContent = `
-    .social-section {
-    width: 100%;
-    height: 250px;
-    background: #03121a;
-    position: relative;
-    overflow: hidden;
-    border: 1px solid rgba(72, 171, 224, 0.2);
-}
-
-    .content {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      height: 100%;
-      gap: 1rem;
-    }
-
-    .left-side {
-      margin-bottom: 0.75rem;
-      position: relative;
-      text-align: center;
-    }
-
-    .glow-bg {
-      position: absolute;
-      inset: -1rem;
-      background: linear-gradient(to right, rgba(31, 160, 229, 0.1), transparent);
-      border-radius: 0.5rem;
-      filter: blur(1rem);
-    }
-
-    .heading {
-      position: relative;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 1.5rem;
-      font-weight: 700;
-      color: white;
-      margin-bottom: 0.25rem;
-    }
-
-    .icon-zap {
-      width: 1.25rem;
-      height: 1.25rem;
-      margin-right: 0.5rem;
-      color: #1fa0e5;
-      animation: pulse 2s infinite;
-    }
-
-    .description {
-      position: relative;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: #9ca3af;
-      font-size: 0.875rem;
-      max-width: 28rem;
-    }
-
-    .icon-star {
-      width: 0.75rem;
-      height: 0.75rem;
-      margin-right: 0.25rem;
-      flex-shrink: 0;
-      color: #1fa0e5;
-    }
-
-    .right-side {
-      display: flex;
-      align-items: center;
-    }
-
-    .telegram-container {
-      position: relative;
-      cursor: pointer;
-      transform: scale(1);
-      transition: transform 0.5s;
-    }
-
-    .telegram-container:hover {
-      transform: scale(1.05);
-    }
-
-    .outer-glow {
-      position: absolute;
-      inset: -0.5rem;
-      border-radius: 1.5rem;
-      background: rgba(31, 160, 229, 0.1);
-      filter: blur(0.5rem);
-      transition: background 0.5s;
-    }
-
-    .telegram-container:hover .outer-glow {
-      background: linear-gradient(to right, rgba(31, 160, 229, 0.3), rgba(31, 160, 229, 0.2));
-    }
-
-    .inner-glow {
-      position: absolute;
-      inset: -0.25rem;
-      border-radius: 1rem;
-      background: linear-gradient(to right, rgba(31, 160, 229, 0.2), rgba(31, 160, 229, 0.1));
-      filter: blur(0.25rem);
-    }
-
-    .telegram-box {
-      position: relative;
-      border-radius: 1rem;
-      padding: 0.75rem;
-      background: #030c13;
-      border: 1px solid rgba(31, 160, 229, 0.3);
-      transition: all 0.3s;
-    }
-
-    .telegram-container:hover .telegram-box {
-      background: linear-gradient(135deg, #1fa0e5 0%, #030c13 100%);
-      border-color: #1fa0e5;
-    }
-
-    .telegram-content {
-      display: flex;
-      align-items: center;
-      gap: 0.75rem;
-    }
-
-    .icon-container {
-      position: relative;
-      display: none;
-    }
-
-    .rotating-ring {
-      position: absolute;
-      inset: -0.5rem;
-      border: 2px solid rgba(31, 160, 229, 0.3);
-      border-radius: 50%;
-      animation: spin 3s linear infinite;
-    }
-
-    .crown-container {
-      position: relative;
-      display: flex;
-      align-items: center;
-      padding: 0.5rem;
-      border-radius: 50%;
-      background: linear-gradient(to bottom right, #fbbf24, #f59e0b);
-      box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
-    }
-
-    .icon-crown {
-      width: 1.25rem;
-      height: 1.25rem;
-      color: black;
-    }
-
-    .button-container {
-      position: relative;
-    }
-
-    .button {
-      display: flex;
-      align-items: center;
-      font-weight: 700;
-      padding: 0.5rem 1.25rem;
-      border-radius: 0.75rem;
-      font-size: 0.875rem;
-      color: white;
-      background: #1fa0e5;
-      border: none;
-      cursor: pointer;
-      overflow: hidden;
-      position: relative;
-      transition: all 0.5s;
-      white-space: nowrap;
-    }
-
-    .telegram-container:hover .button {
-      background: linear-gradient(45deg, #1fa0e5, #0ea5e9, #1fa0e5);
-      background-size: 200% 200%;
-      animation: gradient 2s ease infinite;
-      box-shadow: 0 25px 50px -12px rgba(31, 160, 229, 0.5);
-    }
-
-    .button-content {
-      position: relative;
-      z-index: 10;
-      display: flex;
-      align-items: center;
-    }
-
-    .button-icon {
-      width: 1rem;
-      height: 1rem;
-      margin-right: 0.25rem;
-    }
-
-    .button-shine {
-      position: absolute;
-      inset: 0;
-      background: linear-gradient(to right, transparent, rgba(255, 255, 255, 0.2), transparent);
-      transform: skewX(-12deg) translateX(-100%);
-      transition: transform 1s;
-    }
-
-    .telegram-container:hover .button-shine {
-      transform: skewX(-12deg) translateX(100%);
-    }
-
-    .chat-badge {
-      position: absolute;
-      top: -0.5rem;
-      right: -0.5rem;
-      background: #22c55e;
-      color: white;
-      font-size: 0.75rem;
-      font-weight: 700;
-      padding: 0.125rem 0.5rem;
-      border-radius: 9999px;
-      animation: bounce 2s infinite;
-      animation-delay: 0.5s;
-    }
-
-    @keyframes pulse {
-      0%, 100% { opacity: 0.3; }
-      50% { opacity: 0.6; }
-    }
-
-    @keyframes spin {
-      from { transform: rotate(0deg); }
-      to { transform: rotate(360deg); }
-    }
-
-    @keyframes bounce {
-      0%, 100% { transform: translateY(0); }
-      50% { transform: translateY(-25%); }
-    }
-
-    @media (min-width: 768px) {
-      .content {
-        flex-direction: row;
-        justify-content: space-between;
-        gap: 0;
-      }
-
-      .left-side {
-        margin-bottom: 0;
-        margin-right: 2rem;
-        text-align: left;
-      }
-
-      .heading {
-        font-size: 2rem;
-        justify-content: flex-start;
-      }
-
-      .icon-zap {
-        width: 1.75rem;
-        height: 1.75rem;
-        margin-right: 0.75rem;
-      }
-
-      .description {
-        font-size: 0.875rem;
-        justify-content: flex-start;
-      }
-
-      .icon-star {
-        width: 1rem;
-        height: 1rem;
-        margin-right: 0.5rem;
-      }
-
-      .telegram-box {
-        padding: 1.5rem;
-      }
-
-      .icon-container {
-        display: block;
-      }
-
-      .button {
-        padding: 1rem 2rem;
-        font-size: 1rem;
-        min-width: 220px;
-      }
-
-      .button-icon {
-        width: 1.25rem;
-        height: 1.25rem;
-        margin-right: 0.5rem;
-      }
-    }
-  `;
-
-  // Append style
-  document.head.appendChild(style);
-
-  // Create main section
-  const section = document.createElement('div');
-  section.className = 'social-section';
-  section.id = 'telegram-section';
-
-  const container = document.createElement('div');
-  container.className = 'container';
-
-  const content = document.createElement('div');
-  content.className = 'content';
-
-  // LEFT SIDE
-  const leftSide = document.createElement('div');
-  leftSide.className = 'left-side';
-
-  const glowBg = document.createElement('div');
-  glowBg.className = 'glow-bg';
-
-  const heading = document.createElement('div');
-  heading.className = 'heading';
-  heading.innerHTML = `
-    <svg class="icon-zap" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-         viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-         stroke-linecap="round" stroke-linejoin="round">
-      <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
-    </svg>
-    JOIN OUR COMMUNITY
-  `;
-
-  const description = document.createElement('div');
-  description.className = 'description';
-  description.innerHTML = `
-    <svg class="icon-star" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-         viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-         stroke-linecap="round" stroke-linejoin="round">
-      <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77
-                       5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
-      </polygon>
-    </svg>
-    Get exclusive bonuses and instant casino updates
-  `;
-
-  leftSide.append(glowBg, heading, description);
-
-  // RIGHT SIDE
-  const rightSide = document.createElement('div');
-  rightSide.className = 'right-side';
-
-  const telegramContainer = document.createElement('div');
-  telegramContainer.className = 'telegram-container';
-
-  const outerGlow = document.createElement('div');
-  outerGlow.className = 'outer-glow';
-
-  const innerGlow = document.createElement('div');
-  innerGlow.className = 'inner-glow';
-
-  const telegramBox = document.createElement('div');
-  telegramBox.className = 'telegram-box';
-
-  const telegramContent = document.createElement('div');
-  telegramContent.className = 'telegram-content';
-
-  const iconContainer = document.createElement('div');
-  iconContainer.className = 'icon-container';
-
-  const rotatingRing = document.createElement('div');
-  rotatingRing.className = 'rotating-ring';
-
-  const crownContainer = document.createElement('div');
-  crownContainer.className = 'crown-container';
-  crownContainer.innerHTML = `
-    <svg class="icon-crown" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-         viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-         stroke-linecap="round" stroke-linejoin="round">
-      <path d="M2 4l3 12h14l3-12-6 7-4-7-4 7-6-7zm3 16h14"></path>
-    </svg>
-  `;
-
-  iconContainer.append(rotatingRing, crownContainer);
-
-  const buttonContainer = document.createElement('div');
-  buttonContainer.className = 'button-container';
-
-  const button = document.createElement('button');
-  button.className = 'button';
-  button.innerHTML = `
-    <span class="button-content">
-      <svg class="button-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-           viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-           stroke-linecap="round" stroke-linejoin="round">
-        <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7
-                 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8
-                 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z">
-        </path>
-      </svg>
-      JOIN TELEGRAM CHANNEL
-    </span>
-    <div class="button-shine"></div>
-  `;
-
-  buttonContainer.appendChild(button);
-
-  telegramContent.append(iconContainer, buttonContainer);
-  telegramBox.append(telegramContent);
-
-  const chatBadge = document.createElement('div');
-  chatBadge.className = 'chat-badge';
-  chatBadge.textContent = 'CHAT';
-
-  telegramBox.appendChild(chatBadge);
-  telegramContainer.append(outerGlow, innerGlow, telegramBox);
-  telegramBox.prepend(telegramContent);
-  rightSide.appendChild(telegramContainer);
-
-  // Append everything to content
-  content.append(leftSide, rightSide);
-  container.appendChild(content);
-  section.appendChild(container);
-
-  // Append final section to the root
- const leagueWrapper = document.getElementById('league-wrapper');
-if (leagueWrapper && leagueWrapper.parentNode) {
-  leagueWrapper.parentNode.insertBefore(section, leagueWrapper);
-} else {
-  document.body.appendChild(section); // fallback
-}
-}
-
 
 
 
@@ -3304,6 +2873,439 @@ function createLeagueSection() {
         }
 
         }
+
+function createSocialSection() {
+  // Create style element
+  const style = document.createElement('style');
+  style.id = 'telegram-style';
+  style.textContent = `
+    .social-section {
+    width: 100%;
+    height: 250px;
+    background: #03121a;
+    position: relative;
+    overflow: hidden;
+    border: 1px solid rgba(72, 171, 224, 0.2);
+}
+
+    .content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+      gap: 1rem;
+    }
+
+    .left-side {
+      margin-bottom: 0.75rem;
+      position: relative;
+      text-align: center;
+    }
+
+    .glow-bg {
+      position: absolute;
+      inset: -1rem;
+      background: linear-gradient(to right, rgba(31, 160, 229, 0.1), transparent);
+      border-radius: 0.5rem;
+      filter: blur(1rem);
+    }
+
+    .heading {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: white;
+      margin-bottom: 0.25rem;
+    }
+
+    .icon-zap {
+      width: 1.25rem;
+      height: 1.25rem;
+      margin-right: 0.5rem;
+      color: #1fa0e5;
+      animation: pulse 2s infinite;
+    }
+
+    .description {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #9ca3af;
+      font-size: 0.875rem;
+      max-width: 28rem;
+    }
+
+    .icon-star {
+      width: 0.75rem;
+      height: 0.75rem;
+      margin-right: 0.25rem;
+      flex-shrink: 0;
+      color: #1fa0e5;
+    }
+
+    .right-side {
+      display: flex;
+      align-items: center;
+    }
+
+    .telegram-container {
+      position: relative;
+      cursor: pointer;
+      transform: scale(1);
+      transition: transform 0.5s;
+    }
+
+    .telegram-container:hover {
+      transform: scale(1.05);
+    }
+
+    .outer-glow {
+      position: absolute;
+      inset: -0.5rem;
+      border-radius: 1.5rem;
+      background: rgba(31, 160, 229, 0.1);
+      filter: blur(0.5rem);
+      transition: background 0.5s;
+    }
+
+    .telegram-container:hover .outer-glow {
+      background: linear-gradient(to right, rgba(31, 160, 229, 0.3), rgba(31, 160, 229, 0.2));
+    }
+
+    .inner-glow {
+      position: absolute;
+      inset: -0.25rem;
+      border-radius: 1rem;
+      background: linear-gradient(to right, rgba(31, 160, 229, 0.2), rgba(31, 160, 229, 0.1));
+      filter: blur(0.25rem);
+    }
+
+    .telegram-box {
+      position: relative;
+      border-radius: 1rem;
+      padding: 0.75rem;
+      background: #030c13;
+      border: 1px solid rgba(31, 160, 229, 0.3);
+      transition: all 0.3s;
+    }
+
+    .telegram-container:hover .telegram-box {
+      background: linear-gradient(135deg, #1fa0e5 0%, #030c13 100%);
+      border-color: #1fa0e5;
+    }
+
+    .telegram-content {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
+
+    .icon-container {
+      position: relative;
+      display: none;
+    }
+
+    .rotating-ring {
+      position: absolute;
+      inset: -0.5rem;
+      border: 2px solid rgba(31, 160, 229, 0.3);
+      border-radius: 50%;
+      animation: spin 3s linear infinite;
+    }
+
+    .crown-container {
+      position: relative;
+      display: flex;
+      align-items: center;
+      padding: 0.5rem;
+      border-radius: 50%;
+      background: linear-gradient(to bottom right, #fbbf24, #f59e0b);
+      box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+    }
+
+    .icon-crown {
+      width: 1.25rem;
+      height: 1.25rem;
+      color: black;
+    }
+
+    .button-container {
+      position: relative;
+    }
+
+    .button {
+      display: flex;
+      align-items: center;
+      font-weight: 700;
+      padding: 0.5rem 1.25rem;
+      border-radius: 0.75rem;
+      font-size: 0.875rem;
+      color: white;
+      background: #1fa0e5;
+      border: none;
+      cursor: pointer;
+      overflow: hidden;
+      position: relative;
+      transition: all 0.5s;
+      white-space: nowrap;
+    }
+
+    .telegram-container:hover .button {
+      background: linear-gradient(45deg, #1fa0e5, #0ea5e9, #1fa0e5);
+      background-size: 200% 200%;
+      animation: gradient 2s ease infinite;
+      box-shadow: 0 25px 50px -12px rgba(31, 160, 229, 0.5);
+    }
+
+    .button-content {
+      position: relative;
+      z-index: 10;
+      display: flex;
+      align-items: center;
+    }
+
+    .button-icon {
+      width: 1rem;
+      height: 1rem;
+      margin-right: 0.25rem;
+    }
+
+    .button-shine {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to right, transparent, rgba(255, 255, 255, 0.2), transparent);
+      transform: skewX(-12deg) translateX(-100%);
+      transition: transform 1s;
+    }
+
+    .telegram-container:hover .button-shine {
+      transform: skewX(-12deg) translateX(100%);
+    }
+
+    .chat-badge {
+      position: absolute;
+      top: -0.5rem;
+      right: -0.5rem;
+      background: #22c55e;
+      color: white;
+      font-size: 0.75rem;
+      font-weight: 700;
+      padding: 0.125rem 0.5rem;
+      border-radius: 9999px;
+      animation: bounce 2s infinite;
+      animation-delay: 0.5s;
+    }
+
+    @keyframes pulse {
+      0%, 100% { opacity: 0.3; }
+      50% { opacity: 0.6; }
+    }
+
+    @keyframes spin {
+      from { transform: rotate(0deg); }
+      to { transform: rotate(360deg); }
+    }
+
+    @keyframes bounce {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-25%); }
+    }
+
+    @media (min-width: 768px) {
+      .content {
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 0;
+      }
+
+      .left-side {
+        margin-bottom: 0;
+        margin-right: 2rem;
+        text-align: left;
+      }
+
+      .heading {
+        font-size: 2rem;
+        justify-content: flex-start;
+      }
+
+      .icon-zap {
+        width: 1.75rem;
+        height: 1.75rem;
+        margin-right: 0.75rem;
+      }
+
+      .description {
+        font-size: 0.875rem;
+        justify-content: flex-start;
+      }
+
+      .icon-star {
+        width: 1rem;
+        height: 1rem;
+        margin-right: 0.5rem;
+      }
+
+      .telegram-box {
+        padding: 1.5rem;
+      }
+
+      .icon-container {
+        display: block;
+      }
+
+      .button {
+        padding: 1rem 2rem;
+        font-size: 1rem;
+        min-width: 220px;
+      }
+
+      .button-icon {
+        width: 1.25rem;
+        height: 1.25rem;
+        margin-right: 0.5rem;
+      }
+    }
+  `;
+
+  // Append style
+  document.head.appendChild(style);
+
+  // Create main section
+  const section = document.createElement('div');
+  section.className = 'social-section';
+  section.id = 'telegram-section';
+
+  const container = document.createElement('div');
+  container.className = 'container';
+
+  const content = document.createElement('div');
+  content.className = 'content';
+
+  // LEFT SIDE
+  const leftSide = document.createElement('div');
+  leftSide.className = 'left-side';
+
+  const glowBg = document.createElement('div');
+  glowBg.className = 'glow-bg';
+
+  const heading = document.createElement('div');
+  heading.className = 'heading';
+  heading.innerHTML = `
+    <svg class="icon-zap" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+         viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+         stroke-linecap="round" stroke-linejoin="round">
+      <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+    </svg>
+    JOIN OUR COMMUNITY
+  `;
+
+  const description = document.createElement('div');
+  description.className = 'description';
+  description.innerHTML = `
+    <svg class="icon-star" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+         viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+         stroke-linecap="round" stroke-linejoin="round">
+      <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77
+                       5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+      </polygon>
+    </svg>
+    Get exclusive bonuses and instant casino updates
+  `;
+
+  leftSide.append(glowBg, heading, description);
+
+  // RIGHT SIDE
+  const rightSide = document.createElement('div');
+  rightSide.className = 'right-side';
+
+  const telegramContainer = document.createElement('div');
+  telegramContainer.className = 'telegram-container';
+
+  const outerGlow = document.createElement('div');
+  outerGlow.className = 'outer-glow';
+
+  const innerGlow = document.createElement('div');
+  innerGlow.className = 'inner-glow';
+
+  const telegramBox = document.createElement('div');
+  telegramBox.className = 'telegram-box';
+
+  const telegramContent = document.createElement('div');
+  telegramContent.className = 'telegram-content';
+
+  const iconContainer = document.createElement('div');
+  iconContainer.className = 'icon-container';
+
+  const rotatingRing = document.createElement('div');
+  rotatingRing.className = 'rotating-ring';
+
+  const crownContainer = document.createElement('div');
+  crownContainer.className = 'crown-container';
+  crownContainer.innerHTML = `
+    <svg class="icon-crown" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+         viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+         stroke-linecap="round" stroke-linejoin="round">
+      <path d="M2 4l3 12h14l3-12-6 7-4-7-4 7-6-7zm3 16h14"></path>
+    </svg>
+  `;
+
+  iconContainer.append(rotatingRing, crownContainer);
+
+  const buttonContainer = document.createElement('div');
+  buttonContainer.className = 'button-container';
+
+  const button = document.createElement('button');
+  button.className = 'button';
+  button.innerHTML = `
+    <span class="button-content">
+      <svg class="button-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+           viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+           stroke-linecap="round" stroke-linejoin="round">
+        <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7
+                 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8
+                 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z">
+        </path>
+      </svg>
+      JOIN TELEGRAM CHANNEL
+    </span>
+    <div class="button-shine"></div>
+  `;
+
+  buttonContainer.appendChild(button);
+
+  telegramContent.append(iconContainer, buttonContainer);
+  telegramBox.append(telegramContent);
+
+  const chatBadge = document.createElement('div');
+  chatBadge.className = 'chat-badge';
+  chatBadge.textContent = 'CHAT';
+
+  telegramBox.appendChild(chatBadge);
+  telegramContainer.append(outerGlow, innerGlow, telegramBox);
+  telegramBox.prepend(telegramContent);
+  rightSide.appendChild(telegramContainer);
+
+  // Append everything to content
+  content.append(leftSide, rightSide);
+  container.appendChild(content);
+  section.appendChild(container);
+
+  // Append final section to the root
+ const leagueWrapper = document.getElementById('league-wrapper');
+if (leagueWrapper && leagueWrapper.parentNode) {
+  leagueWrapper.parentNode.insertBefore(section, leagueWrapper);
+} else {
+  document.body.appendChild(section); // fallback
+}
+}
+
+
 
 
         function addButtonsToSlider() {
