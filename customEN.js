@@ -581,7 +581,7 @@ function LandingPage() {
     animation: shimmer 3s ease-in-out infinite;
 }
 
-@@keyframes shimmer {
+@@@keyframes shimmer {
     0%, 100% { background-position: -200% 0; }
     50% { background-position: 200% 0; }
 }
@@ -639,7 +639,7 @@ function LandingPage() {
     animation-play-state: paused;
 }
 
-@@keyframes games-scroll {
+@@@keyframes games-scroll {
     0% {
         transform: translateX(0);
     }
@@ -772,7 +772,7 @@ function LandingPage() {
     animation: slide-in 1.2s forwards, fade-in 1.5s forwards;
 }
 
-@@keyframes slide-in {
+@@@keyframes slide-in {
     0% {
         transform: translateX(-100%);
         opacity: 0;
@@ -783,7 +783,7 @@ function LandingPage() {
     }
 }
 
-@@keyframes fade-in {
+@@@keyframes fade-in {
     0% {
         opacity: 0;
     }
@@ -792,7 +792,7 @@ function LandingPage() {
     }
 }
 
-@@keyframes fade-out {
+@@@keyframes fade-out {
     0% {
         opacity: 1;
     }
@@ -801,7 +801,7 @@ function LandingPage() {
     }
 }
 
-@@keyframes pulse-glow {
+@@@keyframes pulse-glow {
     0% {
         text-shadow: 0 0 10px rgba(255, 198, 41, 0.5);
     }
@@ -923,7 +923,7 @@ function LandingPage() {
     animation-play-state: paused;
 }
 
-@@keyframes providers-scroll {
+@@@keyframes providers-scroll {
     0% {
         transform: translateX(0);
     }
@@ -1007,7 +1007,7 @@ function LandingPage() {
 }
 
 /* Responsive Design */
-@@media (max-width: 768px) {
+@@@media (max-width: 768px) {
     body {
         padding: 15px;
     }
@@ -1086,7 +1086,7 @@ function LandingPage() {
     }
 }
 
-@@media (max-width: 480px) {
+@@@media (max-width: 480px) {
     body {
         padding: 10px;
     }
