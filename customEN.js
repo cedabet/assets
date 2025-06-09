@@ -454,20 +454,6 @@ function LandingPage() {
              style.textContent = `
         @@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@@400;500;600;700;800&display=swap');
 
-* {
-    margin: 0;
-    padding: 0;
-      box-sizing: border-box;
-
-}
-    body {
-     font-family: 'Montserrat', sans-serif;
-     background-color: #0a1017;
-     background-image:
-         radial-gradient(circle at 25% 25%, rgba(32, 87, 146, 0.05) 0%, transparent 50%),
-         radial-gradient(circle at 75% 75%, rgba(32, 87, 146, 0.03) 0%, transparent 50%);
- }
-
 .container {
     max-width: 100%;
     width: 100%;
@@ -1165,7 +1151,8 @@ function LandingPage() {
          }
 
          const customContainer = document.createElement('div');
-         customContainer.classList.add('container');
+         customContainer.classList.add('section custom-section');
+	 customContainer.id = 'custom-section-landing';
          customContainer.innerHTML = `
              <div class="container">
                  <!-- Logo Section -->
