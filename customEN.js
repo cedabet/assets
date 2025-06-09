@@ -1,1 +1,3357 @@
-const _0x3eb413=_0x2901;(function(_0x45ed2,_0x1cb41d){const _0x2cd9c2=_0x2901,_0x10ada6=_0x45ed2();while(!![]){try{const _0x1d82ae=-parseInt(_0x2cd9c2(0x25c))/0x1*(-parseInt(_0x2cd9c2(0x1ca))/0x2)+parseInt(_0x2cd9c2(0x235))/0x3+parseInt(_0x2cd9c2(0x267))/0x4*(-parseInt(_0x2cd9c2(0x217))/0x5)+-parseInt(_0x2cd9c2(0x1ac))/0x6+-parseInt(_0x2cd9c2(0xf7))/0x7*(parseInt(_0x2cd9c2(0x137))/0x8)+parseInt(_0x2cd9c2(0x71))/0x9+parseInt(_0x2cd9c2(0x193))/0xa;if(_0x1d82ae===_0x1cb41d)break;else _0x10ada6['push'](_0x10ada6['shift']());}catch(_0x12bb6d){_0x10ada6['push'](_0x10ada6['shift']());}}}(_0x256d,0x72020));let link=document[_0x3eb413(0x8b)](_0x3eb413(0xda));link['rel']=_0x3eb413(0x26f),link['href']='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css',document[_0x3eb413(0x162)][_0x3eb413(0x19a)](link),(function(){const _0x3ad675=_0x3eb413;let _0x53b762=location[_0x3ad675(0x182)],_0x1e600d=!![];if(_0x1e600d){loadVipFeatures(),setTimeout(loadh2Title,0x3e8),addMenuElement(),addMenuElementTwo(),setTimeout(updateCopyrightYear,0x3e8),CreateCedaOriginal(),CreateCedaOriginalTwo(),insertCedaTVButton(),createLeagueSection(),checkModal();var _0x134baa=window[_0x3ad675(0xb9)][_0x3ad675(0x13d)];if(_0x134baa===_0x3ad675(0x73)){}else{if(_0x134baa===_0x3ad675(0x12c)){}else{if(_0x134baa===_0x3ad675(0x281))var _0x47841d=document[_0x3ad675(0x84)](_0x3ad675(0xc2));else{if(_0x134baa==='/en/vip')createVipExperience();else _0x134baa===_0x3ad675(0x1d1)&&LandingPage();}}}_0x1e600d=![];}function _0x4dbeed(){const _0x227663=_0x3ad675;location['href']!==_0x53b762&&(_0x53b762=location[_0x227663(0x182)],_0x4cc789(location[_0x227663(0x13d)]));}function _0x4cc789(_0x4690ba){setTimeout(function(){const _0x38776e=_0x2901;insertCedaTVButton(),checkModal();if(_0x4690ba===_0x38776e(0x270))clearDynamicContent(),loadVipFeatures(),setTimeout(loadh2Title,0x3e8),addMenuElement(),addMenuElementTwo(),setTimeout(updateCopyrightYear,0x3e8),CreateCedaOriginal(),CreateCedaOriginalTwo(),createLeagueSection();else{if(_0x4690ba==='/en/vip')clearDynamicContent(),createVipExperience();else{if(_0x4690ba===_0x38776e(0x25f))clearDynamicContent(),CreateCedaOriginal(),CreateCedaOriginalTwo();else{if(_0x4690ba==='/en/sportsbook')clearDynamicContent();else{if(_0x4690ba===_0x38776e(0x12c))clearDynamicContent();else{if(_0x4690ba===_0x38776e(0x281))clearDynamicContent();else{if(_0x4690ba!=='/en/sportsbook')clearDynamicContent();else _0x4690ba==='/en/latest-big-wins'&&LandingPage();}}}}}}},0x190);}new MutationObserver(_0x4dbeed)[_0x3ad675(0x1fe)](document,{'subtree':!![],'childList':!![]}),window['addEventListener'](_0x3ad675(0x184),function(){_0x4dbeed();});const _0xfe6bdb=history['pushState'],_0x1dfd67=history[_0x3ad675(0xed)];history[_0x3ad675(0x123)]=function(){_0xfe6bdb['apply'](history,arguments),_0x4dbeed();},history[_0x3ad675(0xed)]=function(){const _0x11d5de=_0x3ad675;_0x1dfd67[_0x11d5de(0x205)](history,arguments),_0x4dbeed();},window[_0x3ad675(0x1d6)](_0x3ad675(0x25b),_0x4dbeed),window[_0x3ad675(0x1d6)]('load',_0x4dbeed);}());function checkModal(){const _0x4e395f=_0x3eb413,_0x2644b6=document[_0x4e395f(0x84)]('global-modal');_0x2644b6&&(_0x2644b6[_0x4e395f(0x204)][_0x4e395f(0x79)]=_0x4e395f(0xd5));}function updateCopyrightYear(){const _0x4c1641=_0x3eb413,_0x414ca0=document['querySelector'](_0x4c1641(0x21c));if(_0x414ca0){const _0x387298=new Date()[_0x4c1641(0x126)]();_0x414ca0['textContent']='',_0x414ca0['textContent']=_0x4c1641(0x198)+_0x387298;}const _0x15e349=document['querySelectorAll'](_0x4c1641(0x132));_0x15e349[_0x4c1641(0x127)](function(_0x481ba1){const _0x17d261=_0x4c1641;if(_0x481ba1['textContent'][_0x17d261(0x274)]()===_0x17d261(0x99)||_0x481ba1[_0x17d261(0x11f)]['trim']()===_0x17d261(0x23e)||_0x481ba1[_0x17d261(0x11f)]['trim']()===_0x17d261(0xbd)){}});}function _0x256d(){const _0xc61e34=['https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/Red%20Tiger%20Gaming.svg','7352fRJuNj','https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/amusnet.svg','.header__actions','/en/providers/ezugi','Reevo','https://cedabet.com/en/casino/games/ebetlab-dice-originals','Table\x20Games','/en/latest-big-wins','overflow','fontSize','toString','.container.section.section--first','addEventListener','querySelectorAll','nodeType','Amusnet','add','.league-card','https://cedabet.github.io/assets/images/mines.jpg','img','</strong>.</p>\x0a<p>Congratulations\x20and\x20good\x20luck!</p>\x0a\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20','text','beforeend','imgMobile','custom-item-menu','transition','url','\x0a\x0a\x0a\x20\x20\x20\x20\x20\x20\x20\x20.section__title\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20font-size:\x2024px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20font-weight:\x20bold;\x0a\x20\x20\x20\x20\x20\x20\x20\x20display:\x20flex;\x0a\x20\x20\x20\x20\x20\x20\x20\x20align-items:\x20center;\x0a\x20\x20\x20\x20\x20\x20\x20\x20gap:\x208px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.section__title\x20svg\x20{\x20width:\x2024px;\x20height:\x2024px;\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.section-wrapper\x20{\x20display:\x20flex;\x20flex-direction:\x20column;\x20gap:\x2020px;\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.game-list-wrapper\x20{\x20position:\x20relative;\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.game-list\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20display:\x20flex;\x0a\x20\x20\x20\x20\x20\x20\x20\x20overflow-x:\x20auto;\x0a\x20\x20\x20\x20\x20\x20\x20\x20gap:\x2016px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20padding-top:\x208px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.game-list\x20a\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20flex:\x200\x200\x20calc(10%\x20-\x200);\x0a\x20\x20\x20\x20\x20\x20\x20\x20max-width:\x20calc(10%\x20-\x200);\x0a\x20\x20\x20\x20\x20\x20\x20\x20text-decoration:\x20none;\x0a\x20\x20\x20\x20\x20\x20\x20\x20display:\x20flex;\x0a\x20\x20\x20\x20\x20\x20\x20\x20justify-content:\x20center;\x0a\x20\x20\x20\x20\x20\x20\x20\x20border-radius:12px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.game-card\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20aspect-ratio:\x20105\x20/\x20142;\x0a\x20\x20\x20\x20\x20\x20\x20\x20width:\x20100%;\x0a\x20\x20\x20\x20\x20\x20\x20\x20cursor:\x20pointer;\x0a\x20\x20\x20\x20\x20\x20\x20\x20overflow:\x20hidden;\x0a\x20\x20\x20\x20\x20\x20\x20\x20transition:\x20transform\x200.3s\x20ease;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.game-card:hover\x20{\x20transform:\x20translateY(-8px);\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.game-card\x20img\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20width:\x20100%;\x0a\x20\x20\x20\x20\x20\x20\x20\x20height:\x20100%;\x0a\x20\x20\x20\x20\x20\x20\x20\x20object-fit:\x20contain;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20@media\x20(max-width:\x201024px)\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20.game-list\x20a\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20flex:\x200\x200\x20calc(33.33%\x20-\x2026px);\x0a\x20\x20\x20\x20\x20\x20\x20\x20max-width:\x20calc(33.33%\x20-\x2026px);\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20@media\x20(max-width:\x20480px)\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20.game-list\x20a\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20flex:\x200\x200\x20calc(50%\x20-\x2026px);\x0a\x20\x20\x20\x20\x20\x20\x20\x20max-width:\x20calc(50%\x20-\x2026px);\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x0a\x20\x20\x20\x20\x20\x20\x20\x20@media\x20(max-width:\x201024px)\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20#mini-games-wrapper-2\x20.mini-game-list\x20a\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20flex:\x200\x200\x20calc(50%\x20-\x2026px)\x20!important;\x0a\x20\x20\x20\x20\x20\x20\x20\x20max-width:\x20calc(50%\x20-\x2026px)!important;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x0a\x0a\x20\x20\x20\x20\x20\x20\x20\x20@media\x20(max-width:\x20480px)\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20#mini-games-wrapper-2\x20.mini-game-list\x20a\x20{\x0a\x0a\x20\x20\x20\x20\x20\x20\x20\x20flex:\x200\x200\x20calc(33%\x20-\x2010px)!important;\x0a\x20\x20\x20\x20\x20\x20\x20\x20max-width:\x20calc(33%\x20-\x2010px)!important;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x0a\x20\x20\x20\x20\x20\x20\x20\x20','/en/providers/spadegaming','/en/providers/popiplay','lineHeight','28px','BetSoft','Poker','error','100px','</strong></p>\x0a<p>won\x20<strong>','logo-item','https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/evoplay.svg','https://cedabet.com/en/casino/games/evolution-poker-lobby','paddingTop','bottom','/en/casino/group/enhanced-rtp','vip-platinum-icon','dataset','left','partnership-button','The\x20Unrivaled\x20VIP\x20Experience','0.9','https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/Vivo%20Gaming.svg','https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/pragmaticplay.svg','800','observe','Book\x20of\x20Dead','/en/providers/zeus-play','/en/providers/topspin','cover','/en/casino/group/bonus-buy','style','apply','button','promotions-link-3','Ceda\x20TV','Wolf\x20Gold','0\x20auto','vip-silver-icon','https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/onlyplay.svg','querySelector','/en/providers/goldenhero','Gates\x20of\x20Olympus','/en/providers/playson','Booming\x20Games','win-item','/en/providers/livegames','https://hebbkx1anhila5yf.public.blob.vercel-storage.com/silver.jpg-b0ee8wIwVWLtvDUXRMprSD7yapZLVL.jpeg','/en/providers/smartsoft','iconClass','61195bmwGWi','pointer','New\x20Releases','https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/originals.svg','https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/softswiss.svg','.footer__copyright','class','/en/providers/peter-and-sons','Imoon','innerWidth','translateY(0)','#league-slider','0.4px','objectFit','width','Truelab','/en/providers/yggdrasil','20px','Belatra','0\x201px\x203px\x20rgba(0,\x200,\x200,\x200.5)','.container.section.section--first\x20div\x20bulunamadı!','https://cedabet.com/en/casino/games/ebetlab-plinko-originals','Ezugi','\x0a<div\x20style=\x22width:\x20100%;display:flex;gap:10px;\x22>\x0a\x20\x20\x20\x20<a\x20id=\x22','12px','color','Playson','ORYX','createTextNode','Mancala\x20Gaming','1940178fMOpWc','/en/providers/betsoft','https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/gamezix.svg','Imagine\x20Live','50%','fade-out\x201s\x20forwards','https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/NoLimitCity.svg','cloneNode','https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/Leap.svg','Mini\x20Oyunlar','https://cedabettv.com','1x2\x20Gaming','https://cedabet.github.io/assets/images/Poker.avif','popular-games-wrapper\x20bulunamadı!','opacity','fa-solid\x20fa-certificate','toLocaleString','textShadow','mega-jackpot','mouseenter','afterend','container','resize','logoSlider','mini-games-wrapper-2','Error\x20loading\x20jackpots\x20from\x20localStorage:','beforeunload','https://cedabet.github.io/assets/images/Bj.avif','toUpperCase','Peter\x20And\x20Sons','log','remove','https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/popiplay.svg','https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/igtech.svg','/en/providers/nolimitcity','header-custom-button\x20custom\x20d-flex\x20px-3\x20align-items-center\x20text-white','length','zIndex','popstate','124EyWGge','target','minor','/en/casino','Jungle\x20Spirit','#mini-games-wrapper','/en/providers/igtech','https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/platipus.svg','custom-section-landing','/en/providers/gamzix','/en/providers/hacksaw','196DpFKTL','textDecoration','https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/ezugi.svg','textAlign','BetRadar\x20VS','\x0a\x20\x20\x20\x20\x20\x20\x20\x20position:\x20absolute;\x0a\x20\x20\x20\x20\x20\x20\x20\x20text-transform:\x20unset;\x20right:\x201em;\x0a\x20\x20\x20\x20\x20\x20\x20\x20bottom:\x202em;\x20margin-right:\x205px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20letter-spacing:\x200.5px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20color:\x20rgba(255,\x20255,\x20255,\x200.95);\x0a\x20\x20\x20\x20\x20\x20\x20\x20height:\x2033px\x20!important;\x0a\x20\x20\x20\x20\x20\x20\x20\x20padding-left:\x2011px\x20!important;\x0a\x20\x20\x20\x20\x20\x20\x20\x20padding-right:\x2012px\x20!important;\x0a\x20\x20\x20\x20\x20\x20\x20\x20border-radius:\x204px\x20!important;\x0a\x20\x20\x20\x20\x20\x20\x20\x20background:\x20rgb(233,\x20172,\x2017)\x20!important;\x0a\x20\x20\x20\x20\x20\x20\x20\x20box-shadow:\x20none\x20!important;\x20font-size:\x209pt;\x0a\x0a\x20\x20\x20\x20\x20\x20\x20\x20','cursor','hidden','stylesheet','/en/','firstChild','Error\x20saving\x20jackpots\x20to\x20localStorage:','prepend','trim','translateY(-50%)','Premier\x20League','insertAdjacentElement','Platipus','https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/spribe.svg','.slide-image','https://cedabet.github.io/assets/images/plinko.jpg','Ebetlab','custom-item-bigwins','https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/truelab.svg','/en/providers/tomhornnative','\x0a\x20\x20\x20\x20\x20\x20<div\x20class=\x22league-logo-container\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20<img\x20src=\x22','/en/e-sport','Quickspin','classList','/en/providers/egt-interactive','webkitBackgroundClip','flex','Zeus\x20Play','Pragmatic\x20Live','offsetWidth','/en/providers/netent','Ceda\x20Originals','Popok','cssText','country','5649345KOVKNx','#03121a','/en/sportsbook','uppercase','animationPlayState','setItem','tagName','Dice','display','https://cedabet.github.io/assets/images/blackjack.webp','https://fonts.googleapis.com/css2?family=Montserrat:wght@800&family=Open+Sans:wght@400&display=swap','\x20flag\x22\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20class=\x22league-flag\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22league-country-badge\x22>','Gonzo\x27s\x20Quest','/en/providers/mancala','High\x20RTP','borderRadius','https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/Leander.svg','scale(1.2)','https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/slotmill.svg','getElementById','22px','Jiliasia','0\x202px\x2010px\x20rgba(0,\x200,\x200,\x200.3)','New','1px\x20solid\x20rgba(34,\x2055,\x2064,\x201)','height','createElement','#sidebar-content\x20>\x20div.sidebar__big\x20>\x20div.sidebar__menu\x20>\x20ul:nth-child(3)\x20>\x20li:nth-child(8)\x20>\x20a','league-wrapper','https://cedabet.github.io/assets/images/blackjack.jpg','animated','/en/providers/ebetlab','https://cedabet.github.io/assets/images/dice.jpg','Turkey','/en/providers/platipus','Blackjack','center','4px','vip-ceda-icon','\x0a\x20\x20\x20\x20\x20\x20\x20\x20@import\x20url(\x27https://fonts.googleapis.com/css2?family=Montserrat:wght@@400;500;600;700;800&display=swap\x27);\x0a\x0a.containers\x20{\x0a\x20\x20\x20\x20max-width:\x20100%;\x0a\x20\x20\x20\x20width:\x20100%;\x0a\x20\x20\x20\x20margin:\x200\x20auto;\x0a\x20\x20\x20\x20display:\x20flex;\x0a\x20\x20\x20\x20flex-direction:\x20column;\x0a\x20\x20\x20\x20gap:\x2030px;\x0a\x20\x20\x20\x20align-items:\x20center;\x0a}\x0a\x0a/*\x20Logo\x20Section\x20*/\x0a.logo-section\x20{\x0a\x20\x20\x20\x20text-align:\x20center;\x0a\x20\x20\x20\x20margin-bottom:\x2020px;\x0a\x20\x20\x20\x20width:\x20100%;\x0a}\x0a\x0a.logo\x20{\x0a\x20\x20\x20\x20font-size:\x202.5rem;\x0a\x20\x20\x20\x20font-weight:\x20700;\x0a\x20\x20\x20\x20color:\x20#4a9bff;\x0a\x20\x20\x20\x20text-shadow:\x200\x200\x2020px\x20rgba(74,\x20155,\x20255,\x200.5);\x0a\x20\x20\x20\x20margin-bottom:\x2010px;\x0a\x20\x20\x20\x20display:\x20flex;\x0a\x20\x20\x20\x20align-items:\x20center;\x0a\x20\x20\x20\x20justify-content:\x20center;\x0a}\x0a\x0a.logo::before\x20{\x0a\x20\x20\x20\x20content:\x20\x22★\x22;\x0a\x20\x20\x20\x20margin-right:\x2010px;\x0a\x20\x20\x20\x20font-size:\x202rem;\x0a}\x0a\x0a.logo::after\x20{\x0a\x20\x20\x20\x20content:\x20\x22★\x22;\x0a\x20\x20\x20\x20margin-left:\x2010px;\x0a\x20\x20\x20\x20font-size:\x202rem;\x0a}\x0a\x0a.tagline\x20{\x0a\x20\x20\x20\x20color:\x20#7fb3d3;\x0a\x20\x20\x20\x20font-size:\x201rem;\x0a\x20\x20\x20\x20font-weight:\x20500;\x0a}\x0a\x0a/*\x20Common\x20Section\x20Styles\x20*/\x0a.feature-section,\x20.winners-section,\x20.jackpot-section,\x20.providers-section\x20{\x0a\x20\x20\x20\x20background:\x20linear-gradient(135deg,\x20rgba(13,\x2025,\x2042,\x200.95)\x200%,\x20rgba(16,\x2030,\x2048,\x200.95)\x20100%);\x0a\x20\x20\x20\x20border-radius:\x2016px;\x0a\x20\x20\x20\x20padding:\x2030px;\x0a\x20\x20\x20\x20box-shadow:\x0a\x20\x20\x20\x20\x20\x20\x20\x200\x2010px\x2030px\x20rgba(0,\x200,\x200,\x200.4),\x0a\x20\x20\x20\x20\x20\x20\x20\x20inset\x200\x201px\x200\x20rgba(255,\x20255,\x20255,\x200.05);\x0a\x20\x20\x20\x20position:\x20relative;\x0a\x20\x20\x20\x20overflow:\x20hidden;\x0a\x20\x20\x20\x20width:\x20100%;\x0a\x20\x20\x20\x20max-width:\x201200px;\x0a\x20\x20\x20\x20backdrop-filter:\x20blur(10px);\x0a}\x0a\x0a.feature-section\x20{\x0a\x20\x20\x20\x20border:\x201px\x20solid\x20rgba(74,\x20155,\x20255,\x200.2);\x0a}\x0a\x0a.winners-section\x20{\x0a\x20\x20\x20\x20border:\x201px\x20solid\x20rgba(74,\x20155,\x20255,\x200.2);\x0a\x20\x20\x20\x20height:\x20500px;\x0a}\x0a\x0a.jackpot-section\x20{\x0a\x20\x20\x20\x20border:\x201px\x20solid\x20rgba(255,\x20198,\x2041,\x200.3);\x0a}\x0a\x0a.providers-section\x20{\x0a\x20\x20\x20\x20border:\x201px\x20solid\x20rgba(74,\x20155,\x20255,\x200.2);\x0a}\x0a\x0a/*\x20Section\x20Before\x20Elements\x20*/\x0a.feature-section::before\x20{\x0a\x20\x20\x20\x20content:\x20\x27\x27;\x0a\x20\x20\x20\x20position:\x20absolute;\x0a\x20\x20\x20\x20top:\x200;\x0a\x20\x20\x20\x20left:\x200;\x0a\x20\x20\x20\x20right:\x200;\x0a\x20\x20\x20\x20height:\x203px;\x0a\x20\x20\x20\x20background:\x20linear-gradient(90deg,\x20#4a9bff,\x20#2a6cb9,\x20#4a9bff);\x0a\x20\x20\x20\x20background-size:\x20200%\x20100%;\x0a\x20\x20\x20\x20animation:\x20shimmer\x203s\x20ease-in-out\x20infinite;\x0a}\x0a\x0a.winners-section::before\x20{\x0a\x20\x20\x20\x20content:\x20\x27\x27;\x0a\x20\x20\x20\x20position:\x20absolute;\x0a\x20\x20\x20\x20top:\x200;\x0a\x20\x20\x20\x20left:\x200;\x0a\x20\x20\x20\x20right:\x200;\x0a\x20\x20\x20\x20height:\x203px;\x0a\x20\x20\x20\x20background:\x20linear-gradient(90deg,\x20#4a9bff,\x20#2a6cb9,\x20#4a9bff);\x0a\x20\x20\x20\x20background-size:\x20200%\x20100%;\x0a\x20\x20\x20\x20animation:\x20shimmer\x203s\x20ease-in-out\x20infinite;\x0a}\x0a\x0a.jackpot-section::before\x20{\x0a\x20\x20\x20\x20content:\x20\x27\x27;\x0a\x20\x20\x20\x20position:\x20absolute;\x0a\x20\x20\x20\x20top:\x200;\x0a\x20\x20\x20\x20left:\x200;\x0a\x20\x20\x20\x20right:\x200;\x0a\x20\x20\x20\x20height:\x203px;\x0a\x20\x20\x20\x20background:\x20linear-gradient(90deg,\x20#ffc629,\x20#e6a800,\x20#ffc629);\x0a\x20\x20\x20\x20background-size:\x20200%\x20100%;\x0a\x20\x20\x20\x20animation:\x20shimmer\x203s\x20ease-in-out\x20infinite;\x0a}\x0a\x0a.providers-section::before\x20{\x0a\x20\x20\x20\x20content:\x20\x27\x27;\x0a\x20\x20\x20\x20position:\x20absolute;\x0a\x20\x20\x20\x20top:\x200;\x0a\x20\x20\x20\x20left:\x200;\x0a\x20\x20\x20\x20right:\x200;\x0a\x20\x20\x20\x20height:\x203px;\x0a\x20\x20\x20\x20background:\x20linear-gradient(90deg,\x20#4a9bff,\x20#2a6cb9,\x20#4a9bff);\x0a\x20\x20\x20\x20background-size:\x20200%\x20100%;\x0a\x20\x20\x20\x20animation:\x20shimmer\x203s\x20ease-in-out\x20infinite;\x0a}\x0a\x0a@keyframes\x20shimmer\x20{\x0a\x20\x20\x20\x200%,\x20100%\x20{\x20background-position:\x20-200%\x200;\x20}\x0a\x20\x20\x20\x2050%\x20{\x20background-position:\x20200%\x200;\x20}\x0a}\x0a\x0a.section-title\x20{\x0a\x20\x20\x20\x20font-size:\x201.8rem;\x0a\x20\x20\x20\x20color:\x20#ffffff;\x0a\x20\x20\x20\x20margin-bottom:\x2025px;\x0a\x20\x20\x20\x20font-weight:\x20600;\x0a\x20\x20\x20\x20text-align:\x20center;\x0a\x20\x20\x20\x20position:\x20relative;\x0a}\x0a\x0a.section-title::after\x20{\x0a\x20\x20\x20\x20content:\x20\x27\x27;\x0a\x20\x20\x20\x20position:\x20absolute;\x0a\x20\x20\x20\x20bottom:\x20-8px;\x0a\x20\x20\x20\x20left:\x2050%;\x0a\x20\x20\x20\x20transform:\x20translateX(-50%);\x0a\x20\x20\x20\x20width:\x2060px;\x0a\x20\x20\x20\x20height:\x203px;\x0a\x20\x20\x20\x20background:\x20linear-gradient(90deg,\x20#4a9bff,\x20#2a6cb9);\x0a\x20\x20\x20\x20border-radius:\x202px;\x0a}\x0a\x0a.winners-section\x20.section-title::after\x20{\x0a\x20\x20\x20\x20background:\x20linear-gradient(90deg,\x20#4a9bff,\x20#2a6cb9);\x0a}\x0a\x0a.jackpot-section\x20.section-title::after\x20{\x0a\x20\x20\x20\x20background:\x20linear-gradient(90deg,\x20#ffc629,\x20#e6a800);\x0a}\x0a\x0a.providers-section\x20.section-title::after\x20{\x0a\x20\x20\x20\x20background:\x20linear-gradient(90deg,\x20#4a9bff,\x20#2a6cb9);\x0a}\x0a\x0a/*\x20Slider\x20Container\x20for\x20Games\x20*/\x0a.slider-container\x20{\x0a\x20\x20\x20\x20width:\x20100%;\x0a\x20\x20\x20\x20overflow:\x20hidden;\x0a\x20\x20\x20\x20position:\x20relative;\x0a\x20\x20\x20\x20padding:\x2015px\x200;\x0a\x20\x20\x20\x20mask:\x20linear-gradient(90deg,\x20transparent\x200%,\x20black\x205%,\x20black\x2095%,\x20transparent\x20100%);\x0a\x20\x20\x20\x20-webkit-mask:\x20linear-gradient(90deg,\x20transparent\x200%,\x20black\x205%,\x20black\x2095%,\x20transparent\x20100%);\x0a\x20\x20\x20\x20background-color:unset!important;\x0a}\x0a\x0a.slider-track\x20{\x0a\x20\x20\x20\x20display:\x20flex;\x0a\x20\x20\x20\x20animation:\x20games-scroll\x2035s\x20linear\x20infinite;\x0a\x20\x20\x20\x20width:\x20max-content;\x0a}\x0a\x0a.slider-track:hover\x20{\x0a\x20\x20\x20\x20animation-play-state:\x20paused;\x0a}\x0a\x0a@keyframes\x20games-scroll\x20{\x0a\x20\x20\x20\x200%\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20transform:\x20translateX(0);\x0a\x20\x20\x20\x20}\x0a\x20\x20\x20\x20100%\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20transform:\x20translateX(calc(-160px\x20*\x207));\x0a\x20\x20\x20\x20}\x0a}\x0a\x0a/*\x20Game\x20Items\x20-\x20Now\x20as\x20clickable\x20links\x20*/\x0a.game-item\x20{\x0a\x20\x20\x20\x20width:\x20140px;\x0a\x20\x20\x20\x20margin-right:\x2020px;\x0a\x20\x20\x20\x20background:\x20linear-gradient(135deg,\x20rgba(16,\x2030,\x2048,\x200.9)\x200%,\x20rgba(20,\x2036,\x2056,\x200.9)\x20100%);\x0a\x20\x20\x20\x20border-radius:\x2012px;\x0a\x20\x20\x20\x20box-shadow:\x200\x208px\x2020px\x20rgba(0,\x200,\x200,\x200.4);\x0a\x20\x20\x20\x20text-align:\x20center;\x0a\x20\x20\x20\x20flex-shrink:\x200;\x0a\x20\x20\x20\x20transition:\x20all\x200.3s\x20ease;\x0a\x20\x20\x20\x20overflow:\x20hidden;\x0a\x20\x20\x20\x20border:\x201px\x20solid\x20rgba(74,\x20155,\x20255,\x200.3);\x0a\x20\x20\x20\x20position:\x20relative;\x0a\x20\x20\x20\x20backdrop-filter:\x20blur(5px);\x0a\x20\x20\x20\x20text-decoration:\x20none;\x0a\x20\x20\x20\x20color:\x20inherit;\x0a\x20\x20\x20\x20display:\x20block;\x0a}\x0a\x0a.game-item::before\x20{\x0a\x20\x20\x20\x20content:\x20\x27\x27;\x0a\x20\x20\x20\x20position:\x20absolute;\x0a\x20\x20\x20\x20top:\x200;\x0a\x20\x20\x20\x20left:\x200;\x0a\x20\x20\x20\x20right:\x200;\x0a\x20\x20\x20\x20bottom:\x200;\x0a\x20\x20\x20\x20background:\x20linear-gradient(45deg,\x20transparent\x2030%,\x20rgba(74,\x20155,\x20255,\x200.1)\x2050%,\x20transparent\x2070%);\x0a\x20\x20\x20\x20transform:\x20translateX(-100%);\x0a\x20\x20\x20\x20transition:\x20transform\x200.6s;\x0a}\x0a\x0a.game-item:hover::before\x20{\x0a\x20\x20\x20\x20transform:\x20translateX(100%);\x0a}\x0a\x0a.game-item:hover\x20{\x0a\x20\x20\x20\x20transform:\x20translateY(-8px)\x20scale(1.05);\x0a\x20\x20\x20\x20box-shadow:\x0a\x20\x20\x20\x20\x20\x20\x20\x200\x2015px\x2035px\x20rgba(0,\x200,\x200,\x200.5),\x0a\x20\x20\x20\x20\x20\x20\x20\x200\x200\x2020px\x20rgba(74,\x20155,\x20255,\x200.3);\x0a\x20\x20\x20\x20border-color:\x20#4a9bff;\x0a}\x0a\x0a.game-item\x20img\x20{\x0a\x20\x20\x20\x20width:\x20100%;\x0a\x20\x20\x20\x20height:\x20120px;\x0a\x20\x20\x20\x20object-fit:\x20contain;\x0a\x20\x20\x20\x20border-radius:\x2012px\x2012px\x200\x200;\x0a}\x0a\x0a.game-item\x20p\x20{\x0a\x20\x20\x20\x20color:\x20#e8f4fd;\x0a\x20\x20\x20\x20margin:\x2012px\x200;\x0a\x20\x20\x20\x20font-weight:\x20600;\x0a\x20\x20\x20\x20font-size:\x2012px;\x0a\x20\x20\x20\x20padding:\x200\x2010px;\x0a}\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20.playing-count\x20{\x0a\x20\x20font-size:\x2012px;\x0a\x20\x20color:\x20#27ae60;\x20/*\x20Elit\x20yeşil\x20*/\x0a\x20\x20margin-top:\x202px;\x0a\x20\x20display:\x20block;\x0a}\x0a/*\x20Winners\x20Container\x20*/\x0a.win-container\x20{\x0a\x20\x20\x20\x20width:\x20100%;\x0a\x20\x20\x20\x20height:\x20400px;\x0a\x20\x20\x20\x20overflow:\x20hidden;\x0a\x20\x20\x20\x20position:\x20relative;\x0a\x20\x20\x20\x20padding:\x200;\x0a\x20\x20\x20\x20margin-top:\x2010px;\x0a}\x0a\x0a.win-list\x20{\x0a\x20\x20\x20\x20display:\x20flex;\x0a\x20\x20\x20\x20flex-direction:\x20column;\x0a\x20\x20\x20\x20position:\x20absolute;\x0a\x20\x20\x20\x20bottom:\x200;\x0a\x20\x20\x20\x20width:\x20100%;\x0a\x20\x20\x20\x20padding:\x200;\x0a}\x0a\x0a.win-item\x20{\x0a\x20\x20\x20\x20background:\x20linear-gradient(135deg,\x20rgba(16,\x2030,\x2048,\x200.8)\x200%,\x20rgba(20,\x2036,\x2056,\x200.8)\x20100%);\x0a\x20\x20\x20\x20margin:\x208px\x200;\x0a\x20\x20\x20\x20padding:\x2020px;\x0a\x20\x20\x20\x20border-radius:\x2012px;\x0a\x20\x20\x20\x20display:\x20flex;\x0a\x20\x20\x20\x20flex-direction:\x20column;\x0a\x20\x20\x20\x20justify-content:\x20center;\x0a\x20\x20\x20\x20align-items:\x20flex-start;\x0a\x20\x20\x20\x20font-size:\x2014px;\x0a\x20\x20\x20\x20opacity:\x201;\x0a\x20\x20\x20\x20box-shadow:\x200\x208px\x2015px\x20rgba(0,\x200,\x200,\x200.4);\x0a\x20\x20\x20\x20border:\x201px\x20solid\x20rgba(74,\x20155,\x20255,\x200.3);\x0a\x20\x20\x20\x20backdrop-filter:\x20blur(5px);\x0a}\x0a\x0a.win-item:nth-child(even)\x20{\x0a\x20\x20\x20\x20background:\x20linear-gradient(135deg,\x20rgba(20,\x2036,\x2056,\x200.8)\x200%,\x20rgba(16,\x2030,\x2048,\x200.8)\x20100%);\x0a\x20\x20\x20\x20border-color:\x20rgba(74,\x20155,\x20255,\x200.3);\x0a}\x0a\x0a.win-item\x20p\x20{\x0a\x20\x20\x20\x20margin:\x200;\x0a\x20\x20\x20\x20color:\x20#fff;\x0a\x20\x20\x20\x20line-height:\x201.4;\x0a\x20\x20\x20\x20font-weight:\x20500;\x0a}\x0a\x0a.win-item\x20p\x20strong\x20{\x0a\x20\x20\x20\x20color:\x20#4a9bff;\x0a\x20\x20\x20\x20font-size:\x201.1em;\x0a\x20\x20\x20\x20font-weight:\x20700;\x0a}\x0a\x0a.win-item\x20p:last-child\x20{\x0a\x20\x20\x20\x20margin-top:\x208px;\x0a\x20\x20\x20\x20font-style:\x20italic;\x0a\x20\x20\x20\x20color:\x20#7fb3d3;\x0a\x20\x20\x20\x20font-size:\x2012px;\x0a}\x0a\x0a/*\x20Animation\x20for\x20new\x20winners\x20after\x20initial\x20load\x20*/\x0a.win-item.animated\x20{\x0a\x20\x20\x20\x20opacity:\x200;\x0a\x20\x20\x20\x20animation:\x20slide-in\x201.2s\x20forwards,\x20fade-in\x201.5s\x20forwards;\x0a}\x0a\x0a@keyframes\x20slide-in\x20{\x0a\x20\x20\x20\x200%\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20transform:\x20translateX(-100%);\x0a\x20\x20\x20\x20\x20\x20\x20\x20opacity:\x200;\x0a\x20\x20\x20\x20}\x0a\x20\x20\x20\x20100%\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20transform:\x20translateX(0);\x0a\x20\x20\x20\x20\x20\x20\x20\x20opacity:\x201;\x0a\x20\x20\x20\x20}\x0a}\x0a\x0a@keyframes\x20fade-in\x20{\x0a\x20\x20\x20\x200%\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20opacity:\x200;\x0a\x20\x20\x20\x20}\x0a\x20\x20\x20\x20100%\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20opacity:\x201;\x0a\x20\x20\x20\x20}\x0a}\x0a\x0a@keyframes\x20fade-out\x20{\x0a\x20\x20\x20\x200%\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20opacity:\x201;\x0a\x20\x20\x20\x20}\x0a\x20\x20\x20\x20100%\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20opacity:\x200;\x0a\x20\x20\x20\x20}\x0a}\x0a\x0a@keyframes\x20pulse-glow\x20{\x0a\x20\x20\x20\x200%\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20text-shadow:\x200\x200\x2010px\x20rgba(255,\x20198,\x2041,\x200.5);\x0a\x20\x20\x20\x20}\x0a\x20\x20\x20\x20100%\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20text-shadow:\x200\x200\x2020px\x20rgba(255,\x20198,\x2041,\x200.8),\x200\x200\x2030px\x20rgba(255,\x20198,\x2041,\x200.4);\x0a\x20\x20\x20\x20}\x0a}\x0a\x0a/*\x20Jackpot\x20Section\x20Styles\x20-\x20Grid\x20Layout\x20with\x20Space\x20Theme\x20Colors\x20*/\x0a.jackpot-container\x20{\x0a\x20\x20\x20\x20display:\x20grid;\x0a\x20\x20\x20\x20grid-template-columns:\x20repeat(auto-fit,\x20minmax(280px,\x201fr));\x0a\x20\x20\x20\x20gap:\x2020px;\x0a\x20\x20\x20\x20margin-top:\x2010px;\x0a}\x0a\x0a.jackpot-card\x20{\x0a\x20\x20\x20\x20background:\x20linear-gradient(135deg,\x20rgba(16,\x2030,\x2048,\x200.9)\x200%,\x20rgba(20,\x2036,\x2056,\x200.9)\x20100%);\x0a\x20\x20\x20\x20border:\x201px\x20solid\x20rgba(255,\x20198,\x2041,\x200.3);\x0a\x20\x20\x20\x20border-radius:\x2012px;\x0a\x20\x20\x20\x20padding:\x2025px;\x0a\x20\x20\x20\x20text-align:\x20center;\x0a\x20\x20\x20\x20backdrop-filter:\x20blur(5px);\x0a\x20\x20\x20\x20transition:\x20all\x200.3s\x20ease;\x0a\x20\x20\x20\x20position:\x20relative;\x0a\x20\x20\x20\x20overflow:\x20hidden;\x0a}\x0a\x0a.jackpot-card::before\x20{\x0a\x20\x20\x20\x20content:\x20\x27\x27;\x0a\x20\x20\x20\x20position:\x20absolute;\x0a\x20\x20\x20\x20top:\x200;\x0a\x20\x20\x20\x20left:\x200;\x0a\x20\x20\x20\x20right:\x200;\x0a\x20\x20\x20\x20bottom:\x200;\x0a\x20\x20\x20\x20background:\x20linear-gradient(45deg,\x20transparent\x2030%,\x20rgba(255,\x20198,\x2041,\x200.1)\x2050%,\x20transparent\x2070%);\x0a\x20\x20\x20\x20transform:\x20translateX(-100%);\x0a\x20\x20\x20\x20transition:\x20transform\x200.6s;\x0a}\x0a\x0a.jackpot-card:hover::before\x20{\x0a\x20\x20\x20\x20transform:\x20translateX(100%);\x0a}\x0a\x0a.jackpot-card:hover\x20{\x0a\x20\x20\x20\x20transform:\x20translateY(-5px);\x0a\x20\x20\x20\x20box-shadow:\x200\x2015px\x2035px\x20rgba(0,\x200,\x200,\x200.4);\x0a\x20\x20\x20\x20border-color:\x20#ffc629;\x0a}\x0a\x0a.jackpot-title\x20{\x0a\x20\x20\x20\x20font-size:\x201.2rem;\x0a\x20\x20\x20\x20color:\x20#ffc629;\x0a\x20\x20\x20\x20font-weight:\x20700;\x0a\x20\x20\x20\x20margin-bottom:\x2015px;\x0a\x20\x20\x20\x20text-transform:\x20uppercase;\x0a\x20\x20\x20\x20letter-spacing:\x201px;\x0a}\x0a\x0a.jackpot-amount\x20{\x0a\x20\x20\x20\x20font-size:\x202.2rem;\x0a\x20\x20\x20\x20color:\x20#ffffff;\x0a\x20\x20\x20\x20font-weight:\x20800;\x0a\x20\x20\x20\x20margin-bottom:\x2010px;\x0a\x20\x20\x20\x20text-shadow:\x200\x200\x2010px\x20rgba(255,\x20198,\x2041,\x200.5);\x0a\x20\x20\x20\x20animation:\x20pulse-glow\x202s\x20ease-in-out\x20infinite\x20alternate;\x0a}\x0a\x0a.jackpot-description\x20{\x0a\x20\x20\x20\x20color:\x20#7fb3d3;\x0a\x20\x20\x20\x20font-size:\x200.9rem;\x0a\x20\x20\x20\x20line-height:\x201.4;\x0a}\x0a\x0a.mega-jackpot\x20{\x0a\x20\x20\x20\x20grid-column:\x201\x20/\x20-1;\x0a\x20\x20\x20\x20background:\x20linear-gradient(135deg,\x20rgba(20,\x2036,\x2056,\x200.9)\x200%,\x20rgba(16,\x2030,\x2048,\x200.9)\x20100%);\x0a\x20\x20\x20\x20border-color:\x20rgba(255,\x20198,\x2041,\x200.4);\x0a\x20\x20\x20\x20padding:\x2035px;\x0a}\x0a\x0a.mega-jackpot\x20.jackpot-title\x20{\x0a\x20\x20\x20\x20font-size:\x201.5rem;\x0a\x20\x20\x20\x20color:\x20#ffc629;\x0a\x20\x20\x20\x20margin-bottom:\x2020px;\x0a}\x0a\x0a.mega-jackpot\x20.jackpot-amount\x20{\x0a\x20\x20\x20\x20font-size:\x203rem;\x0a\x20\x20\x20\x20color:\x20#ffc629;\x0a\x20\x20\x20\x20text-shadow:\x200\x200\x2015px\x20rgba(255,\x20198,\x2041,\x200.6);\x0a}\x0a\x0a.mega-jackpot::before\x20{\x0a\x20\x20\x20\x20background:\x20linear-gradient(45deg,\x20transparent\x2030%,\x20rgba(255,\x20198,\x2041,\x200.2)\x2050%,\x20transparent\x2070%);\x0a}\x0a\x0a.mega-jackpot:hover\x20{\x0a\x20\x20\x20\x20border-color:\x20#ffc629;\x0a}\x0a\x0a/*\x20Providers\x20Section\x20-\x20Infinity\x20Scroll\x20*/\x0a.providers-container\x20{\x0a\x20\x20\x20\x20width:\x20100%;\x0a\x20\x20\x20\x20overflow:\x20hidden;\x0a\x20\x20\x20\x20position:\x20relative;\x0a\x20\x20\x20\x20padding:\x2015px\x200;\x0a\x20\x20\x20\x20mask:\x20linear-gradient(90deg,\x20transparent\x200%,\x20black\x205%,\x20black\x2095%,\x20transparent\x20100%);\x0a\x20\x20\x20\x20-webkit-mask:\x20linear-gradient(90deg,\x20transparent\x200%,\x20black\x205%,\x20black\x2095%,\x20transparent\x20100%);\x0a}\x0a\x0a.providers-track\x20{\x0a\x20\x20\x20\x20display:\x20flex;\x0a\x20\x20\x20\x20animation:\x20providers-scroll\x2040s\x20linear\x20infinite;\x0a\x20\x20\x20\x20width:\x20max-content;\x0a}\x0a\x0a.providers-track:hover\x20{\x0a\x20\x20\x20\x20animation-play-state:\x20paused;\x0a}\x0a\x0a@keyframes\x20providers-scroll\x20{\x0a\x20\x20\x20\x200%\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20transform:\x20translateX(0);\x0a\x20\x20\x20\x20}\x0a\x20\x20\x20\x20100%\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20transform:\x20translateX(calc(-170px\x20*\x208));\x0a\x20\x20\x20\x20}\x0a}\x0a\x0a/*\x20Provider\x20Cards\x20-\x20Now\x20as\x20clickable\x20links\x20*/\x0a.provider-card\x20{\x0a\x20\x20\x20\x20width:\x20150px;\x0a\x20\x20\x20\x20margin-right:\x2020px;\x0a\x20\x20\x20\x20background:\x20linear-gradient(135deg,\x20rgba(16,\x2030,\x2048,\x200.9)\x200%,\x20rgba(20,\x2036,\x2056,\x200.9)\x20100%);\x0a\x20\x20\x20\x20border:\x201px\x20solid\x20rgba(74,\x20155,\x20255,\x200.3);\x0a\x20\x20\x20\x20border-radius:\x2012px;\x0a\x20\x20\x20\x20padding:\x2020px;\x0a\x20\x20\x20\x20text-align:\x20center;\x0a\x20\x20\x20\x20backdrop-filter:\x20blur(5px);\x0a\x20\x20\x20\x20transition:\x20all\x200.3s\x20ease;\x0a\x20\x20\x20\x20position:\x20relative;\x0a\x20\x20\x20\x20overflow:\x20hidden;\x0a\x20\x20\x20\x20flex-shrink:\x200;\x0a\x20\x20\x20\x20text-decoration:\x20none;\x0a\x20\x20\x20\x20color:\x20inherit;\x0a\x20\x20\x20\x20display:\x20block;\x0a}\x0a\x0a.provider-card::before\x20{\x0a\x20\x20\x20\x20content:\x20\x27\x27;\x0a\x20\x20\x20\x20position:\x20absolute;\x0a\x20\x20\x20\x20top:\x200;\x0a\x20\x20\x20\x20left:\x200;\x0a\x20\x20\x20\x20right:\x200;\x0a\x20\x20\x20\x20bottom:\x200;\x0a\x20\x20\x20\x20background:\x20linear-gradient(45deg,\x20transparent\x2030%,\x20rgba(74,\x20155,\x20255,\x200.1)\x2050%,\x20transparent\x2070%);\x0a\x20\x20\x20\x20transform:\x20translateX(-100%);\x0a\x20\x20\x20\x20transition:\x20transform\x200.6s;\x0a}\x0a\x0a.provider-card:hover::before\x20{\x0a\x20\x20\x20\x20transform:\x20translateX(100%);\x0a}\x0a\x0a.provider-card:hover\x20{\x0a\x20\x20\x20\x20transform:\x20translateY(-8px)\x20scale(1.05);\x0a\x20\x20\x20\x20box-shadow:\x0a\x20\x20\x20\x20\x20\x20\x20\x200\x2015px\x2035px\x20rgba(0,\x200,\x200,\x200.5),\x0a\x20\x20\x20\x20\x20\x20\x20\x200\x200\x2020px\x20rgba(74,\x20155,\x20255,\x200.3);\x0a\x20\x20\x20\x20border-color:\x20#4a9bff;\x0a}\x0a\x0a.provider-logo\x20{\x0a\x20\x20\x20\x20width:\x2080px;\x0a\x20\x20\x20\x20height:\x2080px;\x0a\x20\x20\x20\x20background:\x20#0a1017;\x0a\x20\x20\x20\x20border:\x201px\x20solid\x20rgba(74,\x20155,\x20255,\x200.3);\x0a\x20\x20\x20\x20border-radius:\x2050%;\x0a\x20\x20\x20\x20margin:\x200\x20auto\x2015px;\x0a\x20\x20\x20\x20display:\x20flex;\x0a\x20\x20\x20\x20align-items:\x20center;\x0a\x20\x20\x20\x20justify-content:\x20center;\x0a\x20\x20\x20\x20font-size:\x202rem;\x0a\x20\x20\x20\x20color:\x20white;\x0a\x20\x20\x20\x20transition:\x20all\x200.3s\x20ease;\x0a}\x0a\x0a.provider-card:hover\x20.provider-logo\x20{\x0a\x20\x20\x20\x20border-color:\x20#4a9bff;\x0a\x20\x20\x20\x20box-shadow:\x200\x200\x2015px\x20rgba(74,\x20155,\x20255,\x200.3);\x0a}\x0a\x0a.provider-name\x20{\x0a\x20\x20\x20\x20color:\x20#ffffff;\x0a\x20\x20\x20\x20font-weight:\x20600;\x0a\x20\x20\x20\x20margin-bottom:\x205px;\x0a}\x0a\x0a.provider-games\x20{\x0a\x20\x20\x20\x20color:\x20#7fb3d3;\x0a\x20\x20\x20\x20font-size:\x200.9rem;\x0a}\x0a\x0a/*\x20Responsive\x20Design\x20*/\x0a@media\x20(max-width:\x20768px)\x20{\x0a\x20\x20\x20\x20body\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20padding:\x2015px;\x0a\x20\x20\x20\x20}\x0a\x0a\x20\x20\x20\x20.logo\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20font-size:\x202rem;\x0a\x20\x20\x20\x20}\x0a\x20\x20.logo-section\x20{\x0a\x20\x20\x20\x20margin-top:\x2075px;\x0a\x20\x20}\x0a\x20\x20\x20\x20.feature-section,\x0a\x20\x20\x20\x20.winners-section,\x0a\x20\x20\x20\x20.jackpot-section,\x0a\x20\x20\x20\x20.providers-section\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20padding:\x2020px;\x0a\x20\x20\x20\x20}\x0a\x0a\x20\x20\x20\x20.winners-section\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20height:\x20350px;\x0a\x20\x20\x20\x20}\x0a\x0a\x20\x20\x20\x20.section-title\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20font-size:\x201.5rem;\x0a\x20\x20\x20\x20}\x0a\x0a\x20\x20\x20\x20.game-item\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20width:\x20120px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20margin-right:\x2012px;\x0a\x20\x20\x20\x20}\x0a\x0a\x20\x20\x20\x20.game-item\x20img\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20height:\x2080px;\x0a\x20\x20\x20\x20}\x0a\x0a\x20\x20\x20\x20.game-item\x20p\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20font-size:\x2011px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20margin:\x2010px\x200;\x0a\x20\x20\x20\x20}\x0a\x0a\x20\x20\x20\x20.win-item\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20font-size:\x2012px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20padding:\x2015px;\x0a\x20\x20\x20\x20}\x0a\x0a\x20\x20\x20\x20.jackpot-container\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20grid-template-columns:\x201fr;\x0a\x20\x20\x20\x20}\x0a\x0a\x20\x20\x20\x20.mega-jackpot\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20grid-column:\x201;\x0a\x20\x20\x20\x20\x20\x20\x20\x20padding:\x2025px;\x0a\x20\x20\x20\x20}\x0a\x0a\x20\x20\x20\x20.jackpot-amount\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20font-size:\x201.8rem;\x0a\x20\x20\x20\x20}\x0a\x0a\x20\x20\x20\x20.mega-jackpot\x20.jackpot-amount\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20font-size:\x202.5rem;\x0a\x20\x20\x20\x20}\x0a\x0a\x20\x20\x20\x20@keyframes\x20providers-scroll\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x200%\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20transform:\x20translateX(0);\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20100%\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20transform:\x20translateX(calc(-170px\x20*\x208));\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20}\x0a\x0a\x20\x20\x20\x20@keyframes\x20games-scroll\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x200%\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20transform:\x20translateX(0);\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20100%\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20transform:\x20translateX(calc(-132px\x20*\x207));\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20}\x0a}\x0a\x0a@media\x20(max-width:\x20480px)\x20{\x0a\x20\x20\x20\x20body\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20padding:\x2010px;\x0a\x20\x20\x20\x20}\x0a\x0a\x20\x20\x20\x20.container\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20gap:\x2020px;\x0a\x20\x20\x20\x20}\x0a\x0a\x20\x20\x20\x20.logo\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20font-size:\x201.8rem;\x0a\x20\x20\x20\x20}\x0a\x0a\x20\x20\x20\x20.section-title\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20font-size:\x201.3rem;\x0a\x20\x20\x20\x20}\x0a\x0a\x20\x20\x20\x20.game-item\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20width:\x20100px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20margin-right:\x2010px;\x0a\x20\x20\x20\x20}\x0a\x0a\x20\x20\x20\x20.game-item\x20img\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20height:\x2070px;\x0a\x20\x20\x20\x20}\x0a\x0a\x20\x20\x20\x20.winners-section\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20height:\x20370px;\x0a\x20\x20\x20\x20}\x0a\x0a\x20\x20\x20\x20.jackpot-card\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20padding:\x2020px;\x0a\x20\x20\x20\x20}\x0a\x0a\x20\x20\x20\x20.jackpot-amount\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20font-size:\x201.5rem;\x0a\x20\x20\x20\x20}\x0a\x0a\x20\x20\x20\x20.mega-jackpot\x20.jackpot-amount\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20font-size:\x202rem;\x0a\x20\x20\x20\x20}\x0a\x0a\x20\x20\x20\x20@keyframes\x20providers-scroll\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x200%\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20transform:\x20translateX(0);\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20100%\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20transform:\x20translateX(calc(-145px\x20*\x208));\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20}\x0a\x0a\x20\x20\x20\x20@keyframes\x20games-scroll\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x200%\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20transform:\x20translateX(0);\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20100%\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20transform:\x20translateX(calc(-110px\x20*\x207));\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20}\x0a}\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20','Mini\x20Games','8px','div','insertAdjacentHTML','https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/Jiliasia.svg','promotions-link-2','https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/5men.svg','/en/providers/egt','\x27Open\x20Sans\x27,\x20\x27Helvetica\x27,\x20sans-serif','https://cedabet.com/en/casino/games/ebetlab-keno-originals','Leander','\x20style\x20etiketi\x20kaldırıldı.','https://cedabet.github.io/assets/images/poker.png','Partnership','fontWeight','repeat','https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/quickspin.svg','/en/providers/habanero','game-list','flagCode','Netherlands','animation','Vivo\x20Gaming','vip-gold-icon','https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/Zeus%20Play.svg','https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/netent.svg','.section__title','bounce\x204s\x20ease\x20','/en/providers/cq9','section__title','France','inline-block','location','mini-games-wrapper','Plinko','padding','Мини\x20-игры','alignItems','YGR\x20Games','fa-solid\x20fa-handshake','TopSpin','sidebar','/en/affiliate','Eredivisie','stringify','Italy','https://cedabet.github.io/assets/images/league-nl.png','webkitTextFillColor','charAt','transform','/en/providers/inout','Germany','major','absolute','https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/turbogames.svg','SA\x20Gaming','vip-diamond-icon','.p-not-found','playing-count','https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/yggdrasil.svg','none','/en/providers/pragmaticlive','top','filter','big-wins-style','link','#ffffff','https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/habanero.svg','/en/providers/redtiger','fontFamily','header__signup\x20slider_btn','Starburst','translateX(-','/en/providers/playtech','Thunderkick','</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20<h3\x20class=\x22league-name\x22>','left\x20bottom','border','mega','mouseout','/en/providers/turbogames','Top\x20Games','https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/InOut.svg','https://cedabet.com/en/casino/games/hacksaw-limbo','replaceState','textTransform','ceda-tv-button','https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/amatic.svg','\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<p><strong>Our\x20player\x20','/en/providers/booming','insertBefore','#5c7382','/en/providers/jiliasia','https://cedabet.github.io/assets/images/roulette.webp','2051PKpFcz','league-card','backgroundColor','400','https://cedabet.github.io/assets/images/keno.jpg','mini-jackpot','flexDirection','https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/golden%20hero.svg','https://hebbkx1anhila5yf.public.blob.vercel-storage.com/gold.jpg-OHt1qVSHhN3ZNAk2OyyP3DXpLomar9.jpeg','right','CQ9','mouseleave','PGSoft','background','running','\x22\x20class=\x22sidebar__link\x20sidebar__link--casino\x22\x20target=\x22_blank\x22\x20href=\x22https://t.me/cedabet\x22\x20style=\x22\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20background:\x20url(\x27https://cedabet.github.io/assets/images/tvBtn.jpg\x27)\x20left\x20center\x20/\x20cover\x20no-repeat;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20width:\x20100%;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20margin-bottom:\x2017px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20box-shadow:\x20rgba(0,\x200,\x200,\x200.4)\x200px\x202px\x204px,\x20rgba(0,\x200,\x200,\x200.3)\x200px\x207px\x2013px\x20-3px,\x20rgba(0,\x200,\x200,\x200.2)\x200px\x20-2px\x200px\x20inset;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20<span>Join\x20Our\x20Telegram</span>\x0a\x20\x20\x20\x20</a>\x0a</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20','No\x20Limit\x20City','Evoplay\x20Entertainment','/en/casino/group/new-releases','innerHTML','BlackJack','fa-solid\x20fa-trophy','/en/providers/leap','section','linear-gradient(to\x20right,\x20#ffffff\x2020%,\x20#229de1\x2080%)','row','Mega\x20Moolah','https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/fugaso.svg','type','Ligue\x201','.sidebar__links','vip-nonvip-icon','EGT','/en/providers/rawgames','span','https://hebbkx1anhila5yf.public.blob.vercel-storage.com/bronze.jpg-kJ1LdK8seS1op7PHwubpz8ZimigSan.jpeg','/en/casino/group/lobby','nextSibling','transform\x200.3s\x20ease','https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/CQ9.svg','textContent','</h3>\x0a\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20','custom-section-7','Pragmatic\x20Play','pushState','rel','static','getFullYear','forEach','Dead\x20or\x20Alive\x202','Lucky\x20Streak','Latest\x20Big\x20Wins','auto','/en/trade','/en/providers/oryx','children','England','/en/providers/vivogaming','https://cedabet.com/en/casino/games/spribe-aviator','h2.section__title','Gamzix','relative','margin','promotions-link-small','23992qnZHeJ','https://cedabet.github.io/assets/images/league-tr.png','18px','SmartSoft','\x22\x20class=\x22sidebar__link\x20sidebar__link--casino\x22\x20href=\x22/promotions\x22\x20style=\x22\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20background:\x20url(\x27https://cedabet.github.io/assets/images/promotionBtn.jpg\x27)\x20left\x20center\x20/\x20cover\x20no-repeat;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20width:\x20100%;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20margin-bottom:\x2017px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20margin-top:\x20-10px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20box-shadow:\x20rgba(0,\x200,\x200,\x200.4)\x200px\x202px\x204px,\x20rgba(0,\x200,\x200,\x200.3)\x200px\x207px\x2013px\x20-3px,\x20rgba(0,\x200,\x200,\x200.2)\x200px\x20-2px\x200px\x20inset;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20<span>Promotion</span>\x0a\x20\x20\x20\x20</a>\x0a\x20\x20\x20\x20\x20<a\x20id=\x22','/en/providers/onlyplay','pathname','getItem','append','\x0a\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22container-fluid\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22slider-container\x22>\x0a\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22blue-accent-left\x22></div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22blue-accent-right\x22></div>\x0a\x0a\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22edge-fade-left\x22></div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22edge-fade-right\x22></div>\x0a\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22logo-slider\x22\x20id=\x22logoSlider\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22logo-slide\x22\x20id=\x22logoSlide\x22>\x0a\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20','parentNode','Red\x20Tiger','https://cedabet.github.io/assets/images/league-fr.png','mini','px)','Mines','16px','push','[class^=\x22vip-\x22]','fa-solid\x20fa-tv','nextElementSibling','#vip-container','\x27Montserrat\x27,\x20\x27Arial\x27,\x20sans-serif','https://cedabet.github.io/assets/images/league-es.png','https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/Evolution%20Gaming.svg','https://cedabet.github.io/assets/images/limbo.jpg','TEXT_NODE','/en/providers/pgsoft','https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/Live%20Games.svg','overflowX','https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/tomhorn.svg','Popiplay','\x0a\x20\x20\x20\x20\x20\x20\x20@keyframes\x20bounce\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x200%,\x20100%\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20transform:\x20translateY(0);\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x2050%\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20transform:\x20translateY(-15px);\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20','/en/casino/group/table-games','https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/reevo.svg','white','/en/providers/slotmill','/en/providers/spribe','/ru/sportsbook','name','https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/egt.svg','1.6','HackSaw\x20Gaming','head','VIP\x20','gap','custom-section','Tom\x20Horn','/en/providers/evoplay','src','random','100%','500px','\x22\x20alt=\x22','/en/providers/reevo','The\x20Dog\x20House','Popular\x20Games','Mascot\x20Gaming','lazy','game-card','https://hebbkx1anhila5yf.public.blob.vercel-storage.com/ceda.jpg-xUU80CihSslZ88xS1pPUaCGPlEEoi4.jpeg','objectPosition','\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22containers\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<!--\x20Logo\x20Section\x20-->\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22logo-section\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22logo\x22>CedaBet</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22tagline\x22>Premium\x20Gaming\x20Experience</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<!--\x20Feature\x20Games\x20Section\x20-->\x0a\x0a<section\x20class=\x22feature-section\x22>\x0a\x20\x20\x20<h2\x20class=\x22section-title\x22>Featured\x20Games</h2>\x0a\x0a\x20\x20\x20\x20<div\x20class=\x22slider-container\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22slider-track\x22>\x0a\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<a\x20href=\x22/en/casino/games/pragmaticplay-zeus-vs-hades-gods-of-war\x22\x20class=\x22game-item\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<img\x20src=\x22https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/vnnjkadsfjADGSGKSDKFWQE/games/9U9cVku8AkxfX28glr2ecCFaM8B1TaqJORdGWatq.avif\x22\x20alt=\x22Zeus\x20vs\x20Hades\x20Gods\x20of\x20War\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<p>Zeus\x20vs\x20Hades\x20Gods\x20of\x20War</p>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</a>\x0a\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<a\x20href=\x22/en/casino/games/pragmaticplay-wild-west-gold\x22\x20class=\x22game-item\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<img\x20src=\x22https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/vnnjkadsfjADGSGKSDKFWQE/games/1dpsT7tnCkM7cjbtUCikCdnFdJ4Qlh99pY3BpzXz.avif\x22\x20alt=\x22Wild\x20West\x20Gold\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<p>Wild\x20West\x20Gold</p>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</a>\x0a\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<a\x20href=\x22/en/casino/games/pragmaticplay-buffalo-king\x22\x20class=\x22game-item\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<img\x20src=\x22https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/vnnjkadsfjADGSGKSDKFWQE/games/rHhgFaBGHxn71tJXVAOPQKYaTkiQxlXFb315yBDZ.avif\x22\x20alt=\x22Buffalo\x20King\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<p>Buffalo\x20King</p>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</a>\x0a\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<a\x20href=\x22/en/casino/games/pragmaticplay-fruit-party\x22\x20class=\x22game-item\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<img\x20src=\x22https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/vnnjkadsfjADGSGKSDKFWQE/games/Xf04XdDGKxBPh3VZMbc3gm1iK6FnzF3I9F3aATq1.avif\x22\x20alt=\x22Fruit\x20Party\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<p>Fruit\x20Party</p>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</a>\x0a\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<a\x20href=\x22/en/casino/games/pragmaticplay-the-dog-house-dog-or-alive\x22\x20class=\x22game-item\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<img\x20src=\x22https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/vnnjkadsfjADGSGKSDKFWQE/games/IXIbm2lJsiOJpfiQ34a4Xjtklsei1ZTbrwKKZhPl.avif\x22\x20alt=\x22The\x20Dog\x20House\x20Dog\x20or\x20Alive\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<p>The\x20Dog\x20House\x20Dog\x20or\x20Alive</p>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</a>\x0a\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<a\x20href=\x22/en/casino/games/pragmaticplay-starlight-princess\x22\x20class=\x22game-item\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<img\x20src=\x22https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/vnnjkadsfjADGSGKSDKFWQE/games/G5xNO6W86jGBlHaHCL06o1sr5j1H6cySJvdSSRrA.avif\x22\x20alt=\x22Starlight\x20Princess\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<p>Starlight\x20Princess</p>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</a>\x0a\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<a\x20href=\x22/en/casino/games/pragmaticplay-the-dog-house-multihold\x22\x20class=\x22game-item\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<img\x20src=\x22https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/vnnjkadsfjADGSGKSDKFWQE/games/Do8FlFiEPlyzErc9dy2Jqu7lhqX8XaL7AOawkqKh.avif\x22\x20alt=\x22The\x20Dog\x20House\x20Multihold\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<p>The\x20Dog\x20House\x20Multihold</p>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</a>\x0a\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<a\x20href=\x22/en/casino/games/pragmaticplay-sugar-rush-1000\x22\x20class=\x22game-item\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<img\x20src=\x22https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/vnnjkadsfjADGSGKSDKFWQE/games/jNoaroKVGDwdRDelCNlu70ADVbyAvMw1qCpJrhP9.avif\x22\x20alt=\x22Sugar\x20Rush\x201000\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<p>Sugar\x20Rush\x201000</p>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</a>\x0a\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<a\x20href=\x22/en/casino/games/pragmaticplay-gates-of-olympos-1000\x22\x20class=\x22game-item\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<img\x20src=\x22https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/vnnjkadsfjADGSGKSDKFWQE/games/jpygjMVafhuLu4QEnILFs3oBE6wX7bD2ygoADiI9.avif\x22\x20alt=\x22Gates\x20of\x20Olympos\x201000\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<p>Gates\x20of\x20Olympos\x201000</p>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</a>\x0a\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<a\x20href=\x22/en/casino/games/pragmaticplay-sweet-bonanza-1000\x22\x20class=\x22game-item\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<img\x20src=\x22https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/vnnjkadsfjADGSGKSDKFWQE/games/nIwpbBsTqVta4IXzWc1jxgKVX4dPnNzO9nOKu4GK.avif\x22\x20alt=\x22Sweet\x20Bonanza\x201000\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<p>Sweet\x20Bonanza\x201000</p>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</a>\x0a\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<a\x20href=\x22/en/casino/games/pragmaticplay-big-bass-hold-spinner-megaways\x22\x20class=\x22game-item\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<img\x20src=\x22https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/vnnjkadsfjADGSGKSDKFWQE/games/uygXx82uD3oiUy86HOPuu4GsuTeNJCPgRgZG24TX.avif\x22\x20alt=\x22Big\x20Bass\x20Hold\x20&\x20Spinners\x20Megaways\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<p>Big\x20Bass\x20Hold\x20&\x20Spinners\x20Megaways</p>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</a>\x0a\x20\x20\x20\x20\x20\x20<!--\x20Duplicated\x20games\x20with\x20links\x20-->\x0a\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20<a\x20href=\x22/en/casino/games/pragmaticplay-zeus-vs-hades-gods-of-war\x22\x20class=\x22game-item\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<img\x20src=\x22https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/vnnjkadsfjADGSGKSDKFWQE/games/9U9cVku8AkxfX28glr2ecCFaM8B1TaqJORdGWatq.avif\x22\x20alt=\x22Zeus\x20vs\x20Hades\x20Gods\x20of\x20War\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<p>Zeus\x20vs\x20Hades\x20Gods\x20of\x20War</p>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</a>\x0a\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<a\x20href=\x22/en/casino/games/pragmaticplay-wild-west-gold\x22\x20class=\x22game-item\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<img\x20src=\x22https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/vnnjkadsfjADGSGKSDKFWQE/games/1dpsT7tnCkM7cjbtUCikCdnFdJ4Qlh99pY3BpzXz.avif\x22\x20alt=\x22Wild\x20West\x20Gold\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<p>Wild\x20West\x20Gold</p>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</a>\x0a\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<a\x20href=\x22/en/casino/games/pragmaticplay-buffalo-king\x22\x20class=\x22game-item\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<img\x20src=\x22https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/vnnjkadsfjADGSGKSDKFWQE/games/rHhgFaBGHxn71tJXVAOPQKYaTkiQxlXFb315yBDZ.avif\x22\x20alt=\x22Buffalo\x20King\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<p>Buffalo\x20King</p>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</a>\x0a\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<a\x20href=\x22/en/casino/games/pragmaticplay-fruit-party\x22\x20class=\x22game-item\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<img\x20src=\x22https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/vnnjkadsfjADGSGKSDKFWQE/games/Xf04XdDGKxBPh3VZMbc3gm1iK6FnzF3I9F3aATq1.avif\x22\x20alt=\x22Fruit\x20Party\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<p>Fruit\x20Party</p>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</a>\x0a\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<a\x20href=\x22/en/casino/games/pragmaticplay-the-dog-house-dog-or-alive\x22\x20class=\x22game-item\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<img\x20src=\x22https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/vnnjkadsfjADGSGKSDKFWQE/games/IXIbm2lJsiOJpfiQ34a4Xjtklsei1ZTbrwKKZhPl.avif\x22\x20alt=\x22The\x20Dog\x20House\x20Dog\x20or\x20Alive\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<p>The\x20Dog\x20House\x20Dog\x20or\x20Alive</p>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</a>\x0a\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<a\x20href=\x22/en/casino/games/pragmaticplay-starlight-princess\x22\x20class=\x22game-item\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<img\x20src=\x22https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/vnnjkadsfjADGSGKSDKFWQE/games/G5xNO6W86jGBlHaHCL06o1sr5j1H6cySJvdSSRrA.avif\x22\x20alt=\x22Starlight\x20Princess\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<p>Starlight\x20Princess</p>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</a>\x0a\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<a\x20href=\x22/en/casino/games/pragmaticplay-the-dog-house-multihold\x22\x20class=\x22game-item\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<img\x20src=\x22https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/vnnjkadsfjADGSGKSDKFWQE/games/Do8FlFiEPlyzErc9dy2Jqu7lhqX8XaL7AOawkqKh.avif\x22\x20alt=\x22The\x20Dog\x20House\x20Multihold\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<p>The\x20Dog\x20House\x20Multihold</p>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</a>\x0a\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<a\x20href=\x22/en/casino/games/pragmaticplay-sugar-rush-1000\x22\x20class=\x22game-item\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<img\x20src=\x22https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/vnnjkadsfjADGSGKSDKFWQE/games/jNoaroKVGDwdRDelCNlu70ADVbyAvMw1qCpJrhP9.avif\x22\x20alt=\x22Sugar\x20Rush\x201000\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<p>Sugar\x20Rush\x201000</p>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</a>\x0a\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<a\x20href=\x22/en/casino/games/pragmaticplay-gates-of-olympos-1000\x22\x20class=\x22game-item\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<img\x20src=\x22https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/vnnjkadsfjADGSGKSDKFWQE/games/jpygjMVafhuLu4QEnILFs3oBE6wX7bD2ygoADiI9.avif\x22\x20alt=\x22Gates\x20of\x20Olympos\x201000\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<p>Gates\x20of\x20Olympos\x201000</p>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</a>\x0a\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<a\x20href=\x22/en/casino/games/pragmaticplay-sweet-bonanza-1000\x22\x20class=\x22game-item\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<img\x20src=\x22https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/vnnjkadsfjADGSGKSDKFWQE/games/nIwpbBsTqVta4IXzWc1jxgKVX4dPnNzO9nOKu4GK.avif\x22\x20alt=\x22Sweet\x20Bonanza\x201000\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<p>Sweet\x20Bonanza\x201000</p>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</a>\x0a\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<a\x20href=\x22/en/casino/games/pragmaticplay-big-bass-hold-spinner-megaways\x22\x20class=\x22game-item\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<img\x20src=\x22https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/vnnjkadsfjADGSGKSDKFWQE/games/uygXx82uD3oiUy86HOPuu4GsuTeNJCPgRgZG24TX.avif\x22\x20alt=\x22Big\x20Bass\x20Hold\x20&\x20Spinners\x20Megaways\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<p>Big\x20Bass\x20Hold\x20&\x20Spinners\x20Megaways</p>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</a>\x0a\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20</div>\x0a</section>\x0a\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<!--\x20Winners\x20Section\x20with\x20Dynamic\x20Animation\x20-->\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<section\x20class=\x22winners-section\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<h2\x20class=\x22section-title\x22>Recent\x20Big\x20Wins</h2>\x0a\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22win-container\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22win-list\x22\x20id=\x22win-list\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<!--\x20Kazananlar\x20buraya\x20dinamik\x20olarak\x20eklenecek\x20-->\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</section>\x0a\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<!--\x20Jackpot\x20Section\x20-->\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<section\x20class=\x22jackpot-section\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<h2\x20class=\x22section-title\x22>Active\x20Jackpots</h2>\x0a\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22jackpot-container\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<!--\x20Mega\x20Jackpot\x20-->\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22jackpot-card\x20mega-jackpot\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22jackpot-title\x22>🎰\x20Mega\x20Jackpot</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22jackpot-amount\x22\x20id=\x22mega-jackpot\x22>₺2.847.592</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22jackpot-description\x22>\x0a\x09\x09\x09\x09A\x20massive\x20jackpot\x20accumulated\x20from\x20all\x20games!\x20It\x20grows\x20with\x20every\x20bet.\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<!--\x20Mini\x20Jackpots\x20-->\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22jackpot-card\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22jackpot-title\x22>🏆\x20Major\x20Jackpot</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22jackpot-amount\x22\x20id=\x22major-jackpot\x22>₺456.789</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22jackpot-description\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20Big\x20winning\x20opportunity!\x20Try\x20your\x20luck.\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22jackpot-card\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22jackpot-title\x22>💎\x20Minor\x20Jackpot</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22jackpot-amount\x22\x20id=\x22minor-jackpot\x22>₺89.234</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22jackpot-description\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20The\x20perfect\x20choice\x20for\x20instant\x20wins\x20–\x20fast,\x20fun,\x20and\x20rewarding!\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22jackpot-card\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22jackpot-title\x22>⚡\x20Mini\x20Jackpot</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22jackpot-amount\x22\x20id=\x22mini-jackpot\x22>₺12.567</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22jackpot-description\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20The\x20frequently\x20hitting\x20mini\x20jackpot!\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</section>\x0a\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<!--\x20Game\x20Providers\x20Section\x20-->\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<section\x20class=\x22providers-section\x22>\x0a\x20\x20\x20\x20<h2\x20class=\x22section-title\x22>🎮\x20Game\x20Providers</h2>\x0a\x20\x20\x20\x20<div\x20class=\x22providers-container\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22providers-track\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<!--\x2015\x20seçilmiş\x20sağlayıcı\x20-->\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<a\x20href=\x22/en/providers/pragmatic-play\x22\x20class=\x22provider-card\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22provider-logo\x22>PG</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22provider-name\x22>Pragmatic\x20Play</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22provider-games\x22>150+\x20Game</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</a>\x0a\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<a\x20href=\x22/en/providers/evolution\x22\x20class=\x22provider-card\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22provider-logo\x22>EV</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22provider-name\x22>Evolution</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22provider-games\x22>100+\x20Game</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</a>\x0a\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<a\x20href=\x22/en/providers/netent\x22\x20class=\x22provider-card\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22provider-logo\x22>NT</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22provider-name\x22>NetEnt</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22provider-games\x22>130+\x20Game</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</a>\x0a\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<a\x20href=\x22/en/providers/egt\x22\x20class=\x22provider-card\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22provider-logo\x22>EG</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22provider-name\x22>EGT</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22provider-games\x22>90+\x20Game</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</a>\x0a\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<a\x20href=\x22/en/providers/quickspin\x22\x20class=\x22provider-card\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22provider-logo\x22>QS</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22provider-name\x22>Quickspin</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22provider-games\x22>70+\x20Game</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</a>\x0a\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<a\x20href=\x22/en/providers/red-tiger\x22\x20class=\x22provider-card\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22provider-logo\x22>RT</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22provider-name\x22>Red\x20Tiger</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22provider-games\x22>80+\x20Game</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</a>\x0a\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<a\x20href=\x22/en/providers/yggdrasil\x22\x20class=\x22provider-card\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22provider-logo\x22>YG</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22provider-name\x22>Yggdrasil</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22provider-games\x22>60+\x20Game</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</a>\x0a\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<a\x20href=\x22/en/providers/playtech\x22\x20class=\x22provider-card\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22provider-logo\x22>PT</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22provider-name\x22>PlayTech</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22provider-games\x22>110+\x20Game</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</a>\x0a\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<a\x20href=\x22/en/providers/thunderkick\x22\x20class=\x22provider-card\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22provider-logo\x22>TK</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22provider-name\x22>Thunderkick</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22provider-games\x22>50+\x20Game</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</a>\x0a\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<a\x20href=\x22/en/providers/booming-games\x22\x20class=\x22provider-card\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22provider-logo\x22>BG</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22provider-name\x22>Booming\x20Games</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22provider-games\x22>120+\x20Game</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</a>\x0a\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<a\x20href=\x22/en/providers/microgaming\x22\x20class=\x22provider-card\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22provider-logo\x22>MG</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22provider-name\x22>Microgaming</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22provider-games\x22>140+\x20Game</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</a>\x0a\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<a\x20href=\x22/en/providers/spadegaming\x22\x20class=\x22provider-card\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22provider-logo\x22>SG</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22provider-name\x22>Spadegaming</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22provider-games\x22>100+\x20Game</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</a>\x0a\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<a\x20href=\x22/en/providers/slotmill\x22\x20class=\x22provider-card\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22provider-logo\x22>SM</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22provider-name\x22>Slotmill</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22provider-games\x22>60+\x20Game</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</a>\x0a\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<a\x20href=\x22/en/providers/fugaso\x22\x20class=\x22provider-card\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22provider-logo\x22>FG</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22provider-name\x22>Fugaso</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22provider-games\x22>90+\x20Game</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</a>\x0a\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<a\x20href=\x22/en/providers/platipus\x22\x20class=\x22provider-card\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22provider-logo\x22>PL</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22provider-name\x22>Platipus</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22provider-games\x22>80+\x20Game</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</a>\x0a\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<!--\x20Duplicate\x20for\x20seamless\x20scroll\x20-->\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<a\x20href=\x22/en/providers/pragmatic-play\x22\x20class=\x22provider-card\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22provider-logo\x22>PG</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22provider-name\x22>Pragmatic\x20Play</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22provider-games\x22>150+\x20Game</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</a>\x0a\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<a\x20href=\x22/en/providers/evolution\x22\x20class=\x22provider-card\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22provider-logo\x22>EV</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22provider-name\x22>Evolution</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22provider-games\x22>100+\x20Game</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</a>\x0a\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<a\x20href=\x22/en/providers/netent\x22\x20class=\x22provider-card\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22provider-logo\x22>NT</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22provider-name\x22>NetEnt</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22provider-games\x22>130+\x20Game</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</a>\x0a\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<a\x20href=\x22/en/providers/egt\x22\x20class=\x22provider-card\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22provider-logo\x22>EG</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22provider-name\x22>EGT</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22provider-games\x22>90+\x20Game</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</a>\x0a\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<a\x20href=\x22/en/providers/quickspin\x22\x20class=\x22provider-card\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22provider-logo\x22>QS</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22provider-name\x22>Quickspin</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22provider-games\x22>70+\x20Game</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</a>\x0a\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<a\x20href=\x22/en/providers/red-tiger\x22\x20class=\x22provider-card\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22provider-logo\x22>RT</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22provider-name\x22>Red\x20Tiger</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22provider-games\x22>80+\x20Game</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</a>\x0a\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<a\x20href=\x22/en/providers/yggdrasil\x22\x20class=\x22provider-card\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22provider-logo\x22>YG</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22provider-name\x22>Yggdrasil</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22provider-games\x22>60+\x20Game</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</a>\x0a\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<a\x20href=\x22/en/providers/playtech\x22\x20class=\x22provider-card\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22provider-logo\x22>PT</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22provider-name\x22>PlayTech</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22provider-games\x22>110+\x20Game</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</a>\x0a\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<a\x20href=\x22/en/providers/thunderkick\x22\x20class=\x22provider-card\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22provider-logo\x22>TK</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22provider-name\x22>Thunderkick</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22provider-games\x22>50+\x20Game</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</a>\x0a\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<a\x20href=\x22/en/providers/booming-games\x22\x20class=\x22provider-card\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22provider-logo\x22>BG</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22provider-name\x22>Booming\x20Games</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22provider-games\x22>120+\x20Game</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</a>\x0a\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<a\x20href=\x22/en/providers/microgaming\x22\x20class=\x22provider-card\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22provider-logo\x22>MG</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22provider-name\x22>Microgaming</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22provider-games\x22>140+\x20Game</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</a>\x0a\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<a\x20href=\x22/en/providers/spadegaming\x22\x20class=\x22provider-card\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22provider-logo\x22>SG</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22provider-name\x22>Spadegaming</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22provider-games\x22>100+\x20Game</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</a>\x0a\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<a\x20href=\x22/en/providers/slotmill\x22\x20class=\x22provider-card\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22provider-logo\x22>SM</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22provider-name\x22>Slotmill</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22provider-games\x22>60+\x20Game</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</a>\x0a\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<a\x20href=\x22/en/providers/fugaso\x22\x20class=\x22provider-card\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22provider-logo\x22>FG</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22provider-name\x22>Fugaso</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22provider-games\x22>90+\x20Game</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</a>\x0a\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<a\x20href=\x22/en/providers/platipus\x22\x20class=\x22provider-card\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22provider-logo\x22>PL</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22provider-name\x22>Platipus</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22provider-games\x22>80+\x20Game</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</a>\x0a\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20</div>\x0a</section>\x0a\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20','</strong>.</p>\x0a<p>Congratulations\x20and\x20good\x20luck!</p>\x0a\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20','col-12','/en/providers/truelab','/en/providers/pragmaticplay','includes','25px','\x20logo\x22\x20class=\x22league-logo\x22>\x0a\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20<div\x20class=\x22league-card-content\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22league-country-container\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<img\x20src=\x22https://hatscripts.github.io/circle-flags/flags/','https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/imageinelive.svg','0\x200\x2012px\x200','\x20temizlendi.','section-wrapper','/en/providers/imagine-live','href','/en/providers/1x2gaming','load','Raw\x20Games','main-slider','0\x200\x20calc(33%\x20-\x2010px)','Aviator','Show\x20Details','/en/providers/mrslotty','Unlock\x20exclusive\x20benefits\x20and\x20receive\x20instantly\x20withdrawable\x20bonuses\x20without\x20any\x20strings\x20attached.','https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/beterlive.svg','OnlyPlay','https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/booming.svg','/en/providers/betradarvs','ABCÇDEFGHIİJKLMNOÖPRSŞTÜVYZ','Turbo\x20Games','.vip','8530170HNYJSm','https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/betsoft.svg','column','/en/providers/ygrgames','https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/belatra.svg','©\x20CEDABET.COM,\x20','/en/providers/bgaming','appendChild','/en/providers/mascotgaming','https://hebbkx1anhila5yf.public.blob.vercel-storage.com/platinum.jpg-epz0rV2QG1ZG1nNSsYPyILFSMSWaqr.jpeg','floor','Spadegaming','CEDABET\x20Exclusive','/en/providers/luckystreak','https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/Betradar%20Virtual%20sports.svg','https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/1x2gaming.svg','transparent','Buy\x20Bonus','Endorphina','Habanero','Bonanza','Slotmill','/en/providers/amatic','Keno','alt','3827268EwaOtX','https://hebbkx1anhila5yf.public.blob.vercel-storage.com/diamond.jpg-tA22xTawtLy1kEzYS2ZV62u0t0Ifcc.jpeg','https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/mancala.svg','minor-jackpot','https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/Peter%20And%20Sons.svg','/en/providers/thunderkick','now','/en/providers/beterlive','Fugaso','Evolution','Beter.Live','tr-TR','https://hebbkx1anhila5yf.public.blob.vercel-storage.com/nonvip.jpg-OkEYbdiUYPy8WPuZHfhDJ64dgloVMX.jpeg','.container','1spin4win','position','className','animationDuration','major-jackpot','Limbo','.row','logo','loading','PlayTech','mini-games-style','Serie\x20A','/en/providers/evolution','#219fe3','https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/Pocket%20Games%20Soft.svg'];_0x256d=function(){return _0xc61e34;};return _0x256d();}function insertCedaTVButton(){const _0x105051=_0x3eb413,_0x315cf4=document[_0x105051(0x20d)](_0x105051(0x1cc));if(!_0x315cf4)return;if(!document['getElementById'](_0x105051(0x1f8))){const _0x4ce2b5=document['createElement']('a');_0x4ce2b5['id']='partnership-button',_0x4ce2b5[_0x105051(0x182)]=_0x105051(0xc3),_0x4ce2b5[_0x105051(0x1bc)]=_0x105051(0x258);const _0x3d407a=document[_0x105051(0x8b)]('i');_0x3d407a[_0x105051(0x1bc)]=_0x105051(0xc0);const _0x109363=document[_0x105051(0x233)](_0x105051(0xa6));_0x4ce2b5['appendChild'](_0x3d407a),_0x4ce2b5[_0x105051(0x19a)](_0x109363),_0x315cf4[_0x105051(0xf3)](_0x4ce2b5,_0x315cf4[_0x105051(0x271)]);}if(!document[_0x105051(0x84)]('ceda-tv-button')){const _0x24f807=document[_0x105051(0x8b)]('a');_0x24f807['id']=_0x105051(0xef),_0x24f807[_0x105051(0x182)]=_0x105051(0x23f),_0x24f807[_0x105051(0x25d)]='_blank',_0x24f807[_0x105051(0x1bc)]='header-custom-button\x20custom\x20d-flex\x20px-3\x20align-items-center\x20text-white';const _0x46be78=document[_0x105051(0x8b)]('i');_0x46be78[_0x105051(0x1bc)]=_0x105051(0x14a);const _0x4c4bb2=document[_0x105051(0x233)](_0x105051(0x208));_0x24f807['appendChild'](_0x46be78),_0x24f807[_0x105051(0x19a)](_0x4c4bb2);const _0x4eb803=document[_0x105051(0x84)](_0x105051(0x1f8));_0x4eb803&&_0x4eb803[_0x105051(0x11c)]?_0x315cf4[_0x105051(0xf3)](_0x24f807,_0x4eb803[_0x105051(0x11c)]):_0x315cf4[_0x105051(0x19a)](_0x24f807);}}function createVipExperience(){const _0x1f35ae=_0x3eb413,_0xef9517=document['querySelector'](_0x1f35ae(0x192));if(document[_0x1f35ae(0x20d)](_0x1f35ae(0x14c))){console[_0x1f35ae(0x253)]('VIP\x20container\x20already\x20exists.\x20Skipping\x20creation.');return;}_0xef9517['innerHTML']='';const _0x55a7ec=document['createElement'](_0x1f35ae(0x9b));_0x55a7ec['id']='vip-container',_0x55a7ec[_0x1f35ae(0x204)][_0x1f35ae(0xf9)]=_0x1f35ae(0x72),_0x55a7ec['style'][_0x1f35ae(0x225)]=_0x1f35ae(0x16a),_0x55a7ec[_0x1f35ae(0x204)][_0x1f35ae(0x8a)]=_0x1f35ae(0x16b),_0x55a7ec['style']['position']=_0x1f35ae(0x134),_0x55a7ec[_0x1f35ae(0x204)][_0x1f35ae(0x80)]='8px',_0x55a7ec['style'][_0x1f35ae(0x1d2)]=_0x1f35ae(0x26e),_0xef9517[_0x1f35ae(0x19a)](_0x55a7ec);function _0x60a146(){const _0x6c068c=_0x1f35ae;return _0x55a7ec[_0x6c068c(0x6b)];}const _0x2506b3=document[_0x1f35ae(0x8b)]('div');_0x2506b3[_0x1f35ae(0x204)][_0x1f35ae(0x1bb)]='absolute',_0x2506b3['style'][_0x1f35ae(0x1f7)]='0',_0x2506b3[_0x1f35ae(0x204)][_0x1f35ae(0x100)]='0',_0x2506b3[_0x1f35ae(0x204)][_0x1f35ae(0xd7)]=_0x1f35ae(0x239),_0x2506b3[_0x1f35ae(0x204)]['transform']=_0x1f35ae(0x275),_0x2506b3['style'][_0x1f35ae(0x25a)]='10',_0x2506b3[_0x1f35ae(0x204)][_0x1f35ae(0x26a)]=_0x1f35ae(0x95);const _0x5b0cf6=document['createElement']('h1');_0x5b0cf6[_0x1f35ae(0x204)]['color']=_0x1f35ae(0xdb),_0x5b0cf6['style']['fontSize']='42px',_0x5b0cf6[_0x1f35ae(0x204)][_0x1f35ae(0xde)]=_0x1f35ae(0x14d),_0x5b0cf6[_0x1f35ae(0x204)][_0x1f35ae(0xa7)]=_0x1f35ae(0x1fd),_0x5b0cf6[_0x1f35ae(0x204)][_0x1f35ae(0x135)]=_0x1f35ae(0x17e),_0x5b0cf6[_0x1f35ae(0x204)]['letterSpacing']='1.5px',_0x5b0cf6[_0x1f35ae(0x204)][_0x1f35ae(0xee)]=_0x1f35ae(0x74),_0x5b0cf6[_0x1f35ae(0x204)]['background']=_0x1f35ae(0x10f),_0x5b0cf6[_0x1f35ae(0x204)][_0x1f35ae(0x67)]=_0x1f35ae(0x1df),_0x5b0cf6[_0x1f35ae(0x204)][_0x1f35ae(0xc8)]=_0x1f35ae(0x1a3),_0x5b0cf6[_0x1f35ae(0x204)][_0x1f35ae(0x79)]=_0x1f35ae(0xb8),_0x5b0cf6[_0x1f35ae(0x204)][_0x1f35ae(0x246)]=_0x1f35ae(0x87),_0x5b0cf6[_0x1f35ae(0x11f)]=_0x1f35ae(0x1f9);const _0x2a18f7=document[_0x1f35ae(0x8b)]('p');_0x2a18f7['style'][_0x1f35ae(0x230)]='#e6e6e6',_0x2a18f7[_0x1f35ae(0x204)][_0x1f35ae(0x1d3)]='17px',_0x2a18f7[_0x1f35ae(0x204)][_0x1f35ae(0xde)]=_0x1f35ae(0xa1),_0x2a18f7[_0x1f35ae(0x204)][_0x1f35ae(0xa7)]=_0x1f35ae(0xfa),_0x2a18f7[_0x1f35ae(0x204)]['maxWidth']='650px',_0x2a18f7[_0x1f35ae(0x204)][_0x1f35ae(0x135)]=_0x1f35ae(0x20a),_0x2a18f7[_0x1f35ae(0x204)][_0x1f35ae(0x1e8)]=_0x1f35ae(0x160),_0x2a18f7[_0x1f35ae(0x204)]['letterSpacing']=_0x1f35ae(0x223),_0x2a18f7[_0x1f35ae(0x204)][_0x1f35ae(0x246)]=_0x1f35ae(0x22a),_0x2a18f7[_0x1f35ae(0x11f)]=_0x1f35ae(0x18b),_0x2506b3[_0x1f35ae(0x19a)](_0x5b0cf6),_0x2506b3['appendChild'](_0x2a18f7),_0x55a7ec[_0x1f35ae(0x19a)](_0x2506b3);const _0x4c70fa=document['createElement'](_0x1f35ae(0xda));_0x4c70fa[_0x1f35ae(0x124)]=_0x1f35ae(0x26f),_0x4c70fa[_0x1f35ae(0x182)]=_0x1f35ae(0x7b),document[_0x1f35ae(0x162)][_0x1f35ae(0x19a)](_0x4c70fa);const _0x3a5b8f=[{'src':_0x1f35ae(0x1b8),'class':_0x1f35ae(0x116),'position':_0x1f35ae(0xd7)},{'src':_0x1f35ae(0x11a),'class':'vip-bronze-icon','position':_0x1f35ae(0xd7)},{'src':_0x1f35ae(0x214),'class':_0x1f35ae(0x20b),'position':_0x1f35ae(0xd7)},{'src':_0x1f35ae(0xff),'class':_0x1f35ae(0xb0),'position':_0x1f35ae(0xd7)},{'src':_0x1f35ae(0x19c),'class':_0x1f35ae(0x1f5),'position':_0x1f35ae(0x1f3)},{'src':_0x1f35ae(0x1ad),'class':_0x1f35ae(0xd1),'position':_0x1f35ae(0x1f3)},{'src':_0x1f35ae(0x173),'class':_0x1f35ae(0x97),'position':'bottom'}],_0x2871d1=0x64,_0x188240=_0x3a5b8f['filter'](_0xde926a=>_0xde926a[_0x1f35ae(0x1bb)]==='top'),_0x2f495a=_0x3a5b8f[_0x1f35ae(0xd8)](_0x2f8359=>_0x2f8359[_0x1f35ae(0x1bb)]===_0x1f35ae(0x1f3));function _0x5826ec(_0x472fe4,_0x1dac4b){const _0x14d702=_0x1f35ae,_0x295d15=_0x60a146(),_0x3a725f=_0x472fe4[_0x14d702(0x259)]*_0x2871d1,_0x176b96=(_0x295d15-_0x3a725f)/(_0x472fe4[_0x14d702(0x259)]+0x1);_0x472fe4[_0x14d702(0x127)]((_0x3db1e1,_0x5dfe75)=>{const _0x572d12=_0x14d702,_0x2146d2=document[_0x572d12(0x8b)]('div'),_0x415b31=_0x176b96+_0x5dfe75*(_0x2871d1+_0x176b96),_0xd5a065=_0x415b31/_0x295d15*0x64;_0x2146d2[_0x572d12(0x204)][_0x572d12(0x1bb)]=_0x572d12(0xce),_0x2146d2['style'][_0x572d12(0x225)]='100px',_0x2146d2[_0x572d12(0x204)][_0x572d12(0x8a)]=_0x572d12(0x1ed),_0x2146d2['style'][_0x572d12(0x80)]=_0x572d12(0x16a),_0x2146d2[_0x572d12(0x204)][_0x572d12(0xe6)]=_0x572d12(0x89),_0x2146d2[_0x572d12(0x204)][_0x572d12(0x1d2)]=_0x572d12(0x26e),_0x2146d2[_0x572d12(0x204)]['zIndex']='1',_0x2146d2[_0x572d12(0x204)][_0x572d12(0x1e3)]='transform\x200.3s\x20ease',_0x2146d2[_0x572d12(0x204)][_0x572d12(0x1f7)]=_0xd5a065+'%',_0x2146d2[_0x572d12(0x204)][_0x1dac4b?_0x572d12(0xd7):_0x572d12(0x1f3)]=_0x572d12(0x17b),_0x2146d2[_0x572d12(0x1bc)]=_0x3db1e1['class'];const _0x10d00d=document[_0x572d12(0x8b)](_0x572d12(0x1dd));_0x10d00d[_0x572d12(0x168)]=_0x3db1e1[_0x572d12(0x168)],_0x10d00d[_0x572d12(0x1ab)]=_0x572d12(0x163)+_0x3db1e1[_0x572d12(0x21d)],_0x10d00d[_0x572d12(0x204)][_0x572d12(0x225)]=_0x572d12(0x16a),_0x10d00d['style'][_0x572d12(0x8a)]='100%',_0x10d00d[_0x572d12(0x204)][_0x572d12(0x224)]=_0x572d12(0x202),_0x10d00d[_0x572d12(0x204)][_0x572d12(0x80)]='100%',_0x10d00d['style'][_0x572d12(0x243)]='0.7',_0x2146d2['appendChild'](_0x10d00d),_0x55a7ec[_0x572d12(0x19a)](_0x2146d2),_0x203637(_0x2146d2,_0x5dfe75,_0x1dac4b?_0x572d12(0xd7):_0x572d12(0x1f3));});}_0x5826ec(_0x188240,!![]),_0x5826ec(_0x2f495a,![]);function _0x203637(_0x442690,_0x47e5fb,_0x2abd1d){const _0x1bd4cb=_0x1f35ae;_0x442690[_0x1bd4cb(0x204)][_0x1bd4cb(0xae)]=_0x1bd4cb(0xb4)+_0x47e5fb*0x1+'s\x20infinite';const _0x1c28fb=document[_0x1bd4cb(0x8b)](_0x1bd4cb(0x204));_0x1c28fb[_0x1bd4cb(0x11f)]=_0x1bd4cb(0x157),document['head'][_0x1bd4cb(0x19a)](_0x1c28fb);}document[_0x1f35ae(0x1d7)](_0x1f35ae(0x149))[_0x1f35ae(0x127)](_0x3365ff=>{const _0x298269=_0x1f35ae;_0x3365ff['addEventListener']('mouseover',function(){const _0x210ea2=_0x2901;this['style'][_0x210ea2(0xca)]=_0x210ea2(0x82),this[_0x210ea2(0x204)][_0x210ea2(0x25a)]='5',this[_0x210ea2(0x20d)]('img')[_0x210ea2(0x204)]['opacity']=_0x210ea2(0x1fa);}),_0x3365ff[_0x298269(0x1d6)](_0x298269(0xe8),function(){const _0x49bb42=_0x298269;this[_0x49bb42(0x204)][_0x49bb42(0xca)]='',this[_0x49bb42(0x204)][_0x49bb42(0x25a)]='1',this['querySelector'](_0x49bb42(0x1dd))['style'][_0x49bb42(0x243)]='0.7';});}),window[_0x1f35ae(0x1d6)](_0x1f35ae(0x24b),function(){clearAstronauts(),_0x5826ec(_0x188240,!![]),_0x5826ec(_0x2f495a,![]);});}function _0x2901(_0x677e04,_0x42fccf){const _0x256dcc=_0x256d();return _0x2901=function(_0x2901d4,_0x594437){_0x2901d4=_0x2901d4-0x66;let _0x12d5d4=_0x256dcc[_0x2901d4];return _0x12d5d4;},_0x2901(_0x677e04,_0x42fccf);}function clearAstronauts(){const _0x2e4fb0=_0x3eb413,_0x329c5d=document[_0x2e4fb0(0x1d7)]('#vip-container\x20.vip-nonvip-icon,\x20#vip-container\x20.vip-bronze-icon,\x20#vip-container\x20.vip-silver-icon,\x20#vip-container\x20.vip-gold-icon,\x20#vip-container\x20.vip-platinum-icon,\x20#vip-container\x20.vip-diamond-icon,\x20#vip-container\x20.vip-ceda-icon');_0x329c5d['forEach'](_0xab133c=>_0xab133c[_0x2e4fb0(0x254)]());}function clearDynamicContent(){const _0x36ce5f=_0x3eb413,_0x1d355d=['mini-games-wrapper-2',_0x36ce5f(0x121),_0x36ce5f(0x8d),_0x36ce5f(0x264)],_0x3ebd4e=['big-wins-style'];_0x1d355d[_0x36ce5f(0x127)](_0x484612=>{const _0x1f9b4d=_0x36ce5f,_0x44e35a=document[_0x1f9b4d(0x84)](_0x484612);_0x44e35a&&(_0x44e35a[_0x1f9b4d(0x254)](),console[_0x1f9b4d(0x253)](_0x484612+_0x1f9b4d(0x17f)));}),_0x3ebd4e[_0x36ce5f(0x127)](_0x4da37a=>{const _0xfa7ab8=_0x36ce5f,_0x3e1e5a=document[_0xfa7ab8(0x84)](_0x4da37a);_0x3e1e5a&&(_0x3e1e5a[_0xfa7ab8(0x254)](),console[_0xfa7ab8(0x253)](_0x4da37a+_0xfa7ab8(0xa4)));});}function LandingPage(){const _0x8d8807=_0x3eb413,_0x5f1f09=document[_0x8d8807(0x20d)](_0x8d8807(0xd2));if(_0x5f1f09)_0x5f1f09[_0x8d8807(0x254)]();const _0x3f386b=document[_0x8d8807(0x20d)](_0x8d8807(0x1d5));if(!_0x3f386b)console[_0x8d8807(0x1ec)](_0x8d8807(0x22b));else{if(!document[_0x8d8807(0x84)](_0x8d8807(0xd9))){const _0x462838=document[_0x8d8807(0x8b)](_0x8d8807(0x204));_0x462838['id']=_0x8d8807(0xd9),_0x462838[_0x8d8807(0x11f)]=_0x8d8807(0x98),document[_0x8d8807(0x162)][_0x8d8807(0x19a)](_0x462838);}const _0x470bb0=document[_0x8d8807(0x8b)]('div');_0x470bb0[_0x8d8807(0x283)][_0x8d8807(0x1da)](_0x8d8807(0x10e),'custom-section'),_0x470bb0['id']='custom-section-landing',_0x470bb0[_0x8d8807(0x10a)]=_0x8d8807(0x175),_0x3f386b[_0x8d8807(0x273)](_0x470bb0);}const _0x2e19da=document[_0x8d8807(0x84)]('win-list'),_0x1cf184=_0x8d8807(0x190),_0x4f0236=['Sweet\x20Bonanza',_0x8d8807(0x1ff),_0x8d8807(0xe0),_0x8d8807(0x7d),_0x8d8807(0x111),'Immortal\x20Romance',_0x8d8807(0x128),_0x8d8807(0x260),_0x8d8807(0x1a7),'Fruit\x20Party',_0x8d8807(0x20f),_0x8d8807(0x16e),'Razor\x20Shark','Big\x20Bass\x20Bonanza',_0x8d8807(0x209)];let _0x20206e=0x0;const _0xced9b6='cedabet_jackpots',_0x2b4dec='cedabet_jackpots_timestamp',_0x404237={'mega':0x2b7368,'major':0x6f855,'minor':0x15c92,'mini':0x3117};function _0x2019db(){const _0x2d59e4=_0x8d8807;try{const _0x2df093=localStorage[_0x2d59e4(0x13e)](_0xced9b6),_0x58294c=localStorage[_0x2d59e4(0x13e)](_0x2b4dec);if(_0x2df093&&_0x58294c){const _0x42ea1f=JSON['parse'](_0x2df093),_0x47c628=parseInt(_0x58294c),_0x499c3d=Date[_0x2d59e4(0x1b2)](),_0x2dd541=Math[_0x2d59e4(0x19d)]((_0x499c3d-_0x47c628)/0x3e8);return _0x2dd541>0x0&&_0x2dd541<0x15180&&(_0x42ea1f[_0x2d59e4(0xe7)]+=Math['floor'](_0x2dd541*(Math['random']()*0x11+0xa)),_0x42ea1f[_0x2d59e4(0xcd)]+=Math['floor'](_0x2dd541*(Math[_0x2d59e4(0x169)]()*0x6+0x2)),_0x42ea1f[_0x2d59e4(0x25e)]+=Math[_0x2d59e4(0x19d)](_0x2dd541*(Math[_0x2d59e4(0x169)]()*0x3+0x1)),_0x42ea1f[_0x2d59e4(0x144)]+=Math[_0x2d59e4(0x19d)](_0x2dd541*(Math['random']()*1.7+0.3))),_0x42ea1f;}}catch(_0x49adba){console[_0x2d59e4(0x253)](_0x2d59e4(0x24e),_0x49adba);}return{..._0x404237};}function _0x230964(_0x128d7b){const _0x52e6f9=_0x8d8807;try{localStorage[_0x52e6f9(0x76)](_0xced9b6,JSON[_0x52e6f9(0xc5)](_0x128d7b)),localStorage[_0x52e6f9(0x76)](_0x2b4dec,Date[_0x52e6f9(0x1b2)]()[_0x52e6f9(0x1d4)]());}catch(_0x52ac98){console[_0x52e6f9(0x253)](_0x52e6f9(0x272),_0x52ac98);}}let _0x2c3ca8=_0x2019db();function _0xcc124(){const _0x3e332c=_0x8d8807;document['getElementById'](_0x3e332c(0x247))[_0x3e332c(0x11f)]='₺'+_0x2c3ca8[_0x3e332c(0xe7)][_0x3e332c(0x245)](_0x3e332c(0x1b7)),document[_0x3e332c(0x84)](_0x3e332c(0x1be))[_0x3e332c(0x11f)]='₺'+_0x2c3ca8[_0x3e332c(0xcd)][_0x3e332c(0x245)]('tr-TR'),document['getElementById'](_0x3e332c(0x1af))[_0x3e332c(0x11f)]='₺'+_0x2c3ca8[_0x3e332c(0x25e)][_0x3e332c(0x245)](_0x3e332c(0x1b7)),document[_0x3e332c(0x84)](_0x3e332c(0xfc))[_0x3e332c(0x11f)]='₺'+_0x2c3ca8[_0x3e332c(0x144)][_0x3e332c(0x245)]('tr-TR');}function _0x166780(){const _0x573108=_0x8d8807,_0x151735=Math[_0x573108(0x19d)](Math[_0x573108(0x169)]()*0x4)+0x3,_0x10da56=Math[_0x573108(0x19d)](Math['random']()*0x5)+0x4;let _0xc7faf5='',_0x3d3045='';for(let _0x3c8cd2=0x0;_0x3c8cd2<_0x151735;_0x3c8cd2++){_0xc7faf5+=_0x1cf184[Math[_0x573108(0x19d)](Math[_0x573108(0x169)]()*_0x1cf184[_0x573108(0x259)])];}for(let _0x431819=0x0;_0x431819<_0x10da56;_0x431819++){_0x3d3045+=_0x1cf184[Math[_0x573108(0x19d)](Math['random']()*_0x1cf184[_0x573108(0x259)])];}const _0x49242e=Math[_0x573108(0x19d)](Math['random']()*0x6)+0x2,_0x358738=Math[_0x573108(0x19d)](Math[_0x573108(0x169)]()*0x7)+0x3;return _0xc7faf5=_0xc7faf5[_0x573108(0xc9)](0x0)['toUpperCase']()+'*'['repeat'](_0x49242e),_0x3d3045=_0x3d3045[_0x573108(0xc9)](0x0)[_0x573108(0x251)]()+'*'[_0x573108(0xa8)](_0x358738),_0xc7faf5+'\x20'+_0x3d3045;}function _0x244e6f(){const _0x3bba95=_0x8d8807,_0x3fc4ac=Math[_0x3bba95(0x169)]();let _0x1c9c5b=0x0;return _0x3fc4ac<0.15?_0x1c9c5b=Math[_0x3bba95(0x19d)](Math[_0x3bba95(0x169)]()*(0xc350-0x2710+0x1))+0x2710:_0x1c9c5b=Math[_0x3bba95(0x19d)](Math[_0x3bba95(0x169)]()*(0x2710-0x190+0x1))+0x190,'₺'+_0x1c9c5b[_0x3bba95(0x245)](_0x3bba95(0x1b7));}function _0x1e1cf7(){const _0xdceaee=_0x8d8807,_0xb90c5b=Math['random']();if(_0xb90c5b<0.3)return Math[_0xdceaee(0x19d)](Math[_0xdceaee(0x169)]()*0x7d0)+0x3e8;else return _0xb90c5b<0.7?Math['floor'](Math[_0xdceaee(0x169)]()*0xbb8)+0x9c4:Math['floor'](Math['random']()*0xfa0)+0xfa0;}function _0x5af8ab(){const _0x32980f=_0x8d8807;_0x2c3ca8['mega']+=Math[_0x32980f(0x19d)](Math['random']()*0x32)+0xa,_0x2c3ca8[_0x32980f(0xcd)]+=Math[_0x32980f(0x19d)](Math[_0x32980f(0x169)]()*0x14)+0x5,_0x2c3ca8['minor']+=Math['floor'](Math[_0x32980f(0x169)]()*0xa)+0x2,_0x2c3ca8[_0x32980f(0x144)]+=Math['floor'](Math[_0x32980f(0x169)]()*0x5)+0x1,_0xcc124(),_0x230964(_0x2c3ca8);}function _0x5bb74d(){const _0x2315f6=_0x8d8807;for(let _0x384a5c=0x0;_0x384a5c<0x4;_0x384a5c++){const _0xb7c898=_0x166780(),_0xac4761=_0x4f0236[Math[_0x2315f6(0x19d)](Math[_0x2315f6(0x169)]()*_0x4f0236[_0x2315f6(0x259)])],_0x5ac820=_0x244e6f(),_0x21abe7=document[_0x2315f6(0x8b)]('div');_0x21abe7[_0x2315f6(0x283)][_0x2315f6(0x1da)]('win-item'),_0x21abe7['innerHTML']='\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<p><strong>Our\x20player\x20'+_0xb7c898+_0x2315f6(0x1ee)+_0x5ac820+'</strong>\x20from\x20the\x20game\x20<strong>'+_0xac4761+_0x2315f6(0x1de),_0x2e19da[_0x2315f6(0x19a)](_0x21abe7),_0x20206e++;}}function _0x114a79(){const _0x4f94f2=_0x8d8807,_0x1df46d=_0x166780(),_0x6c548=_0x4f0236[Math[_0x4f94f2(0x19d)](Math['random']()*_0x4f0236[_0x4f94f2(0x259)])],_0x204838=_0x244e6f(),_0x4fdef9=document[_0x4f94f2(0x8b)]('div');_0x4fdef9['classList'][_0x4f94f2(0x1da)](_0x4f94f2(0x212),_0x4f94f2(0x8f)),_0x4fdef9[_0x4f94f2(0x10a)]=_0x4f94f2(0xf1)+_0x1df46d+_0x4f94f2(0x1ee)+_0x204838+'</strong>\x20from\x20the\x20game\x20<strong>'+_0x6c548+_0x4f94f2(0x176);if(_0x2e19da[_0x4f94f2(0x12e)][_0x4f94f2(0x259)]>=0x8){const _0x199b18=_0x2e19da[_0x4f94f2(0x12e)][0x0];_0x199b18[_0x4f94f2(0x204)][_0x4f94f2(0xae)]=_0x4f94f2(0x23a),setTimeout(()=>{const _0xc5faa5=_0x4f94f2;_0x199b18[_0xc5faa5(0x141)]&&_0x199b18[_0xc5faa5(0x254)]();},0x3e8);}_0x2e19da[_0x4f94f2(0x19a)](_0x4fdef9),_0x20206e++;}function _0xd7c7f2(){_0x5bb74d(),setTimeout(()=>{function _0x794c1a(){setTimeout(()=>{_0x114a79(),_0x794c1a();},_0x1e1cf7());}_0x794c1a();},0xbb8);}function _0xbcbd47(){setInterval(_0x5af8ab,0xbb8);}function _0x2f80ca(){const _0xf08758=_0x8d8807,_0x481643=document[_0xf08758(0x1d7)]('.game-item');_0x481643[_0xf08758(0x127)](_0x3a6b37=>{const _0x405819=_0xf08758,_0x62d592=Math[_0x405819(0x19d)](Math['random']()*0xc9)+0x64,_0x7e5d7b=document[_0x405819(0x8b)]('span');_0x7e5d7b[_0x405819(0x1bc)]=_0x405819(0xd3),_0x7e5d7b[_0x405819(0x11f)]=_0x62d592+'\x20user\x20playing';const _0x46adbd=_0x3a6b37[_0x405819(0x20d)]('.playing-count');_0x46adbd&&_0x46adbd[_0x405819(0x254)](),_0x3a6b37[_0x405819(0x19a)](_0x7e5d7b);});}_0x2f80ca(),_0xcc124(),_0xd7c7f2(),_0xbcbd47(),window[_0x8d8807(0x1d6)](_0x8d8807(0x24f),()=>{_0x230964(_0x2c3ca8);}),setInterval(()=>{_0x230964(_0x2c3ca8);},0x7530);}function addMenuElement(){const _0x413a11=_0x3eb413,_0x1ef552=document[_0x413a11(0x20d)]('.sidebar__nav.sidebar__nav--border');if(!_0x1ef552)return;const _0x1cfc90=[{'id':_0x413a11(0x1e2),'href':_0x413a11(0x158),'text':_0x413a11(0x1d0),'iconClass':_0x413a11(0x244)},{'id':_0x413a11(0x27d),'href':_0x413a11(0x1d1),'text':_0x413a11(0x12a),'iconClass':_0x413a11(0x10c)}];_0x1cfc90[_0x413a11(0x127)](_0x36da84=>{const _0x391c88=_0x413a11;if(document['getElementById'](_0x36da84['id']))return;const _0x5d9b41=document[_0x391c88(0x8b)]('li');_0x5d9b41['id']=_0x36da84['id'];const _0x4e203c=document[_0x391c88(0x8b)]('a');_0x4e203c[_0x391c88(0x182)]=_0x36da84['href'];const _0xa08aa3=document[_0x391c88(0x8b)]('i');_0xa08aa3['className']=_0x36da84[_0x391c88(0x216)],_0xa08aa3[_0x391c88(0x204)][_0x391c88(0x230)]=_0x391c88(0xf4),_0xa08aa3[_0x391c88(0x204)][_0x391c88(0x8a)]=_0x391c88(0x85),_0xa08aa3['style']['width']='22px',_0xa08aa3[_0x391c88(0x204)]['fontSize']='22px';const _0x1df779=document[_0x391c88(0x8b)](_0x391c88(0x119));_0x1df779[_0x391c88(0x11f)]=_0x391c88(0x88),_0x4e203c[_0x391c88(0x19a)](_0xa08aa3),_0x4e203c['appendChild'](document['createTextNode']('\x20'+_0x36da84[_0x391c88(0x1df)])),_0x4e203c['appendChild'](_0x1df779),_0x5d9b41[_0x391c88(0x19a)](_0x4e203c),_0x1ef552['appendChild'](_0x5d9b41);});}function addMenuElementTwo(){const _0x4c6f1c=_0x3eb413,_0x349ef0=document[_0x4c6f1c(0x20d)](_0x4c6f1c(0x115)),_0x54e370=document['querySelector']('.sidebar__links-small');if(_0x54e370){const _0x351957=_0x4c6f1c(0x136),_0x541afe=document[_0x4c6f1c(0x84)](_0x351957);if(!_0x541afe){const _0x51e5b7='\x0a<a\x20id=\x22'+_0x351957+'\x22\x20class=\x22sidebar__link-small\x20sidebar__link-small--purple\x22\x20href=\x22/en/casino\x22\x20style=\x22background:\x20url(\x27https://cedabet.github.io/assets/images/promotionBtn.jpg\x27)\x20left\x20center\x20/\x20cover\x20no-repeat;\x22></a>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20';_0x54e370[_0x4c6f1c(0x9c)](_0x4c6f1c(0x1e0),_0x51e5b7);}}if(_0x349ef0){const _0x55462e='promotions-link',_0x29ee9a=_0x4c6f1c(0x9e),_0x288c2b=_0x4c6f1c(0x207),_0x56fe38=document[_0x4c6f1c(0x84)](_0x55462e);if(!_0x56fe38){const _0x4dc677=_0x4c6f1c(0x22e)+_0x55462e+_0x4c6f1c(0x13b)+_0x29ee9a+'\x22\x20class=\x22sidebar__link\x20sidebar__link--casino\x22\x20target=\x22_blank\x22\x20href=\x22https://cedabettv.com/\x22\x20style=\x22\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20background:\x20url(\x27https://cedabet.github.io/assets/images/tvBtn.jpg\x27)\x20left\x20center\x20/\x20cover\x20no-repeat;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20width:\x20100%;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20margin-bottom:\x2017px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20box-shadow:\x20rgba(0,\x200,\x200,\x200.4)\x200px\x202px\x204px,\x20rgba(0,\x200,\x200,\x200.3)\x200px\x207px\x2013px\x20-3px,\x20rgba(0,\x200,\x200,\x200.2)\x200px\x20-2px\x200px\x20inset;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20<span>Ceda\x20TV</span>\x0a\x20\x20\x20\x20</a>\x0a</div>\x0a<div\x20style=\x22width:\x20100%;display:flex;gap:10px;\x22>\x0a\x20\x20\x20\x20\x20<a\x20id=\x22'+_0x288c2b+_0x4c6f1c(0x106);_0x349ef0[_0x4c6f1c(0x9c)](_0x4c6f1c(0x249),_0x4dc677);}}}function loadh2Title(){const _0x1b7b27=_0x3eb413,_0x4c8679=document[_0x1b7b27(0x1d7)](_0x1b7b27(0xb3));_0x4c8679[_0x1b7b27(0x127)](_0x4cfa13=>{const _0x4d976d=_0x1b7b27;let _0x390b2a='';_0x4cfa13[_0x4d976d(0x11f)]['trim']()[_0x4d976d(0x17a)](_0x4d976d(0xea))&&(_0x390b2a=_0x4d976d(0x11b));_0x4cfa13[_0x4d976d(0x11f)][_0x4d976d(0x274)]()[_0x4d976d(0x17a)](_0x4d976d(0x16f))&&(_0x390b2a=_0x4d976d(0x109));_0x4cfa13[_0x4d976d(0x11f)][_0x4d976d(0x274)]()[_0x4d976d(0x17a)](_0x4d976d(0x219))&&(_0x390b2a=_0x4d976d(0x109));_0x4cfa13[_0x4d976d(0x11f)]['trim']()[_0x4d976d(0x17a)](_0x4d976d(0x7f))&&(_0x390b2a=_0x4d976d(0x1f4));_0x4cfa13[_0x4d976d(0x11f)][_0x4d976d(0x274)]()[_0x4d976d(0x17a)](_0x4d976d(0x1a4))&&(_0x390b2a=_0x4d976d(0x203));if(_0x390b2a){if(!_0x4cfa13[_0x4d976d(0x14b)]||_0x4cfa13[_0x4d976d(0x14b)][_0x4d976d(0x77)]!=='A'){const _0x9be278=document[_0x4d976d(0x8b)]('a');_0x9be278[_0x4d976d(0x182)]=_0x390b2a,_0x9be278[_0x4d976d(0x11f)]='See\x20All',_0x9be278['style'][_0x4d976d(0x104)]='rgba(55,\x20162,\x20221,\x200.13)',_0x9be278[_0x4d976d(0x204)][_0x4d976d(0xbc)]='5px\x2012px\x205px\x2012px',_0x9be278[_0x4d976d(0x204)][_0x4d976d(0x80)]=_0x4d976d(0x96),_0x9be278[_0x4d976d(0x204)][_0x4d976d(0x1d3)]='12px',_0x9be278[_0x4d976d(0x204)][_0x4d976d(0x230)]=_0x4d976d(0x15a),_0x9be278['style']['border']='1px\x20solid\x20rgba(41,\x20154,\x20217,\x200.33)',_0x4cfa13[_0x4d976d(0x277)](_0x4d976d(0x249),_0x9be278);}}});}function CreateCedaOriginal(){const _0x4e5ef3=_0x3eb413,_0x103b69=[{'name':_0x4e5ef3(0xbb),'url':_0x4e5ef3(0x22c),'img':_0x4e5ef3(0x27b)},{'name':_0x4e5ef3(0x146),'url':'https://cedabet.com/en/casino/games/ebetlab-mines-originals','img':_0x4e5ef3(0x1dc)},{'name':_0x4e5ef3(0x1aa),'url':_0x4e5ef3(0xa2),'img':_0x4e5ef3(0xfb)},{'name':_0x4e5ef3(0x1bf),'url':_0x4e5ef3(0xec),'img':_0x4e5ef3(0x150)},{'name':_0x4e5ef3(0x78),'url':_0x4e5ef3(0x1cf),'img':_0x4e5ef3(0x91)},{'name':_0x4e5ef3(0x94),'url':'https://cedabet.com/en/casino/games/evolution-blackjack','img':_0x4e5ef3(0x8e)},{'name':_0x4e5ef3(0x188),'url':_0x4e5ef3(0x131),'img':'https://cedabet.github.io/assets/images/aviator.jpg'}];if(!document['getElementById'](_0x4e5ef3(0x1c4))){const _0x8b40df=document[_0x4e5ef3(0x8b)](_0x4e5ef3(0x204));_0x8b40df['id']='mini-games-style',_0x8b40df[_0x4e5ef3(0x11f)]=_0x4e5ef3(0x1e5),document[_0x4e5ef3(0x162)][_0x4e5ef3(0x19a)](_0x8b40df);}const _0xede91e=document[_0x4e5ef3(0x20d)](_0x4e5ef3(0x261));if(!_0xede91e)return;const _0x5ba233=_0xede91e['querySelector'](_0x4e5ef3(0x1b9));if(!_0x5ba233)return;const _0x1e15e9=_0x5ba233[_0x4e5ef3(0x20d)](_0x4e5ef3(0x1c0));if(_0x1e15e9)_0x1e15e9[_0x4e5ef3(0x254)]();const _0x498c2a=document[_0x4e5ef3(0x8b)](_0x4e5ef3(0x9b));_0x498c2a[_0x4e5ef3(0x1bc)]=_0x4e5ef3(0x110),_0x498c2a[_0x4e5ef3(0x204)][_0x4e5ef3(0x79)]=_0x4e5ef3(0x68),_0x498c2a[_0x4e5ef3(0x204)][_0x4e5ef3(0xfd)]=_0x4e5ef3(0x195),_0x498c2a[_0x4e5ef3(0x204)][_0x4e5ef3(0x164)]=_0x4e5ef3(0x228);const _0x4a0e41=document['createElement'](_0x4e5ef3(0x9b));_0x4a0e41['className']=_0x4e5ef3(0x177);const _0xe64a=document[_0x4e5ef3(0x8b)]('h2');_0xe64a[_0x4e5ef3(0x1bc)]=_0x4e5ef3(0xb6);const _0x482563=document['createElement']('i');_0x482563[_0x4e5ef3(0x1bc)]=_0x4e5ef3(0x244),_0x482563[_0x4e5ef3(0x204)][_0x4e5ef3(0x230)]=_0x4e5ef3(0x1c7),_0x482563[_0x4e5ef3(0x204)][_0x4e5ef3(0x8a)]='28px',_0x482563[_0x4e5ef3(0x204)][_0x4e5ef3(0x225)]=_0x4e5ef3(0x1e9),_0x482563['style'][_0x4e5ef3(0x1d3)]='28px',_0xe64a[_0x4e5ef3(0x19a)](_0x482563),_0xe64a[_0x4e5ef3(0x13f)](_0x4e5ef3(0x6d)),_0x4a0e41[_0x4e5ef3(0x19a)](_0xe64a),_0x498c2a[_0x4e5ef3(0x19a)](_0x4a0e41);const _0x30d4bf=document[_0x4e5ef3(0x8b)](_0x4e5ef3(0x9b));_0x30d4bf[_0x4e5ef3(0x1bc)]='col-12',_0x30d4bf[_0x4e5ef3(0x204)][_0x4e5ef3(0x225)]=_0x4e5ef3(0x16a);const _0x2d29a1=document[_0x4e5ef3(0x8b)]('div');_0x2d29a1[_0x4e5ef3(0x1bc)]=_0x4e5ef3(0x180);const _0xece9ff=document[_0x4e5ef3(0x8b)](_0x4e5ef3(0x9b));_0xece9ff['className']='game-list-wrapper';const _0x5d6b35=document[_0x4e5ef3(0x8b)](_0x4e5ef3(0x9b));_0x5d6b35['className']=_0x4e5ef3(0xab),_0x103b69[_0x4e5ef3(0x127)](_0x37c4f0=>{const _0x1dbe4c=_0x4e5ef3,_0x5d4529=document[_0x1dbe4c(0x8b)]('a');_0x5d4529[_0x1dbe4c(0x182)]=_0x37c4f0['url'];const _0x46893b=document[_0x1dbe4c(0x8b)](_0x1dbe4c(0x9b));_0x46893b[_0x1dbe4c(0x1bc)]=_0x1dbe4c(0x172);const _0x292c88=document[_0x1dbe4c(0x8b)](_0x1dbe4c(0x1dd));_0x292c88['src']=_0x37c4f0['img'],_0x292c88[_0x1dbe4c(0x1ab)]=_0x37c4f0[_0x1dbe4c(0x15e)],_0x292c88['loading']=_0x1dbe4c(0x171),_0x46893b[_0x1dbe4c(0x19a)](_0x292c88),_0x5d4529['appendChild'](_0x46893b),_0x5d6b35[_0x1dbe4c(0x19a)](_0x5d4529);}),_0xece9ff['appendChild'](_0x5d6b35),_0x2d29a1[_0x4e5ef3(0x19a)](_0xece9ff),_0x30d4bf['appendChild'](_0x2d29a1),_0x498c2a[_0x4e5ef3(0x19a)](_0x30d4bf),_0x5ba233[_0x4e5ef3(0x19a)](_0x498c2a);var _0x464448=document[_0x4e5ef3(0x84)](_0x4e5ef3(0xba)),_0xca3f7b=document[_0x4e5ef3(0x84)](_0x4e5ef3(0x186)),_0x5cefb8=document['getElementById']('popular-games-wrapper'),_0x2bc3f1=document[_0x4e5ef3(0x84)](_0x4e5ef3(0x121));_0x464448&&_0x5cefb8&&_0x2bc3f1&&(_0x5cefb8[_0x4e5ef3(0x277)](_0x4e5ef3(0x249),_0x464448),_0xca3f7b[_0x4e5ef3(0x277)](_0x4e5ef3(0x249),_0x2bc3f1));}function CreateCedaOriginalTwo(){const _0xa7afe5=_0x3eb413,_0x436c4c=[{'name':_0xa7afe5(0x1eb),'url':_0xa7afe5(0x1f1),'img':_0xa7afe5(0xa5),'imgMobile':_0xa7afe5(0x241)},{'name':_0xa7afe5(0x10b),'url':'https://cedabet.com/en/casino/games/evolution-blackjack','img':_0xa7afe5(0x7a),'imgMobile':_0xa7afe5(0x250)},{'name':'roulette','url':'https://cedabet.com/en/casino/games/evolution-roulette','img':_0xa7afe5(0xf6),'imgMobile':'https://cedabet.github.io/assets/images/Roulette.avif'}],_0x5779cf=document['querySelector']('#popular-games-wrapper');if(!_0x5779cf){console['error'](_0xa7afe5(0x242));return;}const _0x51f016=document[_0xa7afe5(0x8b)](_0xa7afe5(0x9b));_0x51f016['id']=_0xa7afe5(0x24d),_0x51f016[_0xa7afe5(0x283)][_0xa7afe5(0x1da)]('section');const _0x3f0df5=document[_0xa7afe5(0x8b)]('div');_0x3f0df5['className']=_0xa7afe5(0x24a);const _0x6848a7=document['createElement'](_0xa7afe5(0x9b));_0x6848a7['style'][_0xa7afe5(0x79)]=_0xa7afe5(0x68),_0x6848a7[_0xa7afe5(0x204)]['flexDirection']=_0xa7afe5(0x195),_0x6848a7[_0xa7afe5(0x204)]['gap']='20px';const _0x1dedb6=document[_0xa7afe5(0x8b)](_0xa7afe5(0x9b));_0x1dedb6[_0xa7afe5(0x1bc)]=_0xa7afe5(0x177);const _0x21cafc=document[_0xa7afe5(0x8b)]('h2');_0x21cafc['className']=_0xa7afe5(0xb6),_0x21cafc['style']['fontSize']=_0xa7afe5(0x139),_0x21cafc[_0xa7afe5(0x204)][_0xa7afe5(0xa7)]='bold',_0x21cafc[_0xa7afe5(0x204)][_0xa7afe5(0x79)]=_0xa7afe5(0x68),_0x21cafc[_0xa7afe5(0x204)][_0xa7afe5(0xbe)]='center',_0x21cafc[_0xa7afe5(0x204)][_0xa7afe5(0x164)]=_0xa7afe5(0x9a);const _0x140a35=document[_0xa7afe5(0x8b)]('i');_0x140a35[_0xa7afe5(0x1bc)]=_0xa7afe5(0x244),_0x140a35[_0xa7afe5(0x204)][_0xa7afe5(0x230)]=_0xa7afe5(0x1c7),_0x140a35[_0xa7afe5(0x204)][_0xa7afe5(0x8a)]='28px',_0x140a35[_0xa7afe5(0x204)][_0xa7afe5(0x225)]=_0xa7afe5(0x1e9),_0x140a35['style'][_0xa7afe5(0x1d3)]='28px',_0x21cafc[_0xa7afe5(0x19a)](_0x140a35),_0x21cafc[_0xa7afe5(0x13f)]('TABLE\x20GAMES'),_0x1dedb6[_0xa7afe5(0x19a)](_0x21cafc),_0x6848a7[_0xa7afe5(0x19a)](_0x1dedb6);const _0x501f98=document[_0xa7afe5(0x8b)](_0xa7afe5(0x9b));_0x501f98['className']=_0xa7afe5(0x177),_0x501f98[_0xa7afe5(0x204)][_0xa7afe5(0x225)]='100%';const _0x1b6db0=document[_0xa7afe5(0x8b)](_0xa7afe5(0x9b));_0x1b6db0[_0xa7afe5(0x204)]['display']=_0xa7afe5(0x68),_0x1b6db0[_0xa7afe5(0x204)][_0xa7afe5(0xfd)]=_0xa7afe5(0x195),_0x1b6db0['style'][_0xa7afe5(0x164)]=_0xa7afe5(0x228);const _0x125b7a=document[_0xa7afe5(0x8b)](_0xa7afe5(0x9b));_0x125b7a[_0xa7afe5(0x204)][_0xa7afe5(0x1bb)]=_0xa7afe5(0x134);const _0x5b3b8a=document[_0xa7afe5(0x8b)]('div');_0x5b3b8a[_0xa7afe5(0x1bc)]='mini-game-list',_0x5b3b8a[_0xa7afe5(0x204)][_0xa7afe5(0x79)]=_0xa7afe5(0x68),_0x5b3b8a[_0xa7afe5(0x204)][_0xa7afe5(0x154)]=_0xa7afe5(0x12b),_0x5b3b8a[_0xa7afe5(0x204)][_0xa7afe5(0x164)]=_0xa7afe5(0x147),_0x5b3b8a[_0xa7afe5(0x204)][_0xa7afe5(0x1f2)]=_0xa7afe5(0x9a);const _0x48538c=[];_0x436c4c[_0xa7afe5(0x127)]((_0x2ba759,_0x255a50)=>{const _0xc54541=_0xa7afe5,_0xce6df4=document[_0xc54541(0x8b)]('a');_0xce6df4[_0xc54541(0x182)]=_0x2ba759[_0xc54541(0x1e4)],_0xce6df4[_0xc54541(0x204)][_0xc54541(0x68)]=_0xc54541(0x187),_0xce6df4[_0xc54541(0x204)]['maxWidth']='calc(33%\x20-\x2010px)',_0xce6df4[_0xc54541(0x204)][_0xc54541(0x268)]=_0xc54541(0xd5),_0xce6df4[_0xc54541(0x204)]['display']=_0xc54541(0x68),_0xce6df4[_0xc54541(0x204)]['justifyContent']=_0xc54541(0x95),_0xce6df4[_0xc54541(0x204)][_0xc54541(0x80)]=_0xc54541(0x22f);const _0x1ed78c=document['createElement'](_0xc54541(0x9b));_0x1ed78c[_0xc54541(0x204)][_0xc54541(0x225)]=_0xc54541(0x16a),_0x1ed78c['style'][_0xc54541(0x26d)]=_0xc54541(0x218),_0x1ed78c[_0xc54541(0x204)]['overflow']=_0xc54541(0x26e),_0x1ed78c['style']['transition']=_0xc54541(0x11d),_0x1ed78c[_0xc54541(0x1d6)](_0xc54541(0x248),()=>{const _0x543074=_0xc54541;_0x1ed78c[_0x543074(0x204)][_0x543074(0xca)]='translateY(-8px)';}),_0x1ed78c['addEventListener'](_0xc54541(0x102),()=>{const _0x28c3ee=_0xc54541;_0x1ed78c[_0x28c3ee(0x204)]['transform']=_0x28c3ee(0x221);});const _0x5e5b46=document[_0xc54541(0x8b)](_0xc54541(0x1dd));_0x5e5b46[_0xc54541(0x1ab)]=_0x2ba759[_0xc54541(0x15e)],_0x5e5b46[_0xc54541(0x1c2)]=_0xc54541(0x171),_0x5e5b46['style'][_0xc54541(0x225)]=_0xc54541(0x16a),_0x5e5b46[_0xc54541(0x204)][_0xc54541(0x8a)]='100%',_0x5e5b46['style'][_0xc54541(0x224)]=_0xc54541(0x202),_0x5e5b46[_0xc54541(0x204)][_0xc54541(0x174)]=_0xc54541(0xe5),_0x5e5b46[_0xc54541(0x168)]=window[_0xc54541(0x220)]<=0x300?_0x2ba759[_0xc54541(0x1e1)]:_0x2ba759[_0xc54541(0x1dd)],_0x48538c[_0xc54541(0x148)]({'img':_0x5e5b46,'game':_0x2ba759}),_0x1ed78c['appendChild'](_0x5e5b46),_0xce6df4['appendChild'](_0x1ed78c),_0x5b3b8a[_0xc54541(0x19a)](_0xce6df4);}),_0x125b7a[_0xa7afe5(0x19a)](_0x5b3b8a),_0x1b6db0['appendChild'](_0x125b7a),_0x501f98[_0xa7afe5(0x19a)](_0x1b6db0),_0x6848a7[_0xa7afe5(0x19a)](_0x501f98),_0x3f0df5['appendChild'](_0x6848a7),_0x51f016[_0xa7afe5(0x19a)](_0x3f0df5),_0x5779cf[_0xa7afe5(0x277)](_0xa7afe5(0x249),_0x51f016),window[_0xa7afe5(0x1d6)](_0xa7afe5(0x24b),()=>{const _0x584a2a=_0xa7afe5,_0x26ef92=window[_0x584a2a(0x220)]<=0x300;_0x48538c[_0x584a2a(0x127)](({img:_0x28f546,game:_0x54b7e1})=>{const _0x48576c=_0x584a2a,_0x3d2ad5=_0x26ef92?_0x54b7e1[_0x48576c(0x1e1)]:_0x54b7e1[_0x48576c(0x1dd)];_0x28f546[_0x48576c(0x168)]!==_0x3d2ad5&&(_0x28f546['src']=_0x3d2ad5);});});}function createLeagueSection(){const _0x1ebdd7=_0x3eb413,_0x4193bc=[{'name':'Trendyol\x20Süperlig','country':_0x1ebdd7(0x92),'flagCode':'tr','logo':_0x1ebdd7(0x138)},{'name':_0x1ebdd7(0x276),'country':_0x1ebdd7(0x12f),'flagCode':'gb','logo':'https://cedabet.github.io/assets/images/league-gb.png'},{'name':'La\x20Liga','country':'Spain','flagCode':'es','logo':_0x1ebdd7(0x14e)},{'name':_0x1ebdd7(0x114),'country':_0x1ebdd7(0xb7),'flagCode':'fr','logo':_0x1ebdd7(0x143)},{'name':_0x1ebdd7(0xc4),'country':_0x1ebdd7(0xad),'flagCode':'nl','logo':_0x1ebdd7(0xc7)},{'name':_0x1ebdd7(0x1c5),'country':_0x1ebdd7(0xc6),'flagCode':'it','logo':'https://cedabet.github.io/assets/images/seria-a.avif'},{'name':'Bundesliga','country':_0x1ebdd7(0xcc),'flagCode':'de','logo':'https://cedabet.github.io/assets/images/bundesliga.jpg'}],_0x24ca5f=[..._0x4193bc,..._0x4193bc,..._0x4193bc],_0x15c2b4=document[_0x1ebdd7(0x8b)](_0x1ebdd7(0x9b));_0x15c2b4['className']=_0x1ebdd7(0x10e),_0x15c2b4['id']='league-wrapper',_0x15c2b4[_0x1ebdd7(0x10a)]='\x0a\x20\x20\x20\x20<div\x20class=\x22container\x22>\x0a\x20\x20\x20\x20\x20\x20<div\x20class=\x22row\x22\x20style=\x22display:\x20flex;\x20flex-direction:\x20column;\x20gap:\x2020px;\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22col-12\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<h2\x20class=\x22section__title\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<i\x20class=\x22fa-solid\x20fa-volleyball\x22\x20style=\x22color:\x20rgb(33,\x20159,\x20227);\x20height:\x2028px;\x20width:\x2028px;\x20font-size:\x2028px;\x22></i>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20TOP\x20Leagues\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</h2>\x0a\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22league-container\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22league-slider-wrapper\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22league-slider\x20league-scrollbar-hide\x22\x20id=\x22league-slider\x22></div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20</div>\x0a\x20\x20';const _0x32cc42=document['getElementById'](_0x1ebdd7(0x121));_0x32cc42&&_0x32cc42[_0x1ebdd7(0x141)]?_0x32cc42['parentNode'][_0x1ebdd7(0xf3)](_0x15c2b4,_0x32cc42[_0x1ebdd7(0x11c)]):console['warn']('mini-games-wrapper-2\x20bulunamadı,\x20body\x20sonuna\x20ekleniyor.');const _0x5c4614=_0x15c2b4['querySelector'](_0x1ebdd7(0x222));_0x24ca5f[_0x1ebdd7(0x127)]((_0x3a4262,_0x331a3b)=>{const _0x1a8ad8=_0x1ebdd7,_0x9532bb=document[_0x1a8ad8(0x8b)]('a');_0x9532bb[_0x1a8ad8(0x182)]=_0x1a8ad8(0x15d),_0x9532bb[_0x1a8ad8(0x1bc)]=_0x1a8ad8(0xf8),_0x9532bb[_0x1a8ad8(0x1f6)]['index']=_0x331a3b,_0x9532bb['innerHTML']=_0x1a8ad8(0x280)+_0x3a4262[_0x1a8ad8(0x1c1)]+_0x1a8ad8(0x16c)+_0x3a4262[_0x1a8ad8(0x15e)]+_0x1a8ad8(0x17c)+_0x3a4262[_0x1a8ad8(0xac)]+'.svg\x22\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20alt=\x22'+_0x3a4262[_0x1a8ad8(0x70)]+_0x1a8ad8(0x7c)+_0x3a4262['country'][_0x1a8ad8(0x251)]()+_0x1a8ad8(0xe4)+_0x3a4262[_0x1a8ad8(0x15e)]+_0x1a8ad8(0x120),_0x5c4614[_0x1a8ad8(0x19a)](_0x9532bb);});let _0x1df1ba,_0x4ee662,_0x1dbef2=0x0,_0xceef76=![];const _0x23fa08=_0x4193bc[_0x1ebdd7(0x259)]*0xc8,_0x53df63=0.05;function _0x3f3ff2(_0x50c098){const _0x27c2dc=_0x1ebdd7;if(!_0x4ee662)_0x4ee662=_0x50c098;if(!_0xceef76){const _0xd02768=_0x50c098-_0x4ee662;_0x1dbef2=(_0x1dbef2+_0x53df63*_0xd02768)%_0x23fa08,_0x5c4614[_0x27c2dc(0x204)][_0x27c2dc(0xca)]=_0x27c2dc(0xe1)+_0x1dbef2+_0x27c2dc(0x145);}_0x4ee662=_0x50c098,_0x1df1ba=requestAnimationFrame(_0x3f3ff2);}_0x1df1ba=requestAnimationFrame(_0x3f3ff2);const _0x5587e4=_0x5c4614[_0x1ebdd7(0x1d7)](_0x1ebdd7(0x1db));_0x5587e4[_0x1ebdd7(0x127)](_0x13b363=>{const _0x5d0d3d=_0x1ebdd7;_0x13b363[_0x5d0d3d(0x1d6)](_0x5d0d3d(0x248),()=>_0xceef76=!![]),_0x13b363[_0x5d0d3d(0x1d6)]('mouseleave',()=>_0xceef76=![]);});}function loadVipFeatures(){const _0x130d25=_0x3eb413;let _0x49e4de=document[_0x130d25(0x84)](_0x130d25(0x186));if(!_0x49e4de){}else{if(document[_0x130d25(0x84)](_0x130d25(0x121)))return;let _0x12c9f2=document[_0x130d25(0x8b)](_0x130d25(0x9b));_0x12c9f2['id']='custom-section-7',_0x12c9f2[_0x130d25(0x283)][_0x130d25(0x1da)](_0x130d25(0x10e),_0x130d25(0x165)),_0x12c9f2[_0x130d25(0x10a)]=_0x130d25(0x140);function _0x468176(){const _0x48ce8c=_0x130d25,_0x5ee496=[{'src':_0x48ce8c(0x1fc),'alt':_0x48ce8c(0x122),'url':_0x48ce8c(0x179)},{'src':_0x48ce8c(0x14f),'alt':_0x48ce8c(0x1b5),'url':_0x48ce8c(0x1c6)},{'src':'https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/pragmatic-live-light.svg','alt':_0x48ce8c(0x6a),'url':_0x48ce8c(0xd6)},{'src':'https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/hacksaw.svg','alt':_0x48ce8c(0x161),'url':_0x48ce8c(0x266)},{'src':_0x48ce8c(0x15f),'alt':_0x48ce8c(0x117),'url':_0x48ce8c(0xa0)},{'src':_0x48ce8c(0x23b),'alt':_0x48ce8c(0x107),'url':_0x48ce8c(0x257)},{'src':_0x48ce8c(0xb2),'alt':'Netent','url':_0x48ce8c(0x6c)},{'src':_0x48ce8c(0x269),'alt':_0x48ce8c(0x22d),'url':_0x48ce8c(0x1cd)},{'src':_0x48ce8c(0x1cb),'alt':_0x48ce8c(0x1d9),'url':_0x48ce8c(0x66)},{'src':_0x48ce8c(0x1a2),'alt':_0x48ce8c(0x240),'url':_0x48ce8c(0x183)},{'src':_0x48ce8c(0x9f),'alt':'5men','url':'/en/providers/5men'},{'src':'https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/endorphina.svg','alt':_0x48ce8c(0x1a5),'url':'/en/providers/endorphina'},{'src':'https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/mrslotty.svg','alt':'MrSlotty','url':_0x48ce8c(0x18a)},{'src':_0x48ce8c(0xf0),'alt':'Amatic','url':_0x48ce8c(0x1a9)},{'src':_0x48ce8c(0x1c9),'alt':_0x48ce8c(0x142),'url':_0x48ce8c(0xdd)},{'src':_0x48ce8c(0x21b),'alt':'BGAMING','url':_0x48ce8c(0x199)},{'src':_0x48ce8c(0x18e),'alt':_0x48ce8c(0x211),'url':_0x48ce8c(0xf2)},{'src':'https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/1spin4win.svg','alt':_0x48ce8c(0x1ba),'url':'/en/providers/1spin4win'},{'src':'https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/avatarux.svg','alt':'AvatarUX','url':'/en/providers/avatarux'},{'src':_0x48ce8c(0x197),'alt':_0x48ce8c(0x229),'url':'/en/providers/belatra'},{'src':_0x48ce8c(0x18c),'alt':_0x48ce8c(0x1b6),'url':_0x48ce8c(0x1b3)},{'src':_0x48ce8c(0x1f0),'alt':_0x48ce8c(0x108),'url':_0x48ce8c(0x167)},{'src':_0x48ce8c(0x237),'alt':_0x48ce8c(0x133),'url':_0x48ce8c(0x265)},{'src':_0x48ce8c(0x256),'alt':'iGTech','url':_0x48ce8c(0x262)},{'src':'https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/playson.svg','alt':_0x48ce8c(0x231),'url':_0x48ce8c(0x210)},{'src':'https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/mascot.svg','alt':_0x48ce8c(0x170),'url':_0x48ce8c(0x19b)},{'src':_0x48ce8c(0x1ae),'alt':_0x48ce8c(0x234),'url':_0x48ce8c(0x7e)},{'src':_0x48ce8c(0x20c),'alt':_0x48ce8c(0x18d),'url':_0x48ce8c(0x13c)},{'src':'https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/oryx.svg','alt':_0x48ce8c(0x232),'url':_0x48ce8c(0x12d)},{'src':_0x48ce8c(0x263),'alt':_0x48ce8c(0x278),'url':_0x48ce8c(0x93)},{'src':_0x48ce8c(0x255),'alt':_0x48ce8c(0x156),'url':_0x48ce8c(0x1e7)},{'src':_0x48ce8c(0xa9),'alt':_0x48ce8c(0x282),'url':'/en/providers/quickspin'},{'src':_0x48ce8c(0x159),'alt':_0x48ce8c(0x1ce),'url':_0x48ce8c(0x16d)},{'src':_0x48ce8c(0x83),'alt':_0x48ce8c(0x1a8),'url':_0x48ce8c(0x15b)},{'src':'https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/smartsoft.svg','alt':_0x48ce8c(0x13a),'url':_0x48ce8c(0x215)},{'src':'https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/spadegaming.svg','alt':_0x48ce8c(0x19e),'url':_0x48ce8c(0x1e6)},{'src':_0x48ce8c(0x279),'alt':'Spribe','url':_0x48ce8c(0x15c)},{'src':'https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/thunderkick.svg','alt':_0x48ce8c(0xe3),'url':_0x48ce8c(0x1b1)},{'src':_0x48ce8c(0x155),'alt':_0x48ce8c(0x166),'url':_0x48ce8c(0x27f)},{'src':_0x48ce8c(0x27e),'alt':_0x48ce8c(0x226),'url':_0x48ce8c(0x178)},{'src':_0x48ce8c(0xcf),'alt':_0x48ce8c(0x191),'url':_0x48ce8c(0xe9)},{'src':_0x48ce8c(0x1a1),'alt':_0x48ce8c(0x26b),'url':_0x48ce8c(0x18f)},{'src':_0x48ce8c(0x194),'alt':_0x48ce8c(0x1ea),'url':_0x48ce8c(0x236)},{'src':_0x48ce8c(0x11e),'alt':_0x48ce8c(0x101),'url':_0x48ce8c(0xb5)},{'src':_0x48ce8c(0xdc),'alt':_0x48ce8c(0x1a6),'url':_0x48ce8c(0xaa)},{'src':_0x48ce8c(0x81),'alt':_0x48ce8c(0xa3),'url':'/en/providers/leander'},{'src':_0x48ce8c(0x23d),'alt':'Leap','url':_0x48ce8c(0x10d)},{'src':_0x48ce8c(0x153),'alt':'Live\x20Games','url':_0x48ce8c(0x213)},{'src':'https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/luckystreak.svg','alt':_0x48ce8c(0x129),'url':_0x48ce8c(0x1a0)},{'src':'https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/Playtech%20slots.svg','alt':_0x48ce8c(0x1c3),'url':_0x48ce8c(0xe2)},{'src':'https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/SA%20Gaming.svg','alt':_0x48ce8c(0xd0),'url':'/en/providers/sagaming'},{'src':_0x48ce8c(0x1fb),'alt':_0x48ce8c(0xaf),'url':_0x48ce8c(0x130)},{'src':_0x48ce8c(0xd4),'alt':'YGG\x20Drasil','url':_0x48ce8c(0x227)},{'src':_0x48ce8c(0x1c8),'alt':_0x48ce8c(0x103),'url':_0x48ce8c(0x152)},{'src':_0x48ce8c(0xfe),'alt':'Golden\x20Hero','url':_0x48ce8c(0x20e)},{'src':_0x48ce8c(0x112),'alt':_0x48ce8c(0x1b4),'url':'/en/providers/fugaso'},{'src':_0x48ce8c(0x21a),'alt':_0x48ce8c(0x27c),'url':_0x48ce8c(0x90)},{'src':_0x48ce8c(0x17d),'alt':_0x48ce8c(0x238),'url':_0x48ce8c(0x181)},{'src':'https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/imoon.svg','alt':_0x48ce8c(0x21f),'url':'/en/providers/imoon'},{'src':_0x48ce8c(0xeb),'alt':'InOut','url':_0x48ce8c(0xcb)},{'src':_0x48ce8c(0x9d),'alt':_0x48ce8c(0x86),'url':_0x48ce8c(0xf5)},{'src':_0x48ce8c(0xb1),'alt':_0x48ce8c(0x69),'url':_0x48ce8c(0x200)},{'src':_0x48ce8c(0x1b0),'alt':_0x48ce8c(0x252),'url':_0x48ce8c(0x21e)},{'src':'https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/topspin.svg','alt':_0x48ce8c(0xc1),'url':_0x48ce8c(0x201)},{'alt':_0x48ce8c(0x6e),'url':'/en/providers/popok'},{'src':_0x48ce8c(0x18e),'alt':'Bet\x20Games','url':'/en/providers/betgames'},{'src':_0x48ce8c(0x81),'alt':_0x48ce8c(0x185),'url':_0x48ce8c(0x118)},{'src':_0x48ce8c(0x81),'alt':_0x48ce8c(0xbf),'url':_0x48ce8c(0x196)}],_0x2d6612=document[_0x48ce8c(0x84)]('logoSlide'),_0xee7455=document[_0x48ce8c(0x84)](_0x48ce8c(0x24c));if(!_0x2d6612||!_0xee7455)return;_0x5ee496['forEach'](_0x5d9d01=>{const _0x1bcbc9=_0x48ce8c,_0x59c61f=document['createElement'](_0x1bcbc9(0x9b));_0x59c61f[_0x1bcbc9(0x1bc)]=_0x1bcbc9(0x1ef);const _0x389250=document[_0x1bcbc9(0x8b)]('a');_0x389250['href']=_0x5d9d01['url'];if(_0x5d9d01[_0x1bcbc9(0x168)]){const _0x196dc3=document['createElement'](_0x1bcbc9(0x1dd));_0x196dc3[_0x1bcbc9(0x168)]=_0x5d9d01['src'],_0x196dc3[_0x1bcbc9(0x1ab)]=_0x5d9d01['alt'],_0x196dc3[_0x1bcbc9(0x1c2)]=_0x1bcbc9(0x171),_0x389250[_0x1bcbc9(0x19a)](_0x196dc3);}else{const _0x3b3b35=document[_0x1bcbc9(0x8b)](_0x1bcbc9(0x119));_0x3b3b35[_0x1bcbc9(0x11f)]=_0x5d9d01[_0x1bcbc9(0x1ab)],_0x389250['appendChild'](_0x3b3b35);}_0x59c61f[_0x1bcbc9(0x19a)](_0x389250),_0x2d6612[_0x1bcbc9(0x19a)](_0x59c61f);});const _0x5015cf=_0x2d6612[_0x48ce8c(0x23c)](!![]);_0xee7455['appendChild'](_0x5015cf);const _0x554d26=_0x5ee496[_0x48ce8c(0x259)]*1.5;_0xee7455[_0x48ce8c(0x204)][_0x48ce8c(0x1bd)]=_0x554d26+'s',_0xee7455[_0x48ce8c(0x1d6)](_0x48ce8c(0x248),()=>{const _0xbe6999=_0x48ce8c;_0xee7455[_0xbe6999(0x204)][_0xbe6999(0x75)]='paused';}),_0xee7455[_0x48ce8c(0x1d6)](_0x48ce8c(0x102),()=>{const _0x3af431=_0x48ce8c;_0xee7455[_0x3af431(0x204)][_0x3af431(0x75)]=_0x3af431(0x105);});}setTimeout(_0x468176,0x64),_0x49e4de[_0x130d25(0x19a)](_0x12c9f2),addButtonsToSlider();}}function addButtonsToSlider(){const _0x180c63=_0x3eb413,_0xda6b28=document['querySelectorAll'](_0x180c63(0x27a));_0xda6b28['forEach'](_0x203778=>{const _0x18c8a2=_0x180c63,_0x779b74=document[_0x18c8a2(0x8b)](_0x18c8a2(0x206));_0x779b74['className']=_0x18c8a2(0xdf),_0x779b74[_0x18c8a2(0x113)]=_0x18c8a2(0x206),_0x779b74['textContent']=_0x18c8a2(0x189),_0x779b74[_0x18c8a2(0x204)][_0x18c8a2(0x6f)]=_0x18c8a2(0x26c);const _0x8a38d7=_0x203778['closest']('.slide');_0x8a38d7&&(getComputedStyle(_0x8a38d7)[_0x18c8a2(0x1bb)]===_0x18c8a2(0x125)&&(_0x8a38d7[_0x18c8a2(0x204)][_0x18c8a2(0x1bb)]='relative'),_0x8a38d7[_0x18c8a2(0x19a)](_0x779b74));});}var targetElement=document['querySelector'](_0x3eb413(0x8c));targetElement&&targetElement['childNodes']['forEach'](function(_0x3a47c3){const _0x46e277=_0x3eb413;_0x3a47c3[_0x46e277(0x1d8)]===Node[_0x46e277(0x151)]&&(_0x3a47c3[_0x46e277(0x11f)]=_0x46e277(0x19f));});
+  let link = document.createElement("link");
+link.rel = "stylesheet";
+link.href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css";
+
+document.head.appendChild(link);
+
+(function() {
+    let lastUrl = location.href;
+    let isFirstLoad = true;
+    if (isFirstLoad) {
+        loadVipFeatures();
+        setTimeout(loadh2Title, 1000);
+        addMenuElement();
+        addMenuElementTwo();
+        setTimeout(updateCopyrightYear, 1000);
+        // setTimeout(createSigninModal, 2000);
+        CreateCedaOriginal();
+        CreateCedaOriginalTwo();
+        insertCedaTVButton();
+        createLeagueSection();
+	      checkModal();
+       createSocialSection();
+        var sportspath = window.location.pathname;
+        if (sportspath === "/en/sportsbook") {
+        
+        } else if (sportspath === "/en/trade") {
+         
+        } else if (sportspath === "/en/e-sport") {
+            var sidebar = document.getElementById("sidebar");
+
+        } else if (sportspath === "/en/vip") {
+            createVipExperience();
+
+        }
+   else if (sportspath === "/en/latest-big-wins") {
+          LandingPage();
+        }
+	   
+        isFirstLoad = false;
+    }
+
+
+    function checkUrlChange() {
+        if (location.href !== lastUrl) {
+            lastUrl = location.href;
+            handlePageScripts(location.pathname);
+        }
+    }
+
+    function handlePageScripts(path) {
+      setTimeout(function() {
+          insertCedaTVButton();
+	  checkModal();
+          if (path === "/en/") {
+              clearDynamicContent()
+              loadVipFeatures();
+              setTimeout(loadh2Title, 1000);
+              addMenuElement();
+              addMenuElementTwo();
+              setTimeout(updateCopyrightYear, 1000);
+
+              CreateCedaOriginal();
+              CreateCedaOriginalTwo();
+              createLeagueSection();
+              createSocialSection();
+          } else if (path === "/en/vip") {
+              clearDynamicContent();
+              createVipExperience();
+          } else if (path === "/en/casino") {
+              clearDynamicContent()
+              CreateCedaOriginal();
+              CreateCedaOriginalTwo();
+          } else if (path === "/en/sportsbook") {
+           
+              clearDynamicContent()
+
+
+          } else if (path === "/en/trade") {
+
+              clearDynamicContent()
+
+          } else if (path === "/en/e-sport") {
+              clearDynamicContent()
+
+          } else if (path !== "/en/sportsbook") {
+
+              clearDynamicContent()
+          }
+	    else if (path === "/en/latest-big-wins") {
+          LandingPage();
+        }
+      }, 400);
+  }
+
+
+  new MutationObserver(checkUrlChange).observe(document, {
+      subtree: true,
+      childList: true
+  });
+  window.addEventListener('load', function() {
+      checkUrlChange(); // Sayfa yüklendikten hemen sonra kontrol et
+  });
+
+
+  const pushState = history.pushState;
+  const replaceState = history.replaceState;
+
+  history.pushState = function() {
+      pushState.apply(history, arguments);
+      checkUrlChange();
+  };
+
+  history.replaceState = function() {
+      replaceState.apply(history, arguments);
+      checkUrlChange();
+  };
+
+  window.addEventListener('popstate', checkUrlChange);
+
+
+  window.addEventListener('load', checkUrlChange);
+  })();
+
+
+function checkModal() {
+
+    const modal = document.getElementById('global-modal');
+
+    if (modal) {
+        modal.style.display = 'none';  // Modal'ı gizle
+    } 
+
+}
+
+
+
+
+function updateCopyrightYear() {
+    const copyrightElement = document.querySelector(".footer__copyright");
+
+    if (copyrightElement) {
+        const currentYear = new Date().getFullYear();
+        copyrightElement.textContent = "";
+        copyrightElement.textContent = "© CEDABET.COM, " + currentYear;
+    }
+
+    const titles = document.querySelectorAll('h2.section__title');
+
+    titles.forEach(function(title) {
+        // Başlık içeriğini kontrol ediyoruz
+        if (title.textContent.trim() === 'Mini Games' ||
+            title.textContent.trim() === 'Mini Oyunlar' ||
+            title.textContent.trim() === 'Мини -игры') {
+
+         //   title.innerHTML = '<svg class="svg-icon"><use href="https://cedabet.github.io/assets/images/original.svg" xlink:href="/static/media/sprite.1cea5f3c17045e69440504bcd887b333.svg#mini-games"></use></svg>Ceda Originals';
+
+        }
+    });
+
+}
+function insertCedaTVButton() {
+  // Eğer buton zaten eklenmişse tekrar ekleme
+/*  if (document.getElementById('ceda-tv-button')) {
+    return;
+  }
+
+  const headerActions = document.querySelector('.header__actions');
+
+  if (!headerActions) {
+    return;
+  }
+
+  const cedaTVLink = document.createElement('a');
+  cedaTVLink.id = 'ceda-tv-button'; // Benzersiz kimlik
+  cedaTVLink.href = 'https://cedabettv.com';
+  cedaTVLink.target = '_blank';
+  cedaTVLink.className = 'header-custom-button custom d-flex px-3 align-items-center text-white';
+
+  const icon = document.createElement('i');
+  icon.className = 'fa-solid fa-tv';
+
+  const text = document.createTextNode('Ceda TV');
+
+  cedaTVLink.appendChild(icon);
+  cedaTVLink.appendChild(text);
+
+  headerActions.insertBefore(cedaTVLink, headerActions.firstChild);*/
+  const headerActions = document.querySelector('.header__actions');
+  if (!headerActions) return;
+
+  // Partnership butonu ekle
+  if (!document.getElementById('partnership-button')) {
+    const partnershipLink = document.createElement('a');
+    partnershipLink.id = 'partnership-button';
+    partnershipLink.href = '/en/affiliate'; // Gerekirse değiştirin
+  //  partnershipLink.target = '_blank';
+    partnershipLink.className = 'header-custom-button custom d-flex px-3 align-items-center text-white';
+
+    const partnershipIcon = document.createElement('i');
+    partnershipIcon.className = 'fa-solid fa-handshake';
+
+    const partnershipText = document.createTextNode('Partnership');
+
+    partnershipLink.appendChild(partnershipIcon);
+    partnershipLink.appendChild(partnershipText);
+
+    headerActions.insertBefore(partnershipLink, headerActions.firstChild);
+  }
+
+  // Ceda TV butonu ekle
+  if (!document.getElementById('ceda-tv-button')) {
+    const cedaTVLink = document.createElement('a');
+    cedaTVLink.id = 'ceda-tv-button';
+    cedaTVLink.href = 'https://cedabettv.com';
+    cedaTVLink.target = '_blank';
+    cedaTVLink.className = 'header-custom-button custom d-flex px-3 align-items-center text-white';
+
+    const cedaIcon = document.createElement('i');
+    cedaIcon.className = 'fa-solid fa-tv';
+
+    const cedaText = document.createTextNode('Ceda TV');
+
+    cedaTVLink.appendChild(cedaIcon);
+    cedaTVLink.appendChild(cedaText);
+
+    // Partnership butonundan sonra eklemek için
+    const partnershipButton = document.getElementById('partnership-button');
+    if (partnershipButton && partnershipButton.nextSibling) {
+      headerActions.insertBefore(cedaTVLink, partnershipButton.nextSibling);
+    } else {
+      headerActions.appendChild(cedaTVLink);
+    }
+  }
+}
+
+
+function createVipExperience() {
+   // vip class'ına sahip div'i bul
+   const vipContainer = document.querySelector('.vip');
+ 
+   if (document.querySelector('#vip-container')) {
+     console.log("VIP container already exists. Skipping creation.");
+     return; 
+   }
+ 
+   // İçeriği temizle
+   vipContainer.innerHTML = '';
+ 
+   // Create and style the new div (vip-container)
+   const newDiv = document.createElement('div');
+   newDiv.id = 'vip-container';
+   newDiv.style.backgroundColor = '#03121a';
+   newDiv.style.width = '100%';
+   newDiv.style.height = '500px';
+   newDiv.style.position = 'relative';
+   newDiv.style.borderRadius = '8px';
+   newDiv.style.overflow = 'hidden';
+ 
+   vipContainer.appendChild(newDiv);
+
+   // Ekran boyutunu dinamik olarak alacak fonksiyon
+   function getContainerWidth() {
+     return newDiv.offsetWidth;
+   }
+ 
+   // Add text content in the middle
+   const textContent = document.createElement('div');
+   textContent.style.position = 'absolute';
+   textContent.style.left = '0';
+   textContent.style.right = '0';
+   textContent.style.top = '50%';
+   textContent.style.transform = 'translateY(-50%)';
+   textContent.style.zIndex = '10';
+   textContent.style.textAlign = 'center';
+ 
+   const heading = document.createElement('h1');
+   heading.style.color = '#ffffff';
+   heading.style.fontSize = '42px';
+   heading.style.fontFamily = "'Montserrat', 'Arial', sans-serif";
+   heading.style.fontWeight = '800';
+   heading.style.margin = '0 0 12px 0';
+   heading.style.letterSpacing = '1.5px';
+   heading.style.textTransform = 'uppercase';
+   heading.style.background = 'linear-gradient(to right, #ffffff 20%, #229de1 80%)';
+   heading.style.webkitBackgroundClip = 'text';
+   heading.style.webkitTextFillColor = 'transparent';
+   heading.style.display = 'inline-block';
+   heading.style.textShadow = '0 2px 10px rgba(0, 0, 0, 0.3)';
+   heading.textContent = 'The Unrivaled VIP Experience';
+ 
+   const paragraph = document.createElement('p');
+   paragraph.style.color = '#e6e6e6';
+   paragraph.style.fontSize = '17px';
+   paragraph.style.fontFamily = "'Open Sans', 'Helvetica', sans-serif";
+   paragraph.style.fontWeight = '400';
+   paragraph.style.maxWidth = '650px';
+   paragraph.style.margin = '0 auto';
+   paragraph.style.lineHeight = '1.6';
+   paragraph.style.letterSpacing = '0.4px';
+   paragraph.style.textShadow = '0 1px 3px rgba(0, 0, 0, 0.5)';
+   paragraph.textContent = 'Unlock exclusive benefits and receive instantly withdrawable bonuses without any strings attached.';
+ 
+   textContent.appendChild(heading);
+   textContent.appendChild(paragraph);
+   newDiv.appendChild(textContent);
+ 
+   // Add Google Fonts link for the custom fonts
+   const fontLink = document.createElement('link');
+   fontLink.rel = 'stylesheet';
+   fontLink.href = 'https://fonts.googleapis.com/css2?family=Montserrat:wght@800&family=Open+Sans:wght@400&display=swap';
+   document.head.appendChild(fontLink);
+ 
+   // Astronaut image sources with custom classes
+   const vipAstronauts = [
+     { src: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/nonvip.jpg-OkEYbdiUYPy8WPuZHfhDJ64dgloVMX.jpeg', class: 'vip-nonvip-icon', position: 'top' },
+     { src: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/bronze.jpg-kJ1LdK8seS1op7PHwubpz8ZimigSan.jpeg', class: 'vip-bronze-icon', position: 'top' },
+     { src: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/silver.jpg-b0ee8wIwVWLtvDUXRMprSD7yapZLVL.jpeg', class: 'vip-silver-icon', position: 'top' },
+     { src: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/gold.jpg-OHt1qVSHhN3ZNAk2OyyP3DXpLomar9.jpeg', class: 'vip-gold-icon', position: 'top' },
+     { src: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/platinum.jpg-epz0rV2QG1ZG1nNSsYPyILFSMSWaqr.jpeg', class: 'vip-platinum-icon', position: 'bottom' },
+     { src: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/diamond.jpg-tA22xTawtLy1kEzYS2ZV62u0t0Ifcc.jpeg', class: 'vip-diamond-icon', position: 'bottom' },
+     { src: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/ceda.jpg-xUU80CihSslZ88xS1pPUaCGPlEEoi4.jpeg', class: 'vip-ceda-icon', position: 'bottom' }
+   ];
+ 
+   // Get the container width dynamically
+   const astronautWidth = 100;
+ 
+   // Filter astronauts by position
+   const topAstronauts = vipAstronauts.filter(a => a.position === 'top');
+   const bottomAstronauts = vipAstronauts.filter(a => a.position === 'bottom');
+ 
+   // Calculate spacing for top row (3 astronauts)
+   function calculateSpacing(astronauts, isTopRow) {
+     const containerWidth = getContainerWidth(); // Get updated width
+     const totalWidth = astronauts.length * astronautWidth;
+     const spacing = (containerWidth - totalWidth) / (astronauts.length + 1);
+ 
+     astronauts.forEach((astronaut, index) => {
+       const astronautElement = document.createElement('div');
+ 
+       const leftPosition = spacing + (index * (astronautWidth + spacing));
+       const leftPercentage = (leftPosition / containerWidth) * 100;
+ 
+       astronautElement.style.position = 'absolute';
+       astronautElement.style.width = '100px';
+       astronautElement.style.height = '100px';
+       astronautElement.style.borderRadius = '100%';
+       astronautElement.style.border = '1px solid rgba(34, 55, 64, 1)';
+       astronautElement.style.overflow = 'hidden';
+       astronautElement.style.zIndex = '1';
+       astronautElement.style.transition = 'transform 0.3s ease';
+       astronautElement.style.left = `${leftPercentage}%`;
+       astronautElement.style[isTopRow ? 'top' : 'bottom'] = '25px';
+ 
+       astronautElement.className = astronaut.class;
+ 
+       const img = document.createElement('img');
+       img.src = astronaut.src;
+       img.alt = `VIP ${astronaut.class}`;
+       img.style.width = '100%';
+       img.style.height = '100%';
+       img.style.objectFit = 'cover';
+       img.style.borderRadius = '100%';
+       img.style.opacity = '0.7';
+ 
+       astronautElement.appendChild(img);
+       newDiv.appendChild(astronautElement);
+ 
+       animateVipIcon(astronautElement, index, isTopRow ? 'top' : 'bottom');
+     });
+   }
+ 
+   // Create top row astronauts
+   calculateSpacing(topAstronauts, true);
+ 
+   // Create bottom row astronauts
+   calculateSpacing(bottomAstronauts, false);
+ 
+   function animateVipIcon(element, index, position) {
+     // Daha yavaş bir zıplama animasyonu
+     element.style.animation = `bounce 4s ease ${index * 1}s infinite`;
+
+     // Create style element and append keyframes animation
+     const style = document.createElement('style');
+     style.textContent = `
+       @keyframes bounce {
+         0%, 100% {
+           transform: translateY(0);
+         }
+         50% {
+           transform: translateY(-15px);
+         }
+       }
+     `;
+     document.head.appendChild(style);
+   }
+ 
+   // Hover effects for astronaut icons
+   document.querySelectorAll('[class^="vip-"]').forEach(element => {
+     element.addEventListener('mouseover', function() {
+       this.style.transform = 'scale(1.2)';
+       this.style.zIndex = '5';
+       this.querySelector('img').style.opacity = '0.9';
+     });
+ 
+     element.addEventListener('mouseout', function() {
+       this.style.transform = '';
+       this.style.zIndex = '1';
+       this.querySelector('img').style.opacity = '0.7';
+     });
+   });
+
+   // Resize event listener to update spacing and positions when window size changes
+   window.addEventListener('resize', function() {
+    clearAstronauts();
+  
+     calculateSpacing(topAstronauts, true);
+     calculateSpacing(bottomAstronauts, false);
+   });
+}
+
+function clearAstronauts() {
+
+  const existingAstronauts = document.querySelectorAll('#vip-container .vip-nonvip-icon, #vip-container .vip-bronze-icon, #vip-container .vip-silver-icon, #vip-container .vip-gold-icon, #vip-container .vip-platinum-icon, #vip-container .vip-diamond-icon, #vip-container .vip-ceda-icon');
+  existingAstronauts.forEach(astronaut => astronaut.remove());
+}
+
+
+function clearDynamicContent() {
+    const idsToRemove = [
+        "mini-games-wrapper-2",
+        "custom-section-7",
+        "league-wrapper",
+        "custom-section-landing",
+      "telegram-section",
+    ];
+
+    const styleIdsToRemove = [
+        "big-wins-style",
+      "telegram-style"
+        // buraya kaldırmak istediğin style id'lerini ekle
+    ];
+
+    idsToRemove.forEach(id => {
+        const el = document.getElementById(id);
+        if (el) {
+            el.remove();
+            console.log(`${id} temizlendi.`);
+        }
+    });
+
+    styleIdsToRemove.forEach(id => {
+        const styleEl = document.getElementById(id);
+        if (styleEl) {
+            styleEl.remove();
+            console.log(`${id} style etiketi kaldırıldı.`);
+        }
+    });
+}
+
+function LandingPage() {
+     // p-not-found divini kaldır
+     const notFoundDiv = document.querySelector('.p-not-found');
+     if (notFoundDiv) notFoundDiv.remove();
+
+     // container.section.section--first divini bul
+     const firstSectionDiv = document.querySelector('.container.section.section--first');
+     if (!firstSectionDiv) {
+         console.error('.container.section.section--first div bulunamadı!');
+     } else {
+         if (!document.getElementById("big-wins-style")) {
+             const style = document.createElement("style");
+             style.id = "big-wins-style";
+             style.textContent = `
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@@400;500;600;700;800&display=swap');
+
+.containers {
+    max-width: 100%;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+}
+
+/* Logo Section */
+.logo-section {
+    text-align: center;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.logo {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #4a9bff;
+    text-shadow: 0 0 20px rgba(74, 155, 255, 0.5);
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo::before {
+    content: "★";
+    margin-right: 10px;
+    font-size: 2rem;
+}
+
+.logo::after {
+    content: "★";
+    margin-left: 10px;
+    font-size: 2rem;
+}
+
+.tagline {
+    color: #7fb3d3;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+/* Common Section Styles */
+.feature-section, .winners-section, .jackpot-section, .providers-section {
+    background: linear-gradient(135deg, rgba(13, 25, 42, 0.95) 0%, rgba(16, 30, 48, 0.95) 100%);
+    border-radius: 16px;
+    padding: 30px;
+    box-shadow:
+        0 10px 30px rgba(0, 0, 0, 0.4),
+        inset 0 1px 0 rgba(255, 255, 255, 0.05);
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    max-width: 1200px;
+    backdrop-filter: blur(10px);
+}
+
+.feature-section {
+    border: 1px solid rgba(74, 155, 255, 0.2);
+}
+
+.winners-section {
+    border: 1px solid rgba(74, 155, 255, 0.2);
+    height: 500px;
+}
+
+.jackpot-section {
+    border: 1px solid rgba(255, 198, 41, 0.3);
+}
+
+.providers-section {
+    border: 1px solid rgba(74, 155, 255, 0.2);
+}
+
+/* Section Before Elements */
+.feature-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: linear-gradient(90deg, #4a9bff, #2a6cb9, #4a9bff);
+    background-size: 200% 100%;
+    animation: shimmer 3s ease-in-out infinite;
+}
+
+.winners-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: linear-gradient(90deg, #4a9bff, #2a6cb9, #4a9bff);
+    background-size: 200% 100%;
+    animation: shimmer 3s ease-in-out infinite;
+}
+
+.jackpot-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: linear-gradient(90deg, #ffc629, #e6a800, #ffc629);
+    background-size: 200% 100%;
+    animation: shimmer 3s ease-in-out infinite;
+}
+
+.providers-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: linear-gradient(90deg, #4a9bff, #2a6cb9, #4a9bff);
+    background-size: 200% 100%;
+    animation: shimmer 3s ease-in-out infinite;
+}
+
+@keyframes shimmer {
+    0%, 100% { background-position: -200% 0; }
+    50% { background-position: 200% 0; }
+}
+
+.section-title {
+    font-size: 1.8rem;
+    color: #ffffff;
+    margin-bottom: 25px;
+    font-weight: 600;
+    text-align: center;
+    position: relative;
+}
+
+.section-title::after {
+    content: '';
+    position: absolute;
+    bottom: -8px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 3px;
+    background: linear-gradient(90deg, #4a9bff, #2a6cb9);
+    border-radius: 2px;
+}
+
+.winners-section .section-title::after {
+    background: linear-gradient(90deg, #4a9bff, #2a6cb9);
+}
+
+.jackpot-section .section-title::after {
+    background: linear-gradient(90deg, #ffc629, #e6a800);
+}
+
+.providers-section .section-title::after {
+    background: linear-gradient(90deg, #4a9bff, #2a6cb9);
+}
+
+/* Slider Container for Games */
+.slider-container {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    padding: 15px 0;
+    mask: linear-gradient(90deg, transparent 0%, black 5%, black 95%, transparent 100%);
+    -webkit-mask: linear-gradient(90deg, transparent 0%, black 5%, black 95%, transparent 100%);
+    background-color:unset!important;
+}
+
+.slider-track {
+    display: flex;
+    animation: games-scroll 35s linear infinite;
+    width: max-content;
+}
+
+.slider-track:hover {
+    animation-play-state: paused;
+}
+
+@keyframes games-scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(calc(-160px * 7));
+    }
+}
+
+/* Game Items - Now as clickable links */
+.game-item {
+    width: 140px;
+    margin-right: 20px;
+    background: linear-gradient(135deg, rgba(16, 30, 48, 0.9) 0%, rgba(20, 36, 56, 0.9) 100%);
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+    text-align: center;
+    flex-shrink: 0;
+    transition: all 0.3s ease;
+    overflow: hidden;
+    border: 1px solid rgba(74, 155, 255, 0.3);
+    position: relative;
+    backdrop-filter: blur(5px);
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+.game-item::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(45deg, transparent 30%, rgba(74, 155, 255, 0.1) 50%, transparent 70%);
+    transform: translateX(-100%);
+    transition: transform 0.6s;
+}
+
+.game-item:hover::before {
+    transform: translateX(100%);
+}
+
+.game-item:hover {
+    transform: translateY(-8px) scale(1.05);
+    box-shadow:
+        0 15px 35px rgba(0, 0, 0, 0.5),
+        0 0 20px rgba(74, 155, 255, 0.3);
+    border-color: #4a9bff;
+}
+
+.game-item img {
+    width: 100%;
+    height: 120px;
+    object-fit: contain;
+    border-radius: 12px 12px 0 0;
+}
+
+.game-item p {
+    color: #e8f4fd;
+    margin: 12px 0;
+    font-weight: 600;
+    font-size: 12px;
+    padding: 0 10px;
+}
+          .playing-count {
+  font-size: 12px;
+  color: #27ae60; /* Elit yeşil */
+  margin-top: 2px;
+  display: block;
+}
+/* Winners Container */
+.win-container {
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+    position: relative;
+    padding: 0;
+    margin-top: 10px;
+}
+
+.win-list {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 0;
+}
+
+.win-item {
+    background: linear-gradient(135deg, rgba(16, 30, 48, 0.8) 0%, rgba(20, 36, 56, 0.8) 100%);
+    margin: 8px 0;
+    padding: 20px;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    font-size: 14px;
+    opacity: 1;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.4);
+    border: 1px solid rgba(74, 155, 255, 0.3);
+    backdrop-filter: blur(5px);
+}
+
+.win-item:nth-child(even) {
+    background: linear-gradient(135deg, rgba(20, 36, 56, 0.8) 0%, rgba(16, 30, 48, 0.8) 100%);
+    border-color: rgba(74, 155, 255, 0.3);
+}
+
+.win-item p {
+    margin: 0;
+    color: #fff;
+    line-height: 1.4;
+    font-weight: 500;
+}
+
+.win-item p strong {
+    color: #4a9bff;
+    font-size: 1.1em;
+    font-weight: 700;
+}
+
+.win-item p:last-child {
+    margin-top: 8px;
+    font-style: italic;
+    color: #7fb3d3;
+    font-size: 12px;
+}
+
+/* Animation for new winners after initial load */
+.win-item.animated {
+    opacity: 0;
+    animation: slide-in 1.2s forwards, fade-in 1.5s forwards;
+}
+
+@keyframes slide-in {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fade-out {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes pulse-glow {
+    0% {
+        text-shadow: 0 0 10px rgba(255, 198, 41, 0.5);
+    }
+    100% {
+        text-shadow: 0 0 20px rgba(255, 198, 41, 0.8), 0 0 30px rgba(255, 198, 41, 0.4);
+    }
+}
+
+/* Jackpot Section Styles - Grid Layout with Space Theme Colors */
+.jackpot-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    margin-top: 10px;
+}
+
+.jackpot-card {
+    background: linear-gradient(135deg, rgba(16, 30, 48, 0.9) 0%, rgba(20, 36, 56, 0.9) 100%);
+    border: 1px solid rgba(255, 198, 41, 0.3);
+    border-radius: 12px;
+    padding: 25px;
+    text-align: center;
+    backdrop-filter: blur(5px);
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.jackpot-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(45deg, transparent 30%, rgba(255, 198, 41, 0.1) 50%, transparent 70%);
+    transform: translateX(-100%);
+    transition: transform 0.6s;
+}
+
+.jackpot-card:hover::before {
+    transform: translateX(100%);
+}
+
+.jackpot-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
+    border-color: #ffc629;
+}
+
+.jackpot-title {
+    font-size: 1.2rem;
+    color: #ffc629;
+    font-weight: 700;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.jackpot-amount {
+    font-size: 2.2rem;
+    color: #ffffff;
+    font-weight: 800;
+    margin-bottom: 10px;
+    text-shadow: 0 0 10px rgba(255, 198, 41, 0.5);
+    animation: pulse-glow 2s ease-in-out infinite alternate;
+}
+
+.jackpot-description {
+    color: #7fb3d3;
+    font-size: 0.9rem;
+    line-height: 1.4;
+}
+
+.mega-jackpot {
+    grid-column: 1 / -1;
+    background: linear-gradient(135deg, rgba(20, 36, 56, 0.9) 0%, rgba(16, 30, 48, 0.9) 100%);
+    border-color: rgba(255, 198, 41, 0.4);
+    padding: 35px;
+}
+
+.mega-jackpot .jackpot-title {
+    font-size: 1.5rem;
+    color: #ffc629;
+    margin-bottom: 20px;
+}
+
+.mega-jackpot .jackpot-amount {
+    font-size: 3rem;
+    color: #ffc629;
+    text-shadow: 0 0 15px rgba(255, 198, 41, 0.6);
+}
+
+.mega-jackpot::before {
+    background: linear-gradient(45deg, transparent 30%, rgba(255, 198, 41, 0.2) 50%, transparent 70%);
+}
+
+.mega-jackpot:hover {
+    border-color: #ffc629;
+}
+
+/* Providers Section - Infinity Scroll */
+.providers-container {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    padding: 15px 0;
+    mask: linear-gradient(90deg, transparent 0%, black 5%, black 95%, transparent 100%);
+    -webkit-mask: linear-gradient(90deg, transparent 0%, black 5%, black 95%, transparent 100%);
+}
+
+.providers-track {
+    display: flex;
+    animation: providers-scroll 40s linear infinite;
+    width: max-content;
+}
+
+.providers-track:hover {
+    animation-play-state: paused;
+}
+
+@keyframes providers-scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(calc(-170px * 8));
+    }
+}
+
+/* Provider Cards - Now as clickable links */
+.provider-card {
+    width: 150px;
+    margin-right: 20px;
+    background: linear-gradient(135deg, rgba(16, 30, 48, 0.9) 0%, rgba(20, 36, 56, 0.9) 100%);
+    border: 1px solid rgba(74, 155, 255, 0.3);
+    border-radius: 12px;
+    padding: 20px;
+    text-align: center;
+    backdrop-filter: blur(5px);
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    flex-shrink: 0;
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+.provider-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(45deg, transparent 30%, rgba(74, 155, 255, 0.1) 50%, transparent 70%);
+    transform: translateX(-100%);
+    transition: transform 0.6s;
+}
+
+.provider-card:hover::before {
+    transform: translateX(100%);
+}
+
+.provider-card:hover {
+    transform: translateY(-8px) scale(1.05);
+    box-shadow:
+        0 15px 35px rgba(0, 0, 0, 0.5),
+        0 0 20px rgba(74, 155, 255, 0.3);
+    border-color: #4a9bff;
+}
+
+.provider-logo {
+    width: 80px;
+    height: 80px;
+    background: #0a1017;
+    border: 1px solid rgba(74, 155, 255, 0.3);
+    border-radius: 50%;
+    margin: 0 auto 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    color: white;
+    transition: all 0.3s ease;
+}
+
+.provider-card:hover .provider-logo {
+    border-color: #4a9bff;
+    box-shadow: 0 0 15px rgba(74, 155, 255, 0.3);
+}
+
+.provider-name {
+    color: #ffffff;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.provider-games {
+    color: #7fb3d3;
+    font-size: 0.9rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    body {
+        padding: 15px;
+    }
+
+    .logo {
+        font-size: 2rem;
+    }
+  .logo-section {
+    margin-top: 75px;
+  }
+    .feature-section,
+    .winners-section,
+    .jackpot-section,
+    .providers-section {
+        padding: 20px;
+    }
+
+    .winners-section {
+        height: 350px;
+    }
+
+    .section-title {
+        font-size: 1.5rem;
+    }
+
+    .game-item {
+        width: 120px;
+        margin-right: 12px;
+    }
+
+    .game-item img {
+        height: 80px;
+    }
+
+    .game-item p {
+        font-size: 11px;
+        margin: 10px 0;
+    }
+
+    .win-item {
+        font-size: 12px;
+        padding: 15px;
+    }
+
+    .jackpot-container {
+        grid-template-columns: 1fr;
+    }
+
+    .mega-jackpot {
+        grid-column: 1;
+        padding: 25px;
+    }
+
+    .jackpot-amount {
+        font-size: 1.8rem;
+    }
+
+    .mega-jackpot .jackpot-amount {
+        font-size: 2.5rem;
+    }
+
+    @keyframes providers-scroll {
+        0% {
+            transform: translateX(0);
+        }
+        100% {
+            transform: translateX(calc(-170px * 8));
+        }
+    }
+
+    @keyframes games-scroll {
+        0% {
+            transform: translateX(0);
+        }
+        100% {
+            transform: translateX(calc(-132px * 7));
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 10px;
+    }
+
+    .container {
+        gap: 20px;
+    }
+
+    .logo {
+        font-size: 1.8rem;
+    }
+
+    .section-title {
+        font-size: 1.3rem;
+    }
+
+    .game-item {
+        width: 100px;
+        margin-right: 10px;
+    }
+
+    .game-item img {
+        height: 70px;
+    }
+
+    .winners-section {
+        height: 370px;
+    }
+
+    .jackpot-card {
+        padding: 20px;
+    }
+
+    .jackpot-amount {
+        font-size: 1.5rem;
+    }
+
+    .mega-jackpot .jackpot-amount {
+        font-size: 2rem;
+    }
+
+    @keyframes providers-scroll {
+        0% {
+            transform: translateX(0);
+        }
+        100% {
+            transform: translateX(calc(-145px * 8));
+        }
+    }
+
+    @keyframes games-scroll {
+        0% {
+            transform: translateX(0);
+        }
+        100% {
+            transform: translateX(calc(-110px * 7));
+        }
+    }
+}
+             `; // CSS buraya daha sonra dinamik olarak eklenebilir
+             document.head.appendChild(style);
+         }
+
+         const customContainer = document.createElement('div');
+         customContainer.classList.add('section', 'custom-section');
+	 customContainer.id = 'custom-section-landing';
+         customContainer.innerHTML = `
+             <div class="containers">
+                 <!-- Logo Section -->
+                 <div class="logo-section">
+                     <div class="logo">CedaBet</div>
+                     <div class="tagline">Premium Gaming Experience</div>
+                 </div>
+
+                 <!-- Feature Games Section -->
+
+<section class="feature-section">
+   <h2 class="section-title">Featured Games</h2>
+
+    <div class="slider-container">
+        <div class="slider-track">
+
+            <a href="/en/casino/games/pragmaticplay-zeus-vs-hades-gods-of-war" class="game-item">
+                <img src="https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/vnnjkadsfjADGSGKSDKFWQE/games/9U9cVku8AkxfX28glr2ecCFaM8B1TaqJORdGWatq.avif" alt="Zeus vs Hades Gods of War">
+                <p>Zeus vs Hades Gods of War</p>
+            </a>
+
+            <a href="/en/casino/games/pragmaticplay-wild-west-gold" class="game-item">
+                <img src="https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/vnnjkadsfjADGSGKSDKFWQE/games/1dpsT7tnCkM7cjbtUCikCdnFdJ4Qlh99pY3BpzXz.avif" alt="Wild West Gold">
+                <p>Wild West Gold</p>
+            </a>
+
+            <a href="/en/casino/games/pragmaticplay-buffalo-king" class="game-item">
+                <img src="https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/vnnjkadsfjADGSGKSDKFWQE/games/rHhgFaBGHxn71tJXVAOPQKYaTkiQxlXFb315yBDZ.avif" alt="Buffalo King">
+                <p>Buffalo King</p>
+            </a>
+
+            <a href="/en/casino/games/pragmaticplay-fruit-party" class="game-item">
+                <img src="https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/vnnjkadsfjADGSGKSDKFWQE/games/Xf04XdDGKxBPh3VZMbc3gm1iK6FnzF3I9F3aATq1.avif" alt="Fruit Party">
+                <p>Fruit Party</p>
+            </a>
+
+            <a href="/en/casino/games/pragmaticplay-the-dog-house-dog-or-alive" class="game-item">
+                <img src="https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/vnnjkadsfjADGSGKSDKFWQE/games/IXIbm2lJsiOJpfiQ34a4Xjtklsei1ZTbrwKKZhPl.avif" alt="The Dog House Dog or Alive">
+                <p>The Dog House Dog or Alive</p>
+            </a>
+
+            <a href="/en/casino/games/pragmaticplay-starlight-princess" class="game-item">
+                <img src="https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/vnnjkadsfjADGSGKSDKFWQE/games/G5xNO6W86jGBlHaHCL06o1sr5j1H6cySJvdSSRrA.avif" alt="Starlight Princess">
+                <p>Starlight Princess</p>
+            </a>
+
+            <a href="/en/casino/games/pragmaticplay-the-dog-house-multihold" class="game-item">
+                <img src="https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/vnnjkadsfjADGSGKSDKFWQE/games/Do8FlFiEPlyzErc9dy2Jqu7lhqX8XaL7AOawkqKh.avif" alt="The Dog House Multihold">
+                <p>The Dog House Multihold</p>
+            </a>
+
+            <a href="/en/casino/games/pragmaticplay-sugar-rush-1000" class="game-item">
+                <img src="https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/vnnjkadsfjADGSGKSDKFWQE/games/jNoaroKVGDwdRDelCNlu70ADVbyAvMw1qCpJrhP9.avif" alt="Sugar Rush 1000">
+                <p>Sugar Rush 1000</p>
+            </a>
+
+            <a href="/en/casino/games/pragmaticplay-gates-of-olympos-1000" class="game-item">
+                <img src="https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/vnnjkadsfjADGSGKSDKFWQE/games/jpygjMVafhuLu4QEnILFs3oBE6wX7bD2ygoADiI9.avif" alt="Gates of Olympos 1000">
+                <p>Gates of Olympos 1000</p>
+            </a>
+
+            <a href="/en/casino/games/pragmaticplay-sweet-bonanza-1000" class="game-item">
+                <img src="https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/vnnjkadsfjADGSGKSDKFWQE/games/nIwpbBsTqVta4IXzWc1jxgKVX4dPnNzO9nOKu4GK.avif" alt="Sweet Bonanza 1000">
+                <p>Sweet Bonanza 1000</p>
+            </a>
+
+            <a href="/en/casino/games/pragmaticplay-big-bass-hold-spinner-megaways" class="game-item">
+                <img src="https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/vnnjkadsfjADGSGKSDKFWQE/games/uygXx82uD3oiUy86HOPuu4GsuTeNJCPgRgZG24TX.avif" alt="Big Bass Hold & Spinners Megaways">
+                <p>Big Bass Hold & Spinners Megaways</p>
+            </a>
+      <!-- Duplicated games with links -->
+
+         <a href="/en/casino/games/pragmaticplay-zeus-vs-hades-gods-of-war" class="game-item">
+                <img src="https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/vnnjkadsfjADGSGKSDKFWQE/games/9U9cVku8AkxfX28glr2ecCFaM8B1TaqJORdGWatq.avif" alt="Zeus vs Hades Gods of War">
+                <p>Zeus vs Hades Gods of War</p>
+            </a>
+
+            <a href="/en/casino/games/pragmaticplay-wild-west-gold" class="game-item">
+                <img src="https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/vnnjkadsfjADGSGKSDKFWQE/games/1dpsT7tnCkM7cjbtUCikCdnFdJ4Qlh99pY3BpzXz.avif" alt="Wild West Gold">
+                <p>Wild West Gold</p>
+            </a>
+
+            <a href="/en/casino/games/pragmaticplay-buffalo-king" class="game-item">
+                <img src="https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/vnnjkadsfjADGSGKSDKFWQE/games/rHhgFaBGHxn71tJXVAOPQKYaTkiQxlXFb315yBDZ.avif" alt="Buffalo King">
+                <p>Buffalo King</p>
+            </a>
+
+            <a href="/en/casino/games/pragmaticplay-fruit-party" class="game-item">
+                <img src="https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/vnnjkadsfjADGSGKSDKFWQE/games/Xf04XdDGKxBPh3VZMbc3gm1iK6FnzF3I9F3aATq1.avif" alt="Fruit Party">
+                <p>Fruit Party</p>
+            </a>
+
+            <a href="/en/casino/games/pragmaticplay-the-dog-house-dog-or-alive" class="game-item">
+                <img src="https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/vnnjkadsfjADGSGKSDKFWQE/games/IXIbm2lJsiOJpfiQ34a4Xjtklsei1ZTbrwKKZhPl.avif" alt="The Dog House Dog or Alive">
+                <p>The Dog House Dog or Alive</p>
+            </a>
+
+            <a href="/en/casino/games/pragmaticplay-starlight-princess" class="game-item">
+                <img src="https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/vnnjkadsfjADGSGKSDKFWQE/games/G5xNO6W86jGBlHaHCL06o1sr5j1H6cySJvdSSRrA.avif" alt="Starlight Princess">
+                <p>Starlight Princess</p>
+            </a>
+
+            <a href="/en/casino/games/pragmaticplay-the-dog-house-multihold" class="game-item">
+                <img src="https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/vnnjkadsfjADGSGKSDKFWQE/games/Do8FlFiEPlyzErc9dy2Jqu7lhqX8XaL7AOawkqKh.avif" alt="The Dog House Multihold">
+                <p>The Dog House Multihold</p>
+            </a>
+
+            <a href="/en/casino/games/pragmaticplay-sugar-rush-1000" class="game-item">
+                <img src="https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/vnnjkadsfjADGSGKSDKFWQE/games/jNoaroKVGDwdRDelCNlu70ADVbyAvMw1qCpJrhP9.avif" alt="Sugar Rush 1000">
+                <p>Sugar Rush 1000</p>
+            </a>
+
+            <a href="/en/casino/games/pragmaticplay-gates-of-olympos-1000" class="game-item">
+                <img src="https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/vnnjkadsfjADGSGKSDKFWQE/games/jpygjMVafhuLu4QEnILFs3oBE6wX7bD2ygoADiI9.avif" alt="Gates of Olympos 1000">
+                <p>Gates of Olympos 1000</p>
+            </a>
+
+            <a href="/en/casino/games/pragmaticplay-sweet-bonanza-1000" class="game-item">
+                <img src="https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/vnnjkadsfjADGSGKSDKFWQE/games/nIwpbBsTqVta4IXzWc1jxgKVX4dPnNzO9nOKu4GK.avif" alt="Sweet Bonanza 1000">
+                <p>Sweet Bonanza 1000</p>
+            </a>
+
+            <a href="/en/casino/games/pragmaticplay-big-bass-hold-spinner-megaways" class="game-item">
+                <img src="https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/vnnjkadsfjADGSGKSDKFWQE/games/uygXx82uD3oiUy86HOPuu4GsuTeNJCPgRgZG24TX.avif" alt="Big Bass Hold & Spinners Megaways">
+                <p>Big Bass Hold & Spinners Megaways</p>
+            </a>
+        </div>
+    </div>
+</section>
+
+                 <!-- Winners Section with Dynamic Animation -->
+                 <section class="winners-section">
+                   <h2 class="section-title">Recent Big Wins</h2>
+
+                     <div class="win-container">
+                         <div class="win-list" id="win-list">
+                             <!-- Kazananlar buraya dinamik olarak eklenecek -->
+                         </div>
+                     </div>
+                 </section>
+
+                 <!-- Jackpot Section -->
+                 <section class="jackpot-section">
+                  <h2 class="section-title">Active Jackpots</h2>
+
+                     <div class="jackpot-container">
+                         <!-- Mega Jackpot -->
+                         <div class="jackpot-card mega-jackpot">
+                             <div class="jackpot-title">🎰 Mega Jackpot</div>
+                             <div class="jackpot-amount" id="mega-jackpot">₺2.847.592</div>
+                             <div class="jackpot-description">
+				A massive jackpot accumulated from all games! It grows with every bet.
+                             </div>
+                         </div>
+
+                         <!-- Mini Jackpots -->
+                         <div class="jackpot-card">
+                             <div class="jackpot-title">🏆 Major Jackpot</div>
+                             <div class="jackpot-amount" id="major-jackpot">₺456.789</div>
+                             <div class="jackpot-description">
+                                 Big winning opportunity! Try your luck.
+                             </div>
+                         </div>
+
+                         <div class="jackpot-card">
+                             <div class="jackpot-title">💎 Minor Jackpot</div>
+                             <div class="jackpot-amount" id="minor-jackpot">₺89.234</div>
+                             <div class="jackpot-description">
+                            The perfect choice for instant wins – fast, fun, and rewarding!
+                             </div>
+                         </div>
+
+                         <div class="jackpot-card">
+                             <div class="jackpot-title">⚡ Mini Jackpot</div>
+                             <div class="jackpot-amount" id="mini-jackpot">₺12.567</div>
+                             <div class="jackpot-description">
+                              The frequently hitting mini jackpot!
+                             </div>
+                         </div>
+                     </div>
+                 </section>
+
+                 <!-- Game Providers Section -->
+              <section class="providers-section">
+    <h2 class="section-title">🎮 Game Providers</h2>
+    <div class="providers-container">
+        <div class="providers-track">
+            <!-- 15 seçilmiş sağlayıcı -->
+            <a href="/en/providers/pragmatic-play" class="provider-card">
+                <div class="provider-logo">PG</div>
+                <div class="provider-name">Pragmatic Play</div>
+                <div class="provider-games">150+ Game</div>
+            </a>
+
+            <a href="/en/providers/evolution" class="provider-card">
+                <div class="provider-logo">EV</div>
+                <div class="provider-name">Evolution</div>
+                <div class="provider-games">100+ Game</div>
+            </a>
+
+            <a href="/en/providers/netent" class="provider-card">
+                <div class="provider-logo">NT</div>
+                <div class="provider-name">NetEnt</div>
+                <div class="provider-games">130+ Game</div>
+            </a>
+
+            <a href="/en/providers/egt" class="provider-card">
+                <div class="provider-logo">EG</div>
+                <div class="provider-name">EGT</div>
+                <div class="provider-games">90+ Game</div>
+            </a>
+
+            <a href="/en/providers/quickspin" class="provider-card">
+                <div class="provider-logo">QS</div>
+                <div class="provider-name">Quickspin</div>
+                <div class="provider-games">70+ Game</div>
+            </a>
+
+            <a href="/en/providers/red-tiger" class="provider-card">
+                <div class="provider-logo">RT</div>
+                <div class="provider-name">Red Tiger</div>
+                <div class="provider-games">80+ Game</div>
+            </a>
+
+            <a href="/en/providers/yggdrasil" class="provider-card">
+                <div class="provider-logo">YG</div>
+                <div class="provider-name">Yggdrasil</div>
+                <div class="provider-games">60+ Game</div>
+            </a>
+
+            <a href="/en/providers/playtech" class="provider-card">
+                <div class="provider-logo">PT</div>
+                <div class="provider-name">PlayTech</div>
+                <div class="provider-games">110+ Game</div>
+            </a>
+
+            <a href="/en/providers/thunderkick" class="provider-card">
+                <div class="provider-logo">TK</div>
+                <div class="provider-name">Thunderkick</div>
+                <div class="provider-games">50+ Game</div>
+            </a>
+
+            <a href="/en/providers/booming-games" class="provider-card">
+                <div class="provider-logo">BG</div>
+                <div class="provider-name">Booming Games</div>
+                <div class="provider-games">120+ Game</div>
+            </a>
+
+            <a href="/en/providers/microgaming" class="provider-card">
+                <div class="provider-logo">MG</div>
+                <div class="provider-name">Microgaming</div>
+                <div class="provider-games">140+ Game</div>
+            </a>
+
+            <a href="/en/providers/spadegaming" class="provider-card">
+                <div class="provider-logo">SG</div>
+                <div class="provider-name">Spadegaming</div>
+                <div class="provider-games">100+ Game</div>
+            </a>
+
+            <a href="/en/providers/slotmill" class="provider-card">
+                <div class="provider-logo">SM</div>
+                <div class="provider-name">Slotmill</div>
+                <div class="provider-games">60+ Game</div>
+            </a>
+
+            <a href="/en/providers/fugaso" class="provider-card">
+                <div class="provider-logo">FG</div>
+                <div class="provider-name">Fugaso</div>
+                <div class="provider-games">90+ Game</div>
+            </a>
+
+            <a href="/en/providers/platipus" class="provider-card">
+                <div class="provider-logo">PL</div>
+                <div class="provider-name">Platipus</div>
+                <div class="provider-games">80+ Game</div>
+            </a>
+
+            <!-- Duplicate for seamless scroll -->
+            <a href="/en/providers/pragmatic-play" class="provider-card">
+                <div class="provider-logo">PG</div>
+                <div class="provider-name">Pragmatic Play</div>
+                <div class="provider-games">150+ Game</div>
+            </a>
+
+            <a href="/en/providers/evolution" class="provider-card">
+                <div class="provider-logo">EV</div>
+                <div class="provider-name">Evolution</div>
+                <div class="provider-games">100+ Game</div>
+            </a>
+
+            <a href="/en/providers/netent" class="provider-card">
+                <div class="provider-logo">NT</div>
+                <div class="provider-name">NetEnt</div>
+                <div class="provider-games">130+ Game</div>
+            </a>
+
+            <a href="/en/providers/egt" class="provider-card">
+                <div class="provider-logo">EG</div>
+                <div class="provider-name">EGT</div>
+                <div class="provider-games">90+ Game</div>
+            </a>
+
+            <a href="/en/providers/quickspin" class="provider-card">
+                <div class="provider-logo">QS</div>
+                <div class="provider-name">Quickspin</div>
+                <div class="provider-games">70+ Game</div>
+            </a>
+
+            <a href="/en/providers/red-tiger" class="provider-card">
+                <div class="provider-logo">RT</div>
+                <div class="provider-name">Red Tiger</div>
+                <div class="provider-games">80+ Game</div>
+            </a>
+
+            <a href="/en/providers/yggdrasil" class="provider-card">
+                <div class="provider-logo">YG</div>
+                <div class="provider-name">Yggdrasil</div>
+                <div class="provider-games">60+ Game</div>
+            </a>
+
+            <a href="/en/providers/playtech" class="provider-card">
+                <div class="provider-logo">PT</div>
+                <div class="provider-name">PlayTech</div>
+                <div class="provider-games">110+ Game</div>
+            </a>
+
+            <a href="/en/providers/thunderkick" class="provider-card">
+                <div class="provider-logo">TK</div>
+                <div class="provider-name">Thunderkick</div>
+                <div class="provider-games">50+ Game</div>
+            </a>
+
+            <a href="/en/providers/booming-games" class="provider-card">
+                <div class="provider-logo">BG</div>
+                <div class="provider-name">Booming Games</div>
+                <div class="provider-games">120+ Game</div>
+            </a>
+
+            <a href="/en/providers/microgaming" class="provider-card">
+                <div class="provider-logo">MG</div>
+                <div class="provider-name">Microgaming</div>
+                <div class="provider-games">140+ Game</div>
+            </a>
+
+            <a href="/en/providers/spadegaming" class="provider-card">
+                <div class="provider-logo">SG</div>
+                <div class="provider-name">Spadegaming</div>
+                <div class="provider-games">100+ Game</div>
+            </a>
+
+            <a href="/en/providers/slotmill" class="provider-card">
+                <div class="provider-logo">SM</div>
+                <div class="provider-name">Slotmill</div>
+                <div class="provider-games">60+ Game</div>
+            </a>
+
+            <a href="/en/providers/fugaso" class="provider-card">
+                <div class="provider-logo">FG</div>
+                <div class="provider-name">Fugaso</div>
+                <div class="provider-games">90+ Game</div>
+            </a>
+
+            <a href="/en/providers/platipus" class="provider-card">
+                <div class="provider-logo">PL</div>
+                <div class="provider-name">Platipus</div>
+                <div class="provider-games">80+ Game</div>
+            </a>
+        </div>
+    </div>
+</section>
+
+             </div>
+         `;
+
+         firstSectionDiv.prepend(customContainer);
+     }
+
+     const winList = document.getElementById('win-list');
+     const alphabet = 'ABCÇDEFGHIİJKLMNOÖPRSŞTÜVYZ';
+
+     const games = [
+         'Sweet Bonanza', 'Book of Dead', 'Starburst', 'Gonzo\'s Quest', 'Mega Moolah',
+         'Immortal Romance', 'Dead or Alive 2', 'Jungle Spirit', 'Bonanza', 'Fruit Party',
+         'Gates of Olympus', 'The Dog House', 'Razor Shark', 'Big Bass Bonanza', 'Wolf Gold'
+     ];
+
+     let currentIndex = 0;
+
+     // LocalStorage key for jackpots
+     const JACKPOT_STORAGE_KEY = 'cedabet_jackpots';
+     const JACKPOT_TIMESTAMP_KEY = 'cedabet_jackpots_timestamp';
+
+     // Default jackpot amounts
+     const defaultJackpots = {
+         mega: 2847592,
+         major: 456789,
+         minor: 89234,
+         mini: 12567
+     };
+
+     // Load jackpots from localStorage or use defaults
+     function loadJackpots() {
+         try {
+             const savedJackpots = localStorage.getItem(JACKPOT_STORAGE_KEY);
+             const savedTimestamp = localStorage.getItem(JACKPOT_TIMESTAMP_KEY);
+
+             if (savedJackpots && savedTimestamp) {
+                 const jackpots = JSON.parse(savedJackpots);
+                 const timestamp = parseInt(savedTimestamp);
+                 const now = Date.now();
+
+                 // Calculate how much time has passed since last save (in seconds)
+                 const timeDiff = Math.floor((now - timestamp) / 1000);
+
+                 // Simulate jackpot growth during offline time
+                 // Mega: grows ~30-80 per 3 seconds, so ~10-27 per second
+                 // Major: grows ~5-25 per 3 seconds, so ~2-8 per second
+                 // Minor: grows ~2-12 per 3 seconds, so ~1-4 per second
+                 // Mini: grows ~1-6 per 3 seconds, so ~0.3-2 per second
+
+                 if (timeDiff > 0 && timeDiff < 86400) { // Only if less than 24 hours
+                     jackpots.mega += Math.floor(timeDiff * (Math.random() * 17 + 10));
+                     jackpots.major += Math.floor(timeDiff * (Math.random() * 6 + 2));
+                     jackpots.minor += Math.floor(timeDiff * (Math.random() * 3 + 1));
+                     jackpots.mini += Math.floor(timeDiff * (Math.random() * 1.7 + 0.3));
+                 }
+
+                 return jackpots;
+             }
+         } catch (error) {
+             console.log('Error loading jackpots from localStorage:', error);
+         }
+
+         return { ...defaultJackpots };
+     }
+
+     // Save jackpots to localStorage
+     function saveJackpots(jackpots) {
+         try {
+             localStorage.setItem(JACKPOT_STORAGE_KEY, JSON.stringify(jackpots));
+             localStorage.setItem(JACKPOT_TIMESTAMP_KEY, Date.now().toString());
+         } catch (error) {
+             console.log('Error saving jackpots to localStorage:', error);
+         }
+     }
+
+     // Initialize jackpots from localStorage
+     let jackpots = loadJackpots();
+
+     // Update jackpot display
+     function updateJackpotDisplay() {
+         document.getElementById('mega-jackpot').textContent = `₺${jackpots.mega.toLocaleString('tr-TR')}`;
+         document.getElementById('major-jackpot').textContent = `₺${jackpots.major.toLocaleString('tr-TR')}`;
+         document.getElementById('minor-jackpot').textContent = `₺${jackpots.minor.toLocaleString('tr-TR')}`;
+         document.getElementById('mini-jackpot').textContent = `₺${jackpots.mini.toLocaleString('tr-TR')}`;
+     }
+
+     // Rastgele Türk ismi üretme - değişken yıldız sayısı ile
+     function generateRandomName() {
+         const firstNameLength = Math.floor(Math.random() * 4) + 3;
+         const lastNameLength = Math.floor(Math.random() * 5) + 4;
+
+         let firstName = '';
+         let lastName = '';
+
+         for (let i = 0; i < firstNameLength; i++) {
+             firstName += alphabet[Math.floor(Math.random() * alphabet.length)];
+         }
+
+         for (let i = 0; i < lastNameLength; i++) {
+             lastName += alphabet[Math.floor(Math.random() * alphabet.length)];
+         }
+
+         const firstNameStarsCount = Math.floor(Math.random() * 6) + 2;
+         const lastNameStarsCount = Math.floor(Math.random() * 7) + 3;
+
+         firstName = firstName.charAt(0).toUpperCase() + '*'.repeat(firstNameStarsCount);
+         lastName = lastName.charAt(0).toUpperCase() + '*'.repeat(lastNameStarsCount);
+
+         return `${firstName} ${lastName}`;
+     }
+
+     function getRandomWin() {
+         const randomValue = Math.random();
+         let winAmount = 0;
+
+         if (randomValue < 0.15) {
+             winAmount = Math.floor(Math.random() * (50000 - 10000 + 1)) + 10000;
+         } else {
+             winAmount = Math.floor(Math.random() * (10000 - 400 + 1)) + 400;
+         }
+
+         return `₺${winAmount.toLocaleString('tr-TR')}`;
+     }
+
+     function getRandomInterval() {
+         const randomType = Math.random();
+
+         if (randomType < 0.3) {
+             return Math.floor(Math.random() * 2000) + 1000;
+         } else if (randomType < 0.7) {
+             return Math.floor(Math.random() * 3000) + 2500;
+         } else {
+             return Math.floor(Math.random() * 4000) + 4000;
+         }
+     }
+
+     // Jackpot güncelleme fonksiyonu - now saves to localStorage
+     function updateJackpots() {
+         jackpots.mega += Math.floor(Math.random() * 50) + 10;
+         jackpots.major += Math.floor(Math.random() * 20) + 5;
+         jackpots.minor += Math.floor(Math.random() * 10) + 2;
+         jackpots.mini += Math.floor(Math.random() * 5) + 1;
+
+         updateJackpotDisplay();
+         saveJackpots(jackpots);
+     }
+
+     function createInitialWinners() {
+         for (let i = 0; i < 4; i++) {
+             const winnerName = generateRandomName();
+             const game = games[Math.floor(Math.random() * games.length)];
+             const winAmount = getRandomWin();
+
+             const winItem = document.createElement('div');
+             winItem.classList.add('win-item');
+             winItem.innerHTML = `
+                 <p><strong>Our player ${winnerName}</strong></p>
+<p>won <strong>${winAmount}</strong> from the game <strong>${game}</strong>.</p>
+<p>Congratulations and good luck!</p>
+
+                     `;
+
+             winList.appendChild(winItem);
+             currentIndex++;
+         }
+     }
+
+     function addWinner() {
+         const winnerName = generateRandomName();
+         const game = games[Math.floor(Math.random() * games.length)];
+         const winAmount = getRandomWin();
+
+         const winItem = document.createElement('div');
+         winItem.classList.add('win-item', 'animated');
+         winItem.innerHTML = `
+                  <p><strong>Our player ${winnerName}</strong></p>
+<p>won <strong>${winAmount}</strong> from the game <strong>${game}</strong>.</p>
+<p>Congratulations and good luck!</p>
+
+                 `;
+
+         if (winList.children.length >= 8) {
+             const firstItem = winList.children[0];
+             firstItem.style.animation = 'fade-out 1s forwards';
+             setTimeout(() => {
+                 if (firstItem.parentNode) {
+                     firstItem.remove();
+                 }
+             }, 1000);
+         }
+
+         winList.appendChild(winItem);
+         currentIndex++;
+     }
+
+     function startWinningCycle() {
+         createInitialWinners();
+
+         setTimeout(() => {
+             function scheduleNext() {
+                 setTimeout(() => {
+                     addWinner();
+                     scheduleNext();
+                 }, getRandomInterval());
+             }
+
+             scheduleNext();
+         }, 3000);
+     }
+
+     function startJackpotUpdates() {
+         setInterval(updateJackpots, 3000);
+     }
+ function addRandomPlayingCounts() {
+    const gameItems = document.querySelectorAll('.game-item');
+    gameItems.forEach(item => {
+      // 100-300 arasında random sayı üret
+      const randomCount = Math.floor(Math.random() * 201) + 100;
+
+      // Yeni bir span oluştur ve içine sayıyı yaz
+      const playingSpan = document.createElement('span');
+      playingSpan.className = 'playing-count';
+      playingSpan.textContent = `${randomCount} user playing`;
+
+      // Eğer önceden varsa temizle
+      const existing = item.querySelector('.playing-count');
+      if (existing) {
+        existing.remove();
+      }
+
+      // span'i item'in en altına ekle
+      item.appendChild(playingSpan);
+    });
+  }
+
+  // Fonksiyonu hemen çağır
+  addRandomPlayingCounts();
+    updateJackpotDisplay();
+startWinningCycle();
+startJackpotUpdates();
+
+     // Save jackpots when page is about to unload
+     window.addEventListener('beforeunload', () => {
+         saveJackpots(jackpots);
+     });
+
+     // Also save periodically (every 30 seconds)
+     setInterval(() => {
+         saveJackpots(jackpots);
+     }, 30000);
+}
+
+
+<div id="inject-root"></div>
+
+function createSocialSection() {
+  // Create style element
+  const style = document.createElement('style');
+  style.id = 'telegram-style';
+  style.textContent = `
+    .social-section {
+      width: 100%;
+      height: 250px;
+      background: #03121a;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+      gap: 1rem;
+    }
+
+    .left-side {
+      margin-bottom: 0.75rem;
+      position: relative;
+      text-align: center;
+    }
+
+    .glow-bg {
+      position: absolute;
+      inset: -1rem;
+      background: linear-gradient(to right, rgba(31, 160, 229, 0.1), transparent);
+      border-radius: 0.5rem;
+      filter: blur(1rem);
+    }
+
+    .heading {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: white;
+      margin-bottom: 0.25rem;
+    }
+
+    .icon-zap {
+      width: 1.25rem;
+      height: 1.25rem;
+      margin-right: 0.5rem;
+      color: #1fa0e5;
+      animation: pulse 2s infinite;
+    }
+
+    .description {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #9ca3af;
+      font-size: 0.875rem;
+      max-width: 28rem;
+    }
+
+    .icon-star {
+      width: 0.75rem;
+      height: 0.75rem;
+      margin-right: 0.25rem;
+      flex-shrink: 0;
+      color: #1fa0e5;
+    }
+
+    .right-side {
+      display: flex;
+      align-items: center;
+    }
+
+    .telegram-container {
+      position: relative;
+      cursor: pointer;
+      transform: scale(1);
+      transition: transform 0.5s;
+    }
+
+    .telegram-container:hover {
+      transform: scale(1.05);
+    }
+
+    .outer-glow {
+      position: absolute;
+      inset: -0.5rem;
+      border-radius: 1.5rem;
+      background: rgba(31, 160, 229, 0.1);
+      filter: blur(0.5rem);
+      transition: background 0.5s;
+    }
+
+    .telegram-container:hover .outer-glow {
+      background: linear-gradient(to right, rgba(31, 160, 229, 0.3), rgba(31, 160, 229, 0.2));
+    }
+
+    .inner-glow {
+      position: absolute;
+      inset: -0.25rem;
+      border-radius: 1rem;
+      background: linear-gradient(to right, rgba(31, 160, 229, 0.2), rgba(31, 160, 229, 0.1));
+      filter: blur(0.25rem);
+    }
+
+    .telegram-box {
+      position: relative;
+      border-radius: 1rem;
+      padding: 0.75rem;
+      background: #030c13;
+      border: 1px solid rgba(31, 160, 229, 0.3);
+      transition: all 0.3s;
+    }
+
+    .telegram-container:hover .telegram-box {
+      background: linear-gradient(135deg, #1fa0e5 0%, #030c13 100%);
+      border-color: #1fa0e5;
+    }
+
+    .telegram-content {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
+
+    .icon-container {
+      position: relative;
+      display: none;
+    }
+
+    .rotating-ring {
+      position: absolute;
+      inset: -0.5rem;
+      border: 2px solid rgba(31, 160, 229, 0.3);
+      border-radius: 50%;
+      animation: spin 3s linear infinite;
+    }
+
+    .crown-container {
+      position: relative;
+      display: flex;
+      align-items: center;
+      padding: 0.5rem;
+      border-radius: 50%;
+      background: linear-gradient(to bottom right, #fbbf24, #f59e0b);
+      box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+    }
+
+    .icon-crown {
+      width: 1.25rem;
+      height: 1.25rem;
+      color: black;
+    }
+
+    .button-container {
+      position: relative;
+    }
+
+    .button {
+      display: flex;
+      align-items: center;
+      font-weight: 700;
+      padding: 0.5rem 1.25rem;
+      border-radius: 0.75rem;
+      font-size: 0.875rem;
+      color: white;
+      background: #1fa0e5;
+      border: none;
+      cursor: pointer;
+      overflow: hidden;
+      position: relative;
+      transition: all 0.5s;
+      white-space: nowrap;
+    }
+
+    .telegram-container:hover .button {
+      background: linear-gradient(45deg, #1fa0e5, #0ea5e9, #1fa0e5);
+      background-size: 200% 200%;
+      animation: gradient 2s ease infinite;
+      box-shadow: 0 25px 50px -12px rgba(31, 160, 229, 0.5);
+    }
+
+    .button-content {
+      position: relative;
+      z-index: 10;
+      display: flex;
+      align-items: center;
+    }
+
+    .button-icon {
+      width: 1rem;
+      height: 1rem;
+      margin-right: 0.25rem;
+    }
+
+    .button-shine {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to right, transparent, rgba(255, 255, 255, 0.2), transparent);
+      transform: skewX(-12deg) translateX(-100%);
+      transition: transform 1s;
+    }
+
+    .telegram-container:hover .button-shine {
+      transform: skewX(-12deg) translateX(100%);
+    }
+
+    .chat-badge {
+      position: absolute;
+      top: -0.5rem;
+      right: -0.5rem;
+      background: #22c55e;
+      color: white;
+      font-size: 0.75rem;
+      font-weight: 700;
+      padding: 0.125rem 0.5rem;
+      border-radius: 9999px;
+      animation: bounce 2s infinite;
+      animation-delay: 0.5s;
+    }
+
+    @keyframes pulse {
+      0%, 100% { opacity: 0.3; }
+      50% { opacity: 0.6; }
+    }
+
+    @keyframes spin {
+      from { transform: rotate(0deg); }
+      to { transform: rotate(360deg); }
+    }
+
+    @keyframes bounce {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-25%); }
+    }
+
+    @media (min-width: 768px) {
+      .content {
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 0;
+      }
+
+      .left-side {
+        margin-bottom: 0;
+        margin-right: 2rem;
+        text-align: left;
+      }
+
+      .heading {
+        font-size: 2rem;
+        justify-content: flex-start;
+      }
+
+      .icon-zap {
+        width: 1.75rem;
+        height: 1.75rem;
+        margin-right: 0.75rem;
+      }
+
+      .description {
+        font-size: 0.875rem;
+        justify-content: flex-start;
+      }
+
+      .icon-star {
+        width: 1rem;
+        height: 1rem;
+        margin-right: 0.5rem;
+      }
+
+      .telegram-box {
+        padding: 1.5rem;
+      }
+
+      .icon-container {
+        display: block;
+      }
+
+      .button {
+        padding: 1rem 2rem;
+        font-size: 1rem;
+        min-width: 220px;
+      }
+
+      .button-icon {
+        width: 1.25rem;
+        height: 1.25rem;
+        margin-right: 0.5rem;
+      }
+    }
+  `;
+
+  // Append style
+  document.head.appendChild(style);
+
+  // Create main section
+  const section = document.createElement('div');
+  section.className = 'social-section';
+  section.id = 'telegram-section';
+
+  const container = document.createElement('div');
+  container.className = 'container';
+
+  const content = document.createElement('div');
+  content.className = 'content';
+
+  // LEFT SIDE
+  const leftSide = document.createElement('div');
+  leftSide.className = 'left-side';
+
+  const glowBg = document.createElement('div');
+  glowBg.className = 'glow-bg';
+
+  const heading = document.createElement('div');
+  heading.className = 'heading';
+  heading.innerHTML = `
+    <svg class="icon-zap" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+         viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+         stroke-linecap="round" stroke-linejoin="round">
+      <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+    </svg>
+    JOIN OUR COMMUNITY
+  `;
+
+  const description = document.createElement('div');
+  description.className = 'description';
+  description.innerHTML = `
+    <svg class="icon-star" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+         viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+         stroke-linecap="round" stroke-linejoin="round">
+      <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77
+                       5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+      </polygon>
+    </svg>
+    Get exclusive bonuses and instant casino updates
+  `;
+
+  leftSide.append(glowBg, heading, description);
+
+  // RIGHT SIDE
+  const rightSide = document.createElement('div');
+  rightSide.className = 'right-side';
+
+  const telegramContainer = document.createElement('div');
+  telegramContainer.className = 'telegram-container';
+
+  const outerGlow = document.createElement('div');
+  outerGlow.className = 'outer-glow';
+
+  const innerGlow = document.createElement('div');
+  innerGlow.className = 'inner-glow';
+
+  const telegramBox = document.createElement('div');
+  telegramBox.className = 'telegram-box';
+
+  const telegramContent = document.createElement('div');
+  telegramContent.className = 'telegram-content';
+
+  const iconContainer = document.createElement('div');
+  iconContainer.className = 'icon-container';
+
+  const rotatingRing = document.createElement('div');
+  rotatingRing.className = 'rotating-ring';
+
+  const crownContainer = document.createElement('div');
+  crownContainer.className = 'crown-container';
+  crownContainer.innerHTML = `
+    <svg class="icon-crown" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+         viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+         stroke-linecap="round" stroke-linejoin="round">
+      <path d="M2 4l3 12h14l3-12-6 7-4-7-4 7-6-7zm3 16h14"></path>
+    </svg>
+  `;
+
+  iconContainer.append(rotatingRing, crownContainer);
+
+  const buttonContainer = document.createElement('div');
+  buttonContainer.className = 'button-container';
+
+  const button = document.createElement('button');
+  button.className = 'button';
+  button.innerHTML = `
+    <span class="button-content">
+      <svg class="button-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+           viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+           stroke-linecap="round" stroke-linejoin="round">
+        <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7
+                 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8
+                 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z">
+        </path>
+      </svg>
+      JOIN TELEGRAM CHANNEL
+    </span>
+    <div class="button-shine"></div>
+  `;
+
+  buttonContainer.appendChild(button);
+
+  telegramContent.append(iconContainer, buttonContainer);
+  telegramBox.append(telegramContent);
+
+  const chatBadge = document.createElement('div');
+  chatBadge.className = 'chat-badge';
+  chatBadge.textContent = 'CHAT';
+
+  telegramBox.appendChild(chatBadge);
+  telegramContainer.append(outerGlow, innerGlow, telegramBox);
+  telegramBox.prepend(telegramContent);
+  rightSide.appendChild(telegramContainer);
+
+  // Append everything to content
+  content.append(leftSide, rightSide);
+  container.appendChild(content);
+  section.appendChild(container);
+
+  // Append final section to the root
+ const leagueWrapper = document.getElementById('league-wrapper');
+if (leagueWrapper && leagueWrapper.parentNode) {
+  leagueWrapper.parentNode.insertBefore(section, leagueWrapper);
+} else {
+  document.body.appendChild(section); // fallback
+}
+}
+
+
+
+
+
+
+function addMenuElement() {
+    const sidebarNav = document.querySelector('.sidebar__nav.sidebar__nav--border');
+    if (!sidebarNav) {
+        return;
+    }
+
+    const menuItems = [
+        {
+            id: 'custom-item-menu',
+            href: '/en/casino/group/table-games',
+            text: 'Table Games',
+            iconClass: 'fa-solid fa-certificate'
+        },
+        {
+            id: 'custom-item-bigwins',
+            href: '/en/latest-big-wins',
+            text: 'Latest Big Wins',
+            iconClass: 'fa-solid fa-trophy'
+        }
+    ];
+
+    menuItems.forEach(item => {
+        if (document.getElementById(item.id)) return;
+
+        const newLi = document.createElement('li');
+        newLi.id = item.id;
+
+        const newAnchor = document.createElement('a');
+        newAnchor.href = item.href;
+
+        const icon = document.createElement('i');
+        icon.className = item.iconClass;
+        icon.style.color = '#5c7382';
+        icon.style.height = '22px';
+        icon.style.width = '22px';
+        icon.style.fontSize = '22px';
+
+        const span = document.createElement('span');
+        span.textContent = 'New';
+
+        newAnchor.appendChild(icon);
+        newAnchor.appendChild(document.createTextNode(' ' + item.text));
+        newAnchor.appendChild(span);
+
+        newLi.appendChild(newAnchor);
+
+        sidebarNav.appendChild(newLi);
+    });
+}
+
+function addMenuElementTwo() {
+
+    const sidebarLinks = document.querySelector(".sidebar__links");
+    const sidebarLinksSmall = document.querySelector(".sidebar__links-small");
+
+
+    if (sidebarLinksSmall) {
+        const elementId = 'promotions-link-small';
+
+        const existingMenu = document.getElementById(elementId);
+        if (!existingMenu) {
+            const newHTMLSmall = `
+<a id="${elementId}" class="sidebar__link-small sidebar__link-small--purple" href="/en/casino" style="background: url('https://cedabet.github.io/assets/images/promotionBtn.jpg') left center / cover no-repeat;"></a>
+             `;
+            sidebarLinksSmall.insertAdjacentHTML("beforeend", newHTMLSmall);
+        }
+    }
+
+
+    if (sidebarLinks) {
+        const elementId = 'promotions-link'; // Büyük link için id
+        const elementId2 = 'promotions-link-2'; // Büyük link için id
+        const elementId3 = 'promotions-link-3'; // Büyük link için id
+
+        // Aynı id'ye sahip bir öğe zaten var mı diye kontrol ediyoruz
+        const existingMenu = document.getElementById(elementId);
+        if (!existingMenu) {
+            const newHTML = `
+<div style="width: 100%;display:flex;gap:10px;">
+    <a id="${elementId}" class="sidebar__link sidebar__link--casino" href="/promotions" style="
+                         background: url('https://cedabet.github.io/assets/images/promotionBtn.jpg') left center / cover no-repeat;
+                         width: 100%;
+                         margin-bottom: 17px;
+                         margin-top: -10px;
+                         box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -2px 0px inset;
+                     ">
+        <span>Promotion</span>
+    </a>
+     <a id="${elementId2}" class="sidebar__link sidebar__link--casino" target="_blank" href="https://cedabettv.com/" style="
+                         background: url('https://cedabet.github.io/assets/images/tvBtn.jpg') left center / cover no-repeat;
+                         width: 100%;
+                         margin-bottom: 17px;
+                         box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -2px 0px inset;
+                     ">
+        <span>Ceda TV</span>
+    </a>
+</div>
+<div style="width: 100%;display:flex;gap:10px;">
+     <a id="${elementId3}" class="sidebar__link sidebar__link--casino" target="_blank" href="https://t.me/cedabet" style="
+                         background: url('https://cedabet.github.io/assets/images/tvBtn.jpg') left center / cover no-repeat;
+                         width: 100%;
+                         margin-bottom: 17px;
+                         box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -2px 0px inset;
+                     ">
+        <span>Join Our Telegram</span>
+    </a>
+</div>
+             `;
+            sidebarLinks.insertAdjacentHTML("afterend", newHTML);
+        }
+    }
+}
+
+
+
+
+function loadh2Title() {
+    const sectionTitleElements = document.querySelectorAll('.section__title');
+
+    sectionTitleElements.forEach(title => {
+        let url = '';
+
+        // Başlık metnine göre URL belirle
+        if (title.textContent.trim().includes('Top Games')) {
+            url = '/en/casino/group/lobby';
+        }
+        if (title.textContent.trim().includes('Popular Games')) {
+            url = '/en/casino/group/new-releases';
+        }
+        if (title.textContent.trim().includes('New Releases')) {
+            url = '/en/casino/group/new-releases';
+        }
+        if (title.textContent.trim().includes('High RTP')) {
+            url = '/en/casino/group/enhanced-rtp';
+        }
+        if (title.textContent.trim().includes('Buy Bonus')) {
+            url = '/en/casino/group/bonus-buy';
+        }
+
+        // Eğer URL varsa ve başlığın hemen sonrasında zaten bir <a>etiketi yoksa
+    if (url) {
+
+    if (!title.nextElementSibling || title.nextElementSibling.tagName !== 'A') {
+    const newLink = document.createElement('a');
+    newLink.href = url;
+    newLink.textContent = `See All`;
+    newLink.style.background = 'rgba(55, 162, 221, 0.13)';
+    newLink.style.padding = '5px 12px 5px 12px';
+    newLink.style.borderRadius = '4px';
+    newLink.style.fontSize = '12px';
+    newLink.style.color = 'white';
+    newLink.style.border = '1px solid rgba(41, 154, 217, 0.33)';
+
+    // Yeni <a> etiketi oluşturulacak, sonrasına ekliyoruz
+        title.insertAdjacentElement('afterend', newLink);
+        }
+        }
+        });
+        }
+
+        function CreateCedaOriginal() {
+
+        const games = [{
+        name: "Plinko",
+        url: "https://cedabet.com/en/casino/games/ebetlab-plinko-originals",
+        img: "https://cedabet.github.io/assets/images/plinko.jpg"
+        },
+        {
+        name: "Mines",
+        url: "https://cedabet.com/en/casino/games/ebetlab-mines-originals",
+        img: "https://cedabet.github.io/assets/images/mines.jpg"
+        },
+        {
+        name: "Keno",
+        url: "https://cedabet.com/en/casino/games/ebetlab-keno-originals",
+        img: "https://cedabet.github.io/assets/images/keno.jpg"
+        },
+        {
+        name: "Limbo",
+        url: "https://cedabet.com/en/casino/games/hacksaw-limbo",
+        img: "https://cedabet.github.io/assets/images/limbo.jpg"
+        },
+        {
+        name: "Dice",
+        url: "https://cedabet.com/en/casino/games/ebetlab-dice-originals",
+        img: "https://cedabet.github.io/assets/images/dice.jpg"
+        },
+        {
+        name: "Blackjack",
+        url: "https://cedabet.com/en/casino/games/evolution-blackjack",
+        img: "https://cedabet.github.io/assets/images/blackjack.jpg"
+        },
+        {
+        name: "Aviator",
+        url: "https://cedabet.com/en/casino/games/spribe-aviator",
+        img: "https://cedabet.github.io/assets/images/aviator.jpg"
+        }
+        ];
+
+        // Stil sadece bir kez eklensin
+        if (!document.getElementById("mini-games-style")) {
+        const style = document.createElement("style");
+        style.id = "mini-games-style";
+        style.textContent = `
+
+
+        .section__title {
+        font-size: 24px;
+        font-weight: bold;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        }
+        .section__title svg { width: 24px; height: 24px; }
+        .section-wrapper { display: flex; flex-direction: column; gap: 20px; }
+        .game-list-wrapper { position: relative; }
+        .game-list {
+        display: flex;
+        overflow-x: auto;
+        gap: 16px;
+        padding-top: 8px;
+        }
+        .game-list a {
+        flex: 0 0 calc(10% - 0);
+        max-width: calc(10% - 0);
+        text-decoration: none;
+        display: flex;
+        justify-content: center;
+        border-radius:12px;
+        }
+        .game-card {
+        aspect-ratio: 105 / 142;
+        width: 100%;
+        cursor: pointer;
+        overflow: hidden;
+        transition: transform 0.3s ease;
+        }
+        .game-card:hover { transform: translateY(-8px); }
+        .game-card img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        }
+        @media (max-width: 1024px) {
+        .game-list a {
+        flex: 0 0 calc(33.33% - 26px);
+        max-width: calc(33.33% - 26px);
+        }
+        }
+        @media (max-width: 480px) {
+        .game-list a {
+        flex: 0 0 calc(50% - 26px);
+        max-width: calc(50% - 26px);
+        }
+        }
+
+        @media (max-width: 1024px) {
+        #mini-games-wrapper-2 .mini-game-list a {
+        flex: 0 0 calc(50% - 26px) !important;
+        max-width: calc(50% - 26px)!important;
+        }
+        }
+
+
+        @media (max-width: 480px) {
+        #mini-games-wrapper-2 .mini-game-list a {
+
+        flex: 0 0 calc(33% - 10px)!important;
+        max-width: calc(33% - 10px)!important;
+        }
+        }
+
+        `;
+        document.head.appendChild(style);
+        }
+
+        const miniGamesWrapper = document.querySelector("#mini-games-wrapper");
+        if (!miniGamesWrapper) {
+       // console.error("mini-games-wrapper bulunamadı!");
+        return;
+        }
+
+        const container = miniGamesWrapper.querySelector(".container");
+        if (!container) {
+       // console.error("container bulunamadı!");
+        return;
+        }
+
+        const oldRow = container.querySelector(".row");
+        if (oldRow) oldRow.remove();
+
+        const row = document.createElement("div");
+        row.className = "row";
+        row.style.display = "flex";
+        row.style.flexDirection = "column";
+        row.style.gap = "20px";
+
+        const colTitle = document.createElement("div");
+        colTitle.className = "col-12";
+        const h2 = document.createElement("h2");
+        h2.className = "section__title";
+
+   
+		const icon = document.createElement("i");
+icon.className = "fa-solid fa-certificate";
+icon.style.color = "#219fe3";
+icon.style.height = "28px";
+icon.style.width = "28px";
+icon.style.fontSize = "28px";
+h2.appendChild(icon);
+
+        h2.append("Ceda Originals");
+
+        colTitle.appendChild(h2);
+        row.appendChild(colTitle);
+
+        const colGames = document.createElement("div");
+        colGames.className = "col-12";
+        colGames.style.width = "100%";
+
+        const sectionWrapper = document.createElement("div");
+        sectionWrapper.className = "section-wrapper";
+
+        const gameListWrapper = document.createElement("div");
+        gameListWrapper.className = "game-list-wrapper";
+
+        const gameList = document.createElement("div");
+        gameList.className = "game-list";
+
+        games.forEach(game => {
+        const a = document.createElement("a");
+        a.href = game.url;
+
+        const card = document.createElement("div");
+        card.className = "game-card";
+
+        const img = document.createElement("img");
+        img.src = game.img;
+        img.alt = game.name;
+        img.loading = "lazy";
+
+        card.appendChild(img);
+        a.appendChild(card);
+        gameList.appendChild(a);
+        });
+
+        gameListWrapper.appendChild(gameList);
+        sectionWrapper.appendChild(gameListWrapper);
+        colGames.appendChild(sectionWrapper);
+        row.appendChild(colGames);
+        //divi yerlestir
+        container.appendChild(row);
+
+        var miniGamesWrapper2 = document.getElementById('mini-games-wrapper');
+        var highRtpGamesWrapper2 = document.getElementById('main-slider');//originalssler en üstte cıkar
+        var highRtpGamesWrapper = document.getElementById('popular-games-wrapper');//originalssler popular gamesin altında cıkar
+		
+        var changeLine = document.getElementById('custom-section-7');
+
+        if (miniGamesWrapper2 && highRtpGamesWrapper && changeLine) {
+        highRtpGamesWrapper.insertAdjacentElement('afterend', miniGamesWrapper2);
+       // miniGamesWrapper.insertAdjacentElement('afterend', changeLine); providers orignalsin altında cıkar
+	highRtpGamesWrapper2.insertAdjacentElement('afterend', changeLine); //en üstte cıkar providers
+        }
+
+        }
+
+
+
+        function CreateCedaOriginalTwo() {
+
+        const games = [{
+        name: "Poker",
+        url: "https://cedabet.com/en/casino/games/evolution-poker-lobby",
+        img: "https://cedabet.github.io/assets/images/poker.png",
+        imgMobile: "https://cedabet.github.io/assets/images/Poker.avif"
+        },
+        {
+        name: "BlackJack",
+        url: "https://cedabet.com/en/casino/games/evolution-blackjack",
+        img: "https://cedabet.github.io/assets/images/blackjack.webp",
+        imgMobile: "https://cedabet.github.io/assets/images/Bj.avif"
+        },
+        {
+        name: "roulette",
+        url: "https://cedabet.com/en/casino/games/evolution-roulette",
+        img: "https://cedabet.github.io/assets/images/roulette.webp",
+        imgMobile: "https://cedabet.github.io/assets/images/Roulette.avif"
+        }
+        ];
+
+        const popularGamesWrapper = document.querySelector("#popular-games-wrapper");
+        if (!popularGamesWrapper) {
+        console.error("popular-games-wrapper bulunamadı!");
+        return;
+        }
+
+        const miniGamesWrapper = document.createElement("div");
+        miniGamesWrapper.id = "mini-games-wrapper-2";
+        miniGamesWrapper.classList.add("section");
+
+        const container = document.createElement("div");
+        container.className = "container";
+
+        const row = document.createElement("div");
+        row.style.display = "flex";
+        row.style.flexDirection = "column";
+        row.style.gap = "20px";
+
+        const colTitle = document.createElement("div");
+        colTitle.className = "col-12";
+
+        const h2 = document.createElement("h2");
+        h2.className = "section__title";
+        h2.style.fontSize = "18px";
+        h2.style.fontWeight = "bold";
+        h2.style.display = "flex";
+        h2.style.alignItems = "center";
+        h2.style.gap = "8px";
+
+ 
+	const icon = document.createElement("i");
+icon.className = "fa-solid fa-certificate";
+icon.style.color = "#219fe3";
+icon.style.height = "28px";
+icon.style.width = "28px";
+icon.style.fontSize = "28px";
+h2.appendChild(icon);
+		
+        h2.append("TABLE GAMES");
+        colTitle.appendChild(h2);
+        row.appendChild(colTitle);
+
+        const colGames = document.createElement("div");
+        colGames.className = "col-12";
+        colGames.style.width = "100%";
+
+        const sectionWrapper = document.createElement("div");
+        sectionWrapper.style.display = "flex";
+        sectionWrapper.style.flexDirection = "column";
+        sectionWrapper.style.gap = "20px";
+
+        const gameListWrapper = document.createElement("div");
+        gameListWrapper.style.position = "relative";
+
+        const gameList = document.createElement("div");
+        gameList.className = "mini-game-list";
+        gameList.style.display = "flex";
+        gameList.style.overflowX = "auto";
+        gameList.style.gap = "16px";
+        gameList.style.paddingTop = "8px";
+
+        // Resimleri oluşturup saklamak için bir referans listesi tutuyoruz
+        const imageElements = [];
+
+        games.forEach((game, index) => {
+        const a = document.createElement("a");
+        a.href = game.url;
+        a.style.flex = "0 0 calc(33% - 10px)";
+        a.style.maxWidth = "calc(33% - 10px)";
+        a.style.textDecoration = "none";
+        a.style.display = "flex";
+        a.style.justifyContent = "center";
+        a.style.borderRadius = "12px";
+
+        const card = document.createElement("div");
+        card.style.width = "100%";
+        card.style.cursor = "pointer";
+        card.style.overflow = "hidden";
+        card.style.transition = "transform 0.3s ease";
+
+        card.addEventListener("mouseenter", () => {
+        card.style.transform = "translateY(-8px)";
+        });
+
+        card.addEventListener("mouseleave", () => {
+        card.style.transform = "translateY(0)";
+        });
+
+        const img = document.createElement("img");
+        img.alt = game.name;
+        img.loading = "lazy";
+        img.style.width = "100%";
+        img.style.height = "100%";
+        img.style.objectFit = "cover";
+        img.style.objectPosition = "left bottom";
+
+        // Başlangıçta uygun resmi ata
+        img.src = window.innerWidth <= 768 ? game.imgMobile : game.img;
+
+        // Sakla, sonra erişelim
+        imageElements.push({
+        img,
+        game
+        });
+
+        card.appendChild(img);
+        a.appendChild(card);
+        gameList.appendChild(a);
+        });
+
+        gameListWrapper.appendChild(gameList);
+        sectionWrapper.appendChild(gameListWrapper);
+        colGames.appendChild(sectionWrapper);
+        row.appendChild(colGames);
+        container.appendChild(row);
+        miniGamesWrapper.appendChild(container);
+
+        popularGamesWrapper.insertAdjacentElement("afterend", miniGamesWrapper);
+
+        // Dinamik olarak resimleri değiştirme
+        window.addEventListener("resize", () => {
+        const isMobile = window.innerWidth <= 768;
+        imageElements.forEach(({
+        img,
+        game
+        }) => {
+        const newSrc = isMobile ? game.imgMobile : game.img;
+        if (img.src !== newSrc) {
+        img.src = newSrc;
+        }
+        });
+        });
+        }
+
+function createLeagueSection() {
+  const leagues = [
+    { name: "Trendyol Süperlig", country: "Turkey", flagCode: "tr", logo: "https://cedabet.github.io/assets/images/league-tr.png" },
+    { name: "Premier League", country: "England", flagCode: "gb", logo: "https://cedabet.github.io/assets/images/league-gb.png" },
+    { name: "La Liga", country: "Spain", flagCode: "es", logo: "https://cedabet.github.io/assets/images/league-es.png" },
+    { name: "Ligue 1", country: "France", flagCode: "fr", logo: "https://cedabet.github.io/assets/images/league-fr.png" },
+    { name: "Eredivisie", country: "Netherlands", flagCode: "nl", logo: "https://cedabet.github.io/assets/images/league-nl.png" },
+    { name: "Serie A", country: "Italy", flagCode: "it", logo: "https://cedabet.github.io/assets/images/seria-a.avif" },
+    { name: "Bundesliga", country: "Germany", flagCode: "de", logo: "https://cedabet.github.io/assets/images/bundesliga.jpg" }
+  ];
+
+  const duplicatedLeagues = [...leagues, ...leagues, ...leagues];
+
+  const wrapper = document.createElement('div');
+  wrapper.className = 'section';
+  wrapper.id = 'league-wrapper';
+
+  wrapper.innerHTML = `
+    <div class="container">
+      <div class="row" style="display: flex; flex-direction: column; gap: 20px;">
+        <div class="col-12">
+          <h2 class="section__title">
+            <i class="fa-solid fa-volleyball" style="color: rgb(33, 159, 227); height: 28px; width: 28px; font-size: 28px;"></i>
+            TOP Leagues
+          </h2>
+        </div>
+        <div class="league-container">
+          <div class="league-slider-wrapper">
+            <div class="league-slider league-scrollbar-hide" id="league-slider"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  `;
+
+
+  const targetSection = document.getElementById('custom-section-7');
+  if (targetSection && targetSection.parentNode) {
+    targetSection.parentNode.insertBefore(wrapper, targetSection.nextSibling);
+  } else {
+    console.warn('mini-games-wrapper-2 bulunamadı, body sonuna ekleniyor.');
+  }
+
+  const slider = wrapper.querySelector('#league-slider');
+
+  duplicatedLeagues.forEach((league, index) => {
+    const link = document.createElement('a');
+    link.href = "/ru/sportsbook";
+    link.className = 'league-card';
+    link.dataset.index = index;
+
+    link.innerHTML = `
+      <div class="league-logo-container">
+        <img src="${league.logo}" alt="${league.name} logo" class="league-logo">
+      </div>
+      <div class="league-card-content">
+        <div class="league-country-container">
+          <img src="https://hatscripts.github.io/circle-flags/flags/${league.flagCode}.svg"
+               alt="${league.country} flag"
+               class="league-flag">
+          <div class="league-country-badge">${league.country.toUpperCase()}</div>
+        </div>
+        <h3 class="league-name">${league.name}</h3>
+      </div>
+    `;
+
+    slider.appendChild(link);
+  });
+
+  let animationId;
+  let startTime;
+  let position = 0;
+  let isPaused = false;
+
+  const totalWidth = leagues.length * 200;
+  const speed = 0.05;
+
+  function animate(timestamp) {
+    if (!startTime) startTime = timestamp;
+
+    if (!isPaused) {
+      const elapsed = timestamp - startTime;
+      position = (position + speed * elapsed) % totalWidth;
+      slider.style.transform = `translateX(-${position}px)`;
+    }
+
+    startTime = timestamp;
+    animationId = requestAnimationFrame(animate);
+  }
+
+  animationId = requestAnimationFrame(animate);
+
+  const cards = slider.querySelectorAll('.league-card');
+  cards.forEach(card => {
+    card.addEventListener('mouseenter', () => isPaused = true);
+    card.addEventListener('mouseleave', () => isPaused = false);
+  });
+}
+
+
+
+        function loadVipFeatures() {
+
+        let mainContent = document.getElementById("main-slider");
+
+        if (!mainContent) {
+
+        } else {
+        if (document.getElementById("custom-section-7")) {
+        return;
+        }
+
+        let customSection5 = document.createElement("div");
+        customSection5.id = "custom-section-7";
+        customSection5.classList.add("section", "custom-section");
+
+
+
+
+        customSection5.innerHTML = `
+        <div class="container-fluid">
+            <div class="slider-container">
+
+                <div class="blue-accent-left"></div>
+                <div class="blue-accent-right"></div>
+
+
+                <div class="edge-fade-left"></div>
+                <div class="edge-fade-right"></div>
+
+                <div class="logo-slider" id="logoSlider">
+                    <div class="logo-slide" id="logoSlide">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        `;
+
+        function initSlider() {
+        const logos = [{
+        src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/pragmaticplay.svg",
+        alt: "Pragmatic Play",
+        url: "/en/providers/pragmaticplay"
+        },
+        {
+        src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/Evolution%20Gaming.svg",
+        alt: "Evolution",
+        url: "/en/providers/evolution"
+        },
+        {
+        src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/pragmatic-live-light.svg",
+        alt: "Pragmatic Live",
+        url: "/en/providers/pragmaticlive"
+        },
+        {
+        src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/hacksaw.svg",
+        alt: "HackSaw Gaming",
+        url: "/en/providers/hacksaw"
+        },
+        {
+        src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/egt.svg",
+        alt: "EGT",
+        url: "/en/providers/egt"
+        },
+        {
+        src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/NoLimitCity.svg",
+        alt: "No Limit City",
+        url: "/en/providers/nolimitcity"
+        },
+        {
+        src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/netent.svg",
+        alt: "Netent",
+        url: "/en/providers/netent"
+        },
+        {
+        src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/ezugi.svg",
+        alt: "Ezugi",
+        url: "/en/providers/ezugi"
+        },
+        {
+        src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/amusnet.svg",
+        alt: "Amusnet",
+        url: "/en/providers/egt-interactive"
+        },
+        {
+        src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/1x2gaming.svg",
+        alt: "1x2 Gaming",
+        url: "/en/providers/1x2gaming"
+        },
+        {
+        src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/5men.svg",
+        alt: "5men",
+        url: "/en/providers/5men"
+        },
+        {
+        src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/endorphina.svg",
+        alt: "Endorphina",
+        url: "/en/providers/endorphina"
+        },
+        {
+        src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/mrslotty.svg",
+        alt: "MrSlotty",
+        url: "/en/providers/mrslotty"
+        },
+        {
+        src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/amatic.svg",
+        alt: "Amatic",
+        url: "/en/providers/amatic"
+        },
+        {
+        src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/Red%20Tiger%20Gaming.svg",
+        alt: "Red Tiger",
+        url: "/en/providers/redtiger"
+        },
+        {
+        src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/softswiss.svg",
+        alt: "BGAMING",
+        url: "/en/providers/bgaming"
+        },
+        {
+        src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/booming.svg",
+        alt: "Booming Games",
+        url: "/en/providers/booming"
+        },
+        {
+        src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/1spin4win.svg",
+        alt: "1spin4win",
+        url: "/en/providers/1spin4win"
+        },
+        {
+        src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/avatarux.svg",
+        alt: "AvatarUX",
+        url: "/en/providers/avatarux"
+        },
+        {
+        src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/belatra.svg",
+        alt: "Belatra",
+        url: "/en/providers/belatra"
+        },
+        {
+        src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/beterlive.svg",
+        alt: "Beter.Live",
+        url: "/en/providers/beterlive"
+        },
+        {
+        src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/evoplay.svg",
+        alt: "Evoplay Entertainment",
+        url: "/en/providers/evoplay"
+        },
+        {
+        src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/gamezix.svg",
+        alt: "Gamzix",
+        url: "/en/providers/gamzix"
+        },
+        {
+        src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/igtech.svg",
+        alt: "iGTech",
+        url: "/en/providers/igtech"
+        },
+        {
+        src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/playson.svg",
+        alt: "Playson",
+        url: "/en/providers/playson"
+        },
+        {
+        src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/mascot.svg",
+        alt: "Mascot Gaming",
+        url: "/en/providers/mascotgaming"
+        },
+        {
+        src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/mancala.svg",
+        alt: "Mancala Gaming",
+        url: "/en/providers/mancala"
+        },
+        {
+        src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/onlyplay.svg",
+        alt: "OnlyPlay",
+        url: "/en/providers/onlyplay"
+        },
+        {
+        src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/oryx.svg",
+        alt: "ORYX",
+        url: "/en/providers/oryx"
+        },
+        {
+        src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/platipus.svg",
+        alt: "Platipus",
+        url: "/en/providers/platipus"
+        },
+        {
+        src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/popiplay.svg",
+        alt: "Popiplay",
+        url: "/en/providers/popiplay"
+        },
+        {
+        src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/quickspin.svg",
+        alt: "Quickspin",
+        url: "/en/providers/quickspin"
+        },
+        {
+        src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/reevo.svg",
+        alt: "Reevo",
+        url: "/en/providers/reevo"
+        },
+        {
+        src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/slotmill.svg",
+        alt: "Slotmill",
+        url: "/en/providers/slotmill"
+        },
+        {
+        src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/smartsoft.svg",
+        alt: "SmartSoft",
+        url: "/en/providers/smartsoft"
+        },
+        {
+        src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/spadegaming.svg",
+        alt: "Spadegaming",
+        url: "/en/providers/spadegaming"
+        },
+        {
+        src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/spribe.svg",
+        alt: "Spribe",
+        url: "/en/providers/spribe"
+        },
+        {
+        src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/thunderkick.svg",
+        alt: "Thunderkick",
+        url: "/en/providers/thunderkick"
+        },
+        {
+        src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/tomhorn.svg",
+        alt: "Tom Horn",
+        url: "/en/providers/tomhornnative"
+        },
+        {
+        src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/truelab.svg",
+        alt: "Truelab",
+        url: "/en/providers/truelab"
+        },
+        {
+        src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/turbogames.svg",
+        alt: "Turbo Games",
+        url: "/en/providers/turbogames"
+        },
+        {
+        src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/Betradar%20Virtual%20sports.svg",
+        alt: "BetRadar VS",
+        url: "/en/providers/betradarvs"
+        },
+        {
+        src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/betsoft.svg",
+        alt: "BetSoft",
+        url: "/en/providers/betsoft"
+        },
+        {
+        src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/CQ9.svg",
+        alt: "CQ9",
+        url: "/en/providers/cq9"
+        },
+        {
+        src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/habanero.svg",
+        alt: "Habanero",
+        url: "/en/providers/habanero"
+        },
+        {
+        src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/Leander.svg",
+        alt: "Leander",
+        url: "/en/providers/leander"
+        },
+        {
+        src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/Leap.svg",
+        alt: "Leap",
+        url: "/en/providers/leap"
+        },
+        {
+        src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/Live%20Games.svg",
+        alt: "Live Games",
+        url: "/en/providers/livegames"
+        },
+        {
+        src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/luckystreak.svg",
+        alt: "Lucky Streak",
+        url: "/en/providers/luckystreak"
+        },
+        {
+        src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/Playtech%20slots.svg",
+        alt: "PlayTech",
+        url: "/en/providers/playtech"
+        },
+        {
+        src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/SA%20Gaming.svg",
+        alt: "SA Gaming",
+        url: "/en/providers/sagaming"
+        },
+        {
+        src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/Vivo%20Gaming.svg",
+        alt: "Vivo Gaming",
+        url: "/en/providers/vivogaming"
+        },
+        {
+        src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/yggdrasil.svg",
+        alt: "YGG Drasil",
+        url: "/en/providers/yggdrasil"
+        },
+        {
+        src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/Pocket%20Games%20Soft.svg",
+        alt: "PGSoft",
+        url: "/en/providers/pgsoft"
+        },
+        {
+        src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/golden%20hero.svg",
+        alt: "Golden Hero",
+        url: "/en/providers/goldenhero"
+        },
+        {
+        src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/fugaso.svg",
+        alt: "Fugaso",
+        url: "/en/providers/fugaso"
+        },
+        {
+        src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/originals.svg",
+        alt: "Ebetlab",
+        url: "/en/providers/ebetlab"
+        },
+        {
+        src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/imageinelive.svg",
+        alt: "Imagine Live",
+        url: "/en/providers/imagine-live"
+        },
+        {
+        src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/imoon.svg",
+        alt: "Imoon",
+        url: "/en/providers/imoon"
+        },
+        {
+        src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/InOut.svg",
+        alt: "InOut",
+        url: "/en/providers/inout"
+        },
+        {
+        src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/Jiliasia.svg",
+        alt: "Jiliasia",
+        url: "/en/providers/jiliasia"
+        },
+        {
+        src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/Zeus%20Play.svg",
+        alt: "Zeus Play",
+        url: "/en/providers/zeus-play"
+        },
+        {
+        src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/Peter%20And%20Sons.svg",
+        alt: "Peter And Sons",
+        url: "/en/providers/peter-and-sons"
+        },
+        {
+        src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/topspin.svg",
+        alt: "TopSpin",
+        url: "/en/providers/topspin"
+        },
+        {
+        alt: "Popok",
+        url: "/en/providers/popok"
+        },
+        {
+        src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/booming.svg",
+        alt: "Bet Games",
+        url: "/en/providers/betgames"
+        },
+        {
+        src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/Leander.svg",
+        alt: "Raw Games",
+        url: "/en/providers/rawgames"
+        },
+        {
+        src: "https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/Leander.svg",
+        alt: "YGR Games",
+        url: "/en/providers/ygrgames"
+        }
+        ];
+
+        const logoSlide = document.getElementById('logoSlide');
+        const logoSlider = document.getElementById('logoSlider');
+
+
+        if (!logoSlide || !logoSlider) {
+
+        return;
+        }
+
+        logos.forEach(logo => {
+        const logoItem = document.createElement('div');
+        logoItem.className = 'logo-item';
+
+        const link = document.createElement('a');
+        link.href = logo.url;
+
+        if (logo.src) {
+        const img = document.createElement('img');
+        img.src = logo.src;
+        img.alt = logo.alt;
+        img.loading = 'lazy';
+        link.appendChild(img);
+        } else {
+        const textSpan = document.createElement('span');
+        textSpan.textContent = logo.alt;
+        link.appendChild(textSpan);
+        }
+
+        logoItem.appendChild(link);
+        logoSlide.appendChild(logoItem);
+        });
+
+        const clone = logoSlide.cloneNode(true);
+        logoSlider.appendChild(clone);
+
+        const animationDuration = logos.length * 1.5;
+        logoSlider.style.animationDuration = animationDuration + 's';
+
+        logoSlider.addEventListener('mouseenter', () => {
+        logoSlider.style.animationPlayState = 'paused';
+        });
+
+        logoSlider.addEventListener('mouseleave', () => {
+        logoSlider.style.animationPlayState = 'running';
+        });
+        }
+
+
+        setTimeout(initSlider, 100);
+        mainContent.appendChild(customSection5);
+
+
+
+        addButtonsToSlider();
+        }
+
+        }
+
+
+        function addButtonsToSlider() {
+        const slideImages = document.querySelectorAll('.slide-image')
+
+        slideImages.forEach(image => {
+        // Create a button element
+        const button = document.createElement('button')
+        button.className = 'header__signup slider_btn'
+        button.type = 'button'
+        button.textContent = 'Show Details'
+
+        // Apply all the styles with gold colors
+        button.style.cssText = `
+        position: absolute;
+        text-transform: unset; right: 1em;
+        bottom: 2em; margin-right: 5px;
+        letter-spacing: 0.5px;
+        color: rgba(255, 255, 255, 0.95);
+        height: 33px !important;
+        padding-left: 11px !important;
+        padding-right: 12px !important;
+        border-radius: 4px !important;
+        background: rgb(233, 172, 17) !important;
+        box-shadow: none !important; font-size: 9pt;
+
+        `
+
+        // Get the parent slide div to properly position the button
+        const slideDiv = image.closest('.slide')
+        if (slideDiv) {
+        // Make sure the slide div has position relative for absolute positioning to work
+        if (getComputedStyle(slideDiv).position === 'static') {
+        slideDiv.style.position = 'relative'
+        }
+        slideDiv.appendChild(button)
+        }
+        })
+        }
+
+
+        var targetElement = document.querySelector('#sidebar-content > div.sidebar__big > div.sidebar__menu > ul:nth-child(3) > li:nth-child(8) > a');
+
+        if (targetElement) {
+        targetElement.childNodes.forEach(function(child) {
+        if (child.nodeType === Node.TEXT_NODE) { // Yalnızca metin düğümünü buluyoruz
+        child.textContent = 'CEDABET Exclusive'; // Metni değiştiriyoruz
+        }
+        });
+        }
