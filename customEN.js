@@ -694,8 +694,8 @@ function LandingPage() {
 
 .game-item img {
     width: 100%;
-    height: 90px;
-    object-fit: cover;
+    height: 120px;
+    object-fit: contain;
     border-radius: 12px 12px 0 0;
 }
 
@@ -706,7 +706,12 @@ function LandingPage() {
     font-size: 12px;
     padding: 0 10px;
 }
-
+          .playing-count {
+  font-size: 12px;
+  color: #27ae60; /* Elit yeşil */
+  margin-top: 2px;
+  display: block;
+}
 /* Winners Container */
 .win-container {
     width: 100%;
@@ -1655,7 +1660,30 @@ function LandingPage() {
      function startJackpotUpdates() {
          setInterval(updateJackpots, 3000);
      }
+ function addRandomPlayingCounts() {
+    const gameItems = document.querySelectorAll('.game-item');
+    gameItems.forEach(item => {
+      // 100-300 arasında random sayı üret
+      const randomCount = Math.floor(Math.random() * 201) + 100;
 
+      // Yeni bir span oluştur ve içine sayıyı yaz
+      const playingSpan = document.createElement('span');
+      playingSpan.className = 'playing-count';
+      playingSpan.textContent = `${randomCount} user playing`;
+
+      // Eğer önceden varsa temizle
+      const existing = item.querySelector('.playing-count');
+      if (existing) {
+        existing.remove();
+      }
+
+      // span'i item'in en altına ekle
+      item.appendChild(playingSpan);
+    });
+  }
+
+  // Fonksiyonu hemen çağır
+  addRandomPlayingCounts();
     updateJackpotDisplay();
 startWinningCycle();
 startJackpotUpdates();
