@@ -1170,7 +1170,8 @@ function LandingPage() {
                  <!-- Feature Games Section -->
 
 <section class="feature-section">
-    <h2 class="section-title">Öne Çıkan Oyunlar</h2>
+   <h2 class="section-title">Featured Games</h2>
+
     <div class="slider-container">
         <div class="slider-track">
 
@@ -1290,7 +1291,8 @@ function LandingPage() {
 
                  <!-- Winners Section with Dynamic Animation -->
                  <section class="winners-section">
-                     <h2 class="section-title">Son Büyük Kazançlar</h2>
+                   <h2 class="section-title">Recent Big Wins</h2>
+
                      <div class="win-container">
                          <div class="win-list" id="win-list">
                              <!-- Kazananlar buraya dinamik olarak eklenecek -->
@@ -1300,14 +1302,15 @@ function LandingPage() {
 
                  <!-- Jackpot Section -->
                  <section class="jackpot-section">
-                     <h2 class="section-title">Aktif Jackpotlar</h2>
+                  <h2 class="section-title">Active Jackpots</h2>
+
                      <div class="jackpot-container">
                          <!-- Mega Jackpot -->
                          <div class="jackpot-card mega-jackpot">
                              <div class="jackpot-title">🎰 Mega Jackpot</div>
                              <div class="jackpot-amount" id="mega-jackpot">₺2.847.592</div>
                              <div class="jackpot-description">
-                                 Tüm oyunlardan biriken dev jackpot! Her bahis ile büyüyor.
+				A massive jackpot accumulated from all games! It grows with every bet.
                              </div>
                          </div>
 
@@ -1316,7 +1319,7 @@ function LandingPage() {
                              <div class="jackpot-title">🏆 Major Jackpot</div>
                              <div class="jackpot-amount" id="major-jackpot">₺456.789</div>
                              <div class="jackpot-description">
-                                 Büyük kazanç fırsatı! Şansınızı deneyin.
+                                 Big winning opportunity! Try your luck.
                              </div>
                          </div>
 
@@ -1324,7 +1327,7 @@ function LandingPage() {
                              <div class="jackpot-title">💎 Minor Jackpot</div>
                              <div class="jackpot-amount" id="minor-jackpot">₺89.234</div>
                              <div class="jackpot-description">
-                                 Hızlı kazanç için ideal seçenek.
+                            The perfect choice for instant wins – fast, fun, and rewarding!
                              </div>
                          </div>
 
@@ -1332,7 +1335,7 @@ function LandingPage() {
                              <div class="jackpot-title">⚡ Mini Jackpot</div>
                              <div class="jackpot-amount" id="mini-jackpot">₺12.567</div>
                              <div class="jackpot-description">
-                                 Sık kazanan mini jackpot!
+                              The frequently hitting mini jackpot!
                              </div>
                          </div>
                      </div>
@@ -1340,189 +1343,189 @@ function LandingPage() {
 
                  <!-- Game Providers Section -->
               <section class="providers-section">
-    <h2 class="section-title">🎮 Oyun Sağlayıcıları</h2>
+    <h2 class="section-title">🎮 Game Providers</h2>
     <div class="providers-container">
         <div class="providers-track">
             <!-- 15 seçilmiş sağlayıcı -->
             <a href="/en/providers/pragmatic-play" class="provider-card">
                 <div class="provider-logo">PG</div>
                 <div class="provider-name">Pragmatic Play</div>
-                <div class="provider-games">150+ Oyun</div>
+                <div class="provider-games">150+ Game</div>
             </a>
 
             <a href="/en/providers/evolution" class="provider-card">
                 <div class="provider-logo">EV</div>
                 <div class="provider-name">Evolution</div>
-                <div class="provider-games">100+ Oyun</div>
+                <div class="provider-games">100+ Game</div>
             </a>
 
             <a href="/en/providers/netent" class="provider-card">
                 <div class="provider-logo">NT</div>
                 <div class="provider-name">NetEnt</div>
-                <div class="provider-games">130+ Oyun</div>
+                <div class="provider-games">130+ Game</div>
             </a>
 
             <a href="/en/providers/egt" class="provider-card">
                 <div class="provider-logo">EG</div>
                 <div class="provider-name">EGT</div>
-                <div class="provider-games">90+ Oyun</div>
+                <div class="provider-games">90+ Game</div>
             </a>
 
             <a href="/en/providers/quickspin" class="provider-card">
                 <div class="provider-logo">QS</div>
                 <div class="provider-name">Quickspin</div>
-                <div class="provider-games">70+ Oyun</div>
+                <div class="provider-games">70+ Game</div>
             </a>
 
             <a href="/en/providers/red-tiger" class="provider-card">
                 <div class="provider-logo">RT</div>
                 <div class="provider-name">Red Tiger</div>
-                <div class="provider-games">80+ Oyun</div>
+                <div class="provider-games">80+ Game</div>
             </a>
 
             <a href="/en/providers/yggdrasil" class="provider-card">
                 <div class="provider-logo">YG</div>
                 <div class="provider-name">Yggdrasil</div>
-                <div class="provider-games">60+ Oyun</div>
+                <div class="provider-games">60+ Game</div>
             </a>
 
             <a href="/en/providers/playtech" class="provider-card">
                 <div class="provider-logo">PT</div>
                 <div class="provider-name">PlayTech</div>
-                <div class="provider-games">110+ Oyun</div>
+                <div class="provider-games">110+ Game</div>
             </a>
 
             <a href="/en/providers/thunderkick" class="provider-card">
                 <div class="provider-logo">TK</div>
                 <div class="provider-name">Thunderkick</div>
-                <div class="provider-games">50+ Oyun</div>
+                <div class="provider-games">50+ Game</div>
             </a>
 
             <a href="/en/providers/booming-games" class="provider-card">
                 <div class="provider-logo">BG</div>
                 <div class="provider-name">Booming Games</div>
-                <div class="provider-games">120+ Oyun</div>
+                <div class="provider-games">120+ Game</div>
             </a>
 
             <a href="/en/providers/microgaming" class="provider-card">
                 <div class="provider-logo">MG</div>
                 <div class="provider-name">Microgaming</div>
-                <div class="provider-games">140+ Oyun</div>
+                <div class="provider-games">140+ Game</div>
             </a>
 
             <a href="/en/providers/spadegaming" class="provider-card">
                 <div class="provider-logo">SG</div>
                 <div class="provider-name">Spadegaming</div>
-                <div class="provider-games">100+ Oyun</div>
+                <div class="provider-games">100+ Game</div>
             </a>
 
             <a href="/en/providers/slotmill" class="provider-card">
                 <div class="provider-logo">SM</div>
                 <div class="provider-name">Slotmill</div>
-                <div class="provider-games">60+ Oyun</div>
+                <div class="provider-games">60+ Game</div>
             </a>
 
             <a href="/en/providers/fugaso" class="provider-card">
                 <div class="provider-logo">FG</div>
                 <div class="provider-name">Fugaso</div>
-                <div class="provider-games">90+ Oyun</div>
+                <div class="provider-games">90+ Game</div>
             </a>
 
             <a href="/en/providers/platipus" class="provider-card">
                 <div class="provider-logo">PL</div>
                 <div class="provider-name">Platipus</div>
-                <div class="provider-games">80+ Oyun</div>
+                <div class="provider-games">80+ Game</div>
             </a>
 
             <!-- Duplicate for seamless scroll -->
             <a href="/en/providers/pragmatic-play" class="provider-card">
                 <div class="provider-logo">PG</div>
                 <div class="provider-name">Pragmatic Play</div>
-                <div class="provider-games">150+ Oyun</div>
+                <div class="provider-games">150+ Game</div>
             </a>
 
             <a href="/en/providers/evolution" class="provider-card">
                 <div class="provider-logo">EV</div>
                 <div class="provider-name">Evolution</div>
-                <div class="provider-games">100+ Oyun</div>
+                <div class="provider-games">100+ Game</div>
             </a>
 
             <a href="/en/providers/netent" class="provider-card">
                 <div class="provider-logo">NT</div>
                 <div class="provider-name">NetEnt</div>
-                <div class="provider-games">130+ Oyun</div>
+                <div class="provider-games">130+ Game</div>
             </a>
 
             <a href="/en/providers/egt" class="provider-card">
                 <div class="provider-logo">EG</div>
                 <div class="provider-name">EGT</div>
-                <div class="provider-games">90+ Oyun</div>
+                <div class="provider-games">90+ Game</div>
             </a>
 
             <a href="/en/providers/quickspin" class="provider-card">
                 <div class="provider-logo">QS</div>
                 <div class="provider-name">Quickspin</div>
-                <div class="provider-games">70+ Oyun</div>
+                <div class="provider-games">70+ Game</div>
             </a>
 
             <a href="/en/providers/red-tiger" class="provider-card">
                 <div class="provider-logo">RT</div>
                 <div class="provider-name">Red Tiger</div>
-                <div class="provider-games">80+ Oyun</div>
+                <div class="provider-games">80+ Game</div>
             </a>
 
             <a href="/en/providers/yggdrasil" class="provider-card">
                 <div class="provider-logo">YG</div>
                 <div class="provider-name">Yggdrasil</div>
-                <div class="provider-games">60+ Oyun</div>
+                <div class="provider-games">60+ Game</div>
             </a>
 
             <a href="/en/providers/playtech" class="provider-card">
                 <div class="provider-logo">PT</div>
                 <div class="provider-name">PlayTech</div>
-                <div class="provider-games">110+ Oyun</div>
+                <div class="provider-games">110+ Game</div>
             </a>
 
             <a href="/en/providers/thunderkick" class="provider-card">
                 <div class="provider-logo">TK</div>
                 <div class="provider-name">Thunderkick</div>
-                <div class="provider-games">50+ Oyun</div>
+                <div class="provider-games">50+ Game</div>
             </a>
 
             <a href="/en/providers/booming-games" class="provider-card">
                 <div class="provider-logo">BG</div>
                 <div class="provider-name">Booming Games</div>
-                <div class="provider-games">120+ Oyun</div>
+                <div class="provider-games">120+ Game</div>
             </a>
 
             <a href="/en/providers/microgaming" class="provider-card">
                 <div class="provider-logo">MG</div>
                 <div class="provider-name">Microgaming</div>
-                <div class="provider-games">140+ Oyun</div>
+                <div class="provider-games">140+ Game</div>
             </a>
 
             <a href="/en/providers/spadegaming" class="provider-card">
                 <div class="provider-logo">SG</div>
                 <div class="provider-name">Spadegaming</div>
-                <div class="provider-games">100+ Oyun</div>
+                <div class="provider-games">100+ Game</div>
             </a>
 
             <a href="/en/providers/slotmill" class="provider-card">
                 <div class="provider-logo">SM</div>
                 <div class="provider-name">Slotmill</div>
-                <div class="provider-games">60+ Oyun</div>
+                <div class="provider-games">60+ Game</div>
             </a>
 
             <a href="/en/providers/fugaso" class="provider-card">
                 <div class="provider-logo">FG</div>
                 <div class="provider-name">Fugaso</div>
-                <div class="provider-games">90+ Oyun</div>
+                <div class="provider-games">90+ Game</div>
             </a>
 
             <a href="/en/providers/platipus" class="provider-card">
                 <div class="provider-logo">PL</div>
                 <div class="provider-name">Platipus</div>
-                <div class="provider-games">80+ Oyun</div>
+                <div class="provider-games">80+ Game</div>
             </a>
         </div>
     </div>
@@ -1535,12 +1538,6 @@ function LandingPage() {
      }
 
      const winList = document.getElementById('win-list');
-     if (!winList) {
-         console.error('test div bulunamadı!');
-     } 
-	else{
-		   console.error('test div bulundu!');
-	}
      const alphabet = 'ABCÇDEFGHIİJKLMNOÖPRSŞTÜVYZ';
 
      const games = [
@@ -1690,9 +1687,10 @@ function LandingPage() {
              const winItem = document.createElement('div');
              winItem.classList.add('win-item');
              winItem.innerHTML = `
-                         <p><strong>Oyuncumuz ${winnerName}</strong></p>
-                         <p><strong>${game}</strong> oyunundan <strong>${winAmount}</strong> kazandı.</p>
-                         <p>Tebrik ederiz, bol kazançlar dileriz!</p>
+                 <p><strong>Our player ${winnerName}</strong></p>
+<p>won <strong>${winAmount}</strong> from the game <strong>${game}</strong>.</p>
+<p>Congratulations and good luck!</p>
+
                      `;
 
              winList.appendChild(winItem);
@@ -1708,9 +1706,10 @@ function LandingPage() {
          const winItem = document.createElement('div');
          winItem.classList.add('win-item', 'animated');
          winItem.innerHTML = `
-                     <p><strong>Oyuncumuz ${winnerName}</strong></p>
-                     <p><strong>${game}</strong> oyunundan <strong>${winAmount}</strong> kazandı.</p>
-                     <p>Tebrik ederiz, bol kazançlar dileriz!</p>
+                  <p><strong>Our player ${winnerName}</strong></p>
+<p>won <strong>${winAmount}</strong> from the game <strong>${game}</strong>.</p>
+<p>Congratulations and good luck!</p>
+
                  `;
 
          if (winList.children.length >= 8) {
