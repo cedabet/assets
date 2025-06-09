@@ -454,7 +454,7 @@ function LandingPage() {
              style.textContent = `
         @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@@400;500;600;700;800&display=swap');
 
-.container {
+.containers {
     max-width: 100%;
     width: 100%;
     margin: 0 auto;
@@ -1154,7 +1154,7 @@ function LandingPage() {
          customContainer.classList.add('section', 'custom-section');
 	 customContainer.id = 'custom-section-landing';
          customContainer.innerHTML = `
-             <div class="container">
+             <div class="containers">
                  <!-- Logo Section -->
                  <div class="logo-section">
                      <div class="logo">CedaBet</div>
