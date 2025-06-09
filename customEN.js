@@ -1339,110 +1339,195 @@ function LandingPage() {
                  </section>
 
                  <!-- Game Providers Section -->
-                 <section class="providers-section">
-                     <h2 class="section-title">🎮 Oyun Sağlayıcıları</h2>
-                     <div class="providers-container">
-                         <div class="providers-track">
-                             <!-- Original providers with links -->
-                             <a href="#" class="provider-card">
-                                 <div class="provider-logo">PG</div>
-                                 <div class="provider-name">Pragmatic Play</div>
-                                 <div class="provider-games">150+ Oyun</div>
-                             </a>
+              <section class="providers-section">
+    <h2 class="section-title">🎮 Oyun Sağlayıcıları</h2>
+    <div class="providers-container">
+        <div class="providers-track">
+            <!-- 15 seçilmiş sağlayıcı -->
+            <a href="/en/providers/pragmatic-play" class="provider-card">
+                <div class="provider-logo">PG</div>
+                <div class="provider-name">Pragmatic Play</div>
+                <div class="provider-games">150+ Oyun</div>
+            </a>
 
-                             <a href="#" class="provider-card">
-                                 <div class="provider-logo">EV</div>
-                                 <div class="provider-name">Evolution</div>
-                                 <div class="provider-games">80+ Canlı Oyun</div>
-                             </a>
+            <a href="/en/providers/evolution" class="provider-card">
+                <div class="provider-logo">EV</div>
+                <div class="provider-name">Evolution</div>
+                <div class="provider-games">100+ Oyun</div>
+            </a>
 
-                             <a href="#" class="provider-card">
-                                 <div class="provider-logo">NT</div>
-                                 <div class="provider-name">NetEnt</div>
-                                 <div class="provider-games">120+ Oyun</div>
-                             </a>
+            <a href="/en/providers/netent" class="provider-card">
+                <div class="provider-logo">NT</div>
+                <div class="provider-name">NetEnt</div>
+                <div class="provider-games">130+ Oyun</div>
+            </a>
 
-                             <a href="#" class="provider-card">
-                                 <div class="provider-logo">MG</div>
-                                 <div class="provider-name">Microgaming</div>
-                                 <div class="provider-games">200+ Oyun</div>
-                             </a>
+            <a href="/en/providers/egt" class="provider-card">
+                <div class="provider-logo">EG</div>
+                <div class="provider-name">EGT</div>
+                <div class="provider-games">90+ Oyun</div>
+            </a>
 
-                             <a href="#" class="provider-card">
-                                 <div class="provider-logo">PP</div>
-                                 <div class="provider-name">Play'n GO</div>
-                                 <div class="provider-games">90+ Oyun</div>
-                             </a>
+            <a href="/en/providers/quickspin" class="provider-card">
+                <div class="provider-logo">QS</div>
+                <div class="provider-name">Quickspin</div>
+                <div class="provider-games">70+ Oyun</div>
+            </a>
 
-                             <a href="#" class="provider-card">
-                                 <div class="provider-logo">BG</div>
-                                 <div class="provider-name">Big Time Gaming</div>
-                                 <div class="provider-games">45+ Oyun</div>
-                             </a>
+            <a href="/en/providers/red-tiger" class="provider-card">
+                <div class="provider-logo">RT</div>
+                <div class="provider-name">Red Tiger</div>
+                <div class="provider-games">80+ Oyun</div>
+            </a>
 
-                             <a href="#" class="provider-card">
-                                 <div class="provider-logo">RB</div>
-                                 <div class="provider-name">Red Tiger</div>
-                                 <div class="provider-games">75+ Oyun</div>
-                             </a>
+            <a href="/en/providers/yggdrasil" class="provider-card">
+                <div class="provider-logo">YG</div>
+                <div class="provider-name">Yggdrasil</div>
+                <div class="provider-games">60+ Oyun</div>
+            </a>
 
-                             <a href="#" class="provider-card">
-                                 <div class="provider-logo">YG</div>
-                                 <div class="provider-name">Yggdrasil</div>
-                                 <div class="provider-games">60+ Oyun</div>
-                             </a>
+            <a href="/en/providers/playtech" class="provider-card">
+                <div class="provider-logo">PT</div>
+                <div class="provider-name">PlayTech</div>
+                <div class="provider-games">110+ Oyun</div>
+            </a>
 
-                             <!-- Duplicated providers with links for seamless scroll -->
-                             <a href="#" class="provider-card">
-                                 <div class="provider-logo">PG</div>
-                                 <div class="provider-name">Pragmatic Play</div>
-                                 <div class="provider-games">150+ Oyun</div>
-                             </a>
+            <a href="/en/providers/thunderkick" class="provider-card">
+                <div class="provider-logo">TK</div>
+                <div class="provider-name">Thunderkick</div>
+                <div class="provider-games">50+ Oyun</div>
+            </a>
 
-                             <a href="#" class="provider-card">
-                                 <div class="provider-logo">EV</div>
-                                 <div class="provider-name">Evolution</div>
-                                 <div class="provider-games">80+ Canlı Oyun</div>
-                             </a>
+            <a href="/en/providers/booming-games" class="provider-card">
+                <div class="provider-logo">BG</div>
+                <div class="provider-name">Booming Games</div>
+                <div class="provider-games">120+ Oyun</div>
+            </a>
 
-                             <a href="#" class="provider-card">
-                                 <div class="provider-logo">NT</div>
-                                 <div class="provider-name">NetEnt</div>
-                                 <div class="provider-games">120+ Oyun</div>
-                             </a>
+            <a href="/en/providers/microgaming" class="provider-card">
+                <div class="provider-logo">MG</div>
+                <div class="provider-name">Microgaming</div>
+                <div class="provider-games">140+ Oyun</div>
+            </a>
 
-                             <a href="#" class="provider-card">
-                                 <div class="provider-logo">MG</div>
-                                 <div class="provider-name">Microgaming</div>
-                                 <div class="provider-games">200+ Oyun</div>
-                             </a>
+            <a href="/en/providers/spadegaming" class="provider-card">
+                <div class="provider-logo">SG</div>
+                <div class="provider-name">Spadegaming</div>
+                <div class="provider-games">100+ Oyun</div>
+            </a>
 
-                             <a href="#" class="provider-card">
-                                 <div class="provider-logo">PP</div>
-                                 <div class="provider-name">Play'n GO</div>
-                                 <div class="provider-games">90+ Oyun</div>
-                             </a>
+            <a href="/en/providers/slotmill" class="provider-card">
+                <div class="provider-logo">SM</div>
+                <div class="provider-name">Slotmill</div>
+                <div class="provider-games">60+ Oyun</div>
+            </a>
 
-                             <a href="#" class="provider-card">
-                                 <div class="provider-logo">BG</div>
-                                 <div class="provider-name">Big Time Gaming</div>
-                                 <div class="provider-games">45+ Oyun</div>
-                             </a>
+            <a href="/en/providers/fugaso" class="provider-card">
+                <div class="provider-logo">FG</div>
+                <div class="provider-name">Fugaso</div>
+                <div class="provider-games">90+ Oyun</div>
+            </a>
 
-                             <a href="#" class="provider-card">
-                                 <div class="provider-logo">RB</div>
-                                 <div class="provider-name">Red Tiger</div>
-                                 <div class="provider-games">75+ Oyun</div>
-                             </a>
+            <a href="/en/providers/platipus" class="provider-card">
+                <div class="provider-logo">PL</div>
+                <div class="provider-name">Platipus</div>
+                <div class="provider-games">80+ Oyun</div>
+            </a>
 
-                             <a href="#" class="provider-card">
-                                 <div class="provider-logo">YG</div>
-                                 <div class="provider-name">Yggdrasil</div>
-                                 <div class="provider-games">60+ Oyun</div>
-                             </a>
-                         </div>
-                     </div>
-                 </section>
+            <!-- Duplicate for seamless scroll -->
+            <a href="/en/providers/pragmatic-play" class="provider-card">
+                <div class="provider-logo">PG</div>
+                <div class="provider-name">Pragmatic Play</div>
+                <div class="provider-games">150+ Oyun</div>
+            </a>
+
+            <a href="/en/providers/evolution" class="provider-card">
+                <div class="provider-logo">EV</div>
+                <div class="provider-name">Evolution</div>
+                <div class="provider-games">100+ Oyun</div>
+            </a>
+
+            <a href="/en/providers/netent" class="provider-card">
+                <div class="provider-logo">NT</div>
+                <div class="provider-name">NetEnt</div>
+                <div class="provider-games">130+ Oyun</div>
+            </a>
+
+            <a href="/en/providers/egt" class="provider-card">
+                <div class="provider-logo">EG</div>
+                <div class="provider-name">EGT</div>
+                <div class="provider-games">90+ Oyun</div>
+            </a>
+
+            <a href="/en/providers/quickspin" class="provider-card">
+                <div class="provider-logo">QS</div>
+                <div class="provider-name">Quickspin</div>
+                <div class="provider-games">70+ Oyun</div>
+            </a>
+
+            <a href="/en/providers/red-tiger" class="provider-card">
+                <div class="provider-logo">RT</div>
+                <div class="provider-name">Red Tiger</div>
+                <div class="provider-games">80+ Oyun</div>
+            </a>
+
+            <a href="/en/providers/yggdrasil" class="provider-card">
+                <div class="provider-logo">YG</div>
+                <div class="provider-name">Yggdrasil</div>
+                <div class="provider-games">60+ Oyun</div>
+            </a>
+
+            <a href="/en/providers/playtech" class="provider-card">
+                <div class="provider-logo">PT</div>
+                <div class="provider-name">PlayTech</div>
+                <div class="provider-games">110+ Oyun</div>
+            </a>
+
+            <a href="/en/providers/thunderkick" class="provider-card">
+                <div class="provider-logo">TK</div>
+                <div class="provider-name">Thunderkick</div>
+                <div class="provider-games">50+ Oyun</div>
+            </a>
+
+            <a href="/en/providers/booming-games" class="provider-card">
+                <div class="provider-logo">BG</div>
+                <div class="provider-name">Booming Games</div>
+                <div class="provider-games">120+ Oyun</div>
+            </a>
+
+            <a href="/en/providers/microgaming" class="provider-card">
+                <div class="provider-logo">MG</div>
+                <div class="provider-name">Microgaming</div>
+                <div class="provider-games">140+ Oyun</div>
+            </a>
+
+            <a href="/en/providers/spadegaming" class="provider-card">
+                <div class="provider-logo">SG</div>
+                <div class="provider-name">Spadegaming</div>
+                <div class="provider-games">100+ Oyun</div>
+            </a>
+
+            <a href="/en/providers/slotmill" class="provider-card">
+                <div class="provider-logo">SM</div>
+                <div class="provider-name">Slotmill</div>
+                <div class="provider-games">60+ Oyun</div>
+            </a>
+
+            <a href="/en/providers/fugaso" class="provider-card">
+                <div class="provider-logo">FG</div>
+                <div class="provider-name">Fugaso</div>
+                <div class="provider-games">90+ Oyun</div>
+            </a>
+
+            <a href="/en/providers/platipus" class="provider-card">
+                <div class="provider-logo">PL</div>
+                <div class="provider-name">Platipus</div>
+                <div class="provider-games">80+ Oyun</div>
+            </a>
+        </div>
+    </div>
+</section>
+
              </div>
          `;
 
