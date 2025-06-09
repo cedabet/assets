@@ -1151,7 +1151,7 @@ function LandingPage() {
          }
 
          const customContainer = document.createElement('div');
-         customContainer.classList.add('section custom-section');
+         customContainer.classList.add('section', 'custom-section');
 	 customContainer.id = 'custom-section-landing';
          customContainer.innerHTML = `
              <div class="container">
