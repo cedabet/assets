@@ -1811,15 +1811,12 @@ function createSocialSection() {
   style.id = 'telegram-style';
   style.textContent = `
     .social-section {
-    display: flex;
-    border-radius: 5px;
     width: 100%;
-    height: 200px;
+    height: 250px;
+    background: #03121a;
+    position: relative;
     overflow: hidden;
-    margin-top: 30px;
     border: 1px solid rgba(72, 171, 224, 0.2);
-    align-items: center;
-    justify-content: center;
 }
 
     .content {
