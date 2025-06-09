@@ -1394,6 +1394,9 @@ function LandingPage() {
      if (!winList) {
          console.error('test div bulunamadı!');
      } 
+	else{
+		   console.error('test div bulundu!');
+	}
      const alphabet = 'ABCÇDEFGHIİJKLMNOÖPRSŞTÜVYZ';
 
      const games = [
@@ -1599,13 +1602,9 @@ function LandingPage() {
          setInterval(updateJackpots, 3000);
      }
 
-     window.addEventListener('load', () => {
-         // Initialize jackpot display with loaded values
-         updateJackpotDisplay();
-
-         startWinningCycle();
-         startJackpotUpdates();
-     });
+    updateJackpotDisplay();
+startWinningCycle();
+startJackpotUpdates();
 
      // Save jackpots when page is about to unload
      window.addEventListener('beforeunload', () => {
