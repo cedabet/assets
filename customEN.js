@@ -84,8 +84,10 @@ document.head.appendChild(link);
           } else if (path !== "/en/sportsbook") {
 
               clearDynamicContent()
-
           }
+	    else if (path === "/en/latest-big-wins") {
+          LandingPage();
+        }
       }, 400);
   }
 
@@ -426,7 +428,13 @@ function clearDynamicContent() {
     const idsToRemove = [
         "mini-games-wrapper-2",
         "custom-section-7",
-	 "league-wrapper"
+        "league-wrapper",
+        "custom-section-landing"
+    ];
+
+    const styleIdsToRemove = [
+        "big-wins-style"
+        // buraya kaldırmak istediğin style id'lerini ekle
     ];
 
     idsToRemove.forEach(id => {
@@ -434,6 +442,14 @@ function clearDynamicContent() {
         if (el) {
             el.remove();
             console.log(`${id} temizlendi.`);
+        }
+    });
+
+    styleIdsToRemove.forEach(id => {
+        const styleEl = document.getElementById(id);
+        if (styleEl) {
+            styleEl.remove();
+            console.log(`${id} style etiketi kaldırıldı.`);
         }
     });
 }
@@ -1786,45 +1802,52 @@ startJackpotUpdates();
 
 function addMenuElement() {
     const sidebarNav = document.querySelector('.sidebar__nav.sidebar__nav--border');
-
     if (!sidebarNav) {
         return;
     }
 
-    const uid = 'custom-item-menu';
+    const menuItems = [
+        {
+            id: 'custom-item-menu',
+            href: '/en/casino/group/table-games',
+            text: 'Table Games',
+            iconClass: 'fa-solid fa-certificate'
+        },
+        {
+            id: 'custom-item-bigwins',
+            href: '/en/latest-big-wins',
+            text: 'Big Wins',
+            iconClass: 'fa-solid fa-trophy'
+        }
+    ];
 
+    menuItems.forEach(item => {
+        if (document.getElementById(item.id)) return;
 
-    const existingElement = document.getElementById(uid);
+        const newLi = document.createElement('li');
+        newLi.id = item.id;
 
-    if (existingElement) {
-        return;
-    }
+        const newAnchor = document.createElement('a');
+        newAnchor.href = item.href;
 
-    const newLi = document.createElement('li');
-    newLi.id = uid;
+        const icon = document.createElement('i');
+        icon.className = item.iconClass;
+        icon.style.color = '#5c7382';
+        icon.style.height = '22px';
+        icon.style.width = '22px';
+        icon.style.fontSize = '22px';
 
-    const newAnchor = document.createElement('a');
-    newAnchor.href = '/en/casino/group/table-games';
+        const span = document.createElement('span');
+        span.textContent = 'New';
 
- 
-	const icon = document.createElement("i");
-icon.className = "fa-solid fa-certificate";
-icon.style.color = "#5c7382";
-icon.style.height = "22px";
-icon.style.width = "22px";
-icon.style.fontSize = "22px";
+        newAnchor.appendChild(icon);
+        newAnchor.appendChild(document.createTextNode(' ' + item.text));
+        newAnchor.appendChild(span);
 
-    const span = document.createElement('span');
-    span.textContent = 'New';
+        newLi.appendChild(newAnchor);
 
-
-    newAnchor.appendChild(icon);
-    newAnchor.appendChild(document.createTextNode(' Table Games'));
-    newAnchor.appendChild(span);
-
-    newLi.appendChild(newAnchor);
-
-    sidebarNav.appendChild(newLi);
+        sidebarNav.appendChild(newLi);
+    });
 }
 
 function addMenuElementTwo() {
