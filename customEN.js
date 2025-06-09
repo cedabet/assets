@@ -1692,7 +1692,6 @@ const minorJackpotEl = document.getElementById('minor-jackpot');
 const miniJackpotEl = document.getElementById('mini-jackpot');
 
 if (winList && megaJackpotEl && majorJackpotEl && minorJackpotEl && miniJackpotEl) {
-    // Jackpot ve kazanan listesi ile ilgili kodlar
 
     function updateJackpotDisplay() {
         megaJackpotEl.textContent = `₺${jackpots.mega.toLocaleString('tr-TR')}`;
@@ -1805,7 +1804,7 @@ startJackpotUpdates();
          saveJackpots(jackpots);
      }, 30000);
 }
-
+}
 
 function addMenuElement() {
     const sidebarNav = document.querySelector('.sidebar__nav.sidebar__nav--border');
