@@ -1818,7 +1818,7 @@ function addMenuElement() {
         {
             id: 'custom-item-bigwins',
             href: '/en/latest-big-wins',
-            text: 'Big Wins',
+            text: 'Latest Big Wins',
             iconClass: 'fa-solid fa-trophy'
         }
     ];
