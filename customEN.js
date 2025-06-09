@@ -1693,7 +1693,7 @@ const miniJackpotEl = document.getElementById('mini-jackpot');
 
 if (winList && megaJackpotEl && majorJackpotEl && minorJackpotEl && miniJackpotEl) {
 
-    function updateJackpotDisplay() {
+    function updateJackpots() {
         megaJackpotEl.textContent = `₺${jackpots.mega.toLocaleString('tr-TR')}`;
         majorJackpotEl.textContent = `₺${jackpots.major.toLocaleString('tr-TR')}`;
         minorJackpotEl.textContent = `₺${jackpots.minor.toLocaleString('tr-TR')}`;
@@ -1790,7 +1790,7 @@ if (winList && megaJackpotEl && majorJackpotEl && minorJackpotEl && miniJackpotE
 
   // Fonksiyonu hemen çağır
   addRandomPlayingCounts();
-    updateJackpotDisplay();
+    updateJackpots();
 startWinningCycle();
 startJackpotUpdates();
 
