@@ -1,4 +1,4 @@
-  let link = document.createElement("link");Add commentMore actions
+  let link = document.createElement("link");
 link.rel = "stylesheet";
 link.href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css";
 
