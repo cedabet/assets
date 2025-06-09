@@ -1686,7 +1686,6 @@ function LandingPage() {
      }
 
      // Jackpot güncelleme fonksiyonu - now saves to localStorage
-    const winList = document.getElementById('win-list');
 const megaJackpotEl = document.getElementById('mega-jackpot');
 const majorJackpotEl = document.getElementById('major-jackpot');
 const minorJackpotEl = document.getElementById('minor-jackpot');
