@@ -1,5 +1,4 @@
-
-    let link = document.createElement("link");
+  let link = document.createElement("link");Add commentMore actions
 link.rel = "stylesheet";
 link.href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css";
 
@@ -1555,7 +1554,7 @@ function LandingPage() {
          firstSectionDiv.prepend(customContainer);
      }
 
-      const winList = document.getElementById('win-list');
+     const winList = document.getElementById('win-list');
      const alphabet = 'ABCÇDEFGHIİJKLMNOÖPRSŞTÜVYZ';
 
      const games = [
@@ -1629,10 +1628,10 @@ function LandingPage() {
 
      // Update jackpot display
      function updateJackpotDisplay() {
-         document.getElementById('mega-jackpot').textContent = ₺${jackpots.mega.toLocaleString('tr-TR')};
-         document.getElementById('major-jackpot').textContent = ₺${jackpots.major.toLocaleString('tr-TR')};
-         document.getElementById('minor-jackpot').textContent = ₺${jackpots.minor.toLocaleString('tr-TR')};
-         document.getElementById('mini-jackpot').textContent = ₺${jackpots.mini.toLocaleString('tr-TR')};
+         document.getElementById('mega-jackpot').textContent = `₺${jackpots.mega.toLocaleString('tr-TR')}`;
+         document.getElementById('major-jackpot').textContent = `₺${jackpots.major.toLocaleString('tr-TR')}`;
+         document.getElementById('minor-jackpot').textContent = `₺${jackpots.minor.toLocaleString('tr-TR')}`;
+         document.getElementById('mini-jackpot').textContent = `₺${jackpots.mini.toLocaleString('tr-TR')}`;
      }
 
      // Rastgele Türk ismi üretme - değişken yıldız sayısı ile
@@ -1657,7 +1656,7 @@ function LandingPage() {
          firstName = firstName.charAt(0).toUpperCase() + '*'.repeat(firstNameStarsCount);
          lastName = lastName.charAt(0).toUpperCase() + '*'.repeat(lastNameStarsCount);
 
-         return ${firstName} ${lastName};
+         return `${firstName} ${lastName}`;
      }
 
      function getRandomWin() {
@@ -1670,7 +1669,7 @@ function LandingPage() {
              winAmount = Math.floor(Math.random() * (10000 - 400 + 1)) + 400;
          }
 
-         return ₺${winAmount.toLocaleString('tr-TR')};
+         return `₺${winAmount.toLocaleString('tr-TR')}`;
      }
 
      function getRandomInterval() {
@@ -1704,12 +1703,12 @@ function LandingPage() {
 
              const winItem = document.createElement('div');
              winItem.classList.add('win-item');
-             winItem.innerHTML = 
+             winItem.innerHTML = `
                  <p><strong>Our player ${winnerName}</strong></p>
 <p>won <strong>${winAmount}</strong> from the game <strong>${game}</strong>.</p>
 <p>Congratulations and good luck!</p>
 
-                     ;
+                     `;
 
              winList.appendChild(winItem);
              currentIndex++;
@@ -1723,12 +1722,12 @@ function LandingPage() {
 
          const winItem = document.createElement('div');
          winItem.classList.add('win-item', 'animated');
-         winItem.innerHTML = 
+         winItem.innerHTML = `
                   <p><strong>Our player ${winnerName}</strong></p>
 <p>won <strong>${winAmount}</strong> from the game <strong>${game}</strong>.</p>
 <p>Congratulations and good luck!</p>
 
-                 ;
+                 `;
 
          if (winList.children.length >= 8) {
              const firstItem = winList.children[0];
@@ -1771,7 +1770,7 @@ function LandingPage() {
       // Yeni bir span oluştur ve içine sayıyı yaz
       const playingSpan = document.createElement('span');
       playingSpan.className = 'playing-count';
-      playingSpan.textContent = ${randomCount} user playing;
+      playingSpan.textContent = `${randomCount} user playing`;
 
       // Eğer önceden varsa temizle
       const existing = item.querySelector('.playing-count');
@@ -1800,6 +1799,7 @@ startJackpotUpdates();
          saveJackpots(jackpots);
      }, 30000);
 }
+
 
 function addMenuElement() {
     const sidebarNav = document.querySelector('.sidebar__nav.sidebar__nav--border');
