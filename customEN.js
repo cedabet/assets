@@ -1037,7 +1037,9 @@ function LandingPage() {
     .logo {
         font-size: 2rem;
     }
-
+  .logo-section {
+    margin-top: 75px;
+  }
     .feature-section,
     .winners-section,
     .jackpot-section,
