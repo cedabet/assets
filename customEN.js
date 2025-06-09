@@ -32,6 +32,10 @@ document.head.appendChild(link);
             createVipExperience();
 
         }
+   else if (sportspath === "/en/latest-big-wins") {
+          LandingPage();
+        }
+	   
         isFirstLoad = false;
     }
 
@@ -433,6 +437,1197 @@ function clearDynamicContent() {
         }
     });
 }
+
+function LandingPage() {
+     // p-not-found divini kaldır
+     const notFoundDiv = document.querySelector('.p-not-found');
+     if (notFoundDiv) notFoundDiv.remove();
+
+     // container.section.section--first divini bul
+     const firstSectionDiv = document.querySelector('.container.section.section--first');
+     if (!firstSectionDiv) {
+         console.error('.container.section.section--first div bulunamadı!');
+     } else {
+         if (!document.getElementById("big-wins-style")) {
+             const style = document.createElement("style");
+             style.id = "big-wins-style";
+             style.textContent = `
+        @@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@@400;500;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+      box-sizing: border-box;
+
+}
+    body {
+     font-family: 'Montserrat', sans-serif;
+     background-color: #0a1017;
+     background-image:
+         radial-gradient(circle at 25% 25%, rgba(32, 87, 146, 0.05) 0%, transparent 50%),
+         radial-gradient(circle at 75% 75%, rgba(32, 87, 146, 0.03) 0%, transparent 50%);
+ }
+
+.container {
+    max-width: 100%;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+}
+
+/* Logo Section */
+.logo-section {
+    text-align: center;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.logo {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #4a9bff;
+    text-shadow: 0 0 20px rgba(74, 155, 255, 0.5);
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo::before {
+    content: "★";
+    margin-right: 10px;
+    font-size: 2rem;
+}
+
+.logo::after {
+    content: "★";
+    margin-left: 10px;
+    font-size: 2rem;
+}
+
+.tagline {
+    color: #7fb3d3;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+/* Common Section Styles */
+.feature-section, .winners-section, .jackpot-section, .providers-section {
+    background: linear-gradient(135deg, rgba(13, 25, 42, 0.95) 0%, rgba(16, 30, 48, 0.95) 100%);
+    border-radius: 16px;
+    padding: 30px;
+    box-shadow:
+        0 10px 30px rgba(0, 0, 0, 0.4),
+        inset 0 1px 0 rgba(255, 255, 255, 0.05);
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    max-width: 1200px;
+    backdrop-filter: blur(10px);
+}
+
+.feature-section {
+    border: 1px solid rgba(74, 155, 255, 0.2);
+}
+
+.winners-section {
+    border: 1px solid rgba(74, 155, 255, 0.2);
+    height: 500px;
+}
+
+.jackpot-section {
+    border: 1px solid rgba(255, 198, 41, 0.3);
+}
+
+.providers-section {
+    border: 1px solid rgba(74, 155, 255, 0.2);
+}
+
+/* Section Before Elements */
+.feature-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: linear-gradient(90deg, #4a9bff, #2a6cb9, #4a9bff);
+    background-size: 200% 100%;
+    animation: shimmer 3s ease-in-out infinite;
+}
+
+.winners-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: linear-gradient(90deg, #4a9bff, #2a6cb9, #4a9bff);
+    background-size: 200% 100%;
+    animation: shimmer 3s ease-in-out infinite;
+}
+
+.jackpot-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: linear-gradient(90deg, #ffc629, #e6a800, #ffc629);
+    background-size: 200% 100%;
+    animation: shimmer 3s ease-in-out infinite;
+}
+
+.providers-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: linear-gradient(90deg, #4a9bff, #2a6cb9, #4a9bff);
+    background-size: 200% 100%;
+    animation: shimmer 3s ease-in-out infinite;
+}
+
+@@keyframes shimmer {
+    0%, 100% { background-position: -200% 0; }
+    50% { background-position: 200% 0; }
+}
+
+.section-title {
+    font-size: 1.8rem;
+    color: #ffffff;
+    margin-bottom: 25px;
+    font-weight: 600;
+    text-align: center;
+    position: relative;
+}
+
+.section-title::after {
+    content: '';
+    position: absolute;
+    bottom: -8px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 3px;
+    background: linear-gradient(90deg, #4a9bff, #2a6cb9);
+    border-radius: 2px;
+}
+
+.winners-section .section-title::after {
+    background: linear-gradient(90deg, #4a9bff, #2a6cb9);
+}
+
+.jackpot-section .section-title::after {
+    background: linear-gradient(90deg, #ffc629, #e6a800);
+}
+
+.providers-section .section-title::after {
+    background: linear-gradient(90deg, #4a9bff, #2a6cb9);
+}
+
+/* Slider Container for Games */
+.slider-container {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    padding: 15px 0;
+    mask: linear-gradient(90deg, transparent 0%, black 5%, black 95%, transparent 100%);
+    -webkit-mask: linear-gradient(90deg, transparent 0%, black 5%, black 95%, transparent 100%);
+}
+
+.slider-track {
+    display: flex;
+    animation: games-scroll 35s linear infinite;
+    width: max-content;
+}
+
+.slider-track:hover {
+    animation-play-state: paused;
+}
+
+@@keyframes games-scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(calc(-160px * 7));
+    }
+}
+
+/* Game Items - Now as clickable links */
+.game-item {
+    width: 140px;
+    margin-right: 20px;
+    background: linear-gradient(135deg, rgba(16, 30, 48, 0.9) 0%, rgba(20, 36, 56, 0.9) 100%);
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+    text-align: center;
+    flex-shrink: 0;
+    transition: all 0.3s ease;
+    overflow: hidden;
+    border: 1px solid rgba(74, 155, 255, 0.3);
+    position: relative;
+    backdrop-filter: blur(5px);
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+.game-item::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(45deg, transparent 30%, rgba(74, 155, 255, 0.1) 50%, transparent 70%);
+    transform: translateX(-100%);
+    transition: transform 0.6s;
+}
+
+.game-item:hover::before {
+    transform: translateX(100%);
+}
+
+.game-item:hover {
+    transform: translateY(-8px) scale(1.05);
+    box-shadow:
+        0 15px 35px rgba(0, 0, 0, 0.5),
+        0 0 20px rgba(74, 155, 255, 0.3);
+    border-color: #4a9bff;
+}
+
+.game-item img {
+    width: 100%;
+    height: 90px;
+    object-fit: cover;
+    border-radius: 12px 12px 0 0;
+}
+
+.game-item p {
+    color: #e8f4fd;
+    margin: 12px 0;
+    font-weight: 600;
+    font-size: 12px;
+    padding: 0 10px;
+}
+
+/* Winners Container */
+.win-container {
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+    position: relative;
+    padding: 0;
+    margin-top: 10px;
+}
+
+.win-list {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 0;
+}
+
+.win-item {
+    background: linear-gradient(135deg, rgba(16, 30, 48, 0.8) 0%, rgba(20, 36, 56, 0.8) 100%);
+    margin: 8px 0;
+    padding: 20px;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    font-size: 14px;
+    opacity: 1;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.4);
+    border: 1px solid rgba(74, 155, 255, 0.3);
+    backdrop-filter: blur(5px);
+}
+
+.win-item:nth-child(even) {
+    background: linear-gradient(135deg, rgba(20, 36, 56, 0.8) 0%, rgba(16, 30, 48, 0.8) 100%);
+    border-color: rgba(74, 155, 255, 0.3);
+}
+
+.win-item p {
+    margin: 0;
+    color: #fff;
+    line-height: 1.4;
+    font-weight: 500;
+}
+
+.win-item p strong {
+    color: #4a9bff;
+    font-size: 1.1em;
+    font-weight: 700;
+}
+
+.win-item p:last-child {
+    margin-top: 8px;
+    font-style: italic;
+    color: #7fb3d3;
+    font-size: 12px;
+}
+
+/* Animation for new winners after initial load */
+.win-item.animated {
+    opacity: 0;
+    animation: slide-in 1.2s forwards, fade-in 1.5s forwards;
+}
+
+@@keyframes slide-in {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@@keyframes fade-out {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@@keyframes pulse-glow {
+    0% {
+        text-shadow: 0 0 10px rgba(255, 198, 41, 0.5);
+    }
+    100% {
+        text-shadow: 0 0 20px rgba(255, 198, 41, 0.8), 0 0 30px rgba(255, 198, 41, 0.4);
+    }
+}
+
+/* Jackpot Section Styles - Grid Layout with Space Theme Colors */
+.jackpot-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    margin-top: 10px;
+}
+
+.jackpot-card {
+    background: linear-gradient(135deg, rgba(16, 30, 48, 0.9) 0%, rgba(20, 36, 56, 0.9) 100%);
+    border: 1px solid rgba(255, 198, 41, 0.3);
+    border-radius: 12px;
+    padding: 25px;
+    text-align: center;
+    backdrop-filter: blur(5px);
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.jackpot-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(45deg, transparent 30%, rgba(255, 198, 41, 0.1) 50%, transparent 70%);
+    transform: translateX(-100%);
+    transition: transform 0.6s;
+}
+
+.jackpot-card:hover::before {
+    transform: translateX(100%);
+}
+
+.jackpot-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
+    border-color: #ffc629;
+}
+
+.jackpot-title {
+    font-size: 1.2rem;
+    color: #ffc629;
+    font-weight: 700;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.jackpot-amount {
+    font-size: 2.2rem;
+    color: #ffffff;
+    font-weight: 800;
+    margin-bottom: 10px;
+    text-shadow: 0 0 10px rgba(255, 198, 41, 0.5);
+    animation: pulse-glow 2s ease-in-out infinite alternate;
+}
+
+.jackpot-description {
+    color: #7fb3d3;
+    font-size: 0.9rem;
+    line-height: 1.4;
+}
+
+.mega-jackpot {
+    grid-column: 1 / -1;
+    background: linear-gradient(135deg, rgba(20, 36, 56, 0.9) 0%, rgba(16, 30, 48, 0.9) 100%);
+    border-color: rgba(255, 198, 41, 0.4);
+    padding: 35px;
+}
+
+.mega-jackpot .jackpot-title {
+    font-size: 1.5rem;
+    color: #ffc629;
+    margin-bottom: 20px;
+}
+
+.mega-jackpot .jackpot-amount {
+    font-size: 3rem;
+    color: #ffc629;
+    text-shadow: 0 0 15px rgba(255, 198, 41, 0.6);
+}
+
+.mega-jackpot::before {
+    background: linear-gradient(45deg, transparent 30%, rgba(255, 198, 41, 0.2) 50%, transparent 70%);
+}
+
+.mega-jackpot:hover {
+    border-color: #ffc629;
+}
+
+/* Providers Section - Infinity Scroll */
+.providers-container {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    padding: 15px 0;
+    mask: linear-gradient(90deg, transparent 0%, black 5%, black 95%, transparent 100%);
+    -webkit-mask: linear-gradient(90deg, transparent 0%, black 5%, black 95%, transparent 100%);
+}
+
+.providers-track {
+    display: flex;
+    animation: providers-scroll 40s linear infinite;
+    width: max-content;
+}
+
+.providers-track:hover {
+    animation-play-state: paused;
+}
+
+@@keyframes providers-scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(calc(-170px * 8));
+    }
+}
+
+/* Provider Cards - Now as clickable links */
+.provider-card {
+    width: 150px;
+    margin-right: 20px;
+    background: linear-gradient(135deg, rgba(16, 30, 48, 0.9) 0%, rgba(20, 36, 56, 0.9) 100%);
+    border: 1px solid rgba(74, 155, 255, 0.3);
+    border-radius: 12px;
+    padding: 20px;
+    text-align: center;
+    backdrop-filter: blur(5px);
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    flex-shrink: 0;
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+.provider-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(45deg, transparent 30%, rgba(74, 155, 255, 0.1) 50%, transparent 70%);
+    transform: translateX(-100%);
+    transition: transform 0.6s;
+}
+
+.provider-card:hover::before {
+    transform: translateX(100%);
+}
+
+.provider-card:hover {
+    transform: translateY(-8px) scale(1.05);
+    box-shadow:
+        0 15px 35px rgba(0, 0, 0, 0.5),
+        0 0 20px rgba(74, 155, 255, 0.3);
+    border-color: #4a9bff;
+}
+
+.provider-logo {
+    width: 80px;
+    height: 80px;
+    background: #0a1017;
+    border: 1px solid rgba(74, 155, 255, 0.3);
+    border-radius: 50%;
+    margin: 0 auto 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    color: white;
+    transition: all 0.3s ease;
+}
+
+.provider-card:hover .provider-logo {
+    border-color: #4a9bff;
+    box-shadow: 0 0 15px rgba(74, 155, 255, 0.3);
+}
+
+.provider-name {
+    color: #ffffff;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.provider-games {
+    color: #7fb3d3;
+    font-size: 0.9rem;
+}
+
+/* Responsive Design */
+@@media (max-width: 768px) {
+    body {
+        padding: 15px;
+    }
+
+    .logo {
+        font-size: 2rem;
+    }
+
+    .feature-section,
+    .winners-section,
+    .jackpot-section,
+    .providers-section {
+        padding: 20px;
+    }
+
+    .winners-section {
+        height: 350px;
+    }
+
+    .section-title {
+        font-size: 1.5rem;
+    }
+
+    .game-item {
+        width: 120px;
+        margin-right: 12px;
+    }
+
+    .game-item img {
+        height: 80px;
+    }
+
+    .game-item p {
+        font-size: 11px;
+        margin: 10px 0;
+    }
+
+    .win-item {
+        font-size: 12px;
+        padding: 15px;
+    }
+
+    .jackpot-container {
+        grid-template-columns: 1fr;
+    }
+
+    .mega-jackpot {
+        grid-column: 1;
+        padding: 25px;
+    }
+
+    .jackpot-amount {
+        font-size: 1.8rem;
+    }
+
+    .mega-jackpot .jackpot-amount {
+        font-size: 2.5rem;
+    }
+
+    @@keyframes providers-scroll {
+        0% {
+            transform: translateX(0);
+        }
+        100% {
+            transform: translateX(calc(-170px * 8));
+        }
+    }
+
+    @@keyframes games-scroll {
+        0% {
+            transform: translateX(0);
+        }
+        100% {
+            transform: translateX(calc(-132px * 7));
+        }
+    }
+}
+
+@@media (max-width: 480px) {
+    body {
+        padding: 10px;
+    }
+
+    .container {
+        gap: 20px;
+    }
+
+    .logo {
+        font-size: 1.8rem;
+    }
+
+    .section-title {
+        font-size: 1.3rem;
+    }
+
+    .game-item {
+        width: 100px;
+        margin-right: 10px;
+    }
+
+    .game-item img {
+        height: 70px;
+    }
+
+    .winners-section {
+        height: 370px;
+    }
+
+    .jackpot-card {
+        padding: 20px;
+    }
+
+    .jackpot-amount {
+        font-size: 1.5rem;
+    }
+
+    .mega-jackpot .jackpot-amount {
+        font-size: 2rem;
+    }
+
+    @@keyframes providers-scroll {
+        0% {
+            transform: translateX(0);
+        }
+        100% {
+            transform: translateX(calc(-145px * 8));
+        }
+    }
+
+    @@keyframes games-scroll {
+        0% {
+            transform: translateX(0);
+        }
+        100% {
+            transform: translateX(calc(-110px * 7));
+        }
+    }
+}
+             `; // CSS buraya daha sonra dinamik olarak eklenebilir
+             document.head.appendChild(style);
+         }
+
+         const customContainer = document.createElement('div');
+         customContainer.classList.add('container');
+         customContainer.innerHTML = `
+             <div class="container">
+                 <!-- Logo Section -->
+                 <div class="logo-section">
+                     <div class="logo">CedaBet</div>
+                     <div class="tagline">Premium Gaming Experience</div>
+                 </div>
+
+                 <!-- Feature Games Section -->
+                 <section class="feature-section">
+                     <h2 class="section-title">Öne Çıkan Oyunlar</h2>
+                     <div class="slider-container">
+                         <div class="slider-track">
+                             <!-- Original games with links -->
+                             <a href="#" class="game-item">
+                                 <img src="https://via.placeholder.com/140x90/0a1017/ffffff?text=Sweet+Bonanza" alt="Sweet Bonanza">
+                                 <p>Sweet Bonanza</p>
+                             </a>
+                             <a href="#" class="game-item">
+                                 <img src="https://via.placeholder.com/140x90/0a1017/ffffff?text=Book+of+Dead" alt="Book of Dead">
+                                 <p>Book of Dead</p>
+                             </a>
+                             <a href="#" class="game-item">
+                                 <img src="https://via.placeholder.com/140x90/0a1017/ffffff?text=Starburst" alt="Starburst">
+                                 <p>Starburst</p>
+                             </a>
+                             <a href="#" class="game-item">
+                                 <img src="https://via.placeholder.com/140x90/0a1017/ffffff?text=Gonzo's+Quest" alt="Gonzo's Quest">
+                                 <p>Gonzo's Quest</p>
+                             </a>
+                             <a href="#" class="game-item">
+                                 <img src="https://via.placeholder.com/140x90/0a1017/ffffff?text=Mega+Moolah" alt="Mega Moolah">
+                                 <p>Mega Moolah</p>
+                             </a>
+                             <a href="#" class="game-item">
+                                 <img src="https://via.placeholder.com/140x90/0a1017/ffffff?text=Dead+or+Alive" alt="Dead or Alive">
+                                 <p>Dead or Alive</p>
+                             </a>
+                             <a href="#" class="game-item">
+                                 <img src="https://via.placeholder.com/140x90/0a1017/ffffff?text=Bonanza" alt="Bonanza">
+                                 <p>Bonanza</p>
+                             </a>
+
+                             <!-- Duplicated games with links -->
+                             <a href="#" class="game-item">
+                                 <img src="https://via.placeholder.com/140x90/0a1017/ffffff?text=Sweet+Bonanza" alt="Sweet Bonanza">
+                                 <p>Sweet Bonanza</p>
+                             </a>
+                             <a href="#" class="game-item">
+                                 <img src="https://via.placeholder.com/140x90/0a1017/ffffff?text=Book+of+Dead" alt="Book of Dead">
+                                 <p>Book of Dead</p>
+                             </a>
+                             <a href="#" class="game-item">
+                                 <img src="https://via.placeholder.com/140x90/0a1017/ffffff?text=Starburst" alt="Starburst">
+                                 <p>Starburst</p>
+                             </a>
+                             <a href="#" class="game-item">
+                                 <img src="https://via.placeholder.com/140x90/0a1017/ffffff?text=Gonzo's+Quest" alt="Gonzo's Quest">
+                                 <p>Gonzo's Quest</p>
+                             </a>
+                             <a href="#" class="game-item">
+                                 <img src="https://via.placeholder.com/140x90/0a1017/ffffff?text=Mega+Moolah" alt="Mega Moolah">
+                                 <p>Mega Moolah</p>
+                             </a>
+                             <a href="#" class="game-item">
+                                 <img src="https://via.placeholder.com/140x90/0a1017/ffffff?text=Dead+or+Alive" alt="Dead or Alive">
+                                 <p>Dead or Alive</p>
+                             </a>
+                             <a href="#" class="game-item">
+                                 <img src="https://via.placeholder.com/140x90/0a1017/ffffff?text=Bonanza" alt="Bonanza">
+                                 <p>Bonanza</p>
+                             </a>
+                         </div>
+                     </div>
+                 </section>
+
+                 <!-- Winners Section with Dynamic Animation -->
+                 <section class="winners-section">
+                     <h2 class="section-title">Son Büyük Kazançlar</h2>
+                     <div class="win-container">
+                         <div class="win-list" id="win-list">
+                             <!-- Kazananlar buraya dinamik olarak eklenecek -->
+                         </div>
+                     </div>
+                 </section>
+
+                 <!-- Jackpot Section -->
+                 <section class="jackpot-section">
+                     <h2 class="section-title">Aktif Jackpotlar</h2>
+                     <div class="jackpot-container">
+                         <!-- Mega Jackpot -->
+                         <div class="jackpot-card mega-jackpot">
+                             <div class="jackpot-title">🎰 Mega Jackpot</div>
+                             <div class="jackpot-amount" id="mega-jackpot">₺2.847.592</div>
+                             <div class="jackpot-description">
+                                 Tüm oyunlardan biriken dev jackpot! Her bahis ile büyüyor.
+                             </div>
+                         </div>
+
+                         <!-- Mini Jackpots -->
+                         <div class="jackpot-card">
+                             <div class="jackpot-title">🏆 Major Jackpot</div>
+                             <div class="jackpot-amount" id="major-jackpot">₺456.789</div>
+                             <div class="jackpot-description">
+                                 Büyük kazanç fırsatı! Şansınızı deneyin.
+                             </div>
+                         </div>
+
+                         <div class="jackpot-card">
+                             <div class="jackpot-title">💎 Minor Jackpot</div>
+                             <div class="jackpot-amount" id="minor-jackpot">₺89.234</div>
+                             <div class="jackpot-description">
+                                 Hızlı kazanç için ideal seçenek.
+                             </div>
+                         </div>
+
+                         <div class="jackpot-card">
+                             <div class="jackpot-title">⚡ Mini Jackpot</div>
+                             <div class="jackpot-amount" id="mini-jackpot">₺12.567</div>
+                             <div class="jackpot-description">
+                                 Sık kazanan mini jackpot!
+                             </div>
+                         </div>
+                     </div>
+                 </section>
+
+                 <!-- Game Providers Section -->
+                 <section class="providers-section">
+                     <h2 class="section-title">🎮 Oyun Sağlayıcıları</h2>
+                     <div class="providers-container">
+                         <div class="providers-track">
+                             <!-- Original providers with links -->
+                             <a href="#" class="provider-card">
+                                 <div class="provider-logo">PG</div>
+                                 <div class="provider-name">Pragmatic Play</div>
+                                 <div class="provider-games">150+ Oyun</div>
+                             </a>
+
+                             <a href="#" class="provider-card">
+                                 <div class="provider-logo">EV</div>
+                                 <div class="provider-name">Evolution</div>
+                                 <div class="provider-games">80+ Canlı Oyun</div>
+                             </a>
+
+                             <a href="#" class="provider-card">
+                                 <div class="provider-logo">NT</div>
+                                 <div class="provider-name">NetEnt</div>
+                                 <div class="provider-games">120+ Oyun</div>
+                             </a>
+
+                             <a href="#" class="provider-card">
+                                 <div class="provider-logo">MG</div>
+                                 <div class="provider-name">Microgaming</div>
+                                 <div class="provider-games">200+ Oyun</div>
+                             </a>
+
+                             <a href="#" class="provider-card">
+                                 <div class="provider-logo">PP</div>
+                                 <div class="provider-name">Play'n GO</div>
+                                 <div class="provider-games">90+ Oyun</div>
+                             </a>
+
+                             <a href="#" class="provider-card">
+                                 <div class="provider-logo">BG</div>
+                                 <div class="provider-name">Big Time Gaming</div>
+                                 <div class="provider-games">45+ Oyun</div>
+                             </a>
+
+                             <a href="#" class="provider-card">
+                                 <div class="provider-logo">RB</div>
+                                 <div class="provider-name">Red Tiger</div>
+                                 <div class="provider-games">75+ Oyun</div>
+                             </a>
+
+                             <a href="#" class="provider-card">
+                                 <div class="provider-logo">YG</div>
+                                 <div class="provider-name">Yggdrasil</div>
+                                 <div class="provider-games">60+ Oyun</div>
+                             </a>
+
+                             <!-- Duplicated providers with links for seamless scroll -->
+                             <a href="#" class="provider-card">
+                                 <div class="provider-logo">PG</div>
+                                 <div class="provider-name">Pragmatic Play</div>
+                                 <div class="provider-games">150+ Oyun</div>
+                             </a>
+
+                             <a href="#" class="provider-card">
+                                 <div class="provider-logo">EV</div>
+                                 <div class="provider-name">Evolution</div>
+                                 <div class="provider-games">80+ Canlı Oyun</div>
+                             </a>
+
+                             <a href="#" class="provider-card">
+                                 <div class="provider-logo">NT</div>
+                                 <div class="provider-name">NetEnt</div>
+                                 <div class="provider-games">120+ Oyun</div>
+                             </a>
+
+                             <a href="#" class="provider-card">
+                                 <div class="provider-logo">MG</div>
+                                 <div class="provider-name">Microgaming</div>
+                                 <div class="provider-games">200+ Oyun</div>
+                             </a>
+
+                             <a href="#" class="provider-card">
+                                 <div class="provider-logo">PP</div>
+                                 <div class="provider-name">Play'n GO</div>
+                                 <div class="provider-games">90+ Oyun</div>
+                             </a>
+
+                             <a href="#" class="provider-card">
+                                 <div class="provider-logo">BG</div>
+                                 <div class="provider-name">Big Time Gaming</div>
+                                 <div class="provider-games">45+ Oyun</div>
+                             </a>
+
+                             <a href="#" class="provider-card">
+                                 <div class="provider-logo">RB</div>
+                                 <div class="provider-name">Red Tiger</div>
+                                 <div class="provider-games">75+ Oyun</div>
+                             </a>
+
+                             <a href="#" class="provider-card">
+                                 <div class="provider-logo">YG</div>
+                                 <div class="provider-name">Yggdrasil</div>
+                                 <div class="provider-games">60+ Oyun</div>
+                             </a>
+                         </div>
+                     </div>
+                 </section>
+             </div>
+         `;
+
+         firstSectionDiv.prepend(customContainer);
+     }
+
+     const winList = document.getElementById('win-list');
+     const alphabet = 'ABCÇDEFGHIİJKLMNOÖPRSŞTÜVYZ';
+
+     const games = [
+         'Sweet Bonanza', 'Book of Dead', 'Starburst', 'Gonzo\'s Quest', 'Mega Moolah',
+         'Immortal Romance', 'Dead or Alive 2', 'Jungle Spirit', 'Bonanza', 'Fruit Party',
+         'Gates of Olympus', 'The Dog House', 'Razor Shark', 'Big Bass Bonanza', 'Wolf Gold'
+     ];
+
+     let currentIndex = 0;
+
+     // LocalStorage key for jackpots
+     const JACKPOT_STORAGE_KEY = 'cedabet_jackpots';
+     const JACKPOT_TIMESTAMP_KEY = 'cedabet_jackpots_timestamp';
+
+     // Default jackpot amounts
+     const defaultJackpots = {
+         mega: 2847592,
+         major: 456789,
+         minor: 89234,
+         mini: 12567
+     };
+
+     // Load jackpots from localStorage or use defaults
+     function loadJackpots() {
+         try {
+             const savedJackpots = localStorage.getItem(JACKPOT_STORAGE_KEY);
+             const savedTimestamp = localStorage.getItem(JACKPOT_TIMESTAMP_KEY);
+
+             if (savedJackpots && savedTimestamp) {
+                 const jackpots = JSON.parse(savedJackpots);
+                 const timestamp = parseInt(savedTimestamp);
+                 const now = Date.now();
+
+                 // Calculate how much time has passed since last save (in seconds)
+                 const timeDiff = Math.floor((now - timestamp) / 1000);
+
+                 // Simulate jackpot growth during offline time
+                 // Mega: grows ~30-80 per 3 seconds, so ~10-27 per second
+                 // Major: grows ~5-25 per 3 seconds, so ~2-8 per second
+                 // Minor: grows ~2-12 per 3 seconds, so ~1-4 per second
+                 // Mini: grows ~1-6 per 3 seconds, so ~0.3-2 per second
+
+                 if (timeDiff > 0 && timeDiff < 86400) { // Only if less than 24 hours
+                     jackpots.mega += Math.floor(timeDiff * (Math.random() * 17 + 10));
+                     jackpots.major += Math.floor(timeDiff * (Math.random() * 6 + 2));
+                     jackpots.minor += Math.floor(timeDiff * (Math.random() * 3 + 1));
+                     jackpots.mini += Math.floor(timeDiff * (Math.random() * 1.7 + 0.3));
+                 }
+
+                 return jackpots;
+             }
+         } catch (error) {
+             console.log('Error loading jackpots from localStorage:', error);
+         }
+
+         return { ...defaultJackpots };
+     }
+
+     // Save jackpots to localStorage
+     function saveJackpots(jackpots) {
+         try {
+             localStorage.setItem(JACKPOT_STORAGE_KEY, JSON.stringify(jackpots));
+             localStorage.setItem(JACKPOT_TIMESTAMP_KEY, Date.now().toString());
+         } catch (error) {
+             console.log('Error saving jackpots to localStorage:', error);
+         }
+     }
+
+     // Initialize jackpots from localStorage
+     let jackpots = loadJackpots();
+
+     // Update jackpot display
+     function updateJackpotDisplay() {
+         document.getElementById('mega-jackpot').textContent = `₺${jackpots.mega.toLocaleString('tr-TR')}`;
+         document.getElementById('major-jackpot').textContent = `₺${jackpots.major.toLocaleString('tr-TR')}`;
+         document.getElementById('minor-jackpot').textContent = `₺${jackpots.minor.toLocaleString('tr-TR')}`;
+         document.getElementById('mini-jackpot').textContent = `₺${jackpots.mini.toLocaleString('tr-TR')}`;
+     }
+
+     // Rastgele Türk ismi üretme - değişken yıldız sayısı ile
+     function generateRandomName() {
+         const firstNameLength = Math.floor(Math.random() * 4) + 3;
+         const lastNameLength = Math.floor(Math.random() * 5) + 4;
+
+         let firstName = '';
+         let lastName = '';
+
+         for (let i = 0; i < firstNameLength; i++) {
+             firstName += alphabet[Math.floor(Math.random() * alphabet.length)];
+         }
+
+         for (let i = 0; i < lastNameLength; i++) {
+             lastName += alphabet[Math.floor(Math.random() * alphabet.length)];
+         }
+
+         const firstNameStarsCount = Math.floor(Math.random() * 6) + 2;
+         const lastNameStarsCount = Math.floor(Math.random() * 7) + 3;
+
+         firstName = firstName.charAt(0).toUpperCase() + '*'.repeat(firstNameStarsCount);
+         lastName = lastName.charAt(0).toUpperCase() + '*'.repeat(lastNameStarsCount);
+
+         return `${firstName} ${lastName}`;
+     }
+
+     function getRandomWin() {
+         const randomValue = Math.random();
+         let winAmount = 0;
+
+         if (randomValue < 0.15) {
+             winAmount = Math.floor(Math.random() * (50000 - 10000 + 1)) + 10000;
+         } else {
+             winAmount = Math.floor(Math.random() * (10000 - 400 + 1)) + 400;
+         }
+
+         return `₺${winAmount.toLocaleString('tr-TR')}`;
+     }
+
+     function getRandomInterval() {
+         const randomType = Math.random();
+
+         if (randomType < 0.3) {
+             return Math.floor(Math.random() * 2000) + 1000;
+         } else if (randomType < 0.7) {
+             return Math.floor(Math.random() * 3000) + 2500;
+         } else {
+             return Math.floor(Math.random() * 4000) + 4000;
+         }
+     }
+
+     // Jackpot güncelleme fonksiyonu - now saves to localStorage
+     function updateJackpots() {
+         jackpots.mega += Math.floor(Math.random() * 50) + 10;
+         jackpots.major += Math.floor(Math.random() * 20) + 5;
+         jackpots.minor += Math.floor(Math.random() * 10) + 2;
+         jackpots.mini += Math.floor(Math.random() * 5) + 1;
+
+         updateJackpotDisplay();
+         saveJackpots(jackpots);
+     }
+
+     function createInitialWinners() {
+         for (let i = 0; i < 4; i++) {
+             const winnerName = generateRandomName();
+             const game = games[Math.floor(Math.random() * games.length)];
+             const winAmount = getRandomWin();
+
+             const winItem = document.createElement('div');
+             winItem.classList.add('win-item');
+             winItem.innerHTML = `
+                         <p><strong>Oyuncumuz ${winnerName}</strong></p>
+                         <p><strong>${game}</strong> oyunundan <strong>${winAmount}</strong> kazandı.</p>
+                         <p>Tebrik ederiz, bol kazançlar dileriz!</p>
+                     `;
+
+             winList.appendChild(winItem);
+             currentIndex++;
+         }
+     }
+
+     function addWinner() {
+         const winnerName = generateRandomName();
+         const game = games[Math.floor(Math.random() * games.length)];
+         const winAmount = getRandomWin();
+
+         const winItem = document.createElement('div');
+         winItem.classList.add('win-item', 'animated');
+         winItem.innerHTML = `
+                     <p><strong>Oyuncumuz ${winnerName}</strong></p>
+                     <p><strong>${game}</strong> oyunundan <strong>${winAmount}</strong> kazandı.</p>
+                     <p>Tebrik ederiz, bol kazançlar dileriz!</p>
+                 `;
+
+         if (winList.children.length >= 8) {
+             const firstItem = winList.children[0];
+             firstItem.style.animation = 'fade-out 1s forwards';
+             setTimeout(() => {
+                 if (firstItem.parentNode) {
+                     firstItem.remove();
+                 }
+             }, 1000);
+         }
+
+         winList.appendChild(winItem);
+         currentIndex++;
+     }
+
+     function startWinningCycle() {
+         createInitialWinners();
+
+         setTimeout(() => {
+             function scheduleNext() {
+                 setTimeout(() => {
+                     addWinner();
+                     scheduleNext();
+                 }, getRandomInterval());
+             }
+
+             scheduleNext();
+         }, 3000);
+     }
+
+     function startJackpotUpdates() {
+         setInterval(updateJackpots, 3000);
+     }
+
+     window.addEventListener('load', () => {
+         // Initialize jackpot display with loaded values
+         updateJackpotDisplay();
+
+         startWinningCycle();
+         startJackpotUpdates();
+     });
+
+     // Save jackpots when page is about to unload
+     window.addEventListener('beforeunload', () => {
+         saveJackpots(jackpots);
+     });
+
+     // Also save periodically (every 30 seconds)
+     setInterval(() => {
+         saveJackpots(jackpots);
+     }, 30000);
+}
+
 
 function addMenuElement() {
     const sidebarNav = document.querySelector('.sidebar__nav.sidebar__nav--border');
