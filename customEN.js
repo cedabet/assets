@@ -2881,11 +2881,13 @@ function createSocialSection() {
   style.textContent = `
     .social-section {
     width: 100%;
-    height: 250px;
+    height: 100%;
     background: #03121a;
     position: relative;
     overflow: hidden;
     border: 1px solid rgba(72, 171, 224, 0.2);
+    margin-top:20px;
+    margin-bottom:20px;
 }
 
     .content {
