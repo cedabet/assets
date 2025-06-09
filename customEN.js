@@ -1805,8 +1805,6 @@ startJackpotUpdates();
 }
 
 
-<div id="inject-root"></div>
-
 function createSocialSection() {
   // Create style element
   const style = document.createElement('style');
