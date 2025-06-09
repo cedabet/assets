@@ -1391,6 +1391,9 @@ function LandingPage() {
      }
 
      const winList = document.getElementById('win-list');
+     if (!winList) {
+         console.error('test div bulunamadı!');
+     } 
      const alphabet = 'ABCÇDEFGHIİJKLMNOÖPRSŞTÜVYZ';
 
      const games = [
