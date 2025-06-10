@@ -3037,7 +3037,7 @@ function createSocialSection() {
       position: relative;
     }
 
-    .button {
+    .buttons {
       display: flex;
       align-items: center;
       font-weight: 700;
@@ -3260,8 +3260,12 @@ container.style.border = '1px solid rgba(72, 171, 224, 0.2)';
   const buttonContainer = document.createElement('div');
   buttonContainer.className = 'button-container';
 
-  const button = document.createElement('button');
-  button.className = 'button';
+ const button = document.createElement('a');
+button.className = 'buttons';
+button.href = 'https://t.me/cedabet'; // Telegram kanal linkini buraya koy
+button.target = '_blank'; // yeni sekmede açar
+button.rel = 'noopener noreferrer'; // güvenlik için
+
   button.innerHTML = `
     <span class="button-content">
       <svg class="button-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
@@ -3276,9 +3280,6 @@ container.style.border = '1px solid rgba(72, 171, 224, 0.2)';
     </span>
     <div class="button-shine"></div>
   `;
-button.addEventListener('click', () => {
-  window.location.href = 'href="https://t.me/cedabet'; // buraya kendi linkini koy
-});
   buttonContainer.appendChild(button);
 
   telegramContent.append(iconContainer, buttonContainer);
