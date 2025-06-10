@@ -3278,7 +3278,9 @@ container.style.border = '1px solid rgba(72, 171, 224, 0.2)';
     </span>
     <div class="button-shine"></div>
   `;
-
+button.addEventListener('click', () => {
+  window.location.href = 'href="https://t.me/cedabet'; // buraya kendi linkini koy
+});
   buttonContainer.appendChild(button);
 
   telegramContent.append(iconContainer, buttonContainer);
