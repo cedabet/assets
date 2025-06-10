@@ -2884,7 +2884,7 @@ function createSocialSection() {
     height: 100%;
     background: #03121a;
     position: relative;
-    border: 1px solid rgba(72, 171, 224, 0.2);
+    
     margin-top:20px;
     margin-bottom:20px;
 }
@@ -3184,6 +3184,7 @@ function createSocialSection() {
 
   const container = document.createElement('div');
   container.className = 'container';
+container.style.border = '1px solid rgba(72, 171, 224, 0.2)';
 
   const content = document.createElement('div');
   content.className = 'content';
