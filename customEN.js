@@ -2881,15 +2881,13 @@ function createSocialSection() {
   style.textContent = `
     .social-section {
     width: 100%;
-    height: 100%;
     background: #03121a;
     position: relative;
-    
     margin-top:20px;
     margin-bottom:20px;
 }
 
-    .content {
+    .contents {
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -3118,7 +3116,7 @@ function createSocialSection() {
     }
 
     @media (min-width: 768px) {
-      .content {
+      .contents {
         flex-direction: row;
         justify-content: space-between;
         gap: 0;
@@ -3187,7 +3185,7 @@ function createSocialSection() {
 container.style.border = '1px solid rgba(72, 171, 224, 0.2)';
 
   const content = document.createElement('div');
-  content.className = 'content';
+  content.className = 'contents';
 
   // LEFT SIDE
   const leftSide = document.createElement('div');
