@@ -1576,6 +1576,11 @@ function createLeagueSection() {
 
 
 function createSocialSection() {
+
+	 if (document.getElementById('telegram-section')) {
+    console.log('Telegram section zaten mevcut');
+    return;  // Fonksiyondanm çıkıyor
+  }
   // Create style element
   const style = document.createElement('style');
   style.id = 'telegram-style';
@@ -1875,6 +1880,7 @@ function createSocialSection() {
   // Append style
   document.head.appendChild(style);
 
+	
   // Create main section
   const section = document.createElement('div');
   section.className = 'social-section';
