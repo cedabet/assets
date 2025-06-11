@@ -1594,6 +1594,10 @@ box-shadow: none !important; font-size: 9pt;
 }
 function createSocialSection() {
   // Create style element
+		 if (document.getElementById('telegram-section')) {
+    console.log('Telegram section zaten mevcut');
+    return;  // Fonksiyondanm çıkıyor
+  }
   const style = document.createElement('style');
   style.id = 'telegram-style';
   style.textContent = `
