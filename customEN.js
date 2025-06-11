@@ -82,15 +82,17 @@ document.head.appendChild(link);
           } else if (path === "/en/e-sport") {
               clearDynamicContent()
 
-          } else if (path !== "/en/sportsbook") {
+          }
+	   else if (path === "/en/latest-big-wins") {
+          clearDynamicContent();
+          LandingPage();
+	  console.error("test !");
+        }
+	   else if (path !== "/en/sportsbook") {
 
               clearDynamicContent()
           }
-	    else if (path === "/en/latest-big-wins") {
-          clearDynamicContent();
-          LandingPage();
-		    console.error("test !");
-        }
+	   
       }, 400);
   }
 
