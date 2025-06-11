@@ -33,6 +33,7 @@ document.head.appendChild(link);
 
         }
    else if (sportspath === "/en/latest-big-wins") {
+	     clearDynamicContent();
           LandingPage();
         }
 	   
