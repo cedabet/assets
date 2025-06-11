@@ -87,8 +87,9 @@ document.head.appendChild(link);
               clearDynamicContent()
           }
 	    else if (path === "/en/latest-big-wins") {
-          clearDynamicContent()
+          clearDynamicContent();
           LandingPage();
+		    console.error("test !");
         }
       }, 400);
   }
@@ -432,7 +433,7 @@ function clearDynamicContent() {
         "custom-section-7",
         "league-wrapper",
         "custom-section-landing",
-      "telegram-section",
+      "telegram-section"
     ];
 
     const styleIdsToRemove = [
