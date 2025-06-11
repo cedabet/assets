@@ -64,6 +64,7 @@ document.head.appendChild(link);
                 CreateCedaOriginal();
                 CreateCedaOriginalTwo();
                 createLeagueSection();
+		     createSocialSection();
             } else if (path === "/tr/vip") {
                 clearDynamicContent();
                 createVipExperience();
@@ -95,6 +96,7 @@ document.head.appendChild(link);
             }
               else if (path === "/en/latest-big-wins") {
           LandingPage();
+		      
         }
         }, 400);
     }
