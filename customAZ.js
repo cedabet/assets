@@ -456,7 +456,15 @@ function clearDynamicContent() {
     const idsToRemove = [
         "mini-games-wrapper-2",
         "custom-section-7",
-	 "league-wrapper"
+        "league-wrapper",
+        "custom-section-landing",
+      "telegram-section",
+    ];
+
+    const styleIdsToRemove = [
+        "big-wins-style",
+      "telegram-style"
+        // buraya kaldırmak istediğin style id'lerini ekle
     ];
 
     idsToRemove.forEach(id => {
@@ -464,6 +472,14 @@ function clearDynamicContent() {
         if (el) {
             el.remove();
             console.log(`${id} temizlendi.`);
+        }
+    });
+
+    styleIdsToRemove.forEach(id => {
+        const styleEl = document.getElementById(id);
+        if (styleEl) {
+            styleEl.remove();
+            console.log(`${id} style etiketi kaldırıldı.`);
         }
     });
 }
