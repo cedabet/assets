@@ -38,7 +38,7 @@ document.head.appendChild(link);
         }
 	    else if (sportspath === "/en/challenges") {
  clearDynamicContent();
-          LandingPage();
+ 
         }
         isFirstLoad = false;
     }
