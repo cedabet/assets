@@ -446,7 +446,8 @@ function clearDynamicContent() {
 
     const styleIdsToRemove = [
         "big-wins-style",
-      "telegram-style"
+      "telegram-style",
+	    "mini-games-style"
         // buraya kaldırmak istediğin style id'lerini ekle
     ];
 
