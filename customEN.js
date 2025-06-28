@@ -5,11 +5,12 @@ link.href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.m
 document.head.appendChild(link);
 
 (function() {
-    let lastUrl = location.href;
-    let isFirstLoad = true;
-    if (isFirstLoad) {
-// Sayfa yüklendikten sonra 1 saniye içinde VIP özelliklerini yükle
-setTimeout(function() {
+   let lastUrl = location.href;
+let isFirstLoad = true;
+
+if (isFirstLoad) {
+  setTimeout(function () {
+    // Sayfa yüklendikten sonra 400ms gecikme ile işlemler başlar
     loadVipFeatures();
     setTimeout(loadh2Title, 1000);
     addMenuElement();
@@ -22,31 +23,28 @@ setTimeout(function() {
     createLeagueSection();
     checkModal();
     createSocialSection();
-    console.error("first");
-}, 400);
 
-        var sportspath = window.location.pathname;
-        if (sportspath === "/en/sportsbook") {
-        
-        } else if (sportspath === "/en/trade") {
-         
-        } else if (sportspath === "/en/e-sport") {
-            var sidebar = document.getElementById("sidebar");
+    // Sayfa yoluna göre özel işlemler
+    var sportspath = window.location.pathname;
 
-        } else if (sportspath === "/en/vip") {
-            createVipExperience();
-
-        }
-   else if (sportspath === "/en/latest-big-wins") {
- clearDynamicContent();
-          LandingPage();
-        }
-	    else if (sportspath === "/en/challenges") {
- clearDynamicContent();
- 
-        }
-        isFirstLoad = false;
+    if (sportspath === "/en/sportsbook") {
+      // Spor bahisleri sayfası
+    } else if (sportspath === "/en/trade") {
+      // Trade sayfası
+    } else if (sportspath === "/en/e-sport") {
+      var sidebar = document.getElementById("sidebar");
+    } else if (sportspath === "/en/vip") {
+      createVipExperience();
+    } else if (sportspath === "/en/latest-big-wins") {
+      clearDynamicContent();
+      LandingPage();
+    } else if (sportspath === "/en/challenges") {
+      clearDynamicContent();
     }
+
+    isFirstLoad = false;
+  }, 400); 
+}
 
 
     function checkUrlChange() {
@@ -72,7 +70,6 @@ setTimeout(function() {
               CreateCedaOriginalTwo();
               createLeagueSection();
               createSocialSection();
-		  console.error("abc");
           } else if (path === "/en/vip") {
               clearDynamicContent();
               createVipExperience();
