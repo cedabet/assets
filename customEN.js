@@ -20,6 +20,7 @@ document.head.appendChild(link);
         createLeagueSection();
 	      checkModal();
        createSocialSection();
+	      console.error("first");
         var sportspath = window.location.pathname;
         if (sportspath === "/en/sportsbook") {
         
@@ -67,6 +68,7 @@ document.head.appendChild(link);
               CreateCedaOriginalTwo();
               createLeagueSection();
               createSocialSection();
+		  console.error("abc");
           } else if (path === "/en/vip") {
               clearDynamicContent();
               createVipExperience();
