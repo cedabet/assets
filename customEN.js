@@ -8,19 +8,23 @@ document.head.appendChild(link);
     let lastUrl = location.href;
     let isFirstLoad = true;
     if (isFirstLoad) {
-        loadVipFeatures();
-        setTimeout(loadh2Title, 1000);
-        addMenuElement();
-        addMenuElementTwo();
-        setTimeout(updateCopyrightYear, 1000);
-        // setTimeout(createSigninModal, 2000);
-        CreateCedaOriginal();
-        CreateCedaOriginalTwo();
-        insertCedaTVButton();
-        createLeagueSection();
-	      checkModal();
-       createSocialSection();
-	      console.error("first");
+// Sayfa yüklendikten sonra 1 saniye içinde VIP özelliklerini yükle
+setTimeout(function() {
+    loadVipFeatures();
+    setTimeout(loadh2Title, 1000);
+    addMenuElement();
+    addMenuElementTwo();
+    setTimeout(updateCopyrightYear, 1000);
+    // setTimeout(createSigninModal, 2000);
+    CreateCedaOriginal();
+    CreateCedaOriginalTwo();
+    insertCedaTVButton();
+    createLeagueSection();
+    checkModal();
+    createSocialSection();
+    console.error("first");
+}, 400);
+
         var sportspath = window.location.pathname;
         if (sportspath === "/en/sportsbook") {
         
