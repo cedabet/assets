@@ -22,7 +22,7 @@ if (isFirstLoad) {
     insertCedaTVButton();
     createLeagueSection();
     checkModal();
-    createSocialSection();
+  //  createSocialSection();
 
     // Sayfa yoluna göre özel işlemler
     var sportspath = window.location.pathname;
@@ -69,7 +69,7 @@ if (isFirstLoad) {
               CreateCedaOriginal();
               CreateCedaOriginalTwo();
               createLeagueSection();
-              createSocialSection();
+            //  createSocialSection();
           } else if (path === "/en/vip") {
               clearDynamicContent();
               createVipExperience();
