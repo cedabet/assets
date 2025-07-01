@@ -831,8 +831,9 @@ var highRtpGamesWrapper2 = document.getElementById('main-slider'); // originalsl
 var highRtpGamesWrapper = document.getElementById('popular-games-wrapper'); // originalsler popular gamesin altında çıkar
 var changeLine = document.getElementById('custom-section-7');
 
-if (cedaOriginalsSection && highRtpGamesWrapper2 && changeLine) {
+if (highRtpGamesWrapper2 && changeLine) {
     highRtpGamesWrapper2.insertAdjacentElement('afterend', changeLine); // en üstte çıkar providers
+	    changeLine.insertAdjacentElement('afterend', cedaOriginalsSection); // en üstte çıkar providers
 }
 
 
