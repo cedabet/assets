@@ -825,7 +825,7 @@ h2.appendChild(icon);
         row.appendChild(colGames);
         //divi yerlestir
         container.appendChild(row);
-    var changeLine = document.getElementById('top-games-wrapper');
+    var changeLine = document.getElementById('custom-section-7');
 if (changeLine) {
     changeLine.appendChild(section); // section ve içindekiler buraya eklenir
 } else {
