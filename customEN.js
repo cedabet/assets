@@ -825,6 +825,11 @@ h2.appendChild(icon);
         row.appendChild(colGames);
         //divi yerlestir
         container.appendChild(row);
+if (changeLine) {
+    changeLine.appendChild(section);
+} else {
+    console.error('custom-section-7 elementi bulunamadı!');
+}
 
 var cedaOriginalsSection = document.getElementById('ceda-originals');
 var highRtpGamesWrapper2 = document.getElementById('main-slider'); // originalsler en üstte çıkar
