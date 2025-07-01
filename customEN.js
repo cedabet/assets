@@ -826,16 +826,14 @@ h2.appendChild(icon);
         //divi yerlestir
         container.appendChild(row);
 
-     var cedaOriginalsSection = document.getElementById('ceda-originals');
+var cedaOriginalsSection = document.getElementById('ceda-originals');
 var highRtpGamesWrapper2 = document.getElementById('main-slider'); // originalsler en üstte çıkar
 var highRtpGamesWrapper = document.getElementById('popular-games-wrapper'); // originalsler popular gamesin altında çıkar
 var changeLine = document.getElementById('custom-section-7');
 
-
-    highRtpGamesWrapper.insertAdjacentElement('afterend', cedaOriginalsSection);
-    // miniGamesWrapper.insertAdjacentElement('afterend', changeLine); providers originals'in altında çıkar
+if (cedaOriginalsSection && highRtpGamesWrapper2 && changeLine) {
     highRtpGamesWrapper2.insertAdjacentElement('afterend', changeLine); // en üstte çıkar providers
-
+}
 
 
         }
