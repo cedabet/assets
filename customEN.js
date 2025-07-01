@@ -831,11 +831,11 @@ var highRtpGamesWrapper2 = document.getElementById('main-slider'); // originalsl
 var highRtpGamesWrapper = document.getElementById('popular-games-wrapper'); // originalsler popular gamesin altında çıkar
 var changeLine = document.getElementById('custom-section-7');
 
-if (cedaOriginalsSection && highRtpGamesWrapper && changeLine) {
+
     highRtpGamesWrapper.insertAdjacentElement('afterend', cedaOriginalsSection);
     // miniGamesWrapper.insertAdjacentElement('afterend', changeLine); providers originals'in altında çıkar
     highRtpGamesWrapper2.insertAdjacentElement('afterend', changeLine); // en üstte çıkar providers
-}
+
 
 
         }
