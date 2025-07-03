@@ -3450,11 +3450,12 @@ function addEliteCardToSidebar() {
     document.head.appendChild(style);
   }
 
-  const sidebarActions = document.querySelector('.sidebar__actions');
-  if (!sidebarActions) {
-    console.warn('.sidebar__actions elementi bulunamadı!');
+ const sidebarMenu = document.querySelector('.sidebar__menu');
+  if (!sidebarMenu) {
+    console.warn('.sidebar__menu elementi bulunamadı!');
     return;
   }
+
 	
   // Eğer kart zaten varsa ekleme
   if (sidebar.querySelector('.elite-card')) {
@@ -3497,7 +3498,7 @@ function addEliteCardToSidebar() {
   card.appendChild(content);
   card.appendChild(arrow);
 
- sidebarActions.parentNode.insertBefore(card, sidebarActions);
+  sidebarMenu.appendChild(card);
 
 }
 
