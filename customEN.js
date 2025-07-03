@@ -3467,7 +3467,7 @@ function addEliteCardToSidebar() {
   card.className = 'elite-card';
 
   card.onclick = () => {
-    if (confirm('Mobil Uygulamamızı İndirin?')) {
+    if (confirm('Download Our Mobile Application..!')) {
       window.open('https://cedabetgiris.org/CedaBet.apk', '_blank');
     }
   };
@@ -3481,11 +3481,11 @@ function addEliteCardToSidebar() {
 
   const title = document.createElement('h4');
   title.className = 'elite-card__title';
-  title.textContent = 'Mobil Uygulamamız';
+  title.textContent = 'Mobile Application';
 
   const subtitle = document.createElement('p');
   subtitle.className = 'elite-card__subtitle';
-  subtitle.textContent = 'Hemen şimdi yükleyin';
+  subtitle.textContent = 'Download Now! ';
 
   content.appendChild(title);
   content.appendChild(subtitle);
