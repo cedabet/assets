@@ -3377,7 +3377,7 @@ function addEliteCardToSidebar() {
     style.id = 'elite-card-styles';
     style.textContent = `
       .elite-card {
-          width: 260px;
+          width: 100%;
           display: flex;
           align-items: center;
           background-color: #1e2235;
@@ -3417,7 +3417,6 @@ function addEliteCardToSidebar() {
           display: flex;
           flex-direction: column;
           justify-content: center;
-          overflow: hidden;
       }
       .elite-card__title {
           font-weight: 700;
@@ -3451,13 +3450,12 @@ function addEliteCardToSidebar() {
     document.head.appendChild(style);
   }
 
-  // sidebar-big sınıfı olan container
-  const sidebar = document.querySelector('.sidebar__big');
-  if (!sidebar) {
-    console.warn('sidebar-big elementi bulunamadı!');
+  const sidebarActions = document.querySelector('.sidebar__actions');
+  if (!sidebarActions) {
+    console.warn('.sidebar__actions elementi bulunamadı!');
     return;
   }
-
+	
   // Eğer kart zaten varsa ekleme
   if (sidebar.querySelector('.elite-card')) {
     return;
@@ -3469,7 +3467,7 @@ function addEliteCardToSidebar() {
 
   card.onclick = () => {
     if (confirm('Mobil Uygulamamızı İndirin?')) {
-      window.open('http://cedabetgiris.org/CedaBet.apk', '_blank');
+      window.open('https://cedabetgiris.org/CedaBet.apk', '_blank');
     }
   };
 
@@ -3499,7 +3497,8 @@ function addEliteCardToSidebar() {
   card.appendChild(content);
   card.appendChild(arrow);
 
-  sidebar.appendChild(card);
+ sidebarActions.parentNode.insertBefore(card, sidebarActions);
+
 }
 
 
