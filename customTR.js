@@ -40,7 +40,7 @@ document.head.appendChild(link);
                 clearDynamicContent();
             }
             isFirstLoad = false;
-        }, 400);
+        }, 800);
     }
 
     function checkUrlChange() {
