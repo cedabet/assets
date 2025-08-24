@@ -31,14 +31,18 @@ document.head.appendChild(link);
             } else if (sportspath === "/tr/e-sport") {
             } else if (sportspath === "/tr/vip") {
                 createVipExperience();
+				clearDynamicContent();
             } else if (sportspath === "/tr/latest-big-wins") {
                 clearDynamicContent();
                 LandingPage();
             } else if (sportspath === "/tr/challenges") {
                 clearDynamicContent();
             }
+			else if (sportspath !== "/tr/" || sportspath !== "/tr") {
+                clearDynamicContent();
+            }
             isFirstLoad = false;
-        }, 800);
+        }, 400);
     }
 
     function checkUrlChange() {
