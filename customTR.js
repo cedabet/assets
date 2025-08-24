@@ -38,7 +38,7 @@ document.head.appendChild(link);
             } else if (sportspath === "/tr/challenges") {
                 clearDynamicContent();
             }
-			else if (sportspath !== "/tr/" || sportspath !== "/tr") {
+			else if (sportspath !== "/tr/" && sportspath !== "/tr") {
                 clearDynamicContent();
                 console.warn(sportspath);
             }
