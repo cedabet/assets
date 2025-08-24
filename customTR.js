@@ -40,6 +40,7 @@ document.head.appendChild(link);
             }
 			else if (sportspath !== "/tr/" || sportspath !== "/tr") {
                 clearDynamicContent();
+                console.warn(sportspath);
             }
             isFirstLoad = false;
         }, 400);
