@@ -22,7 +22,7 @@ document.head.appendChild(link);
             insertCedaTVButton();
             createLeagueSection();
             //  checkModal();
-            //  createSocialSection();
+            createSocialSection();
             addEliteCardToSidebar();
             createCedaSocialLinks();
             // Sayfa yoluna göre özel işlemler
@@ -71,7 +71,7 @@ document.head.appendChild(link);
                 CreateCedaOriginal();
                 CreateCedaOriginalTwo();
                 createLeagueSection();
-                //  createSocialSection();
+                createSocialSection();
                 addEliteCardToSidebar();
                 createCedaSocialLinks();
             } else if (path === "/en/vip") {
