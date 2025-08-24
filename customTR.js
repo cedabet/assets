@@ -24,6 +24,7 @@ document.head.appendChild(link);
             //  addScrollingText("BİR SONRAKİ GÜNCEL ADRESİMİZ CEDABET25.COM'DUR. LÜTFEN SAHTE SİTELERE İTİBAR ETMEYİNİZ.");
             addEliteCardToSidebar();
             createCedaSocialLinks();
+			createSocialSection();
             var sportspath = window.location.pathname;
             if (sportspath === "/tr/sportsbook") {
             } else if (sportspath === "/tr/trade") {
@@ -60,12 +61,11 @@ document.head.appendChild(link);
                 addMenuElement();
                 addMenuElementTwo();
                 setTimeout(updateCopyrightYear, 1000);
-
                 CreateCedaOriginal();
                 CreateCedaOriginalTwo();
                 createLeagueSection();
                 createCedaSocialLinks();
-                //  createSocialSection();
+                createSocialSection();
                 addEliteCardToSidebar();
             } else if (path === "/tr/vip") {
                 clearDynamicContent();
