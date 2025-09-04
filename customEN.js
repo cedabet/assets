@@ -820,7 +820,7 @@ function CreateCedaOriginalTwo() {
         },
     ];
 
-    const popularGamesWrapper = document.querySelector("#popular-games-wrapper");
+    const popularGamesWrapper = document.querySelector("#banners-wrapper");
     if (!popularGamesWrapper) {
         console.error("popular-games-wrapper bulunamadı!");
         return;
