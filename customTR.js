@@ -73,6 +73,7 @@ document.head.appendChild(link);
                 createCedaSocialLinks();
                 createSocialSection();
                 addEliteCardToSidebar();
+			    createWhatsAppBadge();
             } else if (path === "/tr/vip") {
                 clearDynamicContent();
                 createVipExperience();
@@ -444,12 +445,13 @@ function clearAstronauts() {
 }
 
 function clearDynamicContent() {
-    const idsToRemove = ["mini-games-wrapper-2", "custom-section-7", "league-wrapper", "custom-section-landing", "telegram-section"];
+    const idsToRemove = ["mini-games-wrapper-2", "custom-section-7", "league-wrapper", "custom-section-landing", "telegram-section" , "whatsapp-badge"];
 
     const styleIdsToRemove = [
         "big-wins-style",
         "telegram-style",
         "mini-games-style",
+		"_wa-badge-style"
         // buraya kaldırmak istediğin style id'lerini ekle
     ];
 
@@ -3531,7 +3533,7 @@ function createCedaSocialLinks() {
         target.parentNode.insertBefore(wrapper, target);
     }
 }
-function createWhatsAppBadge(phoneNumber = '905304088362') {
+function createWhatsAppBadge(phoneNumber = '905352054099') {
     if (!document.getElementById("_wa-badge-style")) {
         const style = document.createElement('style');
         style.id = '_wa-badge-style';
@@ -3604,6 +3606,7 @@ function createWhatsAppBadge(phoneNumber = '905304088362') {
     badge.className = '_wa-badge';
     badge.target = '_blank';
     badge.setAttribute('aria-label', 'WhatsApp ile iletişime geç');
+	badge.id = 'whatsapp-badge';
 
     const icon = document.createElement('img');
     icon.src = 'https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg';
