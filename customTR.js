@@ -3648,7 +3648,7 @@ function addMenuItemsWithAuth() {
     const items = [
         {
             text: 'Para Yatır',
-            href: '/payments/deposit',
+            href: '/tr/payments/deposit',
             svg: `
                 <svg class="svg-icon" width="24" height="24" viewBox="0 0 24 24" fill="none"
                      xmlns="http://www.w3.org/2000/svg">
@@ -3660,7 +3660,7 @@ function addMenuItemsWithAuth() {
         },
         {
             text: 'Para Çek',
-            href: '/payments/withdrawal',
+            href: '/tr/payments/withdrawal',
             svg: `
                 <svg class="svg-icon" width="24" height="24" viewBox="0 0 24 24" fill="none"
                      xmlns="http://www.w3.org/2000/svg">
