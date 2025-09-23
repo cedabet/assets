@@ -3625,10 +3625,10 @@ function createWhatsAppBadge(phoneNumber = '905352054099') {
 
 
 function addMenuItemsWithAuth() {
-    const token = localStorage.getItem('token');
+    const token = localStorage.getItem('bearer');
 
     if (!token) {
-        console.warn('Bearer token bulunamadı. Menü elemanları eklenmeyecek.');
+        console.error('Bearer token bulunamadı. Menü elemanları eklenmeyecek.');
         return;
     }
 
@@ -3641,7 +3641,7 @@ function addMenuItemsWithAuth() {
 
     // Zaten eklenmişse tekrar ekleme
     if (menuList.querySelector('[data-custom-menu="true"]')) {
-        console.log('Menü elemanları zaten eklenmiş.');
+        console.error('Menü elemanları zaten eklenmiş.');
         return;
     }
 
