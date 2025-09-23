@@ -3648,25 +3648,25 @@ function addMenuItemsWithAuth() {
     const items = [
         {
             text: 'Para Yatır',
-            href: '/deposit',
+            href: '/payments/deposit',
             svg: `
                 <svg class="svg-icon" width="24" height="24" viewBox="0 0 24 24" fill="none"
                      xmlns="http://www.w3.org/2000/svg">
-                    <path d="M12 2V16" stroke="green" stroke-width="2" stroke-linecap="round"/>
-                    <path d="M6 10L12 16L18 10" stroke="green" stroke-width="2" stroke-linecap="round"/>
-                    <rect x="2" y="18" width="20" height="4" rx="1" fill="green"/>
+                    <path d="M12 2V16" stroke="#00a8ff" stroke-width="2" stroke-linecap="round"/>
+                    <path d="M6 10L12 16L18 10" stroke="#00a8ff" stroke-width="2" stroke-linecap="round"/>
+                    <rect x="2" y="18" width="20" height="4" rx="1" fill="#00a8ff"/>
                 </svg>
             `
         },
         {
             text: 'Para Çek',
-            href: '/withdraw',
+            href: '/payments/withdrawal',
             svg: `
                 <svg class="svg-icon" width="24" height="24" viewBox="0 0 24 24" fill="none"
                      xmlns="http://www.w3.org/2000/svg">
-                    <path d="M12 22V8" stroke="red" stroke-width="2" stroke-linecap="round"/>
-                    <path d="M6 14L12 8L18 14" stroke="red" stroke-width="2" stroke-linecap="round"/>
-                    <rect x="2" y="2" width="20" height="4" rx="1" fill="red"/>
+                    <path d="M12 22V8" stroke="#00a8ff" stroke-width="2" stroke-linecap="round"/>
+                    <path d="M6 14L12 8L18 14" stroke="#00a8ff" stroke-width="2" stroke-linecap="round"/>
+                    <rect x="2" y="2" width="20" height="4" rx="1" fill="#00a8ff"/>
                 </svg>
             `
         }
