@@ -627,37 +627,37 @@ function CreateCedaOriginal() {
     const games = [
         {
             name: "Plinko",
-            url: "/casino/games/ebetlab-plinko-originals",
+            url: "/tr/casino/games/ebetlab-plinko-originals",
             img: "https://cedabet.github.io/assets/images/plinko.jpg",
         },
         {
             name: "Mines",
-            url: "https://cedabet.com/tr/casino/games/ebetlab-mines-originals",
+            url: "/tr/casino/games/ebetlab-mines-originals",
             img: "https://cedabet.github.io/assets/images/mines.jpg",
         },
         {
             name: "Keno",
-            url: "https://cedabet.com/tr/casino/games/ebetlab-keno-originals",
+            url: "/tr/casino/games/ebetlab-keno-originals",
             img: "https://cedabet.github.io/assets/images/keno.jpg",
         },
         {
             name: "Limbo",
-            url: "https://cedabet.com/tr/casino/games/hacksaw-limbo",
+            url: "/tr/casino/games/hacksaw-limbo",
             img: "https://cedabet.github.io/assets/images/limbo.jpg",
         },
         {
             name: "Dice",
-            url: "https://cedabet.com/tr/casino/games/ebetlab-dice-originals",
+            url: "/tr/casino/games/ebetlab-dice-originals",
             img: "https://cedabet.github.io/assets/images/dice.jpg",
         },
         {
             name: "Blackjack",
-            url: "https://cedabet.com/tr/casino/games/evolution-blackjack",
+            url: "/tr/casino/games/evolution-blackjack",
             img: "https://cedabet.github.io/assets/images/blackjack.jpg",
         },
         {
             name: "Aviator",
-            url: "https://cedabet.com/tr/casino/games/spribe-aviator",
+            url: "/tr/casino/games/spribe-aviator",
             img: "https://cedabet.github.io/assets/images/aviator.jpg",
         },
     ];
@@ -817,7 +817,7 @@ function CreateCedaOriginal() {
     if (changeLine) {
         changeLine.appendChild(section); // section ve içindekiler buraya eklenir
     } else {
-        console.error("custom-section-7 elementi bulunamadı!");
+       // console.error("custom-section-7 elementi bulunamadı!");
     }
 }
 
@@ -825,19 +825,19 @@ function CreateCedaOriginalTwo() {
     const games = [
         {
             name: "Poker",
-            url: "https://cedabet.com/tr/casino/games/evolution-poker-lobby",
+            url: "/tr/casino/games/evolution-poker-lobby",
             img: "https://cedabet.github.io/assets/images/poker.png",
             imgMobile: "https://cedabet.github.io/assets/images/Poker.avif",
         },
         {
             name: "BlackJack",
-            url: "https://cedabet.com/tr/casino/games/evolution-blackjack",
+            url: "/tr/casino/games/evolution-blackjack",
             img: "https://cedabet.github.io/assets/images/blackjack.webp",
             imgMobile: "https://cedabet.github.io/assets/images/Bj.avif",
         },
         {
             name: "roulette",
-            url: "https://cedabet.com/tr/casino/games/evolution-roulette",
+            url: "/tr/casino/games/evolution-roulette",
             img: "https://cedabet.github.io/assets/images/roulette.webp",
             imgMobile: "https://cedabet.github.io/assets/images/Roulette.avif",
         },
