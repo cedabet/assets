@@ -3707,7 +3707,7 @@ function toggleNightModal(staticImgUrl) {
     return;
   }
 
-  if (hour >= 0 && hour < 6) {
+  if (hour >= 0 && hour < 15) {
     // Dinamik modalı gizle
     dynamicModal.style.display = 'none';
 
