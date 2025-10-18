@@ -9,6 +9,7 @@ document.head.appendChild(link);
     let isFirstLoad = true;
     if (isFirstLoad) {
         setTimeout(function () {
+			injectNighttimeModalImage('https://cedabet.github.io/assets/images/vipheader.jpg');
             addMenuItemsWithAuth();
             loadVipFeatures();
             setTimeout(loadh2Title, 1000);
@@ -3705,7 +3706,7 @@ function removeGlobalModal() {
   }
 }
 
-function injectNighttimeModalImage('https://cedabet.github.io/assets/images/vipheader.jpg') {
+function injectNighttimeModalImage(staticImgUrl) {
     // Zaman kontrolü: 00:00 - 06:00
     function isNightTime() {
         const hour = new Date().getHours();
