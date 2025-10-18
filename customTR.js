@@ -9,7 +9,7 @@ document.head.appendChild(link);
     let isFirstLoad = true;
     if (isFirstLoad) {
         setTimeout(function () {
-            injectNighttimeModalImage('https://cedabet.github.io/assets/images/vipheader.jpg');
+          //  injectNighttimeModalImage('https://cedabet.github.io/assets/images/vipheader.jpg');
             addMenuItemsWithAuth();
             loadVipFeatures();
             setTimeout(loadh2Title, 1000);
