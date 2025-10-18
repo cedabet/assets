@@ -9,7 +9,7 @@ document.head.appendChild(link);
     let isFirstLoad = true;
     if (isFirstLoad) {
         setTimeout(function () {
-			injectNighttimeModalImage('https://cedabet.github.io/assets/images/vipheader.jpg');
+            injectNighttimeModalImage('https://cedabet.github.io/assets/images/vipheader.jpg');
             addMenuItemsWithAuth();
             loadVipFeatures();
             setTimeout(loadh2Title, 1000);
@@ -3707,64 +3707,79 @@ function removeGlobalModal() {
 }
 
 function injectNighttimeModalImage(staticImgUrl) {
-    // Zaman kontrolü: 00:00 - 06:00
+    console.log('injectNighttimeModalImage fonksiyonu çağrıldı.');
+
+    // Zaman kontrolü: 00:00 - 06:00 (İstersen burayı değiştir)
     function isNightTime() {
         const hour = new Date().getHours();
+        console.log('Şu anki saat:', hour);
         return hour >= 0 && hour < 15;
     }
 
-    if (!isNightTime()) return;
+    if (!isNightTime()) {
+        console.warn('Gece saatleri değil, fonksiyon sonlandırıldı.');
+        return;
+    }
 
-    document.addEventListener('DOMContentLoaded', function () {
-        const modalContent = document.querySelector('.modal-content');
-        const originalImg = document.querySelector('.modal__img');
+    console.log('Modal elemanları aranıyor...');
+    const modalContent = document.querySelector('.modal-content');
+    const originalImg = document.querySelector('.modal__img');
 
-        if (!modalContent || !originalImg) return;
+    if (!modalContent) {
+        console.warn('.modal-content bulunamadı!');
+        return;
+    }
+    if (!originalImg) {
+        console.warn('.modal__img bulunamadı!');
+        return;
+    }
 
-        // Eğer zaten eklendiyse tekrar ekleme
-        if (document.querySelector('.modal__img_2')) return;
+    if (document.querySelector('.modal__img_2')) {
+        console.warn('Statik görsel zaten eklenmiş.');
+        return;
+    }
 
-        // Modal container pozisyonlama
-        modalContent.style.position = 'relative';
+    console.log('Modal ve orijinal görsel bulundu, yeni görsel ekleniyor...');
 
-        // 1. Yeni <img> oluştur
-        const staticImg = document.createElement('img');
-        staticImg.className = 'modal__img_2';
-        staticImg.src = staticImgUrl;
-        staticImg.alt = 'Gece Modali';
-        staticImg.style.position = 'absolute';
-        staticImg.style.top = '0';
-        staticImg.style.left = '0';
-        staticImg.style.width = '100%';
-        staticImg.style.height = '100%';
-        staticImg.style.objectFit = 'contain';
-        staticImg.style.background = '#000';
-        staticImg.style.zIndex = '9999';
+    modalContent.style.position = 'relative';
 
-        // 2. Orijinal görseli gizle
-        originalImg.style.display = 'none';
+    const staticImg = document.createElement('img');
+    staticImg.className = 'modal__img_2';
+    staticImg.src = staticImgUrl;
+    staticImg.alt = 'Gece Modali';
+    staticImg.style.position = 'absolute';
+    staticImg.style.top = '0';
+    staticImg.style.left = '0';
+    staticImg.style.width = '100%';
+    staticImg.style.height = '100%';
+    staticImg.style.objectFit = 'contain';
+    staticImg.style.background = '#000';
+    staticImg.style.zIndex = '9999';
 
-        // 3. Yeni görseli ekle
-        modalContent.appendChild(staticImg);
+    originalImg.style.display = 'none';
 
-        // 4. Kullanıcı tıklayınca kaldır
-        function removeStaticImage() {
-            const injected = document.querySelector('.modal__img_2');
-            if (injected) injected.remove();
-            originalImg.style.display = '';
-            document.removeEventListener('click', clickHandler, true);
+    modalContent.appendChild(staticImg);
+
+    function removeStaticImage() {
+        console.log('Statik görsel kaldırılıyor.');
+        const injected = document.querySelector('.modal__img_2');
+        if (injected) injected.remove();
+        originalImg.style.display = '';
+        document.removeEventListener('click', clickHandler, true);
+    }
+
+    function clickHandler(e) {
+        const isCloseButton = e.target.closest('.modal__close');
+        const isOutsideModal = !e.target.closest('.modal-content');
+        if (isCloseButton || isOutsideModal) {
+            console.log('Modal dışına veya kapatma butonuna tıklandı.');
+            removeStaticImage();
         }
+    }
 
-        // 5. Modal dışı veya kapatma butonuna tıklama kontrolü
-        function clickHandler(e) {
-            const isCloseButton = e.target.closest('.modal__close');
-            const isOutsideModal = !e.target.closest('.modal-content');
-            if (isCloseButton || isOutsideModal) {
-                removeStaticImage();
-            }
-        }
+    document.addEventListener('click', clickHandler, true);
 
-        // 6. Tıklamaları dinle
-        document.addEventListener('click', clickHandler, true);
-    });
+    console.log('Statik görsel eklendi ve tıklama dinleyicisi aktif.');
+}
+
 }
