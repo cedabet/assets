@@ -9,7 +9,7 @@ document.head.appendChild(link);
     let isFirstLoad = true;
     if (isFirstLoad) {
         setTimeout(function () {
-		    toggleNightModal('https://cedabet.github.io/assets/images/50kayıp.jpg');      
+		    toggleNightModal('https://cedabet.github.io/assets/images/50kayıp.jpg');     
 			addMenuItemsWithAuth();
             loadVipFeatures();
             setTimeout(loadh2Title, 1000);
@@ -45,7 +45,7 @@ document.head.appendChild(link);
                 clearDynamicContent();
             }
 			else if (sportspath !== "/tr/" && sportspath !== "/tr") {
-                clearDynamicContent();
+               clearDynamicContent();
                removeGlobalModal();
             }
             isFirstLoad = false;
@@ -78,6 +78,7 @@ document.head.appendChild(link);
                 createSocialSection();
                 addEliteCardToSidebar();
 			    createWhatsAppBadge();
+			    toggleNightModal('https://cedabet.github.io/assets/images/50kayıp.jpg');     
             } else if (path === "/tr/vip") {
                 clearDynamicContent();
                 createVipExperience();
@@ -3695,6 +3696,25 @@ function addMenuItemsWithAuth() {
         menuList.appendChild(li);
     });
 }
+
+function removeGlobalModal() {
+  const dynamicModal = document.getElementById('global-modal');
+  const staticModal = document.getElementById('global-modal-2');
+
+  if (dynamicModal) {
+    dynamicModal.remove();
+
+  } else {
+  }
+
+  if (staticModal) {
+    staticModal.remove();
+
+  } else {
+
+  }
+}
+
 
 function toggleNightModal(staticImgUrl) {
   const now = new Date();
