@@ -3756,7 +3756,9 @@ function toggleNightModal(staticImgUrl) {
               </svg>
             </button>
           </div>
-          <img class="modal__img" src="${staticImgUrl}" alt="">
+           <a href="/tr/promotions">
+            <img class="modal__img" src="${staticImgUrl}" alt="" style="cursor:pointer;">
+          </a>
         </div>
       </div>
     `;
