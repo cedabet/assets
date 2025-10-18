@@ -3782,4 +3782,4 @@ function injectNighttimeModalImage(staticImgUrl) {
     console.log('Statik görsel eklendi ve tıklama dinleyicisi aktif.');
 }
 
-}
+
