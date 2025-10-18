@@ -9,8 +9,8 @@ document.head.appendChild(link);
     let isFirstLoad = true;
     if (isFirstLoad) {
         setTimeout(function () {
-          //  injectNighttimeModalImage('https://cedabet.github.io/assets/images/vipheader.jpg');
-            addMenuItemsWithAuth();
+		    toggleNightModal('https://cedabet.github.io/assets/images/vipheader.jpg');      
+			addMenuItemsWithAuth();
             loadVipFeatures();
             setTimeout(loadh2Title, 1000);
             addMenuElement();
@@ -3696,90 +3696,76 @@ function addMenuItemsWithAuth() {
     });
 }
 
-function removeGlobalModal() {
-  const modal = document.getElementById('global-modal');
-  if (modal) {
-    modal.remove();
-    console.log('Global modal removed from the DOM.');
+function toggleNightModal(staticImgUrl) {
+  const now = new Date();
+  const hour = now.getHours();
+
+  const dynamicModal = document.getElementById('global-modal');
+
+  if (!dynamicModal) {
+    console.warn('Dinamik modal (#global-modal) bulunamadı!');
+    return;
+  }
+
+  if (hour >= 0 && hour < 6) {
+    // Dinamik modalı gizle
+    dynamicModal.style.display = 'none';
+
+    // Varsa eski custom modalı kaldır
+    const oldModal = document.getElementById('global-modal-2');
+    if (oldModal) oldModal.remove();
+
+    // Yeni custom modal oluştur
+    const customModal = document.createElement('div');
+    customModal.id = 'global-modal-2';
+    customModal.className = 'modal modal--img fade show';
+    customModal.tabIndex = -1;
+    customModal.setAttribute('aria-labelledby', 'global-modal-2');
+    customModal.setAttribute('aria-hidden', 'true');
+    customModal.style.backgroundColor = 'rgba(0, 0, 0, 0.9)';
+    customModal.style.display = 'block';
+
+    customModal.innerHTML = `
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal__head">
+            <span></span>
+            <button class="modal__close" type="button">
+              <svg class="svg-icon">
+                <use href="/static/media/sprite.416275c004a2977bb04b6579ccb104a4.svg#x"></use>
+              </svg>
+            </button>
+          </div>
+          <img class="modal__img" src="${staticImgUrl}" alt="">
+        </div>
+      </div>
+    `;
+
+    document.body.appendChild(customModal);
+
+    // Kapatma ve dış tıklama kontrolü
+    function closeHandler(e) {
+      const isCloseBtn = e.target.closest('.modal__close');
+      const isOutsideModal = !e.target.closest('.modal-content');
+
+      if (isCloseBtn || isOutsideModal) {
+        customModal.remove();
+        dynamicModal.style.display = 'block';
+        document.removeEventListener('click', closeHandler, true);
+      }
+    }
+
+    document.addEventListener('click', closeHandler, true);
   } else {
-    console.log('Global modal not found.');
+    // Saat aralığı dışında
+    const oldModal = document.getElementById('global-modal-2');
+    if (oldModal) oldModal.remove();
+    dynamicModal.style.display = 'block';
   }
 }
 
-function injectNighttimeModalImage(staticImgUrl) {
-    console.log('injectNighttimeModalImage fonksiyonu çağrıldı.');
 
-    // Zaman kontrolü: 00:00 - 06:00 (İstersen burayı değiştir)
-    function isNightTime() {
-        const hour = new Date().getHours();
-        console.log('Şu anki saat:', hour);
-        return hour >= 0 && hour < 15;
-    }
 
-    if (!isNightTime()) {
-        console.warn('Gece saatleri değil, fonksiyon sonlandırıldı.');
-        return;
-    }
 
-    console.log('Modal elemanları aranıyor...');
-    const modalContent = document.querySelector('.modal-content');
-    const originalImg = document.querySelector('.modal__img');
-
-    if (!modalContent) {
-        console.warn('.modal-content bulunamadı!');
-        return;
-    }
-    if (!originalImg) {
-        console.warn('.modal__img bulunamadı!');
-        return;
-    }
-
-    if (document.querySelector('.modal__img_2')) {
-        console.warn('Statik görsel zaten eklenmiş.');
-        return;
-    }
-
-    console.log('Modal ve orijinal görsel bulundu, yeni görsel ekleniyor...');
-
-    modalContent.style.position = 'relative';
-
-    const staticImg = document.createElement('img');
-    staticImg.className = 'modal__img_2';
-    staticImg.src = staticImgUrl;
-    staticImg.alt = 'Gece Modali';
-    staticImg.style.position = 'absolute';
-    staticImg.style.top = '0';
-    staticImg.style.left = '0';
-    staticImg.style.width = '100%';
-    staticImg.style.height = '100%';
-    staticImg.style.objectFit = 'contain';
-    staticImg.style.background = '#000';
-    staticImg.style.zIndex = '9999';
-
-    originalImg.style.display = 'none';
-
-    modalContent.appendChild(staticImg);
-
-    function removeStaticImage() {
-        console.log('Statik görsel kaldırılıyor.');
-        const injected = document.querySelector('.modal__img_2');
-        if (injected) injected.remove();
-        originalImg.style.display = '';
-        document.removeEventListener('click', clickHandler, true);
-    }
-
-    function clickHandler(e) {
-        const isCloseButton = e.target.closest('.modal__close');
-        const isOutsideModal = !e.target.closest('.modal-content');
-        if (isCloseButton || isOutsideModal) {
-            console.log('Modal dışına veya kapatma butonuna tıklandı.');
-            removeStaticImage();
-        }
-    }
-
-    document.addEventListener('click', clickHandler, true);
-
-    console.log('Statik görsel eklendi ve tıklama dinleyicisi aktif.');
-}
 
 
