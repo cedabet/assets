@@ -3756,15 +3756,20 @@ function toggleNightModal(staticImgUrl) {
               </svg>
             </button>
           </div>
-           <a href="/tr/promotions">
-            <img class="modal__img" src="${staticImgUrl}" alt="" style="cursor:pointer;">
-          </a>
+           <img id="static-promo-img" class="modal__img" src="${staticImgUrl}" alt="" style="cursor:pointer;">
         </div>
       </div>
     `;
 
     document.body.appendChild(customModal);
-
+ // ✅ Resme tıklayınca yönlendir
+    const promoImg = customModal.querySelector('#static-promo-img');
+    if (promoImg) {
+      promoImg.addEventListener('click', function (e) {
+        e.stopPropagation(); // Modal kapama event'ine gitmesin
+        window.location.href = '/tr/promotions';
+      });
+    }
     // Kapatma ve dış tıklama kontrolü
     function closeHandler(e) {
       const isCloseBtn = e.target.closest('.modal__close');
