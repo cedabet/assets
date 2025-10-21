@@ -101,7 +101,13 @@ document.head.appendChild(link);
                 clearDynamicContent();
             } else if (path === "/tr/latest-big-wins") {
                 LandingPage();
-            } else {
+            } 
+			else if (sportspath === "/tr/promotions") {
+                clearDynamicContent();
+               removeGlobalModal();
+                fixTabsNav();
+            }
+			else {
                 clearDynamicContent();
                removeGlobalModal();
             }
