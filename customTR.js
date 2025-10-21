@@ -3819,6 +3819,8 @@ function fixTabsNav() {
     remainingButtons[0].classList.add("active");
 
     // Gerekirse burada tıklama olayı tetiklenebilir
+    remainingButtons[0].click();                 // İçeriği de yüklemesi için click tetikle
+
     // remainingButtons[0].click();  // Eğer içerik güncellenmiyorsa bunu açabilirsin
   }
 }
