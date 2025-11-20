@@ -3880,10 +3880,6 @@ function bonusTabCustomReplace() {
     const tabsUl = document.querySelector('.tabs-nav.tabs-nav--modal');
     if (!tabsUl) return;
 
-    // Son li elemanını kaldır
-    const lastLi = tabsUl.querySelector("li:last-child");
-    if (lastLi) lastLi.remove();
-
     // Yeni custom li oluştur
     const newLi = document.createElement("li");
     newLi.className = "nav-item";
