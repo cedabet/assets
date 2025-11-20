@@ -3864,9 +3864,9 @@ function bonusTabCustomReplace() {
     const token = localStorage.getItem('bearer');
 
     if (!token) {
-       // console.error('Bearer token bulunamadı. Menü elemanları eklenmeyecek.');
         return;
     }
+
     const url = window.location.href;
 
     // URL kontrolü
@@ -3874,28 +3874,44 @@ function bonusTabCustomReplace() {
         return;
     }
 
-    // UL elemanını bul
-    const tabsUl = document.querySelector('.tabs-nav.tabs-nav--modal');
-    if (!tabsUl) return;
+    // --- UL yoksa DOM'a eklenmesini beklemek için OBSERVER EKLENDİ ---
+    function tryApply() {
+        const tabsUl = document.querySelector('.tabs-nav.tabs-nav--modal');
+        if (!tabsUl) return false;
 
-    // Eğer custom tab zaten varsa tekrar oluşturma
-    if (tabsUl.querySelector(".custom-bonus-tab")) {
-        return;
+        // Eğer custom tab zaten varsa tekrar oluşturma
+        if (tabsUl.querySelector(".custom-bonus-tab")) {
+            return true; // işlem tamam
+        }
+
+        // Yeni custom li oluştur
+        const newLi = document.createElement("li");
+        newLi.className = "nav-item";
+        newLi.setAttribute("role", "presentation");
+
+        // Custom <a> sekmesi oluştur
+        const newA = document.createElement("a");
+        newA.className = "tabs-nav__btn custom-bonus-tab";
+        newA.textContent = "Bonus Kodu Gir";
+        newA.href = "?modal=vip&tab=bonus-code";
+
+        newLi.appendChild(newA);
+        tabsUl.appendChild(newLi);
+
+        return true; // başarıyla uygulandı
     }
-    // Yeni custom li oluştur
-    const newLi = document.createElement("li");
-    newLi.className = "nav-item";
-    newLi.setAttribute("role", "presentation");
 
-    // Custom <a> sekmesi oluştur
-    const newA = document.createElement("a");
-    newA.className = "tabs-nav__btn custom-bonus-tab";
-    newA.textContent = "Bonus Kodu Gir";
+    // İlk deneme
+    if (tryApply()) return;
 
-    // BURAYA istediğin href’i yazabilirsin
-    newA.href = "?modal=vip&tab=bonus-code";  
-    newLi.appendChild(newA);
-    tabsUl.appendChild(newLi);
+    // UL henüz eklenmediyse bekle
+    const observer = new MutationObserver(() => {
+        if (tryApply()) {
+            observer.disconnect(); // işlem tamamlandı → izlemeyi durdur
+        }
+    });
+
+    observer.observe(document.body, { childList: true, subtree: true });
 }
 
 
