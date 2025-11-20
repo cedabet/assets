@@ -11,7 +11,7 @@ document.head.appendChild(link);
         setTimeout(function () {
 		    toggleNightModal('https://cedabet.github.io/assets/images/50kayıp.jpg');     
 			addMenuItemsWithAuth();
-          bonusTabCustomReplace()
+          bonusTabCustomReplace();
             loadVipFeatures();
             setTimeout(loadh2Title, 1000);
             addMenuElement();
@@ -69,7 +69,7 @@ document.head.appendChild(link);
         setTimeout(function () {
             addMenuItemsWithAuth();
             insertCedaTVButton();
-            bonusTabCustomReplace()
+            bonusTabCustomReplace();
             //	  checkModal();
             if (path === "/tr/" || path === "/tr") {
                 clearDynamicContent();
@@ -3898,6 +3898,5 @@ function bonusTabCustomReplace() {
     tabsUl.appendChild(newLi);
 }
 
-bonusTabCustomReplace();
 
 
