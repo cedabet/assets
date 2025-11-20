@@ -3867,8 +3867,6 @@ function bonusTabCustomReplace() {
        // console.error('Bearer token bulunamadı. Menü elemanları eklenmeyecek.');
         return;
     }
-
-  
     const url = window.location.href;
 
     // URL kontrolü
@@ -3880,6 +3878,10 @@ function bonusTabCustomReplace() {
     const tabsUl = document.querySelector('.tabs-nav.tabs-nav--modal');
     if (!tabsUl) return;
 
+    // Eğer custom tab zaten varsa tekrar oluşturma
+    if (tabsUl.querySelector(".custom-bonus-tab")) {
+        return;
+    }
     // Yeni custom li oluştur
     const newLi = document.createElement("li");
     newLi.className = "nav-item";
