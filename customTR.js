@@ -27,7 +27,7 @@ document.head.appendChild(link);
             //  addScrollingText("BİR SONRAKİ GÜNCEL ADRESİMİZ CEDABET25.COM'DUR. LÜTFEN SAHTE SİTELERE İTİBAR ETMEYİNİZ.");
             addEliteCardToSidebar();
             createCedaSocialLinks();
-			      createSocialSection();
+			  //    createSocialSection();
             createWhatsAppBadge();
             var sportspath = window.location.pathname;
             if (sportspath === "/tr/sportsbook") {
@@ -82,7 +82,7 @@ document.head.appendChild(link);
                 CreateCedaOriginalTwo();
                 createLeagueSection();
                 createCedaSocialLinks();
-                createSocialSection();
+              //  createSocialSection();
                 addEliteCardToSidebar();
 			    createWhatsAppBadge();
 			    toggleNightModal('https://cedabet.github.io/assets/images/50kayıp.jpg');     
