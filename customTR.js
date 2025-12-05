@@ -85,7 +85,7 @@ document.head.appendChild(link);
               //  createSocialSection();
                 addEliteCardToSidebar();
 			    createWhatsAppBadge();
-			    toggleNightModal('https://cedabet.github.io/assets/images/50kayıp.jpg');     
+			    ('https://cedabet.github.io/assets/images/50kayıp.jpg');     
             } else if (path === "/tr/vip") {
                 clearDynamicContent();
                 createVipExperience();
@@ -3779,7 +3779,7 @@ function toggleNightModal(staticImgUrl) {
     customModal.id = 'global-modal-2';
     customModal.className = 'modal fade show';
     customModal.tabIndex = -1;
-    customModal.style.display = 'block';
+   // customModal.style.display = 'block';
     customModal.style.backgroundColor = 'rgba(0, 0, 0, 0.9)';
     customModal.setAttribute('aria-hidden', 'true');
 
