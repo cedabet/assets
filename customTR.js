@@ -9,7 +9,7 @@ document.head.appendChild(link);
     let isFirstLoad = true;
     if (isFirstLoad) {
         setTimeout(function () {
-		  //  toggleNightModal('https://cedabet.github.io/assets/images/50kayıp.jpg');     
+		  toggleNightModal('https://cedabet.github.io/assets/images/50kayıp.jpg');     
 			addMenuItemsWithAuth();
           bonusTabCustomReplace();
             loadVipFeatures();
@@ -3760,29 +3760,28 @@ function toggleNightModal(staticImgUrl) {
   const hour = now.getHours();
 
   const dynamicModal = document.getElementById('global-modal');
+  if (!dynamicModal) return;
 
-  if (!dynamicModal) {
-    console.warn('Dinamik modal (#global-modal) bulunamadı!');
-    return;
-  }
+  const bsModal = bootstrap.Modal.getOrCreateInstance(dynamicModal);
 
+  // Gece modalı görünecek saat aralığı
   if (hour >= 0 && hour < 6) {
-    // Dinamik modalı gizle
-    dynamicModal.style.display = 'none';
 
-    // Varsa eski custom modalı kaldır
-    const oldModal = document.getElementById('global-modal-2');
-    if (oldModal) oldModal.remove();
+    // Bootstrap modalı KAPAT
+    bsModal.hide();
 
-    // Yeni custom modal oluştur
+    // Varsa eski gece modalı sil
+    const old = document.getElementById('global-modal-2');
+    if (old) old.remove();
+
+    // Gece modalını ekle
     const customModal = document.createElement('div');
     customModal.id = 'global-modal-2';
-    customModal.className = 'modal modal--img fade show';
+    customModal.className = 'modal fade show';
     customModal.tabIndex = -1;
-    customModal.setAttribute('aria-labelledby', 'global-modal-2');
-    customModal.setAttribute('aria-hidden', 'true');
-    customModal.style.backgroundColor = 'rgba(0, 0, 0, 0.9)';
     customModal.style.display = 'block';
+    customModal.style.backgroundColor = 'rgba(0, 0, 0, 0.9)';
+    customModal.setAttribute('aria-hidden', 'true');
 
     customModal.innerHTML = `
       <div class="modal-dialog modal-dialog-centered">
@@ -3795,40 +3794,36 @@ function toggleNightModal(staticImgUrl) {
               </svg>
             </button>
           </div>
-           <img id="static-promo-img" class="modal__img" src="${staticImgUrl}" alt="" style="cursor:pointer;">
+          <img id="static-promo-img" class="modal__img" src="${staticImgUrl}" style="cursor:pointer;">
         </div>
       </div>
     `;
 
     document.body.appendChild(customModal);
- // ✅ Resme tıklayınca yönlendir
-    const promoImg = customModal.querySelector('#static-promo-img');
-    if (promoImg) {
-      promoImg.addEventListener('click', function (e) {
-        e.stopPropagation(); // Modal kapama event'ine gitmesin
-        window.location.href = '/tr/promotion/geceye-ozel-cevrimsiz-50-kayip-bonusu';
-      });
-    }
-    // Kapatma ve dış tıklama kontrolü
-    function closeHandler(e) {
-      const isCloseBtn = e.target.closest('.modal__close');
-      const isOutsideModal = !e.target.closest('.modal-content');
 
-      if (isCloseBtn || isOutsideModal) {
+    // Resme tıklayınca yönlendirme
+    customModal.querySelector('#static-promo-img').onclick = () => {
+      window.location.href = '/tr/promotion/geceye-ozel-cevrimsiz-50-kayip-bonusu';
+    };
+
+    // Modal kapatma
+    customModal.addEventListener('click', (e) => {
+      if (e.target.closest('.modal__close') || !e.target.closest('.modal-content')) {
         customModal.remove();
-        dynamicModal.style.display = 'block';
-        document.removeEventListener('click', closeHandler, true);
+        bsModal.show(); // Dinamik modalı düzgün şekilde tekrar aç
       }
-    }
+    });
 
-    document.addEventListener('click', closeHandler, true);
   } else {
-    // Saat aralığı dışında
-    const oldModal = document.getElementById('-2');
-    if (oldModal) oldModal.remove();
-    dynamicModal.style.display = 'block';
+    // Gün saatlerinde gece modalını kaldır
+    const old = document.getElementById('global-modal-2');
+    if (old) old.remove();
+
+    // Bootstrap modalını doğru şekilde aç
+    bsModal.show();
   }
 }
+
 
 function fixTabsNav() {
   const tabsNav = document.querySelector("#tabs-nav");
