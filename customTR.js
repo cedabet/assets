@@ -1,8 +1,9 @@
-let link = document.createElement("link");
-link.rel = "stylesheet";
-link.href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css";
+let linkx = document.createElement("link");
+linkx.rel = "stylesheet";
+linkx.href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css";
 
-document.head.appendChild(link);
+document.head.appendChild(linkx);
+
 
 (function () {
     let lastUrl = location.href;
