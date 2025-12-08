@@ -1,8 +1,8 @@
-let linkx = document.createElement("link");
-linkx.rel = "stylesheet";
-linkx.href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css";
+let linkxy = document.createElement("link");
+linkxy.rel = "stylesheet";
+linkxy.href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css";
 
-document.head.appendChild(linkx);
+document.head.appendChild(linkxy);
 
 
 (function () {
