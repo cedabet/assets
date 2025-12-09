@@ -48,12 +48,12 @@ document.head.appendChild(link);
             }
               else if (sportspath === "/tr/promotions") {
                 clearDynamicContent();
-               removeGlobalModal();
+               removeGlobal();
                 fixTabsNav();
             }
 			else if (sportspath !== "/tr/" && sportspath !== "/tr") {
                clearDynamicContent();
-               removeGlobalModal();
+               removeGlobal();
             }
             isFirstLoad = false;
         }, 400);
@@ -71,7 +71,7 @@ document.head.appendChild(link);
             addMenuItemsWithAuth();
             insertCedaTVButton();
             bonusTabCustomReplace();
-            //	  checkModal();
+            //	  check();
             if (path === "/tr/" || path === "/tr") {
                 clearDynamicContent();
                 loadVipFeatures();
@@ -86,7 +86,7 @@ document.head.appendChild(link);
               //  createSocialSection();
                 addEliteCardToSidebar();
 			    createWhatsAppBadge();
-			    toggleNightModal('https://cedabet.github.io/assets/images/50kayıp.jpg');     
+			    toggleNight('https://cedabet.github.io/assets/images/50kayıp.jpg');     
             } else if (path === "/tr/vip") {
                 clearDynamicContent();
                 createVipExperience();
@@ -107,12 +107,12 @@ document.head.appendChild(link);
             } 
 			else if (path === "/tr/promotions") {
                 clearDynamicContent();
-               removeGlobalModal();
+               removeGlobal();
                 fixTabsNav();
             }
 			else {
                 clearDynamicContent();
-               removeGlobalModal();
+               removeGlobal();
             }
         }, 400);
     }
@@ -3845,6 +3845,7 @@ function toggleNightModal(staticImgUrl) {
         bsModal.show(); // Dinamik modalı düzgün şekilde tekrar aç
       }
     }
+								 }
     });
 
     document.addEventListener('click', closeHandler, true);
