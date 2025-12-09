@@ -5,70 +5,29 @@ linkt.href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.
 document.head.appendChild(linkt);
 
 (function () {
-    let lastUrl = location.href;
-    let isFirstLoad = true;
 
-    // ---------------- FIRST LOAD ----------------
-    if (isFirstLoad) {
-        setTimeout(function () {
+    /* ============================================================
+       UTILITIES
+    ============================================================ */
 
-            toggleNightModal('https://cedabet.github.io/assets/images/50kayıp.jpg');
-            console.log("ilk yukleme");
-
-            addMenuItemsWithAuth();
-            bonusTabCustomReplace();
-            loadVipFeatures();
-
-            setTimeout(loadh2Title, 1000);
-            addMenuElement();
-            addMenuElementTwo();
-
-            setTimeout(updateCopyrightYear, 1000);
-
-            CreateCedaOriginal();
-            CreateCedaOriginalTwo();
-            insertCedaTVButton();
-            createLeagueSection();
-
-            addEliteCardToSidebar();
-            createCedaSocialLinks();
-            createWhatsAppBadge();
-
-            var sportspath = window.location.pathname;
-
-            if (
-                sportspath === "/tr/sportsbook" ||
-                sportspath === "/tr/trade" ||
-                sportspath === "/tr/e-sport"
-            ) {
-                clearDynamicContent();
-
-            } else if (sportspath === "/tr/vip") {
-                clearDynamicContent();
-                createVipExperience();
-
-            } else if (sportspath === "/tr/latest-big-wins") {
-                clearDynamicContent();
-                LandingPage();
-
-            } else if (sportspath === "/tr/challenges") {
-                clearDynamicContent();
-
-            } else if (sportspath === "/tr/promotions") {
-                clearDynamicContent();
-                removeGlobalModal();
-                fixTabsNav();
-
-            } else if (sportspath !== "/tr/" && sportspath !== "/tr") {
-                clearDynamicContent();
-                removeGlobalModal();
+    // Sayfanın gerçek DOM içeriği gelene kadar bekler
+    function waitForElement(selector, callback) {
+        const el = document.querySelector(selector);
+        if (el) {
+            callback();
+            return;
+        }
+        const observer = new MutationObserver(() => {
+            const el = document.querySelector(selector);
+            if (el) {
+                observer.disconnect();
+                callback();
             }
-
-            isFirstLoad = false;
-        }, 400);
+        });
+        observer.observe(document.documentElement, { childList: true, subtree: true });
     }
 
-    // ---------------- URL CHANGE CHECK ----------------
+    // URL değişimini takip eden ana fonksiyon
     function checkUrlChange() {
         if (location.href !== lastUrl) {
             lastUrl = location.href;
@@ -76,15 +35,21 @@ document.head.appendChild(linkt);
         }
     }
 
-    // ---------------- HANDLE PAGE SCRIPTS ----------------
+    /* ============================================================
+       PAGE SCRIPT CONTROLLER
+    ============================================================ */
+
     function handlePageScripts(path) {
-        setTimeout(function () {
+
+        setTimeout(() => {
 
             addMenuItemsWithAuth();
             insertCedaTVButton();
             bonusTabCustomReplace();
-            console.log("url degisti");
 
+            console.warn("Sayfa değişti → ", path);
+
+            // ---------------- ANA SAYFA ----------------
             if (path === "/tr/" || path === "/tr") {
 
                 clearDynamicContent();
@@ -104,39 +69,45 @@ document.head.appendChild(linkt);
                 createWhatsAppBadge();
 
                 toggleNightModal('https://cedabet.github.io/assets/images/50kayıp.jpg');
+            }
 
-            } else if (path === "/tr/vip") {
-
+            // ---------------- VIP ----------------
+            else if (path === "/tr/vip") {
                 clearDynamicContent();
                 createVipExperience();
+            }
 
-            } else if (path === "/tr/casino") {
-
+            // ---------------- CASINO ----------------
+            else if (path === "/tr/casino") {
                 clearDynamicContent();
                 CreateCedaOriginal();
                 CreateCedaOriginalTwo();
+            }
 
-            } else if (
+            // ---------------- SPORTS, TRADE, E-SPORT, CHALLENGES ----------------
+            else if (
                 path === "/tr/sportsbook" ||
                 path === "/tr/trade" ||
                 path === "/tr/e-sport" ||
                 path === "/tr/challenges"
             ) {
-
                 clearDynamicContent();
+            }
 
-            } else if (path === "/tr/latest-big-wins") {
-
+            // ---------------- BIG WINS ----------------
+            else if (path === "/tr/latest-big-wins") {
                 LandingPage();
+            }
 
-            } else if (path === "/tr/promotions") {
-
+            // ---------------- PROMOTIONS ----------------
+            else if (path === "/tr/promotions") {
                 clearDynamicContent();
                 removeGlobalModal();
                 fixTabsNav();
+            }
 
-            } else {
-
+            // ---------------- OTHER PAGES ----------------
+            else {
                 clearDynamicContent();
                 removeGlobalModal();
             }
@@ -144,14 +115,61 @@ document.head.appendChild(linkt);
         }, 400);
     }
 
-    // ---------------- OBSERVERS ----------------
-    new MutationObserver(checkUrlChange).observe(document, {
+    /* ============================================================
+       INITIAL SETUP (İLK YÜKLEME)
+    ============================================================ */
+
+    let lastUrl = location.href;
+    let isInitial = true;
+
+    function runInitialLoad() {
+        if (!isInitial) return;
+        isInitial = false;
+
+        console.warn("İlk yükleme çalıştırılıyor");
+
+        toggleNightModal('https://cedabet.github.io/assets/images/50kayıp.jpg');
+
+        addMenuItemsWithAuth();
+        bonusTabCustomReplace();
+        loadVipFeatures();
+
+        setTimeout(loadh2Title, 1000);
+        addMenuElement();
+        addMenuElementTwo();
+
+        setTimeout(updateCopyrightYear, 1000);
+
+        CreateCedaOriginal();
+        CreateCedaOriginalTwo();
+        insertCedaTVButton();
+        createCedaSocialLinks();
+        createLeagueSection();
+        addEliteCardToSidebar();
+        createWhatsAppBadge();
+
+        // Sayfa türüne göre işlem
+        handlePageScripts(location.pathname);
+    }
+
+    /* ============================================================
+       OBSERVERS & HISTORY HOOKS
+    ============================================================ */
+
+    // SPA framework’ün ana gövdesini bul
+    const appRoot =
+        document.querySelector("#app") ||
+        document.querySelector("main") ||
+        document.querySelector(".app") ||
+        document.body;
+
+    // SPA DOM değişimlerinde URL takibi
+    new MutationObserver(() => checkUrlChange()).observe(appRoot, {
         subtree: true,
         childList: true,
     });
 
-    window.addEventListener("load", checkUrlChange);
-
+    // History API yakalamaları
     const pushState = history.pushState;
     const replaceState = history.replaceState;
 
@@ -166,9 +184,12 @@ document.head.appendChild(linkt);
     };
 
     window.addEventListener("popstate", checkUrlChange);
-    window.addEventListener("load", checkUrlChange);
+
+    // İlk yükleme için DOM hazır olana kadar bekle
+    waitForElement("main, #app, .app, body", runInitialLoad);
 
 })();
+
 
 
 function checkModal() {
