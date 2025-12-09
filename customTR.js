@@ -7,58 +7,68 @@ document.head.appendChild(linkt);
 (function () {
     let lastUrl = location.href;
     let isFirstLoad = true;
+
+    // ---------------- FIRST LOAD ----------------
     if (isFirstLoad) {
         setTimeout(function () {
-		  toggleNightModal('https://cedabet.github.io/assets/images/50kayıp.jpg');     
-          console.warn("ilk yukleme");
-			addMenuItemsWithAuth();
-          bonusTabCustomReplace();
+
+            toggleNightModal('https://cedabet.github.io/assets/images/50kayıp.jpg');
+            console.warn("ilk yukleme");
+
+            addMenuItemsWithAuth();
+            bonusTabCustomReplace();
             loadVipFeatures();
+
             setTimeout(loadh2Title, 1000);
             addMenuElement();
             addMenuElementTwo();
+
             setTimeout(updateCopyrightYear, 1000);
-            //  setTimeout(createSigninModal, 2000);
+
             CreateCedaOriginal();
             CreateCedaOriginalTwo();
             insertCedaTVButton();
             createLeagueSection();
-            //    checkModal();
-            //     createSocialSection();
-            //  addScrollingText("BİR SONRAKİ GÜNCEL ADRESİMİZ CEDABET25.COM'DUR. LÜTFEN SAHTE SİTELERE İTİBAR ETMEYİNİZ.");
+
             addEliteCardToSidebar();
             createCedaSocialLinks();
-			  //    createSocialSection();
             createWhatsAppBadge();
+
             var sportspath = window.location.pathname;
-            if (sportspath === "/tr/sportsbook") {
-              clearDynamicContent();
-            } else if (sportspath === "/tr/trade") {
-              clearDynamicContent();
-            } else if (sportspath === "/tr/e-sport") {
-              clearDynamicContent();
+
+            if (
+                sportspath === "/tr/sportsbook" ||
+                sportspath === "/tr/trade" ||
+                sportspath === "/tr/e-sport"
+            ) {
+                clearDynamicContent();
+
             } else if (sportspath === "/tr/vip") {
+                clearDynamicContent();
                 createVipExperience();
-				clearDynamicContent();
+
             } else if (sportspath === "/tr/latest-big-wins") {
                 clearDynamicContent();
                 LandingPage();
+
             } else if (sportspath === "/tr/challenges") {
                 clearDynamicContent();
-            }
-              else if (sportspath === "/tr/promotions") {
+
+            } else if (sportspath === "/tr/promotions") {
                 clearDynamicContent();
-               removeGlobalModal();
+                removeGlobalModal();
                 fixTabsNav();
+
+            } else if (sportspath !== "/tr/" && sportspath !== "/tr") {
+                clearDynamicContent();
+                removeGlobalModal();
             }
-			else if (sportspath !== "/tr/" && sportspath !== "/tr") {
-               clearDynamicContent();
-               removeGlobalModal();
-            }
+
             isFirstLoad = false;
         }, 400);
     }
 
+    // ---------------- URL CHANGE CHECK ----------------
     function checkUrlChange() {
         if (location.href !== lastUrl) {
             lastUrl = location.href;
@@ -66,65 +76,81 @@ document.head.appendChild(linkt);
         }
     }
 
+    // ---------------- HANDLE PAGE SCRIPTS ----------------
     function handlePageScripts(path) {
         setTimeout(function () {
+
             addMenuItemsWithAuth();
             insertCedaTVButton();
             bonusTabCustomReplace();
-			     console.warn("url degisti");
-            //	  checkModal();
+            console.warn("url degisti");
+
             if (path === "/tr/" || path === "/tr") {
+
                 clearDynamicContent();
                 loadVipFeatures();
+
                 setTimeout(loadh2Title, 1000);
                 addMenuElement();
                 addMenuElementTwo();
+
                 setTimeout(updateCopyrightYear, 1000);
+
                 CreateCedaOriginal();
                 CreateCedaOriginalTwo();
                 createLeagueSection();
                 createCedaSocialLinks();
-              //  createSocialSection();
                 addEliteCardToSidebar();
-			    createWhatsAppBadge();
-			    toggleNightModal('https://cedabet.github.io/assets/images/50kayıp.jpg');     
+                createWhatsAppBadge();
+
+                toggleNightModal('https://cedabet.github.io/assets/images/50kayıp.jpg');
+
             } else if (path === "/tr/vip") {
+
                 clearDynamicContent();
                 createVipExperience();
+
             } else if (path === "/tr/casino") {
+
                 clearDynamicContent();
                 CreateCedaOriginal();
                 CreateCedaOriginalTwo();
-            } else if (path === "/tr/sportsbook") {
+
+            } else if (
+                path === "/tr/sportsbook" ||
+                path === "/tr/trade" ||
+                path === "/tr/e-sport" ||
+                path === "/tr/challenges"
+            ) {
+
                 clearDynamicContent();
-            } else if (path === "/tr/trade") {
-                clearDynamicContent();
-            } else if (path === "/tr/e-sport") {
-                clearDynamicContent();
-            } else if (path === "/tr/challenges") {
-                clearDynamicContent();
+
             } else if (path === "/tr/latest-big-wins") {
+
                 LandingPage();
-            } 
-			else if (path === "/tr/promotions") {
+
+            } else if (path === "/tr/promotions") {
+
                 clearDynamicContent();
-               removeGlobalModal();
+                removeGlobalModal();
                 fixTabsNav();
-            }
-			else {
+
+            } else {
+
                 clearDynamicContent();
-               removeGlobalModal();
+                removeGlobalModal();
             }
+
         }, 400);
     }
 
+    // ---------------- OBSERVERS ----------------
     new MutationObserver(checkUrlChange).observe(document, {
         subtree: true,
         childList: true,
     });
-    window.addEventListener("load", function () {
-        checkUrlChange(); // Sayfa yüklendikten hemen sonra kontrol et
-    });
+
+    window.addEventListener("load", checkUrlChange);
 
     const pushState = history.pushState;
     const replaceState = history.replaceState;
@@ -140,9 +166,10 @@ document.head.appendChild(linkt);
     };
 
     window.addEventListener("popstate", checkUrlChange);
-
     window.addEventListener("load", checkUrlChange);
+
 })();
+
 
 function checkModal() {
     const modal = document.getElementById("global-modal");
