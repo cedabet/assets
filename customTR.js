@@ -49,7 +49,7 @@ document.head.appendChild(link);
               else if (sportspath === "/tr/promotions") {
                 clearDynamicContent();
                removeGlobal();
-                fixTabsNav();
+                sNav();
             }
 			else if (sportspath !== "/tr/" && sportspath !== "/tr") {
                clearDynamicContent();
@@ -108,7 +108,7 @@ document.head.appendChild(link);
 			else if (path === "/tr/promotions") {
                 clearDynamicContent();
                removeGlobal();
-                fixTabsNav();
+                sNav();
             }
 			else {
                 clearDynamicContent();
@@ -3761,43 +3761,34 @@ function toggleNightModal(staticImgUrl) {
   const hour = now.getHours();
 
   const dynamicModal = document.getElementById('global-modal');
-  if (!dynamicModal) return;
-
   if (!dynamicModal) {
     console.warn('Dinamik modal (#global-modal) bulunamadı!');
     return;
   }
+
   const bsModal = bootstrap.Modal.getOrCreateInstance(dynamicModal);
 
-  // Gece modalı görünecek saat aralığı
+  // Gece modalı görünecek saat aralığı: 0-6
   if (hour >= 0 && hour < 6) {
     // Dinamik modalı gizle
     dynamicModal.style.display = 'none';
-
-    // Varsa eski custom modalı kaldır
-    const oldModal = document.getElementById('global-modal-2');
-    if (oldModal) oldModal.remove();
-    // Bootstrap modalı KAPAT
     bsModal.hide();
 
-    // Yeni custom modal oluştur
-    // Varsa eski gece modalı sil
-    const old = document.getElementById('global-modal-2');
-    if (old) old.remove();
+    // Eski gece modalını kaldır
+    const oldModal = document.getElementById('global-modal-2');
+    if (oldModal) oldModal.remove();
 
-    // Gece modalını ekle
+    // Yeni custom gece modalı oluştur
     const customModal = document.createElement('div');
     customModal.id = 'global-modal-2';
-    customModal.className = 'modal modal--img fade show';
-    customModal.className = 'modal fade show';
+    customModal.className = 'modal fade show modal--img';
     customModal.tabIndex = -1;
     customModal.setAttribute('aria-labelledby', 'global-modal-2');
     customModal.setAttribute('aria-hidden', 'true');
     customModal.style.backgroundColor = 'rgba(0, 0, 0, 0.9)';
     customModal.style.display = 'block';
-    customModal.style.backgroundColor = 'rgba(0, 0, 0, 0.9)';
-    customModal.setAttribute('aria-hidden', 'true');
 
+    // Modal içeriği
     customModal.innerHTML = `
       <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
@@ -3809,56 +3800,42 @@ function toggleNightModal(staticImgUrl) {
               </svg>
             </button>
           </div>
-           <img id="static-promo-img" class="modal__img" src="${staticImgUrl}" alt="" style="cursor:pointer;">
-          <img id="static-promo-img" class="modal__img" src="${staticImgUrl}" style="cursor:pointer;">
+          <img id="static-promo-img" class="modal__img" src="${staticImgUrl}" alt="" style="cursor:pointer;">
         </div>
       </div>
     `;
 
     document.body.appendChild(customModal);
- // ✅ Resme tıklayınca yönlendir
+
+    // Resme tıklayınca yönlendirme
     const promoImg = customModal.querySelector('#static-promo-img');
     if (promoImg) {
-      promoImg.addEventListener('click', function (e) {
-        e.stopPropagation(); // Modal kapama event'ine gitmesin
+      promoImg.addEventListener('click', (e) => {
+        e.stopPropagation(); // Modal kapanma eventine gitmesin
         window.location.href = '/tr/promotion/geceye-ozel-cevrimsiz-50-kayip-bonusu';
       });
     }
-    // Kapatma ve dış tıklama kontrolü
+
+    // Modal kapatma ve dış tıklama
     function closeHandler(e) {
       const isCloseBtn = e.target.closest('.modal__close');
       const isOutsideModal = !e.target.closest('.modal-content');
 
       if (isCloseBtn || isOutsideModal) {
-
-    // Resme tıklayınca yönlendirme
-    customModal.querySelector('#static-promo-img').onclick = () => {
-      window.location.href = '/tr/promotion/geceye-ozel-cevrimsiz-50-kayip-bonusu';
-    };
-
-    // Modal kapatma
-    customModal.addEventListener('click', (e) => {
-      if (e.target.closest('.modal__close') || !e.target.closest('.modal-content')) {
         customModal.remove();
         dynamicModal.style.display = 'block';
         document.removeEventListener('click', closeHandler, true);
-        bsModal.show(); // Dinamik modalı düzgün şekilde tekrar aç
+        bsModal.show();
       }
     }
-								 }
-    });
 
     document.addEventListener('click', closeHandler, true);
   } else {
-    // Saat aralığı dışında
-    const oldModal = document.getElementById('-2');
+    // Saat aralığı dışında: gece modalını kaldır ve dinamik modalı göster
+    const oldModal = document.getElementById('global-modal-2');
     if (oldModal) oldModal.remove();
-    dynamicModal.style.display = 'block';
-    // Gün saatlerinde gece modalını kaldır
-    const old = document.getElementById('global-modal-2');
-    if (old) old.remove();
 
-    // Bootstrap modalını doğru şekilde aç
+    dynamicModal.style.display = 'block';
     bsModal.show();
   }
 }
