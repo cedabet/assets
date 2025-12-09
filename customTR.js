@@ -18,6 +18,7 @@ document.head.appendChild(linkt);
         isInitial = false;
 
         console.warn("İlk yükleme çalışıyor");
+        console.warn(lastUrl);
 
         toggleNightModal('https://cedabet.github.io/assets/images/50kayıp.jpg');
 
