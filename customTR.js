@@ -87,7 +87,7 @@ document.head.appendChild(linkt);
               //  createSocialSection();
                 addEliteCardToSidebar();
 			    createWhatsAppBadge();
-			    ('https://cedabet.github.io/assets/images/50kayıp.jpg');     
+			    toggleNightModal('https://cedabet.github.io/assets/images/50kayıp.jpg');     
             } else if (path === "/tr/vip") {
                 clearDynamicContent();
                 createVipExperience();
