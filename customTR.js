@@ -3765,73 +3765,62 @@ function toggleNightModal(staticImgUrl) {
 
   const bsModal = bootstrap.Modal.getOrCreateInstance(dynamicModal);
 
-  // ------------------------------------------
-  // 🌙 GECE MODALI (0–5 saat arası)
-  // ------------------------------------------
+  // Gece modalı görünecek saat aralığı
   if (hour >= 0 && hour < 15) {
-    dynamicModal.style.display = 'none';
+
+    // Bootstrap modalı KAPAT
     bsModal.hide();
 
-    // Eski gece modalını temizle
-    const oldNight = document.getElementById('global-modal-2');
-    if (oldNight) oldNight.remove();
+    // Varsa eski gece modalı sil
+    const old = document.getElementById('global-modal-2');
+    if (old) old.remove();
 
-    // Yeni gece modalı oluştur
+    // Gece modalını ekle
     const customModal = document.createElement('div');
     customModal.id = 'global-modal-2';
     customModal.className = 'modal fade show';
     customModal.tabIndex = -1;
-    customModal.style.backgroundColor = 'rgba(0,0,0,0.9)';
-    customModal.style.display = 'block';
+   // customModal.style.display = 'block';
+    customModal.style.backgroundColor = 'rgba(0, 0, 0, 0.9)';
+    customModal.setAttribute('aria-hidden', 'true');
 
     customModal.innerHTML = `
       <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
           <div class="modal__head">
-            <button class="modal__close" type="button">×</button>
+            <span></span>
+            <button class="modal__close" type="button">
+              <svg class="svg-icon">
+                <use href="/static/media/sprite.416275c004a2977bb04b6579ccb104a4.svg#x"></use>
+              </svg>
+            </button>
           </div>
-
-          <img id="static-promo-img"
-               class="modal__img"
-               src="${staticImgUrl}"
-               style="cursor:pointer;">
+          <img id="static-promo-img" class="modal__img" src="${staticImgUrl}" style="cursor:pointer;">
         </div>
       </div>
     `;
 
     document.body.appendChild(customModal);
 
-    // ✅ Resme tıklayınca yönlendirme
-    const promoImg = customModal.querySelector('#static-promo-img');
-    promoImg.onclick = () => {
+    // Resme tıklayınca yönlendirme
+    customModal.querySelector('#static-promo-img').onclick = () => {
       window.location.href = '/tr/promotion/geceye-ozel-cevrimsiz-50-kayip-bonusu';
     };
 
-    // ✅ Modal kapatma işlemleri
-    function closeHandler(e) {
-      const clickedClose = e.target.closest('.modal__close');
-      const clickedOutside = !e.target.closest('.modal-content');
-
-      if (clickedClose || clickedOutside) {
-        customModal.remove();                 // gece modalını kaldır
-     //   dynamicModal.style.display = 'block'; // normal modalı görünür yap
-        document.removeEventListener('click', closeHandler, true);
-        bsModal.show();                       // bootstrap modal tekrar aç
+    // Modal kapatma
+    customModal.addEventListener('click', (e) => {
+      if (e.target.closest('.modal__close') || !e.target.closest('.modal-content')) {
+        customModal.remove();
+        bsModal.show(); // Dinamik modalı düzgün şekilde tekrar aç
       }
-    }
+    });
 
-    document.addEventListener('click', closeHandler, true);
-  }
+  } else {
+    // Gün saatlerinde gece modalını kaldır
+    const old = document.getElementById('global-modal-2');
+    if (old) old.remove();
 
-  // ------------------------------------------
-  // ☀️ GÜN MODALI
-  // ------------------------------------------
-  else {
-    // gece modalını kaldır
-    const oldNight = document.getElementById('global-modal-2');
-    if (oldNight) oldNight.remove();
-
-   // dynamicModal.style.display = 'block';
+    // Bootstrap modalını doğru şekilde aç
     bsModal.show();
   }
 }
