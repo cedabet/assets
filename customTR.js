@@ -1,142 +1,63 @@
-let linkt = document.createElement("link");
-linkt.rel = "stylesheet";
-linkt.href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css";
+let link = document.createElement("link");
+link.rel = "stylesheet";
+link.href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css";
 
-document.head.appendChild(linkt);
+document.head.appendChild(link);
 
 (function () {
-
-    /* ============================================================
-       1. INITIAL LOAD (EN ÜSTE ALINDI)
-    ============================================================ */
-
     let lastUrl = location.href;
-    let isInitial = true;
-
-    function runInitialLoad() {
-        if (!isInitial) return;
-        isInitial = false;
-
-        console.warn("İlk yükleme çalışıyor");
-        console.warn(lastUrl);
-
-        toggleNightModal('https://cedabet.github.io/assets/images/50kayıp.jpg');
-
-        addMenuItemsWithAuth();
-        bonusTabCustomReplace();
-        loadVipFeatures();
-
-        setTimeout(loadh2Title, 1000);
-        addMenuElement();
-        addMenuElementTwo();
-
-        setTimeout(updateCopyrightYear, 1000);
-
-        CreateCedaOriginal();
-        CreateCedaOriginalTwo();
-        insertCedaTVButton();
-        createCedaSocialLinks();
-        createLeagueSection();
-        addEliteCardToSidebar();
-        createWhatsAppBadge();
-
-        handlePageScripts(location.pathname);
-    }
-
-    /* ============================================================
-       2. DOM READY WAITER (GARANTİ ÇALIŞMA)
-    ============================================================ */
-
-    function waitForElement(selector, callback) {
-        const el = document.querySelector(selector);
-        if (el) return callback();
-
-        const observer = new MutationObserver(() => {
-            const el = document.querySelector(selector);
-            if (el) {
-                observer.disconnect();
-                callback();
-            }
-        });
-
-        observer.observe(document.documentElement, { childList: true, subtree: true });
-    }
-
-    /* ============================================================
-       3. PAGE SCRIPT ROUTER
-    ============================================================ */
-
-    function handlePageScripts(path) {
-
-        setTimeout(() => {
-            addMenuItemsWithAuth();
+    let isFirstLoad = true;
+    if (isFirstLoad) {
+        setTimeout(function () {
+		  //  toggleNightModal('https://cedabet.github.io/assets/images/50kayıp.jpg');     
+		  toggleNightModal('https://cedabet.github.io/assets/images/50kayıp.jpg');     
+			addMenuItemsWithAuth();
+          bonusTabCustomReplace();
+            loadVipFeatures();
+            setTimeout(loadh2Title, 1000);
+            addMenuElement();
+            addMenuElementTwo();
+            setTimeout(updateCopyrightYear, 1000);
+            //  setTimeout(createSigninModal, 2000);
+            CreateCedaOriginal();
+            CreateCedaOriginalTwo();
             insertCedaTVButton();
-            bonusTabCustomReplace();
-
-            console.warn("Sayfa değişti → ", path);
-
-            if (path === "/tr/" || path === "/tr") {
-
-                clearDynamicContent();
-                loadVipFeatures();
-
-                setTimeout(loadh2Title, 1000);
-                addMenuElement();
-                addMenuElementTwo();
-
-                setTimeout(updateCopyrightYear, 1000);
-
-                CreateCedaOriginal();
-                CreateCedaOriginalTwo();
-                createLeagueSection();
-                createCedaSocialLinks();
-                addEliteCardToSidebar();
-                createWhatsAppBadge();
-
-                toggleNightModal('https://cedabet.github.io/assets/images/50kayıp.jpg');
-            }
-
-            else if (path === "/tr/vip") {
-                clearDynamicContent();
+            createLeagueSection();
+            //    checkModal();
+            //     createSocialSection();
+            //  addScrollingText("BİR SONRAKİ GÜNCEL ADRESİMİZ CEDABET25.COM'DUR. LÜTFEN SAHTE SİTELERE İTİBAR ETMEYİNİZ.");
+            addEliteCardToSidebar();
+            createCedaSocialLinks();
+			  //    createSocialSection();
+            createWhatsAppBadge();
+            var sportspath = window.location.pathname;
+            if (sportspath === "/tr/sportsbook") {
+              clearDynamicContent();
+            } else if (sportspath === "/tr/trade") {
+              clearDynamicContent();
+            } else if (sportspath === "/tr/e-sport") {
+              clearDynamicContent();
+            } else if (sportspath === "/tr/vip") {
                 createVipExperience();
-            }
-
-            else if (path === "/tr/casino") {
+				clearDynamicContent();
+            } else if (sportspath === "/tr/latest-big-wins") {
                 clearDynamicContent();
-                CreateCedaOriginal();
-                CreateCedaOriginalTwo();
-            }
-
-            else if (
-                path === "/tr/sportsbook" ||
-                path === "/tr/trade" ||
-                path === "/tr/e-sport" ||
-                path === "/tr/challenges"
-            ) {
-                clearDynamicContent();
-            }
-
-            else if (path === "/tr/latest-big-wins") {
                 LandingPage();
-            }
-
-            else if (path === "/tr/promotions") {
+            } else if (sportspath === "/tr/challenges") {
                 clearDynamicContent();
-                removeGlobalModal();
+            }
+              else if (sportspath === "/tr/promotions") {
+                clearDynamicContent();
+               removeGlobalModal();
                 fixTabsNav();
             }
-
-            else {
-                clearDynamicContent();
-                removeGlobalModal();
+			else if (sportspath !== "/tr/" && sportspath !== "/tr") {
+               clearDynamicContent();
+               removeGlobalModal();
             }
-
+            isFirstLoad = false;
         }, 400);
     }
-
-    /* ============================================================
-       4. URL CHANGE DETECTOR
-    ============================================================ */
 
     function checkUrlChange() {
         if (location.href !== lastUrl) {
@@ -145,38 +66,82 @@ document.head.appendChild(linkt);
         }
     }
 
-    /* ============================================================
-       5. SPA WATCHERS (History + MutationObserver)
-    ============================================================ */
+    function handlePageScripts(path) {
+        setTimeout(function () {
+            addMenuItemsWithAuth();
+            insertCedaTVButton();
+            bonusTabCustomReplace();
+            //	  checkModal();
+            if (path === "/tr/" || path === "/tr") {
+                clearDynamicContent();
+                loadVipFeatures();
+                setTimeout(loadh2Title, 1000);
+                addMenuElement();
+                addMenuElementTwo();
+                setTimeout(updateCopyrightYear, 1000);
+                CreateCedaOriginal();
+                CreateCedaOriginalTwo();
+                createLeagueSection();
+                createCedaSocialLinks();
+              //  createSocialSection();
+                addEliteCardToSidebar();
+			    createWhatsAppBadge();
+			    toggleNightModal('https://cedabet.github.io/assets/images/50kayıp.jpg');     
+            } else if (path === "/tr/vip") {
+                clearDynamicContent();
+                createVipExperience();
+            } else if (path === "/tr/casino") {
+                clearDynamicContent();
+                CreateCedaOriginal();
+                CreateCedaOriginalTwo();
+            } else if (path === "/tr/sportsbook") {
+                clearDynamicContent();
+            } else if (path === "/tr/trade") {
+                clearDynamicContent();
+            } else if (path === "/tr/e-sport") {
+                clearDynamicContent();
+            } else if (path === "/tr/challenges") {
+                clearDynamicContent();
+            } else if (path === "/tr/latest-big-wins") {
+                LandingPage();
+            } 
+			else if (path === "/tr/promotions") {
+                clearDynamicContent();
+               removeGlobalModal();
+                fixTabsNav();
+            }
+			else {
+                clearDynamicContent();
+               removeGlobalModal();
+            }
+        }, 400);
+    }
+
+    new MutationObserver(checkUrlChange).observe(document, {
+        subtree: true,
+        childList: true,
+    });
+    window.addEventListener("load", function () {
+        checkUrlChange(); // Sayfa yüklendikten hemen sonra kontrol et
+    });
 
     const pushState = history.pushState;
     const replaceState = history.replaceState;
 
-    history.pushState = function () { pushState.apply(history, arguments); checkUrlChange(); };
-    history.replaceState = function () { replaceState.apply(history, arguments); checkUrlChange(); };
+    history.pushState = function () {
+        pushState.apply(history, arguments);
+        checkUrlChange();
+    };
+
+    history.replaceState = function () {
+        replaceState.apply(history, arguments);
+        checkUrlChange();
+    };
+
     window.addEventListener("popstate", checkUrlChange);
 
-    const appRoot =
-        document.querySelector("#app") ||
-        document.querySelector("main") ||
-        document.querySelector(".app") ||
-        document.body;
-
-    new MutationObserver(checkUrlChange).observe(appRoot, {
-        childList: true,
-        subtree: true
-    });
-
-    /* ============================================================
-       6. FIRST LOAD TRIGGER (GARANTİ)
-    ============================================================ */
-
-    waitForElement("main, #app, .app, body", runInitialLoad);
-
+    window.addEventListener("load", checkUrlChange);
 })();
-
-
-
 
 function checkModal() {
     const modal = document.getElementById("global-modal");
@@ -260,7 +225,7 @@ function insertCedaTVButton() {
 
     const headerActions = document.querySelector(".header__actions");
     if (!headerActions) return;
-    
+
   // Whatsapp butonu ekle
 
 // WhatsApp butonu
@@ -1061,7 +1026,7 @@ if (targetInsertPoint) {
     popularGamesWrapper.insertAdjacentElement("afterend", miniGamesWrapper);
 }
 
-  
+
     // Dinamik olarak resimleri değiştirme
     window.addEventListener("resize", () => {
         const isMobile = window.innerWidth <= 768;
@@ -3580,7 +3545,7 @@ function createCedaSocialLinks() {
             svg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="22" height="22 " style="fill: #1fa6ed;"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>`,
         },
         {
-            href: "https://www.instagram.com/cedabetofficial",
+            href: "https://www.instagram.com/cedabet",
             svg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="26" height="26" style="fill: #1fa6ed;"><path d="M12 2c2.717 0 3.056.01 4.122.06 1.065.05 1.79.217 2.428.465.66.254 1.216.598 1.772 1.153a4.908 4.908 0 0 1 1.153 1.772c.247.637.415 1.363.465 2.428.047 1.066.06 1.405.06 4.122 0 2.717-.01 3.056-.06 4.122-.05 1.065-.218 1.79-.465 2.428a4.883 4.883 0 0 1-1.153 1.772 4.915 4.915 0 0 1-1.772 1.153c-.637.247-1.363.415-2.428.465-1.066.047-1.405.06-4.122.06-2.717 0-3.056-.01-4.122-.06-1.065-.05-1.79-.218-2.428-.465a4.89 4.89 0 0 1-1.772-1.153 4.904 4.904 0 0 1-1.153-1.772c-.248-.637-.415-1.363-.465-2.428C2.013 15.056 2 14.717 2 12c0-2.717.01-3.056.06-4.122.05-1.066.217-1.79.465-2.428a4.88 4.88 0 0 1 1.153-1.772A4.897 4.897 0 0 1 5.45 2.525c.638-.248 1.362-.415 2.428-.465C8.944 2.013 9.283 2 12 2zm0 1.802c-2.67 0-2.986.01-4.04.059-.976.045-1.505.207-1.858.344-.466.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.048 1.055-.058 1.37-.058 4.04 0 2.67.01 2.986.058 4.04.045.976.207 1.505.344 1.858.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.04.058 2.67 0 2.987-.01 4.04-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.04 0-2.67-.01-2.986-.058-4.04-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 0 0-.748-1.15 3.098 3.098 0 0 0-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.054-.048-1.37-.058-4.04-.058zm0 3.063a5.135 5.135 0 1 1 0 10.27 5.135 5.135 0 0 1 0-10.27zm0 8.468a3.333 3.333 0 1 0 0-6.666 3.333 3.333 0 0 0 0 6.666zm6.538-8.469a1.2 1.2 0 1 1-2.4 0 1.2 1.2 0 0 1 2.4 0z"/></svg>`,
             class: "instagram",
         },
@@ -3792,81 +3757,109 @@ function removeGlobalModal() {
 
 
 function toggleNightModal(staticImgUrl) {
-    const now = new Date();
-    const hour = now.getHours();
-    const dynamicModal = document.getElementById('global-modal');
+  const now = new Date();
+  const hour = now.getHours();
 
-    if (!dynamicModal) {
-        console.warn('Dinamik modal (#global-modal) bulunamadı!');
-        return;
+  const dynamicModal = document.getElementById('global-modal');
+  if (!dynamicModal) return;
+
+  if (!dynamicModal) {
+    console.warn('Dinamik modal (#global-modal) bulunamadı!');
+    return;
+  }
+  const bsModal = bootstrap.Modal.getOrCreateInstance(dynamicModal);
+
+  // Gece modalı görünecek saat aralığı
+  if (hour >= 0 && hour < 6) {
+    // Dinamik modalı gizle
+    dynamicModal.style.display = 'none';
+
+    // Varsa eski custom modalı kaldır
+    const oldModal = document.getElementById('global-modal-2');
+    if (oldModal) oldModal.remove();
+    // Bootstrap modalı KAPAT
+    bsModal.hide();
+
+    // Yeni custom modal oluştur
+    // Varsa eski gece modalı sil
+    const old = document.getElementById('global-modal-2');
+    if (old) old.remove();
+
+    // Gece modalını ekle
+    const customModal = document.createElement('div');
+    customModal.id = 'global-modal-2';
+    customModal.className = 'modal modal--img fade show';
+    customModal.className = 'modal fade show';
+    customModal.tabIndex = -1;
+    customModal.setAttribute('aria-labelledby', 'global-modal-2');
+    customModal.setAttribute('aria-hidden', 'true');
+    customModal.style.backgroundColor = 'rgba(0, 0, 0, 0.9)';
+    customModal.style.display = 'block';
+    customModal.style.backgroundColor = 'rgba(0, 0, 0, 0.9)';
+    customModal.setAttribute('aria-hidden', 'true');
+
+    customModal.innerHTML = `
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal__head">
+            <span></span>
+            <button class="modal__close" type="button">
+              <svg class="svg-icon">
+                <use href="/static/media/sprite.416275c004a2977bb04b6579ccb104a4.svg#x"></use>
+              </svg>
+            </button>
+          </div>
+           <img id="static-promo-img" class="modal__img" src="${staticImgUrl}" alt="" style="cursor:pointer;">
+          <img id="static-promo-img" class="modal__img" src="${staticImgUrl}" style="cursor:pointer;">
+        </div>
+      </div>
+    `;
+
+    document.body.appendChild(customModal);
+ // ✅ Resme tıklayınca yönlendir
+    const promoImg = customModal.querySelector('#static-promo-img');
+    if (promoImg) {
+      promoImg.addEventListener('click', function (e) {
+        e.stopPropagation(); // Modal kapama event'ine gitmesin
+        window.location.href = '/tr/promotion/geceye-ozel-cevrimsiz-50-kayip-bonusu';
+      });
     }
+    // Kapatma ve dış tıklama kontrolü
+    function closeHandler(e) {
+      const isCloseBtn = e.target.closest('.modal__close');
+      const isOutsideModal = !e.target.closest('.modal-content');
 
-    // 00:00 – 06:00 arası
-    if (hour >= 0 && hour < 6) {
-        // Dinamik modalı gizle
-        dynamicModal.style.display = 'none';
+      if (isCloseBtn || isOutsideModal) {
 
-        // Varsa eski custom modalı kaldır
-        const oldModal = document.getElementById('global-modal-2');
-        if (oldModal) oldModal.remove();
+    // Resme tıklayınca yönlendirme
+    customModal.querySelector('#static-promo-img').onclick = () => {
+      window.location.href = '/tr/promotion/geceye-ozel-cevrimsiz-50-kayip-bonusu';
+    };
 
-        // Yeni custom modal oluştur
-        const customModal = document.createElement('div');
-        customModal.id = 'global-modal-2';
-        customModal.className = 'modal modal--img fade show';
-        customModal.tabIndex = -1;
-        customModal.setAttribute('aria-labelledby', 'global-modal-2');
-        customModal.setAttribute('aria-hidden', 'true');
-        customModal.style.backgroundColor = 'rgba(0, 0, 0, 0.9)';
-        customModal.style.display = 'block';
-
-        customModal.innerHTML = `
-            <div class="modal-dialog modal-dialog-centered">
-                <div class="modal-content">
-                    <div class="modal__head">
-                        <span></span>
-                        <button class="modal__close" type="button">
-                            <svg class="svg-icon">
-                                <use href="/static/media/sprite.416275c004a2977bb04b6579ccb104a4.svg#x"></use>
-                            </svg>
-                        </button>
-                    </div>
-                    <img id="static-promo-img" class="modal__img" src="${staticImgUrl}" alt="" style="cursor:pointer;">
-                </div>
-            </div>
-        `;
-
-        document.body.appendChild(customModal);
-
-        // Resme tıklayınca yönlendir
-        const promoImg = customModal.querySelector('#static-promo-img');
-        if (promoImg) {
-            promoImg.addEventListener('click', function (e) {
-                e.stopPropagation(); // Modal kapama event'ine gitmesin
-                window.location.href = '/tr/promotion/geceye-ozel-cevrimsiz-50-kayip-bonusu';
-            });
-        }
-
-        // Kapatma ve dış tıklama kontrolü
-        function closeHandler(e) {
-            const isCloseBtn = e.target.closest('.modal__close');
-            const isOutsideModal = !e.target.closest('.modal-content');
-
-            if (isCloseBtn || isOutsideModal) {
-                customModal.remove();
-                dynamicModal.style.display = 'block';
-                document.removeEventListener('click', closeHandler, true);
-            }
-        }
-
-        document.addEventListener('click', closeHandler, true);
-
-    } else {
-        // Saat aralığı dışında
-        const oldModal = document.getElementById('global-modal-2');
-        if (oldModal) oldModal.remove();
-       // dynamicModal.style.display = 'block';
+    // Modal kapatma
+    customModal.addEventListener('click', (e) => {
+      if (e.target.closest('.modal__close') || !e.target.closest('.modal-content')) {
+        customModal.remove();
+        dynamicModal.style.display = 'block';
+        document.removeEventListener('click', closeHandler, true);
+        bsModal.show(); // Dinamik modalı düzgün şekilde tekrar aç
+      }
     }
+    });
+
+    document.addEventListener('click', closeHandler, true);
+  } else {
+    // Saat aralığı dışında
+    const oldModal = document.getElementById('-2');
+    if (oldModal) oldModal.remove();
+    dynamicModal.style.display = 'block';
+    // Gün saatlerinde gece modalını kaldır
+    const old = document.getElementById('global-modal-2');
+    if (old) old.remove();
+
+    // Bootstrap modalını doğru şekilde aç
+    bsModal.show();
+  }
 }
 
 
@@ -3895,7 +3888,7 @@ function fixTabsNav() {
     // Gerekirse burada tıklama olayı tetiklenebilir
     remainingButtons[0].click(); 
 
-  
+
   }
 }
 
