@@ -71,6 +71,7 @@ document.head.appendChild(linkt);
             addMenuItemsWithAuth();
             insertCedaTVButton();
             bonusTabCustomReplace();
+			     console.warn("url degisti");
             //	  checkModal();
             if (path === "/tr/" || path === "/tr") {
                 clearDynamicContent();
