@@ -13,7 +13,7 @@ document.head.appendChild(linkt);
         setTimeout(function () {
 
             toggleNightModal('https://cedabet.github.io/assets/images/50kayıp.jpg');
-            console.warn("ilk yukleme");
+            console.log("ilk yukleme");
 
             addMenuItemsWithAuth();
             bonusTabCustomReplace();
@@ -83,7 +83,7 @@ document.head.appendChild(linkt);
             addMenuItemsWithAuth();
             insertCedaTVButton();
             bonusTabCustomReplace();
-            console.warn("url degisti");
+            console.log("url degisti");
 
             if (path === "/tr/" || path === "/tr") {
 
