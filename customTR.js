@@ -3814,7 +3814,7 @@ function toggleNightModal(staticImgUrl) {
 
       if (clickedClose || clickedOutside) {
         customModal.remove();                 // gece modalını kaldır
-        dynamicModal.style.display = 'block'; // normal modalı görünür yap
+     //   dynamicModal.style.display = 'block'; // normal modalı görünür yap
         document.removeEventListener('click', closeHandler, true);
         bsModal.show();                       // bootstrap modal tekrar aç
       }
