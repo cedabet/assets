@@ -3781,7 +3781,6 @@ function toggleNightModal(staticImgUrl) {
     customModal.id = 'global-modal-2';
     customModal.className = 'modal fade show';
     customModal.tabIndex = -1;
-
     customModal.style.backgroundColor = 'rgba(0,0,0,0.9)';
     customModal.style.display = 'block';
 
@@ -3832,7 +3831,7 @@ function toggleNightModal(staticImgUrl) {
     const oldNight = document.getElementById('global-modal-2');
     if (oldNight) oldNight.remove();
 
-    dynamicModal.style.display = 'block';
+   // dynamicModal.style.display = 'block';
     bsModal.show();
   }
 }
