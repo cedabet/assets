@@ -3835,7 +3835,7 @@ function toggleNightModal(staticImgUrl) {
     const oldModal = document.getElementById('global-modal-2');
     if (oldModal) oldModal.remove();
 
-    dynamicModal.style.display = 'block';
+   // dynamicModal.style.display = 'block';
     bsModal.show();
   }
 }
