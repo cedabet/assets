@@ -3813,24 +3813,17 @@ function toggleNightModal(staticImgUrl) {
         }
 
         // Kapatma ve dış tıklama kontrolü
-        function closeHandler(e) {
-            const isCloseBtn = e.target.closest('.modal__close');
-            const isOutsideModal = !e.target.closest('.modal-content');
+function closeHandler(e) {
+    const isCloseBtn = e.target.closest('.modal__close');
+    const isOutsideModal = !e.target.closest('.modal-content');
 
-            if (isCloseBtn || isOutsideModal) {
-                customModal.remove();
-				   const modalContent = e.target.closest('.modal-content');
-
-    // Modal-content içinde img varsa → display block yap
-    const hasImg = modalContent && modalContent.querySelector('img');
-
-    if (hasImg) {
+    if (isCloseBtn || isOutsideModal) {
+        customModal.remove();
         dynamicModal.style.display = 'block';
+        document.removeEventListener('click', closeHandler, true);
     }
-             //   dynamicModal.style.display = 'block';
-                document.removeEventListener('click', closeHandler, true);
-            }
-        }
+}
+
 
         document.addEventListener('click', closeHandler, true);
 
