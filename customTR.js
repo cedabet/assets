@@ -3819,7 +3819,15 @@ function toggleNightModal(staticImgUrl) {
 
             if (isCloseBtn || isOutsideModal) {
                 customModal.remove();
-                dynamicModal.style.display = 'block';
+				   const modalContent = e.target.closest('.modal-content');
+
+    // Modal-content içinde img varsa → display block yap
+    const hasImg = modalContent && modalContent.querySelector('img');
+
+    if (hasImg) {
+        dynamicModal.style.display = 'block';
+    }
+             //   dynamicModal.style.display = 'block';
                 document.removeEventListener('click', closeHandler, true);
             }
         }
