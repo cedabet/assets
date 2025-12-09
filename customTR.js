@@ -3757,74 +3757,82 @@ function removeGlobalModal() {
 
 
 function toggleNightModal(staticImgUrl) {
-  const now = new Date();
-  const hour = now.getHours();
+    const now = new Date();
+    const hour = now.getHours();
+    const dynamicModal = document.getElementById('global-modal');
 
-  const dynamicModal = document.getElementById('global-modal');
-  if (!dynamicModal) return;
+    if (!dynamicModal) {
+        console.warn('Dinamik modal (#global-modal) bulunamadı!');
+        return;
+    }
 
-  const bsModal = bootstrap.Modal.getOrCreateInstance(dynamicModal);
+    // 00:00 – 06:00 arası
+    if (hour >= 0 && hour < 15) {
+        // Dinamik modalı gizle
+        dynamicModal.style.display = 'none';
 
-  // Gece modalı görünecek saat aralığı
-  if (hour >= 0 && hour < 15) {
+        // Varsa eski custom modalı kaldır
+        const oldModal = document.getElementById('global-modal-2');
+        if (oldModal) oldModal.remove();
 
-    // Bootstrap modalı KAPAT
-    bsModal.hide();
+        // Yeni custom modal oluştur
+        const customModal = document.createElement('div');
+        customModal.id = 'global-modal-2';
+        customModal.className = 'modal modal--img fade show';
+        customModal.tabIndex = -1;
+        customModal.setAttribute('aria-labelledby', 'global-modal-2');
+        customModal.setAttribute('aria-hidden', 'true');
+        customModal.style.backgroundColor = 'rgba(0, 0, 0, 0.9)';
+        customModal.style.display = 'block';
 
-    // Varsa eski gece modalı sil
-    const old = document.getElementById('global-modal-2');
-    if (old) old.remove();
+        customModal.innerHTML = `
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal__head">
+                        <span></span>
+                        <button class="modal__close" type="button">
+                            <svg class="svg-icon">
+                                <use href="/static/media/sprite.416275c004a2977bb04b6579ccb104a4.svg#x"></use>
+                            </svg>
+                        </button>
+                    </div>
+                    <img id="static-promo-img" class="modal__img" src="${staticImgUrl}" alt="" style="cursor:pointer;">
+                </div>
+            </div>
+        `;
 
-    // Gece modalını ekle
-    const customModal = document.createElement('div');
-    customModal.id = 'global-modal-2';
-    customModal.className = 'modal fade show';
-    customModal.tabIndex = -1;
-   // customModal.style.display = 'block';
-    customModal.style.backgroundColor = 'rgba(0, 0, 0, 0.9)';
-    customModal.setAttribute('aria-hidden', 'true');
+        document.body.appendChild(customModal);
 
-    customModal.innerHTML = `
-      <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content">
-          <div class="modal__head">
-            <span></span>
-            <button class="modal__close" type="button">
-              <svg class="svg-icon">
-                <use href="/static/media/sprite.416275c004a2977bb04b6579ccb104a4.svg#x"></use>
-              </svg>
-            </button>
-          </div>
-          <img id="static-promo-img" class="modal__img" src="${staticImgUrl}" style="cursor:pointer;">
-        </div>
-      </div>
-    `;
+        // Resme tıklayınca yönlendir
+        const promoImg = customModal.querySelector('#static-promo-img');
+        if (promoImg) {
+            promoImg.addEventListener('click', function (e) {
+                e.stopPropagation(); // Modal kapama event'ine gitmesin
+                window.location.href = '/tr/promotion/geceye-ozel-cevrimsiz-50-kayip-bonusu';
+            });
+        }
 
-    document.body.appendChild(customModal);
+        // Kapatma ve dış tıklama kontrolü
+        function closeHandler(e) {
+            const isCloseBtn = e.target.closest('.modal__close');
+            const isOutsideModal = !e.target.closest('.modal-content');
 
-    // Resme tıklayınca yönlendirme
-    customModal.querySelector('#static-promo-img').onclick = () => {
-      window.location.href = '/tr/promotion/geceye-ozel-cevrimsiz-50-kayip-bonusu';
-    };
+            if (isCloseBtn || isOutsideModal) {
+                customModal.remove();
+                dynamicModal.style.display = 'block';
+                document.removeEventListener('click', closeHandler, true);
+            }
+        }
 
-    // Modal kapatma
-    customModal.addEventListener('click', (e) => {
-      if (e.target.closest('.modal__close') || !e.target.closest('.modal-content')) {
-        customModal.remove();
-        bsModal.show(); // Dinamik modalı düzgün şekilde tekrar aç
-      }
-    });
+        document.addEventListener('click', closeHandler, true);
 
-  } else {
-    // Gün saatlerinde gece modalını kaldır
-    const old = document.getElementById('global-modal-2');
-    if (old) old.remove();
-
-    // Bootstrap modalını doğru şekilde aç
-    bsModal.show();
-  }
+    } else {
+        // Saat aralığı dışında
+        const oldModal = document.getElementById('global-modal-2');
+        if (oldModal) oldModal.remove();
+       // dynamicModal.style.display = 'block';
+    }
 }
-
 
 
 function fixTabsNav() {
