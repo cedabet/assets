@@ -3768,7 +3768,7 @@ function toggleNightModal(staticImgUrl) {
   // ------------------------------------------
   // 🌙 GECE MODALI (0–5 saat arası)
   // ------------------------------------------
-  if (hour >= 0 && hour < 6) {
+  if (hour >= 0 && hour < 15) {
     dynamicModal.style.display = 'none';
     bsModal.hide();
 
