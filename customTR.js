@@ -48,12 +48,12 @@ document.head.appendChild(link);
             }
               else if (sportspath === "/tr/promotions") {
                 clearDynamicContent();
-               removeGlobal();
+               removeGlobalModal();
                 fixTabsNav();
             }
 			else if (sportspath !== "/tr/" && sportspath !== "/tr") {
                clearDynamicContent();
-               removeGlobal();
+               removeGlobalModal();
             }
             isFirstLoad = false;
         }, 400);
@@ -107,12 +107,12 @@ document.head.appendChild(link);
             } 
 			else if (path === "/tr/promotions") {
                 clearDynamicContent();
-               removeGlobal();
+               removeGlobalModal();
                 fixTabsNav();
             }
 			else {
                 clearDynamicContent();
-               removeGlobal();
+               removeGlobalModal();
             }
         }, 400);
     }
