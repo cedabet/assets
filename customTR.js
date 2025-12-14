@@ -4120,7 +4120,10 @@ function bonusTabCustomReplace() {
             wrapper.appendChild(messageDiv); // Mesajı slider içine ekle
 
             // ceda-originals div'inin üstüne ekle
-            targetDiv.parentNode.insertBefore(wrapper, targetDiv);
+     if (targetDiv && targetDiv.parentNode) {
+    targetDiv.parentNode.insertBefore(wrapper, targetDiv);
+}
+
         }
 
         /* ================= RESET DATA ================= */
