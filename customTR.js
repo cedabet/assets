@@ -10,7 +10,7 @@ document.head.appendChild(link);
     if (isFirstLoad) {
         setTimeout(function () {
 		  //  toggleNightModal('https://cedabet.github.io/assets/images/50kayıp.jpg');     
-		  toggleNightModal('https://cedabet.github.io/assets/images/50kayıp.jpg');     
+		  toggleNightModal('https://cedabet.github.io/assets/images/50kayıp-re.jpg');     
 			addMenuItemsWithAuth();
           bonusTabCustomReplace();
             loadVipFeatures();
@@ -88,7 +88,7 @@ document.head.appendChild(link);
               //  createSocialSection();
                 addEliteCardToSidebar();
 			    createWhatsAppBadge();
-			    toggleNight('https://cedabet.github.io/assets/images/50kayıp.jpg');     
+			    toggleNight('https://cedabet.github.io/assets/images/50kayıp-re.jpg');     
 				createLedSlider();
             } else if (path === "/tr/vip") {
                 clearDynamicContent();
@@ -493,13 +493,14 @@ function clearAstronauts() {
 }
 
 function clearDynamicContent() {
-    const idsToRemove = ["mini-games-wrapper-2", "custom-section-7", "league-wrapper", "custom-section-landing", "telegram-section" , "whatsapp-badge"];
+    const idsToRemove = ["mini-games-wrapper-2", "custom-section-7", "league-wrapper", "custom-section-landing", "telegram-section" , "whatsapp-badge","led-wrapper"];
 
     const styleIdsToRemove = [
         "big-wins-style",
         "telegram-style",
         "mini-games-style",
-		"_wa-badge-style"
+		"_wa-badge-style",
+		"led-style"
         // buraya kaldırmak istediğin style id'lerini ekle
     ];
 
@@ -4110,6 +4111,7 @@ function bonusTabCustomReplace() {
         function createSlider() {
             const wrapper = document.createElement('div');
             wrapper.className = 'led-wrapper';
+			wrapper.id = 'led-wrapper';
             track = document.createElement('div');
             track.className = 'led-track';
             wrapper.appendChild(track);
