@@ -3965,7 +3965,8 @@ function bonusTabCustomReplace() {
             .led-wrapper {
                 width: 100%;
                 overflow: hidden;
-                border: 2px solid #209de1b3;
+                border-top: 2px solid #209de1b3;
+				border-bottom: 2px solid #209de1b3;
                 box-shadow: 0 0 25px #209de1b3;
                 padding: 20px 0;
                 margin-top: 20px;
