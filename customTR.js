@@ -4000,7 +4000,7 @@ function bonusTabCustomReplace() {
             }
 
             /* Animasyon - Scroll */
-            @@keyframes scrollLed {
+            @keyframes scrollLed {
                 0% {
                     transform: translateX(100%);
                 }
@@ -4011,7 +4011,7 @@ function bonusTabCustomReplace() {
             }
 
             /* Yanıp sönme animasyonu */
-            @@keyframes blink {
+            @keyframes blink {
                 0% {
                     opacity: 1;
                 }
