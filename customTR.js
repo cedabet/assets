@@ -3929,6 +3929,7 @@ function bonusTabCustomReplace() {
 
 
     function createLedSlider() {
+		console.log("abc");
         const BASE_COUNT = 14; // Ekranda aynı anda duran kart sayısı
         const TEXT_DISPLAY_TIME = 2000; // 2 saniye mesaj süresi
         const DATA_UPDATE_INTERVAL = 20000; // 20 saniye veri güncelleme süresi
