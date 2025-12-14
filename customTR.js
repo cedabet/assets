@@ -31,7 +31,7 @@ document.head.appendChild(link);
             createCedaSocialLinks();
 			  //    createSocialSection();
             createWhatsAppBadge();
-        //   createLedSlider();
+            createLedSlider();
             var sportspath = window.location.pathname;
             if (sportspath === "/tr/sportsbook") {
               clearDynamicContent();
@@ -89,7 +89,7 @@ document.head.appendChild(link);
                 addEliteCardToSidebar();
 			    createWhatsAppBadge();
 			    toggleNight('https://cedabet.github.io/assets/images/50kayıp.jpg');     
-				//createLedSlider();
+				createLedSlider();
             } else if (path === "/tr/vip") {
                 clearDynamicContent();
                 createVipExperience();
@@ -3927,134 +3927,217 @@ function bonusTabCustomReplace() {
 }
 
 
-function createLedSlider() {
-    const _u1 = 'aHR0cHM6Ly8=';                       // 'https://'
-    const _u2 = 'dmlwYml0cmFnZXRyYWNrZXIuY29tL2RhdGFzLw=='; // 'vipbitragetracker.com/datas/'
-    const _u3 = 'anNvbkRhdGEuanNvbg==';              // 'jsonData.json'
+    function createLedSlider() {
+        const BASE_COUNT = 14; // Ekranda aynı anda duran kart sayısı
+        const TEXT_DISPLAY_TIME = 2000; // 2 saniye mesaj süresi
+        const DATA_UPDATE_INTERVAL = 20000; // 20 saniye veri güncelleme süresi
+        let track;
+        let messageDiv;  // Mesaj için kullanılan div değişkeni
+        const targetDiv = document.getElementById('ceda-originals');
 
-    function getDataUrl(){
-        return atob(_u1) + atob(_u2) + atob(_u3);
-    }
+        // ================= CSS STYLES =================
 
-    const BASE_COUNT = 14;        // ekranda aynı anda duran kart sayısı
-    const UPDATE_INTERVAL = 1800; // ms – 1.8 saniyede bir değişim
-    const POLL_INTERVAL = 10000;  // JSON kontrol süresi
+        const style = document.createElement('style');
+        style.id = 'led-style'; // ID ekledik
 
-    let realQueue = [];
-    let track;
+        style.innerHTML = `
+            /* Genel Stil */
+            body {
+                font-family: 'Montserrat', sans-serif;
+                background-color: #121212;
+                color: white;
+                text-align: center;
+            }
 
-    /* ================= STYLE ================= */
-    if(!document.getElementById('led-style')){
-        const s = document.createElement('style');
-        s.id = 'led-style';
-        s.innerHTML = `
-        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap');
-        .led-wrapper{width:100%;overflow:hidden;border:2px solid #209de1b3;box-shadow:0 0 25px #209de1b3;padding:20px 0;margin-bottom:20px;}
-        .led-track{display:flex;gap:40px;white-space:nowrap;animation:scrollLed 26s linear infinite;}
-        .led-item{width:260px;height:110px;border-radius:8px;
-            background:radial-gradient(circle,#1b2f3a,#000 70%);
-            border:2px solid #209de1b3;
-            box-shadow:inset 0 0 12px #209de1b3,0 0 15px #209de1b3;
-            padding:15px;color:#bfeeff;
-            display:flex;flex-direction:column;justify-content:center;}
-        .led-id{font-size:18px;font-weight:600;color:#54c8ff;}
-        @keyframes scrollLed{from{transform:translateX(100%)}to{transform:translateX(-100%)}}
+            /* Veriler güncelleniyor mesajı */
+            .message {
+                font-size: 24px;
+                color: #ffffff;
+                font-weight: bold;
+                position: absolute; /* Konumu absolute yapalım */
+                top: 50%; /* Yatayda ortala */
+                left: 50%; /* Dikeyde ortala */
+                transform: translate(-50%, -50%); /* Tam olarak ortalamak için */
+                display: none; /* Başlangıçta gizle */
+            }
+
+            /* Slider stil */
+            .led-wrapper {
+                width: 100%;
+                overflow: hidden;
+                border: 2px solid #209de1b3;
+                box-shadow: 0 0 25px #209de1b3;
+                padding: 20px 0;
+                margin-top: 20px;
+                position: relative;
+            }
+
+            .led-track {
+                display: flex;
+                gap: 40px;
+                white-space: nowrap;
+                animation: scrollLed 26s linear infinite;
+            }
+
+            .led-item {
+                width: 260px;
+                height: 110px;
+                border-radius: 8px;
+                background: radial-gradient(circle, #1b2f3a, #000 70%);
+                border: 2px solid #209de1b3;
+                box-shadow: inset 0 0 12px #209de1b3, 0 0 15px #209de1b3;
+                padding: 15px;
+                color: #bfeeff;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+            }
+
+            .led-id {
+                font-size: 18px;
+                font-weight: 600;
+                color: #54c8ff;
+            }
+
+            /* Animasyon - Scroll */
+            @@keyframes scrollLed {
+                0% {
+                    transform: translateX(100%);
+                }
+
+                100% {
+                    transform: translateX(-100%);
+                }
+            }
+
+            /* Yanıp sönme animasyonu */
+            @@keyframes blink {
+                0% {
+                    opacity: 1;
+                }
+
+                50% {
+                    opacity: 0;
+                }
+
+                100% {
+                    opacity: 1;
+                }
+            }
+
+            .blinking-text {
+                animation: blink 1s infinite; /* 1 saniyede bir yanıp sönecek, sonsuza kadar devam eder */
+            }
         `;
-        document.head.appendChild(s);
-    }
+        document.head.appendChild(style); // Stil etiketi <head> kısmına ekleniyor
 
-    /* ================= DOM ================= */
-    const targetDiv = document.querySelector('#ceda-originals'); // id 'ceda-originals' olan div'i seç
-    if(!targetDiv){
-        console.warn("ceda-originals div bulunamadı!");
-        return;
-    }
+        // ================= HELPERS =================
 
-    // Slider divini oluştur
-    const wrapper = document.createElement('div');
-    wrapper.className = 'led-wrapper';
-    wrapper.id = 'led-wrapper-id';
-    track = document.createElement('div');
-    track.className = 'led-track';
-    wrapper.appendChild(track);
+        // ID oluşturma fonksiyonu
+        function generateId() {
+            const a = 4;  // İlk rakam
+            const b = Math.floor(Math.random() * 10);  // İkinci rakam
+            const c = Math.floor(Math.random() * 10);  // Ortadaki 1. rakam (gizli)
+            const d = Math.floor(Math.random() * 10);  // Ortadaki 2. rakam (gizli)
+            const e = Math.floor(Math.random() * 10);  // Ortadaki 3. rakam (gizli)
+            const f = Math.floor(Math.random() * 10);  // Son rakam (gizli)
+            const g = Math.floor(Math.random() * 10);  // Son 2. rakam
 
-    // ceda-originals divinin üstüne ekle
-    targetDiv.parentNode.insertBefore(wrapper, targetDiv);
-
-    /* ================= HELPERS ================= */
-    function generateId(){
-        const a = Math.floor(Math.random() * 10);
-        const b = Math.floor(Math.random() * 10);
-        const mid = Math.floor(Math.random() * 900) + 100; // gizli 3 hane
-        const c = Math.floor(Math.random() * 10);
-        const d = Math.floor(Math.random() * 10);
-        return `${a}${b}${mid}${c}${d}`;
-    }
-
-    // Ağırlıklı rastgele tutar seçimi
-    function randomAmount() {
-        const random = Math.random();
-
-        if (random < 0.6) {
-            const amounts = [500, 750, 1000, 1250, 1500, 1750, 2000, 2250, 2500, 2750, 3000, 3500, 4000, 4500, 5000];
-            return amounts[Math.floor(Math.random() * amounts.length)];
-        } else if (random < 0.9) {
-            const amounts = [5000, 6000, 7000, 8000, 9000, 10000, 11000, 12000, 13000, 14000, 15000];
-            return amounts[Math.floor(Math.random() * amounts.length)];
-        } else {    
-            const amounts = [15000, 16000, 17000, 18000, 19000, 20000, 22000, 24000, 26000, 28000, 30000, 32000, 34000, 36000, 40000, 50000];
-            return amounts[Math.floor(Math.random() * amounts.length)];
-        }
-    }
-
-    function createItem(amount){
-        const div = document.createElement('div');
-        div.className = 'led-item';
-        div.innerHTML = `
-            <div class="led-id">#${generateId()}</div>
-            <div>${amount} TL çekimi onaylandı</div>
-        `;
-        return div;
-    }
-
-    /* ================= INITIAL FILL ================= */
-    function initialFill(){
-        track.innerHTML = '';
-        for(let i = 0; i < BASE_COUNT; i++){
-            track.appendChild(createItem(randomAmount()));
-        }
-    }
-
-    /* ================= LIVE FLOW ================= */
-    function flowTick(){
-        if(track.children.length){
-            track.removeChild(track.children[0]);
+            // Format: 12xxx12
+            return `${a}${b}xxx${g}${f}`;
         }
 
-        let amount;
-        if(realQueue.length){
-            amount = realQueue.shift();
-        } else {
-            amount = randomAmount();
+        // Ağırlıklı rastgele tutar seçimi
+        function randomAmount() {
+            const random = Math.random();
+            if (random < 0.6) {
+                const amounts = [500, 750, 1000, 1250, 1500, 1750, 2000, 2250, 2500, 2750, 3000, 3500, 4000, 4500, 5000];
+                return amounts[Math.floor(Math.random() * amounts.length)];
+            } else if (random < 0.9) {
+                const amounts = [5000, 6000, 7000, 8000, 9000, 10000, 11000, 12000, 13000, 14000, 15000];
+                return amounts[Math.floor(Math.random() * amounts.length)];
+            } else {
+                const amounts = [15000, 16000, 17000, 18000, 19000, 20000, 22000, 24000, 26000, 28000, 30000, 32000, 34000, 36000, 40000, 50000];
+                return amounts[Math.floor(Math.random() * amounts.length)];
+            }
         }
 
-        track.appendChild(createItem(amount));
+        // Led öğesi oluşturma
+        function createItem(amount) {
+            const div = document.createElement('div');
+            div.className = 'led-item';
+            div.innerHTML = `
+                <div class="led-id">#${generateId()}</div>
+                <div style="margin-top:5px">${amount} TL çekimi onaylandı.</div>
+                <div style="margin-top:5px" class="led-footer">Bol Kazançlar Dileriz..!</div>
+            `;
+            return div;
+        }
+
+        /* ================= INITIAL FILL ================= */
+
+        // İlk verileri doldurma
+        function initialFill() {
+            track.innerHTML = ''; // Kaydırıcıyı temizle (Animasyonu sıfırlamak için)
+            for (let i = 0; i < BASE_COUNT; i++) {
+                track.appendChild(createItem(randomAmount())); // 14 yeni öğe ekle
+            }
+
+            // Animasyonu sıfırlamak için slider'ı gizle ve sonra göster
+            track.style.animation = 'none'; // Animasyonu durdur
+            track.offsetHeight; // Trigger reflow to reset animation
+            track.style.animation = ''; // Yeniden animasyonu başlat
+        }
+
+        /* ================= SHOW MESSAGE ================= */
+
+        // Mesaj gösterme fonksiyonu
+        function showMessage() {
+            messageDiv.innerHTML = "Veriler Güncelleniyor..."; // Mesajı ekle
+            messageDiv.classList.add('blinking-text'); // Mesajın yanıp sönmesini sağla
+            messageDiv.style.display = 'block'; // Mesajı göster
+            setTimeout(() => {
+                messageDiv.style.display = 'none'; // 3 saniye sonra mesajı gizle
+                messageDiv.classList.remove('blinking-text'); // Yanıp sönme animasyonunu kaldır
+                initialFill(); // Mesaj kaybolduktan sonra 14 yeni veri göster
+            }, TEXT_DISPLAY_TIME); // 3 saniye sonra
+        }
+
+        /* ================= CREATE SLIDER ================= */
+
+        // Slider oluşturma fonksiyonu
+        function createSlider() {
+            const wrapper = document.createElement('div');
+            wrapper.className = 'led-wrapper';
+            track = document.createElement('div');
+            track.className = 'led-track';
+            wrapper.appendChild(track);
+
+            // Mesaj div'ini slider içine ekleyelim ve ortalayalım
+            messageDiv = document.createElement('div');
+            messageDiv.className = 'message blinking-text'; // Mesaj sınıfı
+            wrapper.appendChild(messageDiv); // Mesajı slider içine ekle
+
+            // ceda-originals div'inin üstüne ekle
+            targetDiv.parentNode.insertBefore(wrapper, targetDiv);
+        }
+
+        /* ================= RESET DATA ================= */
+
+        // Kaydırıcıyı sıfırlama ve yeni verilerle doldurma
+        function resetData() {
+            track.innerHTML = ''; // Kaydırıcıyı temizle (Animasyonu sıfırla)
+            showMessage(); // "Veriler Güncelleniyor..." mesajını göster
+        }
+
+        /* ================= START ================= */
+
+        createSlider(); // İlk slider'ı oluştur
+        resetData(); // İlk verilerle başla
+
+        // Döngü başlatma: 2 saniye sonra yeni mesaj gelecek
+        setInterval(() => {
+            resetData(); // Her 2 saniyede bir veriler güncellenip mesaj gösterilecek
+        }, DATA_UPDATE_INTERVAL + TEXT_DISPLAY_TIME); // 2 saniye veri güncellenince 3 saniye mesaj gösterilsin
     }
 
-    /* ================= DATA POLLING ================= */
-    function pollData(){
-        fetch(getDataUrl())
-            .then(r => r.json())
-            .then(d => {
-                realQueue = d.map(x => x.amount);
-            })
-            .catch(()=>{});
-    }
-
-    /* ================= START ================= */
-    initialFill();
-    pollData();
-
-    setInterval(flowTick, UPDATE_INTERVAL);
-    setInterval(pollData, POLL_INTERVAL);
-}
