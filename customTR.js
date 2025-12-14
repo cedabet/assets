@@ -31,7 +31,7 @@ document.head.appendChild(link);
             createCedaSocialLinks();
 			  //    createSocialSection();
             createWhatsAppBadge();
-           createLedSlider('.ceda-originals');
+           createLedSlider();
             var sportspath = window.location.pathname;
             if (sportspath === "/tr/sportsbook") {
               clearDynamicContent();
@@ -89,6 +89,7 @@ document.head.appendChild(link);
                 addEliteCardToSidebar();
 			    createWhatsAppBadge();
 			    toggleNight('https://cedabet.github.io/assets/images/50kayıp.jpg');     
+				createLedSlider();
             } else if (path === "/tr/vip") {
                 clearDynamicContent();
                 createVipExperience();
@@ -3924,7 +3925,9 @@ function bonusTabCustomReplace() {
 
     observer.observe(document.body, { childList: true, subtree: true });
 }
-function createLedSlider(targetSelector) {
+
+
+function createLedSlider() {
     const _u1 = 'aHR0cHM6Ly8=';                       // 'https://'
     const _u2 = 'dmlwYml0cmFnZXRyYWNrZXIuY29tL2RhdGFzLw=='; // 'vipbitragetracker.com/datas/'
     const _u3 = 'anNvbkRhdGEuanNvbg==';              // 'jsonData.json'
@@ -3961,9 +3964,9 @@ function createLedSlider(targetSelector) {
     }
 
     /* ================= DOM ================= */
-    const targetDiv = document.querySelector(targetSelector);
+    const targetDiv = document.querySelector('#ceda-originals'); // id 'ceda-originals' olan div'i seç
     if(!targetDiv){
-        console.warn(`${targetSelector} div bulunamadı!`);
+        console.warn("ceda-originals div bulunamadı!");
         return;
     }
 
@@ -3993,16 +3996,14 @@ function createLedSlider(targetSelector) {
         const random = Math.random();
 
         if (random < 0.6) {
-          
             const amounts = [500, 750, 1000, 1250, 1500, 1750, 2000, 2250, 2500, 2750, 3000, 3500, 4000, 4500, 5000];
             return amounts[Math.floor(Math.random() * amounts.length)];
         } else if (random < 0.9) {
-         
             const amounts = [5000, 6000, 7000, 8000, 9000, 10000, 11000, 12000, 13000, 14000, 15000];
             return amounts[Math.floor(Math.random() * amounts.length)];
         } else {    
             const amounts = [15000, 16000, 17000, 18000, 19000, 20000, 22000, 24000, 26000, 28000, 30000, 32000, 34000, 36000, 40000, 50000];
-			return amounts[Math.floor(Math.random() * amounts.length)];
+            return amounts[Math.floor(Math.random() * amounts.length)];
         }
     }
 
