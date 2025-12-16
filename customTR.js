@@ -91,6 +91,7 @@ document.head.appendChild(link);
 			    createWhatsAppBadge();
 			    toggleNightModal('https://cedabet.github.io/assets/images/50kayıp-re.jpg');     
 				createLedSlider();
+				addRandomUserPlaying();
             } else if (path === "/tr/vip") {
                 clearDynamicContent();
                 createVipExperience();
@@ -4156,14 +4157,14 @@ function addRandomUserPlaying() {
         // Tekrar eklenmesini engeller
         if (slot.querySelector('.user-playing')) return;
 
-        const randomNumber = Math.floor(Math.random() * (500 - 20 + 1)) + 20; // 20–500
+        const randomNumber = Math.floor(Math.random() * (200 - 20 + 1)) + 20; // 20–300
 
         const p = document.createElement('p');
         p.className = 'user-playing';
-        p.style.marginTop = '8px';
+        p.style.marginTop = '6px';
         p.style.fontStyle = 'italic';
         p.style.color = '#7fb3d3';
-        p.style.fontSize = '10px';
+        p.style.fontSize = '11px';
 
         // Yeşil nokta + bold sayı
         p.innerHTML = `<span style="color:#2ecc71;">•</span> <strong>${randomNumber}</strong> Çevrimiçi`;
