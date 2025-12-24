@@ -4217,7 +4217,7 @@ function initCedaBannerWatcher() {
         }
         .ceda-sec1 p{
           margin:0;
-          color:#01E843;
+          color:#54c8ff;
           font-size:14px;
           font-weight:600;
         }
