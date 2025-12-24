@@ -4236,6 +4236,7 @@ function initCedaBannerWatcher() {
           border-radius:16px;
           overflow:hidden;
           transition:.25s ease;
+		  width: 100%;
         }
         .ceda-sec3 a:hover{
           transform:scale(1.03);
