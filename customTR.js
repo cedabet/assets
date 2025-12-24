@@ -33,7 +33,7 @@ document.head.appendChild(link);
             createWhatsAppBadge();
             createLedSlider();
           addRandomUserPlaying();
-			//initCedaBannerWatcher();
+			initCedaBannerWatcher();
             var sportspath = window.location.pathname;
             if (sportspath === "/tr/sportsbook") {
               clearDynamicContent();
@@ -93,7 +93,7 @@ document.head.appendChild(link);
 			    toggleNightModal('https://cedabet.github.io/assets/images/50kayıp-re.jpg');     
 				createLedSlider();
 				addRandomUserPlaying();
-				//initCedaBannerWatcher();
+				initCedaBannerWatcher();
             } else if (path === "/tr/vip") {
                 clearDynamicContent();
                 createVipExperience();
@@ -4262,33 +4262,34 @@ function initCedaBannerWatcher() {
         <div class="container d-flex flex-column gap-2">
           <div class="ceda-row">
 
-            <div class="ceda-sec1">
-              <h2>
-                EN YÜKSEK KAZANÇLAR İLE <br>
-                CEDA'DA KAZANCIN TADINI ÇIKAR!
-              </h2>
-              <p>Güvenli Erişim İçin Takip Et !</p>
-            </div>
+
+<div class="ceda-sec1">
+  <h2>
+    ÖZEL KAMPANYALAR VE VIP BONUSLAR <br>
+    SADECE CEDADA!
+  </h2>
+  <p>En Yüksek Bonuslar ve Ödüller İçin Takipte Kal!</p>
+</div>
 
             <div class="ceda-sec3">
               <div class="ceda-top-row">
                 <a href="/payments/deposit">
-                  <img src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/qwVpcjhJhjJbbJXthDaTicFGPdhWnmjf/statics/un0bKl60M4ajD3RZ9fXWFPVeXvnStSotPSeOQIn8.png">
+                  <img src="https://cedabet.github.io/assets/images/yatırım.png">
                 </a>
                 <a href="/payments/withdrawal">
-                  <img src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/qwVpcjhJhjJbbJXthDaTicFGPdhWnmjf/statics/2IVCiwfQsY23FkXnoIs5JdltVEITNOROMvhtOo7b.png">
+                  <img src="https://cedabet.github.io/assets/images/çekim.png">
                 </a>
               </div>
 
               <div class="ceda-bottom-row">
                 <a href="/promotions">
-                  <img src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/qwVpcjhJhjJbbJXthDaTicFGPdhWnmjf/statics/VWaZJdaHchhbhAOAUB8EtcuJJuXIlLl10R74EIWf.png">
+                  <img src="https://cedabet.github.io/assets/images/promosyon.png">
                 </a>
                 <a href="/tr?modal=bonus-request">
-                  <img src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/qwVpcjhJhjJbbJXthDaTicFGPdhWnmjf/statics/o1AxSxK9Q9uEXE5IMXRbjicvAoqG8UycTlEeEEz4.png">
+                  <img src="https://cedabet.github.io/assets/images/talep.png">
                 </a>
                 <a href="https://t.me/cedabet">
-                  <img src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/qwVpcjhJhjJbbJXthDaTicFGPdhWnmjf/statics/CzmePa3G9qT1BNPcKKjeMVk5XF7IDUSdu46gQwu2.png">
+                  <img src="https://cedabet.github.io/assets/images/AVANTAJ.png">
                 </a>
               </div>
             </div>
