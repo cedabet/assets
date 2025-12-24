@@ -4205,10 +4205,11 @@ function initCedaBannerWatcher() {
           align-items:flex-start;
         }
         .ceda-sec1{
-          flex:0 0 260px;
+          flex:0 0 640px;
           display:flex;
           flex-direction:column;
           color:#fff;
+		  text-align:left;
         }
         .ceda-sec1 h2{
           font-size:30px;
