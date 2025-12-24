@@ -33,7 +33,7 @@ document.head.appendChild(link);
             createWhatsAppBadge();
             createLedSlider();
           addRandomUserPlaying();
-			initCedaBannerWatcher();
+			//initCedaBannerWatcher();
             var sportspath = window.location.pathname;
             if (sportspath === "/tr/sportsbook") {
               clearDynamicContent();
@@ -93,7 +93,7 @@ document.head.appendChild(link);
 			    toggleNightModal('https://cedabet.github.io/assets/images/50kayıp-re.jpg');     
 				createLedSlider();
 				addRandomUserPlaying();
-				initCedaBannerWatcher();
+				//initCedaBannerWatcher();
             } else if (path === "/tr/vip") {
                 clearDynamicContent();
                 createVipExperience();
