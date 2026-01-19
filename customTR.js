@@ -3882,25 +3882,36 @@ function fixTabsNav() {
   let interval;
 
   const tryApply = () => {
-    // #tabs-nav öğesini kontrol et
-    const tabsNav = document.getElementById("tabs-nav");
+    // #main__content öğesini ve onun içindeki #tabs-nav öğesini kontrol et
+    const mainContent = document.getElementById("main__content");
+    
+    // Eğer #main__content öğesi veya #tabs-nav öğesi yoksa, işlem tamamlanmadı, devam et
+    if (!mainContent) {
+      console.warn("Main Content bulunamadı. 3 saniye sonra tekrar denenecek...");
+      return false; // Öğe bulunamazsa, false döndürüp tekrar kontrol etmeye devam et
+    }
+
+    const tabsNav = mainContent.querySelector("#tabs-nav");
 
     // Eğer #tabs-nav öğesi yoksa, işlem tamamlanmadı, devam et
     if (!tabsNav) {
-      console.error("Tabs Nav bulunamadı. 3 saniye sonra tekrar denenecek...");
+      console.warn("Tabs Nav bulunamadı. 3 saniye sonra tekrar denenecek...");
       return false; // Öğe bulunamazsa, false döndürüp tekrar kontrol etmeye devam et
     }
 
     console.warn("Sekme yapısı bulundu. İşlem yapılıyor...");
 
-    // İlk li'yi kaldır (Tüm sekmesi)
-    const firstLi = tabsNav.querySelector("li");
-    if (firstLi) {
-      const firstTab = firstLi.querySelector("button.tabs-nav__btn"); // İlk sekme butonunu bul
-      const tabName = firstTab ? firstTab.textContent : "Bilinmeyen Sekme"; // Sekme adını al (Varsa)
+    // "Tüm" sekmesini aktifse bul ve kaldır
+    const allTab = Array.from(tabsNav.querySelectorAll("button.tabs-nav__btn"))
+                         .find(btn => btn.classList.contains("active") && btn.textContent === "Tüm");
 
-      firstLi.remove(); // İlk li'yi kaldır
-      console.error(`Kaldırılan sekme: ${tabName}`); // Kaldırılan sekmenin adı
+    if (allTab) {
+      const allTabLi = allTab.closest("li"); // "Tüm" sekmesinin bulunduğu li öğesini al
+      if (allTabLi) {
+        const tabName = allTab.textContent; // "Tüm" sekmesinin adı
+        allTabLi.remove(); // "Tüm" sekmesini kaldır
+        console.error(`Kaldırılan sekme: ${tabName}`); // Kaldırılan sekmenin adı
+      }
     }
 
     // Kalan sekmelerden ilkini aktif yap
@@ -3915,7 +3926,7 @@ function fixTabsNav() {
 
       // İlk sekmeye tıklama (isteğe bağlı)
       remainingButtons[0].click();
-		      console.error(`clcikledi`); // Kaldırılan sekmenin adı
+		        console.error("click"); // Kaldırılan sekmenin adı
 
     }
 
@@ -3929,6 +3940,9 @@ function fixTabsNav() {
     }
   }, 300); // 3000ms (3 saniye) aralıklarla kontrol et
 }
+
+
+
 
 
 
