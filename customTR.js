@@ -3885,20 +3885,22 @@ function fixTabsNav() {
     // #tabs-nav öğesini kontrol et
     const tabsNav = document.getElementById("tabs-nav");
 
-    // Eğer #tabs-nav yoksa, işlem tamamlanmadı
+    // Eğer #tabs-nav öğesi yoksa, işlem tamamlanmadı, devam et
     if (!tabsNav) {
-		    console.error("tab bulunmadı");
-
-      return false;
+      console.error("Tabs Nav bulunamadı. 3 saniye sonra tekrar denenecek...");
+      return false; // Öğe bulunamazsa, false döndürüp tekrar kontrol etmeye devam et
     }
 
+    console.warn("Sekme yapısı bulundu. İşlem yapılıyor...");
 
     // İlk li'yi kaldır (Tüm sekmesi)
     const firstLi = tabsNav.querySelector("li");
     if (firstLi) {
-      firstLi.remove(); // İlk li'yi kaldır
-		    console.error("ilk li gitti");
+      const firstTab = firstLi.querySelector("button.tabs-nav__btn"); // İlk sekme butonunu bul
+      const tabName = firstTab ? firstTab.textContent : "Bilinmeyen Sekme"; // Sekme adını al (Varsa)
 
+      firstLi.remove(); // İlk li'yi kaldır
+      console.error(`Kaldırılan sekme: ${tabName}`); // Kaldırılan sekmenin adı
     }
 
     // Kalan sekmelerden ilkini aktif yap
@@ -3913,7 +3915,7 @@ function fixTabsNav() {
 
       // İlk sekmeye tıklama (isteğe bağlı)
       remainingButtons[0].click();
-		    console.error("kalan sekme aktif yapıldı");
+		      console.error(`clcikledi`); // Kaldırılan sekmenin adı
 
     }
 
@@ -3922,12 +3924,10 @@ function fixTabsNav() {
 
   // 3 saniyede bir kontrol et
   interval = setInterval(() => {
-	      console.error("deneme devam");
-
     if (tryApply()) {
       clearInterval(interval); // İşlem tamamlandı → kontrolü durdur
     }
-  }, 100); // 3000ms (3 saniye) aralıklarla kontrol et
+  }, 300); // 3000ms (3 saniye) aralıklarla kontrol et
 }
 
 
