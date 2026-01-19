@@ -3878,7 +3878,7 @@ function closeHandler(e) {
 
   }
 }*/
-function fixTabsNav() {
+/*function fixTabsNav() {
   let interval;
 
   const tryApply = () => {
@@ -3939,9 +3939,56 @@ function fixTabsNav() {
       clearInterval(interval); // İşlem tamamlandı → kontrolü durdur
     }
   }, 300); // 3000ms (3 saniye) aralıklarla kontrol et
+}*/
+
+function fixTabsNav() {
+  // #main__content öğesini ve onun içindeki #tabs-nav öğesini kontrol et
+  const mainContent = document.getElementById("main__content");
+  
+  // Eğer #main__content öğesi veya #tabs-nav öğesi yoksa, işlem tamamlanmadı, devam et
+  if (!mainContent) {
+    console.warn("Main Content bulunamadı.");
+    return; // Öğe bulunamazsa, işlem tamamlanır
+  }
+
+  const tabsNav = mainContent.querySelector("#tabs-nav");
+
+  // Eğer #tabs-nav öğesi yoksa, işlem tamamlanmadı
+  if (!tabsNav) {
+    console.warn("Tabs Nav bulunamadı.");
+    return; // Öğe bulunamazsa, işlem tamamlanır
+  }
+
+  console.warn("Sekme yapısı bulundu. İşlem yapılıyor...");
+
+  // "Tüm" sekmesini aktifse bul ve kaldır
+  const allTab = Array.from(tabsNav.querySelectorAll("button.tabs-nav__btn"))
+                       .find(btn => btn.classList.contains("active") && btn.textContent === "Tüm");
+
+  if (allTab) {
+    const allTabLi = allTab.closest("li"); // "Tüm" sekmesinin bulunduğu li öğesini al
+    if (allTabLi) {
+      const tabName = allTab.textContent; // "Tüm" sekmesinin adı
+      allTabLi.remove(); // "Tüm" sekmesini kaldır
+      console.error(`Kaldırılan sekme: ${tabName}`); // Kaldırılan sekmenin adı
+    }
+  }
+
+  // Kalan sekmelerden ilkini aktif yap
+  const remainingButtons = tabsNav.querySelectorAll("button.tabs-nav__btn");
+
+  if (remainingButtons.length > 0) {
+    // Önce tüm sekmelerden "active" class'ını temizle
+    remainingButtons.forEach(btn => btn.classList.remove("active"));
+
+    // İlk sekmeyi aktif yap
+    remainingButtons[0].classList.add("active");
+
+    // İlk sekmeye tıklama (isteğe bağlı)
+    remainingButtons[0].click();
+    console.error("click"); // Kaldırılan sekmenin adı
+  }
 }
-
-
 
 
 
