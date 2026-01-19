@@ -3882,26 +3882,23 @@ function fixTabsNav() {
   let interval;
 
   const tryApply = () => {
-    // #tabs-nav öğesini kontrol et (DOM üzerinden değil, sayfadaki yapıyı kontrol ederek)
+    // #tabs-nav öğesini kontrol et
     const tabsNav = document.getElementById("tabs-nav");
-    
-    // Eğer #tabs-nav öğesi yoksa, işlem tamamlanmadı
+
+    // Eğer #tabs-nav yoksa, işlem tamamlanmadı
     if (!tabsNav) {
+		    console.error("tab bulunmadı");
+
       return false;
     }
 
-    console.error("Sekme yapısı bulundu. İşlem yapılıyor...");
 
-    // "Tüm" sekmesinin aktif olduğunu kontrol et
-    const allTab = Array.from(tabsNav.querySelectorAll("button.tabs-nav__btn")).find(btn => btn.classList.contains("active") && btn.textContent === "Tüm");
+    // İlk li'yi kaldır (Tüm sekmesi)
+    const firstLi = tabsNav.querySelector("li");
+    if (firstLi) {
+      firstLi.remove(); // İlk li'yi kaldır
+		    console.error("ilk li gitti");
 
-    if (allTab) {
-      const allTabLi = allTab.closest("li");
-      if (allTabLi) {
-        allTabLi.remove(); // "Tüm" sekmesini kaldır
-		      console.error("Sekme yapısı bulundu. İşlem yapılıyor... 2");
-
-      }
     }
 
     // Kalan sekmelerden ilkini aktif yap
@@ -3911,12 +3908,12 @@ function fixTabsNav() {
       // Önce tüm sekmelerden "active" class'ını temizle
       remainingButtons.forEach(btn => btn.classList.remove("active"));
 
-      // İlk sekmeyi aktif yap (örneğin "Aktif" butonunu)
+      // İlk sekmeyi aktif yap
       remainingButtons[0].classList.add("active");
 
       // İlk sekmeye tıklama (isteğe bağlı)
       remainingButtons[0].click();
-		    console.error("Sekme yapısı bulundu. İşlem yapılıyor...3");
+		    console.error("kalan sekme aktif yapıldı");
 
     }
 
@@ -3925,7 +3922,7 @@ function fixTabsNav() {
 
   // 3 saniyede bir kontrol et
   interval = setInterval(() => {
-	      console.error("Sekme yapısı bulundu. İşlem yapılıyor... 4");
+	      console.error("deneme devam");
 
     if (tryApply()) {
       clearInterval(interval); // İşlem tamamlandı → kontrolü durdur
@@ -3933,7 +3930,6 @@ function fixTabsNav() {
   }, 100); // 3000ms (3 saniye) aralıklarla kontrol et
 }
 
-// Sayfa yüklendikten sonra fixTabsNav fonksiyonunu çağır
 
 
 function bonusTabCustomReplace() {
