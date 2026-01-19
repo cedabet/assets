@@ -51,9 +51,10 @@ document.head.appendChild(link);
                 clearDynamicContent();
             }
               else if (sportspath === "/tr/promotions") {
+				    fixTabsNav();
                 clearDynamicContent();
                removeGlobalModal();
-                fixTabsNav();
+              
             }
 			else if (sportspath !== "/tr/" && sportspath !== "/tr") {
                clearDynamicContent();
@@ -114,9 +115,10 @@ document.head.appendChild(link);
                 LandingPage();
             } 
 			else if (path === "/tr/promotions") {
+				  fixTabsNav();
                 clearDynamicContent();
                removeGlobalModal();
-                fixTabsNav();
+              
             }
 			else {
                 clearDynamicContent();
