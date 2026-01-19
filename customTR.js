@@ -3879,19 +3879,22 @@ function closeHandler(e) {
   }
 }*/
 function fixTabsNav() {
-  const tryApply = () => {
-    // #tabs-nav öğesini DOM'da bul
-    const tabsNav = document.querySelector("#tabs-nav");
+  let interval;
 
-    // Eğer #tabs-nav bulunmazsa, işlem tamamlanmadı
+  const tryApply = () => {
+    // #tabs-nav öğesini kontrol et (DOM üzerinden değil, sayfadaki yapıyı kontrol ederek)
+    const tabsNav = document.getElementById("tabs-nav");
+    
+    // Eğer #tabs-nav öğesi yoksa, işlem tamamlanmadı
     if (!tabsNav) {
       return false;
     }
 
     console.warn("Sekme yapısı bulundu. İşlem yapılıyor...");
 
-    // 1. "Tüm" sekmesini bul ve kaldır
-    const allTab = tabsNav.querySelector("button.tabs-nav__btn.active");
+    // "Tüm" sekmesinin aktif olduğunu kontrol et
+    const allTab = Array.from(tabsNav.querySelectorAll("button.tabs-nav__btn")).find(btn => btn.classList.contains("active") && btn.textContent === "Tüm");
+
     if (allTab) {
       const allTabLi = allTab.closest("li");
       if (allTabLi) {
@@ -3899,31 +3902,32 @@ function fixTabsNav() {
       }
     }
 
-    // 2. Kalan sekmelerden ilkini aktif yap
+    // Kalan sekmelerden ilkini aktif yap
     const remainingButtons = tabsNav.querySelectorAll("button.tabs-nav__btn");
 
     if (remainingButtons.length > 0) {
+      // Önce tüm sekmelerden "active" class'ını temizle
       remainingButtons.forEach(btn => btn.classList.remove("active"));
-      remainingButtons[0].classList.add("active"); // İlk sekmeyi aktif yap
-      remainingButtons[0].click(); // İlk sekmeye tıklama (isteğe bağlı)
+
+      // İlk sekmeyi aktif yap (örneğin "Aktif" butonunu)
+      remainingButtons[0].classList.add("active");
+
+      // İlk sekmeye tıklama (isteğe bağlı)
+      remainingButtons[0].click();
     }
 
     return true; // İşlem tamamlandı
   };
 
-  // İlk denemeyi yap
-  if (tryApply()) return;
-
-  // Eğer #tabs-nav henüz eklenmediyse, DOM değişikliklerini izlemeye başla
-  const observer = new MutationObserver(() => {
+  // 3 saniyede bir kontrol et
+  interval = setInterval(() => {
     if (tryApply()) {
-      observer.disconnect(); // İşlem tamamlandı → izlemeyi durdur
+      clearInterval(interval); // İşlem tamamlandı → kontrolü durdur
     }
-  });
-
-  // DOM'daki değişiklikleri izle (childList ve subtree izleniyor)
-  observer.observe(document.body, { childList: true, subtree: true });
+  }, 100); // 3000ms (3 saniye) aralıklarla kontrol et
 }
+
+// Sayfa yüklendikten sonra fixTabsNav fonksiyonunu çağır
 
 
 function bonusTabCustomReplace() {
