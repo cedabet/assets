@@ -3890,7 +3890,7 @@ function fixTabsNav() {
       return false;
     }
 
-    console.warn("Sekme yapısı bulundu. İşlem yapılıyor...");
+    console.error("Sekme yapısı bulundu. İşlem yapılıyor...");
 
     // "Tüm" sekmesinin aktif olduğunu kontrol et
     const allTab = Array.from(tabsNav.querySelectorAll("button.tabs-nav__btn")).find(btn => btn.classList.contains("active") && btn.textContent === "Tüm");
@@ -3899,6 +3899,8 @@ function fixTabsNav() {
       const allTabLi = allTab.closest("li");
       if (allTabLi) {
         allTabLi.remove(); // "Tüm" sekmesini kaldır
+		      console.error("Sekme yapısı bulundu. İşlem yapılıyor... 2");
+
       }
     }
 
@@ -3914,6 +3916,8 @@ function fixTabsNav() {
 
       // İlk sekmeye tıklama (isteğe bağlı)
       remainingButtons[0].click();
+		    console.error("Sekme yapısı bulundu. İşlem yapılıyor...3");
+
     }
 
     return true; // İşlem tamamlandı
@@ -3921,6 +3925,8 @@ function fixTabsNav() {
 
   // 3 saniyede bir kontrol et
   interval = setInterval(() => {
+	      console.error("Sekme yapısı bulundu. İşlem yapılıyor... 4");
+
     if (tryApply()) {
       clearInterval(interval); // İşlem tamamlandı → kontrolü durdur
     }
