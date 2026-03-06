@@ -4320,11 +4320,12 @@ function initCedaBannerWatcher() {
           align-items:flex-start;
         }
         .ceda-sec1{
-          flex:0 0 640px;
-          display:flex;
-          flex-direction:column;
-          color:#fff;
-		  text-align:left;
+          flex: 0 0 50%;
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    text-align: left;
+    gap: 50px;
         }
         .ceda-sec1 h2{
           font-size:30px;
@@ -4338,10 +4339,12 @@ function initCedaBannerWatcher() {
           font-weight:600;
         }
         .ceda-sec3{
-          flex:1;
-          display:flex;
-          flex-direction:column;
-          gap:12px;
+        flex: 0 0 50%;
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    text-align: left;
+    
         }
         .ceda-top-row,
         .ceda-bottom-row{
