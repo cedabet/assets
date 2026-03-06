@@ -15,7 +15,7 @@ document.head.appendChild(link);
           bonusTabCustomReplace();
             loadVipFeatures();
             setTimeout(loadh2Title, 1000);
-          
+           
             addMenuElement();
             addMenuElementTwo();
             setTimeout(updateCopyrightYear, 1000);
