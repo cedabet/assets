@@ -4304,7 +4304,7 @@ function initCedaBannerWatcher() {
     }
 
     // led-wrapper yoksa bekle
-    const ledWrapper = document.getElementById("custom-section-7");
+    const ledWrapper = document.getElementById("ceda-originals");
     if (!ledWrapper) return;
 
     /* STYLE (tek sefer) */
