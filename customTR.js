@@ -4405,7 +4405,7 @@ function initCedaBannerWatcher() {
                 <a href="/tr?modal=bonus-request">
                   <img src="https://cedabet.github.io/assets/images/talep.png">
                 </a>
-                <a href="https://t.me/cedabet">
+                <a target="_blank" href="https://t.me/cedabet">
                   <img src="https://cedabet.github.io/assets/images/AVANTAJ.png">
                 </a>
               </div>
