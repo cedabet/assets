@@ -1818,13 +1818,13 @@
       }
 
       // ✅ SADECE PRAGMATIC PLAY: sekmelerle aynı group API'den slug "pragmatic-play-yeni" çek
-      if (isPragmaticProvider(provider)) {
+    /*  if (isPragmaticProvider(provider)) {
         const games = await fetchGroupGamesDirectBySlug("pragmatic-play-yeni");
         if (reqId !== AppState.requestId) return;
 
         right.innerHTML = renderGames(games || []);
         return;
-      }
+      }*/
 
       // ✅ Diğer provider'lar: mevcut provider endpoint mantığı
       const { games: providerGames } = await getProviderGames(provider);
