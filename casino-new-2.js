@@ -1689,7 +1689,7 @@
   async function renderRootShell() {
     ensureStyles();
     ensureMobileCasinoStyles();
-    return `
+  /*  return `
       <div class="${CONFIG.rootClass} casino-container container">
 
 
@@ -1726,7 +1726,7 @@
           </div>
         </div>
       </div>
-    `;
+    `;*/
   }
 
   function setActiveTabUI(root, key) {
