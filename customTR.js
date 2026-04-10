@@ -82,6 +82,7 @@ document.head.appendChild(link);
             addMenuItemsWithAuth();
             insertCedaTVButton();
             bonusTabCustomReplace();
+			  redirectIfPokerDetected();
             //	  check();
             if (path === "/tr/" || path === "/tr") {
                 clearDynamicContent();
@@ -102,7 +103,7 @@ document.head.appendChild(link);
 				addRandomUserPlaying();
 				initCedaBannerWatcher();
                  createToastAndShow(); 
-              redirectIfPokerDetected();
+            
             } else if (path === "/tr/vip") {
                 clearDynamicContent();
                 createVipExperience();
@@ -4552,14 +4553,41 @@ function initCedaBannerWatcher() {
     }
 
 function redirectIfPokerDetected() {
-    var fullUrl = window.location.href.toLowerCase();
+    const startTime = Date.now();
 
-    if (fullUrl.includes('poker')) {
-        console.error('[BLOCKED] Poker URL yakalandı:', fullUrl);
-        window.location.replace('/tr');
-    } else {
-        console.log('[OK] Temiz URL:', fullUrl);
+    function check() {
+        const fullUrl = window.location.href.toLowerCase();
+
+        // poker varsa direkt yönlendir
+        if (fullUrl.includes('poker')) {
+            console.error('[BLOCKED] Poker URL yakalandı:', fullUrl);
+            window.location.replace('/tr');
+            return true;
+        }
+
+        return false;
     }
+
+    // ilk kontrol
+    if (check()) return;
+
+    // observer ile SPA değişimleri yakala
+    const observer = new MutationObserver(() => {
+        if (check()) {
+            observer.disconnect();
+        }
+
+        // 3 saniye geçtiyse durdur
+        if (Date.now() - startTime > 3000) {
+            console.log('[STOP] 3 saniye doldu, kontrol kapandı');
+            observer.disconnect();
+        }
+    });
+
+    observer.observe(document.body, {
+        childList: true,
+        subtree: true
+    });
 }
 
 
