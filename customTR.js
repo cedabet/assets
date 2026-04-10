@@ -4555,10 +4555,9 @@ function initCedaBannerWatcher() {
 function redirectIfPokerDetected() {
     const startTime = Date.now();
 
-    function check() {
+    function checkUrl() {
         const fullUrl = window.location.href.toLowerCase();
 
-        // poker varsa direkt yönlendir
         if (fullUrl.includes('poker')) {
             console.error('[BLOCKED] Poker URL yakalandı:', fullUrl);
             window.location.replace('/tr');
@@ -4568,18 +4567,36 @@ function redirectIfPokerDetected() {
         return false;
     }
 
+    function removePokerMenu() {
+        const pokerItem = document.querySelector('li a[href="/tr/poker"]');
+
+        if (pokerItem && pokerItem.closest('li')) {
+            console.log('[REMOVE] Poker menü kaldırıldı');
+
+            pokerItem.closest('li').remove(); // direkt DOM’dan sil
+        }
+    }
+
+    function check() {
+        removePokerMenu();
+        return checkUrl();
+    }
+
     // ilk kontrol
     if (check()) return;
 
-    // observer ile SPA değişimleri yakala
     const observer = new MutationObserver(() => {
-        if (check()) {
+        check();
+
+        // redirect olursa observer kapatılır
+        if (window.location.href.toLowerCase().includes('poker')) {
             observer.disconnect();
+            return;
         }
 
-        // 3 saniye geçtiyse durdur
+        // 3 saniye sonra durdur
         if (Date.now() - startTime > 3000) {
-            console.log('[STOP] 3 saniye doldu, kontrol kapandı');
+            console.log('[STOP] 3 saniye doldu, observer kapandı');
             observer.disconnect();
         }
     });
