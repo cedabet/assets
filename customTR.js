@@ -52,6 +52,10 @@ document.head.appendChild(link);
             } else if (sportspath === "/tr/challenges") {
                 clearDynamicContent();
             }
+				else if (sportspath === "/tr/poker") {
+                clearDynamicContent();
+					
+            }
               else if (sportspath === "/tr/promotions") {
 				    fixTabsNav();
                 clearDynamicContent();
@@ -505,6 +509,7 @@ function clearAstronauts() {
 }
 
 function clearDynamicContent() {
+	redirectIfPokerDetected();
     const idsToRemove = ["mini-games-wrapper-2", "custom-section-7", "league-wrapper", "custom-section-landing", "telegram-section" , "whatsapp-badge","led-wrapper","toast-container-ced"];
 
     const styleIdsToRemove = [
