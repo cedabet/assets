@@ -4550,7 +4550,10 @@ function redirectIfPokerDetected() {
     var fullUrl = window.location.href.toLowerCase();
 
     if (fullUrl.includes('poker')) {
+        console.error('[BLOCKED] Poker URL yakalandı:', fullUrl);
         window.location.replace('/tr');
+    } else {
+        console.log('[OK] Temiz URL:', fullUrl);
     }
 }
 
